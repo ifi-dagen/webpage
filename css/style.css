@@ -55,7 +55,7 @@ h5 {
 
 /*--- Felles header til undersider -------------------------------------------*/
 .banner-header {
-  background-image: url("img/ettermidagen_at_ifi-0362.jpg");
+  background-image: url("/img/ettermidagen_at_ifi-0362.jpg");
   background-size: cover;
   background-position: center;
   color: white;
@@ -112,7 +112,7 @@ h5 {
 /*--- Landing Page --*/
 #banner {
   max-height: 1000px;
-  background-image: url("img/bg_1.png");
+  background-image: url("/img/bg_1.png");
   background-size: cover;
   background-position: center;
   color: white;
@@ -156,7 +156,7 @@ h5 {
 }
 /*--- Hovedsponsor Section --*/
 .politi_bilde {
-  background-image: url("img/hovedsponsor.jpg");
+  background-image: url("/img/hovedsponsor.jpg");
   background-position: right;
 }
 /*--- Footer Section --*/
@@ -176,7 +176,7 @@ h5 {
   text-decoration: none;
 }
 .footer_bilde {
-  background: url("img/ettermidagen_at_ifi-0480.jpg");
+  background: url("/img/ettermidagen_at_ifi-0480.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -239,13 +239,13 @@ iframe {
   margin: 2rem 0 10%;
 }
 .underholdning_bilde_1 {
-  background-image: url("img/underholdning_bilde_1.jpg");
+  background-image: url("/img/underholdning_bilde_1.jpg");
 }
 .underholdning_bilde_2 {
-  background-image: url("img/underholdning_bilde_2.jpg");
+  background-image: url("/img/underholdning_bilde_2.jpg");
 }
 .underholdning_bilde_3 {
-  background-image: url("img/underholdning_bilde_3.jpg");
+  background-image: url("/img/underholdning_bilde_3.jpg");
 }
 
 @media (max-width: 1200px) {
@@ -292,7 +292,7 @@ iframe {
   height: auto !important;
 }
 .recap_bilde {
-  background-image: url("img/recap_bilde.jpg");
+  background-image: url("/img/recap_bilde.jpg");
 }
 
 @media (max-width: 1200px) {
@@ -325,7 +325,7 @@ iframe {
   margin: 1rem 1rem 0 0;
 }
 .foredrag_bilde {
-  background-image: url("img/foredrag_bilde.jpg");
+  background-image: url("/img/foredrag_bilde.jpg");
 }
 .stand_pakke {
   margin: 2%;
@@ -385,13 +385,13 @@ iframe {
   margin-right: 3%;
 }
 .intern_bilde {
-  background-image: url("img/intern_bilde.jpg");
+  background-image: url("/img/intern_bilde.jpg");
 }
 .funk_bilde {
-  background-image: url("img/funk_bilde.jpg");
+  background-image: url("/img/funk_bilde.jpg");
 }
 .styremedlem_bilde {
-  background-image: url("img/styremedlem_bilde.jpg");
+  background-image: url("/img/styremedlem_bilde.jpg");
   height: 50%;
 }
 @media (max-width: 1200px) {
@@ -428,7 +428,7 @@ iframe {
   font-size: 1.3rem;
 }
 .om_oss_bilde {
-  background-image: url("img/ettermidagen_at_ifi-0480.jpg");
+  background-image: url("/img/ettermidagen_at_ifi-0480.jpg");
 }
 @media (max-width: 767.98px) {
   .om_oss_bilde{
