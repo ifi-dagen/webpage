@@ -1,0 +1,553 @@
+/*--- Felles til alle sider --------------------------------------------------*/
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #505962;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 80%;
+}
+a {
+  color: #08A6E4;
+  text-decoration: underline;
+}
+h5 {
+  color: black;
+}
+.offset:before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+.svart_overskrift {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.svart_overskrift_innrykk {
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-left: 9.4%;
+}
+.blue {
+  color: #08A6E4;
+}
+.hvit-bg {
+  background-color: white;
+  padding: 4rem 0rem 6rem;
+}
+.graa-bg {
+  background-color: #F1F1F1;
+  padding: 4rem 0rem 6rem;
+}
+.col_bilde {
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+}
+.col_bilde_underholdning {
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.navbar-logo{
+  width: 6rem;
+}
+
+.front-logo{
+  width: 50%;
+}
+
+/*--- Felles header til undersider -------------------------------------------*/
+.banner-header {
+  background-image: url("/img/ettermidagen_at_ifi-0362.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 10% 0 8%;
+}
+.banner-overskrift {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.btn-header {
+  margin: 0 0.7rem 0;
+}
+@media (max-width: 767.98px) {
+  .banner-header {
+    padding: 14% 0 8%;
+  }
+  .banner-overskrift {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .banner-header {
+    padding: 20% 0 8%;
+  }
+  .banner-overskrift {
+    font-size: 2rem;
+  }
+}
+
+
+/*--- FORSIDE SIDEN ----------------------------------------------------------*/
+/*--- Navigation --*/
+.navbar {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .8rem;
+  line-height: 2.5rem;
+  letter-spacing: .1rem;
+  background: #002446!important;
+  text-align: left;
+  padding-bottom: 0.1rem;
+
+}
+
+.navbar-toggler {
+  width: 100%;
+  padding-top: 1rem;
+  display:inline-flex;
+  justify-content: space-between;
+  line-height: 1rem;
+}
+
+.navbar-brand{
+  padding: 0% 5%; 
+}
+
+
+
+.navbar-nav li {
+  padding-right: .8rem;
+  list-style-type: none;
+}
+.navbar-nav li a{
+  color: #ffffff!important;
+  text-decoration: none;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #08A6E4!important;
+}
+/*--- Landing Page --*/
+#banner {
+  max-height: 1000px;
+  background-image: url("./img/bg_1.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 13rem 0 16%;
+}
+.caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem 0rem;
+  color: white;
+}
+.caption h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #ACACAC;
+}
+.caption h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: .02rem;
+  color: #ACACAC;
+  padding-bottom: 1.5rem;
+}
+.btn-lg {
+  border-width: medium;
+  border-radius: 20px;
+  padding: .4rem 1.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #08A6E4;
+  color: white;
+  text-decoration: none;
+}
+.btn-lg:hover {
+  background-color: #005BB7;
+  color: white;
+}
+/*--- Info Section --*/
+.hvor_og_naar {
+  margin-left: 3%;
+}
+/*--- Hovedsponsor Section --*/
+.politi_bilde {
+  background-image: url("./img/hovedsponsor.jpg");
+  background-position: right;
+}
+/*--- Footer Section --*/
+#footer {
+  padding-top: 1rem;
+  min-height: 10rem;
+  text-align: center;
+  background-color: #13253B;
+  color: white;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+#footer a:hover {
+  color: #08A6E4!important;
+  text-decoration: none;
+}
+.footer_bilde {
+  background: url("./img/ettermidagen_at_ifi-0480.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  #banner {
+    padding: 14% 0 16%;
+  }
+  .caption h1 {
+    font-size: 3rem;
+  }
+  .caption h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 992px) {
+  .caption h1 {
+    font-size: 2.6rem;
+  }
+  .caption h2 {
+    font-size: 2.6rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .btn-lg {
+    font-size: 0.9rem;
+  }
+  .hvor_og_naar {
+    margin-left: 8.4%;
+  }
+  .politi_bilde{
+    margin-left: 0%;
+  }
+  #sponsor img {
+    width: 40%;
+  }
+}
+@media (max-width: 575.98px) {
+  .caption h1 {
+    font-size: 2.2rem;
+  }
+  .caption h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/*--- PROGRAM ----------------------------------------------------------------*/
+#foredrag .row {
+  padding: 1.5%;
+}
+#foredrag img {
+  width: 70%;
+  max-width: 150px;
+  padding-top: 5%;
+}
+#underholdning {
+  padding-bottom: 0;
+}
+iframe {
+  margin: 2rem 0 10%;
+}
+.underholdning_bilde_1 {
+  background-image: url("./img/underholdning_bilde_1.jpg");
+}
+.underholdning_bilde_2 {
+  background-image: url("./img/underholdning_bilde_2.jpg");
+}
+.underholdning_bilde_3 {
+  background-image: url("./img/underholdning_bilde_3.jpg");
+}
+
+@media (max-width: 1200px) {
+  #underholdning .offset-1 {
+    margin: 0 4% 0;
+  }
+  #foredrag a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 992px) {
+  #foredrag img {
+    width: 40%;
+    padding-top: 0%;
+  }
+}
+@media (max-width: 767.98px) {
+  #oversikt .col-md-4 {
+    margin-left: 10%;
+  }
+}
+
+
+/*--- DAGEN@IFI I FJOR -------------------------------------------------------*/
+#recap iframe {
+
+}
+#photowall {
+  background-color: #13253B;
+  padding: 0 0 5% 0;
+
+  /* Prevent vertical gaps */
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    3;
+  -moz-column-gap:      0px;
+  column-count:         3;
+  column-gap:           0px;
+}
+#photowall img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+.recap_bilde {
+  background-image: url("./img/recap_bilde.jpg");
+}
+
+@media (max-width: 1200px) {
+  #photowall {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+  }
+}
+@media (max-width: 1000px) {
+  #photowall {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+  }
+}
+
+
+/*--- FOR BEDRIFTER ----------------------------------------------------------*/
+#bedriftinfo .col-xl-3 {
+  margin-right: 3%;
+}
+#stand_pakke_venstre {
+  margin-left: 9.4%;
+}
+#sporsmal .col-lg-3 {
+  width: 85%;
+}
+.btn_bedrift {
+  margin: 1rem 1rem 0 0;
+}
+.foredrag_bilde {
+  background-image: url("./img/foredrag_bilde.jpg");
+}
+.stand_pakke {
+  margin: 2%;
+  border: solid;
+  border-radius: 12px;
+  border-color: #08A6E4!important;
+}
+.stand_pakke_1 {
+  border-width: 1px;
+}
+.stand_pakke_2 {
+  border-width: 2px;
+}
+.stand_pakke_3 {
+  border-width: 3px;
+}
+.stand_pakke_inner {
+  padding: 8% 8% 10%;
+}
+.padding-top {
+  padding-top: 2rem;
+}
+@media (max-width: 1200px) {
+  #bedriftinfo .col-xl-3 {
+    margin-left: 8.3%;
+    width: 80%;
+  }
+  #standpakker h2 {
+    font-size: 1.5rem;
+  }
+  .stand_pakke_inner {
+    padding: 3% 7% 3%;
+  }
+}
+@media (max-width: 992px) {
+  #stand_pakke_venstre {
+    margin-left: 2%;
+  }
+  .stand_pakke_inner {
+    padding: 3% 7% 3%;
+  }
+}
+@media (max-width: 767.98px) {
+  .foredrag_bilde {
+    margin-left: 0%;
+  }
+}
+
+/*--- BLI FRIVILLIG ----------------------------------------------------------*/
+#interngrupper img {
+  padding-bottom: 1.5rem;
+}
+#interngrupper .row {
+  padding: 0 8.5% 0;
+}
+#styremedlem .col-xl-3 {
+  margin-right: 3%;
+}
+.intern_bilde {
+  background-image: url("./img/intern_bilde.jpg");
+}
+.funk_bilde {
+  background-image: url("./img/funk_bilde.jpg");
+}
+.styremedlem_bilde {
+  background-image: url("./img/styremedlem_bilde.jpg");
+  height: 50%;
+}
+@media (max-width: 1200px) {
+  .styremedlem_beskrivelser {
+    margin-left: 8.3%;
+  }
+}
+@media (max-width: 767.98px) {
+  #styremedlem .col-md-3 {
+    margin-left: 8.4%;
+    padding-bottom: 0;
+  }
+  .intern_bilde{
+    margin-left: 0%;
+  }
+  .hvorfor_funk {
+    margin-left: 8.4%;
+  }
+  .styremedlem_bilde {
+    height: auto;
+  }
+}
+/*--- KONTAKT/OM OSS SIDEN ---------------------------------------------------*/
+#styret {
+  background-color: #F1F1F1;
+  margin: 6rem 0 0;
+  padding: 2rem 0 6rem 0;
+}
+#styret img {
+  width: 30%;
+  min-width: 120px;
+}
+#styret b {
+  font-size: 1.3rem;
+}
+.om_oss_bilde {
+  background-image: url("./img/ettermidagen_at_ifi-0480.jpg");
+}
+@media (max-width: 767.98px) {
+  .om_oss_bilde{
+    margin-left: 0%;
+  }
+  .col-md-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.parallax {
+  /* Full height */
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
