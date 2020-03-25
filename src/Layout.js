@@ -29,7 +29,7 @@ class DropDownMenu extends Component {
           <a class="navbar-brand" href="/index">
             <img class="navbar-logo" src={ require("./img/white_logo.png")} alt="Dagen@ifi logo"/>
           </a>
-          <p class="navbar-brand">{listOpen ? "^" : "v"}</p> 
+          <p class="navbar-brand">{listOpen ? "^" : "v"}</p>
         </div>
         {listOpen && <ul className="collapse navbar-collapse navbar-nav ml-auto" id="navbarResponsive">
               <li class="nav-item">
@@ -39,7 +39,7 @@ class DropDownMenu extends Component {
                 <a class="nav-link" href="dagenifjor">Dagen@ifi i fjor</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="bedrifter">For bedrifter</a>
+                <a class="nav-link" href="bedrift">For bedrifter</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="frivillig">Bli frivillig</a>
