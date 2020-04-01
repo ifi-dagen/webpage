@@ -36,7 +36,6 @@ class DropDownMenu extends Component {
                 <Link class="nav-link" to="/program">Program</Link>
               </li>
               <li class="nav-item">
-<<<<<<< HEAD
                 <Link class="nav-link" to="/dagenifjor">Dagen@ifi i fjor</Link>
               </li>
               <li class="nav-item">
@@ -47,18 +46,6 @@ class DropDownMenu extends Component {
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to="/kontakt">Kontakt / om oss</Link>
-=======
-                <a class="nav-link" href="/dagenifjor">Dagen@ifi i fjor</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/bedrift">For bedrifter</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/frivillig">Bli frivillig</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/kontakt">Kontakt / om oss</a>
->>>>>>> 202416a81ce445d27a597a62645f152a8d28108e
               </li>
           </ul>}
       </div>
