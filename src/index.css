@@ -57,6 +57,7 @@ h5 {
 
 .navbar-logo{
   width: 6rem;
+  margin-top: 10px;
 }
 
 .front-logo{
@@ -107,23 +108,47 @@ h5 {
   background: #002446!important;
   text-align: left;
   padding-bottom: 0.1rem;
-
+  
 }
 
+
 .navbar-toggler {
-  width: 100%;
-  padding-top: 1rem;
-  display:inline-flex;
+  display: flex;
+  flex-direction: column;
+  width: 30px;
+  height: 30px;
+  background-color:#002446;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
   justify-content: space-between;
-  line-height: 1rem;
+}
+
+.navbar-toggler-button {
+  display: flex;
+  flex-direction: column;
+  height: 24px;
+  width: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: space-around;
+}
+
+.navbar-toggler-button:focus{
+  outline: none;
+}
+
+.icon-bar {
+	width: 20px; 
+  height: 2px;
+  background-color: #ffffff;
 }
 
 .navbar-brand{
   padding: 0% 5%; 
 }
-
-
-
 .navbar-nav li {
   padding-right: .8rem;
   list-style-type: none;
