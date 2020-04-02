@@ -25,6 +25,7 @@ class DropDownMenu extends Component {
     const{listOpen, headerTitle} = this.state
     return(
       <div className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+
         <a class="navbar-brand" href="/index">
           <img class="navbar-logo" src={ require("./img/white_logo.png")} alt="Dagen@ifi logo"/>
         </a>
@@ -34,21 +35,22 @@ class DropDownMenu extends Component {
           <span class="icon-bar"></span>	
         </button>
 
+
         {listOpen && <ul className="collapse navbar-collapse navbar-nav ml-auto" id="navbarResponsive">
               <li class="nav-item">
                 <Link class="nav-link" to="/program">Program</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="dagenifjor">Dagen@ifi i fjor</a>
+                <Link class="nav-link" to="/dagenifjor">Dagen@ifi i fjor</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="bedrifter">For bedrifter</a>
+                <Link class="nav-link" to="/bedrift">For bedrifter</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="frivillig">Bli frivillig</a>
+                <Link class="nav-link" to="/frivillig">Bli frivillig</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="kontakt">Kontakt / om oss</a>
+                <Link class="nav-link" to="/kontakt">Kontakt / om oss</Link>
               </li>
           </ul>}
       </div>
