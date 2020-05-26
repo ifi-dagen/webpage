@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
+import './bedrift.css';
+
 //import Layout from './Layout'
 //import Routes from "./App-routes";
 
 class Bedrift extends Component {
   render(){
     return (
-      <div>
+      <div class="bedriftbase ">
         <div class ="påmeldingsinfo">
           <h1>PÅMELDING ER ÅPEN</h1>
           <p>
@@ -26,7 +28,14 @@ class Bedrift extends Component {
           </p>
         </div>
         <div class ="mailingliste">
-          <h1>BEDRIFT - mailingliste</h1>
+          <h1>MAILINGLISTE - null backend atm</h1>
+          <div class="form-group">
+            <label for="exampleInputEmail1">
+              <p>Påmelding</p>
+            </label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skriv e-postadresse her..." />
+              <a class="btn btn-lg btn-header btn_bedrift" href="#?">Meld din interesse</a>
+          </div>
         </div>
 
         <div class ="arr_beskrivelse">
@@ -42,34 +51,29 @@ class Bedrift extends Component {
 						sendt ut som informasjon på e-post nærmere fristen for å besvare. Viktigste er at dere
 						registrerer dere under påmeldingskjema om dere ønsker å delta i år.
 					</p>
-          <span class="blue">Påmeldingsfristen er mandag 1.juli.</span>
-          <div class="form-group">
-            <label for="exampleInputEmail1">
-              <h5>Påmelding</h5>
-            </label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skriv e-postadresse her..." />
-              <a class="btn btn-lg btn-header btn_bedrift" href="#?">Meld din interesse</a>
-          </div>
+          <span class="blue">Påmeldingsfristen er mandag 1.juli. **Sett inn link her***</span>
 				</div>
 
         <div class ="hovedsponsor_beskrivelse">
-          <h1>BEDRIFT - beskrivelse av hovedsponsor</h1>
+          <h1>HOVEDSPONSOR</h1>
+          <p>beskrive hva som inngår i avtalen, evt søke knapp</p>
         </div>
         <div class ="kontaktinfo">
-          <h1>BEDRIFT - kontaktinfo & faq</h1>
-          <p>klasse av Kontaktinfo med roller="bedrift faglig"</p>
+          <h1>SPØRSMÅL?</h1>
+          <p>***lage Kontaktinfo-kort, bruke samme her og på kontaktsiden, her trengs bedriftansvarlig og fagligansvarlig***</p>
 
         </div>
         <div class ="priser">
-          <h1>BEDRIFT - priser og pakker</h1>
-          <div class="row">
-    				<h2 class="svart_overskrift_innrykk">Stand-pakker for <font color="#08A6E4">dagen@ifi</font> (arrangeres
+          <h1>PRISER OG PAKKER</h1>
+          <p>info om pakker, i år kan vi droppe v-boksene-v</p>
+          <div class="row ">
+    				<h2> Stand-pakker for <font color="#08A6E4">dagen@ifi</font> (arrangeres
     					på høsten)</h2>
     			</div>
 
-    			<div class="row">
+    			<div class="row ">
 
-    				<div id="stand_pakke_venstre" class="col-lg-3 stand_pakke stand_pakke_1">
+    				<div class="col-lg-3 stand_pakke stand_pakke_1">
     					<div class="stand_pakke_inner">
     						<h2 class="svart_overskrift">STANDPLASS</h2>
     						<h5 class="blue">pris: 35 000,-</h5>
