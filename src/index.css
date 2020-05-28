@@ -363,69 +363,6 @@ iframe {
 }
 
 
-/*--- FOR BEDRIFTER ----------------------------------------------------------*/
-#bedriftinfo .col-xl-3 {
-  margin-right: 3%;
-}
-#stand_pakke_venstre {
-  margin-left: 9.4%;
-}
-#sporsmal .col-lg-3 {
-  width: 85%;
-}
-.btn_bedrift {
-  margin: 1rem 1rem 0 0;
-}
-.foredrag_bilde {
-  background-image: url("./img/foredrag_bilde.jpg");
-}
-.stand_pakke {
-  margin: 2%;
-  border: solid;
-  border-radius: 12px;
-  border-color: #08A6E4!important;
-}
-.stand_pakke_1 {
-  border-width: 1px;
-}
-.stand_pakke_2 {
-  border-width: 2px;
-}
-.stand_pakke_3 {
-  border-width: 3px;
-}
-.stand_pakke_inner {
-  padding: 8% 8% 10%;
-}
-.padding-top {
-  padding-top: 2rem;
-}
-@media (max-width: 1200px) {
-  #bedriftinfo .col-xl-3 {
-    margin-left: 8.3%;
-    width: 80%;
-  }
-  #standpakker h2 {
-    font-size: 1.5rem;
-  }
-  .stand_pakke_inner {
-    padding: 3% 7% 3%;
-  }
-}
-@media (max-width: 992px) {
-  #stand_pakke_venstre {
-    margin-left: 2%;
-  }
-  .stand_pakke_inner {
-    padding: 3% 7% 3%;
-  }
-}
-@media (max-width: 767.98px) {
-  .foredrag_bilde {
-    margin-left: 0%;
-  }
-}
-
 /*--- BLI FRIVILLIG ----------------------------------------------------------*/
 #interngrupper img {
   padding-bottom: 1.5rem;
