@@ -108,7 +108,7 @@ h5 {
   background: #002446!important;
   text-align: left;
   padding-bottom: 0.1rem;
-  
+
 }
 
 
@@ -141,13 +141,13 @@ h5 {
 }
 
 .icon-bar {
-	width: 20px; 
+	width: 20px;
   height: 2px;
   background-color: #ffffff;
 }
 
 .navbar-brand{
-  padding: 0% 5%; 
+  padding: 0% 5%;
 }
 .navbar-nav li {
   padding-right: .8rem;
@@ -401,31 +401,6 @@ iframe {
   }
   .styremedlem_bilde {
     height: auto;
-  }
-}
-/*--- KONTAKT/OM OSS SIDEN ---------------------------------------------------*/
-#styret {
-  background-color: #F1F1F1;
-  margin: 6rem 0 0;
-  padding: 2rem 0 6rem 0;
-}
-#styret img {
-  width: 30%;
-  min-width: 120px;
-}
-#styret b {
-  font-size: 1.3rem;
-}
-.om_oss_bilde {
-  background-image: url("./img/ettermidagen_at_ifi-0480.jpg");
-}
-@media (max-width: 767.98px) {
-  .om_oss_bilde{
-    margin-left: 0%;
-  }
-  .col-md-2 {
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }
 

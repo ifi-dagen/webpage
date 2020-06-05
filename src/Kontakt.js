@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css';
+import './kontakt.css';
 //import Layout from './Layout'
 //import Routes from "./App-routes";
 //import logo from '../img/normal_logo.png'; // with import
@@ -8,36 +9,23 @@ import './index.css';
 class Kontakt extends Component {
   render() {
     return (
-      <div>
-        <div id="banner-kontakt" class="banner-header parallax">
-          <div class="container">
-            <div class="row">
-              <div class="col-md text-center banner-overskrift">
-                kontakt / om oss
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="kontaktbase">
 
         <div id="om-dagen" class="container-fluid hvit-bg">
           <div class="row">
-
-            <div class="col-md-4 offset-1">
-              <h2 class="svart_overskrift">om dagen</h2>
-              <p>
-                <br/>Dagen er en frivillig studentforening ved Institutt for Informatikk, UiO, som arrangerer to
-                karrieredager i året. I høstsemesteret arrangeres dagen@ifi, og i vårsemesteret arrangeres
-                ettermiddagen@ifi, begge finner sted på Ole Johan Dahls hus.
-              </p>
-              <p>
-                En flott arena for studenter å møte bedrifter og se hva slags muligheter man har i arbeidslivet
-                med en utdannelse innen informatikk, og det er en flott arena for bedrifter å markedsføre seg
-                selv til informatikkstudenter over alle trinn.
-              </p>
-            </div>
-
-            <div class="col-md offset-1 col_bilde om_oss_bilde" >
-            </div>
+          <div class="intro col-md-4 offset-2 ">
+            <h2 class="svart_overskrift">om dagen</h2>
+            <p>
+              <br/>Dagen er en frivillig studentforening ved Institutt for Informatikk, UiO, som arrangerer to
+              karrieredager i året. I høstsemesteret arrangeres dagen@ifi, og i vårsemesteret arrangeres
+              ettermiddagen@ifi, begge finner sted på Ole Johan Dahls hus.
+            </p>
+            <p>
+              En flott arena for studenter å møte bedrifter og se hva slags muligheter man har i arbeidslivet
+              med en utdannelse innen informatikk, og det er en flott arena for bedrifter å markedsføre seg
+              selv til informatikkstudenter over alle trinn.
+            </p>
+          </div>
 
           </div>
         </div>
@@ -45,7 +33,7 @@ class Kontakt extends Component {
         <div id="kontakt" class="container-fluid">
           <div class="row">
 
-            <div class="col-md-5 offset-1">
+            <div class="adresse col-md-4 offset-1">
 
               <h2 class="svart_overskrift">Kontakt</h2>
               <h5>Du finner oss på institutt for informatikk ved UiO</h5>
@@ -90,9 +78,9 @@ class Kontakt extends Component {
 
         <div id="styret" class="container-fluid">
 
-          <h2 class="svart_overskrift blue text-center"><br/>Styret 2019</h2>
+          <h2 class="svart_overskrift blue text-center"><br/>Styret 2020 -  hent infoen her fra en json elns.</h2>
 
-          <div class="row">
+          <div class="row styret">
 
             <div class="col-md text-center">
               <img src={require("./img/obama.png")} alt="Obama"/>
@@ -117,7 +105,7 @@ class Kontakt extends Component {
 
           </div>
 
-          <div class="row">
+          <div class="row styret">
 
             <div class="col-md text-center">
             <img src={require("./img/obama.png")} alt="Obama"/>
@@ -142,7 +130,7 @@ class Kontakt extends Component {
 
           </div>
 
-          <div class="row">
+          <div class="row styret">
 
             <div class="col-md text-center">
             <img src={require("./img/obama.png")} alt="Obama"/>
@@ -168,7 +156,7 @@ class Kontakt extends Component {
 
           </div>
 
-          <div class="row">
+          <div class="row styret">
 
             <div class="col-md text-center">
             <img src={require("./img/obama.png")} alt="Obama"/>
