@@ -17,6 +17,9 @@ h1{
 .påmeldingsinfo{
   text-align: left;
 }
+.mailingliste{
+  margin-bottom: 5%;
+}
 .btn_bedrift {
   margin: 1rem 1rem 0 0;
 }
@@ -53,6 +56,13 @@ h1{
 .hidden{
   visibility: hidden;
   display: none;
+}
+.styret img {
+  width: 30%;
+  min-width: 120px;
+}
+.row{
+  display: flex;
 }
 
 @media (max-width: 1200px) {

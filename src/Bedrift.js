@@ -28,11 +28,8 @@ class Bedrift extends Component {
           </p>
         </div>
         <div class ="mailingliste">
-          <h1>MAILINGLISTE - null backend atm</h1>
+          <h1>MAILINGLISTE - null backend atm!</h1>
           <div class="form-group">
-            <label for="exampleInputEmail1">
-              <p>Påmelding</p>
-            </label>
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skriv e-postadresse her..." />
               <a class="btn btn-lg btn-header btn_bedrift" href="#?">Meld din interesse</a>
           </div>
@@ -60,15 +57,27 @@ class Bedrift extends Component {
         </div>
         <div class ="kontaktinfo">
           <h1>SPØRSMÅL?</h1>
-          <p>***lage Kontaktinfo-kort, bruke samme her og på kontaktsiden, her trengs bedriftansvarlig og fagligansvarlig***</p>
+          <div class="row styret">
+            <div class="col-md text-center">
+              <img src={require("./img/obama.png")} alt="Obama"/>
+              <br/><br/><b>Bedriftansvarlig</b>
+              <br/>Lise
+              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
+            </div>
+            <div class="col-md text-center">
+              <img src={require("./img/obama.png")} alt="Obama"/>
+              <br/><br/><b>Fagligansvarlig</b>
+              <br/>Henrik
+              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
+            </div>
+          </div>
 
         </div>
         <div class ="priser">
           <h1>PRISER OG PAKKER</h1>
           <p>info om pakker, i år kan vi droppe v-boksene-v</p>
           <div class="row ">
-    				<h2> Stand-pakker for <font color="#08A6E4">dagen@ifi</font> (arrangeres
-    					på høsten)</h2>
+    				<h2> Stand-pakker for <font color="#08A6E4">dagen@ifi</font> </h2>
     			</div>
 
     			<div class="row ">
