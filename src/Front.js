@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Sponsor from './Sponsor';
-//import Layout from './Layout';
+import './index.css';
+import './kontakt.css'
 //import Routes from "./App-routes";
 //import logo from '../img/normal_logo.png'; // with import
 
@@ -26,7 +27,7 @@ class Front extends Component {
 
         <div id="info" class="container-fluid hvit-bg">
           <div class="row">
-            <div class="col-md-5 offset-1">
+            <div class="col-md-4 offset-1 ">
               <h2 class="svart_overskrift">Hva er dagen@ifi?</h2>
               <p>
                 En flott arena for studenter å møte bedrifter og se hva slags muligheter man har i arbeidslivet med
@@ -40,7 +41,7 @@ class Front extends Component {
               </p>
             </div>
 
-            <div class="col-md-5 hvor_og_naar">
+            <div class="col-md-4 hvor_og_naar">
               <h2 class="svart_overskrift">Hvor og når?</h2>
               <p>
                 <h5>Du finner oss på institutt for informatikk ved UiO:</h5>

@@ -108,9 +108,23 @@ h5 {
   background: #002446!important;
   text-align: left;
   padding-bottom: 0.1rem;
-
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  margin-bottom: 3rem;
 }
 
+.navbar-shadow {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .8rem;
+  line-height: 2.5rem;
+  letter-spacing: .1rem;
+  background: #002446!important;
+  text-align: left;
+  padding-bottom: 0.1rem;
+  width: 100%;
+}
 
 .navbar-toggler {
   display: flex;
@@ -205,11 +219,14 @@ h5 {
 /*--- Info Section --*/
 .hvor_og_naar {
   margin-left: 3%;
+  width: 100%;
 }
 /*--- Hovedsponsor Section --*/
 .politi_bilde {
   background-image: url("./img/hovedsponsor.jpg");
   background-position: right;
+  width: 100%;
+
 }
 /*--- Footer Section --*/
 #footer {

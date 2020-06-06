@@ -14,7 +14,7 @@ class DropDownMenu extends Component {
       listOpen: false
     })
   }
-  toggleList(){ 
+  toggleList(){
     this.setState(prevState => ({
       listOpen: !prevState.listOpen
     }))
@@ -24,6 +24,7 @@ class DropDownMenu extends Component {
     const{list} = this.props
     const{listOpen, headerTitle} = this.state
     return(
+      <div>
       <div className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
 
         <a class="navbar-brand" href="/index">
@@ -32,7 +33,7 @@ class DropDownMenu extends Component {
         <button type="button" class="navbar-toggler-button" data-toggle="collapse" data-target="#navbarResponsive" onClick={() => this.toggleList()}>
           <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
-          <span class="icon-bar"></span>	
+          <span class="icon-bar"></span>
         </button>
 
 
@@ -53,6 +54,17 @@ class DropDownMenu extends Component {
                 <Link class="nav-link" to="/kontakt">Kontakt / om oss</Link>
               </li>
           </ul>}
+      </div>
+      <div class="navbar-shadow">
+        <a class="navbar-brand" href="/index">
+          <img class="navbar-logo" src={ require("./img/white_logo.png")} alt="Dagen@ifi logo"/>
+        </a>
+        <button type="button" class="navbar-toggler-button" data-toggle="collapse" data-target="#navbarResponsive" onClick={() => this.toggleList()}>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
       </div>
     );
   }
