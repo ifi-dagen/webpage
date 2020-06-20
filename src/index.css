@@ -64,6 +64,11 @@ h5 {
   width: 50%;
 }
 
+.hidden{
+  visibility: hidden;
+  display: none;
+}
+
 /*--- Felles header til undersider -------------------------------------------*/
 .banner-header {
   background-image: url("/img/ettermidagen_at_ifi-0362.jpg");
@@ -175,123 +180,6 @@ h5 {
 .navbar-dark .navbar-nav .nav-link:hover {
   color: #08A6E4!important;
 }
-/*--- Landing Page --*/
-#banner {
-  max-height: 1000px;
-  background-image: url("./img/bg_1.png");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 13rem 0 16%;
-}
-.caption h1 {
-  font-size: 3.8rem;
-  font-weight: 700;
-  padding: 1rem 1.5rem 0rem;
-  color: white;
-}
-.caption h2 {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #ACACAC;
-}
-.caption h3 {
-  font-size: 1.3rem;
-  font-weight: 500;
-  letter-spacing: .02rem;
-  color: #ACACAC;
-  padding-bottom: 1.5rem;
-}
-.btn-lg {
-  border-width: medium;
-  border-radius: 20px;
-  padding: .4rem 1.8rem;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  background-color: #08A6E4;
-  color: white;
-  text-decoration: none;
-}
-.btn-lg:hover {
-  background-color: #005BB7;
-  color: white;
-}
-/*--- Info Section --*/
-.hvor_og_naar {
-  margin-left: 3%;
-  width: 100%;
-}
-/*--- Hovedsponsor Section --*/
-.politi_bilde {
-  background-image: url("./img/hovedsponsor.jpg");
-  background-position: right;
-  width: 100%;
-
-}
-/*--- Footer Section --*/
-#footer {
-  padding-top: 1rem;
-  min-height: 10rem;
-  text-align: center;
-  background-color: #13253B;
-  color: white;
-}
-#footer a {
-  color: white;
-  text-decoration: none;
-}
-#footer a:hover {
-  color: #08A6E4!important;
-  text-decoration: none;
-}
-.footer_bilde {
-  background: url("./img/ettermidagen_at_ifi-0480.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-}
-@media (max-width: 1200px) {
-  #banner {
-    padding: 14% 0 16%;
-  }
-  .caption h1 {
-    font-size: 3rem;
-  }
-  .caption h2 {
-    font-size: 3rem;
-  }
-}
-@media (max-width: 992px) {
-  .caption h1 {
-    font-size: 2.6rem;
-  }
-  .caption h2 {
-    font-size: 2.6rem;
-  }
-}
-@media (max-width: 767.98px) {
-  .btn-lg {
-    font-size: 0.9rem;
-  }
-  .hvor_og_naar {
-    margin-left: 8.4%;
-  }
-  .politi_bilde{
-    margin-left: 0%;
-  }
-  #sponsor img {
-    width: 40%;
-  }
-}
-@media (max-width: 575.98px) {
-  .caption h1 {
-    font-size: 2.2rem;
-  }
-  .caption h2 {
-    font-size: 1.8rem;
-  }
-}
-
 /*--- PROGRAM ----------------------------------------------------------------*/
 #foredrag .row {
   padding: 1.5%;
