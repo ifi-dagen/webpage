@@ -12,6 +12,7 @@
 }
 h1{
   text-transform: capitalize;
+  margin: 6% 0% 1% 0%;
 }
 
 .påmeldingsinfo{
@@ -19,6 +20,9 @@ h1{
 }
 .mailingliste{
   margin-bottom: 5%;
+}
+.kontaktinfo h1{
+  padding: 0%;
 }
 .btn_bedrift {
   margin: 1rem 1rem 0 0;
@@ -57,6 +61,13 @@ h1{
   visibility: hidden;
   display: none;
 }
+.styret{
+  background-color: #F1F1F1;
+  margin: 3rem 0 0;
+  padding: 2rem 0 6rem 0;
+  justify-content: space-around;
+  width: 100%;
+}
 .styret img {
   width: 30%;
   min-width: 120px;
@@ -64,6 +75,22 @@ h1{
 .row{
   display: flex;
 }
+.container-fluid{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0%;
+  margin: 0%;
+}
+
+.Visitkort{
+  min-width: 120px;
+  max-width: 250px;
+  flex: initial;
+  padding: 5% 2%;
+  font-weight: 200;
+}
+
 
 @media (max-width: 1200px) {
   #bedriftinfo .col-xl-3 {
