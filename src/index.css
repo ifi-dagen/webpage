@@ -2,6 +2,7 @@
 body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
   color: #505962;
   margin: 0;
   padding: 0;
@@ -26,6 +27,7 @@ h5 {
   color: black;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  font-weight: 400;
 }
 .svart_overskrift_innrykk {
   color: black;

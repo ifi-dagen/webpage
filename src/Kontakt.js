@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import './kontakt.css';
-//import Layout from './Layout'
+import Visitkort from './Visitkort'
 //import Routes from "./App-routes";
 //import logo from '../img/normal_logo.png'; // with import
 
@@ -11,7 +11,7 @@ class Kontakt extends Component {
     return (
       <div class="kontaktbase">
 
-        <div id="om-dagen" class="container-fluid hvit-bg">
+        <div id="om-dagen" class="container-fluid">
           <div class="row">
           <div class="intro col-md-4 offset-2 ">
             <h2 class="svart_overskrift">om dagen</h2>
@@ -75,104 +75,22 @@ class Kontakt extends Component {
           </div>
         </div>
 
-
-        <div id="styret" class="container-fluid">
-
-          <h2 class="svart_overskrift blue text-center"><br/>Styret 2020 -  hent infoen her fra en json elns.</h2>
-
-          <div class="row styret">
-
-            <div class="col-md text-center">
-              <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
+        <div id="styret">
+          <div class="text-center">
+            <h2 class="svart_overskrift blue"><br/>Styret 2020</h2>
           </div>
-
-          <div class="row styret">
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-          </div>
-
-          <div class="row styret">
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-
-          </div>
-
-          <div class="row styret">
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-
-            <div class="col-md text-center"></div>
-
-            <div class="col-md text-center">
-            <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>STYRELEDER</b>
-              <br/>Kari Eldfrid Stamnes
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
+          <div class="styret container-fluid">
+            <Visitkort rolle="LEDER" epost="leder" navn="Lea Nøstdahl"/>
+            <Visitkort rolle="NESTLEDER" epost="nestleder" navn="Silje Marie Flaaten"/>
+            <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø"/>
+            <Visitkort rolle="ØKONOMIANSVARLIG" epost="okonomi" navn="Jonas Roppestad Olsen"/>
+            <Visitkort rolle="PROMOTERINGSANSVARLIG" epost="promotering" navn="Jørgen Skimmeland"/>
+            <Visitkort rolle="PROMOTERINGSANSVARLIG" epost="promotering" navn="Camilla Christensen"/>
+            <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik"/>
+            <Visitkort rolle="FUNKANSVARLIG" epost="funkansvarlig" navn="Burhan Sarfraz"/>
+            <Visitkort rolle="UNDERHOLDNINGSANSVARLIG" epost="underholdning" navn="Thea Aksdal Nordgulen "/>
+            <Visitkort rolle="SOSIALT ANSVARLIG" epost="sosialt" navn="Nora Vestavik Klingvall"/>
+            <Visitkort rolle="TEKNISK ANSVARLIG" epost="teknisk" navn="Kari Stamnes"/>
           </div>
         </div>
 
