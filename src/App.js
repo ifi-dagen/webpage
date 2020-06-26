@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './index.css';
 import Layout from './Layout';
 import Routes from "./App-routes";
+
+
 //import Front from './Front';
 //import Sponsor from './Sponsor';
 
@@ -11,12 +13,12 @@ import Routes from "./App-routes";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { };
+    this.state = {};
   }
 
   componentDidMount() {
     if (window.location.hostname === "localehost") {
-      this.setState({ }); //mockdata
+      this.setState({}); //mockdata
     } else {
       //hent data
     }
@@ -26,7 +28,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout>
-          <Routes/>
+          <Routes />
         </Layout>
       </div>
     );

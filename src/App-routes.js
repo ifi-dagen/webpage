@@ -15,7 +15,7 @@ class Routes extends Component {
         <Route
           exact
           path="/"
-          render={prop => <Front/>}
+          render={prop => <Front />}
         />
         <Route
           path="/kontakt"
