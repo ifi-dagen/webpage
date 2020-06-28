@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import './index.css';
 import Footer from './footer';
+import Header from './header';
 
 class DropDownMenu extends Component {
   constructor(props) {
@@ -75,7 +76,7 @@ class DropDownMenu extends Component {
 function Layout(props) {
   return (
     <div>
-      <DropDownMenu />
+      <Header />
       <div id="main"> {props.children} </div>
       <div class="container-fluid col_bilde footer_bilde"></div>
       <Footer className="Footer" />
