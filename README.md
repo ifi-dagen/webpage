@@ -1,4 +1,4 @@
-sneakpeak [deploied through netlify](https://peaceful-thompson-8b508e.netlify.com/)! prototyper til [inspirasjon](https://xd.adobe.com/view/0043ce06-0b46-49be-4d1c-76fd48e51043-7672/) og [prosjekttavle](https://github.com/orgs/ifi-dagen/projects/1) for utvikling.
+sneakpeak [deploied through netlify](dagenatifi.netlify.app)! prototyper til [inspirasjon](https://xd.adobe.com/view/0043ce06-0b46-49be-4d1c-76fd48e51043-7672/) og [prosjekttavle](https://github.com/orgs/ifi-dagen/projects/1) for utvikling.
 
 Første bygg lokalt
 1. [clone repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
