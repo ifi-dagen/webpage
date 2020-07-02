@@ -10,7 +10,6 @@ class Visitkort extends Component {
 
   render() {
     var epost = this.props.epost+"@dagenatifi.no";
-    var bilde = "./img/styret/"+this.props.navn.replace(/\s/g, '')+".png"; //"./img/"+
     try {
       return (
           <div className="Visitkort">
