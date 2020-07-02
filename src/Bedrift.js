@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import './bedrift.css';
+import Visitkort from './Visitkort'
+
 
 //import Layout from './Layout'
 //import Routes from "./App-routes";
@@ -57,21 +59,10 @@ class Bedrift extends Component {
         </div>
         <div class ="kontaktinfo">
           <h1>SPØRSMÅL?</h1>
-          <div class="row styret">
-            <div class="col-md text-center">
-              <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>Bedriftansvarlig</b>
-              <br/>Lise
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
-            <div class="col-md text-center">
-              <img src={require("./img/obama.png")} alt="Obama"/>
-              <br/><br/><b>Fagligansvarlig</b>
-              <br/>Henrik
-              <br/><a href="mailto:leder@dagenatifi.no">leder@dagenatifi.no</a>
-            </div>
+          <div class="styret container-fluid">
+            <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø"/>
+            <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik"/>
           </div>
-
         </div>
         <div class ="priser">
           <h1>PRISER OG PAKKER</h1>

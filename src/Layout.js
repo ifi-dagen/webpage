@@ -21,51 +21,50 @@ class DropDownMenu extends Component {
     }))
   }
 
-  render() {
-    const { list } = this.props
-    const { listOpen, headerTitle } = this.state
-    return (
+  render(){
+    const{listOpen} = this.state;
+    return(
       <div>
-        <div className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+      <div className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
 
-          <a class="navbar-brand" href="/index">
-            <img class="navbar-logo" src={require("./img/white_logo.png")} alt="Dagen@ifi logo" />
-          </a>
-          <button type="button" class="navbar-toggler-button" data-toggle="collapse" data-target="#navbarResponsive" onClick={() => this.toggleList()}>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <a className="navbar-brand" href="/index">
+          <img className="navbar-logo" src={ require("./img/white_logo.png")} alt="Dagen@ifi logo"/>
+        </a>
+        <button type="button" className="navbar-toggler-button" data-toggle="collapse" data-target="#navbarResponsive" onClick={() => this.toggleList()}>
+          <span className="icon-bar"></span>
+	        <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
 
 
-          {listOpen && <ul className="collapse navbar-collapse navbar-nav ml-auto" id="navbarResponsive">
-            <li class="nav-item">
-              <Link class="nav-link" to="/program">Program</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/dagenifjor">Dagen@ifi i fjor</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/bedrift">For bedrifter</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/frivillig">Bli frivillig</Link>
-            </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/kontakt">Kontakt / om oss</Link>
-            </li>
+        {listOpen && <ul className="collapse navbar-collapse navbar-nav ml-auto" id="navbarResponsive">
+              <li className="nav-item">
+                <Link className="nav-link" to="/program">Program</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/dagenifjor">Dagen@ifi i fjor</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/bedrift">For bedrifter</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/frivillig">Bli frivillig</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/kontakt">Kontakt / om oss</Link>
+              </li>
           </ul>}
-        </div>
-        <div class="navbar-shadow">
-          <a class="navbar-brand" href="/index">
-            <img class="navbar-logo" src={require("./img/white_logo.png")} alt="Dagen@ifi logo" />
-          </a>
-          <button type="button" class="navbar-toggler-button" data-toggle="collapse" data-target="#navbarResponsive" onClick={() => this.toggleList()}>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
+      </div>
+      <div className="navbar-shadow">
+        <a className="navbar-brand" href="/index">
+          <img className="navbar-logo" src={ require("./img/white_logo.png")} alt="Dagen@ifi logo"/>
+        </a>
+        <button type="button" className="navbar-toggler-button" data-toggle="collapse" data-target="#navbarResponsive" onClick={() => this.toggleList()}>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+          <span className="icon-bar"></span>
+        </button>
+      </div>
       </div>
     );
   }
