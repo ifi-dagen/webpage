@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import './index.css';
+import Footer from './footer';
 
 class DropDownMenu extends Component {
-  constructor(props){
+  constructor(props) {
     super(props)
     this.state = {
       listOpen: false
     }
   }
-  handleClickOutside(){
+  handleClickOutside() {
     this.setState({
       listOpen: false
     })
   }
-  toggleList(){
+  toggleList() {
     this.setState(prevState => ({
       listOpen: !prevState.listOpen
     }))
@@ -70,51 +71,15 @@ class DropDownMenu extends Component {
 
 }
 
-
-function Layout(props){
-  return(
-      <div>
-        <DropDownMenu/>
-        <div id="main">
-              {props.children}
-        </div>
-      	<div className="container-fluid col_bilde footer_bilde">
-      		<div className="row">
-      		</div>
-      	</div>
-
-      	<div id="footer" className="container-fluid">
-      		<div className="row">
-
-      			<div className="col-md-3">
-      				<br/> dagen@ifi
-      			</div>
-
-      			<div className="col-md">
-      			</div>
-
-      			<div className="col-md-5">
-
-      				<div className="row">
-
-      					<div className="col-md">
-      						<a href="#https://www.facebook.com/dagenatifi"><i className="fab fa-facebook-square fa-2x"></i></a>
-      						<br/><a href="#https://www.facebook.com/dagenatifi">dagenatifi</a>
-      					</div>
-      					<div className="col-md">
-      						<a href="#https://www.instagram.com/dagenatifi/"><i className="fab fa-instagram fa-2x"></i></a>
-      						<br/><a href="#https://www.instagram.com/dagenatifi/">@dagenatifi</a>
-      					</div>
-
-      				</div>
-
-      			</div>
-
-      		</div>
-      	</div>
-      </div>
-    );
-  }
-
+function Layout(props) {
+  return (
+    <div>
+      <DropDownMenu />
+      <div id="main"> {props.children} </div>
+      <div class="container-fluid col_bilde footer_bilde"></div>
+      <Footer className="Footer" />
+    </div>
+  );
+}
 
 export default Layout;
