@@ -39,7 +39,7 @@ const Icon = styled.i`
   transition: color 0.25s;
 
   ${Link}:hover & {
-    color: #08A6E4;
+    color: deepskyblue;
   }
 `;
 
