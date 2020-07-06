@@ -39,7 +39,6 @@ const StyledMenu = styled.nav`
   }
 
   
-
   a {
     font-size: 1rem;
     text-transform: uppercase;
@@ -63,7 +62,6 @@ const StyledMenu = styled.nav`
         outline: thin dotted;
     }
     }
-  }
-`;
+`
 
 export default Meny;
