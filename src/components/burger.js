@@ -13,12 +13,13 @@ const Burger = ({ open, setOpen, ...props }) => {
         </StyledBurger>
     )
 
-    Burger.propTypes = {
+   
+}
+
+ Burger.propTypes = {
         open: bool.isRequired,
         setOpen: func.isRequired,
     };
-}
-
 
 const StyledBurger = styled.button`
     position: absolute;
