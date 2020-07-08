@@ -14,11 +14,12 @@ const Meny = ({ open, ...props }) => {
         </StyledMenu>
     )
 
-    Meny.propTypes = {
-        open: bool.isRequired,
-    }
+    
 }
 
+Meny.propTypes = {
+        open: bool.isRequired,
+    }
 
 const StyledMenu = styled.nav`
   display: flex;
