@@ -7,12 +7,12 @@
   width: 85%;
 }
 .bedriftbase{
-  margin: 0 20% 0 20%;
+  margin: 0 20% 5% 20%;
   text-align: left;
 }
 h1{
   text-transform: capitalize;
-  margin: 6% 0% 1% 0%;
+  margin: 6% 0 1% 0;
 }
 
 .påmeldingsinfo{
@@ -22,7 +22,7 @@ h1{
   margin-bottom: 5%;
 }
 .kontaktinfo h1{
-  padding: 0%;
+  padding: 0;
 }
 .btn_bedrift {
   margin: 1rem 1rem 0 0;
@@ -79,8 +79,8 @@ h1{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 
 .Visitkort{
@@ -114,6 +114,6 @@ h1{
 }
 @media (max-width: 767.98px) {
   .foredrag_bilde {
-    margin-left: 0%;
+    margin-left: 0;
   }
 }
