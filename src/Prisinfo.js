@@ -3,9 +3,6 @@ import './App.css';
 import './bedrift.css';
 
 export default class Prisinfo extends Component{
-    constructor(props) {
-        super(props);
-    }
     render() {
         if (this.props.className === "hidden") {
             return (<div className="priser_kommer_her"/>);

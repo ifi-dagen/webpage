@@ -23,7 +23,7 @@ function Layout(props) {
         <Meny open={open} setOpen={setOpen} id={menuId} />
       </div>
       <div id="main"> {props.children} </div>
-      <div class="container-fluid col_bilde footer_bilde"></div>
+      <div className="container-fluid col_bilde footer_bilde"></div>
       <Footer className="Footer" />
     </div>
   );
