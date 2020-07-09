@@ -13,8 +13,8 @@ class Visitkort extends Component {
     try {
       return (
           <div className="Visitkort">
-            <img class="round" src={require("./img/styret/"+this.props.navn.replace(/\s/g, '')+".png")} alt="Bilde av personen"/>
-            <br/><br/><b class="blue light-font">{this.props.rolle}</b>
+            <img className="round" src={require("./img/styret/"+this.props.navn.replace(/\s/g, '')+".png")} alt="Bilde av personen"/>
+            <br/><br/><b className="blue light-font">{this.props.rolle}</b>
             <br/>{this.props.navn}
             <br/><a href={"mailto:"+epost}>{epost}</a>
           </div>
@@ -23,8 +23,8 @@ class Visitkort extends Component {
     catch(err){
       return (
         <div className="Visitkort">
-          <img class="round" src={require("./img/styret/Placeholder.png")} alt="Manglende bilde av personen"/>
-          <br/><br/><b class="blue light-font">{this.props.rolle}</b>
+          <img className="round" src={require("./img/styret/Placeholder.png")} alt="Manglende bilde av personen"/>
+          <br/><br/><b className="blue light-font">{this.props.rolle}</b>
           <br/>{this.props.navn}
           <br/><a href={"mailto:"+epost}>{epost}</a>
         </div>
