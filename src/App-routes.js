@@ -6,6 +6,7 @@ import Bedrift from "./Bedrift";
 import Frivillig from "./Frivillig";
 //import App from "./App.js";
 import Front from './Front';
+import Error from './Error';
 
 
 class Routes extends Component {
@@ -28,7 +29,7 @@ class Routes extends Component {
         />
         <Route
           exact
-          path="/bedrift"
+          path="/for-bedrift"
           render={prop => <Bedrift {...prop} store={this.props.store} />}
         />
         <Route
@@ -37,7 +38,7 @@ class Routes extends Component {
           render={prop => <Frivillig {...prop} store={this.props.store} />}
         />
         <Route
-          render={prop => <Front {...prop} store={this.props.store} />}
+          render={prop => <Error {...prop} store={this.props.store} />}
         />
       </Switch>
     );
