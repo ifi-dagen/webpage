@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import './kontakt.css';
-import Visitkort from './Visitkort'
+import Visitkort from './components/Visitkort'
 //import Routes from "./App-routes";
 //import logo from '../img/normal_logo.png'; // with import
 

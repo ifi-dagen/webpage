@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Sponsor from './Sponsor';
+import Sponsor from './components/Sponsor';
 import './front.css';
 
 //for implementasjon av datafetching, sjekk ut dagen-today
