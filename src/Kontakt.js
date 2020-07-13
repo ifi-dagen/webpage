@@ -16,7 +16,7 @@ class Kontakt extends Component {
           <div class="intro col-md-4 offset-2 ">
             <h2 class="svart_overskrift">om dagen</h2>
             <p>
-              <br/>Dagen er en frivillig studentforening ved Institutt for Informatikk, UiO, som arrangerer to
+              <br/>dagen er en frivillig studentforening ved Institutt for Informatikk, UiO, som arrangerer to
               karrieredager i året. I høstsemesteret arrangeres dagen@ifi, og i vårsemesteret arrangeres
               ettermiddagen@ifi, begge finner sted på Ole Johan Dahls hus.
             </p>

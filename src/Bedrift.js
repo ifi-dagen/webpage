@@ -52,9 +52,9 @@ export default class Bedrift extends Component {
                 </div>
 
                 <div className="arr_beskrivelse">
-                    <h5>Dagen@ifi vs. Ettermiddagen@ifi</h5>
+                    <h5>dagen@ifi vs. ettermiddagen@ifi</h5>
                     <p>
-                        I år blir dagen@ifi anderledes, men til vanlig er dagen@ifi den store karrieredagen vår tidlig på høsten med nettverkbygging fra morgen til kveld. Ettermiddagen@ifi er en litt mindre karriredag med nettverksbygging fra formiddag til kveld.
+                        I år blir dagen@ifi anderledes, men til vanlig er dagen@ifi den store karrieredagen vår tidlig på høsten med nettverkbygging fra morgen til kveld. ettermiddagen@ifi er en litt mindre karriredag med nettverksbygging fra formiddag til kveld.
                     </p>
                     <span className="blue">Påmelding og priser for ettermiddagen@ifi 2020 publiseres i januar/februar.</span>
                 </div>
