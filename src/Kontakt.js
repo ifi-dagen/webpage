@@ -67,9 +67,13 @@ class Kontakt extends Component {
             <div class="col-md-4 offset-1">
               <h2 class="svart_overskrift">Navet</h2>
               <h5>Lyst til å holdebedriftspresentasjon på IFI?</h5>
-              <br/>Navet er bedriftskontakten ved Institutt for Informatikk, Universitetet i Oslo. Les mer på om
+              Navet er bedriftskontakten ved Institutt for Informatikk, Universitetet i Oslo. Les mer på om
               presentasjoner, ekskursjoner, faglige foredrag og kursrekker her:
               <a href="https://ifinavet.no/forcompanies">Navets hjemmesider</a>
+              <h2 class="svart_overskrift">Karriereuka</h2>
+              <h5>I år sammarbeider vi med karriereuka på UiO</h5>
+              Karriereuka holdes 21.-23. September og blir også holdt digitalt.
+              <a href="https://www.uio.no/studier/karriere/karriereuka/">karriereuka hjemmesider hjemmesider</a>
             </div>
 
           </div>
