@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import './bedrift.css';
+import '../App.css';
+import '../bedrift.css';
 
 export default class Prisinfo extends Component{
     render() {

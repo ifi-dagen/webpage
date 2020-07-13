@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../App.css';
 //import Layout from './Layout';
 //import Routes from "./App-routes";
 //import logo from '../img/normal_logo.png'; // with import
@@ -14,7 +14,7 @@ class Sponsor extends Component {
 
             <div class="col-md-5 offset-1">
               <h2 class="svart_overskrift blue"><br/>HOVEDSPONSOR 2019</h2>
-              <img src={ require("./img/politiet.png")} alt="Politiets IKT-tjenester logo" />
+              <img src={ require("../img/politiet.png")} alt="Politiets IKT-tjenester logo" />
 
               <p>
                 <br/>En flott arena for studenter å møte bedrifter og se hva slags muligheter man har i arbeidslivet
@@ -46,15 +46,15 @@ class Sponsor extends Component {
           <div class="row">
 
             <div class="col-md-3 offset-1">
-              <img src={ require("./img/logo_1.png")} alt="Politiets IKT-tjenester logo"/>
+              <img src={ require("../img/logo_1.png")} alt="Politiets IKT-tjenester logo"/>
             </div>
 
             <div class="col-md-3 offset-1">
-              <img src={ require("./img/logo_2.jpg")} alt="Politiets IKT-tjenester logo"/>
+              <img src={ require("../img/logo_2.jpg")} alt="Politiets IKT-tjenester logo"/>
             </div>
 
             <div class="col-md-3 offset-1">
-              <img src={ require("./img/logo_3.png")} alt="Politiets IKT-tjenester logo"/>
+              <img src={ require("../img/logo_3.png")} alt="Politiets IKT-tjenester logo"/>
             </div>
 
           </div>
@@ -63,15 +63,15 @@ class Sponsor extends Component {
           <div class="row">
 
             <div class="col-md-3 offset-1">
-              <img src={ require("./img/logo_4.png")} alt="Politiets IKT-tjenester logo"/>
+              <img src={ require("../img/logo_4.png")} alt="Politiets IKT-tjenester logo"/>
             </div>
 
             <div class="col-md-3 offset-1">
-              <img src={ require("./img/logo_5.png")} alt="Politiets IKT-tjenester logo"/>
+              <img src={ require("../img/logo_5.png")} alt="Politiets IKT-tjenester logo"/>
             </div>
 
             <div class="col-md-3 offset-1">
-              <img src={ require("./img/logo_6.png")} alt="Politiets IKT-tjenester logo"/>
+              <img src={ require("../img/logo_6.png")} alt="Politiets IKT-tjenester logo"/>
             </div>
 
           </div>

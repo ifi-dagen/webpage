@@ -9,12 +9,12 @@ const Meny = ({ open, ...props }) => {
     return (
         <StyledMenu open={open} {...props}>
             <a href="/" tabIndex={tabIndex}> Hjem </a>
-            <a href="/bedrift" tabIndex={tabIndex}> For bedrifter </a>
+            <a href="/for-bedrift" tabIndex={tabIndex}> For bedrifter </a>
             <a href="/kontakt" tabIndex={tabIndex}> Om arrangøren </a>
         </StyledMenu>
     )
 
-    
+
 }
 
 Meny.propTypes = {
@@ -34,12 +34,12 @@ const StyledMenu = styled.nav`
   left: 0;
   transition: transform 0.3s ease-in-out;
   transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(-100%)'};
-  
+
   @media (max-width: 576px) {
-    width: 100%;    
+    width: 100%;
   }
 
-  
+
   a {
     font-size: 1rem;
     text-transform: uppercase;
@@ -49,7 +49,7 @@ const StyledMenu = styled.nav`
     color: black;
     text-decoration: none;
     transition: color 0.3s linear;
-    
+
     @media (max-width: 576px) {
       font-size: 1.5rem;
       text-align: center;

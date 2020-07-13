@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 import './kontakt.css';
-import Visitkort from './Visitkort'
+import Visitkort from './components/Visitkort'
 //import Routes from "./App-routes";
 //import logo from '../img/normal_logo.png'; // with import
 
@@ -16,7 +16,7 @@ class Kontakt extends Component {
           <div class="intro col-md-4 offset-2 ">
             <h2 class="svart_overskrift">om dagen</h2>
             <p>
-              <br/>Dagen er en frivillig studentforening ved Institutt for Informatikk, UiO, som arrangerer to
+              <br/>dagen er en frivillig studentforening ved Institutt for Informatikk, UiO, som arrangerer to
               karrieredager i året. I høstsemesteret arrangeres dagen@ifi, og i vårsemesteret arrangeres
               ettermiddagen@ifi, begge finner sted på Ole Johan Dahls hus.
             </p>
@@ -67,9 +67,13 @@ class Kontakt extends Component {
             <div class="col-md-4 offset-1">
               <h2 class="svart_overskrift">Navet</h2>
               <h5>Lyst til å holdebedriftspresentasjon på IFI?</h5>
-              <br/>Navet er bedriftskontakten ved Institutt for Informatikk, Universitetet i Oslo. Les mer på om
+              Navet er bedriftskontakten ved Institutt for Informatikk, Universitetet i Oslo. Les mer på om
               presentasjoner, ekskursjoner, faglige foredrag og kursrekker her:
               <a href="https://ifinavet.no/forcompanies">Navets hjemmesider</a>
+              <h2 class="svart_overskrift">Karriereuka</h2>
+              <h5>I år sammarbeider vi med karriereuka på UiO</h5>
+              Karriereuka holdes 21.-23. September og blir også holdt digitalt.
+              <a href="https://www.uio.no/studier/karriere/karriereuka/">karriereuka hjemmesider hjemmesider</a>
             </div>
 
           </div>
