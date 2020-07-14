@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 13rem 0 16%;
+  padding: 1rem 0 10%;
 
 }
 .caption h1 {
@@ -24,6 +24,9 @@
   letter-spacing: .02rem;
   color: #ACACAC;
   padding-bottom: 1.5rem;
+}
+.front-logo{
+
 }
 .btn-lg {
   border-width: medium;

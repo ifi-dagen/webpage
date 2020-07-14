@@ -8,22 +8,22 @@ class Front extends Component {
   render() {
     return (
       <div>
-        <div id="banner" class="parallax">
-          <div class="container">
-            <div class=" text-center caption">
-              <img class="front-logo" src={ require('./img/normal_logo.png')} alt="dagen@ifi logo" />
+        <div id="banner" className="parallax">
+          <div className="container">
+            <div className=" text-center caption">
+              <img className="front-logo" src={ require('./img/Logo_webpage_2020.svg')} alt="dagen@ifi logo" />
               <h1>Den største bedriftsdagen i Oslo</h1>
-              <h2 id="demo" class="hidden">04 : 22 : 45 : 12</h2>
+              <h2 id="demo" className="hidden">04 : 22 : 45 : 12</h2>
               <h3>24. og 25. September, Ole Johan Dahls hus</h3>
-              <a class="btn btn-lg btn-disabled" href="/program">Program kommer!</a>
+              <a className="btn btn-lg btn-disabled" href="/program">Program kommer!</a>
             </div>
           </div>
         </div>
 
-        <div id="info" class="container-fluid hvit-bg">
-          <div class="row">
-            <div class="col-md-4 offset-1 hva_er_dagen">
-              <h2 class="svart_overskrift">Hva er dagen@ifi?</h2>
+        <div id="info" className="container-fluid hvit-bg">
+          <div className="row">
+            <div className="col-md-4 offset-1 hva_er_dagen">
+              <h2 className="svart_overskrift">Hva er dagen@ifi?</h2>
               <p>
                 En flott arena for studenter å møte bedrifter og se hva slags muligheter man har i arbeidslivet med
                 en utdannelse innen informatikk, og det er en flott arena for bedrifter å markedsføre seg selv til
@@ -31,8 +31,8 @@ class Front extends Component {
               </p>
             </div>
 
-            <div class="col-md-4 hvor_og_naar">
-              <h2 class="svart_overskrift">Hvor og når?</h2>
+            <div className="col-md-4 hvor_og_naar">
+              <h2 className="svart_overskrift">Hvor og når?</h2>
               <p>
                 <h5>Til vanlig finner du oss på institutt for informatikk ved UiO:</h5>
                 <br/>Institutt for informatikk
@@ -50,7 +50,7 @@ class Front extends Component {
 
           </div>
         </div>
-        <div class="hidden">
+        <div className="hidden">
           <Sponsor/>
         </div>
       </div>
