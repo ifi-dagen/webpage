@@ -11,7 +11,7 @@ class Front extends Component {
         <div id="banner" class="parallax">
           <div class="container">
             <div class=" text-center caption">
-              <img class="front-logo" src={ require('./img/normal_logo.png')} alt="dagen@ifi logo" />
+              <img class="front-logo" src={ require('./img/Logo_webpage_2020.svg')} alt="dagen@ifi logo" />
               <h1>Den største bedriftsdagen i Oslo</h1>
               <h2 id="demo" class="hidden">04 : 22 : 45 : 12</h2>
               <h3>24. og 25. September, Ole Johan Dahls hus</h3>
