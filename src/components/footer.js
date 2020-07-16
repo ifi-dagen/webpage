@@ -7,8 +7,17 @@ const Footer = () => {
         <Wrapper>
             <Instagram />
             <Facebook />
-            <Credit>Følg oss på Facebook & Instagram</Credit>
+            <Linkedin />
+            <Credit>Følg oss på Instagram, Facebook & LinkedIn</Credit>
         </Wrapper >
+    )
+}
+
+const Linkedin = () => {
+    return (
+        <Link href="https://www.linkedin.com/company/dagen-ifi/">
+            <Icon className="fab fa-linkedin"></Icon>
+        </Link>
     )
 }
 
