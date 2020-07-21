@@ -9,6 +9,10 @@ const Modal = ({ handleClose, show, bedrift, children }) => {
       <div className="modal display-block">
         <section className='modal-main'>
           <p>{bedrift.bedriftnavn}</p>
+          <p> {bedrift.beskrivelse}</p>
+          <p> {bedrift.zoomlink}</p>
+          <p> {bedrift.bedrifter}</p>
+
           <button onClick={handleClose}>close</button>
         </section>
       </div>
