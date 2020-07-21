@@ -4,9 +4,9 @@ import Kontakt from "./Kontakt";
 import Program from "./Program";
 import Bedrift from "./Bedrift";
 import Frivillig from "./Frivillig";
-//import App from "./App.js";
 import Front from './Front';
 import Error from './Error';
+import Stander from './Stander';
 
 
 class Routes extends Component {
@@ -36,6 +36,11 @@ class Routes extends Component {
           exact
           path="/frivillig"
           render={prop => <Frivillig {...prop} store={this.props.store} />}
+        />
+        <Route
+          exact
+          path="/stander"
+          render={prop => <Stander {...prop} store={this.props.store} />}
         />
         <Route
           render={prop => <Error {...prop} store={this.props.store} />}

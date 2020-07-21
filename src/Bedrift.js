@@ -70,7 +70,7 @@ export default class Bedrift extends Component {
                     </p>
                 </div>
 
-				<Prisinfo className="hidden"/>
+				        <Prisinfo className="hidden"/>
             </div>
         );
     }
