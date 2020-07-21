@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../stander.css';
 
 const Modal = ({ handleClose, show, bedrift, children }) => {
