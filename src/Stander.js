@@ -18,20 +18,26 @@ export default class Stander extends Component {
 
   bedriftpop = (e) => {
     console.log(stand_info);
-    console.log(e.target.id);
+    console.log(e.target);
     console.log(stand_info["dag1"][e.target.id]);
     //make everything blurry
     //make a modal appear
     this.showModal(stand_info["dag1"][e.target.id]);
   };
 
+  stander = (stand_info) => {
+    //TODO: differansier basert på hvilke dager det er
+    return stand_info["dag1"].map((bedrift, index) => {
+      return (<button className="btn btn-lg" id={index} key={index} onClick={(e)=>{this.bedriftpop(e)}}>{ bedrift.bedriftnavn }</button>)
+    })
+  }
+
   render(){
       return (
           <div className="standbase">
 			        <p>Her kommer stander!</p>
               <Modal show={this.state.show} handleClose={this.hideModal} bedrift={this.state.currBedrift}/>
-              <button className="btn btn-lg" id="0" onClick={(e)=>{this.bedriftpop(e)}}>besøk meg!</button>
-              <button className="btn btn-lg" id="1" onClick={(e)=>{this.bedriftpop(e)}}>besøk meg!</button>
+              {this.stander(stand_info)}
           </div>
       );
   }
