@@ -25,3 +25,8 @@
 .display-none {
   display: none;
 }
+
+.bedriftnavn{
+  color: #33ccff;
+  font-size:120%;
+}
