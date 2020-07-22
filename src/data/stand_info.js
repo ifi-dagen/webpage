@@ -7,6 +7,7 @@ const stand_info =
     {
       bedriftnavn: "IT-bedrift1",
       beskrivelse: "Kul og fremoverlent",
+      logonavn: "droptable.png",
       zoomlink:"www.uio.no",
       stillinger: ["Vi søker sommrestudent","Er du vår nye leder?"],
       ice_breakers: ["Java","Fotball","Sommerjobber"],
@@ -17,6 +18,7 @@ const stand_info =
     {
       bedriftnavn: "IT-bedrift2",
       beskrivelse: "Et veldig kult og fremoverlent sted, med de beste ansatt-godene",
+      logonavn: "placeholder.png",
       zoomlink:"https://zoom.us/",
       stillinger: ["Bli fulltid fullstacker høsten 2021!","Vi søker devOps-utvikler med 12 års kyberneteserfaring!"],
       ice_breakers: ["Dans","Data","Dumle"],
@@ -27,6 +29,7 @@ const stand_info =
     {
       bedriftnavn: "En megastor bedrift",
       beskrivelse: "Et konkuransepreget miljø med litt for mye guttastemning og litt for lite mangfold!",
+      logonavn: "tba.png",
       zoomlink:"https://zoom.us/",
       stillinger: ["Bli fulltid full høsten 2021!","Vi søker deg!"],
       ice_breakers: ["Pensjon","Bank","Sikkerhet"],
@@ -40,6 +43,7 @@ const stand_info =
     {
       bedriftnavn: "IT-bedrift2",
       beskrivelse: "Et veldig kult og fremoverlent sted, med de beste ansatt-godene",
+      logonavn: "placeholder.png",
       zoomlink:"https://zoom.us/",
       stillinger: ["Bli fulltid fullstacker høsten 2021!","Vi søker devOps-utvikler med 12 års kyberneteserfaring!"],
       ice_breakers: ["Dans","Data","Dumle"],
