@@ -28,7 +28,16 @@ export default class Stander extends Component {
   stander = (stand_info) => {
     //TODO: differansier basert på hvilke dager det er
     return stand_info["dag1"].map((bedrift, index) => {
-      return (<button className="btn btn-lg" id={index} key={index} onClick={(e)=>{this.bedriftpop(e)}}>{ bedrift.bedriftnavn }</button>)
+      return (
+        <div className="button-card-container">
+          <button className="button-card"
+                  id={index} key={index}
+                  onClick={(e)=>{this.bedriftpop(e)}}>
+            <img id={index}
+                 src={ require("./img/logoer/"+bedrift.logonavn) }
+                 alt={bedrift.bedriftnavn}/>
+          </button>
+        </div>)
     })
   }
 
