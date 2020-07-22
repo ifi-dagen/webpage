@@ -29,6 +29,7 @@
 button{
   padding: 0;
 }
+
 .button-card {
   border: none;
   margin: 0;
@@ -77,4 +78,9 @@ button{
 .standbase{
   padding: 3% 5%;
   background: #d7dfe7;
+}
+
+.bedriftnavn{
+  color: #33ccff;
+  font-size:120%;
 }
