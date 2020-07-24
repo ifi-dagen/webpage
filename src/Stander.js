@@ -26,15 +26,17 @@ export default class Stander extends Component {
     this.showModal(stand_info["dag1"][e.target.id]);
   };
 
-  stander = (stand_info) => {
+  stander = () => {
     //TODO: differansier basert på hvilke dager det er
     return stand_info["dag1"].map((bedrift, index) => {
       return (
-        <div className="button-card-container">
+        <div className="button-card-container"
+             id={index} key={index}>
           <button className="button-card"
                   id={index} key={index}
                   onClick={(e)=>{this.bedriftpop(e)}}>
             <img id={index}
+                 className="button-img"
                  src={ require("./img/logoer/"+bedrift.logonavn) }
                  alt={bedrift.bedriftnavn}/>
           </button>
@@ -45,10 +47,10 @@ export default class Stander extends Component {
   display = (now) => {
     console.log(now);
     //for testing: edit the following variables as you please!
-    const stand_start = new Date(2020, 6, 24, 11, 20, 0, 0);
-    const stand_stop = new Date(2020, 6, 24, 11, 30, 0, 0);
-    const stand_start2 = new Date(2020, 6, 24, 11, 40, 0, 0);
-    const stand_stop2 = new Date(2020, 6, 24, 11, 50, 0, 0);
+    const stand_start = new Date(2020, 6, 24, 12, 0, 0, 0);
+    const stand_stop = new Date(2020, 6, 24, 13, 50, 0, 0);
+    const stand_start2 = new Date(2020, 6, 24, 12, 20, 0, 0);
+    const stand_stop2 = new Date(2020, 6, 24, 12, 30, 0, 0);
     let display = (<div>displaied</div>);
     if (now <stand_start){
       display = (<div>Ikke begynt</div>);
