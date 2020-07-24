@@ -57,7 +57,6 @@
   display: none;
 }
 
-
 .button-card {
   border: none;
   margin: 0;
@@ -92,7 +91,7 @@
 
 /* Add some padding inside the card container */
 .button-card-container {
-  padding: 5px 16px;
+  padding: 2px 16px;
   display: inline-flex;
 }
 
@@ -109,4 +108,9 @@
 .standbase{
   padding: 3% 5%;
   background: #d7dfe7;
+}
+
+.bedriftnavn{
+  color: #33ccff;
+  font-size:120%;
 }

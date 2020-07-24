@@ -26,20 +26,17 @@ export default class Stander extends Component {
     this.showModal(stand_info["dag1"][e.target.id]);
   };
 
-  stander = (dag,open,closed_message) => {
-
-    return stand_info[dag].map((bedrift, index) => {
+  stander = (stand_info) => {
+    //TODO: differansier basert på hvilke dager det er
+    return stand_info["dag1"].map((bedrift, index) => {
       return (
-        <div className="button-card-container"
-             id={index} key={index}>
+        <div className="button-card-container">
           <button className="button-card"
                   id={index} key={index}
-                  onClick={open? (e)=>{this.bedriftpop(e)}: ()=>{}}>
+                  onClick={(e)=>{this.bedriftpop(e)}}>
             <img id={index}
-                 className="button-img"
                  src={ require("./img/logoer/"+bedrift.logonavn) }
-                 alt={bedrift.bedriftnavn}
-                 />
+                 alt={bedrift.bedriftnavn}/>
           </button>
         </div>)
     })
