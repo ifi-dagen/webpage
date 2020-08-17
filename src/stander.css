@@ -108,11 +108,22 @@
 }
 
 .standbase{
-  padding: 3% 5%;
+  padding: 3% 5% 13% 5%;
   background: #d7dfe7;
+  min-height: 100%;
 }
 
 .bedriftnavn{
   color: #33ccff;
   font-size:120%;
+}
+
+#video{
+  justify-content: center;
+  align-self: center;
+}
+
+#videoContainer{
+    justify-content: center;
+    align-self: center;
 }

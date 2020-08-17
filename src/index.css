@@ -1,11 +1,12 @@
 /*--- Felles til alle sider --------------------------------------------------*/
-body {
+html, body {
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #505962;
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 img {
   width: 80%;
@@ -103,6 +104,14 @@ h5 {
   }
 }
 
+#main{
+  min-height: calc(100vh - 652px);
+}
+
+.footer{
+  height: 50px;
+  margin-top: -50px;
+}
 
 /*--- FORSIDE SIDEN ----------------------------------------------------------*/
 /*--- Navigation --*/
