@@ -3,8 +3,8 @@ import { useOnClickOutside } from './hooks'
 import './index.css';
 import Footer from './components/footer';
 import Header from './components/header';
-import Burger from './components/burger'
-import Meny from './components/meny'
+import Burger from './components/hamburgermeny/burger'
+import Meny from './components/hamburgermeny/meny'
 
 
 function Layout(props) {
