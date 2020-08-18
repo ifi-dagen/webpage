@@ -28,9 +28,9 @@ export default class Bedrift extends Component {
                     </p>
                 </div>
                 <div className="påmeldingsinfo">
-                    <h1>PÅMELDING FOR HØSTEN 2020 ER STENGT</h1>
+                    <h1>PÅMELDING FOR HØSTEN 2020 ER FYLT</h1>
                     <p>
-                        Informasjon om påmeldinger blir sendt ut til bedriftene på vår mailingliste. Er du usikker på
+                        Det er fortsatt mulig å sette seg på venteliste <a href="https://docs.google.com/forms/d/e/1FAIpQLSec3i-eYWcFaiQLnX2pNXhc-i7gcj4JhC-M_RAyeFuRSv8xCg/viewform?usp=sf_link">her</a>. Informasjon om påmeldinger blir sendt ut til bedriftene på vår mailingliste. Er du usikker på
                         om din bedrift står på maillisten, ta kontakt.
                     </p>
                 </div>
@@ -56,7 +56,7 @@ export default class Bedrift extends Component {
                     <p>
                         I år blir dagen@ifi anderledes, men til vanlig er dagen@ifi den store karrieredagen vår tidlig på høsten med nettverkbygging fra morgen til kveld. ettermiddagen@ifi er en litt mindre karriredag med nettverksbygging fra formiddag til kveld.
                     </p>
-                    <span className="blue">Påmelding og priser for ettermiddagen@ifi 2020 publiseres i januar/februar.</span>
+                    <span className="blue">Påmelding og priser for ettermiddagen@ifi 2021 publiseres i januar/februar.</span>
                 </div>
 
                 <div className="hovedsponsor_beskrivelse hidden">
