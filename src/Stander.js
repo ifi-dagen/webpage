@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import './stander.css';
 import Modal from './components/modal.js';
-import StengeBanner from './components/stengeBanner.js';
 import stand_info from './data/stand_info.js'
 
 export default class Stander extends Component {
@@ -73,7 +72,7 @@ export default class Stander extends Component {
     } else if (now < stand_start2){
       this.deactive_stand();
       display = (<div className="stand-container">
-                    <p>Bedriftene er ikke hjemme akkuratt nå, men du kan fortsatt lese litt om dem</p>
+                    <p>Denne siden vil være tilgjengelig hele tiden, selv om zoomrommene ikke er åpne.</p>
                     {this.stander("dag1")}
                  </div>);
     } else if (now < stand_stop2){
