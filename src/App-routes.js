@@ -7,6 +7,7 @@ import Frivillig from "./Frivillig";
 import Front from './Front';
 import Error from './Error';
 import Stander from './Stander';
+import BedriftStand from './BedriftStand';
 
 
 class Routes extends Component {
@@ -41,6 +42,11 @@ class Routes extends Component {
           exact
           path="/stander"
           render={prop => <Stander {...prop} store={this.props.store} />}
+        />
+        <Route
+          exact
+          path="/stander/:bedrift"
+          render={prop => <BedriftStand {...prop} store={this.props.store} />}
         />
         <Route
           render={prop => <Error {...prop} store={this.props.store} />}

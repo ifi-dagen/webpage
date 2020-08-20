@@ -34,22 +34,24 @@ export default class Stander extends Component {
     console.log(stand_info[dag][e.target.id]);
     //make everything blurry
     //make a modal appear
+
     this.showModal(stand_info[dag][e.target.id]);
   };
 
   stander = (dag) => {
     return stand_info[dag].map((bedrift, index) => {
+      const link="/stander/"+index;
       return (
         <div className="button-card-container"
              id={index} key={index}>
-          <button className="button-card"
+          <a className="button-card"
                   id={index} key={index}
-                  onClick={(e)=>{this.bedriftpop(e, dag)}}>
+                  href={link}>
             <img id={index}
                  className="button-img"
                  src={ require("./img/logoer/"+bedrift.logonavn) }
                  alt={bedrift.bedriftnavn}/>
-          </button>
+             </a>
         </div>)
     })
   }

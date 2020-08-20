@@ -1,4 +1,4 @@
-.modal {
+.modalx {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,7 +8,7 @@
   backdrop-filter: blur(12px);
 }
 
-.modal-main {
+.modal-mainx {
   position:fixed;
   background: white;
   width: 80%;
@@ -16,6 +16,29 @@
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
+}
+
+.modal {
+  width:80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 5%;
+
+}
+.modal-main{
+  background: white;
+  width: 80%;
+  height: auto;
+  text-align: left;
+}
+
+#zoomlink{
+  height: 360px;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .stand-container{
@@ -124,6 +147,8 @@
 }
 
 #videoContainer{
-    justify-content: center;
-    align-self: center;
+  width: 640px;
+  height: 400px;
+  margin: auto;
+
 }
