@@ -7,7 +7,7 @@ const stand_info =
     {
       bedriftnavn: "Eksempel med bovet-logo",
       beskrivelse: "Et artig og lærerikt sted.",
-      logonavn: "bouvet-example.png",
+      logonavn: "bekk-example.png",
       zoomlink:"https://uio.zoom.us/",
       stillinger: [{tekst: "Vi søker sommrestudent", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/188610/instituttleder-ved-institutt-for-teknologisystemer"},{tekst: "Er du vår nye leder?", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/188610/instituttleder-ved-institutt-for-teknologisystemer"}],
       ice_breakers: ["Java","Fotball","Sommerjobber"],
@@ -29,7 +29,7 @@ const stand_info =
     {
       bedriftnavn: "Eksempel med ey-logo",
       beskrivelse: "Et innovativt og fremoverlent sted. (dette eksempelet har litt mindre innhold)",
-      logonavn: "ey-example.png",
+      logonavn: "ffi-example.png",
       zoomlink:"https://zoom.us/",
       stillinger: [{tekst: "Bli fulltid fullstacker høsten 2021!", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/188610/instituttleder-ved-institutt-for-teknologisystemer"}],
       ice_breakers: [],
