@@ -38,7 +38,7 @@ export default class BedriftStand extends Component {
 
   infoBolk = (bedrift) => {
     return <div className="infoBolk">
-      <p className="bedriftnavn"> {bedrift.bedriftnavn}</p>
+      <h1 className="bedriftnavn"> {bedrift.bedriftnavn}</h1>
       <p> {bedrift.beskrivelse}</p>
       {bedrift.ice_breakers.length !== 0 && <h4>spørr oss om</h4>}
       <p>{bedrift.ice_breakers.join(", ")}</p>

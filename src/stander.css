@@ -25,6 +25,7 @@
   justify-content: center;
   margin: auto;
   padding-bottom: 5%;
+  text-align: left;
 
 }
 .modal-main{
@@ -136,10 +137,6 @@
   min-height: 100%;
 }
 
-.bedriftnavn{
-  color: #33ccff;
-  font-size:120%;
-}
 
 #video{
   justify-content: center;
