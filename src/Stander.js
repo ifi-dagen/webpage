@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import './stander.css';
 import Modal from './components/modal.js';
-import StengeBanner from './components/stengeBanner.js';
 import stand_info from './data/stand_info.js'
 
 export default class Stander extends Component {
