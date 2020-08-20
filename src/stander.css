@@ -101,8 +101,8 @@
 }
 
 .button-img{
-  width: 100%;
-  height: 100%;
+  width: auto;
+  max-height: 200px;
 }
 
 /* On mouse-over, add a deeper shadow */

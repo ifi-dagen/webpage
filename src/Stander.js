@@ -90,7 +90,7 @@ export default class Stander extends Component {
   render(){
       return (
           <div className="standbase">
-			        <p>Her kommer stander!</p>
+			        <p>Her kommer stander! (foreløpig innhold er bare eksempler, med noen lånte logoer)</p>
 
             <Modal show={this.state.show} handleClose={this.hideModal} bedrift={this.state.currBedrift} active={this.state.active_stand}/>
               {this.display(new Date())}
