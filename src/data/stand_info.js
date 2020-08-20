@@ -5,31 +5,31 @@ const stand_info =
 {
   "dag1": [
     {
-      bedriftnavn: "Droptable",
-      beskrivelse: "Kul og fremoverlent",
-      logonavn: "droptable.png",
+      bedriftnavn: "Eksempel med bovet-logo",
+      beskrivelse: "Et artig og lærerikt sted.",
+      logonavn: "bouvet-example.png",
       zoomlink:"https://uio.zoom.us/",
       stillinger: [{tekst: "Vi søker sommrestudent", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/188610/instituttleder-ved-institutt-for-teknologisystemer"},{tekst: "Er du vår nye leder?", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/188610/instituttleder-ved-institutt-for-teknologisystemer"}],
       ice_breakers: ["Java","Fotball","Sommerjobber"],
       konkurranser: [{tekst: "Vi har en artig konkuranse!", link:"https://www.dnb.no/privat/sparing-og-investering/spare/konkurranse-festivalsommer.html"}],
       foredrag: [{tekst: "Hvordan ha live-demo uten problemer!", link: "https://www.dagenatifi.no/program/event"}],
-      tags: ["UX","SIKKERHET"]
+      tags: ["ROBOTIKK","SIKKERHET"]
     },
     {
-      bedriftnavn: "Placeholder Inc.",
-      beskrivelse: "Et veldig kult og fremoverlent sted, med de beste ansatt-godene",
-      logonavn: "placeholder.png",
+      bedriftnavn: "Eksempel med dnb-logo",
+      beskrivelse: "Et veldig kult og fremoverlent sted.",
+      logonavn: "dnb-example.jpg",
       zoomlink:"https://uio.zoom.us/",
       stillinger: [{tekst: "Vi søker devOps-utvikler med 12 års kyberneteserfaring!", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/188610/instituttleder-ved-institutt-for-teknologisystemer"}],
       ice_breakers: [],
       konkurranser: [{tekst: "Vi har en artig konkuranse!", link:"https://www.dnb.no/privat/sparing-og-investering/spare/konkurranse-festivalsommer.html"}],
       foredrag: [],
-      tags: ["ROBOTIKK","SIKKERHET"]
+      tags: ["UX","SIKKERHET"]
     },
     {
-      bedriftnavn: "TBA AS",
+      bedriftnavn: "Eksempel med ey-logo",
       beskrivelse: "Et hjem for oss et hjem for deg (dette eksempelet har litt mindre innhold)",
-      logonavn: "tba.png",
+      logonavn: "ey-example.png",
       zoomlink:"https://zoom.us/",
       stillinger: [{tekst: "Bli fulltid fullstacker høsten 2021!", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/188610/instituttleder-ved-institutt-for-teknologisystemer"}],
       ice_breakers: ["Hotell","TV"],
