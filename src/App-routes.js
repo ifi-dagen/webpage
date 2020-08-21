@@ -45,7 +45,7 @@ class Routes extends Component {
         />
         <Route
           exact
-          path="/stander/:bedrift"
+          path="/stander/:dag/:bedrift"
           render={prop => <BedriftStand {...prop} store={this.props.store} />}
         />
         <Route

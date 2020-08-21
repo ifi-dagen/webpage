@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import './stander.css';
-import Modal from './components/modal.js';
 import stand_info from './data/stand_info.js'
 
 export default class Stander extends Component {
@@ -9,7 +8,7 @@ export default class Stander extends Component {
 
   stander = (dag) => {
     return Object.values(stand_info[dag]).map((bedrift, index) => {
-      const link="/stander/"+bedrift.bedriftnavn;
+      const link="/stander/"+dag+"/"+bedrift.bedriftnavn;
       return (
         <div className="button-card-container"
              id={index} key={index}>
@@ -32,10 +31,10 @@ export default class Stander extends Component {
 
   finnDag = (tidspunkt) => {
     console.log(tidspunkt);
-    //for testing: edit the following variables as you please!
-    const stand_start = new Date(2020, 7, 21, 14, 30, 30, 0);
-    const stand_start2 = new Date(2020, 7, 21, 14, 30, 35, 0);
-    const stand_stop = new Date(2020, 7, 21, 14, 30, 40, 0);
+    //for testing: edit the following variables as you please! commented out dates are the real ones.
+    const stand_start = new Date(2020, 7, 21, 14, 30, 30, 0); //new Date(2020, 8, 24, 11, 00, 0, 0);
+    const stand_start2 = new Date(2020, 7, 21, 14, 30, 35, 0); //new Date(2020, 8, 25, 11, 0, 0, 0);
+    const stand_stop = new Date(2020, 7, 21, 14, 30, 40, 0); //new Date(2020, 8, 25, 18, 0, 0, 0);
 
     if (tidspunkt < stand_start) {
       this.delayUpdate("dag1",(stand_start.getTime() - tidspunkt.getTime()));

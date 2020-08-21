@@ -10,19 +10,14 @@ import ReactPlayer from 'react-player/youtube';
 export default class BedriftStand extends Component {
   state = { show: true, active_stand: false };
 
-
-
-  hideModal = () => {
-    this.setState({ show: false });
-  };
-
   active = (now) => {
     console.log(now);
     //for testing: edit the following variables as you please!
-    const stand_start = new Date(2019, 9, 24, 12, 0, 0, 0); //før: melding om at stander åpner "24.09 klxx:xx"
-    const stand_stop = new Date(2019, 9, 24, 14, 0, 0, 0); //før: stander
-    const stand_start2 = new Date(2020, 9, 25, 12, 0, 0, 0); //før: stand kort med video istede for zoom-link
-    const stand_stop2 = new Date(2020, 9, 25, 14, 0, 0, 0); //før: Stander                                                            //etter: takk for i år!
+    const stand_start = new Date(2020, 8, 21, 16, 0, 0, 0); //new Date(2020, 8, 24, 12, 0, 0, 0);
+    const stand_stop = new Date(2020, 8, 21, 16, 0, 5, 0); //new Date(2020, 8, 24, 14, 0, 0, 0);
+    const stand_start2 = new Date(2020, 8, 21, 16, 0, 10, 0); //new Date(2020, 8, 25, 12, 0, 0, 0);
+    const stand_stop2 = new Date(2020, 8, 21, 16, 0, 15, 0); //new Date(2020, 8, 25, 14, 0, 0, 0);
+
     if (now < stand_start){
       return false;
     } else if (now < stand_stop){
@@ -84,7 +79,7 @@ export default class BedriftStand extends Component {
 
 
   render(){
-    const bedrift = stand_info["dag1"][this.props.match.params.bedrift];
+    const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift];
     const videoStyle = {
       width: '100px',
       justifyContent: 'center',
@@ -94,7 +89,7 @@ export default class BedriftStand extends Component {
     return (
       <div className="bedriftStandBase">
         <div className='bedriftStandInnhold'>
-          <a href="./">tilbake til stander<br/></a>
+          <a href="../">tilbake til stander<br/></a>
           <button onClick={(e) => this.toggle(e,!this.state.active_stand)}>(for demo)standområde er {this.state.active_stand? "åpent":"lukket"}</button>
           {this.inntrykkt(bedrift,videoStyle)}
           {this.infoBolk(bedrift)}
