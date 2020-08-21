@@ -73,27 +73,23 @@ export default class Stander extends Component {
           {this.demobuttons()}
           <p>Her kommer stander Snart!</p>
         </div>)
-        break;
       case "dag1":
         return (<div className="standbase">
         {this.demobuttons()}
         <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
           {this.stander("dag1",true)}
         </div>)
-        break;
       case "dag2":
         return (<div className="standbase">
         {this.demobuttons()}
         <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
           {this.stander("dag2",true)}
         </div>)
-        break;
       case "etter":
         return (<div className="standbase">
         {this.demobuttons()}
         <p>Dagen@ifi 2020 er over for i år, vi sees igjen!</p>
         </div>)
-        break;
       default:
         return <h1>Her er det ingen stander akkuratt nå, desverre</h1>
     }
