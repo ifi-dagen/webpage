@@ -92,8 +92,8 @@ export default class BedriftStand extends Component {
     };
 
     return (
-      <div className="modal">
-        <div className='modal-main'>
+      <div className="bedriftStandBase">
+        <div className='bedriftStandInnhold'>
           <a href="./">tilbake til stander<br/></a>
           <button onClick={(e) => this.toggle(e,!this.state.active_stand)}>(for demo)standområde er {this.state.active_stand? "åpent":"lukket"}</button>
           {this.inntrykkt(bedrift,videoStyle)}

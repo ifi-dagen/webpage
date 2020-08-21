@@ -5,41 +5,11 @@ import Modal from './components/modal.js';
 import stand_info from './data/stand_info.js'
 
 export default class Stander extends Component {
-  state = { show: false, active_stand: false };
-
-  showModal = (bedrift) => {
-    this.setState({ show: true , currBedrift: bedrift});
-  };
-
-  hideModal = () => {
-    this.setState({ show: false });
-  };
-
-  active_stand = () => {
-    if (!this.state.active_stand)
-      this.setState({ active_stand: true });
-
-  };
-
-  deactive_stand = () => {
-    if (this.state.active_stand)
-      this.setState({ active_stand: false });
-  };
-
-
-  bedriftpop = (e, dag) => {
-    console.log(stand_info);
-    console.log(e.target);
-    console.log(stand_info[dag][e.target.id]);
-    //make everything blurry
-    //make a modal appear
-
-    this.showModal(stand_info[dag][e.target.id]);
-  };
+  state = { show: false, active_stand: false , dag: "før"};
 
   stander = (dag) => {
-    return stand_info[dag].map((bedrift, index) => {
-      const link="/stander/"+index;
+    return Object.values(stand_info[dag]).map((bedrift, index) => {
+      const link="/stander/"+bedrift.bedriftnavn;
       return (
         <div className="button-card-container"
              id={index} key={index}>
@@ -55,48 +25,78 @@ export default class Stander extends Component {
     })
   }
 
-  display = (now) => {
-    console.log(now);
+  delayUpdate = (newState, timeout) => {
+    const context = this;
+    setTimeout(function() {context.setState({dag: newState}); }, timeout);
+  }
+
+  finnDag = (tidspunkt) => {
+    console.log(tidspunkt);
     //for testing: edit the following variables as you please!
-    const stand_start = new Date(2019, 9, 24, 12, 0, 0, 0); //før: melding om at stander åpner "24.09 klxx:xx"
-    const stand_stop = new Date(2019, 9, 24, 14, 0, 0, 0); //før: stander
-    const stand_start2 = new Date(2020, 9, 25, 12, 0, 0, 0); //før: stand kort med video istede for zoom-link
-    const stand_stop2 = new Date(2020, 9, 25, 14, 0, 0, 0); //før: Stander
-                                                            //etter: takk for i år!
-    let display = (<div>displaied</div>);
-    if (now < stand_start){
-      display = (<div>Ikke begynt</div>);
-    } else if (now < stand_stop){
-      this.active_stand();
-      display = (this.stander("dag1",true));
-    } else if (now < stand_start2){
-      this.deactive_stand();
-      display = (<div className="stand-container">
-                    <p>Denne siden vil være tilgjengelig hele tiden, selv om zoomrommene ikke er åpne.</p>
-                    {this.stander("dag1")}
-                 </div>);
-    } else if (now < stand_stop2){
-      this.active_stand();
-      display = (this.stander("dag2"));
+    const stand_start = new Date(2020, 7, 21, 14, 30, 30, 0);
+    const stand_start2 = new Date(2020, 7, 21, 14, 30, 35, 0);
+    const stand_stop = new Date(2020, 7, 21, 14, 30, 40, 0);
+
+    if (tidspunkt < stand_start) {
+      this.delayUpdate("dag1",(stand_start.getTime() - tidspunkt.getTime()));
+    } else if (tidspunkt < stand_start2) {
+      if(this.state.dag !== "dag1"){this.setState({dag: "dag1"})}
+      this.delayUpdate("dag2",stand_start2.getTime() - tidspunkt.getTime());
+    } else if (tidspunkt < stand_stop) {
+      if(this.state.dag !== "dag2"){ this.setState({dag: "dag2"}) }
+      this.delayUpdate("etter",(stand_stop.getTime() - tidspunkt.getTime()));
     } else {
-      this.deactive_stand();
-      display = (<div className="melding">Takk for i år &lt;3 </div>);
+      if(this.state.dag !== "etter"){this.setState({dag: "etter"})}
     }
-    return(
-      display
-    )
+  }
+
+  toggle = (e, value) => {
+    e.preventDefault();
+    this.setState({dag: value})
+  }
+
+  demobuttons = () =>{
+    return (<div className="testbuttons">
+      <button onClick={(e) => this.toggle(e,"før")}>(for demo)tidsrom blir før</button>
+      <button onClick={(e) => this.toggle(e,"dag1")}>(for demo)tidsrom blir dag1</button>
+      <button onClick={(e) => this.toggle(e,"dag2")}>(for demo)tidsrom blir dag2</button>
+      <button onClick={(e) => this.toggle(e,"etter")}>(for demo)tidsrom blir etter</button>
+    </div>
+    );
   }
 
   render(){
-      return (
-          <div className="standbase">
-			        <p>Her kommer stander! (foreløpig innhold er bare eksempler, med noen lånte logoer)</p>
-
-            <Modal show={this.state.show} handleClose={this.hideModal} bedrift={this.state.currBedrift} active={this.state.active_stand}/>
-              {this.display(new Date())}
-          </div>
-      );
+    //finn ut tidspunkt
+    //this.finnDag(new Date); //NB denne linja styrer tiden
+    switch (this.state.dag) {
+      case "før":
+        return (<div className="standbase">
+          {this.demobuttons()}
+          <p>Her kommer stander Snart!</p>
+        </div>)
+        break;
+      case "dag1":
+        return (<div className="standbase">
+        {this.demobuttons()}
+        <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
+          {this.stander("dag1",true)}
+        </div>)
+        break;
+      case "dag2":
+        return (<div className="standbase">
+        {this.demobuttons()}
+        <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
+          {this.stander("dag2",true)}
+        </div>)
+        break;
+      case "etter":
+        return (<div className="standbase">
+        {this.demobuttons()}
+        <p>Dagen@ifi 2020 er over for i år, vi sees igjen!</p>
+        </div>)
+        break;
+      default:
+        return <h1>Her er det ingen stander akkuratt nå, desverre</h1>
+    }
   }
-  //<iframe width="560" height="315" src="https://www.youtube.com/embed/xnub-hwu4dU?loop=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 }
