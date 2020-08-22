@@ -29,7 +29,7 @@
 
 }
 .btn-lg {
-  border-width: medium;
+  border-width: 0;
   border-radius: 20px;
   padding: .4rem 1.8rem;
   font-size: 1.2rem;

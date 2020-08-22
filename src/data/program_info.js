@@ -5,36 +5,53 @@ const stand_info =
 {
   "dag1": [
     {
-      foredragstittel: "Foredragstittel",
-      start: new Date(2020, 6, 24, 17, 30, 0, 0),
-      slutt: new Date(2020, 6, 24, 18, 40, 0, 0),
+      tittel: "Åpning",
+      type: "Annet",
+      start: new Date(2020, 7, 22, 17, 25, 0, 0),
+      slutt: new Date(2020, 7, 22, 17, 25, 5, 0),
+      beskrivelse: "åpningen",
+      bilde: "tba.png"
+    },
+    {
+      tittel: "Foredragstittel",
+      type: "Foredrag",
+      start: new Date(2020, 7, 22, 17, 25, 6, 0),
+      slutt: new Date(2020, 7, 22, 17, 25, 11, 0),
       beskrivelse: "foredragsbeskrivelse",
+      bilde: "placeholder.png"
     },
     {
-      foredragstittel: "Foredragstittel2",
-      start: new Date(2020, 6, 24, 18, 40, 0, 0),
-      slutt: new Date(2020, 6, 24, 17, 50, 0, 0),
+      tittel: "Foredragstittel2",
+      type: "Foredrag",
+      start: new Date(2020, 7, 22, 17, 25, 12, 0),
+      slutt: new Date(2020, 7, 22, 17, 25, 17, 0),
       beskrivelse: "foredragsbeskrivelse2",
+      bilde: "droptable.png"
     },
     {
-      foredragstittel: "Foredragstittel3",
-      start: new Date(2020, 6, 24, 17, 50, 0, 0),
-      slutt: new Date(2020, 6, 24, 18, 0, 0, 0),
+      tittel: "Foredragstittel3",
+      type: "Foredrag",
+      start: new Date(2020, 7, 22, 17, 25, 18, 0),
+      slutt: new Date(2020, 7, 22, 17, 25, 23, 0),
       beskrivelse: "foredragsbeskrivelse3",
+      bilde: "tba.png"
     },
     {
-      foredragstittel: "Foredragstittel4",
-      start: new Date(2020, 6, 24, 18, 0, 0, 0),
-      slutt: new Date(2020, 6, 24, 18, 10, 0, 0),
+      tittel: "Foredragstittel4",
+      type: "Foredrag",
+      start: new Date(2020, 7, 22, 17, 25, 24, 0),
+      slutt: new Date(2020, 7, 22, 17, 25, 29, 0),
       beskrivelse: "foredragsbeskrivelse4",
+      bilde: "droptable.png"
     }
   ],
   "dag2": [
     {
-      foredragstittel: "Foredragstittel5",
-      start: "13:00",
-      slutt: "13:10",
+      tittel: "Foredragstittel5",
+      start: new Date(2020, 7, 22, 17, 25, 30, 0),
+      slutt: new Date(2020, 7, 22, 17, 25, 35, 0),
       beskrivelse: "foredragsbeskrivelse5",
+      bilde: "droptable.png"
     }
   ]
 }

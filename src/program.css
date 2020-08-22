@@ -3,10 +3,37 @@
 }
 
 .program{
-  padding: 0 30%;
+  padding: 5% 30%;
   text-align: left;
+  min-height: 305px;
+}
+
+.programfilter{
+  padding: 7% 0%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .starttid{
   background: rgba(0,0,0,0);
+}
+
+.hending-beholder{
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.hendingBilde-beholder{
+  align-self: center;
+  width: 40%;
+}
+
+.hendingBilde{
+  max-width: 100%;
+  height: auto;
+}
+
+.hendingInfo-beholder{
+  padding: 5% 0;
 }
