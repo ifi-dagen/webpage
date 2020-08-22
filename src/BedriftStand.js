@@ -10,24 +10,40 @@ import ReactPlayer from 'react-player/youtube';
 export default class BedriftStand extends Component {
   state = { show: true, active_stand: false };
 
-  active = (now) => {
-    console.log(now);
-    //for testing: edit the following variables as you please!
-    const stand_start = new Date(2020, 8, 21, 16, 0, 0, 0); //new Date(2020, 8, 24, 12, 0, 0, 0);
-    const stand_stop = new Date(2020, 8, 21, 16, 0, 5, 0); //new Date(2020, 8, 24, 14, 0, 0, 0);
-    const stand_start2 = new Date(2020, 8, 21, 16, 0, 10, 0); //new Date(2020, 8, 25, 12, 0, 0, 0);
-    const stand_stop2 = new Date(2020, 8, 21, 16, 0, 15, 0); //new Date(2020, 8, 25, 14, 0, 0, 0);
+  delayUpdate = (newState, timeout) => {
+    const context = this;
+    setTimeout(function() {context.setState({active_stand: newState}); }, timeout);
+  }
 
-    if (now < stand_start){
-      return false;
-    } else if (now < stand_stop){
-      return true;
-    } else if (now < stand_start2){
-      return false;
-    } else if (now < stand_stop2){
-      return true;
+  active = (tidspunkt) => {
+    console.log(tidspunkt);
+    //for testing: edit the following variables as you please!
+    const stand_start = new Date(2020, 7, 22, 11, 58, 40, 0); //new Date(2020, 8, 24, 12, 0, 0, 0);
+    const stand_stop = new Date(2020, 7, 22, 11, 58, 45, 0); //new Date(2020, 8, 24, 14, 0, 0, 0);
+    const stand_start2 = new Date(2020, 7, 22, 11, 58, 50, 0); //new Date(2020, 8, 25, 12, 0, 0, 0);
+    const stand_stop2 = new Date(2020, 7, 22, 11, 58, 55, 0); //new Date(2020, 8, 25, 14, 0, 0, 0);
+    console.log(stand_stop);
+
+    if (tidspunkt < stand_start){
+      this.delayUpdate(true,(stand_start.getTime() - tidspunkt.getTime()));
+      //return false;
+    } else if (tidspunkt < stand_stop){
+      if(this.state.dag !== true){this.setState({dag: true})}
+      this.delayUpdate(false,(stand_stop.getTime() - tidspunkt.getTime()));
+      //return true;
+    } else if (tidspunkt < stand_start2){
+      if(this.state.dag !== false){this.setState({dag: false})}
+      this.delayUpdate(true,(stand_start2.getTime() - tidspunkt.getTime()));
+      //return false;
+    } else if (tidspunkt < stand_stop2){
+      if(this.state.dag !== true){this.setState({dag: true})}
+      this.delayUpdate(false,(stand_stop2.getTime() - tidspunkt.getTime()));
+      //return true;
     } else {
-      return false;
+      //console.log("før",this.state.dag);
+      if(this.state.dag !== false){this.setState({dag: false})}
+      //console.log("etter",this.state.dag);
+      //return false;
     }
   }
 
@@ -57,8 +73,8 @@ export default class BedriftStand extends Component {
     this.setState({active_stand: value})
   }
 
-  inntrykkt = (bedrift,videoStyle) => {
-    if (this.state.active_stand === true){
+  inntrykkt = (bedrift,videoStyle,activated) => {
+    if (activated){
       return <div id="zoomlink">
               <a href={bedrift.zoomlink}> <h1>Møt oss her!</h1></a>
             </div>
@@ -79,19 +95,19 @@ export default class BedriftStand extends Component {
 
 
   render(){
+    this.active(new Date())
     const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift];
     const videoStyle = {
       width: '100px',
       justifyContent: 'center',
       alignSelf: 'center'
     };
-
     return (
       <div className="bedriftStandBase">
         <div className='bedriftStandInnhold'>
-          <a href="../">tilbake til stander<br/></a>
-          <button onClick={(e) => this.toggle(e,!this.state.active_stand)}>(for demo)standområde er {this.state.active_stand? "åpent":"lukket"}</button>
-          {this.inntrykkt(bedrift,videoStyle)}
+          <a href="/stander">tilbake til stander<br/></a>
+          { false && <button onClick={(e) => this.toggle(e,!this.state.active_stand)}>(for demo)standområde er {this.state.active_stand? "åpent":"lukket"}</button>}
+          {this.inntrykkt(bedrift,videoStyle,this.state.active_stand)}
           {this.infoBolk(bedrift)}
         </div>
       </div>
