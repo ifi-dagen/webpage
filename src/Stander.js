@@ -69,7 +69,7 @@ export default class Stander extends Component {
 
   render(){
     //finn ut tidspunkt
-    this.finnDag(new Date()); //NB denne linja styrer tiden
+    //this.finnDag(new Date()); //NB denne linja styrer tiden
     switch (this.state.dag) {
       case "før":
         return (<div className="standbase">

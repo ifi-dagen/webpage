@@ -83,7 +83,7 @@ export default class BedriftStand extends Component {
         <ReactPlayer
           id='video'
           url='https://www.youtube.com/watch?v=oUFJJNQGwhk'
-          playing={true}
+          playing={false}
           loop={true}
           style={videoStyle}
           width='640px'
@@ -98,7 +98,6 @@ export default class BedriftStand extends Component {
     this.active(new Date())
     const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift];
     const videoStyle = {
-      width: '100px',
       justifyContent: 'center',
       alignSelf: 'center'
     };
