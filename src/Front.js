@@ -21,7 +21,7 @@ class Front extends Component {
             </div>
           </div>
         </div>
-        <Stander/>
+        <Stander testmode={false}/>
         <div id="info" className="container-fluid hvit-bg">
           <div className="row">
             <div className="col-md-4 offset-1 hva_er_dagen">

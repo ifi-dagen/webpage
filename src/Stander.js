@@ -68,29 +68,30 @@ export default class Stander extends Component {
   }
 
   render(){
+    const testmode = this.props.testmode;
     //finn ut tidspunkt
     //this.finnDag(new Date()); //NB denne linja styrer tiden
     switch (this.state.dag) {
       case "før":
         return (<div className="standbase">
-          {this.demobuttons(false)}
+          {this.demobuttons(testmode)}
           <p>Her kommer stander Snart!</p>
         </div>)
       case "dag1":
         return (<div className="standbase">
-        {this.demobuttons(false)}
+        {this.demobuttons(testmode)}
         <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
           {this.stander("dag1",true)}
         </div>)
       case "dag2":
         return (<div className="standbase">
-        {this.demobuttons(false)}
+        {this.demobuttons(testmode)}
         <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
           {this.stander("dag2",true)}
         </div>)
       case "etter":
         return (<div className="standbase">
-        {this.demobuttons(false)}
+        {this.demobuttons(testmode)}
         <p>Dagen@ifi 2020 er over for i år, vi sees igjen!</p>
         </div>)
       default:
