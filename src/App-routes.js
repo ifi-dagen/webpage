@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Kontakt from "./Kontakt";
-import Program from "./Program";
+import Program from "./pages/Program";
 import Bedrift from "./Bedrift";
-import Frivillig from "./Frivillig";
+import Frivillig from "./pages/frivillig/Frivillig";
 import Front from './Front';
 import Error from './Error';
 import Stander from './Stander';
