@@ -3,23 +3,23 @@ import { bool } from 'prop-types';
 import styled from 'styled-components'
 
 const Meny = ({ open, ...props }) => {
-    const isHidden = open ? true : false;
-    const tabIndex = isHidden ? 0 : -1;
+  const isHidden = open ? true : false;
+  const tabIndex = isHidden ? 0 : -1;
 
-    return (
-        <StyledMenu open={open} {...props}>
-            <a href="/" tabIndex={tabIndex}> Hjem </a>
-            <a href="/for-bedrift" tabIndex={tabIndex}> For bedrifter </a>
-            <a href="/kontakt" tabIndex={tabIndex}> Om arrangøren </a>
-        </StyledMenu>
-    )
-
+  return (
+    <StyledMenu open={open} {...props}>
+      <a href="/" tabIndex={tabIndex}> Hjem </a>
+      <a href="/for-bedrift" tabIndex={tabIndex}> For bedrifter </a>
+      <a href="/frivillig" tabIndex={tabIndex}> Bli frivillig</a>
+      <a href="/kontakt" tabIndex={tabIndex}> Om arrangøren </a>
+    </StyledMenu>
+  )
 
 }
 
 Meny.propTypes = {
-        open: bool.isRequired,
-    }
+  open: bool.isRequired,
+}
 
 const StyledMenu = styled.nav`
   display: flex;
