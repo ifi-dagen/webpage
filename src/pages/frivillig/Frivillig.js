@@ -21,7 +21,7 @@ const Frivillig = () => {
         og tilgang til vår ekslusive internfest om smittevernregler og tiltak tillater dette.
       </p>
 
-      <a href="">
+      <a href="https://nettskjema.no/a/157461">
         <Button >Frivilligskjema</Button>
       </a>
 
