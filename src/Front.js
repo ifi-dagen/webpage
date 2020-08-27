@@ -16,7 +16,8 @@ class Front extends Component {
               <img className="front-logo" src={ require('./img/Logo_webpage_2020.svg')} alt="dagen@ifi logo" />
               <h1>Den største bedriftsdagen i Oslo</h1>
               <h2 id="demo" className="hidden">04 : 22 : 45 : 12</h2>
-              <h3>24. og 25. September, Ole Johan Dahls hus</h3>
+              <h3>24. og 25. September, digitalt</h3>
+              <h3>hold deg oppdatert <a href="https://facebook.com/events/s/dagenifi-2020/775866226583870/?ti=icl"> her</a></h3>
               <a className="btn btn-lg btn-disabled" href="/program">Program kommer!</a>
             </div>
           </div>
