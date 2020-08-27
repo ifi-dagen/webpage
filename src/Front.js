@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Sponsor from './components/Sponsor';
 import './front.css';
+import Stander from './Stander';
+
 
 //for implementasjon av datafetching, sjekk ut dagen-today
 class Front extends Component {
@@ -20,7 +22,7 @@ class Front extends Component {
             </div>
           </div>
         </div>
-
+        <Stander testmode={false}/>
         <div id="info" className="container-fluid hvit-bg">
           <div className="row">
             <div className="col-md-4 offset-1 hva_er_dagen">
