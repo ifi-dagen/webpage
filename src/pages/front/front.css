@@ -1,22 +1,17 @@
 #banner {
-  max-height: 1000px;
-  background-image: url("./img/bg_1.png");
+  max-height: 300px;
+  background-image: url("../../img/bg_1.png");
   background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 13rem 0 16%;
-
 }
 .caption h1 {
-  font-size: 3.8rem;
   font-weight: 700;
-  padding: 1rem 1.5rem 0rem;
-  color: white;
+  padding: 0rem 2rem;
+  color:#002446;
 }
 .caption h2 {
   font-size: 4rem;
   font-weight: 700;
-  color: #ACACAC;
+  color: #002446;
 }
 .caption h3 {
   font-size: 1.3rem;
@@ -25,6 +20,10 @@
   color: #ACACAC;
   padding-bottom: 1.5rem;
 }
+.front-logo{
+  padding: 1px;
+}
+
 .btn-lg {
   border-width: medium;
   border-radius: 20px;
@@ -64,7 +63,7 @@
 }
 /*--- Hovedsponsor Section --*/
 .politi_bilde {
-  background-image: url("./img/hovedsponsor.jpg");
+  background-image: url("../../img/hovedsponsor.jpg");
   background-position: right;
   width: 100%;
 
@@ -86,7 +85,7 @@
   text-decoration: none;
 }
 .footer_bilde {
-  background: url("./img/ettermidagen_at_ifi-0480.jpg");
+  background: url("../../img/ettermidagen_at_ifi-0480.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;

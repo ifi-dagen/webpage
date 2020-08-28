@@ -7,12 +7,12 @@
   width: 85%;
 }
 .bedriftbase{
-  margin: 0 20% 0 20%;
+  margin: 0 20% 5% 20%;
   text-align: left;
 }
-h1{
+.bedriftbase h1{
   text-transform: capitalize;
-  margin: 6% 0% 1% 0%;
+  margin: 6% 0 1% 0;
 }
 
 .påmeldingsinfo{
@@ -22,13 +22,13 @@ h1{
   margin-bottom: 5%;
 }
 .kontaktinfo h1{
-  padding: 0%;
+  padding: 0;
 }
 .btn_bedrift {
   margin: 1rem 1rem 0 0;
 }
 .foredrag_bilde {
-  background-image: url("./img/foredrag_bilde.jpg");
+  background-image: url("../../img/foredrag_bilde.jpg");
 }
 .stand_pakke {
   margin: 2%;
@@ -68,10 +68,7 @@ h1{
   justify-content: space-around;
   width: 100%;
 }
-.styret img {
-  width: 30%;
-  min-width: 120px;
-}
+
 .row{
   display: flex;
 }
@@ -79,18 +76,22 @@ h1{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 
 .Visitkort{
   min-width: 120px;
   max-width: 250px;
-  flex: initial;
-  padding: 5% 2%;
+  padding: 4% 2%;
   font-weight: 200;
-}
+ }
 
+.Visitkort .image-wrapper{
+  text-align: center;
+  min-width: 130px;
+  width: inherit;
+}
 
 @media (max-width: 1200px) {
   #bedriftinfo .col-xl-3 {
@@ -114,6 +115,20 @@ h1{
 }
 @media (max-width: 767.98px) {
   .foredrag_bilde {
-    margin-left: 0%;
+    margin-left: 0;
   }
+
+  .Visitkort .image-wrapper{
+    text-align: center;
+    min-width: 130px;
+    width: inherit;
+  }
+
+  .Visitkort{
+    min-width: 120px;
+    max-width: 250px;
+    padding: 5%;
+    font-weight: 200;
+   }
+
 }

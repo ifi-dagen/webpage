@@ -3,13 +3,6 @@ import './index.css';
 import Layout from './Layout';
 import Routes from "./App-routes";
 
-
-//import Front from './Front';
-//import Sponsor from './Sponsor';
-
-//import logo from '../img/normal_logo.png'; // with import
-
-//for implementasjon av datafetching, sjekk ut dagen-today
 class App extends Component {
   constructor(props) {
     super(props);
@@ -34,7 +27,5 @@ class App extends Component {
     );
   }
 }
-//<Front/>
-//<Sponsor/>
 
 export default App;
