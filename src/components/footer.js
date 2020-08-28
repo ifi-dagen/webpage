@@ -1,68 +1,57 @@
 import React from "react";
 import styled from "styled-components";
+import logo from "../img/white_logo.png"
 
 
 const Footer = () => {
     return (
+
         <Wrapper>
-            <Instagram />
-            <Facebook />
-            <Linkedin />
-            <Credit>Følg oss på Instagram, Facebook & LinkedIn</Credit>
+            <Logo src={logo} />
+            <Links />
         </Wrapper >
     )
 }
 
-const Linkedin = () => {
-    return (
-        <Link href="https://www.linkedin.com/company/dagen-ifi/">
-            <Icon className="fab fa-linkedin"></Icon>
-        </Link>
-    )
-}
 
-const Instagram = () => {
+const Links = () => {
     return (
-        <Link href="https://www.instagram.com/dagenatifi/">
-            <Icon className="fab fa-instagram"></Icon>
-        </Link>
+        <Navlinks>
+            <span />
+            <Link href="/for-bedrift" > For bedrifter </Link>
+            <Link href="/frivillig" > Bli frivillig</Link>
+            <Link href="/kontakt" > Om arrangøren </Link>
+            <span />
+        </Navlinks>
     )
-}
+};
 
-const Facebook = () => {
-    return (
-        <Link href="https://www.facebook.com/dagenatifi">
-            <Icon className="fab fa-facebook"></Icon>
-        </Link>
-    )
-}
+const Navlinks = styled.div`
+    display: grid;
+    grid-template-columns: 1fr auto auto auto 1fr;
+    grid-gap: 2rem;
+`
 
 const Link = styled.a`
-  align-items: center;
-  padding: 1em;
-`;
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color 0.25s;
 
-const Icon = styled.i`
-  font-size: 3rem;
-  color: black;
-  transition: color 0.25s;
+    :hover {
+        color: deepskyblue;
+    }
+`
 
-  ${Link}:hover & {
-    color: deepskyblue;
-  }
-`;
-
-const Credit = styled.div`
-    font-size: 11px;
-    align-content: center;
-    margin: 3em;
-    color: #000;
-`;
+const Logo = styled.img`
+    width: 9rem;
+    text-align:center;
+    padding: 1em;
+`
 
 const Wrapper = styled.section`
-  background: papayawhip;
-  padding: 4em;
+    background: linear-gradient(to right, #001446, #002446);
+    padding: 2em;
+    align-content: center;
 `;
-
 
 export default Footer;
