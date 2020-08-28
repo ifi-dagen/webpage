@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../../App.css';
 import './bedrift.css';
-import Visitkort from './components/Visitkort';
-import Prisinfo from './components/Prisinfo';
+import Visitkort from '../../components/Visitkort';
+import Prisinfo from '../../components/Prisinfo';
 
 
 export default class Bedrift extends Component {

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Kontakt from "./Kontakt";
+import Kontakt from "./pages/kontakt/Kontakt";
 import Program from "./pages/Program";
-import Bedrift from "./Bedrift";
+import Bedrift from "./pages/bedrift/Bedrift";
 import Frivillig from "./pages/frivillig/Frivillig";
-import Front from './Front';
+import Front from './pages/front/Front';
 import Error from './Error';
 import Stander from './Stander';
 import BedriftStand from './BedriftStand';
@@ -41,12 +41,12 @@ class Routes extends Component {
         <Route
           exact
           path="/stander"
-          render={prop => <Stander {...prop} store={this.props.store} testmode={true}/>}
+          render={prop => <Stander {...prop} store={this.props.store} testmode={true} />}
         />
         <Route
           exact
           path="/stander/:dag/:bedrift"
-          render={prop => <BedriftStand {...prop} store={this.props.store} testmode={true}/>}
+          render={prop => <BedriftStand {...prop} store={this.props.store} testmode={true} />}
         />
         <Route
           render={prop => <Error {...prop} store={this.props.store} />}
