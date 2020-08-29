@@ -1,21 +1,28 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory as useHerstory } from "react-router-dom"
 
 
 const Header = () => {
+  const herstory = useHerstory()
 
   return (
-    <div style={{ backgroundColor: "none" }}>
+    <div>
       <Wrapper>
-        <span />
+        <img
+          onClick={() => herstory.push("/")}
+          className="front-logo" src={require('../img/Logo_webpage_2020.svg')} alt="dagen@ifi logo" />
         <span />
         <Facebook />
         <Instagram />
         <Linkedin />
       </Wrapper>
-    </div >
+    </div>
+
   )
 };
+
+
 
 const Facebook = () => {
   return (
@@ -44,11 +51,16 @@ const Instagram = () => {
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: auto 1fr 2em 2em auto;
+  grid-template-columns: auto 1fr  2em 2em auto;
   grid-gap: 1rem;
   
   padding: 1em;
   background: none;  
+
+  img {
+    max-height: 5rem;
+    cursor: pointer;
+  }
 `;
 
 const Link = styled.a`

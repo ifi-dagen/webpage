@@ -1,22 +1,33 @@
 import React from 'react';
 import styled from 'styled-components'
 import '../App.css';
+import logo from "../img/dnb_sjogronn.png"
 
 const Sponsor = () => {
   return (
     <Wrapper>
-      <h2 className="svart_overskrift blue"><br />ÅRETS HOVEDSPONSOR 2020</h2>
-      <Logo src={require("../img/dnb_sjogronn.png")} alt="DnB logo" />
+      <h2>HOVEDSPONSOR</h2>
+      <p>2020</p>
+      <Logo src={logo} alt="DnB logo" />
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
+  text-align: center;
   padding: 3rem;
+
+  p,h2 {
+    margin: 0;
+  }
+  p {
+    font-weight: bold;
+    font-size: 1rem;
+  }
 `
 
 const Logo = styled.img`
-  width: 20rem;
+  max-width: 20rem;
   margin: 2em;
   align-content: center;
 `
