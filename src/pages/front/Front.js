@@ -1,13 +1,13 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import Hovedsponsor from '../Sponsor';
+import HvaEr from './hvaer'
+import Digitalt from './digitalt'
 import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
-import Visitkort from "../../components/Visitkort"
 import { Link } from "react-router-dom"
+import { peepsInfo } from './peeps'
 
 const Front = () => {
-
-
 
   return (
     <Div>
@@ -23,21 +23,20 @@ const Front = () => {
 
       <GridContainerWrapper>
         <ErGrid>
-          <HvaER />
-          <DagenER />
+          <HvaEr />
+          <Digitalt />
         </ErGrid>
-        <Img src={bilde} style={{ width: "100%" }} />
+        <Img src={bilde} style={{ width: "100%" }} alt="Bilde av mennesker utenfor ifi" />
         <h1>Styret 2020</h1>
-        <PeepsGrid>
+        <PeepsGrid >
           {peepsInfo.map((peep, index) => (
-            <Visitkort2 peep={peep} />
+            <Visitkort2 peep={peep} key={peep.navn} />
           ))}
         </PeepsGrid>
       </GridContainerWrapper>s
     </Div >
   );
 }
-
 
 const DateParagraph = () => {
   const Paragraph = styled.h2`
@@ -46,7 +45,7 @@ const DateParagraph = () => {
 
   return (
     <Paragraph>
-      <i class="fas fa-calendar"></i> 24 <i class="fas fa-long-arrow-alt-right"></i> 25 September
+      <i className="fas fa-calendar"></i> 24 <i className="fas fa-long-arrow-alt-right"></i> 25 September
     </Paragraph>
   )
 
@@ -54,7 +53,7 @@ const DateParagraph = () => {
 
 const Visitkort2 = ({ peep }) => {
   return (
-    <Peep>
+    <Peep key={peep.navn}>
       <VisitkortImage path={peep.image} />
       <p><b>{peep.navn}</b></p>
       <p>{peep.rolle.tittel}</p>
@@ -66,7 +65,7 @@ const Visitkort2 = ({ peep }) => {
 const VisitkortImage = ({ path }) => {
   try {
     const bilde = require("../../img/styret/" + path)
-    return <img src={bilde} />
+    return <img src={bilde} alt="Bilde av styremedlem" />
   } catch {
     return <img className="round" src={require("../../img/styret/Placeholder.png")} alt="Manglende bilde av personen" />
   }
@@ -83,15 +82,12 @@ const Peep = styled.div`
     text-align: center;
     margin: 0;
   }
-
 `
 
 const PeepsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 1rem;
-
-
 `
 
 const Img = styled.img`
@@ -140,17 +136,17 @@ const Nav = () => {
   return (
     <NavContainer>
       <Link to="/program">
-        <i class="fas fa-stream"></i>
+        <i className="fas fa-stream"></i>
         <br />
         Digitalt Program
         </Link>
       <Link to="/for-bedrift">
-        <i class="fas fa-at"></i>
+        <i className="fas fa-at"></i>
         <br />
         For Bedrifter
       </Link>
       <Link to="/frivillig">
-        <i class="fas fa-hand-holding-heart"></i>
+        <i className="fas fa-hand-holding-heart"></i>
         <br />
         Bli Frivillig
       </Link>
@@ -179,34 +175,7 @@ const NavContainer = styled.div`
     border-radius: 1rem;
     font-size: 1.2rem;
   }
-
 `
-
-const HvaER = () => {
-  return (
-    <Wrapper>
-      <h2>Møt bedrifter</h2>
-      <Text>
-        Vi er den beste arenaen for bedrifter og studenter å komme i kontakt.
-      </Text>
-    </Wrapper>
-  )
-}
-
-const DagenER = () => {
-  return (
-    <Wrapper>
-      <h2>Digitalt i 2020</h2>
-      <Text>
-        Bedriftsdagen i år blir heldigital og skjer over 2 dager.
-        På denne nettsiden kommer det snart en oversikt over alle bedrifter som deltar.
-        Hver bedrift vil ha sitt eget zoom rom som du kan besøke,
-        hvor de har egne opplegg og konkurranser, samt aktuelle stillingsannonser.
-      </Text>
-    </Wrapper>
-  )
-}
-
 
 const ErGrid = styled.div`
   display: grid;
@@ -214,134 +183,4 @@ const ErGrid = styled.div`
   grid-gap: 1rem;
 `
 
-const Wrapper = styled.div`
-  padding: 1rem;
-  background: none;
-  text-align: left;
-
-  background-color: #F5F5F5;
-
-  border-radius: 1rem;
-
-  h2 {
-    text-align: center;
-    color: black;
-  };
-
-  @media screen and (max-width: 800px) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-`
-
-const Text = styled.p`
-  color: black;
-  text-align: left;
-  font-weight: 500;
-`
-
-
 export default Front;
-
-
-
-const roller = {
-  leder: {
-    tittel: "Leder",
-    epost: "leder",
-  },
-  nestleder: {
-    tittel: "Nestleder",
-    epost: "nestleder"
-  },
-  bedrift: {
-    tittel: "Bedrifts Ansvarlig",
-    epost: "bedrift"
-  },
-  okonomi: {
-    tittel: "Økonomi Ansvarlig",
-    epost: "okonomi"
-  },
-  teknisk: {
-    tittel: "Teknisk Ansvarlig",
-    epost: "teknisk"
-  },
-  promotering: {
-    tittel: "Promoterings Ansvarlig",
-    epost: "promotering"
-  },
-  faglig: {
-    tittel: "Faglig Ansvarlig",
-    epost: "faglig"
-  },
-  funk: {
-    tittel: "Funksjonær Ansvarlig",
-    epost: "funkansvarlig"
-  },
-  underholdning: {
-    tittel: "Underholdning Ansvarlig",
-    epost: "underholdning"
-  },
-  sosialt: {
-    tittel: "Sosialt Ansvarlig",
-    epost: "sosialt"
-  }
-}
-
-const peepsInfo = [
-  {
-    rolle: roller.leder,
-    navn: "Lea Nøstdahl",
-    image: "LeaNøstdahl.png",
-  },
-  {
-    rolle: roller.nestleder,
-    navn: "Silje Marie Flaaten",
-    image: "SiljeMarieFlaaten.png",
-  },
-  {
-    rolle: roller.bedrift,
-    navn: "Lise Wåsjø",
-    image: "LiseWåsjø.png"
-  },
-  {
-    rolle: roller.okonomi,
-    navn: "Jonas Roppestad Olsen",
-    image: null
-  },
-  {
-    rolle: roller.promotering,
-    navn: "Jørgen Skimmeland",
-    image: "JørgenSkimmeland.png"
-  },
-  {
-    rolle: roller.promotering,
-    navn: "Camilla Christensen",
-    image: "CamillaChristensen.png"
-  },
-  {
-    rolle: roller.faglig,
-    navn: "Henrik Høybakk Olsvik",
-    image: "HenrikHøybakkOlsvik.png"
-  },
-  {
-    rolle: roller.funk,
-    navn: "Burhan Sarfraz",
-    image: "BurhanSarfraz.png"
-  },
-  {
-    rolle: roller.underholdning,
-    navn: "Thea Aksdal Nordgulen",
-    image: "TheaAksdalNordgulen.png"
-  },
-  {
-    rolle: roller.sosialt,
-    navn: "Nora Vestavik Klingvall",
-    image: null
-  },
-  {
-    rolle: roller.teknisk,
-    navn: "Kari Stamnes",
-    image: "KariStamnes.png"
-  }
-]
