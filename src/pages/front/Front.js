@@ -33,7 +33,7 @@ const Front = () => {
             <Visitkort2 peep={peep} key={peep.navn} />
           ))}
         </PeepsGrid>
-      </GridContainerWrapper>s
+      </GridContainerWrapper>
     </Div >
   );
 }
@@ -123,7 +123,7 @@ const Container = styled.div`
     font-size: 4rem;
     color: black;
     margin: 0;
-    
+
   }
   @media screen and (max-width: 800px) {
     h1 {

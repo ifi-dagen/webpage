@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../../App.css';
 import './program.css';
-import './index.css';
-import './front.css';
+import '../../index.css';
+//import '../../front.css';
 
-import program_info from './data/program_info.js'
+import program_info from '../../data/program_info.js'
 //import Layout from './Layout'
 //import Routes from "./App-routes";
 
@@ -43,6 +43,7 @@ class Program extends Component {
     }
   }
 
+  //ikke perfekt på plass
   statusbar = (now) => {
     this.setCurrent(now)
     //setTimeout for the duration of the event, then moving on to the next event.
@@ -50,14 +51,14 @@ class Program extends Component {
     if(this.state.currentEvent !== null){
       const info = program_info[this.state.dag][this.state.currentEvent]
       return (
-        <div id="banner" className="parallax">
-          <h1> Akkurat nå: </h1>
+        <div id="banner">
           <div className="container">
             <div className=" text-center caption">
+              <h1> Akkurat nå: </h1>
               <p>{info.foredragstittel}</p>
               <p>{info.beskrivelse}</p>
-              <p>{this.klokkeslett(info.start)}</p>
-              <p>{this.klokkeslett(info.slutt)}</p>
+              <a href={info.link}>delta her!</a>
+              <p>{this.klokkeslett(info.start)} - {this.klokkeslett(info.slutt)}</p>
             </div>
           </div>
         </div>
@@ -85,9 +86,6 @@ class Program extends Component {
       }
       i++;
     }
-    return(
-      <div>(demo)statusbaren er her</div>
-    )
   }
 
   programfilter = () => {
@@ -95,20 +93,19 @@ class Program extends Component {
       <button className="btn btn-lg" onClick={() => {this.setState({filterDag: "dag1"})}}>24.</button>
       <button className="btn btn-lg" onClick={() => {this.setState({filterDag: "dag2"})}}>25.</button>
     </div>)
-    //<h1>(demo) Program for idag</h1>
   }
 
   //lag liste av eventer
   hendelser = (dag) => {
     return (
-      <div>
+      <div className="Programinnhold">
         {program_info[dag].map((hendinger, index) => {
         //differansier på foredrag og alt annet.
         //Ide: grå ut alt som har skjedd allerede
         const event_id="#"+hendinger.tittel;
         return (
           <div className="event-detail" key={index}>
-            <a className="programLink" href={event_id}><mark className="starttid">{this.klokkeslett(hendinger.start)}</mark> - {hendinger.tittel}</a>
+            <a className="programLink" href={event_id}><strong className="starttid">{this.klokkeslett(hendinger.start)}</strong> - {hendinger.tittel}</a>
           </div>)
         })}
       </div>)
@@ -119,11 +116,12 @@ class Program extends Component {
       {program_info[dag].map((hendinger, index) => {
         return (<div className="hending-beholder" id={hendinger.tittel} key={index}>
           <div className="hendingBilde-beholder">
-            <img className="hendingBilde" src={require("./img/logoer/"+hendinger.bilde)} alt="Bilde av personen"/>
+            <img className="hendingBilde" src={require("../../img/logoer/"+hendinger.bilde)} alt="Bilde av personen"/>
           </div>
           <div className="hendingInfo-beholder">
-            <h4>{hendinger.tittel}</h4>
+            <h3>{hendinger.tittel}</h3>
             <h6>{this.klokkeslett(hendinger.start)}-{this.klokkeslett(hendinger.slutt)}</h6>
+            <h4><a href={hendinger.link}>delta her!</a></h4>
             <p>{hendinger.beskrivelse}</p>
           </div>
         </div>)
@@ -133,7 +131,7 @@ class Program extends Component {
 
   render(){
     return (
-      <div>
+      <div className="programside">
         <div className="statusbar">
           {this.statusbar(new Date())}
         </div>
