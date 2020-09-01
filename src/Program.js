@@ -10,16 +10,59 @@ import program_info from './data/program_info.js'
 
 class Program extends Component {
   //NB set dag til nåværende dag!
-  state  = { dag: "dag1", filterDag:"dag1" }
+  state = { dag: "dag1", filterDag:"dag1" ,currentEvent: 0}
 
   klokkeslett = (date) => {
-    return date.getHours()+":"+(date.getMinutes()<10 ? "0"+date.getMinutes():date.getMinutes())
+    return date.getHours()+":"+(date.getMinutes()<10 ? ("0" + date.getMinutes()) : date.getMinutes())
+  }
+
+  setNext = () => {
+    const event = this.state.currentEvent+1
+    this.setState({nextEvent: event})
+  }
+
+  setCurrent = (now) => {
+    //loop gjennom program til tidspunkt er funnet.
+    //når event er funnet, hvis det finnes neste, sett det og.
+    //hvis ingen nåværened er funnet, men finnes neste, set kun neste.
+
+    //let i =
+
+    console.log(new Date())
+    //console.log(program_info[this.state.dag][this.state.currentEvent].slutt);
+    if(program_info[this.state.dag].length == this.state.currentEvent && now>program_info[this.state.dag][this.state.currentEvent].slutt){
+      console.log("her!")
+      if(program_info[this.state.dag].length-1 > this.state.currentEvent){
+        console.log("her også!")
+        const event = this.state.currentEvent+1;
+        this.setState({currentEvent: event})
+        const context = this;
+        //instead of setState, updateCurrent() and use that to set right event
+        setTimeout(function() {context.setState({currentEvent: event+1}); context.setNext(); }, 2000);
+      }
+    }
   }
 
   statusbar = (now) => {
+    this.setCurrent(now)
     //setTimeout for the duration of the event, then moving on to the next event.
-
     //setState to keep control on current event.
+    if(this.state.currentEvent !== null){
+      const info = program_info[this.state.dag][this.state.currentEvent]
+      return (
+        <div id="banner" className="parallax">
+          <h1> Akkurat nå: </h1>
+          <div className="container">
+            <div className=" text-center caption">
+              <p>{info.foredragstittel}</p>
+              <p>{info.beskrivelse}</p>
+              <p>{this.klokkeslett(info.start)}</p>
+              <p>{this.klokkeslett(info.slutt)}</p>
+            </div>
+          </div>
+        </div>
+      )
+    }
     let i = 0;
     while ( i < program_info[this.state.dag].length){
       if(now< program_info[this.state.dag][i]["start"]){
