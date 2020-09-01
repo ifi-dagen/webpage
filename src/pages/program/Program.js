@@ -30,7 +30,7 @@ class Program extends Component {
 
     console.log(new Date())
     //console.log(program_info[this.state.dag][this.state.currentEvent].slutt);
-    if(program_info[this.state.dag].length == this.state.currentEvent && now>program_info[this.state.dag][this.state.currentEvent].slutt){
+    if(program_info[this.state.dag].length === this.state.currentEvent && now>program_info[this.state.dag][this.state.currentEvent].slutt){
       console.log("her!")
       if(program_info[this.state.dag].length-1 > this.state.currentEvent){
         console.log("her også!")

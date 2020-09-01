@@ -11,7 +11,6 @@ const stand_info =
       slutt: new Date(2020, 8, 22, 19, 51, 5, 0),
       beskrivelse: "åpningen",
       link: "zoom.us",
-      link: "zoom.us",
       bilde: "bekk-example.png"
     },
     {
