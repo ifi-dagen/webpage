@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../../App.css';
 import './bedrift.css';
-import Visitkort from './components/Visitkort';
-import Prisinfo from './components/Prisinfo';
+import Visitkort from '../../components/Visitkort';
+import Prisinfo from '../../components/Prisinfo';
 
 
 export default class Bedrift extends Component {
-    render(){
+    render() {
         return (
             <div className="bedriftbase ">
-                <div className ="påmeldingsinfo hidden">
+                <div className="påmeldingsinfo hidden">
                     <h1>PÅMELDING ER ÅPEN</h1>
                     <p>
                         Informasjon om påmelding ble også sendt ut til bedriftene på vår mailingliste. Er du usikker på
@@ -28,9 +28,9 @@ export default class Bedrift extends Component {
                     </p>
                 </div>
                 <div className="påmeldingsinfo">
-                    <h1>PÅMELDING FOR HØSTEN 2020 ER STENGT</h1>
+                    <h1>PÅMELDING FOR HØSTEN 2020 ER FYLT</h1>
                     <p>
-                        Informasjon om påmeldinger blir sendt ut til bedriftene på vår mailingliste. Er du usikker på
+                        Det er fortsatt mulig å sette seg på venteliste <a href="https://docs.google.com/forms/d/e/1FAIpQLSec3i-eYWcFaiQLnX2pNXhc-i7gcj4JhC-M_RAyeFuRSv8xCg/viewform">her</a>. Informasjon om påmeldinger blir sendt ut til bedriftene på vår mailingliste. Er du usikker på
                         om din bedrift står på maillisten, ta kontakt.
                     </p>
                 </div>
@@ -38,12 +38,12 @@ export default class Bedrift extends Component {
                 <div className="kontaktinfo">
                     <h1>SPØRSMÅL?</h1>
                     <div className="styret container-fluid">
-                        <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø"/>
-                        <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik"/>
+                        <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø" />
+                        <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik" />
                     </div>
                 </div>
 
-                <div className ="mailingliste hidden">
+                <div className="mailingliste hidden">
                     <h1>MAILINGLISTE - null backend atm, men knappen dukker opp her når den er klar!</h1>
                     <div className="form-group">
                         <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skriv e-postadresse her..." />
@@ -56,7 +56,7 @@ export default class Bedrift extends Component {
                     <p>
                         I år blir dagen@ifi anderledes, men til vanlig er dagen@ifi den store karrieredagen vår tidlig på høsten med nettverkbygging fra morgen til kveld. ettermiddagen@ifi er en litt mindre karriredag med nettverksbygging fra formiddag til kveld.
                     </p>
-                    <span className="blue">Påmelding og priser for ettermiddagen@ifi 2020 publiseres i januar/februar.</span>
+                    <span className="blue">Påmelding og priser for ettermiddagen@ifi 2021 publiseres i januar/februar.</span>
                 </div>
 
                 <div className="hovedsponsor_beskrivelse hidden">
@@ -70,7 +70,7 @@ export default class Bedrift extends Component {
                     </p>
                 </div>
 
-				        <Prisinfo className="hidden"/>
+                <Prisinfo className="hidden" />
             </div>
         );
     }

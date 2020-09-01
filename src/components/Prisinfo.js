@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
-import '../bedrift.css';
+import '../pages/bedrift/bedrift.css';
 
-export default class Prisinfo extends Component{
+export default class Prisinfo extends Component {
     render() {
         if (this.props.className === "hidden") {
-            return (<div className="priser_kommer_her"/>);
+            return (<div className="priser_kommer_her" />);
         }
 
         return (
@@ -23,14 +23,14 @@ export default class Prisinfo extends Component{
                             <h2 className="svart_overskrift">STANDPLASS</h2>
                             <h5 className="blue">pris: 35 000,-</h5>
 
-                            <br/><b>Pakken inkluderer:</b>
-                            <br/>- Standplass på ca 4m2
-                            <br/>- Bord og to barkrakker
-                            <br/>- Trådløst internett
-                            <br/>- Strøm (to kontakter)
-                            <br/>- Logo i informasjonsbrosjyren for dagen@ifi
-                            <br/>- Tilgang til bedriftslounge med mat og drikke på dagtid
-                            <br/>- Mulighet for å holde foredrag/lyntale
+                            <br /><b>Pakken inkluderer:</b>
+                            <br />- Standplass på ca 4m2
+                            <br />- Bord og to barkrakker
+                            <br />- Trådløst internett
+                            <br />- Strøm (to kontakter)
+                            <br />- Logo i informasjonsbrosjyren for dagen@ifi
+                            <br />- Tilgang til bedriftslounge med mat og drikke på dagtid
+                            <br />- Mulighet for å holde foredrag/lyntale
                         </div>
                     </div>
 
@@ -40,13 +40,13 @@ export default class Prisinfo extends Component{
                             <h2 className="svart_overskrift">SPONSOR</h2>
                             <h5 className="blue">pris: 55 000,-</h5>
 
-                            <br/><b>Pakken inkluderer:</b>
-                            <br/>- Alt som er inkludert i standakken
-                            <br/>- Navn og logo fremhevet på vår nettside og trykksaker
-                            <br/>- Intervjurom
-                            <br/>- 1. Prioritet på valg av standplass
-                            <br/>- Garantert et foredrag eller en lyntale
-                            <br/>- 10 bonger for bruk på kvelden
+                            <br /><b>Pakken inkluderer:</b>
+                            <br />- Alt som er inkludert i standakken
+                            <br />- Navn og logo fremhevet på vår nettside og trykksaker
+                            <br />- Intervjurom
+                            <br />- 1. Prioritet på valg av standplass
+                            <br />- Garantert et foredrag eller en lyntale
+                            <br />- 10 bonger for bruk på kvelden
                         </div>
                     </div>
 
@@ -56,14 +56,14 @@ export default class Prisinfo extends Component{
                             <h2 className="svart_overskrift">HOVEDSPONSOR</h2>
                             <h5 className="blue">pris: 100 000,-</h5>
 
-                            <br/><b>Pakken inkluderer:</b>
-                            <br/>- Standplass på ca 4m2
-                            <br/>- Bord og to barkrakker
-                            <br/>- Trådløst internett
-                            <br/>- Strøm (to kontakter)
-                            <br/>- Logo i informasjonsbrosjyren for dagen@ifi
-                            <br/>- Tilgang til bedriftslounge med mat og drikke på dagtid
-                            <br/>- Mulighet for å holde foredrag/lyntale
+                            <br /><b>Pakken inkluderer:</b>
+                            <br />- Standplass på ca 4m2
+                            <br />- Bord og to barkrakker
+                            <br />- Trådløst internett
+                            <br />- Strøm (to kontakter)
+                            <br />- Logo i informasjonsbrosjyren for dagen@ifi
+                            <br />- Tilgang til bedriftslounge med mat og drikke på dagtid
+                            <br />- Mulighet for å holde foredrag/lyntale
                         </div>
                     </div>
 

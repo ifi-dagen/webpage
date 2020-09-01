@@ -1,0 +1,55 @@
+
+#frivilliginfo .col-xl-3 {
+    margin-right: 3%;
+  }
+  #sporsmal .col-lg-3 {
+    width: 85%;
+  }
+  .base{
+    margin: 0 20% 5% 20%;
+    text-align: left;
+  }
+  .base h1{
+    margin: 6% 0 1% 0;
+  }
+  
+  .kontaktinfo h1{
+    padding: 0;
+  }
+ 
+  .Visittkort{
+    min-width: 120px;
+    max-width: 250px;
+    padding: 4% 2%;
+    font-weight: 200;
+   }
+  
+  .Visittkort .image-wrapper{
+    text-align: center;
+    min-width: 130px;
+    width: inherit;
+  }
+  
+  @media (max-width: 1200px) {
+    #frivilliginfo .col-xl-3 {
+      margin-left: 8.3%;
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .Visittkort .image-wrapper{
+      text-align: center;
+      min-width: 130px;
+      width: inherit;
+    }
+  
+    .Visittkort{
+      min-width: 120px;
+      max-width: 250px;
+      padding: 5%;
+      font-weight: 200;
+     }
+  
+  }
+  
