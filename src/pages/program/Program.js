@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import '../../App.css';
 import './program.css';
-import '../../index.css';
-//import '../../front.css';
-
 import program_info from '../../data/program_info.js'
-//import Layout from './Layout'
-//import Routes from "./App-routes";
 
 class Program extends Component {
   //NB set dag til nåværende dag!
@@ -51,15 +45,13 @@ class Program extends Component {
     if(this.state.currentEvent !== null){
       const info = program_info[this.state.dag][this.state.currentEvent]
       return (
-        <div id="banner">
+        <div>
           <div className="container">
-            <div className=" text-center caption">
               <h1> Akkurat nå: </h1>
               <p>{info.foredragstittel}</p>
               <p>{info.beskrivelse}</p>
               <a href={info.link}>delta her!</a>
               <p>{this.klokkeslett(info.start)} - {this.klokkeslett(info.slutt)}</p>
-            </div>
           </div>
         </div>
       )
@@ -130,6 +122,16 @@ class Program extends Component {
   }
 
   render(){
+    if (this.props.published === false){
+      return(<div className="programside">
+        <div className="statusbar">
+          <div className="container">
+                <h1> Program kommer </h1>
+                <p>Stay tuned!</p>
+          </div>
+        </div>
+      </div>)
+    }
     return (
       <div className="programside">
         <div className="statusbar">

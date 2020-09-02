@@ -1,24 +1,29 @@
 .programside{
   max-width: 1000px;
+  padding: 1rem;
   margin: auto;
 }
 
- #banner {
-   max-height: 1000px;
-   background-color: rgba(45,164,255,0.7);
-   border-radius: 10px;
-   background-size: cover;
-   background-position: center;
-   color: azure;
-   padding: 1rem 1rem 5%;
-   font-size: 1.5rem;
- }
+.statusbar{
+ max-height: 1000px;
+ background-color: rgba(45,164,255,0.7);
+ border-radius: 10px;
+ background-size: cover;
+ background-position: center;
+ color: azure;
+ padding: 1rem 1rem 5%;
+ font-size: 1.5rem;
+}
 
- #banner a{
-   color: azure;
- }
+.statusbar a{
+ color: azure;
+}
 
- button{
+.container{
+  text-align: center;
+}
+
+button{
    background: none;
    color: dodgerblue;
    font-size: 1.2em;
@@ -28,7 +33,7 @@
    border-radius: 3px;
  }
 
- button:hover {
+button:hover {
    cursor: pointer;
    color: blue;
    border: 2px solid blue;
