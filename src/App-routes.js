@@ -26,7 +26,12 @@ class Routes extends Component {
         <Route
           exact
           path="/program"
-          render={prop => <Program {...prop} store={this.props.store} />}
+          render={prop => <Program {...prop} store={this.props.store} published={false}/>}
+        />
+        <Route
+          exact
+          path="/skjultprogram"
+          render={prop => <Program {...prop} store={this.props.store} published={true}/>}
         />
         <Route
           exact
