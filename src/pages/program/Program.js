@@ -1,10 +1,23 @@
 import React, { Component } from 'react';
 import './program.css';
+import ProgramStatus from './ProgramStatus.js';
 import program_info from '../../data/program_info.js'
 
 class Program extends Component {
   //NB set dag til nåværende dag!
-  state = { dag: "dag1", filterDag:"dag1" ,currentEvent: 0}
+  state = { dag: "2020-09-06", filterDag:"2020-09-06" ,currentEvent: 0}
+
+  dateString =(d) => {
+      let month = '' + (d.getMonth() + 1);
+      let day = '' + d.getDate();
+      let year = d.getFullYear();
+
+      if (month.length < 2)
+          month = '0' + month;
+      if (day.length < 2)
+          day = '0' + day;
+      return [year, month, day].join('-');
+  }
 
   klokkeslett = (date) => {
     return date.getHours()+":"+(date.getMinutes()<10 ? ("0" + date.getMinutes()) : date.getMinutes())
@@ -82,8 +95,8 @@ class Program extends Component {
 
   programfilter = () => {
     return (<div className="programfilter">
-      <button className="btn btn-lg" onClick={() => {this.setState({filterDag: "dag1"})}}>24.</button>
-      <button className="btn btn-lg" onClick={() => {this.setState({filterDag: "dag2"})}}>25.</button>
+      <button className="btn btn-lg" onClick={() => {this.setState({filterDag: "2020-09-24"})}}>24.</button>
+      <button className="btn btn-lg" onClick={() => {this.setState({filterDag: "2020-09-25"})}}>25.</button>
     </div>)
   }
 
@@ -134,9 +147,7 @@ class Program extends Component {
     }
     return (
       <div className="programside">
-        <div className="statusbar">
-          {this.statusbar(new Date())}
-        </div>
+        <ProgramStatus/>
         <div className="program">
           {this.programfilter()}
           {this.hendelser(this.state.filterDag)}
