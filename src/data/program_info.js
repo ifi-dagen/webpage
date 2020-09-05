@@ -1,14 +1,14 @@
 //stand_info inneholder to objekter, et for hver dag.
 //
 
-const stand_info =
+const program_info =
 {
-  "dag1": [
+  "2020-09-06": [
     {
       tittel: "Åpning",
       type: "Annet",
-      start: new Date(2020, 8, 1, 19, 51, 0, 0),
-      slutt: new Date(2020, 8, 22, 19, 51, 5, 0),
+      start: new Date(2020, 8, 5, 23, 36, 0, 0),
+      slutt: new Date(2020, 8, 5, 23, 36, 5, 0),
       beskrivelse: "åpningen",
       link: "zoom.us",
       bilde: "bekk-example.png"
@@ -16,8 +16,8 @@ const stand_info =
     {
       tittel: "Foredragstittel",
       type: "Foredrag",
-      start: new Date(2020, 7, 22, 19, 51, 6, 0),
-      slutt: new Date(2020, 7, 22, 19, 51, 11, 0),
+      start: new Date(2020, 8, 5, 23, 36, 6, 0),
+      slutt: new Date(2020, 8, 5, 23, 36, 11, 0),
       beskrivelse: "foredragsbeskrivelse",
       link: "zoom.us",
       bilde: "dnb-example.jpg"
@@ -25,8 +25,8 @@ const stand_info =
     {
       tittel: "Foredragstittel2",
       type: "Foredrag",
-      start: new Date(2020, 7, 22, 19, 51, 12, 0),
-      slutt: new Date(2020, 7, 22, 19, 51, 17, 0),
+      start: new Date(2020, 8, 5, 23, 36, 12, 0),
+      slutt: new Date(2020, 8, 5, 23, 36, 17, 0),
       beskrivelse: "foredragsbeskrivelse2",
       link: "zoom.us",
       bilde: "ffi-example.png"
@@ -34,8 +34,8 @@ const stand_info =
     {
       tittel: "Foredragstittel3",
       type: "Foredrag",
-      start: new Date(2020, 7, 22, 19, 51, 18, 0),
-      slutt: new Date(2020, 7, 22, 19, 51, 23, 0),
+      start: new Date(2020, 8, 5, 23, 36, 18, 0),
+      slutt: new Date(2020, 8, 5, 23, 36, 23, 0),
       beskrivelse: "foredragsbeskrivelse3",
       link: "zoom.us",
       bilde: "bekk-example.png"
@@ -43,18 +43,18 @@ const stand_info =
     {
       tittel: "Foredragstittel4",
       type: "Foredrag",
-      start: new Date(2020, 7, 22, 19, 51, 24, 0),
-      slutt: new Date(2020, 7, 22, 19, 51, 29, 0),
+      start: new Date(2020, 8, 5, 23, 36, 24, 0),
+      slutt: new Date(2020, 8, 5, 23, 36, 29, 0),
       beskrivelse: "foredragsbeskrivelse4",
       link: "zoom.us",
       bilde: "dnb-example.jpg"
     }
   ],
-  "dag2": [
+  "2020-09-05": [
     {
       tittel: "Foredragstittel5",
-      start: new Date(2020, 7, 22, 19, 51, 30, 0),
-      slutt: new Date(2020, 7, 22, 19, 51, 35, 0),
+      start: new Date(2020, 8, 5, 23, 36, 30, 0),
+      slutt: new Date(2020, 8, 5, 23, 36, 35, 0),
       beskrivelse: "foredragsbeskrivelse5",
       link: "zoom.us",
       bilde: "dnb-example.jpg"
@@ -62,4 +62,4 @@ const stand_info =
   ]
 }
 
-export default stand_info;
+export default program_info;
