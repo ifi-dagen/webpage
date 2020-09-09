@@ -112,14 +112,14 @@ class ProgramStatus extends Component {
     if(this.props.compact){
       return (
         <div className={live? "programstatus-bar compact-bar": "programstatus-bar compact-bar programstatus-snart"}>
-          <h6> {live? "Akkurat nå:": "Kommer snart:"} </h6>
+          <h1 id="status"> {live? "Akkurat nå:": "Kommer snart:"} </h1>
           <div className="programstatus-compact-container">
               {eventIndexes.map((programindex, listeindex) => {
                 return(
                   <div className="programstatus-compact-tekstboks" key={listeindex}>
-                    <h4><a className="programstatus-a" href={"/program/#"+program_info[programindex].tittel}>{program_info[programindex].tittel}</a>
+                    <h4 id="tittel"><a className="programstatus-a" href={"/program/#"+program_info[programindex].tittel}>{program_info[programindex].tittel}</a>
                     {!live && "- starter "+this.klokkeslett(program_info[programindex].start)}</h4>
-                    <h4> <a className="programstatus-a" href={program_info[programindex].link} target="_blank">delta her!</a></h4>
+                    <h4 id="delta-link"> <a className="programstatus-a" href={program_info[programindex].link} target="_blank" rel="noopener">delta her!</a></h4>
                   </div>
                 )
               })}
@@ -130,15 +130,15 @@ class ProgramStatus extends Component {
 
     return (
       <div className={live? "programstatus-bar": "programstatus-bar programstatus-snart"}>
-        <h6> {live? "Akkurat nå:": "Kommer snart:"} </h6>
+        <h6 id="status"> {live? "Akkurat nå:": "Kommer snart:"} </h6>
         <div className="programstatus-container">
             {eventIndexes.map((programindex, listeindex) => {
               return(
                 <div className="programstatus-tekstboks" key={listeindex}>
-                  <h1>{program_info[programindex].tittel}</h1>
+                  <h1 id="tittel">{program_info[programindex].tittel}</h1>
                   <p>{program_info[programindex].beskrivelse}</p>
-                  <h4><a className="programstatus-a" href={program_info[programindex].link} target="_blank">delta her!</a></h4>
-                  <h4>{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
+                  <h4 id="delta-link"><a className="programstatus-a" href={program_info[programindex].link} target="_blank"  rel="noopener">delta her!</a></h4>
+                  <h4 id="tidspunk">{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
                 </div>
               )
             })}

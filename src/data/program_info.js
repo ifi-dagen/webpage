@@ -6,8 +6,8 @@ const program_info =
   {
     tittel: "Åpning",
     type: "Annet",
-    start: new Date(2020, 8, 9, 15, 34, 0, 0),
-    slutt: new Date(2020, 8, 9, 15, 54, 5, 0),
+    start: new Date(2020, 8, 9, 18, 34, 0, 0),
+    slutt: new Date(2020, 8, 9, 18, 37, 5, 0),
     beskrivelse: "åpningen",
     link: "https://zoom.us",
     bilde: "bekk-example.png"
@@ -15,8 +15,8 @@ const program_info =
   {
     tittel: "Foredrags-tittel",
     type: "Foredrag",
-    start: new Date(2020, 8, 9, 15, 34, 6, 0),
-    slutt: new Date(2020, 8, 9, 15, 34, 11, 0),
+    start: new Date(2020, 8, 9, 18, 34, 6, 0),
+    slutt: new Date(2020, 8, 9, 18, 37, 11, 0),
     beskrivelse: "foredragsbeskrivelse",
     link: "zoom.us",
     bilde: "dnb-example.jpg"
