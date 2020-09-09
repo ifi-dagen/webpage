@@ -5,7 +5,7 @@ import program_info from '../../data/program_info.js'
 
 class Program extends Component {
   //NB set dag til nåværende dag!
-  state = { dag: "2020-09-06", filterDag:"2020-09-06" ,currentEvent: 0}
+  state = { dag: "2020-09-05", filterDag:"2020-09-09" ,currentEvent: 0}
 
   dateString =(d) => {
       let month = '' + (d.getMonth() + 1);
@@ -102,23 +102,24 @@ class Program extends Component {
 
   //lag liste av eventer
   hendelser = (dag) => {
+    const filtered_events = program_info.filter((item) => { return this.dateString(item.start)===this.state.filterDag})
+
     return (
       <div className="Programinnhold">
-        {program_info[dag].map((hendinger, index) => {
-        //differansier på foredrag og alt annet.
-        //Ide: grå ut alt som har skjedd allerede
-        const event_id="#"+hendinger.tittel;
-        return (
-          <div className="event-detail" key={index}>
-            <a className="programLink" href={event_id}><strong className="starttid">{this.klokkeslett(hendinger.start)}</strong> - {hendinger.tittel}</a>
-          </div>)
-        })}
+        {filtered_events.map((hendinger, index) => {
+          //differansier på foredrag og alt annet.
+          //Ide: grå ut alt som har skjedd allerede
+          const event_id="#"+hendinger.tittel;
+          return (
+            <div className="event-detail" key={index}>
+              <a className="programLink" href={event_id}><strong className="starttid">{this.klokkeslett(hendinger.start)}</strong> - {hendinger.tittel}</a>
+            </div>)})}
       </div>)
   }
 
   detaljertekort = (dag) => {
     return (<div>
-      {program_info[dag].map((hendinger, index) => {
+      {program_info.map((hendinger, index) => {
         return (<div className="hending-beholder" id={hendinger.tittel} key={index}>
           <div className="hendingBilde-beholder">
             <img className="hendingBilde" src={require("../../img/logoer/"+hendinger.bilde)} alt="Bilde av personen"/>
@@ -158,6 +159,7 @@ class Program extends Component {
       </div>
     );
   }
+
 }
 
 export default Program;
