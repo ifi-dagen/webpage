@@ -3,14 +3,13 @@ import './program.css';
 import program_info from '../../data/program_info.js'
 
 class ProgramStatus extends Component {
-  dateCount = 25;
-  dateStringStub = '2020-09-'
-  startDate = '2020-09-06'
-  endDate = '2020-09-05'
-  state = { date:'2020-09-02', currentEvent: -1, dayEnded: false}
+  startDate = program_info[0].start
+  endDate = program_info[program_info.length-1].slutt
+  nextUpBuffer = 10*60*1000 //timeframe for nextEvent
+  state = { date:'2020-09-02', currentEvent: [], nextEvent: [], dayEnded: false}
 
   klokkeslett = (date) => {
-    return date.getHours()+":"+(date.getMinutes()<10 ? ("0" + date.getMinutes()) : date.getMinutes())
+    return date.getHours()+":"+(date.getMinutes() < 10 ? ("0" + date.getMinutes()) : date.getMinutes())+":"+(date.getSeconds() < 10 ? ("0" + date.getSeconds()) : date.getSeconds())
   }
 
   dateString = (d) => {
@@ -25,138 +24,114 @@ class ProgramStatus extends Component {
       return [year, month, day].join('-');
   }
 
-  componentDidMount() {
-    this.findCurrentState();
-    if (this.state.date < '2020-09-26'){
-      console.log("find now")
-      this.setState({date: this.startDate})
-      //find date, then setTimeout for change of date
-      setTimeout(() => {this.bump()},this.secondsToNext())//this.secondsToNext()
-    }
+  earliestDate = (dats) => {
+    return Math.min.apply(null,dats.map(item => item.getTime()))
   }
 
+  componentDidMount() {
+    console.log("componentDidMount", new Date())
+    this.bump()
+  }
+
+  //this and bump are only functions allowed to edit state!
   findCurrentState(){
     const now = new Date()
     const nowString = this.dateString(now);
-    this.setState({date: nowString})
-    if(program_info[nowString]){
-      //loop gjennom liste for den dagen:
-      let i = -1;
-      if(now < program_info[nowString][0].start){
-        this.setState({currentEvent: -1})
-        return;
-      } else {
-        i++;
-      }
-      while (now > program_info[nowString][i].slutt){
-        i++
-        if(!program_info[nowString][i]){
-          console.log(i, "whaaat!")
-          //sjekk om vi er på siste del av programmet.
-          this.setState({currentEvent: -1, dayEnded: true})
-          return;
-        }
-      }
-      this.setState({currentEvent: i})
-    } else {
-      this.setState({currentEvent: -1, dayEnded: true})
+    //loop gjennom listen:
+    if(now < program_info[0].start+this.nextUpBuffer){
+      this.setState({date: nowString, currentEvent: []})
+      return;
     }
-
+    let events = []
+    let upNext = []
+    program_info.forEach((item, i) => {
+      if(now >= program_info[i].start && now < program_info[i].slutt){
+        events.push(i)
+      } else if(now > program_info[i].start-this.nextUpBuffer && now < program_info[i].start){
+        upNext.push(i)
+      }
+    });
+    this.setState({date: nowString, currentEvent: events, nextEvent: upNext})
   }
 
+  //this and findCurrentState are only functions allowed to edit state!
   bump = () => {
     console.log("find new, if bump can be done right...")
-    if (program_info[this.state.date] && this.state.currentEvent+1 < program_info[this.state.date].length){
-      const newNumber = this.state.currentEvent+1;
-      this.setState({currentEvent: newNumber});
-      setTimeout(() => {this.bump()},this.secondsToNext())
-    } else {
-      console.log("end day")
-      this.setState({dayEnded: true});
-      this.setState({currentEvent:-1});
-      if(this.state.date <'2020-09-26'){
-        setTimeout(() => {this.newDay()},this.secondsToNext())
-      }
+    this.findCurrentState();
+    //console.log("find now2", new Date(),this.endDate)
+    if (new Date() <= this.endDate){
+      console.log("find now") //this.setState({date: this.startDate})//find date, then setTimeout for change of date
+      setTimeout(() => {this.bump()},this.secondsToNext())//this.secondsToNext()
     }
   }
 
   //Only used before or during event,not after
   secondsToNext(){
-    if (this.state.date < this.startDate){
+    const now = new Date();
+    console.log(now);
+    if (now < this.startDate){
       //days before wait for next day.
-      console.log((program_info[this.startDate][0].start,new Date()));
-      console.log((program_info[this.startDate][0].start-new Date()));
-      return (program_info[this.startDate][0].start-new Date());
+      return (program_info[0].start-new Date());
     }
-    if(this.state.currentEvent === -1){
-      //hvis dagen er over, regn ut til første neste dag
-      if(this.state.dayEnded){
-        if(this.state.date === this.startDate){
-          //neste dag er 2020-09-25
-          return (program_info[this.endDate][0].start-new Date());
-        } else {
-          //neste dag er 2020-09-26
-          return 9999999999 //just some thing high
-        }
-      } else {
-        //regn ut fra nå til første event.
-        console.log(this.state.date)
-        return program_info[this.state.date][0].start-new Date();
+    if (now > this.endDate){
+      //console.log(9999999999);
+      return 9999999999 //just some thing high because event has ended.
+    }
+    if(this.state.currentEvent.length === 0){
+      if(this.state.nextEvent.length === 0){
+        //finn time to nextEvent, but don't edit state here
+        return this.earliestDate(this.state.nextEvent.map(item => program_info[item].start))-now; //tid til første next event.
       }
+      return this.earliestDate(this.state.nextEvent.map(item => program_info[item].start))-now; //tid til første next event.
     } else {
-      if (this.state.currentEvent+1 < program_info[this.state.date].length){
-        return program_info[this.state.date][this.state.currentEvent+1].start-new Date();
+      //finn hva som kommer først, nytt vent, eller slutt på eksisterende?
+      const endings = this.earliestDate(this.state.currentEvent.filter(item => program_info[item].slutt >= now).map(item => program_info[item].slutt)) //this.earliestDate() of endings
+      const starts =  this.earliestDate(this.state.nextEvent.filter(item => program_info[item].start >= now).map(item => program_info[item].start)) //this.earliestDate() of starts
+      if (starts === 0 || endings < starts){
+        return endings-now
       }
-      return program_info[this.state.date][this.state.currentEvent].slutt-new Date();
+      return starts-now;
     }
-    return program_info[this.state.date]
-    //ta start for neste minus nå.
-  }
-
-  newDay = () => {
-    console.log("new day!")
-    const newDateString = this.dateStringStub+this.dateCount;
-    this.dateCount++;
-    this.setState({date: newDateString, currentEvent:-1});
-    if(program_info[this.state.date]){
-      console.log("HEREO",this.state)
-      this.setState({dayEnded: false});
-    } else {
-      this.setState({dayEnded: true});
-    }
-    console.log(this.state)
-    setTimeout(() => {console.log("first new day bump");this.bump()},this.secondsToNext())
   }
 
   render(){
-    console.log(this.state.date, this.state.currentEvent,this.state.dayEnded);
-    //console.log(program_info[this.state.date])
-    if(this.state.currentEvent !== -1){
-      //console.log(program_info[this.state.date][this.state.currentEvent]);
-    }
-    if (this.state.dayEnded){
-      return(
-        <div className="container"></div>
-      )
-    }
-    if(this.state.currentEvent === -1){
+    if(this.state.currentEvent.length === 0){
+      if(this.state.nextEvent.length === 0){
+        return(
+          <div className="container"></div>
+        )
+      }
       return(
         <div className="statusbar">
           <div className="container">
-            <h1> Program kommer </h1>
-            <p>Stay tuned!</p>
+            <h6> Kommer snart: </h6>
+            {this.state.nextEvent.map((programindex, listeindex) => {
+              return(
+                <div className="tekstboks" key={listeindex}>
+                  <h1>{program_info[programindex].tittel}</h1>
+                  <p>{program_info[programindex].beskrivelse}</p>
+                  <h4><a href={program_info[programindex].link}>delta her!</a></h4>
+                  <h4>{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
+                </div>
+              )
+            })}
           </div>
       </div>)
     } else {
-      const hending = program_info[this.state.date][this.state.currentEvent];
       return (
         <div className="statusbar">
           <div className="container">
               <h6> Akkurat nå: </h6>
-              <h1>{hending.tittel}</h1>
-              <p>{hending.beskrivelse}</p>
-              <h4><a href={hending.link}>delta her!</a></h4>
-              <h4>{this.klokkeslett(hending.start)} - {this.klokkeslett(hending.slutt)}</h4>
+              {this.state.currentEvent.map((programindex, listeindex) => {
+                return(
+                  <div className="tekstboks" key={listeindex}>
+                    <h1>{program_info[programindex].tittel}</h1>
+                    <p>{program_info[programindex].beskrivelse}</p>
+                    <h4><a href={program_info[programindex].link}>delta her!</a></h4>
+                    <h4>{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
+                  </div>
+                )
+              })}
           </div>
         </div>
       )
