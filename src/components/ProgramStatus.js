@@ -119,7 +119,7 @@ class ProgramStatus extends Component {
                   <div className="programstatus-compact-tekstboks" key={listeindex}>
                     <h4 id="tittel"><a className="programstatus-a" href={"/program/#"+program_info[programindex].tittel}>{program_info[programindex].tittel}</a>
                     {!live && "- starter "+this.klokkeslett(program_info[programindex].start)}</h4>
-                    <h4 id="delta-link"> <a className="programstatus-a" href={program_info[programindex].link} target="_blank" rel="noopener">delta her!</a></h4>
+                    <h4 id="delta-link"> <a className="programstatus-a" href={program_info[programindex].link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>
                   </div>
                 )
               })}
@@ -137,7 +137,7 @@ class ProgramStatus extends Component {
                 <div className="programstatus-tekstboks" key={listeindex}>
                   <h1 id="tittel">{program_info[programindex].tittel}</h1>
                   <p>{program_info[programindex].beskrivelse}</p>
-                  <h4 id="delta-link"><a className="programstatus-a" href={program_info[programindex].link} target="_blank"  rel="noopener">delta her!</a></h4>
+                  <h4 id="delta-link"><a className="programstatus-a" href={program_info[programindex].link} target="_blank"  rel="noopener noreferrer">delta her!</a></h4>
                   <h4 id="tidspunk">{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
                 </div>
               )
