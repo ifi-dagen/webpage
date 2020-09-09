@@ -1,0 +1,56 @@
+.programstatus-bar{
+ max-height: 1000px;
+ background-color: rgba(0,191,255,1);
+ border-radius: 1rem;
+ background-size: cover;
+ background-position: center;
+ color: azure;
+ padding: 1rem 1rem 5%;
+ font-size: 1.5rem;
+ margin-bottom: 1%;
+ text-align: center;
+}
+
+.compact-bar{
+  margin: 0 2rem;
+  padding: 1rem 5rem 5%;
+  text-align: left;
+}
+
+.programstatus-snart{
+  background-color: rgba(45,164,255,0.7);
+}
+
+.programstatus-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.programstatus-compact-container{
+  display: block;
+}
+
+.programstatus-tekstboks{
+  text-align: center;
+  /*word-wrap: break-word;/*find better than this*/
+  text-overflow: ellipsis;
+}
+.programstatus-tekstboks a{
+ color: azure;
+}
+
+.programstatus-compact-tekstboks{
+  text-align: left;
+  /*word-wrap: break-word;/*find better than this*/
+  margin: auto;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.programstatus-compact-tekstboks a{
+ color: azure;
+}

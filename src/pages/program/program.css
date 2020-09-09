@@ -4,26 +4,6 @@
   margin: auto;
 }
 
-.statusbar{
- max-height: 1000px;
- background-color: rgba(45,164,255,0.7);
- border-radius: 10px;
- background-size: cover;
- background-position: center;
- color: azure;
- padding: 1rem 1rem 5%;
- font-size: 1.5rem;
- margin-bottom: 1%;
-}
-
-.statusbar a{
- color: azure;
-}
-
-.container{
-  text-align: center;
-}
-
 button{
    background: none;
    color: dodgerblue;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './program.css';
-import program_info from '../../data/program_info.js'
+import program_info from '../data/program_info.js'
+import './ProgramStatus.css'
 
 class ProgramStatus extends Component {
   startDate = program_info[0].start
@@ -8,6 +8,7 @@ class ProgramStatus extends Component {
   nextUpBuffer = 10*60*1000 //timeframe for nextEvent
   state = { date:'2020-09-02', currentEvent: [], nextEvent: [], dayEnded: false}
 
+  // TODO: remove seconds
   klokkeslett = (date) => {
     return date.getHours()+":"+(date.getMinutes() < 10 ? ("0" + date.getMinutes()) : date.getMinutes())+":"+(date.getSeconds() < 10 ? ("0" + date.getSeconds()) : date.getSeconds())
   }
@@ -95,40 +96,30 @@ class ProgramStatus extends Component {
   }
 
   render(){
+    let live = false;
     if(this.state.currentEvent.length === 0){
       if(this.state.nextEvent.length === 0){
         return(
-          <div className="container"></div>
+          <div className="programstatus-container"></div>
         )
       }
-      return(
-        <div className="statusbar">
-          <div className="container">
-            <h6> Kommer snart: </h6>
-            {this.state.nextEvent.map((programindex, listeindex) => {
-              return(
-                <div className="tekstboks" key={listeindex}>
-                  <h1>{program_info[programindex].tittel}</h1>
-                  <p>{program_info[programindex].beskrivelse}</p>
-                  <h4><a href={program_info[programindex].link}>delta her!</a></h4>
-                  <h4>{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
-                </div>
-              )
-            })}
-          </div>
-      </div>)
+      live = false
     } else {
+      live = true
+    }
+    let eventIndexes = live? this.state.currentEvent: this.state.nextEvent;
+
+    if(this.props.compact){
       return (
-        <div className="statusbar">
-          <div className="container">
-              <h6> Akkurat nå: </h6>
-              {this.state.currentEvent.map((programindex, listeindex) => {
+        <div className={live? "programstatus-bar compact-bar": "programstatus-bar compact-bar programstatus-snart"}>
+          <h6> {live? "Akkurat nå:": "Kommer snart:"} </h6>
+          <div className="programstatus-compact-container">
+              {eventIndexes.map((programindex, listeindex) => {
                 return(
-                  <div className="tekstboks" key={listeindex}>
-                    <h1>{program_info[programindex].tittel}</h1>
-                    <p>{program_info[programindex].beskrivelse}</p>
-                    <h4><a href={program_info[programindex].link}>delta her!</a></h4>
-                    <h4>{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
+                  <div className="programstatus-compact-tekstboks" key={listeindex}>
+                    <h4><a className="programstatus-a" href={"/program/#"+program_info[programindex].tittel}>{program_info[programindex].tittel}</a>
+                    {!live && "- starter "+this.klokkeslett(program_info[programindex].start)}</h4>
+                    <h4> <a className="programstatus-a" href={program_info[programindex].link} target="_blank">delta her!</a></h4>
                   </div>
                 )
               })}
@@ -136,6 +127,24 @@ class ProgramStatus extends Component {
         </div>
       )
     }
+
+    return (
+      <div className={live? "programstatus-bar": "programstatus-bar programstatus-snart"}>
+        <h6> {live? "Akkurat nå:": "Kommer snart:"} </h6>
+        <div className="programstatus-container">
+            {eventIndexes.map((programindex, listeindex) => {
+              return(
+                <div className="programstatus-tekstboks" key={listeindex}>
+                  <h1>{program_info[programindex].tittel}</h1>
+                  <p>{program_info[programindex].beskrivelse}</p>
+                  <h4><a className="programstatus-a" href={program_info[programindex].link} target="_blank">delta her!</a></h4>
+                  <h4>{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
+                </div>
+              )
+            })}
+        </div>
+      </div>
+    )
   }
 }
 
