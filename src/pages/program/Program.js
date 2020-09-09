@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './program.css';
-import ProgramStatus from './ProgramStatus.js';
+import ProgramStatus from '../../components/ProgramStatus.js';
 import program_info from '../../data/program_info.js'
 
 class Program extends Component {
