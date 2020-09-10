@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import './frivillig.css'
 import Visitkort from '../../components/Visitkort';
 
@@ -24,7 +23,6 @@ const Frivillig = () => {
       </p>
 
 
-
       <div className="kontaktinfo">
         <h1>Har du spørsmål?</h1>
         <div className="styret container-fluid">
@@ -36,23 +34,6 @@ const Frivillig = () => {
   )
 }
 
-
-const Button = styled.button`
-  background: none;
-  color: dodgerblue;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid dodgerblue;
-  border-radius: 3px;
-
-  :hover {
-    cursor: pointer;
-    color: blue;
-    border: 2px solid blue;
-  }
-  
-`
 
 
 export default Frivillig;
