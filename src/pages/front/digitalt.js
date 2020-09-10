@@ -10,9 +10,9 @@ const Digitalt = () => {
         Det kommer snart en oversikt over alle bedrifter som deltar.
         Hver bedrift vil ha sitt eget zoom rom som deres digitale stand,
         hvor de stiller med eget opplegg, konkurranser og stillingsannonser.
-        Som vanlig vil det være faglige foredrag gjennom hele bedriftsdagen.
-        Vi planlegger også for to fysiske kveldsarrangementer,
-        hvor det vil bli noe mulighet for å mingle med bedrifter.
+        Som vanlig vil det være faglige foredrag som du finner her på nettsiden,
+        og som også vil streames i Escape. Følg med på våre sosiale medier for å
+        delta i konkurranser iløpet av bedriftsdagene!
       </Text>
     </Wrapper>
   )
