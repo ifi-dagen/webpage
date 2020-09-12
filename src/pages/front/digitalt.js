@@ -8,18 +8,10 @@ const Digitalt = () => {
       <Text>
         Bedriftsdagen i år blir heldigital og skjer over 2 dager.
         Det kommer snart en oversikt over alle bedrifter som deltar.
-<<<<<<< HEAD
-        Hver bedrift vil ha sitt eget zoom rom som deres digitale stand,
-        hvor de stiller med eget opplegg, konkurranser og stillingsannonser.
-        Som vanlig vil det være faglige foredrag gjennom hele bedriftsdagen.
-        Vi planlegger også for to fysiske kveldsarrangementer,
-        hvor det vil bli noe mulighet for å mingle med bedrifter.
-=======
         Hver bedrift vil ha sin egen zoom-stand,
         hvor de stiller med eget opplegg, konkurranser og stillingsannonser.
         Som vanlig vil det være faglige foredrag som du finner her på nettsiden,
         som også vil streames i Escape.
->>>>>>> master
       </Text>
     </Wrapper>
   )
