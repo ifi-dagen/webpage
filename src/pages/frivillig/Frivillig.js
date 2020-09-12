@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import './frivillig.css'
 import Visitkort from '../../components/Visitkort';
 
@@ -8,9 +7,11 @@ const Frivillig = () => {
 
   return (
     <div className="base">
-      <h1>Vi trenger frivillige!</h1>
+      <h1>Takk for at så mange vil være frivillige!</h1>
       <p>
-        For å arrangere en vellykket bedriftsdag, trenger vi frivillige!
+        Vi er kjempeglade for at så mange har meldt interesse for å være frivillige under dagen@ifi,
+        og nå tror vi at vi har fått inn så mange som vi trenger.
+        Har du fortsatt veldig lyst til å bidra med noe, sender du en mail til Burhan og hører om det er noe du kan bidra med.
       </p>
       <p>
         Som frivillig funksjonær, også kalt 'funk', vil du kunne velge mellom ulike arbeidsroller før, under eller etter bedriftsdagen.
@@ -21,9 +22,6 @@ const Frivillig = () => {
         og tilgang til vår ekslusive internfest om smittevernregler og tiltak tillater dette.
       </p>
 
-      <a href="https://nettskjema.no/a/157461">
-        <Button >Frivilligskjema</Button>
-      </a>
 
       <div className="kontaktinfo">
         <h1>Har du spørsmål?</h1>
@@ -36,23 +34,6 @@ const Frivillig = () => {
   )
 }
 
-
-const Button = styled.button`
-  background: none;
-  color: dodgerblue;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
-  border: 2px solid dodgerblue;
-  border-radius: 3px;
-
-  :hover {
-    cursor: pointer;
-    color: blue;
-    border: 2px solid blue;
-  }
-  
-`
 
 
 export default Frivillig;

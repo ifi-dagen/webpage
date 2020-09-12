@@ -91,7 +91,11 @@ const peepsInfo = [
     {
         rolle: roller.sosialt,
         navn: "Nora Vestavik Klingvall",
+<<<<<<< HEAD
         image: null
+=======
+        image: "NoraVestavikKlingvall.png"
+>>>>>>> master
     },
     {
         rolle: roller.teknisk,
@@ -100,4 +104,8 @@ const peepsInfo = [
     }
 ]
 
+<<<<<<< HEAD
 export { roller, peepsInfo };
+=======
+export { roller, peepsInfo };
+>>>>>>> master
