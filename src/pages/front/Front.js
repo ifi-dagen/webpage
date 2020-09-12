@@ -8,7 +8,6 @@ import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
 import ProgramStatus from '../../components/ProgramStatus.js';
 
-
 const Front = () => {
 
   return (
