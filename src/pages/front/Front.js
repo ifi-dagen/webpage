@@ -8,7 +8,6 @@ import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
 import ProgramStatus from '../../components/ProgramStatus.js';
 
-
 const Front = () => {
 
   return (
@@ -36,6 +35,7 @@ const Front = () => {
             <Visitkort2 peep={peep} key={peep.navn} />
           ))}
         </PeepsGrid>
+      </GridContainerWrapper>
       </GridContainerWrapper>
     </Div >
   );
