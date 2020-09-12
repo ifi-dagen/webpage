@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Kontakt from "./pages/kontakt/Kontakt";
-import Program from "./pages/Program";
+import Program from "./pages/program/Program";
 import Bedrift from "./pages/bedrift/Bedrift";
 import Frivillig from "./pages/frivillig/Frivillig";
 import Front from './pages/front/Front';
@@ -26,7 +26,12 @@ class Routes extends Component {
         <Route
           exact
           path="/program"
-          render={prop => <Program {...prop} store={this.props.store} />}
+          render={prop => <Program {...prop} store={this.props.store} published={false}/>}
+        />
+        <Route
+          exact
+          path="/skjultprogram"
+          render={prop => <Program {...prop} store={this.props.store} published={true}/>}
         />
         <Route
           exact

@@ -6,6 +6,7 @@ import Digitalt from './digitalt'
 import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
 import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
+import ProgramStatus from '../../components/ProgramStatus.js';
 
 const Front = () => {
 
@@ -19,6 +20,7 @@ const Front = () => {
       </Container>
 
       <Nav />
+      <ProgramStatus compact/>
       <Hovedsponsor />
 
       <GridContainerWrapper>
@@ -33,7 +35,8 @@ const Front = () => {
             <Visitkort2 peep={peep} key={peep.navn} />
           ))}
         </PeepsGrid>
-      </GridContainerWrapper>s
+      </GridContainerWrapper>
+      </GridContainerWrapper>
     </Div >
   );
 }
@@ -123,7 +126,7 @@ const Container = styled.div`
     font-size: 4rem;
     color: black;
     margin: 0;
-    
+
   }
   @media screen and (max-width: 800px) {
     h1 {
