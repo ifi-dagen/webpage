@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../../index.css';
 import './kontakt.css';
 import Visitkort from '../../components/Visitkort'
 
