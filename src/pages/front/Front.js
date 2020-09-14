@@ -20,7 +20,6 @@ const Front = () => {
       </Container>
 
       <Nav />
-      <ProgramStatus compact />
       <Hovedsponsor />
 
       <GridContainerWrapper>
@@ -136,21 +135,30 @@ const Container = styled.div`
 const Nav = () => {
   return (
     <NavContainer>
+      <NavButton>
       <Link to="/program">
         <i className="fas fa-stream"></i>
         <br />
         Digitalt Program
         </Link>
-      <Link to="/for-bedrift">
-        <i className="fas fa-at"></i>
-        <br />
-        For Bedrifter
-      </Link>
-      <Link to="/frivillig">
-        <i className="fas fa-hand-holding-heart"></i>
-        <br />
-        Bli Frivillig
-      </Link>
+      </NavButton>
+      <NavButton>
+        <Link to="/for-bedrift">
+          <i className="fas fa-at"></i>
+          <br />
+          For Bedrifter
+        </Link>
+      </NavButton>
+      <NavButton>
+        <Link to="/frivillig">
+          <i className="fas fa-hand-holding-heart"></i>
+          <br />
+          Bli Frivillig
+        </Link>
+      </NavButton>
+      <NavItem>
+        <ProgramStatus compact />
+      </NavItem>
     </NavContainer >
   )
 }
@@ -165,16 +173,37 @@ const NavContainer = styled.div`
 
   background-color: #F5F5F5;
   border-radius: 1rem;
+`
 
-  a {
-    text-align: center;
-    background-color: deepskyblue;
-    padding: .8rem;
+const NavButton = styled.div`
+  text-align: center;
+  background-color: deepskyblue;
+  padding: .8rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+
+  a{
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 1rem;
-    font-size: 1.2rem;
+  }
+`
+
+const NavItem = styled.div`
+  text-align: center;
+  border: solid 0.2rem rgba(0,191,255,1);
+  background-color: #F5F5F5;
+  padding: .8rem;
+  color: rgb(80,89,98);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  grid-column: 1/-1;
+
+  a{
+    color: rgb(80,89,98);
   }
 `
 
