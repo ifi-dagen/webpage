@@ -11,7 +11,7 @@ const Header = () => {
       <Wrapper>
         <img
           onClick={() => herstory.push("/")}
-          className="front-logo" src={require('../img/Logo_webpage_2020.svg')} alt="dagen@ifi logo" />
+          className="front-logo" src={require('../img/dagen_logo.svg')} alt="dagen@ifi logo" />
         <span />
         <Facebook />
         <Instagram />
@@ -53,9 +53,9 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: auto 1fr  2em 2em auto;
   grid-gap: 1rem;
-  
+
   padding: 1em;
-  background: none;  
+  background: none;
 
   img {
     max-height: 5rem;
