@@ -1,7 +1,7 @@
 .programstatus-bar{
  max-height: 1000px;
- border: solid 0.2rem rgba(0,191,255,1);
- background-color: #F5F5F5;
+ /*border: solid 0.2rem rgba(0,191,255,1);*/
+ background-color: white;
  border-radius: 1rem;
  background-size: cover;
  background-position: center;
@@ -14,9 +14,9 @@
 
 .compact-bar{
   margin: 0; /*2rem 1rem;*/
-  padding: 0rem 4rem 0rem;
+  padding: 0.8rem 4rem 0.8rem;
   text-align: left;
-  border: none;
+
 }
 
 .programstatus-container{
@@ -30,7 +30,6 @@
 
 .programstatus-compact-container{
   display: block;
-
 }
 
 .programstatus-tekstboks{
@@ -82,10 +81,9 @@
 
 @media (max-width: 900px) {
   .compact-bar{
-    margin: 0; /*2rem 1rem;*/
-    padding: 0;
+    margin: 0;
+    padding: 0.8rem;
     text-align: left;
-    border: none;
   }
 
   #tittel{

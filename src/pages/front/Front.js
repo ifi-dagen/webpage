@@ -190,11 +190,11 @@ const NavButton = styled.div`
   }
 `
 
+
+//sett mest mulig av denne stylingen over i programstatus.
 const NavItem = styled.div`
   text-align: center;
-  border: solid 0.2rem rgba(0,191,255,1);
   background-color: #F5F5F5;
-  padding: .8rem;
   color: rgb(80,89,98);
   text-decoration: none;
   font-weight: bold;
