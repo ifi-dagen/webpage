@@ -206,15 +206,6 @@ h5 {
 iframe {
   margin: 2rem 0 10%;
 }
-.underholdning_bilde_1 {
-  background-image: url("./img/underholdning_bilde_1.jpg");
-}
-.underholdning_bilde_2 {
-  background-image: url("./img/underholdning_bilde_2.jpg");
-}
-.underholdning_bilde_3 {
-  background-image: url("./img/underholdning_bilde_3.jpg");
-}
 
 @media (max-width: 1200px) {
   #underholdning .offset-1 {
@@ -259,9 +250,6 @@ iframe {
   width: 100% !important;
   height: auto !important;
 }
-.recap_bilde {
-  background-image: url("./img/recap_bilde.jpg");
-}
 
 @media (max-width: 1200px) {
   #photowall {
@@ -288,16 +276,6 @@ iframe {
 }
 #styremedlem .col-xl-3 {
   margin-right: 3%;
-}
-.intern_bilde {
-  background-image: url("./img/intern_bilde.jpg");
-}
-.funk_bilde {
-  background-image: url("./img/funk_bilde.jpg");
-}
-.styremedlem_bilde {
-  background-image: url("./img/styremedlem_bilde.jpg");
-  height: 50%;
 }
 @media (max-width: 1200px) {
   .styremedlem_beskrivelser {

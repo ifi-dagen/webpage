@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../index.css';
 import '../pages/kontakt/kontakt.css';
 
 class Visitkort extends Component {
