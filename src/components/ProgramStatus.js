@@ -118,7 +118,7 @@ class ProgramStatus extends Component {
                 return(
                   <div className="programstatus-compact-tekstboks" key={listeindex}>
                     <h4 id="tittel"><a className="programstatus-a" href={"/program/#"+program_info[programindex].tittel}>{program_info[programindex].tittel}</a>
-                    {!live && "- starter "+this.klokkeslett(program_info[programindex].start)}</h4>
+                    {!live && " - starter "+this.klokkeslett(program_info[programindex].start)}</h4>
                     <h4 id="delta-link"> <a className="programstatus-a" href={program_info[programindex].link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>
                   </div>
                 )
