@@ -87,7 +87,7 @@ const stand_info =
     "Forsvarets forskningsinstitutt": {
         bedriftnavn: "",
         beskrivelse: "",
-        logonavn: "icon_1.png",
+        logonavn: "Ffi.png",
         zoomlink:"https://uio.zoom.us/j/63458733228",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "", link:""}],
@@ -147,7 +147,7 @@ const stand_info =
     "Netcompany": {
         bedriftnavn: "Netcompany",
         beskrivelse: "Netcompany ble grunnlagt i år 2000 og har hovedkontor i København i Danmark. I dag er vi et internasjonalt selskap med over 2500 medarbeidere i seks land. Netcompany er et rent IT-selskap som leverer forretningskritiske IT-prosjekter som hjelper kundene med digital forandring via digitale plattformer, kjernesystemer og infrastruktursystemer. Vi vet at det er medarbeiderne våre som er nøkkelen til at vi kan beholde vår posisjon som bransjens ledende og raskest voksende IT-konsulenthus. Derfor har vi skapt en forretningsmodell der vi hele tiden fokuserer på å utvikle medarbeiderne våre til å bli de beste i bransjen. Det betyr at karrieren din er minst like viktig for oss som den er for deg.",
-        logonavn: "icon_1.png",
+        logonavn: "Netcompany.png",
         video: "https://www.youtube.com/watch?v=T9e93Olxu4w",
         zoomlink:"https://uio.zoom.us/j/62811861036",
         stillinger: [{tekst: "Nyutdannet utvikler med oppstart 2021", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Nyutdannet-utvikler-med-oppstart-august-2021"}, {tekst: "Summer Internship 2021 Utvikler", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Summer-internship-2021---Utvikler"}, {tekst: "Summer Internship 2021 UX Designer", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Summer-internship-2021---UX-designer"}, {tekst: "Talent Network 2021", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Talent-Network-2021"}],
@@ -210,7 +210,7 @@ const stand_info =
     "SpareBank 1 Utvikling": {
         bedriftnavn: "SpareBank 1 Utvikling",
         beskrivelse: "SpareBank 1 Utvikling er de 14 SpareBank 1-bankenes felles selskap for utvikling, drift, innkjøp, merkevare og mye annet spennende. 600 dyktige medarbeidere skaper og forvalter de beste digitale løsningene, tjenestene og brukeropplevelsene i bransjen - for over 1 million kunder. Vi går på jobb hver dag for å gjøre hverdagsøkonomien enklere og bedre for folk og bedrifter over hele landet. Vi vektlegger læring og kompetanse, frihet og trivsel i arbeidshverdagen. Dette gjør SpareBank 1 Utvikling til et spennende sted å jobbe, og et godt sted å være. Spør oss om: sommerjobb, fagdag, hackaton, fadderordning og nativeutvikling",
-        logonavn: "SpareBank_1.png",
+        logonavn: "SpareBank_1.jpg",
         zoomlink:"https://uio.zoom.us/j/66307450744",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "", link:""}],
@@ -273,9 +273,9 @@ const stand_info =
     "Bekk": {
       bedriftnavn: "Bekk",
       beskrivelse: "Bekk er et norsk selskap som lykkes på grunn av mennesker som brenner for faget sitt. Vi jobber med strategi, design og teknologi og tror på tverrfaglige team. Hos oss får du muligheten til å utvikle løsninger som hjelper bedrifter med å nå sine mål innen digitalisering og nyskaping.\nLyst til å jobbe i Bekk?\nHovedrunden med rekruttering til fast jobb og sommerjobb er om høsten, men vi er alltid åpne for søknader fra de rette kandidatene!",
-      logonavn: "icon_1.png",
+      logonavn: "Bekk.png",
       zoomlink:"https://uio.zoom.us/j/63181529688",
-      stillinger: [{tekst: "", link: ""}],
+      stillinger: [{tekst: "Søk hos oss", link: "bekk.no/jobb"}],
       konkurranser: [{tekst: "", link:""}],
       foredrag: [{tekst: "", link: ""}],
       tags: ["",""]
@@ -353,7 +353,7 @@ const stand_info =
     "Data Respons R&D Services AS": {
       bedriftnavn: "Data Respons R&D Services AS",
       beskrivelse: "",
-      logonavn: "icon_1.png",
+      logonavn: "Data_response.png",
       zoomlink:"https://uio.zoom.us/j/69866433374",
       stillinger: [{tekst: "", link: ""}],
       konkurranser: [{tekst: "", link:""}],
@@ -361,11 +361,11 @@ const stand_info =
       tags: ["",""]
     },
     "Deloitte": {
-      bedriftnavn: "",
+      bedriftnavn: "Deloitte",
       beskrivelse: "",
-      logonavn: "icon_1.png",
+      logonavn: "deloitte.png",
       zoomlink:"https://uio.zoom.us/j/65733754251",
-      stillinger: [{tekst: "", link: ""}],
+      stillinger: [{tekst: "Internship", link: "https://deloitte.recman.no/job.php?job_id=162309"},{tekst: "Cyber Risk", link: "https://deloitte.recman.no/job.php?job_id=64569"}],
       konkurranser: [{tekst: "", link:""}],
       foredrag: [{tekst: "", link: ""}],
       tags: ["",""]
@@ -451,7 +451,7 @@ const stand_info =
     "Kantega AS": {
       bedriftnavn: "Kantega AS",
       beskrivelse: "Kantega er et IT-selskap med rundt 165 stolte medarbeidere, i Oslo, Trondheim og Bergen. Vi eier vårt eget selskap. Det gjør noe med oss og forholdet til kundene våre og løsningene vi lager: Fantastiske IT-løsninger, de som forbedrer livene til hver av oss.",
-      logonavn: "icon_1.png",
+      logonavn: "Kantega.png",
       video: "https://www.youtube.com/watch?v=ocwnns57cYQ&t=1s",
       zoomlink:"https://uio.zoom.us/j/66579280932",
       stillinger: [{tekst: "Søk sommerjobb hos oss", link: "https://sommerjobb.kantega.no/jobs/929530-spennende-sommerjobb-i-tverrfaglig-team"}],
