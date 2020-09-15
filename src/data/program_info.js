@@ -7,7 +7,7 @@ const program_info =
     tittel: "Åpning",
     type: "Annet",
     start: new Date(2020, 8, 14, 20, 26, 0, 0),
-    slutt: new Date(2020, 8, 15, 20, 26, 5, 0),
+    slutt: new Date(2020, 8, 14, 20, 26, 5, 0),
     beskrivelse: "åpningen",
     link: "https://zoom.us",
     bilde: "bekk-example.png"
