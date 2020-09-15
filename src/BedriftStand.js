@@ -48,11 +48,10 @@ export default class BedriftStand extends Component {
   }
 
   infoBolk = (bedrift) => {
+    console.log(bedrift)
     return <div className="infoBolk">
       <h1 className="bedriftnavn"> {bedrift.bedriftnavn}</h1>
-      <p> {bedrift.beskrivelse}</p>
-      {bedrift.ice_breakers.length !== 0 && <h4>spørr oss om</h4>}
-      <p>{bedrift.ice_breakers.join(", ")}</p>
+      <p> {bedrift.beskrivelse && bedrift.beskrivelse}</p>
       {bedrift.stillinger.length !== 0 && <h4>Stillinger</h4>}
       {bedrift.stillinger.map((annonse, index) => {
         return (<a href={annonse.link} key={index}>{annonse.tekst}<br/></a>)
@@ -96,7 +95,9 @@ export default class BedriftStand extends Component {
 
   render(){
     this.active(new Date())
-    const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift];
+    console.log(this.props.match.params.bedrift.replace(/_+/g, ' '))
+    const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift.replace(/_+/g, ' ')];
+    console.log(bedrift)
     const videoStyle = {
       justifyContent: 'center',
       alignSelf: 'center'
