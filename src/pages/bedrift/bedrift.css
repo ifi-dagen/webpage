@@ -27,9 +27,6 @@
 .btn_bedrift {
   margin: 1rem 1rem 0 0;
 }
-.foredrag_bilde {
-  background-image: url("../../img/foredrag_bilde.jpg");
-}
 .stand_pakke {
   margin: 2%;
   border: solid;
@@ -114,9 +111,6 @@
   }
 }
 @media (max-width: 767.98px) {
-  .foredrag_bilde {
-    margin-left: 0;
-  }
 
   .Visitkort .image-wrapper{
     text-align: center;
