@@ -5,7 +5,7 @@ import Program from "./pages/program/Program";
 import Bedrift from "./pages/bedrift/Bedrift";
 import Frivillig from "./pages/frivillig/Frivillig";
 import Front from './pages/front/Front';
-import Error from './Error';
+import Error from './pages/error/Error';
 import Stander from './Stander';
 import BedriftStand from './BedriftStand';
 
