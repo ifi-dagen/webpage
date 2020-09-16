@@ -125,13 +125,6 @@ export default class BedriftStand extends Component {
   }
 }
 
-const Facebook = () => {
-  return (
-    <Link href="https://www.facebook.com/dagenatifi">
-      <Icon className="fab fa-video"></Icon>
-    </Link>
-  )
-}
 
 const Link = styled.a`
 align-items: flex-start;
