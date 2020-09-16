@@ -258,7 +258,7 @@ const stand_info =
         tags: ["",""]
       },
     "Visma Consulting": {
-        bedriftnavn: "",
+        bedriftnavn: "Visma Consulting",
         beskrivelse: "Hvert år rekrutterer vi dyktige nyutdannede som er engasjert og nysgjerrig på ny teknologi! Vi jobber for å ligge i front når det gjelder ny teknologi og utvikler hver dag samfunnskritiske løsninger. Vi leverer konsulenttjenester i form av IT-rådgivning, systemutvikling og applikasjonsforvaltning til både private og offentlige virksomheter.",
         logonavn: "icon_1.png",
         video: "https://www.youtube.com/watch?v=sIg1bXYQ_KU&feature=youtu.be",
