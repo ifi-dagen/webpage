@@ -9,7 +9,12 @@ export default class Stander extends Component {
 
   stander = (dag) => {
     return Object.values(stand_info[dag]).map((bedrift, index) => {
+<<<<<<< HEAD
+      const link="/stander/"+dag+"/"+bedrift.bedriftnavn.replace(/\s+/g, '_');
+      console.log("./img/logoer/"+bedrift.logonavn)
+=======
       const link = "/stander/" + dag + "/" + bedrift.bedriftnavn;
+>>>>>>> master
       return (
         <div className="button-card-container"
           id={index} key={index}>
