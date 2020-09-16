@@ -4,17 +4,17 @@
   margin: auto;
 }
 
-button{
+.program-btn{
    background: none;
    color: dodgerblue;
-   font-size: 1.2em;
-   margin: 1em;
-   padding: 0.25em 1em;
+   font-size: 1.2rem;
+   margin: 1rem;
+   padding: 0.25rem 1rem;
    border: 2px solid dodgerblue;
    border-radius: 3px;
  }
 
-button:hover {
+.program-btn:hover {
    cursor: pointer;
    color: blue;
    border: 2px solid blue;
@@ -22,7 +22,7 @@ button:hover {
 
 .program{
   text-align: left;
-  min-height: 405px;
+  margin-bottom: 3rem;
 }
 
 .programfilter{
@@ -35,12 +35,11 @@ button:hover {
 }
 
 .Programinnhold{
-  width: 50%;
+  width: 100%;
   min-width: 400px;
   margin: auto;
-  padding: 0 20% 5% 20%;
+  padding: 0 10rem;
   font-size: 2rem;
-
 }
 
 .event-detail{
@@ -56,25 +55,38 @@ button:hover {
   text-decoration: none;
 }
 
+.detaljert-program{
+  background: #F5F5F5;
+  border: solid 1px #F5F5F5;
+  border-radius: 1rem;
+  margin: 0.5rem
+}
+
 .hending-beholder{
   display: flex;
   flex-direction: row;
   text-align: left;
+  background: white;
+  border: solid 1px white;
+  border-radius: 1rem;
+  margin: 1rem
 }
 
 .hendingBilde-beholder{
   align-self: center;
-  width: 40%;
+  width: 100%;
 }
 
 .hendingBilde{
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .hendingInfo-beholder{
-  padding: 5% 0;
+  width: 100%;
+  padding: 5%;
 }
+
 .hendingInfo-beholder h3{
   margin-block-end: 0.5em;
 }
@@ -83,4 +95,53 @@ button:hover {
   margin-block-start: 0;
   margin-block-end: 0;
 
+}
+
+
+@media (max-width: 767.98px) {
+  .hending-beholder{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hending-beholder:focus{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: orange;
+  }
+
+  .hending-beholder:active{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    color: orange;
+  }
+
+  .hendingBilde-beholder{
+    display: none;
+  }
+
+  .Programinnhold{
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 500px){
+  .Programinnhold{
+    width: 50%;
+    margin: auto;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .programfilter{
+    min-width: 0;
+    width: 20%;
+    padding: 2%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
 }
