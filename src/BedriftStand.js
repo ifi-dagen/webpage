@@ -77,24 +77,27 @@ export default class BedriftStand extends Component {
       return <div id="zoomlink">
               <a href={bedrift.zoomlink}> <h1>Møt oss her!</h1></a>
             </div>
+    } else if(bedrift.video){
+      return <div id='videoContainer'>
+          <ReactPlayer
+            id='video'
+            url={bedrift.video}
+            playing={false}
+            loop={true}
+            style={videoStyle}
+            width='640px'
+            height='360px'
+          />
+        </div>
     }
-    return <div id='videoContainer'>
-        <ReactPlayer
-          id='video'
-          url='https://www.youtube.com/watch?v=oUFJJNQGwhk'
-          playing={false}
-          loop={true}
-          style={videoStyle}
-          width='640px'
-          height='360px'
-        />
-      </div>
+    return 
   }
 
-
+  componentDidMount(){
+    this.active(new Date())
+  }
 
   render(){
-    this.active(new Date())
     console.log(this.props.match.params.bedrift.replace(/_+/g, ' '))
     const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift.replace(/_+/g, ' ')];
     console.log(bedrift)
