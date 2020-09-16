@@ -1,92 +1,159 @@
 //stand_info inneholder to objekter, et for hver dag.
-//
+/*
+//Testdata
+const year =2020;
+const month = 8; //Januar = 0
+const day = 20
+const hour = 14
+const minute = 10
 
+const program_info = [
+{
+  tittel: "Åpning",
+  type: "Annet",
+  start: new Date(year, month, day, hour, minute, 0, 0), //dato skrevet slik: Y,M-1,D,H,M,S,MS, for testing endre Y,M,D,H og M, sekunder er satt slik at hvert arr varer
+  slutt: new Date(year, month, day, hour, minute, 5, 0),
+  beskrivelse: "åpningen",
+  link: "https://zoom.us",
+  bilde:"dagen_logo.svg",
+  alt_tekst: "dagen at ifi sin logo"
+},
+{
+  tittel: "Foredrags-tittel",
+  type: "Foredrag",
+  start: new Date(year, month, day, hour, minute, 6, 0),
+  slutt: new Date(year, month, day, hour, minute, 11, 0),
+  beskrivelse: "foredragsbeskrivelse",
+  link: "zoom.us",
+  bilde:"dagen_logo.svg",
+  alt_tekst: "dagen at ifi sin logo"
+},
+{
+  tittel: "Foredrags-tittel2",
+  type: "Foredrag",
+  start: new Date(year, month, day, hour, minute, 12, 0),
+  slutt: new Date(year, month, day, hour, minute, 19, 0),
+  beskrivelse: "foredragsbeskrivelse2",
+  link: "zoom.us",
+  bilde:"dagen_logo.svg",
+  alt_tekst: "dagen at ifi sin logo"
+}
+]
+*/
+
+const dag1 = 24;
+const dag2 = 25;
 const program_info =
 [
   {
-    tittel: "Åpning",
+    tittel: "Kripos CTF-Vinnere annonseres",
     type: "Annet",
-    start: new Date(2020, 8, 14, 20, 26, 0, 0),
-    slutt: new Date(2020, 8, 15, 20, 26, 5, 0),
-    beskrivelse: "åpningen",
-    link: "https://zoom.us",
-    bilde: "bekk-example.png"
+    start: new Date(2020, 8, dag1, 9, 0, 0, 0),
+    slutt: new Date(2020, 8, dag1, 10, 30, 0, 0),
+    beskrivelse: "",
+    link: "",
+    bilde: "",
+    alt_tekst: ""
   },
   {
-    tittel: "Foredrags-tittel",
+    tittel: "Åpningsermoni",
+    type: "Annet",
+    start: new Date(2020, 8, dag1, 10, 40, 0, 0),
+    slutt: new Date(2020, 8, dag1, 11, 0, 0, 0),
+    beskrivelse: "",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
+  },
+  {
+    tittel: "Standområdet er åpent!",
+    type: "Annet",
+    start: new Date(2020, 8, dag1, 11, 0, 0, 0),
+    slutt: new Date(2020, 8, dag1, 13, 0, 0, 0),
+    beskrivelse: "Kom og møt en fremtidig kollega!",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
+  },
+  {
+    tittel: "Foredrag og workshop",
     type: "Foredrag",
-    start: new Date(2020, 8, 14, 20, 46, 6, 0),
-    slutt: new Date(2020, 8, 14, 23, 26, 11, 0),
-    beskrivelse: "foredragsbeskrivelse",
-    link: "zoom.us",
-    bilde: "dnb-example.jpg"
+    start: new Date(2020, 8, dag1, 13, 0, 0, 0),
+    slutt: new Date(2020, 8, dag1, 17, 0, 0, 0),
+    beskrivelse: "En stor strømm av nye spennende ting",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
   },
   {
-    tittel: "Foredrags-tittel2",
+    tittel: "Takk for i dag",
+    type: "Annet",
+    start: new Date(2020, 8, dag1, 17, 0, 0, 0),
+    slutt: new Date(2020, 8, dag1, 17, 10, 0, 0),
+    beskrivelse: "",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
+  },
+  {
+    tittel: "Digital Quiz",
+    type: "Annet",
+    start: new Date(2020, 8, dag1, 18, 0, 0, 0),
+    slutt: new Date(2020, 8, dag1, 21, 0, 0, 0),
+    beskrivelse: "Vi avslutter dagen med å streame quiz fra escape",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
+  },
+  {
+    tittel: "Åpningsermoni",
+    type: "Annet",
+    start: new Date(2020, 8, dag2, 10, 40, 0, 0),
+    slutt: new Date(2020, 8, dag2, 11, 0, 0, 0),
+    beskrivelse: "",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
+  },
+  {
+    tittel: "Standområdet er åpent!",
+    type: "Annet",
+    start: new Date(2020, 8, dag2, 11, 0, 0, 0),
+    slutt: new Date(2020, 8, dag2, 13, 0, 0, 0),
+    beskrivelse: "Kom og møt en fremtidig kollega!",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
+  },
+  {
+    tittel: "Foredrag og workshop",
     type: "Foredrag",
-    start: new Date(2020, 8, 14, 20, 26, 12, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 19, 0),
-    beskrivelse: "foredragsbeskrivelse2",
-    link: "zoom.us",
-    bilde: "ffi-example.png"
+    start: new Date(2020, 8, dag2, 13, 0, 0, 0),
+    slutt: new Date(2020, 8, dag2, 17, 0, 0, 0),
+    beskrivelse: "En stor strømm av nye spennende ting",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
   },
   {
-    tittel: "Foredrags-tittel3",
-    type: "Foredrag",
-    start: new Date(2020, 8, 14, 20, 26, 18, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 23, 0),
-    beskrivelse: "foredragsbeskrivelse3",
-    link: "zoom.us",
-    bilde: "bekk-example.png"
+    tittel: "Takk for i dag",
+    type: "Annet",
+    start: new Date(2020, 8, dag2, 17, 0, 0, 0),
+    slutt: new Date(2020, 8, dag2, 17, 10, 0, 0),
+    beskrivelse: "",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
   },
   {
-    tittel: "Foredrags-tittel4",
-    type: "Foredrag",
-    start: new Date(2020, 8, 14, 20, 26, 20, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 29, 0),
-    beskrivelse: "foredragsbeskrivelse4",
-    link: "zoom.us",
-    bilde: "dnb-example.jpg"
-  },
-  {
-    tittel: "Foredragstittel5",
-    start: new Date(2020, 8, 14, 20, 26, 30, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 35, 0),
-    beskrivelse: "foredragsbeskrivelse5",
-    link: "zoom.us",
-    bilde: "dnb-example.jpg"
-  },
-  {
-    tittel: "Foredragstittel6",
-    start: new Date(2020, 8, 14, 20, 26, 37, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 42, 0),
-    beskrivelse: "foredragsbeskrivelse5",
-    link: "zoom.us",
-    bilde: "dnb-example.jpg"
-  },
-  {
-    tittel: "Foredragstittel7",
-    start: new Date(2020, 8, 14, 20, 26, 44, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 49, 0),
-    beskrivelse: "foredragsbeskrivelse5",
-    link: "zoom.us",
-    bilde: "dnb-example.jpg"
-  },
-  {
-    tittel: "Foredragstittel8",
-    start: new Date(2020, 8, 14, 20, 26, 51, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 56, 0),
-    beskrivelse: "foredragsbeskrivelse5",
-    link: "zoom.us",
-    bilde: "dnb-example.jpg"
-  },
-  {
-    tittel: "Foredragstittel8",
-    start: new Date(2020, 8, 14, 20, 26, 58, 0),
-    slutt: new Date(2020, 8, 14, 20, 26, 59, 0),
-    beskrivelse: "foredragsbeskrivelse5",
-    link: "zoom.us",
-    bilde: "dnb-example.jpg"
+    tittel: "Digital Quiz",
+    type: "Annet",
+    start: new Date(2020, 8, dag2, 18, 0, 0, 0),
+    slutt: new Date(2020, 8, dag2, 21, 0, 0, 0),
+    beskrivelse: "Vi avslutter dagen med å streame quiz fra escape",
+    link: "",
+    bilde: "dagen_logo.svg",
+    alt_tekst: "dagen at ifi sin logo"
   }
 ]
 
