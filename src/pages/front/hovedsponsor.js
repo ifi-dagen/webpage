@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components'
-import '../App.css';
-import logo from "../img/dnb_sjogronn.png"
+import '../../App.css';
+import logo from "../../img/dnb_sjogronn.png"
 
-const Sponsor = () => {
+const Hovedsponsor = () => {
   return (
     <Wrapper>
       <h2>HOVEDSPONSOR</h2>
@@ -17,7 +17,7 @@ const Wrapper = styled.div`
   text-align: center;
   padding: 3rem;
 
-  p,h2 {
+  h2 {
     margin: 0;
   }
   p {
@@ -32,4 +32,4 @@ const Logo = styled.img`
   align-content: center;
 `
 
-export default Sponsor;
+export default Hovedsponsor;

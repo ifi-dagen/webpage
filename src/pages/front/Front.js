@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
-import Hovedsponsor from '../Sponsor';
+import Hovedsponsor from './hovedsponsor'
+import Sponsor from './sponsor'
 import HvaEr from './hvaer'
 import Digitalt from './digitalt'
 import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
@@ -27,6 +28,7 @@ const Front = () => {
           <HvaEr />
           <Digitalt />
         </ErGrid>
+        <Sponsor />
         <Img src={bilde} style={{ width: "100%" }} alt="Bilde av mennesker utenfor ifi" />
         <h1>Styret 2020</h1>
         <PeepsGrid >
