@@ -248,12 +248,12 @@ const stand_info =
       },
     "Systek": {
         bedriftnavn: "Systek",
-        beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst!",
+        beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
         logonavn: "icon_1.png",
         video:"",
         zoomlink:"https://uio.zoom.us/j/68298550948",
-        stillinger: [{tekst: "", link: ""}],
-        konkurranser: [{tekst: "", link:""}],
+        stillinger: [{tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021"}],
+        konkurranser: [{tekst: "bli med i konkurransen vår!", link:"https://forms.gle/pQSzSR3xB8u52Xc99"}],
         foredrag: [{tekst: "", link: ""}],
         tags: ["",""]
       },
@@ -543,17 +543,23 @@ const stand_info =
       tags: ["",""]
     },
     "Skatteetaten": {
-      bedriftnavn: "",
-      beskrivelse: "",
-      logonavn: "icon_1.png",
-      video:"",
+      bedriftnavn: "Skatteetaten",
+      beskrivelse: "Vil du være med på å utvikle gode IT-løsninger til hele Norges befolkning? Er du nysgjerrig, innovativ og ønsker å være en del av et av Norges ledende IT-miljøer? Er du i tillegg lidenskapelig opptatt av teknologi? Da er det deg vi ser etter! Skatteetaten er alltid på jakt etter nye talenter, og vi tilbyr en rekke spennende programmer for nyutdannede, blant annet som tech graduate og trainee.",
+      logonavn: "Skatteetaten.png",
+      video:"https://www.youtube.com/watch?v=gztpbU-sC54",
       zoomlink:"https://uio.zoom.us/j/66385315136",
-      stillinger: [{tekst: "", link: ""}],
+      stillinger: [{tekst: "Tech graduates i Skatteetaten", link: "https://www.skatteetaten.no/om-skatteetaten/jobb/studenter-og-nyutdannede/techgrad/"}],
       konkurranser: [{tekst: "", link:""}],
       foredrag: [{tekst: "", link: ""}],
       tags: ["",""]
     }
   }
 }
+
+
+
+
+
+
 
 export default stand_info;
