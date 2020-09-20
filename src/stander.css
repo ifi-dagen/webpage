@@ -10,6 +10,7 @@
 .bedriftStandInnhold{
   background: white;
   max-width: 850px;
+  min-width: 640px;
   margin: auto;
   padding: 0 5rem;
   height: auto;
@@ -101,6 +102,8 @@
 
 #videoContainer{
   width: 100%;
+  display: flex;
+  justify-content: center;
   margin: 0 auto 4rem;
 }
 
@@ -143,5 +146,6 @@
 
   .bedriftStandInnhold{
     padding: 0 2rem;
+    min-width: 0;
   }
 }

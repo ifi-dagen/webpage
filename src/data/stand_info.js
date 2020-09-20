@@ -131,8 +131,8 @@ const stand_info =
         logonavn: "Itera.jpg",
         video:"https://www.youtube.com/watch?v=obnVNJl7rDY",
         zoomlink:"https://uio.zoom.us/j/62514712286",
-        stillinger: [{tekst: "se her!", link: " https://www.itera.no/student"}],
-        konkurranser: [{tekst: " Hva er det 3D printeren lager?  Registrer svare ditt her", link:"https://forms.office.com/Pages/ResponsePage.aspx?id=Mvzp70uE_kWhKFU0RLuaZy4EZUEFJytNj-rXHKjodllUN1c0M0hJQzZCUlQ0RzZOTFhBNTNCQkVaQi4u"}],
+        stillinger: [{tekst: "se her!", link: "https://www.itera.no/student"}],
+        konkurranser: [{tekst: "Hva er det 3D printeren lager?  Registrer svare ditt her", link:"https://forms.office.com/Pages/ResponsePage.aspx?id=Mvzp70uE_kWhKFU0RLuaZy4EZUEFJytNj-rXHKjodllUN1c0M0hJQzZCUlQ0RzZOTFhBNTNCQkVaQi4u"}],
         foredrag: [{tekst: "", link: ""}],
         tags: ["",""]
       },
@@ -325,9 +325,9 @@ const stand_info =
       foredrag: [{tekst: "", link: ""}],
       tags: ["",""]
     },
-    "Capgemini ": {
+    "Capgemini": {
       bedriftnavn: "Capgemini",
-      beskrivelse: "Capgemini er en global leder innen teknologi og konsulenttjenester som tilbyr nyutdannede utviklere et skreddersydd utdanningsløp gjennom vårt IgnITe-program.  Vi har kontorer i Oslo, Trondheim. Bergen, Stavanger og Fredrikstad og muligheter internasjonalt hvis det frister.  \nVårt prisvinnende graduate-program, IgnITe, tilbyr nyutdannede en unik mulighet til å jobbe med ny teknologi, sitte i store og små utviklingsprosjekter der du fra dag en er en viktig brikke for våre kunder. Våre utviklere jobber både med backend- og frontendutvikling innenfor Java, Microsoft, CRM og Insights & Data.\nØnsker du å jobbe som utvikler neste år? Da er IgnITe perfekt start på karrieren! ",
+      beskrivelse: "Capgemini er en global leder innen teknologi og konsulenttjenester som tilbyr nyutdannede utviklere et skreddersydd utdanningsløp gjennom vårt IgnITe-program.  Vi har kontorer i Oslo, Trondheim. Bergen, Stavanger og Fredrikstad og muligheter internasjonalt hvis det frister.  \nVårt prisvinnende graduate-program, IgnITe, tilbyr nyutdannede en unik mulighet til å jobbe med ny teknologi, sitte i store og små utviklingsprosjekter der du fra dag en er en viktig brikke for våre kunder. Våre utviklere jobber både med backend- og frontendutvikling innenfor Java, Microsoft, CRM og Insights & Data.\nØnsker du å jobbe som utvikler neste år? Da er IgnITe perfekt start på karrieren!",
       logonavn: "capgemini.png",
       video:"https://www.youtube.com/watch?v=EY5g9yQxG54",
       zoomlink:"https://uio.zoom.us/j/62135515698",
@@ -386,7 +386,7 @@ const stand_info =
       logonavn: "Data_response.png",
       video:"",
       zoomlink:"https://uio.zoom.us/j/69866433374",
-      stillinger: [{tekst: "Ledige stillinger", link: " https://rd-datarespons.no/jobb/"}],
+      stillinger: [{tekst: "Ledige stillinger", link: "https://rd-datarespons.no/jobb/"}],
       konkurranser: [{tekst: "", link:""}],
       foredrag: [{tekst: "", link: ""}],
       tags: ["",""]
@@ -434,7 +434,7 @@ const stand_info =
     },
     "Experis Academy": {
       bedriftnavn: "Experis Academy",
-      beskrivelse: "Gjennom Experis Academy får du en kickstart på din karriere og en unik mulighet til å skaffe deg den kompetansen som arbeidsmarkedet etterspør. Her vil du tilegne deg rett kompetanse og erfaring som gjør deg til en ettertraktet Fullstack Javautvikler eller .NET-utvikler. Programmet varer i 15 måneder og ender i fast jobb hos en av våre spennende kunder, eller videre hos oss her i Experis. Vi jobber aktivt ut mot over 1600 kunder, og tidligere Experis Academy kandidater har eksempelvis gått ut i jobb hos selskaper som Vipps, Posten, PayEx, OBOS, Nets, Distribution Innovation, Storebrand og Entur. \n«Jeg liker at Experis Academy gir oss grundig opplæring i teknologier som er mye brukt i arbeidslivet. Vi som konsulenter blir derfor veldig attraktive på arbeidsmarkedet.” - Harald, .NET-utvikler i Experis Academy \nExperis Academy starter med skreddersydd opplæring som løper over 3 måneder. Her kombineres teori, casearbeid og sertifiseringsløp i Java hos vår samarbeidspartner Noroff. Det pedagogiske opplegget er basert på prinsipper som accelerated learning og flipped classroom . De neste 12 månedene går du ut i en spesialiseringsperiode hvor du får brukt dine nye ferdigheter i praksis som konsulent for Experis Academy. ",
+      beskrivelse: "Gjennom Experis Academy får du en kickstart på din karriere og en unik mulighet til å skaffe deg den kompetansen som arbeidsmarkedet etterspør. Her vil du tilegne deg rett kompetanse og erfaring som gjør deg til en ettertraktet Fullstack Javautvikler eller .NET-utvikler. Programmet varer i 15 måneder og ender i fast jobb hos en av våre spennende kunder, eller videre hos oss her i Experis. Vi jobber aktivt ut mot over 1600 kunder, og tidligere Experis Academy kandidater har eksempelvis gått ut i jobb hos selskaper som Vipps, Posten, PayEx, OBOS, Nets, Distribution Innovation, Storebrand og Entur. \n«Jeg liker at Experis Academy gir oss grundig opplæring i teknologier som er mye brukt i arbeidslivet. Vi som konsulenter blir derfor veldig attraktive på arbeidsmarkedet.” - Harald, .NET-utvikler i Experis Academy \nExperis Academy starter med skreddersydd opplæring som løper over 3 måneder. Her kombineres teori, casearbeid og sertifiseringsløp i Java hos vår samarbeidspartner Noroff. Det pedagogiske opplegget er basert på prinsipper som accelerated learning og flipped classroom . De neste 12 månedene går du ut i en spesialiseringsperiode hvor du får brukt dine nye ferdigheter i praksis som konsulent for Experis Academy.",
       logonavn: "Experis_Academy.jpg",
       video:"https://www.youtube.com/watch?v=_n8DI1hDYpY&feature=youtu.be",
       zoomlink:"https://uio.zoom.us/j/62267349916",
