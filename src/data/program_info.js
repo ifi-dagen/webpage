@@ -56,7 +56,7 @@ const program_info =
     alt_tekst: ""
   },
   {
-    tittel: "Åpningsermoni",
+    tittel: "Åpningshilsen",
     type: "Annet",
     start: new Date(2020, 8, dag1, 10, 40, 0, 0),
     slutt: new Date(2020, 8, dag1, 11, 0, 0, 0),
@@ -82,10 +82,10 @@ const program_info =
 		start: new Date(2020,8, dag1, 13,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 13, 30, 0,0),
 		foredragsholder: "DNB",
-		beskrivelse: "	-	karoline.nauste@dnb.no",
+		beskrivelse: "",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "",
+    alt_tekst: ""
   },
 	{
 		type:	"foredrag",
@@ -104,7 +104,7 @@ const program_info =
 		start: new Date(2020,8, dag1, 14,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 14, 30, 0,0),
 		foredragsholder: "Systek",
-		beskrivelse: "I skatteetaten har Kotlin blitt et offisielt språk som prosjektene kan benytte og i denne presentasjonen skal vi se nærmere på noen av disse. Vi skal blant annet se på bruken av Kotlin i forbindelse med Domain Specific Language (DSL), provisjonering av store miljøer og graphql. Presentasjonen avsluttes med en titt på nyttige language features i Kotlin som hjelper oss skrive bedre kode.	8	jarle.hansen@systek.no",
+		beskrivelse: "I skatteetaten har Kotlin blitt et offisielt språk som prosjektene kan benytte og i denne presentasjonen skal vi se nærmere på noen av disse. Vi skal blant annet se på bruken av Kotlin i forbindelse med Domain Specific Language (DSL), provisjonering av store miljøer og graphql. Presentasjonen avsluttes med en titt på nyttige language features i Kotlin som hjelper oss skrive bedre kode.",
     link: "",
     bilde: "dagen_logo.svg",
     alt_tekst: "dagen at ifi sin logo"
@@ -115,7 +115,7 @@ const program_info =
 		start: new Date(2020,8, dag1, 14, 30, 0,0),
 		slutt: new Date(2020,8, dag1, 15,  0, 0,0),
 		foredragsholder: "FFI",
-		beskrivelse: "To av årets sommerstudenter ved FFI (derav en fra UiO) programmerte en mikrokontroller til å utføre kryptografi som er sikker mot kvantedatamaskiner. Etter å ha utvekslet nøkler kan man sende meldinger fram og tilbake mellom dingsene. Foredraget forklarer hvorfor dette høyaktuelle temaet er viktig, fulgt av en rask demonstrasjon.	2	martin.strand@ffi.no",
+		beskrivelse: "To av årets sommerstudenter ved FFI (derav en fra UiO) programmerte en mikrokontroller til å utføre kryptografi som er sikker mot kvantedatamaskiner. Etter å ha utvekslet nøkler kan man sende meldinger fram og tilbake mellom dingsene. Foredraget forklarer hvorfor dette høyaktuelle temaet er viktig, fulgt av en rask demonstrasjon.",
     link: "",
     bilde: "logoer/Ffi.png",
     alt_tekst: "dagen at ifi sin logo"
@@ -126,7 +126,7 @@ const program_info =
 		start: new Date(2020,8, dag1, 15,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 15, 30, 0,0),
 		foredragsholder: "SpareBank 1",
-		beskrivelse: "Kom og hør hvordan noen få byggescript vi lagde i 2013, har hjulpet oss på reisen fra tre til over 20 team og utviklet seg til å bli en av bærebjelkene for kontinuerlig teknologiutvikling og forbedring i SpareBank 1.	4	vidar.moe@sparebank1.no",
+		beskrivelse: "Kom og hør hvordan noen få byggescript vi lagde i 2013, har hjulpet oss på reisen fra tre til over 20 team og utviklet seg til å bli en av bærebjelkene for kontinuerlig teknologiutvikling og forbedring i SpareBank 1.",
     link: "",
     bilde: "logoer/SpareBank_1.jpg",
     alt_tekst: "dagen at ifi sin logo"
@@ -137,7 +137,7 @@ const program_info =
 		start: new Date(2020,8, dag1, 15, 30, 0,0),
 		slutt: new Date(2020,8, dag1, 16,  0, 0,0),
 		foredragsholder: "Sopra Steria",
-		beskrivelse: "I disse koronatider har enkelte norske fiskeselskaper problemer med å få solgt fisken sin til viktige markeder i Asia, fordi kvalitetsinspektører ikke kan reise inn til Norge. I dette foredraget får du høre hvordan Sopra Steria tar i bruk Hololens2 og den nyeste mixed reality-teknologien for å løse problemet. Med hologrammer i tillegg til lyd og bilde kan inspektører i Asia få gjort jobben sin ved å la kollegaer i Norge bli deres utvidede øyne, ører og hender	39	linda.larsen@soprasteria.com",
+		beskrivelse: "I disse koronatider har enkelte norske fiskeselskaper problemer med å få solgt fisken sin til viktige markeder i Asia, fordi kvalitetsinspektører ikke kan reise inn til Norge. I dette foredraget får du høre hvordan Sopra Steria tar i bruk Hololens2 og den nyeste mixed reality-teknologien for å løse problemet. Med hologrammer i tillegg til lyd og bilde kan inspektører i Asia få gjort jobben sin ved å la kollegaer i Norge bli deres utvidede øyne, ører og hender.",
     link: "",
     bilde: "dagen_logo.svg",
     alt_tekst: "dagen at ifi sin logo"
@@ -209,7 +209,7 @@ const program_info =
     alt_tekst: "dagen at ifi sin logo"
   },
   {
-    tittel: "Åpningsermoni",
+    tittel: "Åpningshilsen",
     type: "Annet",
     start: new Date(2020, 8, dag2, 10, 40, 0, 0),
     slutt: new Date(2020, 8, dag2, 11, 0, 0, 0),
