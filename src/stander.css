@@ -86,7 +86,6 @@
   text-align: left;
   justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
   font-size: 2rem;
   margin: 1rem auto;
 }
@@ -114,8 +113,7 @@
   display: none;
 }
 
-
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   #livelinker{
     display: flex;
     min-height: 150px;
@@ -127,6 +125,9 @@
     font-size: 2rem;
     margin: 0 auto 3rem;
   }
+}
+
+@media (max-width: 640px) {
 
   #video{
     display: none;

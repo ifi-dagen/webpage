@@ -11,11 +11,13 @@ import ReactPlayer from 'react-player/youtube';
 export default class BedriftStand extends Component {
   state = { show: true, active_stand: false };
 
+  //changes the active_stand-value after a timeout.
   delayUpdate = (newState, timeout) => {
     const context = this;
     setTimeout(function() {context.setState({active_stand: newState}); }, timeout);
   }
 
+  //keeps track of whether or not the zoomrooms should be open
   active = (tidspunkt) => {
     const stand_start = new Date(2020, 8, 24, 11, 0, 0, 0);
     const stand_stop = new Date(2020, 8, 24, 13, 0, 0, 0);
@@ -45,7 +47,6 @@ export default class BedriftStand extends Component {
 
   //tar inn lister av typen [ {tekst: "", link: ""}, ... ]
   listUp = (tittel,liste) => {
-    console.log(liste, liste.length)
     if(liste.length !== 0 & liste[0].tekst !== "") {
       return (
         <div>
@@ -62,7 +63,6 @@ export default class BedriftStand extends Component {
   }
 
   infoBolk = (bedrift) => {
-    console.log(bedrift)
     return <div className="infoBolk">
       <h1 className="bedriftnavn"> {bedrift.bedriftnavn}</h1>
       <p> {bedrift.beskrivelse && bedrift.beskrivelse}</p>
@@ -72,13 +72,13 @@ export default class BedriftStand extends Component {
     </div>
   }
 
+  //kunn for demo knapper
   toggle = (e, value) => {
     e.preventDefault();
     this.setState({active_stand: value})
   }
 
   inntrykkt = (bedrift,activated) => {
-    bedrift.poption = "bo"
     if (activated){
       return (<div id="livelinker">
                 <Link href={bedrift.zoomlink}>
