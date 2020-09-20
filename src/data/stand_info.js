@@ -268,11 +268,11 @@ const stand_info =
         foredrag: [{tekst: "", link: ""}],
         tags: ["",""]
       },
-    "Vitec Software Group": {
-        bedriftnavn: "",
-        beskrivelse: "",
-        logonavn: "icon_1.png",
-        video:"",
+    "Vitec": {
+        bedriftnavn: "Vitec",
+        beskrivelse: "“Vitec is the leading software company in Vertical Market Software in the Nordic region. We develop and deliver standardized software aimed at various niche markets and our growth is largely driven by acquisitions of well-managed and profitable software companies. The Group’s overall processes, combined with the in-depth know-ledge of our employees regarding our customers’ operations, create the conditions for improvement, continuous innovation and sustainable product development.”",
+        logonavn: "Vitec.png",
+        video:"https://youtu.be/Kb_juneSLrs",
         zoomlink:"https://uio.zoom.us/j/69056279057",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "Answer a few questions about Vitec and win a gift card from Komplett worth 5000nok", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=e1R1xImDvUmIRzwO8Lnhgevb-ZXAbwxGg6vsx6QAJ7RUQkk5NURMQUI2MFFLNlNNMVE0RkxVRklFOC4u"}],
