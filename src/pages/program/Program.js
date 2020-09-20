@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components'
 import './program.css';
 import ProgramStatus from '../../components/ProgramStatus.js';
 import program_info from '../../data/program_info.js'
@@ -24,8 +25,8 @@ class Program extends Component {
 
   programfilter = () => {
     return (<div className="programfilter">
-      <button className="program-btn btn-lg" onClick={() => {this.setState({filterDag: "2020-09-24"})}}>24.</button>
-      <button className="program-btn btn-lg" onClick={() => {this.setState({filterDag: "2020-09-25"})}}>25.</button>
+      <FilterButton  onClick={() => {this.setState({filterDag: "2020-09-24"})}}>24.</FilterButton>
+      <FilterButton  onClick={() => {this.setState({filterDag: "2020-09-25"})}}>25.</FilterButton>
     </div>)
   }
 
@@ -46,6 +47,10 @@ class Program extends Component {
       </div>)
   }
 
+  formatedText = (text) => {
+    return text.split("\n").map(item => {return (<p>{item}</p>)})
+  }
+
   detaljertekort = (dag) => {
     return (<div>
       {program_info.map((hendinger, index) => {
@@ -57,7 +62,7 @@ class Program extends Component {
             <h3>{hendinger.tittel}</h3>
             <h6>{this.klokkeslett(hendinger.start)}-{this.klokkeslett(hendinger.slutt)}</h6>
             <h4><a href={hendinger.link}>delta her!</a></h4>
-            <p>{hendinger.beskrivelse}</p>
+            <p>{this.formatedText(hendinger.beskrivelse)}</p>
           </div>
         </div>)
       })}
@@ -89,5 +94,26 @@ class Program extends Component {
     );
   }
 }
+
+const FilterButton = styled.button`
+  text-align: center;
+  background-color: deepskyblue;
+  padding: .8rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 1rem;
+  border:none;
+  font-size: 1.2rem;
+  min-width: 6rem;
+
+  :hover {
+    background-color: dodgerblue;
+    transform: scale(1, 1.1);
+    -webkit-transform: scale(1, 1.1);
+    box-shadow: 0px 1px 0px 0px;
+  }
+`
+
 
 export default Program;

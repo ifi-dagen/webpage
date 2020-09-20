@@ -35,11 +35,11 @@
 }
 
 .Programinnhold{
-  width: 100%;
+  max-width: 850px;
   min-width: 400px;
   margin: auto;
-  padding: 0 10rem;
-  font-size: 2rem;
+  padding: 0 8rem;
+  font-size: 1.5rem;
 }
 
 .event-detail{
@@ -48,6 +48,7 @@
 
 .programLink{
   text-decoration: none;
+  width: 100%;
 }
 
 .programLink:hover{
@@ -79,6 +80,7 @@
 
 .hendingBilde{
   width: 100%;
+  padding: 0 1rem;
   height: auto;
 }
 
@@ -97,6 +99,13 @@
 
 }
 
+@media (max-width: 1000px) {
+  .Programinnhold{
+    margin: auto;
+    padding: 0 8rem;
+    font-size: 1.5rem;
+  }
+}
 
 @media (max-width: 767.98px) {
   .hending-beholder{
@@ -124,21 +133,23 @@
   }
 
   .Programinnhold{
-    padding: 0 1rem;
+    margin: auto;
+    padding: 0 4rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 500px){
   .Programinnhold{
-    width: 50%;
     margin: auto;
     padding: 0 1rem;
     font-size: 1rem;
+    min-width: 0;
   }
 
   .programfilter{
     min-width: 0;
-    width: 20%;
+    width: 90%;
     padding: 2%;
     margin: auto;
     display: flex;
