@@ -5,18 +5,20 @@
  border-radius: 1rem;
  background-size: cover;
  background-position: center;
- color: rgb(80,89,98);
+ /*color: rgb(80,89,98);*/
  padding: 2rem 1rem 2rem;
  font-size: 1.5rem;
  margin-bottom: 1rem;
  text-align: center;
+ border: 1px solid deepskyblue;
+ border-radius: 1rem;
 }
 
 .compact-bar{
   margin: 0; /*2rem 1rem;*/
   padding: 0.8rem 4rem 0.8rem;
   text-align: left;
-
+  border: none;
 }
 
 .programstatus-container{
@@ -36,10 +38,10 @@
   text-align: center;
   /*word-wrap: break-word;/*find better than this*/
   text-overflow: ellipsis;
-  padding: 0;
+  padding: 1rem 0 1rem;
 }
-.programstatus-tekstboks a{
- color: rgb(80,89,98);
+.programstatus a{
+ /*color: rgb(9,166,228);*/
 }
 
 .programstatus-compact-tekstboks{
@@ -50,28 +52,36 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0rem 0;
-}
-.programstatus-compact-tekstboks a{
- color: rgb(80,89,98);
+  padding: 0.5rem 0 0.5rem;
+  /*color: rgb(80,89,98);*/
+
 }
 
 #status{
   margin-block-start: 0.5rem;
   margin-block-end: 0.2rem;
   font-size: 1rem;
-  color: rgb(80,89,98);
+  /*color: rgb(80,89,98);*/
 }
 #tittel{
   margin-block-start: 0.2rem;
   margin-block-end: 0.2rem;
   font-size: 2rem;
 }
+#tittel a{
+  color: rgb(80,89,98);
+  text-decoration: none;
+}
+#tittel a:hover{
+  color: rgb(9,166,228);
+}
+
 #delta-link{
   margin-block-start: 0.2rem;
   margin-block-end: 0.2rem;
   font-size: 2rem;
+  /*color: rgb(9,166,228) !important;*/
+  flex-shrink: 0;
 }
 #tidspunk{
   margin-block-start: 0;
@@ -99,6 +109,13 @@
   #tidspunk{
     margin-block-start: 0;
     margin-block-end: 0;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
   }
+}
+
+@media (max-width: 500px) {
+  .programstatus-compact-tekstboks{
+    flex-direction: column;
+  }
+
 }
