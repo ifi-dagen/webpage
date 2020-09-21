@@ -9,6 +9,7 @@ const minute = 10
 
 const program_info = [
 {
+  id: 0,
   tittel: "Åpning",
   type: "Annet",
   start: new Date(year, month, day, hour, minute, 0, 0), //dato skrevet slik: Y,M-1,D,H,M,S,MS, for testing endre Y,M,D,H og M, sekunder er satt slik at hvert arr varer
@@ -19,6 +20,7 @@ const program_info = [
   alt_tekst: "dagen at ifi sin logo"
 },
 {
+  id: 1,
   tittel: "Foredrags-tittel",
   type: "Foredrag",
   start: new Date(year, month, day, hour, minute, 6, 0),
@@ -29,6 +31,7 @@ const program_info = [
   alt_tekst: "dagen at ifi sin logo"
 },
 {
+  id: 2,
   tittel: "Foredrags-tittel2",
   type: "Foredrag",
   start: new Date(year, month, day, hour, minute, 12, 0),
@@ -46,6 +49,7 @@ const dag2 = 25;
 const program_info =
 [
   {
+    id: 0,
     tittel: "Kripos CTF-Vinnere annonseres",
     type: "Annet",
     start: new Date(2020, 8, dag1, 9, 0, 0, 0),
@@ -56,6 +60,7 @@ const program_info =
     alt_tekst: ""
   },
   {
+    id: 1,
     tittel: "Åpningshilsen",
     type: "Annet",
     start: new Date(2020, 8, dag1, 10, 40, 0, 0),
@@ -66,6 +71,7 @@ const program_info =
     alt_tekst: "dagen at ifi sin logo"
   },
   {
+    id: 2,
     tittel: "Standområdet er åpent!",
     type: "Annet",
     start: new Date(2020, 8, dag1, 11, 0, 0, 0),
@@ -78,7 +84,8 @@ const program_info =
   //foredragsrekke dag1
   {
 		type:	"foredrag",
-		tittel:	"Event Driven Design and Architecture in DNB Emerging Technologies",
+		id: 3,
+    tittel:	"Event Driven Design and Architecture in DNB Emerging Technologies",
 		start: new Date(2020,8, dag1, 13,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 13, 30, 0,0),
 		foredragsholder: "DNB",
@@ -89,7 +96,8 @@ const program_info =
   },
 	{
 		type:	"foredrag",
-		tittel:	"Bitt av CTF-basillen for å hindre virus",
+		id: 4,
+    tittel:	"Bitt av CTF-basillen for å hindre virus",
 		start: new Date(2020,8, dag1, 13, 30, 0,0),
 		slutt: new Date(2020,8, dag1, 14,  0, 0,0),
 		foredragsholder: "Fremtind",
@@ -100,7 +108,8 @@ const program_info =
   },
 	{
 		type:	"foredrag",
-		tittel:	"Kotlin i skatteetaten, erfaringer fra fronten",
+		id: 5,
+    tittel:	"Kotlin i skatteetaten, erfaringer fra fronten",
 		start: new Date(2020,8, dag1, 14,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 14, 30, 0,0),
 		foredragsholder: "Systek",
@@ -111,7 +120,8 @@ const program_info =
   },
 	{
 		type:	"foredrag",
-		tittel:	"Norges sikreste chat",
+		id: 6,
+    tittel:	"Norges sikreste chat",
 		start: new Date(2020,8, dag1, 14, 30, 0,0),
 		slutt: new Date(2020,8, dag1, 15,  0, 0,0),
 		foredragsholder: "FFI",
@@ -122,7 +132,8 @@ const program_info =
   },
 	{
 		type:	"foredrag",
-		tittel:	"Det skal være lett å gjøre rett - eller hvordan lage nettbank med 20 team og samtidig sove godt om natten",
+		id: 7,
+    tittel:	"Det skal være lett å gjøre rett - eller hvordan lage nettbank med 20 team og samtidig sove godt om natten",
 		start: new Date(2020,8, dag1, 15,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 15, 30, 0,0),
 		foredragsholder: "SpareBank 1",
@@ -133,7 +144,8 @@ const program_info =
   },
 	{
 		type:	"foredrag",
-		tittel:	"Mixed reality og Hololens2 til... inspeksjon av fisk??",
+		id: 8,
+    tittel:	"Mixed reality og Hololens2 til... inspeksjon av fisk??",
 		start: new Date(2020,8, dag1, 15, 30, 0,0),
 		slutt: new Date(2020,8, dag1, 16,  0, 0,0),
 		foredragsholder: "Sopra Steria",
@@ -144,7 +156,8 @@ const program_info =
   },
 	{
 		type:	"foredrag",
-		tittel:	"Pull Requests: Merge With Your Team",
+		id: 9,
+    tittel:	"Pull Requests: Merge With Your Team",
 		start: new Date(2020,8, dag1, 16,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 16, 30, 0,0),
 		foredragsholder: "Itera",
@@ -155,7 +168,8 @@ const program_info =
   },
 	{
 		type:	"foredrag",
-		tittel:	"Quantum Promise: Solving the worlds hardest problems?",
+		id: 10,
+    tittel:	"Quantum Promise: Solving the worlds hardest problems?",
 		start: new Date(2020,8, dag1, 16, 30, 0,0),
 		slutt: new Date(2020,8, dag1, 17,  0, 0,0),
 		foredragsholder: "Accenture",
@@ -167,7 +181,8 @@ const program_info =
   //workshop/parallelle eventer
 	{
 		type:	"workshop",
-		tittel:	"Hack my face - Javascript Course",
+		id: 11,
+    tittel:	"Hack my face - Javascript Course",
 		start: new Date(2020,8, dag1, 13,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 15,  0, 0,0),
 		foredragsholder: "CISCO",
@@ -178,7 +193,8 @@ const program_info =
   },
 	{
 		type:	"workshop",
-		tittel:	"Oppdrag kundereise - design morgendagens løsninger",
+		id: 12,
+    tittel:	"Oppdrag kundereise - design morgendagens løsninger",
 		start: new Date(2020,8, dag1, 15, 0, 0,0),
 		slutt: new Date(2020,8, dag1, 17, 0, 0,0),
 		foredragsholder: "EY",
@@ -189,6 +205,7 @@ const program_info =
   },
 
   {
+    id: 13,
     tittel: "Takk for i dag",
     type: "Annet",
     start: new Date(2020, 8, dag1, 17, 0, 0, 0),
@@ -199,6 +216,7 @@ const program_info =
     alt_tekst: "dagen at ifi sin logo"
   },
   {
+    id: 14,
     tittel: "Digital Quiz",
     type: "Annet",
     start: new Date(2020, 8, dag1, 18, 0, 0, 0),
@@ -209,6 +227,7 @@ const program_info =
     alt_tekst: "dagen at ifi sin logo"
   },
   {
+    id: 15,
     tittel: "Åpningshilsen",
     type: "Annet",
     start: new Date(2020, 8, dag2, 10, 40, 0, 0),
@@ -219,6 +238,7 @@ const program_info =
     alt_tekst: "dagen at ifi sin logo"
   },
   {
+    id: 16,
     tittel: "Standområdet er åpent!",
     type: "Annet",
     start: new Date(2020, 8, dag2, 11, 0, 0, 0),
@@ -232,7 +252,8 @@ const program_info =
   //foredragsrekke dag2
   {
 		type:	"foredrag",
-		tittel:	"Digitalisering av maritime operasjoner med fokus på miljø og teknologi",
+		id: 17,
+    tittel:	"Digitalisering av maritime operasjoner med fokus på miljø og teknologi",
 		start: new Date(2020,8,dag2,13, 0,0,0),
 		slutt: new Date(2020,8,dag2,13,30,0,0),
 		foredragsholder: "DNV GL",
@@ -243,7 +264,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"Jesper fikser jernbanen med Azure IoT og hjemmesnekret elektronikk",
+		id: 18,
+    tittel:	"Jesper fikser jernbanen med Azure IoT og hjemmesnekret elektronikk",
 		start: new Date(2020,8,dag2,13,30,0,0),
 		slutt: new Date(2020,8,dag2,14, 0,0,0),
 		foredragsholder: "Bouvet",
@@ -254,7 +276,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"En motiverende introduksjon til UU",
+		id: 19,
+    tittel:	"En motiverende introduksjon til UU",
 		start: new Date(2020,8,dag2,14, 0,0,0),
 		slutt: new Date(2020,8,dag2,14,30,0,0),
 		foredragsholder: "BEKK",
@@ -265,7 +288,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"Hvordan unngå å havne på forsida av VG",
+		id: 20,
+    tittel:	"Hvordan unngå å havne på forsida av VG",
 		start: new Date(2020,8,dag2,14,30,0,0),
 		slutt: new Date(2020,8,dag2,15, 0,0,0),
 		foredragsholder: "KANTEGA",
@@ -276,7 +300,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"Hvordan designe produkter som ruler verden",
+		id: 21,
+    tittel:	"Hvordan designe produkter som ruler verden",
 		start: new Date(2020,8,dag2,15, 0,0,0),
 		slutt: new Date(2020,8,dag2,15,30,0,0),
 		foredragsholder: "Iterate",
@@ -287,7 +312,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"Bildegjennkjenning med dyp læring",
+		id: 22,
+    tittel:	"Bildegjennkjenning med dyp læring",
 		start: new Date(2020,8,dag2,15,30,0,0),
 		slutt: new Date(2020,8,dag2,16, 0,0,0),
 		foredragsholder: "Norsk Regnesentral",
@@ -298,7 +324,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"Hvordan maskinlæring kan brukes til å sikre finansieringen av velferdssamfunnet",
+		id: 23,
+    tittel:	"Hvordan maskinlæring kan brukes til å sikre finansieringen av velferdssamfunnet",
 		start: new Date(2020,8,dag2,16, 0,0,0),
 		slutt: new Date(2020,8,dag2,16,30,0,0),
 		foredragsholder: "Skatteetaten",
@@ -309,7 +336,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"Smittestopp: apputvikling i koronaens tidsalder",
+		id: 24,
+    tittel:	"Smittestopp: apputvikling i koronaens tidsalder",
 		start: new Date(2020,8,dag2,16,30,0,0),
 		slutt: new Date(2020,8,dag2,17, 0,0,0),
 		foredragsholder: "Simula",
@@ -321,7 +349,8 @@ const program_info =
   //workshop/parallelle eventer
 	{
 		type:	"workshop",
-		tittel:	"Sikkerhetstesting med Deloitte ",
+		id: 25,
+    tittel:	"Sikkerhetstesting med Deloitte ",
 		start: new Date(2020,8,dag2,13, 0,0,0),
 		slutt: new Date(2020,8,dag2,15, 0,0,0),
 		foredragsholder: "DELOITTE",
@@ -332,7 +361,8 @@ const program_info =
 	},
 	{
 		type:	"foredrag",
-		tittel:	"De store teknologibedriftenes hemmelige verktøykasse",
+		id: 26,
+    tittel:	"De store teknologibedriftenes hemmelige verktøykasse",
 		start: new Date(2020,8,dag2,15, 0,0,0),
 		slutt: new Date(2020,8,dag2,15,30,0,0),
 		foredragsholder: "DNB",
@@ -343,6 +373,7 @@ const program_info =
 	},
 
   {
+    id: 27,
     tittel: "Takk for i dag",
     type: "Annet",
     start: new Date(2020, 8, dag2, 17, 0, 0, 0),
@@ -353,6 +384,7 @@ const program_info =
     alt_tekst: "dagen at ifi sin logo"
   },
   {
+    id: 28,
     tittel: "Digital Quiz",
     type: "Annet",
     start: new Date(2020, 8, dag2, 18, 0, 0, 0),

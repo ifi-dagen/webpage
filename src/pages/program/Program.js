@@ -39,7 +39,7 @@ class Program extends Component {
         {filtered_events.map((hendinger, index) => {
           //differansier på foredrag og alt annet.
           //Ide: grå ut alt som har skjedd allerede
-          const event_id="#"+hendinger.tittel;
+          const event_id="#"+hendinger.id;
           return (
             <div className="event-detail" key={index}>
               <a className="programLink" href={event_id}><strong className="starttid">{this.klokkeslett(hendinger.start)}</strong> - {hendinger.tittel}</a>
@@ -54,7 +54,7 @@ class Program extends Component {
   detaljertekort = (dag) => {
     return (<div>
       {program_info.map((hendinger, index) => {
-        return (<div className="hending-beholder" id={hendinger.tittel} key={index}>
+        return (<div className="hending-beholder" id={hendinger.id} key={index}>
           <div className="hendingBilde-beholder">
             {hendinger.bilde && <img className="hendingBilde" src={require("../../img/"+hendinger.bilde)} alt={hendinger.alt_tekst}/>}
           </div>
