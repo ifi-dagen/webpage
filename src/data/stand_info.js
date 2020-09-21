@@ -298,7 +298,7 @@ const stand_info =
       logonavn: "Bekk.png",
       video:"",
       zoomlink:"https://uio.zoom.us/j/63181529688",
-      stillinger: [{tekst: "Søk hos oss", link: "bekk.no/jobb"}],
+      stillinger: [{tekst: "Søk hos oss", link: "https://bekk.no/jobb"}],
       konkurranser: [{tekst: "", link:""}],
       foredrag: [{tekst: "En motiverende introduksjon til UU", link: "19"}],
       tags: ["",""]
