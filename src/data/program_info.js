@@ -44,8 +44,8 @@ const program_info = [
 ]
 */
 
-const dag1 = 24;
-const dag2 = 25;
+const dag1 = 21; //24
+const dag2 = 22; //25
 const program_info =
 [
   {
