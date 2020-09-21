@@ -98,7 +98,7 @@ const stand_info =
         bedriftnavn: "Forsvarets forskningsinstitutt",
         beskrivelse: "Forsvarets forskningsinstitutt (FFI) er et sivilt forskningsinstitutt med stor faglig bredde. Vi utvikler teknologi og kunnskap for at Norge skal ha et effektivt og relevant forsvar, et sikkert samfunn og en konkurransedyktig forsvarsindustri. \nVi har et ledende miljø innen forskning på informasjonsløsninger, kommunikasjonsløsninger og cybersikkerhet - og sammenhengen mellom disse. Vi har en stor aktivitet innen ubemannede, autonome plattformen i alle domener – under vann, på overflaten, på land og i luften. \nForskningsområdene her er blant annet kunstig intelligens, maskinsyn, signalbehandling, kybernetikk, fysikk – og informatikk. \nVi veileder studentoppgaver på alle nivåer og tilbyr sommerjobber. Søknadsfristen er 15. november for sommerjobbene.",
         logonavn: "Ffi.png",
-        video:"https://vimeo.com/456840384",
+        video:"https://player.vimeo.com/video/456840384",
         zoomlink:"https://uio.zoom.us/j/63458733228",
         stillinger: [{tekst: "Systemutvikler", link: "https://ffi.easycruit.com/vacancy/2563889/12675?iso=no"}, {tekst: "Modellering og simulering", link: "https://ffi.easycruit.com/vacancy/2571117/12675?iso=no"}, {tekst: "Elektrooptiske/infrarøde systemer i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567621/12675?iso=no"}, {tekst: "Radiokommunikasjon i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567593/12675?iso=no"}],
         konkurranser: [{tekst: "", link:""}],
