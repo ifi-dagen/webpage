@@ -153,7 +153,7 @@ const Nav = () => {
       </NavButton>
       <NavButton>
         <Link to="/studenter">
-          <i class="fas fa-user-graduate"></i>
+          <i className="fas fa-user-graduate"></i>
           <br />
           For studenter
         </Link>
