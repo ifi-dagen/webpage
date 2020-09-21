@@ -372,7 +372,7 @@ const stand_info =
     "Cognizant": {
       bedriftnavn: "Cognizant",
       beskrivelse: "Cognizant (Nasdaq: CTSH) er en av verdens ledende leverandører av profesjonelle tjenester, som transformerer kundenes virksomhets-, drifts- og teknologimodeller for den digitale tidsalder. Vår unike bransjebaserte og rådgivende tilnærming hjelper kundene med å definere, forme og drive mer innovative og effektive bedrifter. Med hovedkvarter i USA, er Cognizant rangert som nummer 193 på Fortune 500-listen, og blir ofte nevnt som et av de mest beundrede selskapene i verden. Les mer om hvordan Cognizant hjelper kunder med digitale løsninger på www.cognizant.com eller følg oss @Cognizant",
-      logonavn: "cognizant.jpg",
+      logonavn: "cognizant.JPG",
       video:"https://www.youtube.com/watch?v=27gn393Scy0",
       zoomlink:"https://uio.zoom.us/j/61295383482",
       stillinger: [{tekst: "Masters Level Jobs at Cognizant Norway", link: "https://careers.cognizant.com/studentandinterns/nr/en/masters-level-jobs"}],
