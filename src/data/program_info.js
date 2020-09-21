@@ -329,7 +329,7 @@ const program_info =
 		start: new Date(2020,8,dag2,16, 0,0,0),
 		slutt: new Date(2020,8,dag2,16,30,0,0),
 		foredragsholder: "Skatteetaten",
-		beskrivelse: "Vi har ikke spikret innholdet detaljert, men vi ønsker å fortelle kort om hvordan vi jobber med maskinlæring i Skatteetaten. I sommer hadde vi et stort prosjekt knyttet til dette, hvor vi hadde flere studenter med oss på laget.\nStikkord:\n- Vår visjon: Sørge for at alle betaler riktig skatt til riktig tid, fordi de ønsker det, og det er enkelt å gjøre riktig.\n-	Fortelle kort om sommerprosjektene – hva vi har gjort, resultater og utfordringer. Hvordan dette kan bidra til at skatt blir innbetalt på riktig måte.\n-	Hvordan vi tror dette kan brukes til å nå visjonen i fremtiden\nØnsker ikke at dette er teksten som brukes eksternt enda. Teksten over mer generelt for at dere skal få ett inntrykk av hva vi ønsker å formidle. ",
+		beskrivelse: "I Skatteetaten jobber vi med alt fra å kreve inn skatter og avgifter til å ha ansvaret for et oppdatert folkeregister. Som et av Norges største IT-miljøer liker vi å ligge i front når det kommer til ny teknologi – det til tross våre statlige gener!\n\nVi ønsker å gi dere en introduksjon til hvordan vi i Skatteetaten bruker maskinlæring til å gjøre det så enkelt som mulig å gjøre rett, og til å sikre finansiering av velferdssamfunnet.",
     link: "",
     bilde: "logoer/Skatteetaten.png",
     alt_tekst: "Skatteetaten-logo"
