@@ -17,6 +17,25 @@
   text-align: left;
 }
 
+
+.stand-bar-buttons button{
+  color: deepskyblue;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.stand-bar-buttons:hover{
+  color: black;
+}
+
+.standbase{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 8rem;
+  background: #d7dfe7;
+}
+
+
 .stand-container{
   position: relative;
   top: 0;
@@ -45,12 +64,12 @@
   transition: 0.3s;
 }
 
+
 .button-img{
   min-width: 0;
   width: 100%;
 }
 
-/* Add some padding inside the card container */
 .button-card-container {
   padding: 8px;
   margin: 5px;
@@ -60,29 +79,13 @@
   overflow: hidden;
   place-items: center;
   background-color: white;
-  
 }
 
-/* On mouse-over, add a deeper shadow */
-.button-card:hover,
- .button-card:focus {
+.button-card-container:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.button-card:focus {
-    background: #ffffff;
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-    max-width: 2rem;
-}
 
-
-.standbase{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 8rem;
-  background: #d7dfe7;
-}
 
 #livelinker{
   display: flex;
