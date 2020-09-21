@@ -1,8 +1,8 @@
 .bedriftStandBase{
   max-width:100%;
   margin: auto;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 3rem 3rem 3rem;
   padding-bottom: 5%;
   text-align: left;
 }
@@ -42,20 +42,25 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
 }
 
 .button-img{
-  width: auto;
-  max-width: 750px;
-  max-height: 200px;
+  min-width: 0;
+  width: 100%;
 }
 
 /* Add some padding inside the card container */
 .button-card-container {
-  padding: 2px 16px;
-  display: inline-flex;
+  padding: 8px;
+  margin: 5px;
+  display: grid;
+  min-width: 0;
+  width: 80%;
+  overflow: hidden;
+  place-items: center;
+  background-color: white;
+  
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -68,16 +73,15 @@
     background: #ffffff;
     outline: 1px solid #fff;
     outline-offset: -4px;
+    max-width: 2rem;
 }
 
-.button-card:active {
-    transform: scale(0.99);
-}
 
 .standbase{
-  padding: 3% 5% 13% 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 8rem;
   background: #d7dfe7;
-  min-height: 100%;
 }
 
 #livelinker{
@@ -108,30 +112,17 @@
 }
 
 
-.display-block {
-  display: block;
-}
-
-.display-none {
-  display: none;
-}
-
 @media (max-width: 720px) {
   #livelinker{
     display: flex;
     min-height: 150px;
-    align-items: space-around;
     text-align: left;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
     font-size: 2rem;
     margin: 0 auto 3rem;
   }
 }
 
 @media (max-width: 640px) {
-
   #video{
     display: none;
   }
@@ -146,6 +137,6 @@
 
   .bedriftStandInnhold{
     padding: 0 2rem;
-    min-width: 0;
+    max-width: 1em;
   }
 }

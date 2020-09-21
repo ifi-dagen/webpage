@@ -81,7 +81,7 @@ export default class Stander extends Component {
       case "dag1":
         return (<div className="standbase">
           {this.demobuttons(testmode)}
-          <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
+          <h2>Standområdet er åpent!</h2>
           {this.stander("dag1", true)}
         </div>)
       case "dag2":
