@@ -100,7 +100,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/63458733228",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "Norges sikreste chat", link: "4"}],
+        foredrag: [{tekst: "Norges sikreste chat", link: "6"}],
         tags: ["",""]
       },
     "Fremtind Forsikring": {
