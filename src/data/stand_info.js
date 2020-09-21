@@ -419,6 +419,7 @@ const stand_info =
       logonavn: "DNV_GL.png",
       video:"https://youtu.be/BztX8S-M6AI",
       zoomlink:"https://uio.zoom.us/j/62678997415",
+      konkurranser: [{tekst: "", link:""}],
       stillinger: [{tekst: "DNV GL Summer Job 2021 - Maritime Class", link: "https://careers-dnvgl.icims.com/jobs/14391/dnv-gl-summer-job-2021---maritime-class/job"},{tekst: "DNV GL Summer Job 2021 - Veracity", link: "https://careers-dnvgl.icims.com/jobs/14358/dnv-gl-summer-job-2021---veracity/job"}],
       foredrag: [{tekst: "Digitalisering av maritime operasjoner med fokus på miljø og teknologi", link: "17"}],
     },

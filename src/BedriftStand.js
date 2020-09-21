@@ -105,7 +105,9 @@ export default class BedriftStand extends Component {
   }
 
   render(){
-    const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift.replace(/_+/g, ' ')];//replace setter inn _ istede for mellomrom i stringen.
+    const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift.replace(/_/g, ' ')];//replace setter inn _ istede for mellomrom i stringen.
+    console.log(this.props.match.params.bedrift.replace(/_/g, ' '));
+    console.log(stand_info[this.props.match.params.dag]["DNV GL"]);//replace setter inn _ istede for mellomrom i stringen.
 
     return (
       <div className="bedriftStandBase">
