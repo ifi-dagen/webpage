@@ -67,7 +67,7 @@ export default class Stander extends Component {
   render() {
     const testmode = this.props.testmode;
     //finn ut tidspunkt
-    //this.finnDag(new Date()); //NB denne linja styrer tiden
+    this.finnDag(new Date()); //NB denne linja styrer tiden
     switch (this.state.dag) {
       case "før":
         if (this.props.forside){
