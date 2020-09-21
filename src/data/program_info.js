@@ -91,8 +91,8 @@ const program_info =
 		foredragsholder: "DNB",
 		beskrivelse: "",
     link: "",
-    bilde: "",
-    alt_tekst: ""
+    bilde: "dnb_sjogronn.png",
+    alt_tekst: "dnb-logo"
   },
 	{
 		type:	"foredrag",
@@ -104,7 +104,7 @@ const program_info =
 		beskrivelse: "I Fremtind bygger vi på kompetanse og ressurser fra to ledende aktører i markedet; SpareBank 1 og DNB, som har gått sammen om å bygge et forsikringsselskap som skal kjennetegnes av digital innovasjon og fornyelse. Vi er allerede landets tredje største forsikringsselskap og har et av landets største inhouse teknologimiljø.\nMed potensielt 3 millioner kunder og 1500 rådgivere som daglig benytter løsningene våre, er sikkerhet i våre løsninger helt essensielt. Gjennom Capture the flag har våre utviklere lært mer om potensielle sikkerhetshull og hvor enkelt man kan hacke seg frem til et passord eller et keyboard.\nCapture the Flag er en praktisk læringsform som kan brukes for å øke kompetanse på sikker koding, informasjonssikkerhet eller sikkerhetstesting. Bli med og hør om noen av de største sikkerhetstrusslene vi ser, få eksempler på praktiske oppgaver og tips til hvordan du kan bli bitt av CTF-basillen.",
     link: "",
     bilde: "logoer/fremtind.png",
-    alt_tekst: "dagen at ifi sin logo"
+    alt_tekst: "fremtind-logo"
   },
 	{
 		type:	"foredrag",
@@ -128,7 +128,7 @@ const program_info =
 		beskrivelse: "To av årets sommerstudenter ved FFI (derav en fra UiO) programmerte en mikrokontroller til å utføre kryptografi som er sikker mot kvantedatamaskiner. Etter å ha utvekslet nøkler kan man sende meldinger fram og tilbake mellom dingsene. Foredraget forklarer hvorfor dette høyaktuelle temaet er viktig, fulgt av en rask demonstrasjon.",
     link: "",
     bilde: "logoer/Ffi.png",
-    alt_tekst: "dagen at ifi sin logo"
+    alt_tekst: "Ffi-logo"
   },
 	{
 		type:	"foredrag",
@@ -140,7 +140,7 @@ const program_info =
 		beskrivelse: "Kom og hør hvordan noen få byggescript vi lagde i 2013, har hjulpet oss på reisen fra tre til over 20 team og utviklet seg til å bli en av bærebjelkene for kontinuerlig teknologiutvikling og forbedring i SpareBank 1.",
     link: "",
     bilde: "logoer/SpareBank_1.jpg",
-    alt_tekst: "dagen at ifi sin logo"
+    alt_tekst: "SpareBank-1-utvikling-logo"
   },
 	{
 		type:	"foredrag",
@@ -163,8 +163,8 @@ const program_info =
 		foredragsholder: "Itera",
 		beskrivelse: "Pull Requests: Merge With Your Team\nWorking as developers in teams, we continuously submit our code to be scrutinized by our peers. With written language being fragile and easy to misunderstand, pull requests can quickly become a breeding ground for demotivation and resentment. Ideally, pull requests should be the exact opposite: a place for us to give our peers praise for their good work, encourage learning, and ultimately make sure that the code produced has the entire team behind it.\nIn this talk, I’ll be talking about the psychology of giving and receiving critique, and how we can shape the language we use (specifically in regards to pull requests) to cultivate an environment in which we thrive as developers.\nThe only precondition for attending this talk is knowing what a pull request is. My hope is that after attending this talk you will be itching to submit your next pull request and also delight your fellow teammates with wonderful code reviews.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/Itera.jpg",
+    alt_tekst: "Itera-logo"
   },
 	{
 		type:	"foredrag",
@@ -188,8 +188,8 @@ const program_info =
 		foredragsholder: "CISCO",
 		beskrivelse: "A quick intro / crash course to JavaScript. Its an interactive sessions, Theme: image processing, More focus on fun and inspiration than theory\nWarning: The code we show in this course is not safe for work.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/Cisco.png",
+    alt_tekst: "cisco-logo"
   },
 	{
 		type:	"workshop",
@@ -200,8 +200,8 @@ const program_info =
 		foredragsholder: "EY",
 		beskrivelse: "Kunstig intelligens (Artificial intelligence, AI) er allerede en stor del av vår teknologiske hverdag,  og det er forventet at denne utviklingen kommer til å vokse eksponentielt de neste årene. Med alle fordelene våre nye hjelpere bringer med seg og den hurtige utviklingen av teknologien, beveger vi oss raskt inn i en æra dominert av algoritmer og maskiner. Men hvordan forsikrer vi oss om at denne utviklingen kommer oss alle til gode? Hvordan unngår vi uforutsette resultater av disse uforståelige algoritmene og robotene? \nTrusted AI-sesjonen vil gi studentene en annerledes innfallsvinkel på kunstig intelligens. Vi kommer til å diskutere hva som kan gå galt ved bruken av teknologien og stille spørsmål ved de etiske sidene av dens bruk i samfunnet. Deltagerne vil se en annen side av AI-revolusjonen som vil være nyttig i det videre arbeidsliv, uavhengig av studieretning. Sesjonen inneholder både en overordnet introduksjon til tema og gruppediskusjoner hvor studentene selv får ta stilling til noe av det som er neste generasjons store spørsmål.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/ey.gif",
+    alt_tekst: "EY-logo"
   },
 
   {
@@ -259,8 +259,8 @@ const program_info =
 		foredragsholder: "DNV GL",
 		beskrivelse: "I denne presentasjonen vil vi i Veracity, en start-in i DNV GL ('Det norske Veritas'), fortelle om den digitale plattformen vi har utviklet og hvordan vi jobber sammen med bedriftskunder for å løse morgendagens utfordringer på miljø, sikkerhet og teknologi. \nDu får lære om hvordan vi tilfører innovasjon og nytekning til en tradisjonell industri og hvordan vi bruker IoT løsninger til å skape verdi for kunden.\nVi vil også snakke om hvordan vi organiserer autonome team i Veracity, og oppnår suksee i kundesamarbeidet.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/DNV_GL.png",
+    alt_tekst: "DNV GL-logo"
 	},
 	{
 		type:	"foredrag",
@@ -271,8 +271,8 @@ const program_info =
 		foredragsholder: "Bouvet",
 		beskrivelse: "20 minutter er alt for kort tid for å dekke disse to teamene, men jeg skal prøve å gi dere en innblikk i hvordan det er å jobbe som IoT-konsulent i 2020.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/Bouvet.png",
+    alt_tekst: "bouvet-logo"
 	},
 	{
 		type:	"foredrag",
@@ -284,7 +284,7 @@ const program_info =
 		beskrivelse: "Trenger du en introduksjon til universell utforming, eller har du kanskje jobbet med UU og aldri fått helt grepet på det? Kanskje lurer du på hvorfor staten trer slike skrivebordsregler ned over hodet på oss?",
     link: "",
     bilde: "logoer/Bekk.png",
-    alt_tekst: "dagen at ifi sin logo"
+    alt_tekst: "bekk-logo"
 	},
 	{
 		type:	"foredrag",
@@ -296,7 +296,7 @@ const program_info =
 		beskrivelse: "Tenk deg at du kommer inn i et team som har tilgang på folks ekte persondata. Du har selvfølgelig hørt om GDPR og vet at disse dataene ikke må komme på avveie. Men hvilket ansvar har akkurat du for å sørge for at det ikke skjer? Hva må du huske på for å unngå å havne på forsida til VG? Denne presentasjonen gir en oversikt over ditt ansvar relatert til sikkerhet og andre aspekter, og den gir en del konkrete tips og råd om hva du bør gjøre.",
     link: "",
     bilde: "logoer/Kantega.png",
-    alt_tekst: "dagen at ifi sin logo"
+    alt_tekst: "Kantega-logo"
 	},
 	{
 		type:	"foredrag",
@@ -307,8 +307,8 @@ const program_info =
 		foredragsholder: "Iterate",
 		beskrivelse: "Når vi ønsker å bli gode på innovasjon og produktutvikling lærer vi mye om markedseksperimentering, brukerreise, interaksjonsdesign, visuelt design og enkle forretningsmodeller (som f.eks SaaS). Men de virkelig store produktene gjør mer enn dette. De bygger inn mekanismer som får produktet inn i hyperrask vekst, som over tid gir stor utbredelse og en solid, langvarig global markedsposisjon. Vi ser nærmere på 'the secret sauce', som tar oss fra produkt med høy brukerverdi, til teknologiselskap med global utbredelse.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/iterate.png",
+    alt_tekst: "iterate-logo"
 	},
 	{
 		type:	"foredrag",
@@ -320,7 +320,7 @@ const program_info =
 		beskrivelse: "Dyp læring er den viktigste metoden bak det vi kaller kunstig intelligens. Hva er dyp læring? Hvordan virker denne teknologien og hva kan man få til ved å bruke dette til bildegjenkjenning?",
     link: "",
     bilde: "logoer/Norsk_regnesentral.png",
-    alt_tekst: "dagen at ifi sin logo"
+    alt_tekst: "Norsk Regnesentral-logo"
 	},
 	{
 		type:	"foredrag",
@@ -331,8 +331,8 @@ const program_info =
 		foredragsholder: "Skatteetaten",
 		beskrivelse: "Vi har ikke spikret innholdet detaljert, men vi ønsker å fortelle kort om hvordan vi jobber med maskinlæring i Skatteetaten. I sommer hadde vi et stort prosjekt knyttet til dette, hvor vi hadde flere studenter med oss på laget.\nStikkord:\n- Vår visjon: Sørge for at alle betaler riktig skatt til riktig tid, fordi de ønsker det, og det er enkelt å gjøre riktig.\n-	Fortelle kort om sommerprosjektene – hva vi har gjort, resultater og utfordringer. Hvordan dette kan bidra til at skatt blir innbetalt på riktig måte.\n-	Hvordan vi tror dette kan brukes til å nå visjonen i fremtiden\nØnsker ikke at dette er teksten som brukes eksternt enda. Teksten over mer generelt for at dere skal få ett inntrykk av hva vi ønsker å formidle. ",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/Skatteetaten.png",
+    alt_tekst: "Skatteetaten-logo"
 	},
 	{
 		type:	"foredrag",
@@ -343,8 +343,8 @@ const program_info =
 		foredragsholder: "Simula",
 		beskrivelse: "Kyrre Lekve, Deputy Managing Director ved Simula Research Laboratory, forteller om utviklingen av Smittestopp-appen. Han vil blant annet snakke om tekniske utfordringer og løsninger, forskjellen på kontaktsporing mellom individer og sporing av epidemien på samfunnsnivå, samt hensyn til personvern.\nForedraget vil være av interesse for både bachelor- og masterstudenter, der både tekniske og samfunnsmessige aspekter blir belyst.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/simula.png",
+    alt_tekst: "simula-logo"
 	},
   //workshop/parallelle eventer
 	{
@@ -356,8 +356,8 @@ const program_info =
 		foredragsholder: "DELOITTE",
 		beskrivelse: "Workshopen vil inkludere praktiske eksempler og demoer av ulike metoder for sikkerhetstesting. Demonene vil ha en varighet på mellom 5, 10, 15, 20 minutter. Eksempler på demoer som kan være aktuelle er:\n-	Web\n-	Wi-Fi\n-	Card cloning\n-	USB\n-	Lock picking\n-	Intrusion detection\n-	Threat Intelligence\n-	OSINT\n-	Social Engineering\n-	Red teaming.\nHvilke demoer som blir aktuelle vil bestemmes nærmere.\nSom et avbrekk fra de ulike demoene vil vi sette opp ulike «Ask Me Anything»-sesjoner hvor studentene får mulighet til å stille oss anonyme spørsmål gjennom Menti. Eksempler på sesjoner som vi tenker vil kunne være relevant og aktuelt for studentene er:\n-	“Hi! I’m leading the Cyber Risk department at Deloitte – Ask Me Anything” #AMA\n-	“Hi! I’ve been a security consultant for 10 years, doing security assessments, red team operations, incident handling, intrusion analysis and mobile forensics – Ask Me Anything” #AMA\n-	“Hi! I’m an experienced consultant new at Deloitte – Ask Me Anything” #AMA\n-	“Hi! I’ve just started my cyber security career – Ask Me Anything” #AMA",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/deloitte.jpg",
+    alt_tekst: "deloitte-logo"
 	},
 	{
 		type:	"foredrag",
@@ -368,8 +368,8 @@ const program_info =
 		foredragsholder: "DNB",
 		beskrivelse: "Vanligvis består et team av 6 - 10 personer. Hvordan lager man da én nettside når man er flere hundre utviklere? Vi tar en titt i verktøykassa til de største bedriftene, og ser på hvordan arkitekturen kan se ut, hvordan de jobber og hva slags verktøy de bruker. Kort sagt, hvordan de får alt til å henge sammen, og hvordan vi har valgt å løse det i DNB.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "dnb_sjogronn.png",
+    alt_tekst: "Dnb-logo"
 	},
 
   {
