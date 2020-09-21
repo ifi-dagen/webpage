@@ -46,14 +46,14 @@ export default class BedriftStand extends Component {
   }
 
   //tar inn lister av typen [ {tekst: "", link: ""}, ... ]
-  listUp = (tittel,liste) => {
+  listUp = (tittel,liste,link_prefix) => {
     if(liste.length !== 0 & liste[0].tekst !== "") {
       return (
         <div>
           <h4>{tittel}</h4>
           {liste.map((item, index) => {
             if (item.link !== ""){
-              return (<a href={item.link} key={index}>{item.tekst}<br/></a>)
+              return (<a href={link_prefix+item.link} key={index}>{item.tekst}<br/></a>)
             }
             return(<p>{item.tekst}</p>)
           })}
@@ -68,7 +68,7 @@ export default class BedriftStand extends Component {
       <p> {bedrift.beskrivelse && bedrift.beskrivelse}</p>
       {this.listUp("stillinger", bedrift.stillinger)}
       {this.listUp("konkurranser", bedrift.konkurranser)}
-      {this.listUp("foredrag", bedrift.foredrag)}
+      {this.listUp("foredrag", bedrift.foredrag,"../../program#")}
     </div>
   }
 
@@ -101,8 +101,6 @@ export default class BedriftStand extends Component {
     }
     return
   }
-
-
 
   componentDidMount(){
     const zoom_open = this.active(new Date())

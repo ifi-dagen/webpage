@@ -136,7 +136,7 @@ const program_info =
     tittel:	"Det skal være lett å gjøre rett - eller hvordan lage nettbank med 20 team og samtidig sove godt om natten",
 		start: new Date(2020,8, dag1, 15,  0, 0,0),
 		slutt: new Date(2020,8, dag1, 15, 30, 0,0),
-		foredragsholder: "SpareBank 1",
+		foredragsholder: "SpareBank 1 Utvikling",
 		beskrivelse: "Kom og hør hvordan noen få byggescript vi lagde i 2013, har hjulpet oss på reisen fra tre til over 20 team og utviklet seg til å bli en av bærebjelkene for kontinuerlig teknologiutvikling og forbedring i SpareBank 1.",
     link: "",
     bilde: "logoer/SpareBank_1.jpg",
@@ -257,7 +257,7 @@ const program_info =
 		start: new Date(2020,8,dag2,13, 0,0,0),
 		slutt: new Date(2020,8,dag2,13,30,0,0),
 		foredragsholder: "DNV GL",
-		beskrivelse: "EYs Cyber War Game lar studentene oppleve hvordan det er å lede en bedrift gjennom et omfattende cyberangrep. Det sterkt engasjerende og interaktive spillet lar deltakerne praktisere unike forretningsmessige beslutningsutfordringer under en cyberkrise og øker deltakernes forståelse av kravene som stilles i en slik situasjon.\nHalvparten av studentene, delt opp i grupper, vil drive en story-line av handlinger, som tvinger den andre halvparten studenter, som spiller styret i en bedrift, til å reagere med ulike handlinger. Studentene får operere tilnærmet fritt, med kontinuerlig oppfølging av en veileder fra EY. Studentene vil oppleve hvordan et cyberangrep kan rasere en bedrift i løpet av kort tid, samtidig som de må vurdere, bestemme, engasjere og kommunisere under et høyt press. \nOpplegget er delt opp i 4 deler:\n1.	(5min) Kort introduksjon av EY Cybersecurity\n2.	(30min) Introduksjon til spillet og regler\n3.	(60min) Spiller Cyber War Game\n4.	(25min) Felles gjennomgang av resultater fra hver gruppe\nCyber War Game blir brukt av EY hos ulike kunder verden over, og vil gi studentene et konkret innblikk i hva EY Cybersecurity jobber med til daglig.",
+		beskrivelse: "I denne presentasjonen vil vi i Veracity, en start-in i DNV GL ('Det norske Veritas'), fortelle om den digitale plattformen vi har utviklet og hvordan vi jobber sammen med bedriftskunder for å løse morgendagens utfordringer på miljø, sikkerhet og teknologi. \nDu får lære om hvordan vi tilfører innovasjon og nytekning til en tradisjonell industri og hvordan vi bruker IoT løsninger til å skape verdi for kunden.\nVi vil også snakke om hvordan vi organiserer autonome team i Veracity, og oppnår suksee i kundesamarbeidet.",
     link: "",
     bilde: "dagen_logo.svg",
     alt_tekst: "dagen at ifi sin logo"
@@ -317,7 +317,7 @@ const program_info =
 		start: new Date(2020,8,dag2,15,30,0,0),
 		slutt: new Date(2020,8,dag2,16, 0,0,0),
 		foredragsholder: "Norsk Regnesentral",
-		beskrivelse: "PA Consulting Group uses data (text, pics, i.e) from across social media platforms to predict patterns of future events that can contribute to spread of Covid-19. The predictions are used across several large British cities for planning resilience.\nIn this workshop, we would like to discover, together with the students, how algorithms could be used in other areas of society and ethical aspects of using it.",
+		beskrivelse: "Dyp læring er den viktigste metoden bak det vi kaller kunstig intelligens. Hva er dyp læring? Hvordan virker denne teknologien og hva kan man få til ved å bruke dette til bildegjenkjenning?",
     link: "",
     bilde: "logoer/Norsk_regnesentral.png",
     alt_tekst: "dagen at ifi sin logo"
@@ -350,7 +350,7 @@ const program_info =
 	{
 		type:	"workshop",
 		id: 25,
-    tittel:	"Sikkerhetstesting med Deloitte ",
+    tittel:	"Sikkerhetstesting med Deloitte",
 		start: new Date(2020,8,dag2,13, 0,0,0),
 		slutt: new Date(2020,8,dag2,15, 0,0,0),
 		foredragsholder: "DELOITTE",
