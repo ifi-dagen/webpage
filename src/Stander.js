@@ -54,10 +54,10 @@ export default class Stander extends Component {
   standbuttons = (show) => {
     if (show) {
       return (<div className="stand-bar-buttons">
-        <button onClick={(e) => this.toggle(e, "før")}>(DEMO) før</button>
+        <button onClick={(e) => this.toggle(e, "før")}>(før) </button>
         <button onClick={(e) => this.toggle(e, "dag1")}>Torsdag</button>
         <button onClick={(e) => this.toggle(e, "dag2")}>Fredag</button>
-        <button onClick={(e) => this.toggle(e, "etter")}>(DEMO) etter</button>
+        <button onClick={(e) => this.toggle(e, "etter")}>(etter)</button>
       </div>
       );
     }
