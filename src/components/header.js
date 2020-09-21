@@ -11,7 +11,7 @@ const Header = () => {
       <Wrapper>
         <img
           onClick={() => herstory.push("/")}
-          className="front-logo" src={require('../img/dagen_logo.svg')} alt="dagen@ifi logo" />
+          src={require('../img/dagen_logo.svg')} alt="dagen@ifi logo" />
         <span />
         <Facebook />
         <Instagram />

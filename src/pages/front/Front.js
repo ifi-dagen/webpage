@@ -203,10 +203,6 @@ const NavItem = styled.div`
   border-radius: 1rem;
   font-size: 1.2rem;
   grid-column: 1/-1;
-
-  a{
-    color: rgb(80,89,98);
-  }
 `
 
 const ErGrid = styled.div`

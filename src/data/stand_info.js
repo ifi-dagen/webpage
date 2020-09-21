@@ -23,7 +23,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/62865709366",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Quantum Promise: Solving the worlds hardest problems?", link: "10"}],
         tags: ["",""]
       },
     "Cognite": {
@@ -67,7 +67,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/69440787996",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Event Driven Design and Architecture in DNB Emerging Technologies", link: "3"}, {tekst: "De store teknologibedriftenes hemmelige verktøykasse", link: "26"}],
         tags: ["",""]
       },
     "Etterretningstjenesten": {
@@ -89,7 +89,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/63487429373",
         stillinger: [{tekst: "Internship", link: "https://eygbl.referrals.selectminds.com/student-opportunities/jobs/summer-internship-2021-technology-consulting-138803"}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Oppdrag kundereise - design morgendagens løsninger", link: "12"}],
         tags: ["",""]
       },
     "Forsvarets forskningsinstitutt": {
@@ -100,7 +100,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/63458733228",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Norges sikreste chat", link: "4"}],
         tags: ["",""]
       },
     "Fremtind Forsikring": {
@@ -111,7 +111,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/63761070770",
         stillinger: [{tekst: "Summer Internship 2021", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=144150&DepartmentId=20575&MediaId=4630"}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Bitt av CTF-basillen for å hindre virus", link: "4"}],
         tags: ["",""]
       },
     "Genus": {
@@ -131,9 +131,9 @@ const stand_info =
         logonavn: "Itera.jpg",
         video:"https://www.youtube.com/watch?v=obnVNJl7rDY",
         zoomlink:"https://uio.zoom.us/j/62514712286",
-        stillinger: [{tekst: "se her!", link: " https://www.itera.no/student"}],
-        konkurranser: [{tekst: " Hva er det 3D printeren lager?  Registrer svare ditt her", link:"https://forms.office.com/Pages/ResponsePage.aspx?id=Mvzp70uE_kWhKFU0RLuaZy4EZUEFJytNj-rXHKjodllUN1c0M0hJQzZCUlQ0RzZOTFhBNTNCQkVaQi4u"}],
-        foredrag: [{tekst: "", link: ""}],
+        stillinger: [{tekst: "se her!", link: "https://www.itera.no/student"}],
+        konkurranser: [{tekst: "Hva er det 3D printeren lager?  Registrer svare ditt her", link:"https://forms.office.com/Pages/ResponsePage.aspx?id=Mvzp70uE_kWhKFU0RLuaZy4EZUEFJytNj-rXHKjodllUN1c0M0hJQzZCUlQ0RzZOTFhBNTNCQkVaQi4u"}],
+        foredrag: [{tekst: "Pull Requests: Merge With Your Team", link: "9"}],
         tags: ["",""]
       },
     "Kolonial.no": {
@@ -221,7 +221,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/65957726471",
         stillinger: [{tekst: "", link: ""}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Mixed reality og Hololens2 til... inspeksjon av fisk??", link: "8"}],
         tags: ["",""]
       },
     "SpareBank 1 Utvikling": {
@@ -232,7 +232,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/66307450744",
         stillinger: [{tekst: "Sommerjobb!", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=144169&DepartmentId=21110&MediaId=4655&SkipAdvertisement=False "}],
         konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Det skal være lett å gjøre rett - eller hvordan lage nettbank med 20 team og samtidig sove godt om natten", link: "7"}],
         tags: ["",""]
       },
     "Storebrand": {
@@ -254,7 +254,7 @@ const stand_info =
         zoomlink:"https://uio.zoom.us/j/68298550948",
         stillinger: [{tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021"}],
         konkurranser: [{tekst: "bli med i konkurransen vår!", link:"https://forms.gle/pQSzSR3xB8u52Xc99"}],
-        foredrag: [{tekst: "", link: ""}],
+        foredrag: [{tekst: "Kotlin i skatteetaten, erfaringer fra fronten", link: "5"}],
         tags: ["",""]
       },
     "Visma Consulting": {
@@ -300,7 +300,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/63181529688",
       stillinger: [{tekst: "Søk hos oss", link: "bekk.no/jobb"}],
       konkurranser: [{tekst: "", link:""}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "En motiverende introduksjon til UU", link: "19"}],
       tags: ["",""]
     },
     "Bouvet": {
@@ -311,7 +311,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/69910129070",
       stillinger: [{tekst: "Klikk deg inn her for å se alle ledige stillinger for studenter", link: "https://www.poption.com/companies/bouvet/postings"}],
       konkurranser: [{tekst: "Registrer deg her for å bli med i trekningen av en Syma drone", link:"https://www.poption.com/companies/bouvet/events/MNOu6n"}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Jesper fikser jernbanen med Azure IoT og hjemmesnekret elektronikk", link: "18"}],
       tags: ["",""]
     },
     "Bredvid": {
@@ -325,9 +325,9 @@ const stand_info =
       foredrag: [{tekst: "", link: ""}],
       tags: ["",""]
     },
-    "Capgemini ": {
+    "Capgemini": {
       bedriftnavn: "Capgemini",
-      beskrivelse: "Capgemini er en global leder innen teknologi og konsulenttjenester som tilbyr nyutdannede utviklere et skreddersydd utdanningsløp gjennom vårt IgnITe-program.  Vi har kontorer i Oslo, Trondheim. Bergen, Stavanger og Fredrikstad og muligheter internasjonalt hvis det frister.  \nVårt prisvinnende graduate-program, IgnITe, tilbyr nyutdannede en unik mulighet til å jobbe med ny teknologi, sitte i store og små utviklingsprosjekter der du fra dag en er en viktig brikke for våre kunder. Våre utviklere jobber både med backend- og frontendutvikling innenfor Java, Microsoft, CRM og Insights & Data.\nØnsker du å jobbe som utvikler neste år? Da er IgnITe perfekt start på karrieren! ",
+      beskrivelse: "Capgemini er en global leder innen teknologi og konsulenttjenester som tilbyr nyutdannede utviklere et skreddersydd utdanningsløp gjennom vårt IgnITe-program.  Vi har kontorer i Oslo, Trondheim. Bergen, Stavanger og Fredrikstad og muligheter internasjonalt hvis det frister.  \nVårt prisvinnende graduate-program, IgnITe, tilbyr nyutdannede en unik mulighet til å jobbe med ny teknologi, sitte i store og små utviklingsprosjekter der du fra dag en er en viktig brikke for våre kunder. Våre utviklere jobber både med backend- og frontendutvikling innenfor Java, Microsoft, CRM og Insights & Data.\nØnsker du å jobbe som utvikler neste år? Da er IgnITe perfekt start på karrieren!",
       logonavn: "capgemini.png",
       video:"https://www.youtube.com/watch?v=EY5g9yQxG54",
       zoomlink:"https://uio.zoom.us/j/62135515698",
@@ -355,7 +355,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/66309981207",
       stillinger: [{tekst: "Graduate Software Engineer", link: "https://jobs.cisco.com/jobs/IsAJob?projectId=1296227&source=Career+Fair&tags=dagen%40ifi"},{tekst: "Software Engineering Summer Intern", link: "https://jobs.cisco.com/jobs/IsAJob?projectId=1296228&source=Career+Fair&tags=dagen%40ifi"},{tekst: "Graduate Hardware Engineer", link: "https://jobs.cisco.com/jobs/IsAJob?projectId=1302381&source=Career+Fair&tags=dagen%40ifi"},{tekst: "Graduate User Experience", link:"https://jobs.cisco.com/jobs/IsAJob?projectId=1303150&source=Career+Fair&tags=dagen%40ifi"}],
       konkurranser: [{tekst: "", link:""}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Hack my face - Javascript Course", link: "11"}],
       tags: ["",""]
     },
     "Clave": {
@@ -386,7 +386,7 @@ const stand_info =
       logonavn: "Data_response.png",
       video:"",
       zoomlink:"https://uio.zoom.us/j/69866433374",
-      stillinger: [{tekst: "Ledige stillinger", link: " https://rd-datarespons.no/jobb/"}],
+      stillinger: [{tekst: "Ledige stillinger", link: "https://rd-datarespons.no/jobb/"}],
       konkurranser: [{tekst: "", link:""}],
       foredrag: [{tekst: "", link: ""}],
       tags: ["",""]
@@ -399,11 +399,11 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/65733754251",
       stillinger: [{tekst: "Internship", link: "https://deloitte.recman.no/job.php?job_id=162309"},{tekst: "Cyber Risk", link: "https://deloitte.recman.no/job.php?job_id=64569"}],
       konkurranser: [{tekst: "", link:""}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Sikkerhetstesting med Deloitte", link: "25"}],
       tags: ["",""]
     },
     "DNB": {
-      bedriftnavn: "",
+      bedriftnavn: "DNB",
       beskrivelse: "",
       logonavn: "icon_1.png",
       video:"",
@@ -420,6 +420,7 @@ const stand_info =
       video:"https://youtu.be/BztX8S-M6AI",
       zoomlink:"https://uio.zoom.us/j/62678997415",
       stillinger: [{tekst: "DNV GL Summer Job 2021 - Maritime Class", link: "https://careers-dnvgl.icims.com/jobs/14391/dnv-gl-summer-job-2021---maritime-class/job"},{tekst: "DNV GL Summer Job 2021 - Veracity", link: "https://careers-dnvgl.icims.com/jobs/14358/dnv-gl-summer-job-2021---veracity/job"}],
+      foredrag: [{tekst: "Digitalisering av maritime operasjoner med fokus på miljø og teknologi", link: "17"}],
     },
     "Elvia": {
       bedriftnavn: "",
@@ -434,7 +435,7 @@ const stand_info =
     },
     "Experis Academy": {
       bedriftnavn: "Experis Academy",
-      beskrivelse: "Gjennom Experis Academy får du en kickstart på din karriere og en unik mulighet til å skaffe deg den kompetansen som arbeidsmarkedet etterspør. Her vil du tilegne deg rett kompetanse og erfaring som gjør deg til en ettertraktet Fullstack Javautvikler eller .NET-utvikler. Programmet varer i 15 måneder og ender i fast jobb hos en av våre spennende kunder, eller videre hos oss her i Experis. Vi jobber aktivt ut mot over 1600 kunder, og tidligere Experis Academy kandidater har eksempelvis gått ut i jobb hos selskaper som Vipps, Posten, PayEx, OBOS, Nets, Distribution Innovation, Storebrand og Entur. \n«Jeg liker at Experis Academy gir oss grundig opplæring i teknologier som er mye brukt i arbeidslivet. Vi som konsulenter blir derfor veldig attraktive på arbeidsmarkedet.” - Harald, .NET-utvikler i Experis Academy \nExperis Academy starter med skreddersydd opplæring som løper over 3 måneder. Her kombineres teori, casearbeid og sertifiseringsløp i Java hos vår samarbeidspartner Noroff. Det pedagogiske opplegget er basert på prinsipper som accelerated learning og flipped classroom . De neste 12 månedene går du ut i en spesialiseringsperiode hvor du får brukt dine nye ferdigheter i praksis som konsulent for Experis Academy. ",
+      beskrivelse: "Gjennom Experis Academy får du en kickstart på din karriere og en unik mulighet til å skaffe deg den kompetansen som arbeidsmarkedet etterspør. Her vil du tilegne deg rett kompetanse og erfaring som gjør deg til en ettertraktet Fullstack Javautvikler eller .NET-utvikler. Programmet varer i 15 måneder og ender i fast jobb hos en av våre spennende kunder, eller videre hos oss her i Experis. Vi jobber aktivt ut mot over 1600 kunder, og tidligere Experis Academy kandidater har eksempelvis gått ut i jobb hos selskaper som Vipps, Posten, PayEx, OBOS, Nets, Distribution Innovation, Storebrand og Entur. \n«Jeg liker at Experis Academy gir oss grundig opplæring i teknologier som er mye brukt i arbeidslivet. Vi som konsulenter blir derfor veldig attraktive på arbeidsmarkedet.” - Harald, .NET-utvikler i Experis Academy \nExperis Academy starter med skreddersydd opplæring som løper over 3 måneder. Her kombineres teori, casearbeid og sertifiseringsløp i Java hos vår samarbeidspartner Noroff. Det pedagogiske opplegget er basert på prinsipper som accelerated learning og flipped classroom . De neste 12 månedene går du ut i en spesialiseringsperiode hvor du får brukt dine nye ferdigheter i praksis som konsulent for Experis Academy.",
       logonavn: "Experis_Academy.jpg",
       video:"https://www.youtube.com/watch?v=_n8DI1hDYpY&feature=youtu.be",
       zoomlink:"https://uio.zoom.us/j/62267349916",
@@ -484,7 +485,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/63856094442",
       stillinger: [{tekst: "se her", link: "www.iter.at/jobs"}],
       konkurranser: [{tekst: "lek med logoen vår", link:"https://logo.iterate.no/"}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Hvordan designe produkter som ruler verden", link: "21"}],
       tags: ["",""]
     },
     "Kantega": {
@@ -495,7 +496,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/66579280932",
       stillinger: [{tekst: "Søk sommerjobb hos oss", link: "https://sommerjobb.kantega.no/jobs/929530-spennende-sommerjobb-i-tverrfaglig-team"}],
       konkurranser: [{tekst: "Delta i vår konkurranse og vinn flotte premier", link:"https://www.kantega.no/dagen-ifi-2020"}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Hvordan unngå å havne på forsida av VG", link: "20"}],
       tags: ["",""]
     },
     "Lime Technologies Norway": {
@@ -528,7 +529,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/69153286477",
       stillinger: [{tekst: "", link: ""}],
       konkurranser: [{tekst: "", link:""}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Bildegjennkjenning med dyp læring", link: "22"}],
       tags: ["",""]
     },
     "Simula Research Laboratory": {
@@ -539,7 +540,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/64881656409",
       stillinger: [{tekst: "Søk jobb hos oss:", link: "https://www.simula.no/careers"}, {tekst: "Summer internship", link:"https://www.simula.no/education/summer-internships"}, {tekst: "Skriv masteroppgaven hos Simula", link:"https://www.simula.no/education/all-study-offers?f%255B0%255D=field_study_type%253Aname%3AMaster"}],
       konkurranser: [{tekst: "", link:""}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Smittestopp: apputvikling i koronaens tidsalder", link: "24"}],
       tags: ["",""]
     },
     "Skatteetaten": {
@@ -550,7 +551,7 @@ const stand_info =
       zoomlink:"https://uio.zoom.us/j/66385315136",
       stillinger: [{tekst: "Tech graduates i Skatteetaten", link: "https://www.skatteetaten.no/om-skatteetaten/jobb/studenter-og-nyutdannede/techgrad/"}],
       konkurranser: [{tekst: "", link:""}],
-      foredrag: [{tekst: "", link: ""}],
+      foredrag: [{tekst: "Hvordan maskinlæring kan brukes til å sikre finansieringen av velferdssamfunnet", link: "23"}],
       tags: ["",""]
     }
   }
