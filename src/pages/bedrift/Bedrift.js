@@ -1,78 +1,44 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../../App.css';
 import './bedrift.css';
 import Visitkort from '../../components/Visitkort';
 import Prisinfo from '../../components/Prisinfo';
 
 
-export default class Bedrift extends Component {
-    render() {
-        return (
-            <div className="bedriftbase ">
-                <div className="påmeldingsinfo hidden">
-                    <h1>PÅMELDING ER ÅPEN</h1>
-                    <p>
-                        Informasjon om påmelding ble også sendt ut til bedriftene på vår mailingliste. Er du usikker på
-                        om din bedrift står på maillisten, ta kontakt.
-                    </p>
-                    <p>
-                        Mer informasjon om selve opptaksprosess, antall standplasser, tidspunkt og kriterier vil bli
-                        sendt ut som informasjon på e-post nærmere fristen for å besvare. Viktigste er at dere
-                        registrerer dere under påmeldingskjema om dere ønsker å delta i år.
-                    </p>
-                    <p>
-                        Etter en flott dag på stand blir det variert underholdning i studentkjelleren vår, Escape, og vi
-                        oppfordrer alle bedrifter til å bli igjen for å delta på dette. Dette er et av høstens store
-                        høydepunkter for studentene ved Institutt for Informatikk og en fin mulighet å mingle mer
-                        avslappet. Ta kontakt med bedriftansvarlig om dere lurer på noe mer.
-                    </p>
+const Bedrift = () => {
+    return (
+        <div className="bedriftbase ">
+            <h1>
+                Årets karrieredag blir for første gang arrangert digitalt,
+                og vi synes det er veldig kult at så mange bedrifter er påmeldt.
+            </h1>
+            <p>Kl 11-13 vises standområdet på forsiden. Iløpet av dette tidsrommet vil de kunne besøke zoom-standen deres.</p>
+            <p>På bedriftsiden deres vil studentene kunne se en introduksjonsvideo, lese en beskrivelse av bedriften deres og se hvilke stillingsannonser dere har ute. Har dere konkurranser eller ønsker å legge til noe mer på denne siden, eller har ønsker om endring har vi noe fleksibilitet til å legge til dette på siden. </p>
+            <div className="kontaktinfo">
+                <h2>Trenger dere hjelp under arrangementet?</h2>
+                <p>Problemer med zoom-stand? Kontakt Burhan.</p>
+                <p>Vil dere endre noe med standoversikt eller bedriftsiden? Kontakt Kari.</p>
+                <p>Spørsmål om foredrag går til Henrik.</p>
+                <p>Ved generelle spørsmål kontakter dere Lise.</p>
+                <div className="styret container-fluid">
+                    <Visitkort rolle="TEKNISK ANSVARLIG" epost="teknisk" navn="Kari Stamnes" />
+                    <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø" />
+                    <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik" />
+                    <Visitkort rolle="FUNKSJONÆR ANSVARLIG" epost="funkansvarlig" navn="Burhan Sarfraz" />
                 </div>
-                <div className="påmeldingsinfo">
-                    <h1>PÅMELDING FOR HØSTEN 2020 ER FYLT</h1>
-                    <p>
-                        Det er fortsatt mulig å sette seg på venteliste <a href="https://docs.google.com/forms/d/e/1FAIpQLSec3i-eYWcFaiQLnX2pNXhc-i7gcj4JhC-M_RAyeFuRSv8xCg/viewform">her</a>. Informasjon om påmeldinger blir sendt ut til bedriftene på vår mailingliste. Er du usikker på
-                        om din bedrift står på maillisten, ta kontakt.
-                    </p>
-                </div>
-
-                <div className="kontaktinfo">
-                    <h1>SPØRSMÅL?</h1>
-                    <div className="styret container-fluid">
-                        <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø" />
-                        <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik" />
-                    </div>
-                </div>
-
-                <div className="mailingliste hidden">
-                    <h1>MAILINGLISTE - null backend atm, men knappen dukker opp her når den er klar!</h1>
-                    <div className="form-group">
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skriv e-postadresse her..." />
-                        <a className="btn btn-lg btn-header btn_bedrift" href="#?">Meld din interesse</a>
-                    </div>
-                </div>
-
-                <div className="arr_beskrivelse">
-                    <h5>dagen@ifi vs. ettermiddagen@ifi</h5>
-                    <p>
-                        I år blir dagen@ifi anderledes, men til vanlig er dagen@ifi den store karrieredagen vår tidlig på høsten med nettverkbygging fra morgen til kveld. ettermiddagen@ifi er en litt mindre karriredag med nettverksbygging fra formiddag til kveld.
-                    </p>
-                    <span className="blue">Påmelding og priser for ettermiddagen@ifi 2021 publiseres i januar/februar.</span>
-                </div>
-
-                <div className="hovedsponsor_beskrivelse hidden">
-                    <h1>HOVEDSPONSOR</h1>
-                    <p>beskrive hva som inngår i avtalen, evt søke knapp</p>
-                    <h5>Valgkriterier</h5>
-                    <p>
-                        - Mer informasjon om selve opptaksprosess, antall standplasser, tidspunkt og kriterier vil bli
-                        sendt ut som informasjon på e-post nærmere fristen for å besvare. Viktigste er at dere
-                        registrerer dere under påmeldingskjema om dere ønsker å delta i år.
-                    </p>
-                </div>
-
-                <Prisinfo className="hidden" />
             </div>
-        );
-    }
 
+            <div className="mailingliste hidden">
+                <h1>MAILINGLISTE - null backend atm, men knappen dukker opp her når den er klar!</h1>
+                <div className="form-group">
+                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skriv e-postadresse her..." />
+                    <a className="btn btn-lg btn-header btn_bedrift" href="#?">Meld din interesse</a>
+                </div>
+            </div>
+
+            <Prisinfo className="hidden" />
+        </div >
+    );
 }
+
+export default Bedrift;

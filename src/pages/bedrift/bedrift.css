@@ -1,63 +1,23 @@
-
-/*--- FOR BEDRIFTER ----------------------------------------------------------*/
-#bedriftinfo .col-xl-3 {
-  margin-right: 3%;
-}
-#sporsmal .col-lg-3 {
-  width: 85%;
-}
 .bedriftbase{
   margin: 0 20% 5% 20%;
   text-align: left;
 }
+
 .bedriftbase h1{
-  text-transform: capitalize;
   margin: 6% 0 1% 0;
+  color: black;
 }
 
-.påmeldingsinfo{
-  text-align: left;
+.bedriftbase p {
+  font-size: 18px;
 }
-.mailingliste{
-  margin-bottom: 5%;
-}
-.kontaktinfo h1{
-  padding: 0;
-}
-.btn_bedrift {
-  margin: 1rem 1rem 0 0;
-}
-.stand_pakke {
-  margin: 2%;
-  border: solid;
-  border-radius: 12px;
-  border-color: #08A6E4!important;
-  text-align: left;
-  display: flex;
-  align-items: flex-start;
-}
-.stand_pakke_1 {
-  border-width: 1px;
-}
-.stand_pakke_2 {
-  border-width: 2px;
-}
-.stand_pakke_3 {
-  border-width: 3px;
-}
-.stand_pakke_inner {
-  padding: 8% 8% 10%;
-}
-.padding-top {
-  padding-top: 2rem;
-}
-.priser .row{
-  display: flex;
-}
+
+
 .hidden{
   visibility: hidden;
   display: none;
 }
+
 .styret{
   background-color: #F1F1F1;
   margin: 3rem 0 0;
@@ -66,9 +26,6 @@
   width: 100%;
 }
 
-.row{
-  display: flex;
-}
 .container-fluid{
   width: 100%;
   display: flex;
@@ -82,6 +39,7 @@
   max-width: 250px;
   padding: 4% 2%;
   font-weight: 200;
+  text-align: center;
  }
 
 .Visitkort .image-wrapper{
