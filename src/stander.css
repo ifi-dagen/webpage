@@ -17,6 +17,12 @@
   text-align: left;
 }
 
+.standbase{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  padding: 8rem;
+  background: #d7dfe7;
+}
 
 .stand-bar-buttons button{
   color: deepskyblue;
@@ -28,22 +34,19 @@
   color: black;
 }
 
-.standbase{
+.button-card-container {
+  padding: 8px;
+  margin: 5px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 8rem;
-  background: #d7dfe7;
+  min-width: 0;
+  width: 80%;
+  overflow: hidden;
+  place-items: center;
+  background-color: white;
 }
 
-
-.stand-container{
-  position: relative;
-  top: 0;
-  left: 0;
-  width:100%;
-  height: auto;
-  z-index: 50;
-  min-height: 70px;
+.button-card-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .button-card {
@@ -64,25 +67,9 @@
   transition: 0.3s;
 }
 
-
 .button-img{
   min-width: 0;
   width: 100%;
-}
-
-.button-card-container {
-  padding: 8px;
-  margin: 5px;
-  display: grid;
-  min-width: 0;
-  width: 80%;
-  overflow: hidden;
-  place-items: center;
-  background-color: white;
-}
-
-.button-card-container:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 

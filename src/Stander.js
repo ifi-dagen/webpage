@@ -21,7 +21,8 @@ export default class Stander extends Component {
               src={require("./img/logoer/" + bedrift.logonavn)}
               alt={bedrift.bedriftnavn} />
           </a>
-        </div>)
+        </div>
+      )
     })
   }
 
@@ -74,18 +75,15 @@ export default class Stander extends Component {
         }
         return (<div className="standbase">
           {this.standbuttons(testmode)}
-          <h2>Standområdet er åpent torsdag og fredag kl 11-13.</h2>
         </div>)
       case "dag1":
         return (<div className="standbase">
           {this.standbuttons(testmode)}
-          <h2>Standområdet er åpent!</h2>
           {this.stander("dag1", true)}
         </div>)
       case "dag2":
         return (<div className="standbase">
           {this.standbuttons(testmode)}
-          <h2>Standområdet er åpent!</h2>
           {this.stander("dag2", true)}
         </div>)
       case "etter":
