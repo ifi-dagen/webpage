@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import './stander.css';
 import stand_info from './data/stand_info.js'
 import Etter from '../src/pages/standomraade/etter'
@@ -22,7 +21,8 @@ export default class Stander extends Component {
               src={require("./img/logoer/" + bedrift.logonavn)}
               alt={bedrift.bedriftnavn} />
           </a>
-        </div>)
+        </div>
+      )
     })
   }
 
@@ -51,13 +51,13 @@ export default class Stander extends Component {
     this.setState({ dag: value })
   }
 
-  demobuttons = (show) => {
+  standbuttons = (show) => {
     if (show) {
-      return (<div className="testbuttons">
-        <button onClick={(e) => this.toggle(e, "før")}>(DEMO) før</button>
+      return (<div className="stand-bar-buttons">
+        <button onClick={(e) => this.toggle(e, "før")}>(før) </button>
         <button onClick={(e) => this.toggle(e, "dag1")}>Torsdag</button>
         <button onClick={(e) => this.toggle(e, "dag2")}>Fredag</button>
-        <button onClick={(e) => this.toggle(e, "etter")}>(DEMO) etter</button>
+        <button onClick={(e) => this.toggle(e, "etter")}>(etter)</button>
       </div>
       );
     }
@@ -67,26 +67,23 @@ export default class Stander extends Component {
   render() {
     const testmode = this.props.testmode;
     //finn ut tidspunkt
-    this.finnDag(new Date()); //NB denne linja styrer tiden
+    //this.finnDag(new Date()); //NB denne linja styrer tiden
     switch (this.state.dag) {
       case "før":
-        if (this.props.forside){
-          return (<div></div>) ;
+        if (this.props.forside) {
+          return (<div></div>);
         }
         return (<div className="standbase">
-          {this.demobuttons(testmode)}
-          <p>Her kommer stander Snart!</p>
+          {this.standbuttons(testmode)}
         </div>)
       case "dag1":
         return (<div className="standbase">
-          {this.demobuttons(testmode)}
-          <h2>Standområdet er åpent!</h2>
+          {this.standbuttons(testmode)}
           {this.stander("dag1", true)}
         </div>)
       case "dag2":
         return (<div className="standbase">
-          {this.demobuttons(testmode)}
-          <p>(Disse standene har foreløpig bare eksempel-innhold, med noen lånte logoer)</p>
+          {this.standbuttons(testmode)}
           {this.stander("dag2", true)}
         </div>)
       case "etter":

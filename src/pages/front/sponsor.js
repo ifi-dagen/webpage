@@ -29,7 +29,7 @@ const Sponsorer = () => {
 
 
 const NavContainer = styled.div`
-margin: 0 1rem;
+    margin: 0 1rem;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, auto));

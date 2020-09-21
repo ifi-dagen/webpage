@@ -17,72 +17,55 @@
   text-align: left;
 }
 
-.stand-container{
-  position: relative;
-  top: 0;
-  left: 0;
-  width:100%;
-  height: auto;
-  z-index: 50;
-  min-height: 70px;
+.standbase{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  gap: 20px;
+  padding: 8rem;
+  background: #d7dfe7;
+}
+
+.stand-bar-buttons button{
+  color: deepskyblue;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.stand-bar-buttons:hover{
+  color: black;
+}
+
+.button-card-container {
+  display: grid;
+  min-width: 0;
+  width: 80%;
+  justify-content: center;
+  background-color: white;
+}
+
+.button-card-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .button-card {
   border: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+  height: 200px;
+  width: 200px;
   background: #ffffff;
-  color: #515962;
-  font-family: sans-serif;
-  font-size: 0rem;
   cursor: pointer;
-  transition: background 250ms ease-in-out,
-              transform 150ms ease;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  /* Add shadows to create the "card" effect */
   transition: 0.3s;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
 }
 
 .button-img{
-  min-width: 0;
-  width: 100%;
+  max-width: 8rem;
+  margin: auto;
+  padding: 0.5em;
+  align-content: center;
+  display: block;
 }
 
-/* Add some padding inside the card container */
-.button-card-container {
-  padding: 8px;
-  margin: 5px;
-  display: grid;
-  min-width: 0;
-  width: 80%;
-  overflow: hidden;
-  place-items: center;
-  background-color: white;
-  
-}
-
-/* On mouse-over, add a deeper shadow */
-.button-card:hover,
- .button-card:focus {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.button-card:focus {
-    background: #ffffff;
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-    max-width: 2rem;
-}
-
-
-.standbase{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 8rem;
-  background: #d7dfe7;
-}
 
 #livelinker{
   display: flex;
