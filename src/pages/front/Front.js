@@ -20,7 +20,7 @@ const Front = () => {
       </Container>
 
       <Nav />
-      <Stander forside/>
+      <Stander forside />
       <Hovedsponsor />
 
       <GridContainerWrapper>
@@ -138,9 +138,9 @@ const Nav = () => {
   return (
     <NavContainer>
       <NavButton>
-      <Link to="/program">
-        <i className="fas fa-stream"></i>
-        <br />
+        <Link to="/program">
+          <i className="fas fa-stream"></i>
+          <br />
         Digitalt Program
         </Link>
       </NavButton>
@@ -152,10 +152,10 @@ const Nav = () => {
         </Link>
       </NavButton>
       <NavButton>
-        <Link to="/frivillig">
-          <i className="fas fa-hand-holding-heart"></i>
+        <Link to="/studenter">
+          <i class="fas fa-user-graduate"></i>
           <br />
-          Bli Frivillig
+          For studenter
         </Link>
       </NavButton>
       <NavItem>
