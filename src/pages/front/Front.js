@@ -8,19 +8,19 @@ import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
 import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
 import ProgramStatus from '../../components/ProgramStatus.js';
+import Stander from '../../Stander.js'
 
 const Front = () => {
-
   return (
     <Div>
       <Container>
         <h1>Den største bedriftsdagen for IT studenter i Oslo.</h1>
         <h3>Verden blir aldri den samme igjen, kom dere på nett og få jobb på Dagen.</h3>
         <DateParagraph />
-
       </Container>
 
       <Nav />
+      <Stander forside/>
       <Hovedsponsor />
 
       <GridContainerWrapper>

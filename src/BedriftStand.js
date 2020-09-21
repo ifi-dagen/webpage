@@ -3,6 +3,8 @@ import './App.css';
 import './stander.css';
 import stand_info from './data/stand_info.js'
 import styled from "styled-components";
+import live_time from './data/time.js'
+
 
 import ReactPlayer from 'react-player/youtube';
 
@@ -19,25 +21,20 @@ export default class BedriftStand extends Component {
 
   //keeps track of whether or not the zoomrooms should be open
   active = (tidspunkt) => {
-    const stand_start = new Date(2020, 8, 24, 11, 0, 0, 0);
-    const stand_stop = new Date(2020, 8, 24, 13, 0, 0, 0);
-    const stand_start2 = new Date(2020, 8, 25, 11, 0, 0, 0);
-    const stand_stop2 = new Date(2020, 8, 25, 13, 0, 0, 0);
-
-    if (tidspunkt < stand_start){
-      this.delayUpdate(true,(stand_start.getTime() - tidspunkt.getTime()));
+    if (tidspunkt < live_time.stand_start){
+      this.delayUpdate(true,(live_time.stand_start.getTime() - tidspunkt.getTime()));
       return false;
-    } else if (tidspunkt < stand_stop){
+    } else if (tidspunkt < live_time.stand_stop){
       if(this.state.dag !== true){this.setState({dag: true})}
-      this.delayUpdate(false,(stand_stop.getTime() - tidspunkt.getTime()));
+      this.delayUpdate(false,(live_time.stand_stop.getTime() - tidspunkt.getTime()));
       return true;
-    } else if (tidspunkt < stand_start2){
+    } else if (tidspunkt < live_time.stand_start2){
       if(this.state.dag !== false){this.setState({dag: false})}
-      this.delayUpdate(true,(stand_start2.getTime() - tidspunkt.getTime()));
+      this.delayUpdate(true,(live_time.stand_start2.getTime() - tidspunkt.getTime()));
       return false;
-    } else if (tidspunkt < stand_stop2){
+    } else if (tidspunkt < live_time.stand_stop2){
       if(this.state.dag !== true){this.setState({dag: true})}
-      this.delayUpdate(false,(stand_stop2.getTime() - tidspunkt.getTime()));
+      this.delayUpdate(false,(live_time.stand_stop2.getTime() - tidspunkt.getTime()));
       return true;
     } else {
       if(this.state.dag !== false){this.setState({dag: false})}
@@ -122,7 +119,6 @@ export default class BedriftStand extends Component {
     )
   }
 }
-
 
 const Link = styled.a`
 align-items: flex-start;

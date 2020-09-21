@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import './program.css';
 import ProgramStatus from '../../components/ProgramStatus.js';
-import program_info from '../../data/program_info.js'
+import program_info from '../../data/program_info.js';
+import {dateStrings} from '../../data/time.js'
 
 class Program extends Component {
-  state = { dag: "2020-09-20", filterDag:"2020-09-24" ,currentEvent: 0}
+  state = { dag: "2020-08-20", filterDag:dateStrings.dag1 ,currentEvent: 0}
 
   dateString =(d) => {
-      let month = '' + (d.getMonth() + 1);
+      let month = '' + (d.getMonth()); //8 = September, 9=oktober
       let day = '' + d.getDate();
       let year = d.getFullYear();
 
@@ -25,14 +26,14 @@ class Program extends Component {
 
   programfilter = () => {
     return (<div className="programfilter">
-      <FilterButton  onClick={() => {this.setState({filterDag: "2020-09-24"})}}>24.</FilterButton>
-      <FilterButton  onClick={() => {this.setState({filterDag: "2020-09-25"})}}>25.</FilterButton>
+      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag1})}}>24.</FilterButton>
+      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag2})}}>25.</FilterButton>
     </div>)
   }
 
   //lag liste av eventer
   hendelser = (dag) => {
-    const filtered_events = program_info.filter((item) => { return this.dateString(item.start)===this.state.filterDag})
+    const filtered_events = program_info.filter((item) => { console.log(this.dateString(item.start));console.log(this.state.filterDag);return this.dateString(item.start)===this.state.filterDag})
 
     return (
       <div className="Programinnhold">
@@ -48,7 +49,7 @@ class Program extends Component {
   }
 
   formatedText = (text) => {
-    return text.split("\n").map(item => {return (<p>{item}</p>)})
+    return text.split("\n").map((item, index) => {return (<p key={index} >{item}</p>)})
   }
 
   detaljertekort = (dag) => {
@@ -62,7 +63,7 @@ class Program extends Component {
             <h3>{hendinger.tittel}</h3>
             <h6>{this.klokkeslett(hendinger.start)}-{this.klokkeslett(hendinger.slutt)}</h6>
             <h4><a href={hendinger.link}>delta her!</a></h4>
-            <p>{this.formatedText(hendinger.beskrivelse)}</p>
+            <div>{this.formatedText(hendinger.beskrivelse)}</div>
           </div>
         </div>)
       })}

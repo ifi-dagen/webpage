@@ -3,6 +3,7 @@ import './App.css';
 import './stander.css';
 import stand_info from './data/stand_info.js'
 import Etter from '../src/pages/standomraade/etter'
+import stand_time from './data/time.js'
 
 export default class Stander extends Component {
   state = { show: false, active_stand: false, dag: "før" };
@@ -31,20 +32,15 @@ export default class Stander extends Component {
   }
 
   finnDag = (tidspunkt) => {
-    console.log(tidspunkt);
-    //for testing: edit the following variables as you please! commented out dates are the real ones.
-    const stand_start = new Date(2020, 7, 22, 11, 58, 30, 0); //new Date(2020, 8, 24, 11, 00, 0, 0);
-    const stand_start2 = new Date(2020, 7, 22, 11, 58, 35, 0); //new Date(2020, 8, 25, 11, 0, 0, 0);
-    const stand_stop = new Date(2020, 7, 22, 11, 58, 40, 0); //new Date(2020, 8, 25, 18, 0, 0, 0);
-
-    if (tidspunkt < stand_start) {
-      this.delayUpdate("dag1", (stand_start.getTime() - tidspunkt.getTime()));
-    } else if (tidspunkt < stand_start2) {
+    //henter tidspunkt fra /data/time.js
+    if (tidspunkt < stand_time.start1) {
+      this.delayUpdate("dag1", (stand_time.start1.getTime() - tidspunkt.getTime()));
+    } else if (tidspunkt < stand_time.start2) {
       if (this.state.dag !== "dag1") { this.setState({ dag: "dag1" }) }
-      this.delayUpdate("dag2", stand_start2.getTime() - tidspunkt.getTime());
-    } else if (tidspunkt < stand_stop) {
+      this.delayUpdate("dag2", stand_time.start2.getTime() - tidspunkt.getTime());
+    } else if (tidspunkt < stand_time.stop) {
       if (this.state.dag !== "dag2") { this.setState({ dag: "dag2" }) }
-      this.delayUpdate("etter", (stand_stop.getTime() - tidspunkt.getTime()));
+      this.delayUpdate("etter", (stand_time.stop.getTime() - tidspunkt.getTime()));
     } else {
       if (this.state.dag !== "etter") { this.setState({ dag: "etter" }) }
     }
@@ -74,6 +70,9 @@ export default class Stander extends Component {
     //this.finnDag(new Date()); //NB denne linja styrer tiden
     switch (this.state.dag) {
       case "før":
+        if (this.props.forside){
+          return (<div></div>) ;
+        }
         return (<div className="standbase">
           {this.demobuttons(testmode)}
           <p>Her kommer stander Snart!</p>
