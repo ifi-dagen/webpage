@@ -51,6 +51,7 @@
   border: none;
   height: 200px;
   width: 200px;
+  padding: 0.5em;
   background: #ffffff;
   cursor: pointer;
   transition: 0.3s;
@@ -59,9 +60,10 @@
 }
 
 .button-img{
-  max-width: 8rem;
+  width: auto;
+  max-height: 200px;
+  max-width: 200px;
   margin: auto;
-  padding: 0.5em;
   align-content: center;
   display: block;
 }
