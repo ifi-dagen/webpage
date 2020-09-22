@@ -50,6 +50,11 @@
 .programLink{
   text-decoration: none;
   width: 100%;
+  display: flex;
+}
+
+.starttid{
+  min-width: 2rem;
 }
 
 .programLink:hover{
