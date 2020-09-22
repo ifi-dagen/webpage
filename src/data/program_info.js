@@ -44,8 +44,8 @@ const program_info = [
 ]
 */
 
-const dag1 = 21; //24
-const dag2 = 22; //25
+const dag1 = 24; //24
+const dag2 = 25; //25
 const program_info =
 [
   {
@@ -63,8 +63,8 @@ const program_info =
     id: 1,
     tittel: "Åpningshilsen",
     type: "Annet",
-    start: new Date(2020, 8, dag1, 10, 40, 0, 0),
-    slutt: new Date(2020, 8, dag1, 11, 0, 0, 0),
+    start: new Date(2020, 8, dag1, 11, 0, 0, 0),
+    slutt: new Date(2020, 8, dag1, 11, 2, 0, 0),
     beskrivelse: "",
     link: "",
     bilde: "dagen_logo.svg",
@@ -77,7 +77,7 @@ const program_info =
     start: new Date(2020, 8, dag1, 11, 0, 0, 0),
     slutt: new Date(2020, 8, dag1, 13, 0, 0, 0),
     beskrivelse: "Kom og møt en fremtidig kollega!",
-    link: "../stander",
+    link: "",
     bilde: "dagen_logo.svg",
     alt_tekst: "dagen at ifi sin logo"
   },
@@ -151,8 +151,8 @@ const program_info =
 		foredragsholder: "Sopra Steria",
 		beskrivelse: "I disse koronatider har enkelte norske fiskeselskaper problemer med å få solgt fisken sin til viktige markeder i Asia, fordi kvalitetsinspektører ikke kan reise inn til Norge. I dette foredraget får du høre hvordan Sopra Steria tar i bruk Hololens2 og den nyeste mixed reality-teknologien for å løse problemet. Med hologrammer i tillegg til lyd og bilde kan inspektører i Asia få gjort jobben sin ved å la kollegaer i Norge bli deres utvidede øyne, ører og hender.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/sopraSteria.png",
+    alt_tekst: "Sopra Steria-logo"
   },
 	{
 		type:	"foredrag",
@@ -175,8 +175,8 @@ const program_info =
 		foredragsholder: "Accenture",
 		beskrivelse: "Quantum Computing har allerede begynt å vise potensiale for å bli en 'game changer' i måten vi løser noen av verdens vanskeligste problemer. I dette foredraget skal jeg fortelle hvordan vi i Accenture jobbet sammen med BMW for å løse et av deres største optimaliseringseringsproblemer hos deres fabrikkroboter ved å bruke Quantumteknologi.",
     link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
+    bilde: "logoer/Accenture.png",
+    alt_tekst: "Accenture-logo"
   },
   //workshop/parallelle eventer
 	{
@@ -230,8 +230,8 @@ const program_info =
     id: 15,
     tittel: "Åpningshilsen",
     type: "Annet",
-    start: new Date(2020, 8, dag2, 10, 40, 0, 0),
-    slutt: new Date(2020, 8, dag2, 11, 0, 0, 0),
+    start: new Date(2020, 8, dag2, 11, 0, 0, 0),
+    slutt: new Date(2020, 8, dag2, 11, 2, 0, 0),
     beskrivelse: "",
     link: "",
     bilde: "dagen_logo.svg",
@@ -244,7 +244,7 @@ const program_info =
     start: new Date(2020, 8, dag2, 11, 0, 0, 0),
     slutt: new Date(2020, 8, dag2, 13, 0, 0, 0),
     beskrivelse: "Kom og møt en fremtidig kollega!",
-    link: "../stander",
+    link: "",
     bilde: "dagen_logo.svg",
     alt_tekst: "dagen at ifi sin logo"
   },
@@ -329,7 +329,7 @@ const program_info =
 		start: new Date(2020,8,dag2,16, 0,0,0),
 		slutt: new Date(2020,8,dag2,16,30,0,0),
 		foredragsholder: "Skatteetaten",
-		beskrivelse: "Vi har ikke spikret innholdet detaljert, men vi ønsker å fortelle kort om hvordan vi jobber med maskinlæring i Skatteetaten. I sommer hadde vi et stort prosjekt knyttet til dette, hvor vi hadde flere studenter med oss på laget.\nStikkord:\n- Vår visjon: Sørge for at alle betaler riktig skatt til riktig tid, fordi de ønsker det, og det er enkelt å gjøre riktig.\n-	Fortelle kort om sommerprosjektene – hva vi har gjort, resultater og utfordringer. Hvordan dette kan bidra til at skatt blir innbetalt på riktig måte.\n-	Hvordan vi tror dette kan brukes til å nå visjonen i fremtiden\nØnsker ikke at dette er teksten som brukes eksternt enda. Teksten over mer generelt for at dere skal få ett inntrykk av hva vi ønsker å formidle. ",
+		beskrivelse: "I Skatteetaten jobber vi med alt fra å kreve inn skatter og avgifter til å ha ansvaret for et oppdatert folkeregister. Som et av Norges største IT-miljøer liker vi å ligge i front når det kommer til ny teknologi – det til tross våre statlige gener!\n\nVi ønsker å gi dere en introduksjon til hvordan vi i Skatteetaten bruker maskinlæring til å gjøre det så enkelt som mulig å gjøre rett, og til å sikre finansiering av velferdssamfunnet.",
     link: "",
     bilde: "logoer/Skatteetaten.png",
     alt_tekst: "Skatteetaten-logo"

@@ -86,7 +86,8 @@ export default class BedriftStand extends Component {
                 </Link>}
             </div>)
     } else if(bedrift.video !== ""){
-      return <div id='videoContainer'>
+      if(bedrift.video.includes("youtu")){
+        return <div id='videoContainer'>
           <ReactPlayer
             id='video'
             url={bedrift.video}
@@ -95,6 +96,12 @@ export default class BedriftStand extends Component {
           />
         <a id="videolink" href={bedrift.video} >Se youtube-video her</a>
         </div>
+      } else {
+        return <div id='videoContainer'>
+          <iframe title="StandVideo" width="640" height="360" src={bedrift.video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <a id="videolink" href={bedrift.video} >Se youtube-video her</a>
+        </div>
+      }
     }
     return
   }
@@ -107,7 +114,7 @@ export default class BedriftStand extends Component {
   render(){
     const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift.replace(/_/g, ' ')];//replace setter inn _ istede for mellomrom i stringen.
     console.log(this.props.match.params.bedrift.replace(/_/g, ' '));
-    console.log(stand_info[this.props.match.params.dag]["DNV GL"]);//replace setter inn _ istede for mellomrom i stringen.
+    console.log(bedrift);//replace setter inn _ istede for mellomrom i stringen.
 
     return (
       <div className="bedriftStandBase">

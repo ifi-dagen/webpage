@@ -1,8 +1,8 @@
 .bedriftStandBase{
   max-width:100%;
   margin: auto;
-  display: grid;
-  grid-template-columns: 3rem 3rem 3rem;
+  display: flex;
+  justify-content: center;
   padding-bottom: 5%;
   text-align: left;
 }
@@ -91,7 +91,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2.5rem;
 }
 
 
