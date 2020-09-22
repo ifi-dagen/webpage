@@ -282,7 +282,7 @@ const stand_info =
     "Systek": {
         bedriftnavn: "Systek",
         beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
-        logonavn: "systek.png",
+        logonavn: "Systek.png",
         video:"https://player.vimeo.com/video/460497205",
         zoomlink:"https://uio.zoom.us/j/68298550948",
         stillinger: [{tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021"}],
