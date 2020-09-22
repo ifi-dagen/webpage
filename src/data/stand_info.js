@@ -107,7 +107,7 @@ const stand_info =
       },
     "Fremtind Forsikring": {
         bedriftnavn: "Fremtind Forsikring",
-        beskrivelse: "",
+        beskrivelse: "Sparebank 1 og DNB har gått sammen om å bygge et forsikringsselskap som skal kjennetegnes av digital innovasjon og fornyelse. Fremtind er allerede landets tredje største forsikringsselskap, og landets største med distribusjon gjennom bank. Vi er i overkant av 900 medarbeidere som hver dag jobber med å lage produkter og tjenester som betyr noe i folks liv. Sammen med bankene, kundene og partnerne tar vi nå nye steg og forbereder oss på en ny og spennende hverdag. \n\nVil du være først kan du aldri stå stille \nJobben vi gjør er et resultat av hvem vi er. Derfor er Fremtind en dynamisk blanding av ulike fagpersoner og nytenkere som ønsker å utvikle hverandre, markedet og samfunnet vi bor i. Når vi sammen skaper et lærende tech-miljø der vi setter spørsmålstegn ved etablerte sannheter og løsninger, får vi hele tiden nye perspektiver. I jakten på svar bruker vi også deep-data, AI og annen avansert teknologi for å pushe grensene for det mulige.\n\nHvem ser vi etter? \nVi ser etter deg som ønsker å sette studiene ut i praksis og oppleve hvordan det er å jobbe i et av Norges fremste teknologimiljøer. Du studerer interaksjonsdesign, datateknikk, informatikk, matematikk eller tilsvarende på 3. eller 4. året. Du liker å programmere i Java, Python, JavaScript el. eller å jobbe brukersentrert med interaksjonsdesign. Liker du begge deler eller har andre interesser som maskinlæring, kunstig intelligens, wireframes og prototyping, teller det også positivt. \nHva kan vi tilby deg? \nSom sommerstudent hos oss vil du være med på spennende initiativer der du får brukt kompetansen din. Du vil jobbe i et tverrfaglig team (teamleder, systemeier, designer, utviklere og testere) som kan levere på hele verdikjeden. Hvert team har selv ansvar for sin systemportefølje hvor de bestemmer oppgaver, arbeidsmetodikk og teknologi. Vårt summer internship varer i syv uker f.o.m. 14. juni t.o.m. 2. august. De første dagene vil du få en introduksjon til Fremtind, våre produkter og systemer, samt arbeidsmetodikk og teknologi.Deretter vil du gå inn i et av våre kryssfunksjonelle utviklingsteam.\n\nI løpet av sommeren vil vi ha flere faglige og sosiale samlinger hvor du har mulighet til å blibedre kjent med oss og de andre sommerstudentene. Vi har arbeidsplass i nyoppussede ogmoderne lokaler midt i Oslo sentrum, med hyggelig kaffebar og treningsmuligheter etter jobb.\n\nDu finner søknaden for Summer Internship 2021 her.\nSjekk også ut vår instagram-profil for å se hvordan det er å jobbe hos oss!",
         logonavn: "fremtind.png",
         video:"https://youtu.be/SMa0V0_f3dk",
         zoomlink:"https://uio.zoom.us/j/63761070770",
@@ -214,8 +214,7 @@ const stand_info =
           {tekst: "Schibsted Summer Internship “-The learning curve was something I’ve never experienced before”", link: "https://schibsted.com/career/for-students/internships-theses/"},
           {tekst: "Schibsted Connect - our buddy program for students", link:"https://emp.jobylon.com/jobs/62163-schibsted-professionals-schibsted-connect-student-buddy-program-oslo/"}],
         konkurranser: [
-          {tekst: "Student Hack Battle - win reMarkable 2 ", link:"https://emp.jobylon.com/jobs/64644-schibsted-student-hack-battle-the-future-news-front-page/"},
-          {tekst: "Take us on a walk while you listen to Schibsted Talks ", link:"https://open.spotify.com/show/270CtGkMTTYZQZZD8BtjmX"}],
+          {tekst: "Student Hack Battle - win reMarkable 2 ", link:"https://emp.jobylon.com/jobs/64644-schibsted-student-hack-battle-the-future-news-front-page/"}],
         foredrag: [{tekst: "", link: ""}],
         tags: ["",""]
       },
@@ -261,7 +260,7 @@ const stand_info =
     "Systek": {
         bedriftnavn: "Systek",
         beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
-        logonavn: "systek.webp",
+        logonavn: "systek.png",
         video:"https://player.vimeo.com/video/460497205",
         zoomlink:"https://uio.zoom.us/j/68298550948",
         stillinger: [{tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021"}],
