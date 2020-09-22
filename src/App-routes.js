@@ -6,8 +6,8 @@ import Bedrift from "./pages/bedrift/Bedrift";
 import Frivillig from "./pages/frivillig/Frivillig";
 import Front from './pages/front/Front';
 import Error from './pages/error/Error';
-import Stander from './Stander';
-import BedriftStand from './BedriftStand';
+import Stander from './pages/standomraade/Stander';
+import BedriftStand from './pages/bedriftstand/BedriftStand';
 import Studenter from "./pages/studenter/studenter";
 
 

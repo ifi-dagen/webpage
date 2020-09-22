@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './stander.css';
-import stand_info from './data/stand_info.js'
-import Etter from '../src/pages/standomraade/etter'
-import {stand_time} from './data/time.js'
+import stand_info from '../../data/stand_info.js'
+import Etter from './etter'
+import {stand_time} from '../../data/time.js'
 
 export default class Stander extends Component {
   state = { show: false, active_stand: false, dag: "før" };
@@ -18,14 +18,14 @@ export default class Stander extends Component {
             href={link}>
             <img id={index}
               className="button-img"
-              src={require("./img/logoer/" + bedrift.logonavn)}
+              src={require("../../img/logoer/" + bedrift.logonavn)}
               alt={bedrift.bedriftnavn} />
           </a>
         </div>
       )
     })
     if(testmode){
-      standliste.unshift(this.standbuttons(testmode))
+      standliste.unshift((<div key={-1}>{this.standbuttons(testmode)}</div>))
     }
     return standliste
   }

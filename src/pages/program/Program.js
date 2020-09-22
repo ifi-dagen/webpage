@@ -3,53 +3,54 @@ import styled from 'styled-components'
 import './program.css';
 import ProgramStatus from '../../components/ProgramStatus.js';
 import program_info from '../../data/program_info.js';
-import {dateStrings} from '../../data/time.js'
+import { dateStrings } from '../../data/time.js'
 
-const dateString =(d) => {
-    let month = '' + (d.getMonth()); //8 = September, 9=oktober
-    let day = '' + d.getDate();
-    let year = d.getFullYear();
+const dateString = (d) => {
+  let month = '' + (d.getMonth()); //8 = September, 9=oktober
+  let day = '' + d.getDate();
+  let year = d.getFullYear();
 
-    if (month.length < 2)
-        month = '0' + month;
-    if (day.length < 2)
-        day = '0' + day;
-    return [year, month, day].join('-');
+  if (month.length < 2)
+    month = '0' + month;
+  if (day.length < 2)
+    day = '0' + day;
+  return [year, month, day].join('-');
 }
 
 const klokkeslett = (date) => {
-  return (date.getHours()< 10 ? ("0" + date.getHours()) : date.getHours())+":"+(date.getMinutes()< 10 ? ("0" + date.getMinutes()) : date.getMinutes())
+  return (date.getHours() < 10 ? ("0" + date.getHours()) : date.getHours()) + ":" + (date.getMinutes() < 10 ? ("0" + date.getMinutes()) : date.getMinutes())
 }
 
 const formatedText = (text) => {
-  return text.split("\n").map((item, index) => {return (<p key={index} >{item}</p>)})
+  return text.split("\n").map((item, index) => { return (<p key={index} >{item}</p>) })
 }
 
 class Program extends Component {
-  state = { dag: "2020-08-20", filterDag:dateStrings.dag1 ,currentEvent: 0}
+  state = { dag: "2020-08-20", filterDag: dateStrings.dag1, currentEvent: 0 }
 
   programfilter = () => {
     return (<div className="programfilter">
-      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag1})}}>Torsdag 24</FilterButton>
-      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag2})}}>Fredag 25.</FilterButton>
+      <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag1 }) }}>Torsdag 24</FilterButton>
+      <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag2 }) }}>Fredag 25.</FilterButton>
     </div>)
   }
 
   //lag liste av eventer
   hendelser = (dag) => {
-    const filtered_events = program_info.filter((item) => {return dateString(item.start)===this.state.filterDag})
+    const filtered_events = program_info.filter((item) => { return dateString(item.start) === this.state.filterDag })
 
     return (
       <div className="Programinnhold">
-        <h2>{this.state.filterDag===dateStrings.dag1? "Torsdag 24.": "Fredag 25."}</h2>
+        <h2>{this.state.filterDag === dateStrings.dag1 ? "Torsdag 24." : "Fredag 25."}</h2>
         {filtered_events.map((hendinger, index) => {
           //differansier på foredrag og alt annet.
           //Ide: grå ut alt som har skjedd allerede
-          const event_id="#"+hendinger.id;
+          const event_id = "#" + hendinger.id;
           return (
             <div className="event-detail" key={index}>
-              <a className="programLink" href={event_id}><strong className="starttid">{klokkeslett(hendinger.start)}</strong> - {hendinger.tittel}</a>
-            </div>)})}
+              <a className="programLink" href={event_id}><strong className="starttid">{klokkeslett(hendinger.start)} </strong><div>{hendinger.foredragsholder? hendinger.foredragsholder+": ":""}{hendinger.tittel}</div></a>
+            </div>)
+        })}
       </div>)
   }
 
@@ -58,12 +59,12 @@ class Program extends Component {
       {program_info.map((hendinger, index) => {
         return (<HendingBeholder id={hendinger.id} key={index}>
           <HendingsBilde>
-            {hendinger.bilde && <img src={require("../../img/"+hendinger.bilde)} alt={hendinger.alt_tekst}/>}
+            {hendinger.bilde && <img src={require("../../img/" + hendinger.bilde)} alt={hendinger.alt_tekst} />}
           </HendingsBilde>
           <HendingInfo>
             <h3>{hendinger.tittel}</h3>
-            <h6>{klokkeslett(hendinger.start)}-{klokkeslett(hendinger.slutt)}</h6>
-            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link}>delta her!</a></h4>}
+            <h6>{klokkeslett(hendinger.start)}-{klokkeslett(hendinger.slutt)}{hendinger.foredragsholder?", "+hendinger.foredragsholder:""}</h6>
+            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>}
             <div>{formatedText(hendinger.beskrivelse)}</div>
           </HendingInfo>
         </HendingBeholder>)
@@ -71,24 +72,18 @@ class Program extends Component {
     </div>)
   }
 
-  render(){
-    if (this.props.published === false){
-      return(<div className="programside">
-        <div className="statusbar">
-          <div className="container">
-                <h1> Program kommer </h1>
-                <p>Stay tuned!</p>
-          </div>
-        </div>
-      </div>)
-    }
+  render() {
+
     return (
       <div className="programside">
-        <ProgramStatus/>
+        <ProgramStatus />
+
         <div className="program">
           {this.programfilter()}
+          <Paragraph>Speedintervju påmelding via poption frem til kl 14:00 på fredag</Paragraph>
           {this.hendelser(this.state.filterDag)}
         </div>
+
         <DetaljertProgram>
           {this.detaljertekort(this.state.filterDag)}
         </DetaljertProgram>
@@ -96,6 +91,10 @@ class Program extends Component {
     );
   }
 }
+
+const Paragraph = styled.p`
+text-align: center;
+`
 
 const FilterButton = styled.button`
   text-align: center;
