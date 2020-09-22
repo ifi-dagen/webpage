@@ -1,0 +1,78 @@
+.bedriftStandBase{
+  max-width:100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5%;
+  text-align: left;
+}
+
+.bedriftStandInnhold{
+  background: white;
+  max-width: 850px;
+  min-width: 640px;
+  margin: auto;
+  padding: 0 5rem;
+  height: auto;
+  text-align: left;
+}
+
+.undertittel{
+  margin-bottom: .4rem;
+}
+
+#livelinker{
+  display: flex;
+  height: 150px;
+  align-items: space-around;
+  text-align: left;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+#video{
+  justify-content: center;
+  align-self: center;
+}
+
+#videolink{
+  display: none;
+}
+
+#videoContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 2.5rem;
+}
+
+@media (max-width: 720px) {
+  #livelinker{
+    display: flex;
+    min-height: 150px;
+    text-align: left;
+    font-size: 2rem;
+    margin: 0 auto 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  #video{
+    display: none;
+  }
+  #videolink{
+    display: block;
+  }
+
+  #videoContainer{
+    width: 100%;
+    margin: 2rem auto 1rem;
+  }
+
+  .bedriftStandInnhold{
+    padding: 0 2rem;
+    max-width: 1em;
+  }
+}
