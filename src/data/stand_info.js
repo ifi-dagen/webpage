@@ -311,17 +311,7 @@ const stand_info =
     }
   },
   "dag2": {
-    "Sykehuspartner HF": {
-      bedriftnavn: "Sykehuspartner HF",
-      beskrivelse: "",
-      logonavn: "icon_1.png",
-      video: "",
-      zoomlink: "https://uio.zoom.us/j/62722495625",
-      stillinger: [{ tekst: "", link: "" }],
-      konkurranser: [{ tekst: "", link: "" }],
-      foredrag: [{ tekst: "", link: "" }],
-      tags: ["", ""]
-    },
+
     "Bekk": {
       bedriftnavn: "Bekk",
       beskrivelse: "Bekk er et norsk selskap som lykkes på grunn av mennesker som brenner for faget sitt. Vi jobber med strategi, design og teknologi og tror på tverrfaglige team. Hos oss får du muligheten til å utvikle løsninger som hjelper bedrifter med å nå sine mål innen digitalisering og nyskaping.\nLyst til å jobbe i Bekk?\nHovedrunden med rekruttering til fast jobb og sommerjobb er om høsten, men vi er alltid åpne for søknader fra de rette kandidatene!",
