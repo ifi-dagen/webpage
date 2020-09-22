@@ -115,7 +115,7 @@ const program_info =
 		foredragsholder: "Systek",
 		beskrivelse: "I skatteetaten har Kotlin blitt et offisielt språk som prosjektene kan benytte og i denne presentasjonen skal vi se nærmere på noen av disse. Vi skal blant annet se på bruken av Kotlin i forbindelse med Domain Specific Language (DSL), provisjonering av store miljøer og graphql. Presentasjonen avsluttes med en titt på nyttige language features i Kotlin som hjelper oss skrive bedre kode.",
     link: "",
-    bilde: "logoer/systek.png",
+    bilde: "logoer/Systek.png",
     alt_tekst: "systek-logo"
   },
 	{
