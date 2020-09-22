@@ -106,16 +106,16 @@ const stand_info =
       tags: ["", ""]
     },
     "Fremtind Forsikring": {
-      bedriftnavn: "Fremtind Forsikring",
-      beskrivelse: "",
-      logonavn: "fremtind.png",
-      video: "https://youtu.be/SMa0V0_f3dk",
-      zoomlink: "https://uio.zoom.us/j/63761070770",
-      stillinger: [{ tekst: "Summer Internship 2021", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=144150&DepartmentId=20575&MediaId=4630" }],
-      konkurranser: [{ tekst: "", link: "" }],
-      foredrag: [{ tekst: "Bitt av CTF-basillen for å hindre virus", link: "4" }],
-      tags: ["", ""]
-    },
+        bedriftnavn: "Fremtind Forsikring",
+        beskrivelse: "Sparebank 1 og DNB har gått sammen om å bygge et forsikringsselskap som skal kjennetegnes av digital innovasjon og fornyelse. Fremtind er allerede landets tredje største forsikringsselskap, og landets største med distribusjon gjennom bank. Vi er i overkant av 900 medarbeidere som hver dag jobber med å lage produkter og tjenester som betyr noe i folks liv. Sammen med bankene, kundene og partnerne tar vi nå nye steg og forbereder oss på en ny og spennende hverdag. \n\nVil du være først kan du aldri stå stille \nJobben vi gjør er et resultat av hvem vi er. Derfor er Fremtind en dynamisk blanding av ulike fagpersoner og nytenkere som ønsker å utvikle hverandre, markedet og samfunnet vi bor i. Når vi sammen skaper et lærende tech-miljø der vi setter spørsmålstegn ved etablerte sannheter og løsninger, får vi hele tiden nye perspektiver. I jakten på svar bruker vi også deep-data, AI og annen avansert teknologi for å pushe grensene for det mulige.\n\nHvem ser vi etter? \nVi ser etter deg som ønsker å sette studiene ut i praksis og oppleve hvordan det er å jobbe i et av Norges fremste teknologimiljøer. Du studerer interaksjonsdesign, datateknikk, informatikk, matematikk eller tilsvarende på 3. eller 4. året. Du liker å programmere i Java, Python, JavaScript el. eller å jobbe brukersentrert med interaksjonsdesign. Liker du begge deler eller har andre interesser som maskinlæring, kunstig intelligens, wireframes og prototyping, teller det også positivt. \nHva kan vi tilby deg? \nSom sommerstudent hos oss vil du være med på spennende initiativer der du får brukt kompetansen din. Du vil jobbe i et tverrfaglig team (teamleder, systemeier, designer, utviklere og testere) som kan levere på hele verdikjeden. Hvert team har selv ansvar for sin systemportefølje hvor de bestemmer oppgaver, arbeidsmetodikk og teknologi. Vårt summer internship varer i syv uker f.o.m. 14. juni t.o.m. 2. august. De første dagene vil du få en introduksjon til Fremtind, våre produkter og systemer, samt arbeidsmetodikk og teknologi.Deretter vil du gå inn i et av våre kryssfunksjonelle utviklingsteam.\n\nI løpet av sommeren vil vi ha flere faglige og sosiale samlinger hvor du har mulighet til å blibedre kjent med oss og de andre sommerstudentene. Vi har arbeidsplass i nyoppussede ogmoderne lokaler midt i Oslo sentrum, med hyggelig kaffebar og treningsmuligheter etter jobb.\n\nDu finner søknaden for Summer Internship 2021 her.\nSjekk også ut vår instagram-profil for å se hvordan det er å jobbe hos oss!",
+        logonavn: "fremtind.png",
+        video:"https://youtu.be/SMa0V0_f3dk",
+        zoomlink:"https://uio.zoom.us/j/63761070770",
+        stillinger: [{tekst: "Summer Internship 2021", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=144150&DepartmentId=20575&MediaId=4630"}],
+        konkurranser: [{tekst: "", link:""}],
+        foredrag: [{tekst: "Bitt av CTF-basillen for å hindre virus", link: "4"}],
+        tags: ["",""]
+      },
     "Genus": {
       bedriftnavn: "Genus",
       beskrivelse: "Genus AS er et norsk softwareselskap som leverer en ledende low-code plattform for utvikling av virksomhetssystemer.\nGjennom visuell modellering lar plattformen deg utvikle avanserte forretningssystemer uten behov for tradisjonell programmering. Dette gir økt utviklerproduktivitet, lavere kostnader og mer fleksible og bærekraftige løsninger.\nKom innom vår digitale stand for å bli bedre kjent med oss og delta på quiz med mulighet for å vinne Sonos-høyttaler!\n5. klassinger har mulighet til å melde seg på speed-intervju. Er du interessert? Snakk med en av våre ansatte. Førstemann til mølla!",
@@ -205,16 +205,16 @@ const stand_info =
       tags: ["", ""]
     },
     "PA CONSULTING": {
-      bedriftnavn: "PA CONSULTING",
-      beskrivelse: "PA Consulting er et innovasjons- og transformasjonskonsulentfirma. Vi er 3 200 spesialister som jobber mot markeder og sektorer som forbruker, forsvar og sikkerhet, energi, finansielle tjenester, helse – og offentlig sektor, produksjon og transport. Våre medarbeidere er strateger, innovatører, designere, konsulenter, digitale eksperter, forskere, ingeniører og teknologer. Vi opererer globalt fra kontorer over hele Storbritannia, USA, Europa og Norden.Vi tror på oppfinnsomhetens kraft for å bygge en positiv menneskelig fremtid i en teknologidrevet verden. Når strategier, teknologier og innovasjon kolliderer, skaper vi muligheter fra kompleksitet. Våre forskjellige team av eksperter kombinerer nytenking og banebrytende bruk av teknologier for å komme videre, raskere",
-      logonavn: "PA.jpg",
-      video: "https://vimeo.com/user123633256",
-      zoomlink: "https://uio.zoom.us/j/63875433928",
-      stillinger: [{ tekst: "Ønsker du å jobbe sammen med oss i PA Consulting? Send CV, søknadsbrev og karakterutskrift til laura.kleiven@paconsulting.com.", link: "mailto:laura.kleiven@paconsulting.com" }],
-      konkurranser: [{ tekst: "", link: "" }],
-      foredrag: [{ tekst: "", link: "" }],
-      tags: ["", ""]
-    },
+        bedriftnavn: "PA CONSULTING",
+        beskrivelse: "PA Consulting er et innovasjons- og transformasjonskonsulentfirma. Vi er 3 200 spesialister som jobber mot markeder og sektorer som forbruker, forsvar og sikkerhet, energi, finansielle tjenester, helse – og offentlig sektor, produksjon og transport. Våre medarbeidere er strateger, innovatører, designere, konsulenter, digitale eksperter, forskere, ingeniører og teknologer. Vi opererer globalt fra kontorer over hele Storbritannia, USA, Europa og Norden.Vi tror på oppfinnsomhetens kraft for å bygge en positiv menneskelig fremtid i en teknologidrevet verden. Når strategier, teknologier og innovasjon kolliderer, skaper vi muligheter fra kompleksitet. Våre forskjellige team av eksperter kombinerer nytenking og banebrytende bruk av teknologier for å komme videre, raskere",
+        logonavn: "PA.jpg",
+        video:"https://player.vimeo.com/video/460359118",
+        zoomlink:"https://uio.zoom.us/j/63875433928",
+        stillinger: [{tekst: "Ønsker du å jobbe sammen med oss i PA Consulting? Send CV, søknadsbrev og karakterutskrift til laura.kleiven@paconsulting.com.", link: "mailto:laura.kleiven@paconsulting.com"}],
+        konkurranser: [{tekst: "", link:""}],
+        foredrag: [{tekst: "", link: ""}],
+        tags: ["",""]
+      },
     "Posten og Bring": {
       bedriftnavn: "Posten og Bring",
       beskrivelse: "Posten og Bring har som visjon å gjøre hverdagen enklere og verden mindre, og er en av Nordens ledende aktører innen netthandel. Som trainee i hos oss får du en bratt læringskurve og stor innflytelse på egne oppgaver. Du jobber ulike steder i konsernet, og blir raskt kjent med hele verdikjeden i organisasjonen.",
@@ -227,16 +227,19 @@ const stand_info =
       tags: ["", ""]
     },
     "Schibsted": {
-      bedriftnavn: "Schibsted",
-      beskrivelse: "",
-      logonavn: "Schibsted.png",
-      video: "https://youtu.be/RBskvdqt5dA",
-      zoomlink: "https://uio.zoom.us/j/63837890960",
-      stillinger: [{ tekst: "Schibsted Summer Internship “-The learning curve was something I’ve never experienced before”", link: "https://schibsted.com/career/for-students/internships-theses/" }],
-      konkurranser: [{ tekst: "Schibsted Connect - our buddy program for students", link: "https://emp.jobylon.com/jobs/62163-schibsted-professionals-schibsted-connect-student-buddy-program-oslo/" }, { tekst: "Take us on a walk while you listen to Schibsted Talks ", link: "https://open.spotify.com/show/270CtGkMTTYZQZZD8BtjmX" }],
-      foredrag: [{ tekst: "", link: "" }],
-      tags: ["", ""]
-    },
+        bedriftnavn: "Schibsted",
+        beskrivelse: "Hi there! Schibsted is a family of digital consumer brands leading the way across media, online marketplaces and technology ventures. You might recognize some of our brands such as Aftenposten, VG, FINN, E24, Lendo, Prisjakt and Albert. We are on a mission to empower people in their daily life, using tech and data to create innovative products and great user experiences. You are more than welcome to pop into our zoom-room to learn more. See you!",
+        logonavn: "Schibsted.png",
+        video: "https://youtu.be/RBskvdqt5dA",
+        zoomlink:"https://uio.zoom.us/j/63837890960",
+        stillinger: [
+          {tekst: "Schibsted Summer Internship “-The learning curve was something I’ve never experienced before”", link: "https://schibsted.com/career/for-students/internships-theses/"},
+          {tekst: "Schibsted Connect - our buddy program for students", link:"https://emp.jobylon.com/jobs/62163-schibsted-professionals-schibsted-connect-student-buddy-program-oslo/"}],
+        konkurranser: [
+          {tekst: "Student Hack Battle - win reMarkable 2 ", link:"https://emp.jobylon.com/jobs/64644-schibsted-student-hack-battle-the-future-news-front-page/"}],
+        foredrag: [{tekst: "", link: ""}],
+        tags: ["",""]
+      },
     "Sopra Steria": {
       bedriftnavn: "Sopra Steria",
       beskrivelse: "Sopra Steria er et ledende internasjonalt IT-konsulentselskap og en ende-til-ende leverandør innen digitalisering. Dette betyr at du har mange karrieremuligheter hos oss! Vi tilbyr tjenester innfor alt fra forretningsrådgivning, systemutvikling og design til infrastruktur, sikkerhet og drift. Vi ble i år kåret til Norges beste arbeidsplass for fjerde år på rad og det sier derfor seg selv at vi er opptatt av at de som jobber hos oss skal ha det bra! Det som kjennetegner arbeidshverdagen vår er raskt tempo, spennende prosjekter, stort faglig engasjement, mange sosiale og faglige sammenkomster og en utbredt delingskultur. Vi går sammen for å nå lenger!\nFor nyutdannede tilbyr vi vårt graduate-program. Det vil si at du blir fast ansatt fra dag én, men deltar i tillegg på et opplæringsprogram som går ved siden av jobben din som konsulent. Du lærer hvordan vi jobber og tenker i Sopra Steria, får innføring i grunnleggende konsulentferdigheter og muligheten til å ta en rekke kurs og sertifiseringer innen ulike fagområder. Samtidig jobber du tett med kunder på ett eller flere prosjekter. Gjennom de faglige og sosiale samlingene vil du bli kjent med de andre graduatsene på tvers av de ulike fagområdene og få et nettverk som vil være verdifullt gjennom hele karrieren din. For et innblikk i hvordan hverdagen er for våre graduates, ta en titt på Facebook-kontoen vår eller vår instagram-konto som styres av våre graduates.\nFor 4. årsstudenter tilbyr vi 6 ukers sommerjobb, hvor du får muligheten til å teste ut livet som konsulent og se hvordan det er å jobbe hos oss.\nHovedkontoret vårt befinner seg med flott utsikt på toppen av Posthuset, midt i Oslo sentrum, men vi har også kontorer i Trondheim og Stavanger. Husk å merke deg søknadsfristene våre som er 1. oktober for graduate-stillingene og 20. oktober for våre sommerjobber. Vi gleder oss til å bli bedre kjent med deg på dagen@ifi! Spør oss på stand om det er noe du lurer på, eller bare ønsker å bli enda bedre kjent med oss.",
@@ -277,16 +280,16 @@ const stand_info =
       tags: ["", ""]
     },
     "Systek": {
-      bedriftnavn: "Systek",
-      beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
-      logonavn: "icon_1.png",
-      video: "",
-      zoomlink: "https://uio.zoom.us/j/68298550948",
-      stillinger: [{ tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021" }],
-      konkurranser: [{ tekst: "bli med i konkurransen vår!", link: "https://forms.gle/pQSzSR3xB8u52Xc99" }],
-      foredrag: [{ tekst: "Kotlin i skatteetaten, erfaringer fra fronten", link: "5" }],
-      tags: ["", ""]
-    },
+        bedriftnavn: "Systek",
+        beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
+        logonavn: "systek.png",
+        video:"https://player.vimeo.com/video/460497205",
+        zoomlink:"https://uio.zoom.us/j/68298550948",
+        stillinger: [{tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021"}],
+        konkurranser: [{tekst: "bli med i konkurransen vår!", link:"https://forms.gle/pQSzSR3xB8u52Xc99"}],
+        foredrag: [{tekst: "Kotlin i skatteetaten, erfaringer fra fronten", link: "5"}],
+        tags: ["",""]
+      },
     "Visma Consulting": {
       bedriftnavn: "Visma Consulting",
       beskrivelse: "Hvert år rekrutterer vi dyktige nyutdannede som er engasjert og nysgjerrig på ny teknologi! Vi jobber for å ligge i front når det gjelder ny teknologi og utvikler hver dag samfunnskritiske løsninger. Vi leverer konsulenttjenester i form av IT-rådgivning, systemutvikling og applikasjonsforvaltning til både private og offentlige virksomheter.",
