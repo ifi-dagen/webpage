@@ -8,19 +8,19 @@ import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
 import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
 import ProgramStatus from '../../components/ProgramStatus.js';
+import Stander from '../../Stander.js'
 
 const Front = () => {
-
   return (
     <Div>
       <Container>
         <h1>Den største bedriftsdagen for IT studenter i Oslo.</h1>
         <h3>Verden blir aldri den samme igjen, kom dere på nett og få jobb på Dagen.</h3>
         <DateParagraph />
-
       </Container>
 
       <Nav />
+      <Stander forside />
       <Hovedsponsor />
 
       <GridContainerWrapper>
@@ -138,9 +138,9 @@ const Nav = () => {
   return (
     <NavContainer>
       <NavButton>
-      <Link to="/program">
-        <i className="fas fa-stream"></i>
-        <br />
+        <Link to="/program">
+          <i className="fas fa-stream"></i>
+          <br />
         Digitalt Program
         </Link>
       </NavButton>
@@ -152,10 +152,10 @@ const Nav = () => {
         </Link>
       </NavButton>
       <NavButton>
-        <Link to="/frivillig">
-          <i className="fas fa-hand-holding-heart"></i>
+        <Link to="/studenter">
+          <i className="fas fa-user-graduate"></i>
           <br />
-          Bli Frivillig
+          For studenter
         </Link>
       </NavButton>
       <NavItem>
@@ -203,10 +203,6 @@ const NavItem = styled.div`
   border-radius: 1rem;
   font-size: 1.2rem;
   grid-column: 1/-1;
-
-  a{
-    color: rgb(80,89,98);
-  }
 `
 
 const ErGrid = styled.div`

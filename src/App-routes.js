@@ -8,6 +8,7 @@ import Front from './pages/front/Front';
 import Error from './pages/error/Error';
 import Stander from './Stander';
 import BedriftStand from './BedriftStand';
+import Studenter from "./pages/studenter/studenter";
 
 
 class Routes extends Component {
@@ -26,18 +27,17 @@ class Routes extends Component {
         <Route
           exact
           path="/program"
-          render={prop => <Program {...prop} store={this.props.store} published={false}/>}
-        />
-        <Route
-          exact
-          path="/skjultprogram"
-          render={prop => <Program {...prop} store={this.props.store} published={true}/>}
+          render={prop => <Program {...prop} store={this.props.store} published={true} />}
         />
         <Route
           exact
           path="/for-bedrift"
           render={prop => <Bedrift {...prop} store={this.props.store} />}
         />
+        <Route
+          exact
+          path="/studenter"
+          render={prop => <Studenter />} />
         <Route
           exact
           path="/frivillig"

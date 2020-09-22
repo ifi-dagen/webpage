@@ -30,7 +30,6 @@ class ProgramStatus extends Component {
   }
 
   componentDidMount() {
-    console.log("componentDidMount", new Date())
     this.bump()
   }
 
@@ -57,11 +56,11 @@ class ProgramStatus extends Component {
 
   //this and findCurrentState are only functions allowed to edit state!
   bump = () => {
-    console.log("find new, if bump can be done right...")
+    //console.log("find new, if bump can be done right...")
     this.findCurrentState();
     //console.log("find now2", new Date(),this.endDate)
     if (new Date() <= this.endDate){
-      console.log("find now") //this.setState({date: this.startDate})//find date, then setTimeout for change of date
+      //console.log("find now") //this.setState({date: this.startDate})//find date, then setTimeout for change of date
       setTimeout(() => {this.bump()},this.secondsToNext())//this.secondsToNext()
     }
   }
@@ -69,21 +68,19 @@ class ProgramStatus extends Component {
   //Only used before or during event,not after
   secondsToNext(){
     const now = new Date();
-    console.log(now);
     if (now < this.startDate){
       //days before wait for next day.
       return (program_info[0].start-new Date());
     }
     if (now > this.endDate){
-      //console.log(9999999999);
       return 9999999999 //just some thing high because event has ended.
     }
     if(this.state.currentEvent.length === 0){
       if(this.state.nextEvent.length === 0){
         //finn time to nextEvent, but don't edit state here
-        return this.earliestDate(this.state.nextEvent.map(item => program_info[item].start))-now; //tid til første next event.
+        return this.earliestDate(program_info.filter(item => item.start >= now).map(item => item.start))-now; //tid til første next event.
       }
-      return this.earliestDate(this.state.nextEvent.map(item => program_info[item].start))-now; //tid til første next event.
+      return this.earliestDate(program_info.filter(item => item.start >= now).map(item => item.start))-now; //tid til første next event.
     } else {
       //finn hva som kommer først, nytt vent, eller slutt på eksisterende?
       const endings = this.earliestDate(this.state.currentEvent.filter(item => program_info[item].slutt >= now).map(item => program_info[item].slutt)) //this.earliestDate() of endings
@@ -117,7 +114,7 @@ class ProgramStatus extends Component {
               {eventIndexes.map((programindex, listeindex) => {
                 return(
                   <div className="programstatus-compact-tekstboks" key={listeindex}>
-                    <h4 id="tittel"><a className="programstatus-a" href={"/program/#"+program_info[programindex].tittel}>{program_info[programindex].tittel}</a>
+                    <h4 id="tittel"><a className="programstatus-a" href={"/program/#"+program_info[programindex].id}>{program_info[programindex].tittel}</a>
                     {!live && " - starter "+this.klokkeslett(program_info[programindex].start)}</h4>
                     <h4 id="delta-link"> <a className="programstatus-a" href={program_info[programindex].link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>
                   </div>
@@ -136,7 +133,6 @@ class ProgramStatus extends Component {
               return(
                 <div className="programstatus-tekstboks" key={listeindex}>
                   <h1 id="tittel">{program_info[programindex].tittel}</h1>
-                  <p>{program_info[programindex].beskrivelse}</p>
                   <h4 id="delta-link"><a className="programstatus-a" href={program_info[programindex].link} target="_blank"  rel="noopener noreferrer">delta her!</a></h4>
                   <h4 id="tidspunk">{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
                 </div>
