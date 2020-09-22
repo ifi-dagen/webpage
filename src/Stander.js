@@ -7,8 +7,8 @@ import {stand_time} from './data/time.js'
 export default class Stander extends Component {
   state = { show: false, active_stand: false, dag: "før" };
 
-  stander = (dag) => {
-    return Object.values(stand_info[dag]).map((bedrift, index) => {
+  stander = (dag,testmode) => {
+    const standliste = Object.values(stand_info[dag]).map((bedrift, index) => {
       const link = "/stander/" + dag + "/" + bedrift.bedriftnavn.replace(/\s/g, '_');
       return (
         <div className="button-card-container"
@@ -24,6 +24,10 @@ export default class Stander extends Component {
         </div>
       )
     })
+    if(testmode){
+      standliste.unshift(this.standbuttons(testmode))
+    }
+    return standliste
   }
 
   delayUpdate = (newState, timeout) => {
@@ -80,18 +84,22 @@ export default class Stander extends Component {
         if (this.props.forside) {
           return (<div></div>);
         }
-        return (<div className="standbase">
+        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}>
           {this.standbuttons(testmode)}
         </div>)
       case "dag1":
-        return (<div className="standbase">
-          {this.standbuttons(testmode)}
-          {this.stander("dag1", true)}
+        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}>
+          <h2>Besøk bedriftene her!</h2>
+          <div className="standbase">
+          {this.stander("dag1", testmode)}
+          </div>
         </div>)
       case "dag2":
-        return (<div className="standbase">
-          {this.standbuttons(testmode)}
-          {this.stander("dag2", true)}
+        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}>
+          <h2>Besøk bedriftene her!</h2>
+          <div className="standbase">
+          {this.stander("dag2", testmode)}
+          </div>
         </div>)
       case "etter":
         return (
