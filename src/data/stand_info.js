@@ -156,9 +156,9 @@ const stand_info =
       video: "",
       zoomlink: "",
       stillinger: [{ tekst: "Sommerjobb i Knowit i 2021", link: "https://www.knowit.no/karriere/sommerjobb-i-knowit-i-2021-oslo/" }],
-      konkurranser: "",
-      foredrag: "",
-      tags: ["", ""],
+      konkurranser: [{ tekst: "", link: "" }],
+      foredrag: [{ tekst: "", link: "" }],
+      tags: ["", ""]
     },
     "NAV IT": {
       bedriftnavn: "NAV IT",
