@@ -186,7 +186,7 @@ const stand_info =
         bedriftnavn: "PA CONSULTING",
         beskrivelse: "PA Consulting er et innovasjons- og transformasjonskonsulentfirma. Vi er 3 200 spesialister som jobber mot markeder og sektorer som forbruker, forsvar og sikkerhet, energi, finansielle tjenester, helse – og offentlig sektor, produksjon og transport. Våre medarbeidere er strateger, innovatører, designere, konsulenter, digitale eksperter, forskere, ingeniører og teknologer. Vi opererer globalt fra kontorer over hele Storbritannia, USA, Europa og Norden.Vi tror på oppfinnsomhetens kraft for å bygge en positiv menneskelig fremtid i en teknologidrevet verden. Når strategier, teknologier og innovasjon kolliderer, skaper vi muligheter fra kompleksitet. Våre forskjellige team av eksperter kombinerer nytenking og banebrytende bruk av teknologier for å komme videre, raskere",
         logonavn: "PA.jpg",
-        video:"https://vimeo.com/user123633256",
+        video:"https://player.vimeo.com/video/460359118",
         zoomlink:"https://uio.zoom.us/j/63875433928",
         stillinger: [{tekst: "Ønsker du å jobbe sammen med oss i PA Consulting? Send CV, søknadsbrev og karakterutskrift til laura.kleiven@paconsulting.com.", link: "mailto:laura.kleiven@paconsulting.com"}],
         konkurranser: [{tekst: "", link:""}],
@@ -206,12 +206,16 @@ const stand_info =
       },
     "Schibsted": {
         bedriftnavn: "Schibsted",
-        beskrivelse: "",
+        beskrivelse: "Hi there! Schibsted is a family of digital consumer brands leading the way across media, online marketplaces and technology ventures. You might recognize some of our brands such as Aftenposten, VG, FINN, E24, Lendo, Prisjakt and Albert. We are on a mission to empower people in their daily life, using tech and data to create innovative products and great user experiences. You are more than welcome to pop into our zoom-room to learn more. See you!",
         logonavn: "Schibsted.png",
         video: "https://youtu.be/RBskvdqt5dA",
         zoomlink:"https://uio.zoom.us/j/63837890960",
-        stillinger: [{tekst: "Schibsted Summer Internship “-The learning curve was something I’ve never experienced before”", link: "https://schibsted.com/career/for-students/internships-theses/"}],
-        konkurranser: [{tekst: "Schibsted Connect - our buddy program for students", link:"https://emp.jobylon.com/jobs/62163-schibsted-professionals-schibsted-connect-student-buddy-program-oslo/"},{tekst: "Take us on a walk while you listen to Schibsted Talks ", link:"https://open.spotify.com/show/270CtGkMTTYZQZZD8BtjmX"}],
+        stillinger: [
+          {tekst: "Schibsted Summer Internship “-The learning curve was something I’ve never experienced before”", link: "https://schibsted.com/career/for-students/internships-theses/"},
+          {tekst: "Schibsted Connect - our buddy program for students", link:"https://emp.jobylon.com/jobs/62163-schibsted-professionals-schibsted-connect-student-buddy-program-oslo/"}],
+        konkurranser: [
+          {tekst: "Student Hack Battle - win reMarkable 2 ", link:"https://emp.jobylon.com/jobs/64644-schibsted-student-hack-battle-the-future-news-front-page/"},
+          {tekst: "Take us on a walk while you listen to Schibsted Talks ", link:"https://open.spotify.com/show/270CtGkMTTYZQZZD8BtjmX"}],
         foredrag: [{tekst: "", link: ""}],
         tags: ["",""]
       },
@@ -257,8 +261,8 @@ const stand_info =
     "Systek": {
         bedriftnavn: "Systek",
         beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
-        logonavn: "icon_1.png",
-        video:"",
+        logonavn: "systek.webp",
+        video:"https://player.vimeo.com/video/460497205",
         zoomlink:"https://uio.zoom.us/j/68298550948",
         stillinger: [{tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021"}],
         konkurranser: [{tekst: "bli med i konkurransen vår!", link:"https://forms.gle/pQSzSR3xB8u52Xc99"}],
