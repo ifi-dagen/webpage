@@ -145,11 +145,11 @@ const program_info =
 	{
 		type:	"foredrag",
 		id: 8,
-    tittel:	"Mixed reality og Hololens2 til... inspeksjon av fisk??",
+    tittel:	"Hva kan mixed reality brukes til?",
 		start: new Date(2020,8, dag1, 15, 30, 0,0),
 		slutt: new Date(2020,8, dag1, 15, 55, 0,0),
 		foredragsholder: "Sopra Steria",
-		beskrivelse: "I disse koronatider har enkelte norske fiskeselskaper problemer med å få solgt fisken sin til viktige markeder i Asia, fordi kvalitetsinspektører ikke kan reise inn til Norge. I dette foredraget får du høre hvordan Sopra Steria tar i bruk Hololens2 og den nyeste mixed reality-teknologien for å løse problemet. Med hologrammer i tillegg til lyd og bilde kan inspektører i Asia få gjort jobben sin ved å la kollegaer i Norge bli deres utvidede øyne, ører og hender.",
+		beskrivelse: "Hør hvordan Sopra Steria tar i bruk den nyeste teknologien innen mixed reality for å løse samfunnsproblemer. Avanserte nyvinninger som Hololens 2 brukes til alt fra å øve på hjerteoperasjoner, inspisere fisk og visualisere fremtidens infrastruktur. Med hologrammer i tillegg til lyd og bilde kan du også samarbeide på tvers av jordkloden ved å la kollegaer i andre land være dine utvidede øyne, ører og hender.",
     link: "",
     bilde: "logoer/sopraSteria.png",
     alt_tekst: "Sopra Steria-logo"
