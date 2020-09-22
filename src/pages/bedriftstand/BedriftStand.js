@@ -8,6 +8,27 @@ import live_time from '../../data/time.js'
 
 import ReactPlayer from 'react-player/youtube';
 
+const formatedText = (text) => {
+  return text.split("\n").map((item, index) => {if(item=="  "){return(<p key={index} ><br/></p>)};return (<p key={index} >{item}</p>)})
+}
+
+//tar inn lister av typen [ {tekst: "", link: ""}, ... ]
+const listUp = (tittel,liste,link_prefix) => {
+  if(liste.length !== 0 & liste[0].tekst !== "") {
+    return (
+      <div>
+        <h4>{tittel}</h4>
+        {liste.map((item, index) => {
+          if (item.link !== ""){
+            return (<a href={link_prefix+item.link} key={index}>{item.tekst}<br/></a>)
+          }
+          return(<p>{item.tekst}</p>)
+        })}
+      </div>
+    )
+  }
+}
+
 
 
 export default class BedriftStand extends Component {
@@ -42,30 +63,13 @@ export default class BedriftStand extends Component {
     }
   }
 
-  //tar inn lister av typen [ {tekst: "", link: ""}, ... ]
-  listUp = (tittel,liste,link_prefix) => {
-    if(liste.length !== 0 & liste[0].tekst !== "") {
-      return (
-        <div>
-          <h4>{tittel}</h4>
-          {liste.map((item, index) => {
-            if (item.link !== ""){
-              return (<a href={link_prefix+item.link} key={index}>{item.tekst}<br/></a>)
-            }
-            return(<p>{item.tekst}</p>)
-          })}
-        </div>
-      )
-    }
-  }
-
   infoBolk = (bedrift) => {
     return <div className="infoBolk">
       <h1 className="bedriftnavn"> {bedrift.bedriftnavn}</h1>
-      <p> {bedrift.beskrivelse && bedrift.beskrivelse}</p>
-      {this.listUp("Stillinger", bedrift.stillinger,"")}
-      {this.listUp("Foredrag", bedrift.foredrag,"../../program#")}
-      {this.listUp("Sprell", bedrift.konkurranser,"")}
+      <div> {bedrift.beskrivelse && formatedText(bedrift.beskrivelse)}</div>
+      {listUp("Stillinger", bedrift.stillinger,"")}
+      {listUp("Foredrag", bedrift.foredrag,"../../program#")}
+      {listUp("Sprell", bedrift.konkurranser,"")}
     </div>
   }
 
@@ -113,8 +117,8 @@ export default class BedriftStand extends Component {
 
   render(){
     const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift.replace(/_/g, ' ')];//replace setter inn _ istede for mellomrom i stringen.
-    console.log(this.props.match.params.bedrift.replace(/_/g, ' '));
-    console.log(bedrift);//replace setter inn _ istede for mellomrom i stringen.
+    //console.log(this.props.match.params.bedrift.replace(/_/g, ' '));
+    //console.log(bedrift);//replace setter inn _ istede for mellomrom i stringen.
 
     return (
       <div className="bedriftStandBase">
