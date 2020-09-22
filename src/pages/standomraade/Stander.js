@@ -25,7 +25,7 @@ export default class Stander extends Component {
       )
     })
     if(testmode){
-      standliste.unshift(this.standbuttons(testmode))
+      standliste.unshift((<div key={-1}>{this.standbuttons(testmode)}</div>))
     }
     return standliste
   }
