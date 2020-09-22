@@ -3,7 +3,7 @@ import './App.css';
 import './stander.css';
 import stand_info from './data/stand_info.js'
 import Etter from '../src/pages/standomraade/etter'
-import stand_time from './data/time.js'
+import {stand_time} from './data/time.js'
 
 export default class Stander extends Component {
   state = { show: false, active_stand: false, dag: "før" };
@@ -34,8 +34,10 @@ export default class Stander extends Component {
   finnDag = (tidspunkt) => {
     //henter tidspunkt fra /data/time.js
     if (tidspunkt < stand_time.start1) {
+      console.log("here")
       this.delayUpdate("dag1", (stand_time.start1.getTime() - tidspunkt.getTime()));
     } else if (tidspunkt < stand_time.start2) {
+      console.log("here2")
       if (this.state.dag !== "dag1") { this.setState({ dag: "dag1" }) }
       this.delayUpdate("dag2", stand_time.start2.getTime() - tidspunkt.getTime());
     } else if (tidspunkt < stand_time.stop) {
@@ -64,10 +66,16 @@ export default class Stander extends Component {
     return <div></div>
   }
 
+  componentDidMount(){
+    this.finnDag(new Date()); //NB denne linja styrer tiden
+    console.log(stand_time.stop, this.state)
+  }
+
   render() {
     const testmode = this.props.testmode;
     //finn ut tidspunkt
-    this.finnDag(new Date()); //NB denne linja styrer tiden
+
+    //this.finnDag(new Date()); //NB denne linja styrer tiden
     switch (this.state.dag) {
       case "før":
         if (this.props.forside){

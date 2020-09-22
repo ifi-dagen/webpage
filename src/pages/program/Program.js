@@ -33,7 +33,7 @@ class Program extends Component {
 
   //lag liste av eventer
   hendelser = (dag) => {
-    const filtered_events = program_info.filter((item) => { console.log(this.dateString(item.start));console.log(this.state.filterDag);return this.dateString(item.start)===this.state.filterDag})
+    const filtered_events = program_info.filter((item) => {return this.dateString(item.start)===this.state.filterDag})
 
     return (
       <div className="Programinnhold">
@@ -62,7 +62,7 @@ class Program extends Component {
           <div className="hendingInfo-beholder">
             <h3>{hendinger.tittel}</h3>
             <h6>{this.klokkeslett(hendinger.start)}-{this.klokkeslett(hendinger.slutt)}</h6>
-            <h4><a href={hendinger.link}>delta her!</a></h4>
+            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link}>delta her!</a></h4>}
             <div>{this.formatedText(hendinger.beskrivelse)}</div>
           </div>
         </div>)
