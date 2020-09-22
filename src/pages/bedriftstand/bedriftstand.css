@@ -17,6 +17,10 @@
   text-align: left;
 }
 
+.undertittel{
+  margin-bottom: .4rem;
+}
+
 #livelinker{
   display: flex;
   height: 150px;

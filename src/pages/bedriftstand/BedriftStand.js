@@ -17,8 +17,13 @@ const listUp = (tittel,liste,link_prefix) => {
   if(liste.length !== 0 & liste[0].tekst !== "") {
     return (
       <div>
-        <h4>{tittel}</h4>
+        <h4 className="undertittel">{tittel}</h4>
         {liste.map((item, index) => {
+          if(!link_prefix || link_prefix===""){
+            return (
+              <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>{item.tekst}<br/></a>
+            )
+          }
           if (item.link !== ""){
             return (<a href={link_prefix+item.link} key={index}>{item.tekst}<br/></a>)
           }
@@ -80,7 +85,7 @@ export default class BedriftStand extends Component {
   }
 
   inntrykkt = (bedrift,activated) => {
-    if (activated){
+    if (activated && bedrift.zoomlink!==""){
       return (<div id="livelinker">
                 <Link href={bedrift.zoomlink}>
                   <Icon className="fas fa-video"></Icon>Møt oss på zoom!
@@ -98,12 +103,12 @@ export default class BedriftStand extends Component {
             playing={false}
             loop={true}
           />
-        <a id="videolink" href={bedrift.video} >Se youtube-video her</a>
+        <a id="videolink" href={bedrift.video} >Se video her</a>
         </div>
       } else {
         return <div id='videoContainer'>
           <iframe title="StandVideo" width="640" height="360" src={bedrift.video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-          <a id="videolink" href={bedrift.video} >Se youtube-video her</a>
+          <a id="videolink" href={bedrift.video} >Se video her</a>
         </div>
       }
     }

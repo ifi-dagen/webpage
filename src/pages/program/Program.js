@@ -63,7 +63,7 @@ class Program extends Component {
           <HendingInfo>
             <h3>{hendinger.tittel}</h3>
             <h6>{klokkeslett(hendinger.start)}-{klokkeslett(hendinger.slutt)}</h6>
-            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link}>delta her!</a></h4>}
+            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>}
             <div>{formatedText(hendinger.beskrivelse)}</div>
           </HendingInfo>
         </HendingBeholder>)
