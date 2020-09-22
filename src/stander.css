@@ -17,12 +17,27 @@
   text-align: left;
 }
 
+.standOmraadeKomponent{
+  max-width: 1000px;
+  margin: 1rem;
+  background: #F5F5F5;
+  text-align: center;
+  border: 2px solid #F5F5F5;
+  border-radius: 1rem;
+  padding: 1rem 8rem;
+}
+
+.standbakgrunn{
+  background: #F5F5F5;
+  text-align: center;
+  padding: 1rem 8rem;
+}
+
 .standbase{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  grid-template-columns: repeat(auto-fit, minmax(205px, auto));
   gap: 20px;
-  padding: 8rem;
-  background: #d7dfe7;
+  padding: 2rem 0 6rem;
 }
 
 .stand-bar-buttons button{
