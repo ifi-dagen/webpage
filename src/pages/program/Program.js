@@ -5,67 +5,68 @@ import ProgramStatus from '../../components/ProgramStatus.js';
 import program_info from '../../data/program_info.js';
 import {dateStrings} from '../../data/time.js'
 
+const dateString =(d) => {
+    let month = '' + (d.getMonth()); //8 = September, 9=oktober
+    let day = '' + d.getDate();
+    let year = d.getFullYear();
+
+    if (month.length < 2)
+        month = '0' + month;
+    if (day.length < 2)
+        day = '0' + day;
+    return [year, month, day].join('-');
+}
+
+const klokkeslett = (date) => {
+  return (date.getHours()< 10 ? ("0" + date.getHours()) : date.getHours())+":"+(date.getMinutes()< 10 ? ("0" + date.getMinutes()) : date.getMinutes())
+}
+
+const formatedText = (text) => {
+  return text.split("\n").map((item, index) => {return (<p key={index} >{item}</p>)})
+}
+
 class Program extends Component {
   state = { dag: "2020-08-20", filterDag:dateStrings.dag1 ,currentEvent: 0}
 
-  dateString =(d) => {
-      let month = '' + (d.getMonth()); //8 = September, 9=oktober
-      let day = '' + d.getDate();
-      let year = d.getFullYear();
-
-      if (month.length < 2)
-          month = '0' + month;
-      if (day.length < 2)
-          day = '0' + day;
-      return [year, month, day].join('-');
-  }
-
-  klokkeslett = (date) => {
-    return (date.getHours()< 10 ? ("0" + date.getHours()) : date.getHours())+":"+(date.getMinutes()< 10 ? ("0" + date.getMinutes()) : date.getMinutes())
-  }
-
   programfilter = () => {
     return (<div className="programfilter">
-      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag1})}}>24.</FilterButton>
-      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag2})}}>25.</FilterButton>
+      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag1})}}>Torsdag 24</FilterButton>
+      <FilterButton  onClick={() => {this.setState({filterDag: dateStrings.dag2})}}>Fredag 25.</FilterButton>
     </div>)
   }
 
   //lag liste av eventer
   hendelser = (dag) => {
-    const filtered_events = program_info.filter((item) => {return this.dateString(item.start)===this.state.filterDag})
+    const filtered_events = program_info.filter((item) => {return dateString(item.start)===this.state.filterDag})
 
     return (
       <div className="Programinnhold">
+        <h2>{this.state.filterDag===dateStrings.dag1? "Torsdag 24.": "Fredag 25."}</h2>
         {filtered_events.map((hendinger, index) => {
           //differansier på foredrag og alt annet.
           //Ide: grå ut alt som har skjedd allerede
           const event_id="#"+hendinger.id;
           return (
             <div className="event-detail" key={index}>
-              <a className="programLink" href={event_id}><strong className="starttid">{this.klokkeslett(hendinger.start)}</strong> - {hendinger.tittel}</a>
+              <a className="programLink" href={event_id}><strong className="starttid">{klokkeslett(hendinger.start)}</strong> - {hendinger.tittel}</a>
             </div>)})}
       </div>)
-  }
-
-  formatedText = (text) => {
-    return text.split("\n").map((item, index) => {return (<p key={index} >{item}</p>)})
   }
 
   detaljertekort = (dag) => {
     return (<div>
       {program_info.map((hendinger, index) => {
-        return (<div className="hending-beholder" id={hendinger.id} key={index}>
-          <div className="hendingBilde-beholder">
-            {hendinger.bilde && <img className="hendingBilde" src={require("../../img/"+hendinger.bilde)} alt={hendinger.alt_tekst}/>}
-          </div>
-          <div className="hendingInfo-beholder">
+        return (<HendingBeholder id={hendinger.id} key={index}>
+          <HendingsBilde>
+            {hendinger.bilde && <img src={require("../../img/"+hendinger.bilde)} alt={hendinger.alt_tekst}/>}
+          </HendingsBilde>
+          <HendingInfo>
             <h3>{hendinger.tittel}</h3>
-            <h6>{this.klokkeslett(hendinger.start)}-{this.klokkeslett(hendinger.slutt)}</h6>
+            <h6>{klokkeslett(hendinger.start)}-{klokkeslett(hendinger.slutt)}</h6>
             {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link}>delta her!</a></h4>}
-            <div>{this.formatedText(hendinger.beskrivelse)}</div>
-          </div>
-        </div>)
+            <div>{formatedText(hendinger.beskrivelse)}</div>
+          </HendingInfo>
+        </HendingBeholder>)
       })}
     </div>)
   }
@@ -88,9 +89,9 @@ class Program extends Component {
           {this.programfilter()}
           {this.hendelser(this.state.filterDag)}
         </div>
-        <div className="detaljert-program">
+        <DetaljertProgram>
           {this.detaljertekort(this.state.filterDag)}
-        </div>
+        </DetaljertProgram>
       </div>
     );
   }
@@ -99,7 +100,8 @@ class Program extends Component {
 const FilterButton = styled.button`
   text-align: center;
   background-color: deepskyblue;
-  padding: .8rem;
+  width:150px;
+  padding: .5rem;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -110,11 +112,70 @@ const FilterButton = styled.button`
 
   :hover {
     background-color: dodgerblue;
-    transform: scale(1, 1.1);
-    -webkit-transform: scale(1, 1.1);
-    box-shadow: 0px 1px 0px 0px;
   }
 `
 
+const DetaljertProgram = styled.div`
+  background: #F5F5F5;
+  border: solid 1px #F5F5F5;
+  border-radius: 1rem;
+  margin: 0.5rem;
+`
+
+const HendingBeholder = styled.div`
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  background: white;
+  border: solid 1px white;
+  border-radius: 1rem;
+  margin: 1rem;
+
+  @media (max-width: 767.98px) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    :focus{
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      color: orange;
+    }
+
+    :active{
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      color: orange;
+    }
+  }
+`
+
+const HendingsBilde = styled.div`
+  align-self: center;
+  width: 100%;
+
+  img{
+      width: 100%;
+      padding: 0 1rem;
+      height: auto;
+  }
+  @media (max-width: 767.98px) {
+    display:none;
+  }
+`
+
+const HendingInfo = styled.div`
+  width: 100%;
+  padding: 5%;
+  h3{
+    margin-block-end: 0.5em;
+  }
+  h6{
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+`
 
 export default Program;

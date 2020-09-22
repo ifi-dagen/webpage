@@ -63,9 +63,9 @@ export default class BedriftStand extends Component {
     return <div className="infoBolk">
       <h1 className="bedriftnavn"> {bedrift.bedriftnavn}</h1>
       <p> {bedrift.beskrivelse && bedrift.beskrivelse}</p>
-      {this.listUp("stillinger", bedrift.stillinger,"")}
-      {this.listUp("konkurranser", bedrift.konkurranser,"")}
-      {this.listUp("foredrag", bedrift.foredrag,"../../program#")}
+      {this.listUp("Stillinger", bedrift.stillinger,"")}
+      {this.listUp("Foredrag", bedrift.foredrag,"../../program#")}
+      {this.listUp("Sprell", bedrift.konkurranser,"")}
     </div>
   }
 
