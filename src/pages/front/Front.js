@@ -8,7 +8,7 @@ import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
 import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
 import ProgramStatus from '../../components/ProgramStatus.js';
-import Stander from '../../Stander.js'
+import Stander from '../standomraade/Stander.js'
 
 const Front = () => {
   return (

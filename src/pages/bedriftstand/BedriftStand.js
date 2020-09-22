@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import './stander.css';
-import stand_info from './data/stand_info.js'
+import '../../App.css';
+import './bedriftstand.css';
+import stand_info from '../../data/stand_info.js'
 import styled from "styled-components";
-import live_time from './data/time.js'
+import live_time from '../../data/time.js'
 
 
 import ReactPlayer from 'react-player/youtube';
