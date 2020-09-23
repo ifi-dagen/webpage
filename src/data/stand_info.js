@@ -124,7 +124,7 @@ const stand_info =
       video: "https://player.vimeo.com/video/460358692",
       zoomlink: "https://uio.zoom.us/j/66585825280",
       stillinger: [{ tekst: "se her", link: "https://recruit.genus.no/" }],
-      konkurranser: [{ tekst: "", link: "" }, { tekst: "PS: Vi holder også bedriftspresentasjon med navet den 29. oktober. Vi ønsker å invitere dere til å se våre flotte lokaler på Lysaker etterfulgt av presentasjon og en bedre middag med mingling. Meld deg på når påmelding åpner to uker i forkant. Sjekk ut arrangementet på https://ifinavet.no/event/327", link: "https://ifinavet.no/event/327" }],
+      konkurranser: [{tekst: "PS: Vi holder også bedriftspresentasjon med navet den 29. oktober. Vi ønsker å invitere dere til å se våre flotte lokaler på Lysaker etterfulgt av presentasjon og en bedre middag med mingling. Meld deg på når påmelding åpner to uker i forkant. Sjekk ut arrangementet på https://ifinavet.no/event/327", link: "https://ifinavet.no/event/327" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
@@ -200,7 +200,7 @@ const stand_info =
       bedriftnavn: "Posten og Bring",
       beskrivelse: "Posten og Bring har som visjon å gjøre hverdagen enklere og verden mindre, og er en av Nordens ledende aktører innen netthandel. Som trainee i hos oss får du en bratt læringskurve og stor innflytelse på egne oppgaver. Du jobber ulike steder i konsernet, og blir raskt kjent med hele verdikjeden i organisasjonen.",
       logonavn: "Posten_Norge.png",
-      video: "http://www.kaltura.com/tiny/kfbaa",
+      video: "https://cdnapisec.kaltura.com/p/1807661/sp/180766100/embedIframeJs/uiconf_id/30995331/partner_id/1807661?iframeembed=true&playerId=kaltura_player&entry_id=1_4r4vcj49&flashvars[streamerType]=auto",
       zoomlink: "https://uio.zoom.us/j/64308207221",
       stillinger: [{ tekst: "Konserntrainee i Posten og Bring 2021", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1641&ProjectId=144904&DepartmentId=18956&MediaId=5" }],
       konkurranser: [{ tekst: "", link: "" }],
@@ -288,8 +288,8 @@ const stand_info =
       logonavn: "Vitec.png",
       video: "https://youtu.be/Kb_juneSLrs",
       zoomlink: "https://uio.zoom.us/j/65147637238",
-      stillinger: [{ tekst: "", link: "" }],
-      konkurranser: [{ tekst: "Answer a few questions about Vitec and win a gift card from Komplett worth 5000nok", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=e1R1xImDvUmIRzwO8Lnhgevb-ZXAbwxGg6vsx6QAJ7RUQkk5NURMQUI2MFFLNlNNMVE0RkxVRklFOC4u" }, { tekst: "”Found out more about Vitec, join in on our connect site to be the first to get information on available jobs at Vitec and found out who you will meet in our Zoom-room today”", link: "https://www.vitecsoftware.com/globalassets/a-vitec-software-group/vitecinfo.pdf" }],
+      stillinger: [{ tekst: "Found out more about Vitec, join in on our connect site to be the first to get information on available jobs at Vitec and found out who you will meet in our Zoom-room today", link: "https://www.vitecsoftware.com/globalassets/a-vitec-software-group/vitecinfo.pdf" }],
+      konkurranser: [{ tekst: "Answer a few questions about Vitec and win a gift card from Komplett worth 5000nok", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=e1R1xImDvUmIRzwO8Lnhgevb-ZXAbwxGg6vsx6QAJ7RUQkk5NURMQUI2MFFLNlNNMVE0RkxVRklFOC4u" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     }
