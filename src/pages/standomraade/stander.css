@@ -37,6 +37,7 @@
   width: 80%;
   justify-content: center;
   background-color: white;
+  border-radius: 2em;
 }
 
 .button-card-container:hover {
@@ -52,6 +53,7 @@
   cursor: pointer;
   transition: 0.3s;
   display: grid;
+  border-radius: 2em;
   grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
 }
 

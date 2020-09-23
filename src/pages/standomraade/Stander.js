@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './stander.css';
 import stand_info from '../../data/stand_info.js'
 import Etter from './etter'
-import {stand_time} from '../../data/time.js'
+import { stand_time } from '../../data/time.js'
 
 export default class Stander extends Component {
   state = { show: false, active_stand: false, dag: "før" };
 
-  stander = (dag,testmode) => {
+  stander = (dag, testmode) => {
     const standliste = Object.values(stand_info[dag]).map((bedrift, index) => {
       const link = "/stander/" + dag + "/" + bedrift.bedriftnavn.replace(/\s/g, '_');
       return (
@@ -24,7 +24,7 @@ export default class Stander extends Component {
         </div>
       )
     })
-    if(testmode){
+    if (testmode) {
       standliste.unshift((<div key={-1}>{this.standbuttons(testmode)}</div>))
     }
     return standliste
@@ -70,7 +70,7 @@ export default class Stander extends Component {
     return <div></div>
   }
 
-  componentDidMount(){
+  componentDidMount() {
     this.finnDag(new Date()); //NB denne linja styrer tiden
     console.log(stand_time.stop, this.state)
   }
@@ -84,21 +84,21 @@ export default class Stander extends Component {
         if (this.props.forside) {
           return (<div></div>);
         }
-        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"} id="standomraade">
+        return (<div className={this.props.forside ? "standOmraadeKomponent" : "standbakgrunn"} id="standomraade">
           {this.standbuttons(testmode)}
         </div>)
       case "dag1":
-        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"} id="standomraade">
-          <h2>Besøk bedriftene her!</h2>
+        return (<div className={this.props.forside ? "standOmraadeKomponent" : "standbakgrunn"} id="standomraade">
+          <h1>Besøk bedriftene her!</h1>
           <div className="standbase">
-          {this.stander("dag1", testmode)}
+            {this.stander("dag1", testmode)}
           </div>
         </div>)
       case "dag2":
-        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}id="standomraade" >
-          <h2>Besøk bedriftene her!</h2>
+        return (<div className={this.props.forside ? "standOmraadeKomponent" : "standbakgrunn"} id="standomraade" >
+          <h1>Besøk bedriftene her!</h1>
           <div className="standbase">
-          {this.stander("dag2", testmode)}
+            {this.stander("dag2", testmode)}
           </div>
         </div>)
       case "etter":
