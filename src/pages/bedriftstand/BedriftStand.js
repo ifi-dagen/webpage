@@ -9,25 +9,25 @@ import live_time from '../../data/time.js'
 import ReactPlayer from 'react-player/youtube';
 
 const formatedText = (text) => {
-  return text.split("\n").map((item, index) => {if(item==="  "){return(<p key={index} ><br/></p>)};return (<p key={index} >{item}</p>)})
+  return text.split("\n").map((item, index) => { if (item === "  ") { return (<p key={index} ><br /></p>) }; return (<p key={index} >{item}</p>) })
 }
 
 //tar inn lister av typen [ {tekst: "", link: ""}, ... ]
-const listUp = (tittel,liste,link_prefix) => {
-  if(liste.length !== 0 & liste[0].tekst !== "") {
+const listUp = (tittel, liste, link_prefix) => {
+  if (liste.length !== 0 & liste[0].tekst !== "") {
     return (
       <div>
         <h4 className="undertittel">{tittel}</h4>
         {liste.map((item, index) => {
-          if(!link_prefix || link_prefix===""){
+          if (!link_prefix || link_prefix === "") {
             return (
-              <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>{item.tekst}<br/></a>
+              <a href={item.link} target="_blank" rel="noopener noreferrer" key={index}>{item.tekst}<br /></a>
             )
           }
-          if (item.link !== ""){
-            return (<a href={link_prefix+item.link} key={index}>{item.tekst}<br/></a>)
+          if (item.link !== "") {
+            return (<a href={link_prefix + item.link} key={index}>{item.tekst}<br /></a>)
           }
-          return(<p>{item.tekst}</p>)
+          return (<p>{item.tekst}</p>)
         })}
       </div>
     )
@@ -42,28 +42,28 @@ export default class BedriftStand extends Component {
   //changes the active_stand-value after a timeout.
   delayUpdate = (newState, timeout) => {
     const context = this;
-    setTimeout(function() {context.setState({active_stand: newState}); }, timeout);
+    setTimeout(function () { context.setState({ active_stand: newState }); }, timeout);
   }
 
   //keeps track of whether or not the zoomrooms should be open
   active = (tidspunkt) => {
-    if (tidspunkt < live_time.stand_start){
-      this.delayUpdate(true,(live_time.stand_start.getTime() - tidspunkt.getTime()));
+    if (tidspunkt < live_time.stand_start) {
+      this.delayUpdate(true, (live_time.stand_start.getTime() - tidspunkt.getTime()));
       return false;
-    } else if (tidspunkt < live_time.stand_stop){
-      if(this.state.dag !== true){this.setState({dag: true})}
-      this.delayUpdate(false,(live_time.stand_stop.getTime() - tidspunkt.getTime()));
+    } else if (tidspunkt < live_time.stand_stop) {
+      if (this.state.dag !== true) { this.setState({ dag: true }) }
+      this.delayUpdate(false, (live_time.stand_stop.getTime() - tidspunkt.getTime()));
       return true;
-    } else if (tidspunkt < live_time.stand_start2){
-      if(this.state.dag !== false){this.setState({dag: false})}
-      this.delayUpdate(true,(live_time.stand_start2.getTime() - tidspunkt.getTime()));
+    } else if (tidspunkt < live_time.stand_start2) {
+      if (this.state.dag !== false) { this.setState({ dag: false }) }
+      this.delayUpdate(true, (live_time.stand_start2.getTime() - tidspunkt.getTime()));
       return false;
-    } else if (tidspunkt < live_time.stand_stop2){
-      if(this.state.dag !== true){this.setState({dag: true})}
-      this.delayUpdate(false,(live_time.stand_stop2.getTime() - tidspunkt.getTime()));
+    } else if (tidspunkt < live_time.stand_stop2) {
+      if (this.state.dag !== true) { this.setState({ dag: true }) }
+      this.delayUpdate(false, (live_time.stand_stop2.getTime() - tidspunkt.getTime()));
       return true;
     } else {
-      if(this.state.dag !== false){this.setState({dag: false})}
+      if (this.state.dag !== false) { this.setState({ dag: false }) }
       return false;
     }
   }
@@ -72,30 +72,30 @@ export default class BedriftStand extends Component {
     return <div className="infoBolk">
       <h1 className="bedriftnavn"> {bedrift.bedriftnavn}</h1>
       <div> {bedrift.beskrivelse && formatedText(bedrift.beskrivelse)}</div>
-      {listUp("Stillinger", bedrift.stillinger,"")}
-      {listUp("Foredrag", bedrift.foredrag,"../../program#")}
-      {listUp("Sprell", bedrift.konkurranser,"")}
+      {listUp("Stillinger", bedrift.stillinger, "")}
+      {listUp("Foredrag", bedrift.foredrag, "../../program#")}
+      {listUp("Sprell", bedrift.konkurranser, "")}
     </div>
   }
 
   //kunn for demo knapper
   toggle = (e, value) => {
     e.preventDefault();
-    this.setState({active_stand: value})
+    this.setState({ active_stand: value })
   }
 
-  inntrykkt = (bedrift,activated) => {
-    if (activated && bedrift.zoomlink!==""){
+  inntrykkt = (bedrift, activated) => {
+    if (activated && bedrift.zoomlink !== "") {
       return (<div id="livelinker">
-                <Link href={bedrift.zoomlink}>
-                  <Icon className="fas fa-video"></Icon>Møt oss på zoom!
+        <Link href={bedrift.zoomlink}>
+          <Icon className="fas fa-video"></Icon>Møt oss på zoom!
                 </Link>
-                {bedrift.poption &&<Link href={bedrift.zoomlink}>
-                  <Icon className="fas fa-handshake"></Icon>Gå til speedintervju her
+        {bedrift.poption && <Link href={bedrift.zoomlink}>
+          <Icon className="fas fa-handshake"></Icon>Gå til speedintervju her
                 </Link>}
-            </div>)
-    } else if(bedrift.video !== ""){
-      if(bedrift.video.includes("youtu")){
+      </div>)
+    } else if (bedrift.video !== "") {
+      if (bedrift.video.includes("youtu")) {
         return <div id='videoContainer'>
           <ReactPlayer
             id='video'
@@ -103,7 +103,7 @@ export default class BedriftStand extends Component {
             playing={false}
             loop={true}
           />
-        <a id="videolink" href={bedrift.video} >Se video her</a>
+          <a id="videolink" href={bedrift.video} >Se video her</a>
         </div>
       } else {
         return <div id='videoContainer'>
@@ -115,12 +115,12 @@ export default class BedriftStand extends Component {
     return
   }
 
-  componentDidMount(){
+  componentDidMount() {
     const zoom_open = this.active(new Date())
-    this.setState({active_stand: zoom_open})
+    this.setState({ active_stand: zoom_open })
   }
 
-  render(){
+  render() {
     const bedrift = stand_info[this.props.match.params.dag][this.props.match.params.bedrift.replace(/_/g, ' ')];//replace setter inn _ istede for mellomrom i stringen.
     //console.log(this.props.match.params.bedrift.replace(/_/g, ' '));
     //console.log(bedrift);//replace setter inn _ istede for mellomrom i stringen.
@@ -129,7 +129,7 @@ export default class BedriftStand extends Component {
       <div className="bedriftStandBase">
         <div className='bedriftStandInnhold'>
           <a href="/#standomraade">tilbake til stander<br/></a>
-          { this.props.testmode && <button onClick={(e) => this.toggle(e,!this.state.active_stand)}>(for demo)standområde er {this.state.active_stand? "åpent":"lukket"}</button>}
+          { this.props.testmode && <button onClick={(e) => this.toggle(e,!this.state.active_stand)}>(for demo)standområde er {this.state.active_stand ? "åpent" : "lukket"}</button>}
           {this.inntrykkt(bedrift,this.state.active_stand)}
           {this.infoBolk(bedrift)}
         </div>

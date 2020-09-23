@@ -150,17 +150,7 @@ const stand_info =
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
-    "Knowit": {
-      bedriftnavn: "Knowit",
-      beskrivelse: "Knowit er et av nordens største konsulentselskaper, og har lang erfaring med å gi nyutdannede en god start på karrieren. Vi ansetter spesielt mange utviklere, men vi er også interessert i folk innenfor design, BI og mye annet. Hvis du har lyst til å jobbe i et sosialt og hyggelig miljø, der du får alle muligheter til å lære og få erfaring i trygge omgivelser, så bør du vurdere å søke jobb hos oss! Og om skulle ønske flere utfordringer, så er veien alltid kort til økt ansvar og nye arbeidsoppgaver. I Norge har vi avdelinger i Oslo, Bergen, Stavanger, Kristiansand og Trondheim.",
-      logonavn: "knowit.png",
-      video: "https://player.vimeo.com/video/460647091",
-      zoomlink: "",
-      stillinger: [{ tekst: "Sommerjobb i Knowit i 2021", link: "https://www.knowit.no/karriere/sommerjobb-i-knowit-i-2021-oslo/" }],
-      konkurranser: [{ tekst: "", link: "" }],
-      foredrag: [{ tekst: "", link: "" }],
-      tags: ["", ""]
-    },
+
     "NAV IT": {
       bedriftnavn: "NAV IT",
       beskrivelse: "IT-avdelingen i NAV teller mer enn 750 dyktige medarbeidere, og mer enn halvparten av disse jobber med utvikling, data og design. Disse folka jobber tett sammen med jurister og de som kjenner brukerne til NAV aller best for å skape fremtidens velferdsløsninger. Dette gir ikke bare muligheten for å jobbe med løsninger som er utrolig viktig for folk, men også muligheten for å løse de virkelige utfordringene ved bruk av ny teknologi.",
@@ -194,28 +184,18 @@ const stand_info =
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
-    "NTNU": {
-      bedriftnavn: "NTNU",
-      beskrivelse: "",
-      logonavn: "ntnu.jpg",
-      video: "",
-      zoomlink: "",
-      stillinger: [{ tekst: "PhD stilling innen digital etterforskning", link: "https://www.jobbnorge.no/en/available-jobs/job/190348/phd-position-in-digital-investigation" }],
+
+    "PA CONSULTING": {
+      bedriftnavn: "PA CONSULTING",
+      beskrivelse: "PA Consulting er et innovasjons- og transformasjonskonsulentfirma. Vi er 3 200 spesialister som jobber mot markeder og sektorer som forbruker, forsvar og sikkerhet, energi, finansielle tjenester, helse – og offentlig sektor, produksjon og transport. Våre medarbeidere er strateger, innovatører, designere, konsulenter, digitale eksperter, forskere, ingeniører og teknologer. Vi opererer globalt fra kontorer over hele Storbritannia, USA, Europa og Norden.Vi tror på oppfinnsomhetens kraft for å bygge en positiv menneskelig fremtid i en teknologidrevet verden. Når strategier, teknologier og innovasjon kolliderer, skaper vi muligheter fra kompleksitet. Våre forskjellige team av eksperter kombinerer nytenking og banebrytende bruk av teknologier for å komme videre, raskere",
+      logonavn: "PA.jpg",
+      video: "https://player.vimeo.com/video/460359118",
+      zoomlink: "https://uio.zoom.us/j/64525748754",
+      stillinger: [{ tekst: "Ønsker du å jobbe sammen med oss i PA Consulting? Send CV, søknadsbrev og karakterutskrift til laura.kleiven@paconsulting.com.", link: "mailto:laura.kleiven@paconsulting.com" }],
       konkurranser: [{ tekst: "", link: "" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
-    "PA CONSULTING": {
-        bedriftnavn: "PA CONSULTING",
-        beskrivelse: "PA Consulting er et innovasjons- og transformasjonskonsulentfirma. Vi er 3 200 spesialister som jobber mot markeder og sektorer som forbruker, forsvar og sikkerhet, energi, finansielle tjenester, helse – og offentlig sektor, produksjon og transport. Våre medarbeidere er strateger, innovatører, designere, konsulenter, digitale eksperter, forskere, ingeniører og teknologer. Vi opererer globalt fra kontorer over hele Storbritannia, USA, Europa og Norden.Vi tror på oppfinnsomhetens kraft for å bygge en positiv menneskelig fremtid i en teknologidrevet verden. Når strategier, teknologier og innovasjon kolliderer, skaper vi muligheter fra kompleksitet. Våre forskjellige team av eksperter kombinerer nytenking og banebrytende bruk av teknologier for å komme videre, raskere",
-        logonavn: "PA.jpg",
-        video:"https://player.vimeo.com/video/460359118",
-        zoomlink: "https://uio.zoom.us/j/64525748754",
-        stillinger: [{tekst: "Ønsker du å jobbe sammen med oss i PA Consulting? Send CV, søknadsbrev og karakterutskrift til laura.kleiven@paconsulting.com.", link: "mailto:laura.kleiven@paconsulting.com"}],
-        konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "", link: ""}],
-        tags: ["",""]
-      },
     "Posten og Bring": {
       bedriftnavn: "Posten og Bring",
       beskrivelse: "Posten og Bring har som visjon å gjøre hverdagen enklere og verden mindre, og er en av Nordens ledende aktører innen netthandel. Som trainee i hos oss får du en bratt læringskurve og stor innflytelse på egne oppgaver. Du jobber ulike steder i konsernet, og blir raskt kjent med hele verdikjeden i organisasjonen.",
@@ -228,19 +208,19 @@ const stand_info =
       tags: ["", ""]
     },
     "Schibsted": {
-        bedriftnavn: "Schibsted",
-        beskrivelse: "Hi there! Schibsted is a family of digital consumer brands leading the way across media, online marketplaces and technology ventures. You might recognize some of our brands such as Aftenposten, VG, FINN, E24, Lendo, Prisjakt and Albert. We are on a mission to empower people in their daily life, using tech and data to create innovative products and great user experiences. You are more than welcome to pop into our zoom-room to learn more. See you!",
-        logonavn: "Schibsted.png",
-        video: "https://youtu.be/RBskvdqt5dA",
-        zoomlink: "https://uio.zoom.us/j/65629777817",
-        stillinger: [
-          {tekst: "Schibsted Summer Internship “-The learning curve was something I’ve never experienced before”", link: "https://schibsted.com/career/for-students/internships-theses/"},
-          {tekst: "Schibsted Connect - our buddy program for students", link:"https://emp.jobylon.com/jobs/62163-schibsted-professionals-schibsted-connect-student-buddy-program-oslo/"}],
-        konkurranser: [
-          {tekst: "Student Hack Battle - win reMarkable 2 ", link:"https://emp.jobylon.com/jobs/64644-schibsted-student-hack-battle-the-future-news-front-page/"}],
-        foredrag: [{tekst: "", link: ""}],
-        tags: ["",""]
-      },
+      bedriftnavn: "Schibsted",
+      beskrivelse: "Hi there! Schibsted is a family of digital consumer brands leading the way across media, online marketplaces and technology ventures. You might recognize some of our brands such as Aftenposten, VG, FINN, E24, Lendo, Prisjakt and Albert. We are on a mission to empower people in their daily life, using tech and data to create innovative products and great user experiences. You are more than welcome to pop into our zoom-room to learn more. See you!",
+      logonavn: "Schibsted.png",
+      video: "https://youtu.be/RBskvdqt5dA",
+      zoomlink: "https://uio.zoom.us/j/65629777817",
+      stillinger: [
+        { tekst: "Schibsted Summer Internship “-The learning curve was something I’ve never experienced before”", link: "https://schibsted.com/career/for-students/internships-theses/" },
+        { tekst: "Schibsted Connect - our buddy program for students", link: "https://emp.jobylon.com/jobs/62163-schibsted-professionals-schibsted-connect-student-buddy-program-oslo/" }],
+      konkurranser: [
+        { tekst: "Student Hack Battle - win reMarkable 2 ", link: "https://emp.jobylon.com/jobs/64644-schibsted-student-hack-battle-the-future-news-front-page/" }],
+      foredrag: [{ tekst: "", link: "" }],
+      tags: ["", ""]
+    },
     "Sopra Steria": {
       bedriftnavn: "Sopra Steria",
       beskrivelse: "Sopra Steria er et ledende internasjonalt IT-konsulentselskap og en ende-til-ende leverandør innen digitalisering. Dette betyr at du har mange karrieremuligheter hos oss! Vi tilbyr tjenester innfor alt fra forretningsrådgivning, systemutvikling og design til infrastruktur, sikkerhet og drift. Vi ble i år kåret til Norges beste arbeidsplass for fjerde år på rad og det sier derfor seg selv at vi er opptatt av at de som jobber hos oss skal ha det bra! Det som kjennetegner arbeidshverdagen vår er raskt tempo, spennende prosjekter, stort faglig engasjement, mange sosiale og faglige sammenkomster og en utbredt delingskultur. Vi går sammen for å nå lenger!\nFor nyutdannede tilbyr vi vårt graduate-program. Det vil si at du blir fast ansatt fra dag én, men deltar i tillegg på et opplæringsprogram som går ved siden av jobben din som konsulent. Du lærer hvordan vi jobber og tenker i Sopra Steria, får innføring i grunnleggende konsulentferdigheter og muligheten til å ta en rekke kurs og sertifiseringer innen ulike fagområder. Samtidig jobber du tett med kunder på ett eller flere prosjekter. Gjennom de faglige og sosiale samlingene vil du bli kjent med de andre graduatsene på tvers av de ulike fagområdene og få et nettverk som vil være verdifullt gjennom hele karrieren din. For et innblikk i hvordan hverdagen er for våre graduates, ta en titt på Facebook-kontoen vår eller vår instagram-konto som styres av våre graduates.\nFor 4. årsstudenter tilbyr vi 6 ukers sommerjobb, hvor du får muligheten til å teste ut livet som konsulent og se hvordan det er å jobbe hos oss.\nHovedkontoret vårt befinner seg med flott utsikt på toppen av Posthuset, midt i Oslo sentrum, men vi har også kontorer i Trondheim og Stavanger. Husk å merke deg søknadsfristene våre som er 1. oktober for graduate-stillingene og 20. oktober for våre sommerjobber. Vi gleder oss til å bli bedre kjent med deg på dagen@ifi! Spør oss på stand om det er noe du lurer på, eller bare ønsker å bli enda bedre kjent med oss.\n  ",
@@ -281,16 +261,16 @@ const stand_info =
       tags: ["", ""]
     },
     "Systek": {
-        bedriftnavn: "Systek",
-        beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
-        logonavn: "Systek.png",
-        video:"https://player.vimeo.com/video/460497205",
-        zoomlink: "https://uio.zoom.us/j/68327926215",
-        stillinger: [{tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021"}],
-        konkurranser: [{tekst: "bli med i konkurransen vår!", link:"https://forms.gle/pQSzSR3xB8u52Xc99"}],
-        foredrag: [{tekst: "Kotlin i skatteetaten, erfaringer fra fronten", link: "5"}],
-        tags: ["",""]
-      },
+      bedriftnavn: "Systek",
+      beskrivelse: "Jobb med de skarpeste hodene i et selskap som er eid av de ansatte og i stadig vekst! \nSystek er et selskap 100% eid av egne ansatte og har lenge levert konsulenter av høy kvalitet til noen av Norges største aktører både innen privat og offentlig sektor. Vi teller i dag 69 ansatte med spisskompetanse innen de aller fleste deler av komplekse systemutviklingsprosjekter, og vi er i stadig vekst.\nI Systek setter vi fag og kvalitet i leveranser øverst på agendaen. Snakk med oss om du vil ha sommerjobb i et selskap hvor du kan lære av de skarpeste hodene!",
+      logonavn: "Systek.png",
+      video: "https://player.vimeo.com/video/460497205",
+      zoomlink: "https://uio.zoom.us/j/68327926215",
+      stillinger: [{ tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021" }],
+      konkurranser: [{ tekst: "bli med i konkurransen vår!", link: "https://forms.gle/pQSzSR3xB8u52Xc99" }],
+      foredrag: [{ tekst: "Kotlin i skatteetaten, erfaringer fra fronten", link: "5" }],
+      tags: ["", ""]
+    },
     "Visma Consulting": {
       bedriftnavn: "Visma Consulting",
       beskrivelse: "Hvert år rekrutterer vi dyktige nyutdannede som er engasjert og nysgjerrig på ny teknologi! Vi jobber for å ligge i front når det gjelder ny teknologi og utvikler hver dag samfunnskritiske løsninger. Vi leverer konsulenttjenester i form av IT-rådgivning, systemutvikling og applikasjonsforvaltning til både private og offentlige virksomheter.",
@@ -524,6 +504,17 @@ const stand_info =
       foredrag: [{ tekst: "Hvordan unngå å havne på forsida av VG", link: "20" }],
       tags: ["", ""]
     },
+    "Knowit": {
+      bedriftnavn: "Knowit",
+      beskrivelse: "Knowit er et av nordens største konsulentselskaper, og har lang erfaring med å gi nyutdannede en god start på karrieren. Vi ansetter spesielt mange utviklere, men vi er også interessert i folk innenfor design, BI og mye annet. Hvis du har lyst til å jobbe i et sosialt og hyggelig miljø, der du får alle muligheter til å lære og få erfaring i trygge omgivelser, så bør du vurdere å søke jobb hos oss! Og om skulle ønske flere utfordringer, så er veien alltid kort til økt ansvar og nye arbeidsoppgaver. I Norge har vi avdelinger i Oslo, Bergen, Stavanger, Kristiansand og Trondheim.",
+      logonavn: "knowit.png",
+      video: "https://player.vimeo.com/video/460647091",
+      zoomlink: "",
+      stillinger: [{ tekst: "Sommerjobb i Knowit i 2021", link: "https://www.knowit.no/karriere/sommerjobb-i-knowit-i-2021-oslo/" }],
+      konkurranser: [{ tekst: "", link: "" }],
+      foredrag: [{ tekst: "", link: "" }],
+      tags: ["", ""]
+    },
     "Lime Technologies Norway": {
       bedriftnavn: "Lime Technologies Norway",
       beskrivelse: "At Lime, we love CRM! \nSince the beginning we have helped more than 6000 companies to reach better results with the help of easy-to-use CRM solutions that we develop, consult and support ourselves. Today we are over 280 colleagues and one of the largest CRM suppliers in the Nordic countries with offices in Helsinki, Stockholm, Gothenburg, Lund, Oslo and Copenhagen. We are also proud to mention that we this year 2020 expanded to the Netherlands and recently opened a new office in Utrecht",
@@ -555,6 +546,17 @@ const stand_info =
       stillinger: [{ tekst: "", link: "" }],
       konkurranser: [{ tekst: "", link: "" }],
       foredrag: [{ tekst: "Bildegjennkjenning med dyp læring", link: "22" }],
+      tags: ["", ""]
+    },
+    "NTNU": {
+      bedriftnavn: "NTNU",
+      beskrivelse: "",
+      logonavn: "ntnu.jpg",
+      video: "",
+      zoomlink: "https://uio.zoom.us/j/65612593008",
+      stillinger: [{ tekst: "PhD stilling innen digital etterforskning", link: "https://www.jobbnorge.no/en/available-jobs/job/190348/phd-position-in-digital-investigation" }],
+      konkurranser: [{ tekst: "", link: "" }],
+      foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
     "Simula Research Laboratory": {

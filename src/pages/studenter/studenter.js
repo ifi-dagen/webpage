@@ -8,7 +8,7 @@ const Studenter = () => {
             <div>
                 <h2>Nå er det ikke lenge før ifi’s første digitale karrieredag braker løs - og her kommer det et par tips til hvordan du kan forberede deg!</h2>
                 <br />
-                <Point> Oppdater LinkedIn CVen din</Point>
+                <Point> Oppdater LinkedIn-CVen din</Point>
                 Headhuntere og rekrutteringsbyråer bruker LinkedIn aktivt.
                 Det er ikke uvanlig at det er de som tar kontakt med deg,
                 så hvis du har en oppdatert profil vil det alene kanskje sørge for at du får jobb muligheter uten at du aktivt sender ut søknader.
