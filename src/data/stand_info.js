@@ -98,7 +98,7 @@ const stand_info =
     "Etterretningstjenesten": {
       bedriftnavn: "Etterretningstjenesten",
       beskrivelse: "",
-      logonavn: "etterretning.png",
+      logonavn: "etterrettning.png",
       video: "https://player.vimeo.com/video/460947993",
       zoomlink: "",
       stillinger: [{ tekst: "", link: "" }],
