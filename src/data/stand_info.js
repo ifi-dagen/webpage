@@ -35,7 +35,7 @@ const stand_info =
       zoomlink: "https://uio.zoom.us/j/64991238181",
       poption: "poption.events/8146",
       stillinger: [{ tekst: "Software Engineering - Summer Internship 2021", link: "https://apply.workable.com/cognite/j/4E66D4E107/" }],
-      konkurranser: [{ tekst: "", link: "" }],
+      konkurranser: [{ tekst: "See more videos on youtube", link: "https://www.youtube.com/c/cognite" },{ tekst: "Follow us on instagram!", link: "https://www.instagram.com/cognitedata" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
@@ -77,7 +77,7 @@ const stand_info =
       bedriftnavn: "Etterretningstjenesten",
       beskrivelse: "",
       logonavn: "icon_1.png",
-      video: "",
+      video: "https://player.vimeo.com/video/460947993",
       zoomlink: "",
       stillinger: [{ tekst: "", link: "" }],
       konkurranser: [{ tekst: "", link: "" }],
@@ -245,7 +245,7 @@ const stand_info =
       bedriftnavn: "Sopra Steria",
       beskrivelse: "Sopra Steria er et ledende internasjonalt IT-konsulentselskap og en ende-til-ende leverandør innen digitalisering. Dette betyr at du har mange karrieremuligheter hos oss! Vi tilbyr tjenester innfor alt fra forretningsrådgivning, systemutvikling og design til infrastruktur, sikkerhet og drift. Vi ble i år kåret til Norges beste arbeidsplass for fjerde år på rad og det sier derfor seg selv at vi er opptatt av at de som jobber hos oss skal ha det bra! Det som kjennetegner arbeidshverdagen vår er raskt tempo, spennende prosjekter, stort faglig engasjement, mange sosiale og faglige sammenkomster og en utbredt delingskultur. Vi går sammen for å nå lenger!\nFor nyutdannede tilbyr vi vårt graduate-program. Det vil si at du blir fast ansatt fra dag én, men deltar i tillegg på et opplæringsprogram som går ved siden av jobben din som konsulent. Du lærer hvordan vi jobber og tenker i Sopra Steria, får innføring i grunnleggende konsulentferdigheter og muligheten til å ta en rekke kurs og sertifiseringer innen ulike fagområder. Samtidig jobber du tett med kunder på ett eller flere prosjekter. Gjennom de faglige og sosiale samlingene vil du bli kjent med de andre graduatsene på tvers av de ulike fagområdene og få et nettverk som vil være verdifullt gjennom hele karrieren din. For et innblikk i hvordan hverdagen er for våre graduates, ta en titt på Facebook-kontoen vår eller vår instagram-konto som styres av våre graduates.\nFor 4. årsstudenter tilbyr vi 6 ukers sommerjobb, hvor du får muligheten til å teste ut livet som konsulent og se hvordan det er å jobbe hos oss.\nHovedkontoret vårt befinner seg med flott utsikt på toppen av Posthuset, midt i Oslo sentrum, men vi har også kontorer i Trondheim og Stavanger. Husk å merke deg søknadsfristene våre som er 1. oktober for graduate-stillingene og 20. oktober for våre sommerjobber. Vi gleder oss til å bli bedre kjent med deg på dagen@ifi! Spør oss på stand om det er noe du lurer på, eller bare ønsker å bli enda bedre kjent med oss.\n  ",
       logonavn: "sopraSteria.png",
-      video: "",
+      video: "https://player.vimeo.com/video/460936299",
       zoomlink: "https://uio.zoom.us/j/63008584930",
       stillinger: [
         { tekst: "Nyutdannet IT/Tech", link: " https://soprasteria.recman.no/job.php?job_id=161367" },
@@ -536,21 +536,21 @@ const stand_info =
       tags: ["", ""]
     },
     "NRK": {
-      bedriftnavn: "",
-      beskrivelse: "Sjekker du været på Yr, sett Parterapi på NRK TV eller lest de siste nyhetene om korona på nrk.no? Vi trenger flere flinke utviklere for å hjelpe oss med å videreutvikle de tekniske løsningene som gjør alt dette mulig. For innholdet vårt får ikke noe verdi før det treffer brukerne.",
+      bedriftnavn: "NRK",
+      beskrivelse: "NRK er hele Norges rikskringkaster. Vi sørger for at alle i Norge får tilgang på god og sann informasjon. NRK skal også samle nasjonen. Våre tjenester og tilbud skal føre oss tettere sammen. Slik at vi kan lære av hverandre og om hverandre.\n  \nDu har sikkert sett Parterapi på NRK TV, sjekker været på Yr, eller lest de siste nyhetene om korona på nrk.no?  Vi trenger flere flinke utviklere og designere for å hjelpe oss med å videreutvikle digitale tjenestene våre som brukes av flere tusen nordmenn hver dag. For innholdet vårt får ikke noe verdi før det treffer brukerne.",
       logonavn: "nrk.jpg",
       video: "https://player.vimeo.com/video/460265259",
       zoomlink: "https://uio.zoom.us/j/61255855111",
       stillinger: [{ tekst: "", link: "" }],
-      konkurranser: [{ tekst: "Sjekk ut NRK Beta!", link: "https://nrkbeta.no/kategori/dev/" }],
+      konkurranser: [{ tekst: "Les bloggen vår her", link: "https://nrkbeta.no/kategori/dev/" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
     "Norsk Regnesentral": {
       bedriftnavn: "Norsk Regnesentral",
-      beskrivelse: "",
+      beskrivelse: "Norsk Regnesentral er et forskningsinstitutt som utfører oppdragsforskning.\n  \nMed maskinlæring og statistisk modellering gir vi kunder innovative løsninger på reelle problemer, blant annet innen felt som språkteknologi, bildeanalyse og IKT.\n  \nVi jobber med anvendte problemstillinger, for eksempel å modellere spredning av covid-19, finne kreft i røntgenbilder, telle fisk fra akustikkdata, anonymisere pasientjournaler, og kartlegging av snø, flom og vegetasjon fra satellittdata.\n  \nVi lager også fotball-podcast og regner ut hvem som vinner årets eliteserie.",
       logonavn: "Norsk_regnesentral.png",
-      video: "",
+      video: "https://youtu.be/cTMvHKZkyo",
       zoomlink: "https://uio.zoom.us/j/63018286669",
       stillinger: [{ tekst: "", link: "" }],
       konkurranser: [{ tekst: "", link: "" }],
