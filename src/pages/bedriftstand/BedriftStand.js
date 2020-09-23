@@ -9,7 +9,7 @@ import live_time from '../../data/time.js'
 import ReactPlayer from 'react-player/youtube';
 
 const formatedText = (text) => {
-  return text.split("\n").map((item, index) => {if(item=="  "){return(<p key={index} ><br/></p>)};return (<p key={index} >{item}</p>)})
+  return text.split("\n").map((item, index) => {if(item==="  "){return(<p key={index} ><br/></p>)};return (<p key={index} >{item}</p>)})
 }
 
 //tar inn lister av typen [ {tekst: "", link: ""}, ... ]
