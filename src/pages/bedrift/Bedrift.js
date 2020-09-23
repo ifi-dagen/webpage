@@ -12,19 +12,23 @@ const Bedrift = () => {
                 Årets karrieredag blir for første gang arrangert digitalt,
                 og vi synes det er veldig kult at så mange bedrifter er påmeldt.
             </h1>
-            <p>Kl 11-13 vises standområdet på forsiden. Iløpet av dette tidsrommet vil de kunne besøke zoom-standen deres.</p>
-            <p>På bedriftsiden deres vil studentene kunne se en introduksjonsvideo, lese en beskrivelse av bedriften deres og se hvilke stillingsannonser dere har ute. Har dere konkurranser eller ønsker å legge til noe mer på denne siden, eller har ønsker om endring har vi noe fleksibilitet til å legge til dette på siden. </p>
+            <p>Kl 11-13 vises standområdet på forsiden. Iløpet av dette tidsrommet vil studenter kunne besøke dere på zoom-standen deres.</p>
+            <p> På bedriftsiden kan studentene bli bedre kjent med dere.
+            Her kan dere legge ut informasjon om hvem dere er og hvilke stillinger dere utlyser.
+            Dere kan også legge inn informasjon om eventuelle konkurranser dere holder eller linke til hjemmesiden deres.
+            </p>
+            <br />
             <div className="kontaktinfo">
                 <h2>Trenger dere hjelp under arrangementet?</h2>
                 <p>Problemer med zoom-stand? Kontakt Burhan.</p>
-                <p>Vil dere endre noe med standoversikt eller bedriftsiden? Kontakt Kari.</p>
+                <p>Lurer dere på noe angående bedriftsiden? Kontakt Kari.</p>
                 <p>Spørsmål om foredrag går til Henrik.</p>
                 <p>Ved generelle spørsmål kontakter dere Lise.</p>
                 <div className="styret container-fluid">
-                    <Visitkort rolle="TEKNISK ANSVARLIG" epost="teknisk" navn="Kari Stamnes" />
-                    <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø" />
-                    <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik" />
                     <Visitkort rolle="FUNKSJONÆR ANSVARLIG" epost="funkansvarlig" navn="Burhan Sarfraz" />
+                    <Visitkort rolle="TEKNISK ANSVARLIG" epost="teknisk" navn="Kari Stamnes" />
+                    <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik" />
+                    <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø" />
                 </div>
             </div>
 

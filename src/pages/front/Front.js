@@ -14,7 +14,7 @@ const Front = () => {
   return (
     <Div>
       <Container>
-        <h1>Den største bedriftsdagen for IT studenter i Oslo.</h1>
+        <h1>Den største bedriftsdagen for IT-studenter i Oslo.</h1>
         <h3>Kom dere på nett og få jobb på dagen.</h3>
         <DateParagraph />
       </Container>
