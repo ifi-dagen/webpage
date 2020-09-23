@@ -48,7 +48,7 @@ class Program extends Component {
           const event_id = "#" + hendinger.id;
           return (
             <div className="event-detail" key={index}>
-              <a className="programLink" href={event_id}><strong className="starttid">{klokkeslett(hendinger.start)} </strong><div>{hendinger.foredragsholder? hendinger.foredragsholder+": ":""}{hendinger.tittel}</div></a>
+              <a className="programLink" href={event_id}><strong className="starttid">{klokkeslett(hendinger.start)} </strong><div>{hendinger.foredragsholder ? hendinger.foredragsholder + ": " : ""}{hendinger.tittel}</div></a>
             </div>)
         })}
       </div>)
@@ -64,8 +64,8 @@ class Program extends Component {
           </HendingsBilde>
           <HendingInfo>
             <h3>{hendinger.tittel}</h3>
-            <h6>{klokkeslett(hendinger.start)}-{klokkeslett(hendinger.slutt)}{hendinger.foredragsholder?", "+hendinger.foredragsholder:""}</h6>
-            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link} target="_blank" rel="noopener noreferrer">{hendinger.alt_link?hendinger.alt_link:"delta her!"}</a></h4>}
+            <h6>{klokkeslett(hendinger.start)}-{klokkeslett(hendinger.slutt)}{hendinger.foredragsholder ? ", " + hendinger.foredragsholder : ""}</h6>
+            {hendinger.link === "" ? <h4>Link kommer!</h4> : <h4><a href={hendinger.link} target="_blank" rel="noopener noreferrer">{hendinger.alt_link ? hendinger.alt_link : "delta her!"}</a></h4>}
             <div>{formatedText(hendinger.beskrivelse)}</div>
           </HendingInfo>
         </HendingBeholder>)
@@ -81,7 +81,7 @@ class Program extends Component {
 
         <div className="program">
           {this.programfilter()}
-          <Paragraph><a href="https://www.poption.com/speedintervju/dagenatifi-2020">Speedintervju påmelding via poption frem til kl 14:00 på fredag</a></Paragraph>
+          <Paragraph><a href="https://www.poption.com/speedintervju/dagenatifi-2020">Speedintervju-påmelding via Poption frem til kl 14:00 på fredag</a></Paragraph>
           {this.hendelser(this.state.filterDag)}
         </div>
 
