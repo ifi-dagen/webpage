@@ -51,7 +51,7 @@ class Routes extends Component {
         <Route
           exact
           path="/stander/:dag/:bedrift"
-          render={prop => <BedriftStand {...prop} store={this.props.store} testmode={true} />}
+          render={prop => <BedriftStand {...prop} store={this.props.store} testmode={false} />}
         />
         <Route
           render={prop => <Error {...prop} store={this.props.store} />}

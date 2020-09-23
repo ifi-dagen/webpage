@@ -9,35 +9,35 @@ const roller = {
         epost: "nestleder"
     },
     bedrift: {
-        tittel: "Bedrifts Ansvarlig",
+        tittel: "Bedriftsansvarlig",
         epost: "bedrift"
     },
     okonomi: {
-        tittel: "Økonomi Ansvarlig",
+        tittel: "Økonomiansvarlig",
         epost: "okonomi"
     },
     teknisk: {
-        tittel: "Teknisk Ansvarlig",
+        tittel: "Teknisk ansvarlig",
         epost: "teknisk"
     },
     promotering: {
-        tittel: "Promoterings Ansvarlig",
+        tittel: "Promoteringsansvarlig",
         epost: "promotering"
     },
     faglig: {
-        tittel: "Faglig Ansvarlig",
+        tittel: "Faglig ansvarlig",
         epost: "faglig"
     },
     funk: {
-        tittel: "Funksjonær Ansvarlig",
+        tittel: "Funksjonæransvarlig",
         epost: "funkansvarlig"
     },
     underholdning: {
-        tittel: "Underholdning Ansvarlig",
+        tittel: "Underholdningsansvarlig",
         epost: "underholdning"
     },
     sosialt: {
-        tittel: "Sosialt Ansvarlig",
+        tittel: "Sosialansvarlig",
         epost: "sosialt"
     }
 }
