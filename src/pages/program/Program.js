@@ -80,7 +80,7 @@ class Program extends Component {
 
         <div className="program">
           {this.programfilter()}
-          <Paragraph>Speedintervju påmelding via poption frem til kl 14:00 på fredag</Paragraph>
+          <Paragraph><a href="https://www.poption.com/speedintervju/dagenatifi-2020">Speedintervju påmelding via poption frem til kl 14:00 på fredag</a></Paragraph>
           {this.hendelser(this.state.filterDag)}
         </div>
 
