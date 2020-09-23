@@ -137,26 +137,20 @@ const Container = styled.div`
 const Nav = () => {
   return (
     <NavContainer>
-      <NavButton path="/program">
-        <Link to="/program">
-          <i className="fas fa-stream"></i>
-          <br />
+      <NavButton to="/program">
+        <i className="fas fa-stream"></i>
+        <br />
         Digitalt program
-        </Link>
       </NavButton>
-      <NavButton>
-        <Link to="/for-bedrift">
-          <i className="fas fa-at"></i>
-          <br />
+      <NavButton to="/for-bedrift">
+        <i className="fas fa-at"></i>
+        <br />
           For bedrifter
-        </Link>
       </NavButton>
-      <NavButton>
-        <Link to="/studenter">
-          <i className="fas fa-user-graduate"></i>
-          <br />
+      <NavButton to="/studenter">
+        <i className="fas fa-user-graduate"></i>
+        <br />
           For studenter
-        </Link>
       </NavButton>
       <NavItem>
         <ProgramStatus compact />
@@ -177,7 +171,7 @@ const NavContainer = styled.div`
   border-radius: 1rem;
 `
 
-const NavButton = styled.a`
+const NavButton = styled(Link)`
   text-align: center;
   background-color: deepskyblue;
   padding: .8rem;
@@ -187,8 +181,11 @@ const NavButton = styled.a`
   border-radius: 1rem;
   font-size: 1.2rem;
   cursor: pointer;
-  
+  transition: 0.25s;
 
+  :hover{
+    background: dodgerblue;
+  }
   a{
     color: white;
   }
