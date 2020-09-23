@@ -30,7 +30,7 @@ class Program extends Component {
 
   programfilter = () => {
     return (<div className="programfilter">
-      <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag1 }) }}>Torsdag 24</FilterButton>
+      <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag1 }) }}>Torsdag 24.</FilterButton>
       <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag2 }) }}>Fredag 25.</FilterButton>
     </div>)
   }
@@ -55,8 +55,9 @@ class Program extends Component {
   }
 
   detaljertekort = (dag) => {
+    const filtered_events = program_info.filter((item) => { return dateString(item.start) === this.state.filterDag })
     return (<div>
-      {program_info.map((hendinger, index) => {
+      {filtered_events.map((hendinger, index) => {
         return (<HendingBeholder id={hendinger.id} key={index}>
           <HendingsBilde>
             {hendinger.bilde && <img src={require("../../img/" + hendinger.bilde)} alt={hendinger.alt_tekst} />}
@@ -64,7 +65,7 @@ class Program extends Component {
           <HendingInfo>
             <h3>{hendinger.tittel}</h3>
             <h6>{klokkeslett(hendinger.start)}-{klokkeslett(hendinger.slutt)}{hendinger.foredragsholder?", "+hendinger.foredragsholder:""}</h6>
-            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>}
+            {hendinger.link===""? <h4>Link kommer!</h4> :<h4><a href={hendinger.link} target="_blank" rel="noopener noreferrer">{hendinger.alt_link?hendinger.alt_link:"delta her!"}</a></h4>}
             <div>{formatedText(hendinger.beskrivelse)}</div>
           </HendingInfo>
         </HendingBeholder>)
@@ -80,7 +81,7 @@ class Program extends Component {
 
         <div className="program">
           {this.programfilter()}
-          <Paragraph>Speedintervju påmelding via poption frem til kl 14:00 på fredag</Paragraph>
+          <Paragraph><a href="https://www.poption.com/speedintervju/dagenatifi-2020">Speedintervju påmelding via poption frem til kl 14:00 på fredag</a></Paragraph>
           {this.hendelser(this.state.filterDag)}
         </div>
 

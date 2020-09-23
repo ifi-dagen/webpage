@@ -128,9 +128,9 @@ export default class BedriftStand extends Component {
     return (
       <div className="bedriftStandBase">
         <div className='bedriftStandInnhold'>
-          <a href="/stander">tilbake til stander<br /></a>
-          {this.props.testmode && <button onClick={(e) => this.toggle(e, !this.state.active_stand)}>(for demo)standområde er {this.state.active_stand ? "åpent" : "lukket"}</button>}
-          {this.inntrykkt(bedrift, this.state.active_stand)}
+          <a href="/#standomraade">tilbake til stander<br/></a>
+          { this.props.testmode && <button onClick={(e) => this.toggle(e,!this.state.active_stand)}>(for demo)standområde er {this.state.active_stand ? "åpent" : "lukket"}</button>}
+          {this.inntrykkt(bedrift,this.state.active_stand)}
           {this.infoBolk(bedrift)}
         </div>
       </div>

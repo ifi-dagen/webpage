@@ -1,9 +1,9 @@
 
 export const stand_time = {
   //real times:
-  start1: new Date(2020, 8, 24, 11, 0, 0, 0), //new Date(2020, 8, 24, 11, 00, 0, 0);
-  start2: new Date(2020, 8, 25, 11, 0, 0, 0), //new Date(2020, 8, 25, 11, 0, 0, 0);
-  stop: new Date(2020, 8, 25, 20, 0, 0, 0), //new Date(2020, 8, 25, 18, 0, 0, 0);
+  start1: new Date(2020, 8, 23, 18, 0, 0, 0), //new Date(2020, 8, 24, 11, 00, 0, 0);
+  start2: new Date(2020, 8, 24, 18, 0, 0, 0), //new Date(2020, 8, 25, 11, 0, 0, 0);
+  stop: new Date(2020, 8, 25, 18, 0, 0, 0), //new Date(2020, 8, 25, 18, 0, 0, 0);
 
 
   //for testing: edit the following variables as you please! commented out dates are the real ones.
