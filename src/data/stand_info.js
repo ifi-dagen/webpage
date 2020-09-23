@@ -200,7 +200,7 @@ const stand_info =
       bedriftnavn: "Posten og Bring",
       beskrivelse: "Posten og Bring har som visjon å gjøre hverdagen enklere og verden mindre, og er en av Nordens ledende aktører innen netthandel. Som trainee i hos oss får du en bratt læringskurve og stor innflytelse på egne oppgaver. Du jobber ulike steder i konsernet, og blir raskt kjent med hele verdikjeden i organisasjonen.",
       logonavn: "Posten_Norge.png",
-      video: "https://cdnapisec.kaltura.com/p/1807661/sp/180766100/embedIframeJs/uiconf_id/30995331/partner_id/1807661?iframeembed=true&playerId=kaltura_player&entry_id=1_4r4vcj49&flashvars[streamerType]=auto",
+      video: "https://player.vimeo.com/video/461027313",
       zoomlink: "https://uio.zoom.us/j/64308207221",
       stillinger: [{ tekst: "Konserntrainee i Posten og Bring 2021", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1641&ProjectId=144904&DepartmentId=18956&MediaId=5" }],
       konkurranser: [{ tekst: "", link: "" }],
