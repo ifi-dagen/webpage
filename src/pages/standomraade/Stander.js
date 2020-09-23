@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from "styled-components";
 import './stander.css';
 import stand_info from '../../data/stand_info.js'
 import Etter from './etter'
@@ -28,6 +29,35 @@ export default class Stander extends Component {
       standliste.unshift((<div key={-1}>{this.standbuttons(testmode)}</div>))
     }
     return standliste
+  }
+
+  preview_bedrifter = (dag, testmode) => {
+    /*<div className="button-card-container"
+      id={index} key={index}>
+      <a className="button-card"
+        id={index} key={index}
+        href={link}>
+        <img id={index}
+          className="button-img"
+          src={require("../../img/logoer/" + bedrift.logonavn)}
+          alt={bedrift.bedriftnavn} />
+      </a>
+    </div>*/
+    const previews = Object.values(stand_info[dag]).map((bedrift, index) => {
+      return (
+          <PreviewContainer key={index}>
+            <PreviewCard>
+              <PreviewImg id={index}
+                src={require("../../img/logoer/" + bedrift.logonavn)}
+                alt={bedrift.bedriftnavn} />
+            </PreviewCard>
+          </PreviewContainer>
+        )
+      })
+      if(testmode){
+        previews.unshift((<div key={-1}>{this.standbuttons(testmode)}</div>))
+      }
+    return previews;
   }
 
   delayUpdate = (newState, timeout) => {
@@ -82,16 +112,17 @@ export default class Stander extends Component {
     switch (this.state.dag) {
       case "før":
         if (this.props.forside) {
-          return (<div></div>);
+          return (<div>{this.preview_bedrifter("dag1")}</div>);
         }
         return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"} id="standomraade">
-          {this.standbuttons(testmode)}
+          {this.preview_bedrifter("dag1", testmode)}
         </div>)
       case "dag1":
         return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"} id="standomraade">
           <h2>Besøk bedriftene her!</h2>
           <div className="standbase">
           {this.stander("dag1", testmode)}
+          {this.preview_bedrifter("dag2")}
           </div>
         </div>)
       case "dag2":
@@ -110,3 +141,37 @@ export default class Stander extends Component {
     }
   }
 }
+
+
+const PreviewContainer = styled.div`
+  display: grid;
+  min-width: 0;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  background-color: white;
+`;
+
+const PreviewCard = styled.div`
+  border: none;
+  height: 200px;
+  width: 200px;
+  padding: 0.5em;
+  background: #ffffff;
+  transition: 0.3s;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, auto));
+  box-shadow: inset 0 0 0 1000px rgba(44,164,255,.2);
+  }
+`;
+
+const PreviewImg = styled.img`
+  width: auto;
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  align-content: center;
+  display: block;
+  box-shadow: inset 0 0 0 1000px rgba(44,164,255,.2);
+
+`;

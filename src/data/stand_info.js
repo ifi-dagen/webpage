@@ -541,7 +541,7 @@ const stand_info =
       bedriftnavn: "Norsk Regnesentral",
       beskrivelse: "Norsk Regnesentral er et forskningsinstitutt som utfører oppdragsforskning.\n  \nMed maskinlæring og statistisk modellering gir vi kunder innovative løsninger på reelle problemer, blant annet innen felt som språkteknologi, bildeanalyse og IKT.\n  \nVi jobber med anvendte problemstillinger, for eksempel å modellere spredning av covid-19, finne kreft i røntgenbilder, telle fisk fra akustikkdata, anonymisere pasientjournaler, og kartlegging av snø, flom og vegetasjon fra satellittdata.\n  \nVi lager også fotball-podcast og regner ut hvem som vinner årets eliteserie.",
       logonavn: "Norsk_regnesentral.png",
-      video: "https://youtu.be/cTMvHKZkyo",
+      video: "https://www.youtube.com/embed/cTMvHKZkyoE",
       zoomlink: "https://uio.zoom.us/j/63018286669",
       stillinger: [{ tekst: "", link: "" }],
       konkurranser: [{ tekst: "", link: "" }],
