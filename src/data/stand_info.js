@@ -101,7 +101,7 @@ const stand_info =
       logonavn: "etterrettning.png",
       video: "https://player.vimeo.com/video/460947993",
       zoomlink: "",
-      stillinger: [{ tekst: "", link: "" }],
+      stillinger: [{ tekst: "Interessemelding - studenter 2020", link: "https://99007.webcruiter.no/Main/Recruit/Public/4286321949?link_source_id=0" }],
       konkurranser: [{ tekst: "", link: "" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
