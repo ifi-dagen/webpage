@@ -63,7 +63,7 @@ const program_info =
       slutt: new Date(2020, 8, dag1, 10, 30, 0, 0),
       foredragsholder: "Kripos",
       beskrivelse: "Under Karriereuka UiO har Kripos holdt en CTF, nå annonseres vinnerne!",
-      link: "https://uio.zoom.us/.../register/WN_adAC6Ap8QEKEscLLnxGITw",
+      link: "https://uio.zoom.us/webinar/register/WN_adAC6Ap8QEKEscLLnxGITw?fbclid=IwAR32ym3xFAOX0QVCTt6j4H2ZpzfAkeOIDW0uwEE7H9Gc9c7Bjbll9j1Afno",
       bilde: "",
       alt_tekst: ""
     },
