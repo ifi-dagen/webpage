@@ -378,28 +378,151 @@ const program_info =
     alt_tekst: "Dnb-logo"
 	},
 
-  {
-    id: 27,
-    tittel: "Takk for i dag",
-    type: "Annet",
-    start: new Date(2020, 8, dag2, 17, 0, 0, 0),
-    slutt: new Date(2020, 8, dag2, 17, 10, 0, 0),
-    beskrivelse: "",
-    link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
-  },
-  {
-    id: 28,
-    tittel: "Digital Quiz",
-    type: "Annet",
-    start: new Date(2020, 8, dag2, 19, 0, 0, 0),
-    slutt: new Date(2020, 8, dag2, 21, 0, 0, 0),
-    beskrivelse: "Vi avslutter dagen med å streame quiz fra escape",
-    link: "",
-    bilde: "dagen_logo.svg",
-    alt_tekst: "dagen at ifi sin logo"
-  }
-]
+    //foredragsrekke dag2
+    {
+      type: "foredrag",
+      id: 17,
+      tittel: "Digitalisering av maritime operasjoner med fokus på miljø og teknologi",
+      start: new Date(2020, 8, dag2, 13, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 13, 25, 0, 0),
+      foredragsholder: "DNV GL",
+      beskrivelse: "I denne presentasjonen vil vi i Veracity, en start-in i DNV GL ('Det norske Veritas'), fortelle om den digitale plattformen vi har utviklet og hvordan vi jobber sammen med bedriftskunder for å løse morgendagens utfordringer på miljø, sikkerhet og teknologi. \nDu får lære om hvordan vi tilfører innovasjon og nytekning til en tradisjonell industri og hvordan vi bruker IoT løsninger til å skape verdi for kunden.\nVi vil også snakke om hvordan vi organiserer autonome team i Veracity, og oppnår suksee i kundesamarbeidet.",
+      link: "",
+      bilde: "logoer/DNV_GL.png",
+      alt_tekst: "DNV GL-logo"
+    },
+    {
+      type: "foredrag",
+      id: 18,
+      tittel: "Jesper fikser jernbanen med Azure IoT og hjemmesnekret elektronikk",
+      start: new Date(2020, 8, dag2, 13, 30, 0, 0),
+      slutt: new Date(2020, 8, dag2, 13, 55, 0, 0),
+      foredragsholder: "Bouvet",
+      beskrivelse: "20 minutter er alt for kort tid for å dekke disse to teamene, men jeg skal prøve å gi dere en innblikk i hvordan det er å jobbe som IoT-konsulent i 2020.",
+      link: "",
+      bilde: "logoer/Bouvet.png",
+      alt_tekst: "bouvet-logo"
+    },
+    {
+      type: "foredrag",
+      id: 19,
+      tittel: "En motiverende introduksjon til UU",
+      start: new Date(2020, 8, dag2, 14, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 14, 25, 0, 0),
+      foredragsholder: "BEKK",
+      beskrivelse: "Trenger du en introduksjon til universell utforming, eller har du kanskje jobbet med UU og aldri fått helt grepet på det? Kanskje lurer du på hvorfor staten trer slike skrivebordsregler ned over hodet på oss?",
+      link: "",
+      bilde: "logoer/Bekk.png",
+      alt_tekst: "bekk-logo"
+    },
+    {
+      type: "foredrag",
+      id: 20,
+      tittel: "Hvordan unngå å havne på forsida av VG",
+      start: new Date(2020, 8, dag2, 14, 30, 0, 0),
+      slutt: new Date(2020, 8, dag2, 14, 55, 0, 0),
+      foredragsholder: "KANTEGA",
+      beskrivelse: "Tenk deg at du kommer inn i et team som har tilgang på folks ekte persondata. Du har selvfølgelig hørt om GDPR og vet at disse dataene ikke må komme på avveie. Men hvilket ansvar har akkurat du for å sørge for at det ikke skjer? Hva må du huske på for å unngå å havne på forsida til VG? Denne presentasjonen gir en oversikt over ditt ansvar relatert til sikkerhet og andre aspekter, og den gir en del konkrete tips og råd om hva du bør gjøre.",
+      link: "",
+      bilde: "logoer/Kantega.png",
+      alt_tekst: "Kantega-logo"
+    },
+    {
+      type: "foredrag",
+      id: 21,
+      tittel: "Hvordan designe produkter som ruler verden",
+      start: new Date(2020, 8, dag2, 15, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 15, 25, 0, 0),
+      foredragsholder: "Iterate",
+      beskrivelse: "Når vi ønsker å bli gode på innovasjon og produktutvikling lærer vi mye om markedseksperimentering, brukerreise, interaksjonsdesign, visuelt design og enkle forretningsmodeller (som f.eks SaaS). Men de virkelig store produktene gjør mer enn dette. De bygger inn mekanismer som får produktet inn i hyperrask vekst, som over tid gir stor utbredelse og en solid, langvarig global markedsposisjon. Vi ser nærmere på 'the secret sauce', som tar oss fra produkt med høy brukerverdi, til teknologiselskap med global utbredelse.",
+      link: "",
+      bilde: "logoer/iterate.png",
+      alt_tekst: "iterate-logo"
+    },
+    {
+      type: "foredrag",
+      id: 22,
+      tittel: "Bildegjennkjenning med dyp læring",
+      start: new Date(2020, 8, dag2, 15, 30, 0, 0),
+      slutt: new Date(2020, 8, dag2, 15, 55, 0, 0),
+      foredragsholder: "Norsk Regnesentral",
+      beskrivelse: "Dyp læring er den viktigste metoden bak det vi kaller kunstig intelligens. Hva er dyp læring? Hvordan virker denne teknologien og hva kan man få til ved å bruke dette til bildegjenkjenning?",
+      link: "",
+      bilde: "logoer/Norsk_regnesentral.png",
+      alt_tekst: "Norsk Regnesentral-logo"
+    },
+    {
+      type: "foredrag",
+      id: 23,
+      tittel: "Hvordan maskinlæring kan brukes til å sikre finansieringen av velferdssamfunnet",
+      start: new Date(2020, 8, dag2, 16, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 16, 25, 0, 0),
+      foredragsholder: "Skatteetaten",
+      beskrivelse: "I Skatteetaten jobber vi med alt fra å kreve inn skatter og avgifter til å ha ansvaret for et oppdatert folkeregister. Som et av Norges største IT-miljøer liker vi å ligge i front når det kommer til ny teknologi – det til tross våre statlige gener!\n\nVi ønsker å gi dere en introduksjon til hvordan vi i Skatteetaten bruker maskinlæring til å gjøre det så enkelt som mulig å gjøre rett, og til å sikre finansiering av velferdssamfunnet.",
+      link: "",
+      bilde: "logoer/Skatteetaten.png",
+      alt_tekst: "Skatteetaten-logo"
+    },
+    {
+      type: "foredrag",
+      id: 24,
+      tittel: "Smittestopp: apputvikling i koronaens tidsalder",
+      start: new Date(2020, 8, dag2, 16, 30, 0, 0),
+      slutt: new Date(2020, 8, dag2, 16, 55, 0, 0),
+      foredragsholder: "Simula",
+      beskrivelse: "Kyrre Lekve, Deputy Managing Director ved Simula Research Laboratory, forteller om utviklingen av Smittestopp-appen. Han vil blant annet snakke om tekniske utfordringer og løsninger, forskjellen på kontaktsporing mellom individer og sporing av epidemien på samfunnsnivå, samt hensyn til personvern.\nForedraget vil være av interesse for både bachelor- og masterstudenter, der både tekniske og samfunnsmessige aspekter blir belyst.",
+      link: "",
+      bilde: "logoer/simula.png",
+      alt_tekst: "simula-logo"
+    },
+    //workshop/parallelle eventer
+    {
+      type: "workshop",
+      id: 25,
+      tittel: "Sikkerhetstesting med Deloitte",
+      start: new Date(2020, 8, dag2, 13, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 15, 0, 0, 0),
+      foredragsholder: "DELOITTE",
+      beskrivelse: "Workshopen vil inkludere praktiske eksempler og demoer av ulike metoder for sikkerhetstesting. Demonene vil ha en varighet på mellom 5, 10, 15, 20 minutter. Eksempler på demoer som kan være aktuelle er:\n-	Web\n-	Wi-Fi\n-	Card cloning\n-	USB\n-	Lock picking\n-	Intrusion detection\n-	Threat Intelligence\n-	OSINT\n-	Social Engineering\n-	Red teaming.\nHvilke demoer som blir aktuelle vil bestemmes nærmere.\nSom et avbrekk fra de ulike demoene vil vi sette opp ulike «Ask Me Anything»-sesjoner hvor studentene får mulighet til å stille oss anonyme spørsmål gjennom Menti. Eksempler på sesjoner som vi tenker vil kunne være relevant og aktuelt for studentene er:\n-	“Hi! I’m leading the Cyber Risk department at Deloitte – Ask Me Anything” #AMA\n-	“Hi! I’ve been a security consultant for 10 years, doing security assessments, red team operations, incident handling, intrusion analysis and mobile forensics – Ask Me Anything” #AMA\n-	“Hi! I’m an experienced consultant new at Deloitte – Ask Me Anything” #AMA\n-	“Hi! I’ve just started my cyber security career – Ask Me Anything” #AMA",
+      link: "",
+      bilde: "logoer/deloitte.jpg",
+      alt_tekst: "deloitte-logo"
+    },
+    {
+      type: "foredrag",
+      id: 26,
+      tittel: "De store teknologibedriftenes hemmelige verktøykasse",
+      start: new Date(2020, 8, dag2, 15, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 15, 25, 0, 0),
+      foredragsholder: "DNB",
+      beskrivelse: "Vanligvis består et team av 6 - 10 personer. Hvordan lager man da én nettside når man er flere hundre utviklere? Vi tar en titt i verktøykassa til de største bedriftene, og ser på hvordan arkitekturen kan se ut, hvordan de jobber og hva slags verktøy de bruker. Kort sagt, hvordan de får alt til å henge sammen, og hvordan vi har valgt å løse det i DNB.",
+      link: "",
+      bilde: "dnb_sjogronn.png",
+      alt_tekst: "Dnb-logo"
+    },
+
+    {
+      id: 27,
+      tittel: "Takk for i dag",
+      type: "Annet",
+      start: new Date(2020, 8, dag2, 17, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 17, 10, 0, 0),
+      beskrivelse: "",
+      link: "",
+      bilde: "dagen_logo.svg",
+      alt_tekst: "dagen at ifi sin logo"
+    },
+    {
+      id: 28,
+      tittel: "Digital Quiz",
+      type: "Annet",
+      start: new Date(2020, 8, dag2, 19, 0, 0, 0),
+      slutt: new Date(2020, 8, dag2, 21, 0, 0, 0),
+      beskrivelse: "Vi avslutter dagen med å streame quiz fra escape",
+      link: "",
+      bilde: "dagen_logo.svg",
+      alt_tekst: "dagen at ifi sin logo"
+    }
+  ]
 
 export default program_info;

@@ -107,7 +107,7 @@ export default class BedriftStand extends Component {
         </div>
       } else {
         return <div id='videoContainer'>
-          <iframe title="StandVideo" width="640" height="360" src={bedrift.video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe title="video" width="640" height="360" src={bedrift.video} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           <a id="videolink" href={bedrift.video} >Se video her</a>
         </div>
       }
