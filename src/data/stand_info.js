@@ -4,6 +4,39 @@
 const stand_info =
 {
   "dag1": {
+    "DNB": {
+      bedriftnavn: "DNB",
+      beskrivelse: "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+      logonavn: "dnb_sjogronn.png",
+      video: "https://player.vimeo.com/video/461044850",
+      zoomlink: "https://uio.zoom.us/j/61219354345",
+      stillinger: [{ tekst: "Treasury", link: "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/" }, { tekst: "Corporate", link: "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-0191/614021301/" },{ tekst: "Architect greenhouse", link: "https://jobb.dnb.no/job/Oslo-Architect-Greenhouse-Program-for-IT-graduates-2021-0191/613958201/" },{ tekst: "Cyber security", link: "https://jobb.dnb.no/job/Bj%C3%B8rvika%2C-Oslo-Cyber-Security-Graduate-%282-year-program-starting-fall-2021%29-0191/608908201/" }],
+      konkurranser: [{ tekst: "", link: "" }],
+      foredrag: [{ tekst: "Event Driven Design and Architecture in DNB Emerging Technologies", link: "3" }, { tekst: "De store teknologibedriftenes hemmelige verktøykasse", link: "26" }],
+      tags: ["", ""]
+    },
+    "Forsvarets forskningsinstitutt": {
+      bedriftnavn: "Forsvarets forskningsinstitutt",
+      beskrivelse: "Forsvarets forskningsinstitutt (FFI) er et sivilt forskningsinstitutt med stor faglig bredde. Vi utvikler teknologi og kunnskap for at Norge skal ha et effektivt og relevant forsvar, et sikkert samfunn og en konkurransedyktig forsvarsindustri. \nVi har et ledende miljø innen forskning på informasjonsløsninger, kommunikasjonsløsninger og cybersikkerhet - og sammenhengen mellom disse. Vi har en stor aktivitet innen ubemannede, autonome plattformen i alle domener – under vann, på overflaten, på land og i luften. \nForskningsområdene her er blant annet kunstig intelligens, maskinsyn, signalbehandling, kybernetikk, fysikk – og informatikk. \nVi veileder studentoppgaver på alle nivåer og tilbyr sommerjobber. Søknadsfristen er 15. november for sommerjobbene.",
+      logonavn: "Ffi.png",
+      video: "https://player.vimeo.com/video/456840384",
+      zoomlink: "https://uio.zoom.us/j/63828927615",
+      stillinger: [{ tekst: "Systemutvikler", link: "https://ffi.easycruit.com/vacancy/2563889/12675?iso=no" }, { tekst: "Modellering og simulering", link: "https://ffi.easycruit.com/vacancy/2571117/12675?iso=no" }, { tekst: "Elektrooptiske/infrarøde systemer i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567621/12675?iso=no" }, { tekst: "Radiokommunikasjon i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567593/12675?iso=no" }],
+      konkurranser: [{ tekst: "", link: "" }],
+      foredrag: [{ tekst: "Norges sikreste chat", link: "6" }],
+      tags: ["", ""]
+    },
+    "Fremtind Forsikring": {
+        bedriftnavn: "Fremtind Forsikring",
+        beskrivelse: "Sparebank 1 og DNB har gått sammen om å bygge et forsikringsselskap som skal kjennetegnes av digital innovasjon og fornyelse. Fremtind er allerede landets tredje største forsikringsselskap, og landets største med distribusjon gjennom bank. Vi er i overkant av 900 medarbeidere som hver dag jobber med å lage produkter og tjenester som betyr noe i folks liv. Sammen med bankene, kundene og partnerne tar vi nå nye steg og forbereder oss på en ny og spennende hverdag. \n  \nVil du være først kan du aldri stå stille \nJobben vi gjør er et resultat av hvem vi er. Derfor er Fremtind en dynamisk blanding av ulike fagpersoner og nytenkere som ønsker å utvikle hverandre, markedet og samfunnet vi bor i. Når vi sammen skaper et lærende tech-miljø der vi setter spørsmålstegn ved etablerte sannheter og løsninger, får vi hele tiden nye perspektiver. I jakten på svar bruker vi også deep-data, AI og annen avansert teknologi for å pushe grensene for det mulige.\n  \nHvem ser vi etter? \nVi ser etter deg som ønsker å sette studiene ut i praksis og oppleve hvordan det er å jobbe i et av Norges fremste teknologimiljøer. Du studerer interaksjonsdesign, datateknikk, informatikk, matematikk eller tilsvarende på 3. eller 4. året. Du liker å programmere i Java, Python, JavaScript el. eller å jobbe brukersentrert med interaksjonsdesign. Liker du begge deler eller har andre interesser som maskinlæring, kunstig intelligens, wireframes og prototyping, teller det også positivt. \nHva kan vi tilby deg? \nSom sommerstudent hos oss vil du være med på spennende initiativer der du får brukt kompetansen din. Du vil jobbe i et tverrfaglig team (teamleder, systemeier, designer, utviklere og testere) som kan levere på hele verdikjeden. Hvert team har selv ansvar for sin systemportefølje hvor de bestemmer oppgaver, arbeidsmetodikk og teknologi. Vårt summer internship varer i syv uker f.o.m. 14. juni t.o.m. 2. august. De første dagene vil du få en introduksjon til Fremtind, våre produkter og systemer, samt arbeidsmetodikk og teknologi.Deretter vil du gå inn i et av våre kryssfunksjonelle utviklingsteam.\n  \nI løpet av sommeren vil vi ha flere faglige og sosiale samlinger hvor du har mulighet til å blibedre kjent med oss og de andre sommerstudentene. Vi har arbeidsplass i nyoppussede ogmoderne lokaler midt i Oslo sentrum, med hyggelig kaffebar og treningsmuligheter etter jobb.\n  ",
+        logonavn: "fremtind.png",
+        video:"https://youtu.be/0hfjcRFwppM",
+        zoomlink: "https://uio.zoom.us/j/65351367949",
+        stillinger: [{tekst: "Summer Internship 2021", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=144150&DepartmentId=20575&MediaId=4630"}],
+        konkurranser: [{tekst: "", link:""}],
+        foredrag: [{tekst: "Bitt av CTF-basillen for å hindre virus", link: "4"}],
+        tags: ["",""]
+      },
     "ABB": {
       bedriftnavn: "ABB",
       beskrivelse: "ABB er et ledende globalt teknologiselskap som driver omstillingen av samfunnet og industrien for å oppnå en mer produktiv og bærekraftig fremtid. Gjennom banebrytende ingeniørkunst, der programvare koples sammen med produkter innen elektrifisering, robotisering, automatisering, motorer og omformere, skaper ABB løsninger som løfter teknologiens muligheter til nye høyder. ABBs fremgang bygger på mer enn 130 års teknologisk lederskap og drives fremover av rundt 110 000 talentfulle medarbeidere i over 100 land. www.abb.no",
@@ -62,21 +95,10 @@ const stand_info =
       tags: ["", ""]
 
     },
-    "DNB": {
-      bedriftnavn: "DNB",
-      beskrivelse: "",
-      logonavn: "dnb_sjogronn.png",
-      video: "",
-      zoomlink: "https://uio.zoom.us/j/61219354345",
-      stillinger: [{ tekst: "", link: "" }],
-      konkurranser: [{ tekst: "", link: "" }],
-      foredrag: [{ tekst: "Event Driven Design and Architecture in DNB Emerging Technologies", link: "3" }, { tekst: "De store teknologibedriftenes hemmelige verktøykasse", link: "26" }],
-      tags: ["", ""]
-    },
     "Etterretningstjenesten": {
       bedriftnavn: "Etterretningstjenesten",
       beskrivelse: "",
-      logonavn: "icon_1.png",
+      logonavn: "etterretning.png",
       video: "https://player.vimeo.com/video/460947993",
       zoomlink: "",
       stillinger: [{ tekst: "", link: "" }],
@@ -95,28 +117,6 @@ const stand_info =
       foredrag: [{ tekst: "Oppdrag kundereise - design morgendagens løsninger", link: "12" }],
       tags: ["", ""]
     },
-    "Forsvarets forskningsinstitutt": {
-      bedriftnavn: "Forsvarets forskningsinstitutt",
-      beskrivelse: "Forsvarets forskningsinstitutt (FFI) er et sivilt forskningsinstitutt med stor faglig bredde. Vi utvikler teknologi og kunnskap for at Norge skal ha et effektivt og relevant forsvar, et sikkert samfunn og en konkurransedyktig forsvarsindustri. \nVi har et ledende miljø innen forskning på informasjonsløsninger, kommunikasjonsløsninger og cybersikkerhet - og sammenhengen mellom disse. Vi har en stor aktivitet innen ubemannede, autonome plattformen i alle domener – under vann, på overflaten, på land og i luften. \nForskningsområdene her er blant annet kunstig intelligens, maskinsyn, signalbehandling, kybernetikk, fysikk – og informatikk. \nVi veileder studentoppgaver på alle nivåer og tilbyr sommerjobber. Søknadsfristen er 15. november for sommerjobbene.",
-      logonavn: "Ffi.png",
-      video: "https://player.vimeo.com/video/456840384",
-      zoomlink: "https://uio.zoom.us/j/63828927615",
-      stillinger: [{ tekst: "Systemutvikler", link: "https://ffi.easycruit.com/vacancy/2563889/12675?iso=no" }, { tekst: "Modellering og simulering", link: "https://ffi.easycruit.com/vacancy/2571117/12675?iso=no" }, { tekst: "Elektrooptiske/infrarøde systemer i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567621/12675?iso=no" }, { tekst: "Radiokommunikasjon i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567593/12675?iso=no" }],
-      konkurranser: [{ tekst: "", link: "" }],
-      foredrag: [{ tekst: "Norges sikreste chat", link: "6" }],
-      tags: ["", ""]
-    },
-    "Fremtind Forsikring": {
-        bedriftnavn: "Fremtind Forsikring",
-        beskrivelse: "Sparebank 1 og DNB har gått sammen om å bygge et forsikringsselskap som skal kjennetegnes av digital innovasjon og fornyelse. Fremtind er allerede landets tredje største forsikringsselskap, og landets største med distribusjon gjennom bank. Vi er i overkant av 900 medarbeidere som hver dag jobber med å lage produkter og tjenester som betyr noe i folks liv. Sammen med bankene, kundene og partnerne tar vi nå nye steg og forbereder oss på en ny og spennende hverdag. \n  \nVil du være først kan du aldri stå stille \nJobben vi gjør er et resultat av hvem vi er. Derfor er Fremtind en dynamisk blanding av ulike fagpersoner og nytenkere som ønsker å utvikle hverandre, markedet og samfunnet vi bor i. Når vi sammen skaper et lærende tech-miljø der vi setter spørsmålstegn ved etablerte sannheter og løsninger, får vi hele tiden nye perspektiver. I jakten på svar bruker vi også deep-data, AI og annen avansert teknologi for å pushe grensene for det mulige.\n  \nHvem ser vi etter? \nVi ser etter deg som ønsker å sette studiene ut i praksis og oppleve hvordan det er å jobbe i et av Norges fremste teknologimiljøer. Du studerer interaksjonsdesign, datateknikk, informatikk, matematikk eller tilsvarende på 3. eller 4. året. Du liker å programmere i Java, Python, JavaScript el. eller å jobbe brukersentrert med interaksjonsdesign. Liker du begge deler eller har andre interesser som maskinlæring, kunstig intelligens, wireframes og prototyping, teller det også positivt. \nHva kan vi tilby deg? \nSom sommerstudent hos oss vil du være med på spennende initiativer der du får brukt kompetansen din. Du vil jobbe i et tverrfaglig team (teamleder, systemeier, designer, utviklere og testere) som kan levere på hele verdikjeden. Hvert team har selv ansvar for sin systemportefølje hvor de bestemmer oppgaver, arbeidsmetodikk og teknologi. Vårt summer internship varer i syv uker f.o.m. 14. juni t.o.m. 2. august. De første dagene vil du få en introduksjon til Fremtind, våre produkter og systemer, samt arbeidsmetodikk og teknologi.Deretter vil du gå inn i et av våre kryssfunksjonelle utviklingsteam.\n  \nI løpet av sommeren vil vi ha flere faglige og sosiale samlinger hvor du har mulighet til å blibedre kjent med oss og de andre sommerstudentene. Vi har arbeidsplass i nyoppussede ogmoderne lokaler midt i Oslo sentrum, med hyggelig kaffebar og treningsmuligheter etter jobb.\n  ",
-        logonavn: "fremtind.png",
-        video:"https://youtu.be/0hfjcRFwppM",
-        zoomlink: "https://uio.zoom.us/j/65351367949",
-        stillinger: [{tekst: "Summer Internship 2021", link: "https://candidate.hr-manager.net/ApplicationInit.aspx?cid=1889&ProjectId=144150&DepartmentId=20575&MediaId=4630"}],
-        konkurranser: [{tekst: "", link:""}],
-        foredrag: [{tekst: "Bitt av CTF-basillen for å hindre virus", link: "4"}],
-        tags: ["",""]
-      },
     "Genus": {
       bedriftnavn: "Genus",
       beskrivelse: "Genus AS er et norsk softwareselskap som leverer en ledende low-code plattform for utvikling av virksomhetssystemer.\nGjennom visuell modellering lar plattformen deg utvikle avanserte forretningssystemer uten behov for tradisjonell programmering. Dette gir økt utviklerproduktivitet, lavere kostnader og mer fleksible og bærekraftige løsninger.\nKom innom vår digitale stand for å bli bedre kjent med oss og delta på quiz med mulighet for å vinne Sonos-høyttaler!\n5. klassinger har mulighet til å melde seg på speed-intervju. Er du interessert? Snakk med en av våre ansatte. Førstemann til mølla!",
@@ -150,7 +150,6 @@ const stand_info =
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
-
     "NAV IT": {
       bedriftnavn: "NAV IT",
       beskrivelse: "IT-avdelingen i NAV teller mer enn 750 dyktige medarbeidere, og mer enn halvparten av disse jobber med utvikling, data og design. Disse folka jobber tett sammen med jurister og de som kjenner brukerne til NAV aller best for å skape fremtidens velferdsløsninger. Dette gir ikke bare muligheten for å jobbe med løsninger som er utrolig viktig for folk, men også muligheten for å løse de virkelige utfordringene ved bruk av ny teknologi.",
@@ -184,7 +183,6 @@ const stand_info =
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
-
     "PA CONSULTING": {
       bedriftnavn: "PA CONSULTING",
       beskrivelse: "PA Consulting er et innovasjons- og transformasjonskonsulentfirma. Vi er 3 200 spesialister som jobber mot markeder og sektorer som forbruker, forsvar og sikkerhet, energi, finansielle tjenester, helse – og offentlig sektor, produksjon og transport. Våre medarbeidere er strateger, innovatører, designere, konsulenter, digitale eksperter, forskere, ingeniører og teknologer. Vi opererer globalt fra kontorer over hele Storbritannia, USA, Europa og Norden.Vi tror på oppfinnsomhetens kraft for å bygge en positiv menneskelig fremtid i en teknologidrevet verden. Når strategier, teknologier og innovasjon kolliderer, skaper vi muligheter fra kompleksitet. Våre forskjellige team av eksperter kombinerer nytenking og banebrytende bruk av teknologier for å komme videre, raskere",
@@ -295,7 +293,17 @@ const stand_info =
     }
   },
   "dag2": {
-
+    "DNB": {
+      bedriftnavn: "DNB",
+      beskrivelse: "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+      logonavn: "dnb_sjogronn.png",
+      video: "https://player.vimeo.com/video/461044850",
+      zoomlink: "https://uio.zoom.us/j/61219354345",
+      stillinger: [{ tekst: "Treasury", link: "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/" }, { tekst: "Corporate", link: "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-0191/614021301/" },{ tekst: "Architect greenhouse", link: "https://jobb.dnb.no/job/Oslo-Architect-Greenhouse-Program-for-IT-graduates-2021-0191/613958201/" },{ tekst: "Cyber security", link: "https://jobb.dnb.no/job/Bj%C3%B8rvika%2C-Oslo-Cyber-Security-Graduate-%282-year-program-starting-fall-2021%29-0191/608908201/" }],
+      konkurranser: [{ tekst: "", link: "" }],
+      foredrag: [{ tekst: "Event Driven Design and Architecture in DNB Emerging Technologies", link: "3" }, { tekst: "De store teknologibedriftenes hemmelige verktøykasse", link: "26" }],
+      tags: ["", ""]
+    },
     "Bekk": {
       bedriftnavn: "Bekk",
       beskrivelse: "Bekk er et norsk selskap som lykkes på grunn av mennesker som brenner for faget sitt. Vi jobber med strategi, design og teknologi og tror på tverrfaglige team. Hos oss får du muligheten til å utvikle løsninger som hjelper bedrifter med å nå sine mål innen digitalisering og nyskaping.\nLyst til å jobbe i Bekk?\nHovedrunden med rekruttering til fast jobb og sommerjobb er om høsten, men vi er alltid åpne for søknader fra de rette kandidatene!",
@@ -305,6 +313,17 @@ const stand_info =
       stillinger: [{ tekst: "Søk hos oss", link: "https://bekk.no/jobb" }],
       konkurranser: [{ tekst: "", link: "" }],
       foredrag: [{ tekst: "En motiverende introduksjon til UU", link: "19" }],
+      tags: ["", ""]
+    },
+    "Kantega": {
+      bedriftnavn: "Kantega",
+      beskrivelse: "Kantega er et IT-selskap med rundt 165 stolte medarbeidere, i Oslo, Trondheim og Bergen. Vi eier vårt eget selskap. Det gjør noe med oss og forholdet til kundene våre og løsningene vi lager: Fantastiske IT-løsninger, de som forbedrer livene til hver av oss.",
+      logonavn: "Kantega.png",
+      video: "https://www.youtube.com/watch?v=ocwnns57cYQ&t=1s",
+      zoomlink: "https://uio.zoom.us/j/67050827543",
+      stillinger: [{ tekst: "Søk sommerjobb hos oss", link: "https://sommerjobb.kantega.no/jobs/929530-spennende-sommerjobb-i-tverrfaglig-team" }],
+      konkurranser: [{ tekst: "Delta i vår konkurranse og vinn flotte premier", link: "https://www.kantega.no/dagen-ifi-2020" }],
+      foredrag: [{ tekst: "Hvordan unngå å havne på forsida av VG", link: "20" }],
       tags: ["", ""]
     },
     "Bouvet": {
@@ -406,17 +425,6 @@ const stand_info =
       foredrag: [{ tekst: "Sikkerhetstesting med Deloitte", link: "25" }],
       tags: ["", ""]
     },
-    "DNB": {
-      bedriftnavn: "DNB",
-      beskrivelse: "",
-      logonavn: "dnb_sjogronn.png",
-      video: "",
-      zoomlink: "https://uio.zoom.us/j/65905448083",
-      stillinger: [{ tekst: "", link: "" }],
-      konkurranser: [{ tekst: "", link: "" }],
-      foredrag: [{ tekst: "", link: "" }],
-      tags: ["", ""]
-    },
     "DNV GL": {
       bedriftnavn: "DNV GL",
       beskrivelse: "DNV GL er et globalt selskap som jobber med kvalitetssikring og risikohåndtering med formål om å sikre liv, verdier og miljø. Det mange ikke vet, er at hos oss jobber over 1000 mennesker innenfor ulike IT-områder og vi er et av Norges største softwarehus.\nVi har et kontinuerlig behov for påfyll av mennesker og kompetanse. Hos oss kan du jobbe med noen av landets fremste eksperter ved din side i tverrfaglige team, og du har muligheten til å fordype deg innenfor dine faglige interesseområder.\nHos oss kombinerer vi teknisk, digital og bransjekompetanse for å hjelpe selskaper med å håndtere sine mest kritiske risikoer, demonstrere overholdelse av regelverk og styrke beslutninger og handlinger.\nHvis du liker å være med i prosjekter fra idé til realisering, så tror vi du kommer til å trives hos oss.",
@@ -491,17 +499,6 @@ const stand_info =
       stillinger: [{ tekst: "se her", link: "www.iter.at/jobs" }],
       konkurranser: [{ tekst: "lek med logoen vår", link: "https://logo.iterate.no/" }],
       foredrag: [{ tekst: "Hvordan designe produkter som ruler verden", link: "21" }],
-      tags: ["", ""]
-    },
-    "Kantega": {
-      bedriftnavn: "Kantega",
-      beskrivelse: "Kantega er et IT-selskap med rundt 165 stolte medarbeidere, i Oslo, Trondheim og Bergen. Vi eier vårt eget selskap. Det gjør noe med oss og forholdet til kundene våre og løsningene vi lager: Fantastiske IT-løsninger, de som forbedrer livene til hver av oss.",
-      logonavn: "Kantega.png",
-      video: "https://www.youtube.com/watch?v=ocwnns57cYQ&t=1s",
-      zoomlink: "https://uio.zoom.us/j/67050827543",
-      stillinger: [{ tekst: "Søk sommerjobb hos oss", link: "https://sommerjobb.kantega.no/jobs/929530-spennende-sommerjobb-i-tverrfaglig-team" }],
-      konkurranser: [{ tekst: "Delta i vår konkurranse og vinn flotte premier", link: "https://www.kantega.no/dagen-ifi-2020" }],
-      foredrag: [{ tekst: "Hvordan unngå å havne på forsida av VG", link: "20" }],
       tags: ["", ""]
     },
     "Knowit": {
