@@ -527,7 +527,7 @@ const stand_info =
       tags: ["", ""]
     },
     "NRK": {
-      bedriftnavn: "",
+      bedriftnavn: "Nrk",
       beskrivelse: "Sjekker du været på Yr, sett Parterapi på NRK TV eller lest de siste nyhetene om korona på nrk.no? Vi trenger flere flinke utviklere for å hjelpe oss med å videreutvikle de tekniske løsningene som gjør alt dette mulig. For innholdet vårt får ikke noe verdi før det treffer brukerne.",
       logonavn: "nrk.jpg",
       video: "https://player.vimeo.com/video/460265259",

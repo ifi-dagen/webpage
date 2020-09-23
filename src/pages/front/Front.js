@@ -15,7 +15,7 @@ const Front = () => {
     <Div>
       <Container>
         <h1>Den største bedriftsdagen for IT studenter i Oslo.</h1>
-        <h3>Verden blir aldri den samme igjen, kom dere på nett og få jobb på Dagen.</h3>
+        <h3>Kom dere på nett og få jobb på dagen.</h3>
         <DateParagraph />
       </Container>
 
@@ -48,7 +48,7 @@ const DateParagraph = () => {
 
   return (
     <Paragraph>
-      <i className="fas fa-calendar"></i> 24 <i className="fas fa-long-arrow-alt-right"></i> 25 September
+      <i className="fas fa-calendar"></i> 24. <i className="fas fa-long-arrow-alt-right"></i> 25. September
     </Paragraph>
   )
 
@@ -137,18 +137,18 @@ const Container = styled.div`
 const Nav = () => {
   return (
     <NavContainer>
-      <NavButton>
+      <NavButton path="/program">
         <Link to="/program">
           <i className="fas fa-stream"></i>
           <br />
-        Digitalt Program
+        Digitalt program
         </Link>
       </NavButton>
       <NavButton>
         <Link to="/for-bedrift">
           <i className="fas fa-at"></i>
           <br />
-          For Bedrifter
+          For bedrifter
         </Link>
       </NavButton>
       <NavButton>
@@ -177,7 +177,7 @@ const NavContainer = styled.div`
   border-radius: 1rem;
 `
 
-const NavButton = styled.div`
+const NavButton = styled.a`
   text-align: center;
   background-color: deepskyblue;
   padding: .8rem;
@@ -186,6 +186,8 @@ const NavButton = styled.div`
   font-weight: bold;
   border-radius: 1rem;
   font-size: 1.2rem;
+  cursor: pointer;
+  
 
   a{
     color: white;
