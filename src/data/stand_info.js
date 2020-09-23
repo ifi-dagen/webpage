@@ -77,7 +77,7 @@ const stand_info =
       bedriftnavn: "Etterretningstjenesten",
       beskrivelse: "",
       logonavn: "icon_1.png",
-      video: "",
+      video: "https://player.vimeo.com/video/460947993",
       zoomlink: "https://uio.zoom.us/j/69101629823",
       stillinger: [{ tekst: "", link: "" }],
       konkurranser: [{ tekst: "", link: "" }],
