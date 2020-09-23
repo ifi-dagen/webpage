@@ -30,7 +30,7 @@ class Program extends Component {
 
   programfilter = () => {
     return (<div className="programfilter">
-      <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag1 }) }}>Torsdag 24</FilterButton>
+      <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag1 }) }}>Torsdag 24.</FilterButton>
       <FilterButton onClick={() => { this.setState({ filterDag: dateStrings.dag2 }) }}>Fredag 25.</FilterButton>
     </div>)
   }
@@ -55,8 +55,9 @@ class Program extends Component {
   }
 
   detaljertekort = (dag) => {
+    const filtered_events = program_info.filter((item) => { return dateString(item.start) === this.state.filterDag })
     return (<div>
-      {program_info.map((hendinger, index) => {
+      {filtered_events.map((hendinger, index) => {
         return (<HendingBeholder id={hendinger.id} key={index}>
           <HendingsBilde>
             {hendinger.bilde && <img src={require("../../img/" + hendinger.bilde)} alt={hendinger.alt_tekst} />}

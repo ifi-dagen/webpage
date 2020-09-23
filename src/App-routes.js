@@ -46,7 +46,7 @@ class Routes extends Component {
         <Route
           exact
           path="/stander"
-          render={prop => <Stander {...prop} store={this.props.store} testmode={false} />}
+          render={prop => <Stander {...prop} store={this.props.store} testmode={true} />}
         />
         <Route
           exact

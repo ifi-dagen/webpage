@@ -84,18 +84,18 @@ export default class Stander extends Component {
         if (this.props.forside) {
           return (<div></div>);
         }
-        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}>
+        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"} id="standomraade">
           {this.standbuttons(testmode)}
         </div>)
       case "dag1":
-        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}>
+        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"} id="standomraade">
           <h2>Besøk bedriftene her!</h2>
           <div className="standbase">
           {this.stander("dag1", testmode)}
           </div>
         </div>)
       case "dag2":
-        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}>
+        return (<div className={this.props.forside?"standOmraadeKomponent":"standbakgrunn"}id="standomraade" >
           <h2>Besøk bedriftene her!</h2>
           <div className="standbase">
           {this.stander("dag2", testmode)}
