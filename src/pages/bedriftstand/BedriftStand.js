@@ -70,7 +70,9 @@ export default class BedriftStand extends Component {
 
   infoBolk = (bedrift) => {
     return <div className="infoBolk">
-      <h1 className="bedriftnavn"> {bedrift.bedriftnavn}</h1>
+      <h1 className="bedriftnavn"> {bedrift.bedriftnavn} {bedrift.poption && !this.state.active_stand && <Link href={bedrift.poption}>
+        <Icon className="fas fa-handshake"></Icon>Gå til poption her
+              </Link>}</h1>
       <div> {bedrift.beskrivelse && formatedText(bedrift.beskrivelse)}</div>
       {listUp("Stillinger", bedrift.stillinger, "")}
       {listUp("Foredrag", bedrift.foredrag, "../../program#")}

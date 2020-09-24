@@ -168,7 +168,7 @@ const stand_info =
       logonavn: "Netcompany.png",
       video: "https://www.youtube.com/watch?v=T9e93Olxu4w",
       zoomlink: "https://uio.zoom.us/j/64930112098",
-      poption: "https://www.poption.com/speedintervju/dagenatifi-2020",
+      poption: "https://poption.events/2597",
       stillinger: [{ tekst: "Nyutdannet utvikler med oppstart 2021", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Nyutdannet-utvikler-med-oppstart-august-2021" }, { tekst: "Summer Internship 2021 Utvikler", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Summer-internship-2021---Utvikler" }, { tekst: "Summer Internship 2021 UX Designer", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Summer-internship-2021---UX-designer" }, { tekst: "Talent Network 2021", link: "https://www.netcompany.com/no/Components/Job-Positions/Student,-c-,-Talent-Network-2021" }],
       konkurranser: [{ tekst: "Følg med på Netcompany Norge sin Instagram fra kl. 11 for konkurranse!", link: "https://www.instagram.com/netcompanynorge/?hl=nb" }],
       foredrag: [{ tekst: "", link: "" }],
