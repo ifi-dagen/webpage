@@ -15,7 +15,7 @@ const Etter = () => {
 
 const Evaluering = () => {
     return (
-        <Link href="https://www.dagenatifi.no">
+        <Link href="https://forms.gle/5aAKjrjzH2yDWue1A">
             <Icon className="fas fa-heart"> </Icon>
             <br />
             Gå til evaluering
@@ -44,7 +44,7 @@ const Wrapper = styled.div`
     display: grid;
     text-align: center;
     padding: 2em;
-    
+
     h1 {
         color: black;
     }
