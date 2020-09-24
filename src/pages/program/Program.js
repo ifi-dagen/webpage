@@ -26,7 +26,7 @@ const formatedText = (text) => {
 }
 
 class Program extends Component {
-  state = { dag: "2020-08-20", filterDag: dateStrings.dag1, currentEvent: 0 }
+  state = { dag: "2020-08-25", filterDag: dateStrings.dag2, currentEvent: 0 }
 
   programfilter = () => {
     return (<div className="programfilter">
