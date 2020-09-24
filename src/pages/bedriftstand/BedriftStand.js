@@ -89,7 +89,7 @@ export default class BedriftStand extends Component {
   inntrykkt = (bedrift, activated) => {
     if (activated && bedrift.zoomlink !== "") {
       return (<div id="livelinker">
-        <Link href={bedrift.zoomlink}>
+        <Link href={bedrift.zoomlink} target="_blank" rel="noopener noreferrer">
           <Icon className="fas fa-video"></Icon>Møt oss på zoom!
                 </Link>
         {bedrift.poption && <Link href={bedrift.poption}>
