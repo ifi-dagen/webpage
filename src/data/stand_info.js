@@ -424,7 +424,7 @@ const stand_info =
       video: "https://www.youtube.com/watch?v=KiAccZSaDZQ",
       zoomlink: "https://uio.zoom.us/j/69365212546",
       stillinger: [{ tekst: "Internship", link: "https://deloitte.recman.no/job.php?job_id=162309" }, { tekst: "Cyber Risk", link: "https://deloitte.recman.no/job.php?job_id=64569" }],
-      konkurranser: [{ tekst: "", link: "" }],
+      konkurranser: [{ tekst: "Følg oss på Instagram", link: "https://www.instagram.com/deloittenorge/" }, { tekst: " og Facebook", link: "https://www.facebook.com/DeloitteNorge" }],
       foredrag: [{ tekst: "Sikkerhetstesting med Deloitte", link: "25" }],
       tags: ["", ""]
     },
@@ -456,7 +456,7 @@ const stand_info =
       video: "https://youtu.be/u8l1RmKAufk",
       zoomlink: "https://uio.zoom.us/j/68215209434",
       stillinger: [{ tekst: "Sommerprosjekt 2021 - Vil du være med og påvirke hverdagen til to millioner mennesker?", link: "https://www.finn.no/job/fulltime/ad.html?finnkode=191627679" }],
-      konkurranser: [{ tekst: "", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=crs_pPsCxEiT6G1vzBssF97l48036gFLso9f-VCs3rdUN09WSzJQUFhRWVI5WElLOUZIRE1VMjVGUC4u" }],
+      konkurranser: [{ tekst: "Vi trekker vinner av et gavekort blant de som tar en prat med oss på Zoom, og legger igjen sin e-postadresse her", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=crs_pPsCxEiT6G1vzBssF97l48036gFLso9f-VCs3rdUN09WSzJQUFhRWVI5WElLOUZIRE1VMjVGUC4u" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
@@ -545,7 +545,7 @@ const stand_info =
       video: "https://player.vimeo.com/video/460265259",
       zoomlink: "https://uio.zoom.us/j/61255855111",
       stillinger: [{ tekst: "Se ledige stillinger her", link: "https://info.nrk.no/stilling/" }],
-      konkurranser: [{ tekst: "Les bloggen vår her", link: "https://nrkbeta.no/kategori/dev/" }],
+      konkurranser: [{ tekst: "Delta i NRK sin quiz, og vinn en Chromecast Ultra!", link: "https://info.nrk.no/?s=dagen" }, { tekst: "Les bloggen vår her", link: "https://nrkbeta.no/kategori/dev/" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
