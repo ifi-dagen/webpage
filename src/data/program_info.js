@@ -190,18 +190,6 @@ const program_info =
     //workshop/parallelle eventer
     {
       type: "workshop",
-      id: 11,
-      tittel: "AVLYST: Hack my face - Javascript Course",
-      start: new Date(2020, 8, dag1, 13, 0, 0, 0),
-      slutt: new Date(2020, 8, dag1, 15, 0, 0, 0),
-      foredragsholder: "CISCO",
-      beskrivelse: "A quick intro / crash course to JavaScript.",
-      link: zoomlinkWSdag1,
-      bilde: "logoer/Cisco.png",
-      alt_tekst: "cisco-logo"
-    },
-    {
-      type: "workshop",
       id: 12,
       tittel: "Oppdrag kundereise - design morgendagens løsninger",
       start: new Date(2020, 8, dag1, 15, 0, 0, 0),
