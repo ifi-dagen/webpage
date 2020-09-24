@@ -207,7 +207,7 @@ const program_info =
       start: new Date(2020, 8, dag1, 19, 0, 0, 0),
       slutt: new Date(2020, 8, dag1, 21, 0, 0, 0),
       beskrivelse: "Vi avslutter dagen med å streame quiz fra escape",
-      link: "",
+      link: "https://uio.zoom.us/j/67263639556",
       bilde: "dagen_logo.svg",
       alt_tekst: "dagen at ifi sin logo"
     },
@@ -358,7 +358,7 @@ const program_info =
       alt_tekst: "Dnb-logo"
     },
     {
-      id: 14,
+      id: 27,
       tittel: "Digital Quiz",
       type: "Annet",
       start: new Date(2020, 8, dag2, 19, 0, 0, 0),
