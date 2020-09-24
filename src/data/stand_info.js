@@ -508,7 +508,7 @@ const stand_info =
       bedriftnavn: "Iterate",
       beskrivelse: "Iterate sin visjon er 'Enable Innovators'. Vi vet at entreprenørskap er krevende arbeid, derfor slår vi sammen gründer og ansatt. Vi vil at våre mennesker skal bruke mesteparten av energien sin på det de er unikt gode på. Hos oss veksler ansatte mellom å jobbe i oppdrag, hvor de hjelper startups og etablerte selskaper med utvikling og innovasjon, og å jobbe med egne ideer. Denne vekselvirkningen er en katalysator for kreativ galskap. Man ser hvordan verden fungerer, man får hele tiden nye ideer og man blir godt kjent med de andre byggerne rundt seg.",
       logonavn: "iterate.png",
-      video: "",
+      video: "https://www.youtube.com/watch?v=s3Dj2Vs9kUs",
       zoomlink: "https://uio.zoom.us/j/66807607788",
       stillinger: [{ tekst: "se her", link: "www.iter.at/jobs" }],
       konkurranser: [{ tekst: "lek med logoen vår", link: "https://logo.iterate.no/" }],
