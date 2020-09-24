@@ -43,7 +43,7 @@ const stand_info =
       logonavn: "ABB.png",
       video: "https://www.youtube.com/watch?v=0qxlpejvPzA",
       zoomlink: "https://uio.zoom.us/j/62278668555",
-      stillinger: [{ tekst: "", link: "" }],
+      stillinger: [{ tekst: "Se her", link: "https://new.abb.com/jobs/center#JobCountry=NO" }],
       konkurranser: [{ tekst: "Vinn en drømmedag med ABB og en treningsøkt med Tarjei Bø", link: "https://eur03.safelinks.protection.outlook.com/?url=https%3A%2F%2Fforms.abb.com%2Fform-38581%2FVinn-En-Drommedag-Hos-ABB-Og-En-Treningsokt-Med-Tarjei-Bo&data=02%7C01%7Cingrid.lyng-karlstad%40no.abb.com%7C43e243d01da34ecec39008d85bc4752a%7C372ee9e09ce04033a64ac07073a91ecd%7C0%7C0%7C637360246625009533&sdata=H7c1CjGRBxWH9Y9AMqTsm5oPDaq0xusIGYpgFWYFLG4%3D&reserved=0" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
@@ -265,7 +265,7 @@ const stand_info =
       video: "https://player.vimeo.com/video/460497205",
       zoomlink: "https://uio.zoom.us/j/68327926215",
       stillinger: [{ tekst: "summer internship 2021", link: "https://www.systek.no/summer-internship-2021" }],
-      konkurranser: [{ tekst: "bli med i konkurransen vår!", link: "https://forms.gle/pQSzSR3xB8u52Xc99" }],
+      konkurranser: [{ tekst: "bli med i konkurransen vår!", link: "https://forms.gle/pQSzSR3xB8u52Xc99" }, {tekst:"Artikkel: Sommerkonsulentene imponerte hos TechnipFMC", link: "https://www.systek.no/nyheter/sommerkonsulenter-tfmc"}],
       foredrag: [{ tekst: "Kotlin i skatteetaten, erfaringer fra fronten", link: "5" }],
       tags: ["", ""]
     },
@@ -529,7 +529,7 @@ const stand_info =
       logonavn: "nrk.jpg",
       video: "https://player.vimeo.com/video/460265259",
       zoomlink: "https://uio.zoom.us/j/61255855111",
-      stillinger: [{ tekst: "", link: "" }],
+      stillinger: [{ tekst: "Se ledige stillinger her", link: "https://info.nrk.no/stilling/" }],
       konkurranser: [{ tekst: "Les bloggen vår her", link: "https://nrkbeta.no/kategori/dev/" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
