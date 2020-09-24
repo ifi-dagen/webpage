@@ -86,7 +86,7 @@ const program_info =
       start: new Date(2020, 8, dag1, 11, 0, 0, 0),
       slutt: new Date(2020, 8, dag1, 13, 0, 0, 0),
       beskrivelse: "Kom og møt en fremtidig kollega! zoomrommene er åpne kl 11-13, men bedrift-sidene vil være åpne til kl 18",
-      link: "/#standomraadet",
+      link: "/#standomraade",
       bilde: "dagen_logo.svg",
       alt_tekst: "dagen at ifi sin logo"
     },
@@ -242,7 +242,7 @@ const program_info =
       start: new Date(2020, 8, dag2, 11, 0, 0, 0),
       slutt: new Date(2020, 8, dag2, 13, 0, 0, 0),
       beskrivelse: "Kom og møt en fremtidig kollega! zoomrommene er åpne kl 11-13, men bedrift-sidene vil være åpne til kl 18",
-      link: "/#standomraadet",
+      link: "/#standomraade",
       bilde: "dagen_logo.svg",
       alt_tekst: "dagen at ifi sin logo"
     },

@@ -90,6 +90,7 @@ export default class Stander extends Component {
       case "dag1":
         return (<div className={this.props.forside ? "standOmraadeKomponent" : "standbakgrunn"} id="standomraade">
           <h1>Besøk bedriftene her!</h1>
+            <h3><a href="https://www.poption.com/speedintervju/dagenatifi-2020">Speedintervju-påmelding via Poption frem til kl 14:00 på fredag</a></h3>
           <div className="standbase">
             {this.stander("dag1", testmode)}
           </div>

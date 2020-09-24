@@ -90,7 +90,7 @@ export default class BedriftStand extends Component {
         <Link href={bedrift.zoomlink}>
           <Icon className="fas fa-video"></Icon>Møt oss på zoom!
                 </Link>
-        {bedrift.poption && <Link href={bedrift.zoomlink}>
+        {bedrift.poption && <Link href={bedrift.poption}>
           <Icon className="fas fa-handshake"></Icon>Gå til poption her
                 </Link>}
       </div>)
