@@ -124,7 +124,7 @@ const stand_info =
       video: "https://player.vimeo.com/video/460358692",
       zoomlink: "https://uio.zoom.us/j/66585825280",
       stillinger: [{ tekst: "se her", link: "https://recruit.genus.no/" }],
-      konkurranser: [{tekst: "PS: Vi holder også bedriftspresentasjon med navet den 29. oktober. Vi ønsker å invitere dere til å se våre flotte lokaler på Lysaker etterfulgt av presentasjon og en bedre middag med mingling. Meld deg på når påmelding åpner to uker i forkant. Sjekk ut arrangementet på https://ifinavet.no/event/327", link: "https://ifinavet.no/event/327" }],
+      konkurranser: [{ tekst: "Quiz!(For tips: Spør en av våre ansatte inne i den digitale standen)", link: "https://quiz.genus.net/" }, {tekst: "PS: Vi holder også bedriftspresentasjon med navet den 29. oktober. Vi ønsker å invitere dere til å se våre flotte lokaler på Lysaker etterfulgt av presentasjon og en bedre middag med mingling. Meld deg på når påmelding åpner to uker i forkant. Sjekk ut arrangementet på https://ifinavet.no/event/327", link: "https://ifinavet.no/event/327" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
@@ -538,7 +538,7 @@ const stand_info =
       bedriftnavn: "Norsk Regnesentral",
       beskrivelse: "Norsk Regnesentral er et forskningsinstitutt som utfører oppdragsforskning.\n  \nMed maskinlæring og statistisk modellering gir vi kunder innovative løsninger på reelle problemer, blant annet innen felt som språkteknologi, bildeanalyse og IKT.\n  \nVi jobber med anvendte problemstillinger, for eksempel å modellere spredning av covid-19, finne kreft i røntgenbilder, telle fisk fra akustikkdata, anonymisere pasientjournaler, og kartlegging av snø, flom og vegetasjon fra satellittdata.\n  \nVi lager også fotball-podcast og regner ut hvem som vinner årets eliteserie.",
       logonavn: "Norsk_regnesentral.png",
-      video: "https://youtu.be/cTMvHKZkyo",
+      video: "https://www.youtube.com/embed/cTMvHKZkyoE",
       zoomlink: "https://uio.zoom.us/j/63018286669",
       stillinger: [{ tekst: "", link: "" }],
       konkurranser: [{ tekst: "", link: "" }],
