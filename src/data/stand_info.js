@@ -21,7 +21,7 @@ const stand_info =
       logonavn: "Ffi.png",
       video: "https://player.vimeo.com/video/456840384",
       zoomlink: "https://uio.zoom.us/j/63828927615",
-      stillinger: [{ tekst: "Systemutvikler", link: "https://ffi.easycruit.com/vacancy/2563889/12675?iso=no" }, { tekst: "Modellering og simulering", link: "https://ffi.easycruit.com/vacancy/2571117/12675?iso=no" }, { tekst: "Elektrooptiske/infrarøde systemer i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567621/12675?iso=no" }, { tekst: "Radiokommunikasjon i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567593/12675?iso=no" }],
+      stillinger: [{ tekst: "Heltid: Systemutvikler", link: "https://ffi.easycruit.com/vacancy/2563889/12675?iso=no" }, { tekst: "Heltid: Modellering og simulering", link: "https://ffi.easycruit.com/vacancy/2571117/12675?iso=no" }, { tekst: "Heltid: Elektrooptiske/infrarøde systemer i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567621/12675?iso=no" }, { tekst: "Heltid: Radiokommunikasjon i elektronisk krigføring", link: "https://ffi.easycruit.com/vacancy/2567593/12675?iso=no" }],
       konkurranser: [{ tekst: "", link: "" }],
       foredrag: [{ tekst: "Norges sikreste chat", link: "6" }],
       tags: ["", ""]
@@ -287,7 +287,7 @@ const stand_info =
       video: "https://youtu.be/Kb_juneSLrs",
       zoomlink: "https://uio.zoom.us/j/65147637238",
       stillinger: [{ tekst: "Found out more about Vitec, join in on our connect site to be the first to get information on available jobs at Vitec and found out who you will meet in our Zoom-room today", link: "https://www.vitecsoftware.com/globalassets/a-vitec-software-group/vitecinfo.pdf" }],
-      konkurranser: [{ tekst: "Answer a few questions about Vitec and win a gift card from Komplett worth 5000nok", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=e1R1xImDvUmIRzwO8Lnhgevb-ZXAbwxGg6vsx6QAJ7RUQkk5NURMQUI2MFFLNlNNMVE0RkxVRklFOC4u" }],
+      konkurranser: [{ tekst: "Answer a few questions about Vitec and win a gift card from Komplett worth 5000nok", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=e1R1xImDvUmIRzwO8Lnhgevb-ZXAbwxGg6vsx6QAJ7RUQkk5NURMQUI2MFFLNlNNMVE0RkxVRklFOC4u" }, {tekst: "Sjekk ut hjemmesiden vår", link: "https://www.vitecsoftware.com/"}],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     }
@@ -525,7 +525,7 @@ const stand_info =
     },
     "NRK": {
       bedriftnavn: "NRK",
-      beskrivelse: "NRK er hele Norges rikskringkaster. Vi sørger for at alle i Norge får tilgang på god og sann informasjon. NRK skal også samle nasjonen. Våre tjenester og tilbud skal føre oss tettere sammen. Slik at vi kan lære av hverandre og om hverandre.\n  \nDu har sikkert sett Parterapi på NRK TV, sjekker været på Yr, eller lest de siste nyhetene om korona på nrk.no?  Vi trenger flere flinke utviklere og designere for å hjelpe oss med å videreutvikle digitale tjenestene våre som brukes av flere tusen nordmenn hver dag. For innholdet vårt får ikke noe verdi før det treffer brukerne.",
+      beskrivelse: "NRK er hele Norges rikskringkaster. Vi sørger for at alle i Norge får tilgang på god og sann informasjon. NRK skal også samle nasjonen. Våre tjenester og tilbud skal føre oss tettere sammen. Slik at vi kan lære av hverandre og om hverandre.\n  \nDu har sikkert sett Parterapi på NRK TV, sjekker været på Yr, eller lest de siste nyhetene om korona på nrk.no?  Vi trenger flere flinke utviklere og designere for å hjelpe oss med å videreutvikle digitale tjenestene våre som brukes av flere tusen nordmenn hver dag. For innholdet vårt får ikke noe verdi før det treffer brukerne.\n  \n",
       logonavn: "nrk.jpg",
       video: "https://player.vimeo.com/video/460265259",
       zoomlink: "https://uio.zoom.us/j/61255855111",
