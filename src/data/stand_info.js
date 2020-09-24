@@ -435,7 +435,7 @@ const stand_info =
       logonavn: "DNV_GL.png",
       video: "https://www.youtube.com/watch?v=3NltygEYkug&feature=youtu.be",
       zoomlink: "https://uio.zoom.us/j/69387835357",
-      konkurranser: [{ tekst: "Det blir kahoot på standen vår 12:45, vinn bose headset!", link: "" }],
+      konkurranser: [{ tekst: "Det blir kahoot på standen vår 12:45, vinn bose headset!", link: "Legg igjen din e-postadresse hvis du ønsker å få mer informasjon om selskapet, og være med i trekning av gavekort hos Komplett!" }],
       stillinger: [{ tekst: "se her!", link: " https://www.dnvgl.no/karriere/kampanjer/digital-summer-job.html" }],
       foredrag: [{ tekst: "Digitalisering av maritime operasjoner med fokus på miljø og teknologi", link: "17" }],
     },
@@ -446,7 +446,7 @@ const stand_info =
       video: "https://youtu.be/u8l1RmKAufk",
       zoomlink: "https://uio.zoom.us/j/68215209434",
       stillinger: [{ tekst: "Sommerprosjekt 2021 - Vil du være med og påvirke hverdagen til to millioner mennesker?", link: "https://www.finn.no/job/fulltime/ad.html?finnkode=191627679" }],
-      konkurranser: [{ tekst: "", link: "" }],
+      konkurranser: [{ tekst: "", link: "https://forms.office.com/Pages/ResponsePage.aspx?id=crs_pPsCxEiT6G1vzBssF97l48036gFLso9f-VCs3rdUN09WSzJQUFhRWVI5WElLOUZIRE1VMjVGUC4u" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
