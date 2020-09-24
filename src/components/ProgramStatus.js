@@ -118,7 +118,6 @@ class ProgramStatus extends Component {
     } else {
       live = true
     }
-    let eventIndexes = live? this.state.currentEvent: this.state.nextEvent;
 
     if(this.props.compact){
       return (
