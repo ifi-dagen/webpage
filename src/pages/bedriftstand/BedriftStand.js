@@ -16,7 +16,7 @@ const formatedText = (text) => {
 const listUp = (tittel, liste, link_prefix) => {
   if (liste.length !== 0 & liste[0].tekst !== "") {
     return (
-      <div>
+      <div className= "linker">
         <h4 className="undertittel">{tittel}</h4>
         {liste.map((item, index) => {
           if (!link_prefix || link_prefix === "") {
@@ -91,7 +91,7 @@ export default class BedriftStand extends Component {
           <Icon className="fas fa-video"></Icon>Møt oss på zoom!
                 </Link>
         {bedrift.poption && <Link href={bedrift.zoomlink}>
-          <Icon className="fas fa-handshake"></Icon>Gå til speedintervju her
+          <Icon className="fas fa-handshake"></Icon>Gå til poption her
                 </Link>}
       </div>)
     } else if (bedrift.video !== "") {

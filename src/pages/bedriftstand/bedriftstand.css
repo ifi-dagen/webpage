@@ -21,6 +21,10 @@
   margin-bottom: .4rem;
 }
 
+.linker{
+  line-height: 1.8rem;
+}
+
 #livelinker{
   display: flex;
   height: 150px;
