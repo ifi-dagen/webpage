@@ -90,7 +90,7 @@ const stand_info =
       video: "https://player.vimeo.com/video/460358415",
       zoomlink: "https://uio.zoom.us/j/64142607012",
       stillinger: [{ tekst: "Vi søker deg som trigges av innovasjon på nye løsninger og som kan java!", link: "https://www.finn.no/job/fulltime/ad.html?finnkode=191920289" }],
-      konkurranser: [{ tekst: "Se hjemmesiden vår her", link: "www.DI.no/tech" }, { tekst: "Sjekk ut produktet vårt Plan & Go", link: "https://www.di.no/planandgo/" }, { tekst: "Studentbase", link: "https://docs.google.com/forms/d/e/1FAIpQLSdEx_5MpRekTF6MGTJINh8HejS0WeZtKOFnD_7gvO1kV2ewvg/viewform?gxids=7628" }],
+      konkurranser: [{ tekst: "Se hjemmesiden vår her", link: "https://www.DI.no/tech" }, { tekst: "Sjekk ut produktet vårt Plan & Go", link: "https://www.di.no/planandgo/" }, { tekst: "Studentbase", link: "https://docs.google.com/forms/d/e/1FAIpQLSdEx_5MpRekTF6MGTJINh8HejS0WeZtKOFnD_7gvO1kV2ewvg/viewform?gxids=7628" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
 
