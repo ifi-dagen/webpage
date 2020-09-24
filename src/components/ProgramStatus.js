@@ -8,9 +8,8 @@ class ProgramStatus extends Component {
   nextUpBuffer = 10*60*1000 //timeframe for nextEvent
   state = { date:'2020-09-02', currentEvent: [], nextEvent: [], dayEnded: false}
 
-  // TODO: remove seconds
   klokkeslett = (date) => {
-    return date.getHours()+":"+(date.getMinutes() < 10 ? ("0" + date.getMinutes()) : date.getMinutes())+":"+(date.getSeconds() < 10 ? ("0" + date.getSeconds()) : date.getSeconds())
+    return date.getHours()+":"+(date.getMinutes() < 10 ? ("0" + date.getMinutes()) : date.getMinutes())
   }
 
   dateString = (d) => {
@@ -92,7 +91,22 @@ class ProgramStatus extends Component {
     }
   }
 
+  eventer = (nextEventHappening, isCompact) => {
+    return (<div className={isCompact? "programstatus-compact-container": "programstatus-container"}>
+        {nextEventHappening.map((programindex, listeindex) => {
+          return(
+            <div className={isCompact? "programstatus-compact-tekstboks": "programstatus-tekstboks"} key={listeindex}>
+              <h4 id="tittel"><a className="programstatus-a" href={"/program/#"+program_info[programindex].id}>{program_info[programindex].tittel}</a>
+              {" - fra: "+this.klokkeslett(program_info[programindex].start)}</h4>
+              <h4 id="delta-link"> <a className="programstatus-a" href={program_info[programindex].link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>
+            </div>
+          )
+        })}
+    </div>)
+  }
+
   render(){
+    console.log(this.state.currentEvent, this.state.nextEvent)
     let live = false;
     if(this.state.currentEvent.length === 0){
       if(this.state.nextEvent.length === 0){
@@ -109,36 +123,20 @@ class ProgramStatus extends Component {
     if(this.props.compact){
       return (
         <div className={live? "programstatus-bar compact-bar": "programstatus-bar compact-bar programstatus-snart"}>
-          <h1 id="status"> {live? "Akkurat nå:": "Kommer snart:"} </h1>
-          <div className="programstatus-compact-container">
-              {eventIndexes.map((programindex, listeindex) => {
-                return(
-                  <div className="programstatus-compact-tekstboks" key={listeindex}>
-                    <h4 id="tittel"><a className="programstatus-a" href={"/program/#"+program_info[programindex].id}>{program_info[programindex].tittel}</a>
-                    {!live && " - starter "+this.klokkeslett(program_info[programindex].start)}</h4>
-                    <h4 id="delta-link"> <a className="programstatus-a" href={program_info[programindex].link} target="_blank" rel="noopener noreferrer">delta her!</a></h4>
-                  </div>
-                )
-              })}
-          </div>
+          {this.state.currentEvent &&  <h1 id="status"> {"Akkurat nå:"} </h1>}
+          {this.state.currentEvent && this.eventer(this.state.currentEvent,true)}
+          {this.state.nextEvent.length !== 0 &&  <h1 id="status"> {"Kommer snart:"} </h1>}
+          {this.state.nextEvent && this.eventer(this.state.nextEvent,true)}
         </div>
       )
     }
 
     return (
       <div className={live? "programstatus-bar": "programstatus-bar programstatus-snart"}>
-        <h6 id="status"> {live? "Akkurat nå:": "Kommer snart:"} </h6>
-        <div className="programstatus-container">
-            {eventIndexes.map((programindex, listeindex) => {
-              return(
-                <div className="programstatus-tekstboks" key={listeindex}>
-                  <h1 id="tittel">{program_info[programindex].tittel}</h1>
-                  <h4 id="delta-link"><a className="programstatus-a" href={program_info[programindex].link} target="_blank"  rel="noopener noreferrer">delta her!</a></h4>
-                  <h4 id="tidspunk">{this.klokkeslett(program_info[programindex].start)} - {this.klokkeslett(program_info[programindex].slutt)}</h4>
-                </div>
-              )
-            })}
-        </div>
+        {this.state.currentEvent &&  <h1 id="status"> {"Akkurat nå:"} </h1>}
+        {this.state.currentEvent && this.eventer(this.state.currentEvent,false)}
+        {this.state.nextEvent &&  <h1 id="status"> {"Kommer snart:"} </h1>}
+        {this.state.nextEvent && this.eventer(this.state.nextEvent,false)}
       </div>
     )
   }
