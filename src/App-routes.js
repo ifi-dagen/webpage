@@ -7,6 +7,7 @@ import Frivillig from "./pages/frivillig/Frivillig";
 import Front from './pages/front/Front';
 import Error from './pages/error/Error';
 import Stander from './pages/standomraade/Stander';
+import Etter from './pages/standomraade/etter';
 import AlleStander from './pages/standomraade/alleStander';
 import BedriftStand from './pages/bedriftstand/BedriftStand';
 import Studenter from "./pages/studenter/studenter";
@@ -58,6 +59,11 @@ class Routes extends Component {
           exact
           path="/torsdag"
           render={prop => <Stander {...prop} store={this.props.store} testmode={false} dag="dag1"/>}
+        />
+        <Route
+          exact
+          path="/etter"
+          render={prop => <Etter {...prop} store={this.props.store}/>}
         />
         <Route
           render={prop => <Error {...prop} store={this.props.store} />}
