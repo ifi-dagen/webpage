@@ -119,7 +119,7 @@ export default class BedriftStand extends Component {
 
   componentDidMount() {
     //const zoom_open = this.active(new Date())
-    this.setState({ active_stand: false })
+    this.setState({ active_stand: true })
   }
 
   render() {

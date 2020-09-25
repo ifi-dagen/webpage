@@ -122,7 +122,7 @@ class ProgramStatus extends Component {
     if(this.props.compact){
       return (
         <div className={live? "programstatus-bar compact-bar": "programstatus-bar compact-bar programstatus-snart"}>
-          {this.state.currentEvent &&  <h1 id="status"> {"Akkurat nå:"} </h1>}
+          {this.state.currentEvent.length !== 0 &&  <h1 id="status"> {"Akkurat nå:"} </h1>}
           {this.state.currentEvent && this.eventer(this.state.currentEvent,true)}
           {this.state.nextEvent.length !== 0 &&  <h1 id="status"> {"Kommer snart:"} </h1>}
           {this.state.nextEvent && this.eventer(this.state.nextEvent,true)}
@@ -132,9 +132,9 @@ class ProgramStatus extends Component {
 
     return (
       <div className={live? "programstatus-bar": "programstatus-bar programstatus-snart"}>
-        {this.state.currentEvent &&  <h1 id="status"> {"Akkurat nå:"} </h1>}
+        {this.state.currentEvent.length !== 0  &&  <h1 id="status"> {"Akkurat nå:"} </h1>}
         {this.state.currentEvent && this.eventer(this.state.currentEvent,false)}
-        {this.state.nextEvent &&  <h1 id="status"> {"Kommer snart:"} </h1>}
+        {this.state.nextEvent.length !== 0  &&  <h1 id="status"> {"Kommer snart:"} </h1>}
         {this.state.nextEvent && this.eventer(this.state.nextEvent,false)}
       </div>
     )
