@@ -544,7 +544,8 @@ const stand_info =
       logonavn: "nrk.jpg",
       video: "https://player.vimeo.com/video/460265259",
       zoomlink: "https://uio.zoom.us/j/61255855111",
-      stillinger: [{ tekst: "Se ledige stillinger her", link: "https://info.nrk.no/stilling/" }],
+
+      stillinger: [{ tekst: "Sommerjobb i NRK", link: "https://238765.webcruiter.no/Main/Recruit/Public/4292795535?culture_id=nb&link_source_id=0" }],
       konkurranser: [{ tekst: "Delta i NRK sin quiz, og vinn en Chromecast Ultra!", link: "https://info.nrk.no/dagen/" }, { tekst: "Les bloggen vår her", link: "https://nrkbeta.no/kategori/dev/" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
