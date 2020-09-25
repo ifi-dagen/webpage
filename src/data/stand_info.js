@@ -566,7 +566,7 @@ const stand_info =
       beskrivelse: "",
       logonavn: "ntnu.jpg",
       video: "",
-      zoomlink: "https://uio.zoom.us/j/61640289688"",
+      zoomlink: "https://uio.zoom.us/j/61640289688",
       stillinger: [{ tekst: "PhD stilling innen digital etterforskning", link: "https://www.jobbnorge.no/en/available-jobs/job/190348/phd-position-in-digital-investigation" }, { tekst: "PhD stilling innen Informasjonssikkerhet og kommunikasjonsteknologi", link: "https://www.jobbnorge.no/ledige-stillinger/stilling/192911/phd-informasjonssikkerhet-og-kommunikasjonsteknologi" }],
       konkurranser: [{ tekst: "", link: "" }],
       foredrag: [{ tekst: "", link: "" }],
