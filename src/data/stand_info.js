@@ -520,7 +520,7 @@ const stand_info =
       beskrivelse: "Knowit er et av nordens største konsulentselskaper, og har lang erfaring med å gi nyutdannede en god start på karrieren. Vi ansetter spesielt mange utviklere, men vi er også interessert i folk innenfor design, BI og mye annet. Hvis du har lyst til å jobbe i et sosialt og hyggelig miljø, der du får alle muligheter til å lære og få erfaring i trygge omgivelser, så bør du vurdere å søke jobb hos oss! Og om skulle ønske flere utfordringer, så er veien alltid kort til økt ansvar og nye arbeidsoppgaver. I Norge har vi avdelinger i Oslo, Bergen, Stavanger, Kristiansand og Trondheim.",
       logonavn: "knowit.png",
       video: "https://player.vimeo.com/video/460647091",
-      zoomlink: "",
+      zoomlink: "https://uio.zoom.us/j/64878516813",
       stillinger: [{ tekst: "Sommerjobb i Knowit i 2021", link: "https://www.knowit.no/karriere/sommerjobb-i-knowit-i-2021-oslo/" }],
       konkurranser: [{ tekst: "", link: "" }],
       foredrag: [{ tekst: "", link: "" }],
