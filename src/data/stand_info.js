@@ -545,7 +545,7 @@ const stand_info =
       video: "https://player.vimeo.com/video/460265259",
       zoomlink: "https://uio.zoom.us/j/61255855111",
       stillinger: [{ tekst: "Se ledige stillinger her", link: "https://info.nrk.no/stilling/" }],
-      konkurranser: [{ tekst: "Delta i NRK sin quiz, og vinn en Chromecast Ultra!", link: "https://info.nrk.no/?s=dagen" }, { tekst: "Les bloggen vår her", link: "https://nrkbeta.no/kategori/dev/" }],
+      konkurranser: [{ tekst: "Delta i NRK sin quiz, og vinn en Chromecast Ultra!", link: "https://info.nrk.no/dagen/" }, { tekst: "Les bloggen vår her", link: "https://nrkbeta.no/kategori/dev/" }],
       foredrag: [{ tekst: "", link: "" }],
       tags: ["", ""]
     },
