@@ -433,7 +433,7 @@ const stand_info =
       beskrivelse: "Distribution Innovation er et mellomstort teknologiselskap som utvikler og selger samfunnsnyttige skytjenester innen logistikk og distribusjon. Våre kunder er store og små mediehus, netthandelsbedrifter, matkasseleverandører og andre logistikktunge bedrifter i Norden, og flere millioner produkter leveres hver dag gjennom våre systemer. DI har store planer for selskapet fremover, med fokus på nye markeder og nye tjenester.\nVåre ansatte og konsulenter blir utfordret og satset på, de får ansvar og kunnskap, og vi har mye sosiale arrangementer i og utenfor arbeidstiden. Vi vokser fort, og trenger flere ivrige folk til front-end utvikling / design / UX, backend utvikling, Data Science eller prosjektledelse. \nVi er eid av mediekonsernene Schibsted og Amedia, og holder til i VG-huset midt i Oslo sentrum.",
       logonavn: "DI.png",
       video: "https://player.vimeo.com/video/460358415",
-      zoomlink: "https://uio.zoom.us/j/64142607012",
+      zoomlink: "",
       stillinger: [{ tekst: "Vi søker deg som trigges av innovasjon på nye løsninger og som kan java!", link: "https://www.finn.no/job/fulltime/ad.html?finnkode=191920289" }],
       konkurranser: [{ tekst: "Se hjemmesiden vår her", link: "https://www.DI.no/tech" }, { tekst: "Sjekk ut produktet vårt Plan & Go", link: "https://www.di.no/planandgo/" }, { tekst: "Studentbase", link: "https://docs.google.com/forms/d/e/1FAIpQLSdEx_5MpRekTF6MGTJINh8HejS0WeZtKOFnD_7gvO1kV2ewvg/viewform?gxids=7628" }],
       foredrag: [{ tekst: "", link: "" }],
