@@ -38,6 +38,7 @@ class Program extends Component {
   //lag liste av eventer
   hendelser = (dag) => {
     const filtered_events = program_info.filter((item) => { return dateString(item.start) === this.state.filterDag })
+    filtered_events.sort(function(a, b){return a.start - b.start});
 
     return (
       <div className="Programinnhold">
