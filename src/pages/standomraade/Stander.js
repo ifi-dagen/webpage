@@ -71,7 +71,11 @@ export default class Stander extends Component {
   }
 
   componentDidMount() {
-    this.finnDag(new Date()); //NB denne linja styrer tiden
+    if(this.props.dag){
+      this.setState({ dag: this.props.dag})
+    } else {
+      this.finnDag(new Date()); //NB denne linja styrer tiden
+    }
     console.log(stand_time.stop, this.state)
   }
 
@@ -101,6 +105,7 @@ export default class Stander extends Component {
           <div className="standbase">
             {this.stander("dag2", testmode)}
           </div>
+          <a href="/torsdag"><h3>Gikk du glipp av gårsdagen? se her!</h3></a>
         </div>)
       case "etter":
         return (

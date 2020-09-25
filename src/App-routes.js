@@ -54,6 +54,11 @@ class Routes extends Component {
           render={prop => <BedriftStand {...prop} store={this.props.store} testmode={false} />}
         />
         <Route
+          exact
+          path="/torsdag"
+          render={prop => <Stander {...prop} store={this.props.store} testmode={false} dag="dag1"/>}
+        />
+        <Route
           render={prop => <Error {...prop} store={this.props.store} />}
         />
       </Switch>
