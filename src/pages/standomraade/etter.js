@@ -8,6 +8,7 @@ const Etter = () => {
             <h1>dagen@ifi er over, vi sees i 2021.</h1>
             <h3>Vi vil gjerne høre hva du synes om årets karrieredag!</h3>
             <Evaluering />
+              <a href="/stander"><h3>Gikk du glipp av dagen@ifi? se her!</h3></a>
         </Wrapper>
     )
 }
