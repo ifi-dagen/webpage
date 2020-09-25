@@ -307,13 +307,13 @@ const stand_info =
     },
     "Bekk": {
       bedriftnavn: "Bekk",
-      beskrivelse: "Bekk er et norsk selskap som lykkes på grunn av mennesker som brenner for faget sitt. Vi jobber med strategi, design og teknologi og tror på tverrfaglige team. Hos oss får du muligheten til å utvikle løsninger som hjelper bedrifter med å nå sine mål innen digitalisering og nyskaping.\nLyst til å jobbe i Bekk?\nHovedrunden med rekruttering til fast jobb og sommerjobb er om høsten, men vi er alltid åpne for søknader fra de rette kandidatene!",
+      beskrivelse: "Bekk er et norsk selskap som lykkes på grunn av mennesker som brenner for faget sitt. Vi jobber med strategi, design og teknologi og tror på tverrfaglige team. Hos oss får du muligheten til å utvikle løsninger som hjelper bedrifter med å nå sine mål innen digitalisering og nyskaping.\nLyst til å jobbe i Bekk?\nHovedrunden med rekruttering til fast jobb og sommerjobb er 4 oktober.",
       logonavn: "Bekk.png",
       video: "https://player.vimeo.com/video/460172089",
       zoomlink: "https://uio.zoom.us/j/62679418961",
       poption: "https://www.poption.com/speedintervju/dagenatifi-2020",
       stillinger: [{ tekst: "Søk hos oss", link: "https://bekk.no/jobb" }],
-      konkurranser: [{ tekst: "", link: "" }],
+      konkurranser: [{ tekst: "oi.bekk.no", link: "http://oi.bekk.no/" }],
       foredrag: [{ tekst: "En motiverende introduksjon til UU", link: "19" }],
       tags: ["", ""]
     },
