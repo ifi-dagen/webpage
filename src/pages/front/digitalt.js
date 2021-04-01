@@ -4,14 +4,14 @@ import styled from 'styled-components'
 const Digitalt = () => {
   return (
     <Wrapper>
-      <Title>Digitalt i 2020</Title>
+      <Title>Digitalt i 2021 også</Title>
       <Text>
-        Bedriftsdagen i år blir heldigital og skjer over 2 dager.
-        Det kommer snart en oversikt over alle bedrifter som deltar.
-        Hver bedrift vil ha sin egen zoom-stand,
-        hvor de stiller med eget opplegg, konkurranser og stillingsannonser.
-        Som vanlig vil det være faglige foredrag som du finner her på nettsiden,
-        som også vil streames i Escape.
+        Vi gleder oss til å arrangere digital ettermiddagen@ifi dette vårsemesteret.
+        Det er vanskelig å si om høstsemesterets dagen@ifi blir heldigital eller en kombinasjon av noe digitalt og fysisk,
+        men vi er optimistiske og skal gjøre vårt beste ut fra situasjonen.
+        Det kommer snart en oversikt over alle bedrifter som deltar på ettermiddagen. Vi har bestemt oss for å minske antallet bedrifter som 
+        deltar på årets Ettermiddag, slik at de bedriftene som deltar får bedre eksponering og studentene mer tid hos hver enkelt.
+        
       </Text>
     </Wrapper>
   )
