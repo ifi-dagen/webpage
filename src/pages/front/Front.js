@@ -3,9 +3,7 @@ import styled from 'styled-components'
 import HvaEr from './hvaer'
 import Digitalt from './digitalt'
 import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
-import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
-import ProgramStatus from '../../components/ProgramStatus.js';
 
 const Front = () => {
   return (
@@ -129,6 +127,7 @@ const Container = styled.div`
   }
 `
 
+/*
 const Nav = () => {
   return (
     <NavContainer>
@@ -153,6 +152,8 @@ const Nav = () => {
     </NavContainer >
   )
 }
+
+
 
 const NavContainer = styled.div`
   margin: 0 1rem;
@@ -187,6 +188,7 @@ const NavButton = styled(Link)`
 `
 
 
+
 //sett mest mulig av denne stylingen over i programstatus.
 const NavItem = styled.div`
   text-align: center;
@@ -198,6 +200,7 @@ const NavItem = styled.div`
   font-size: 1.2rem;
   grid-column: 1/-1;
 `
+*/
 
 const ErGrid = styled.div`
   display: grid;
