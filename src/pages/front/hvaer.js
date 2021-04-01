@@ -7,7 +7,7 @@ const HvaER = () => {
       <Title>Møt studenter</Title>
       <Text>
         Vi er den beste arenaen for å etablere kontakt mellom studenter og bedrifter.
-        Ifi studenter er dyktige informatikere med spesialisering innen enten
+        Ifi-studenter er dyktige informatikere med spesialisering innen enten
         design, robotikk, språkteknologi, digital økonomi & ledelse, sikkerhet eller systemarkitektur.
         Dette er ambisiøse og flinke mennesker på randen til å begynne i sin første ordentlige IT-jobb.
         Bruk muligheten til å huke tak i disse unge, tech-gærne folka - klare til å bli formet av arbeidslivet.
