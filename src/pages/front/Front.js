@@ -1,36 +1,31 @@
 import React from 'react';
 import styled from 'styled-components'
-import Hovedsponsor from './hovedsponsor'
-import Sponsor from './sponsor'
 import HvaEr from './hvaer'
 import Digitalt from './digitalt'
 import bilde from "../../img/ettermidagen_at_ifi-0480.jpg"
 import { Link } from "react-router-dom"
 import { peepsInfo } from './peeps'
 import ProgramStatus from '../../components/ProgramStatus.js';
-import Stander from '../standomraade/Stander.js'
 
 const Front = () => {
   return (
     <Div>
       <Container>
-        <h1>Den største bedriftsdagen for IT-studenter i Oslo.</h1>
-        <h3>Kom dere på nett og få jobb på dagen.</h3>
+        <h1>Velkommen til digital ettermiddagen@ifi.</h1>
+        <h3>Ettermiddagen er vårsemesterets litt mindre karrieredag.</h3>
         <DateParagraph />
       </Container>
-
+     
       <Nav />
-      <Stander forside />
-      <Hovedsponsor />
 
       <GridContainerWrapper>
         <ErGrid>
           <HvaEr />
           <Digitalt />
         </ErGrid>
-        <Sponsor />
+    
         <Img src={bilde} style={{ width: "100%" }} alt="Bilde av mennesker utenfor ifi" />
-        <h1>Styret 2020</h1>
+        <h1>Styret 2021</h1>
         <PeepsGrid >
           {peepsInfo.map((peep, index) => (
             <Visitkort2 peep={peep} key={peep.navn} />
@@ -48,7 +43,7 @@ const DateParagraph = () => {
 
   return (
     <Paragraph>
-      <i className="fas fa-calendar"></i> 24. <i className="fas fa-long-arrow-alt-right"></i> 25. September
+      <i className="fas fa-calendar"></i> 30. April
     </Paragraph>
   )
 

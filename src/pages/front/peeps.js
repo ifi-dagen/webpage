@@ -50,13 +50,13 @@ const peepsInfo = [
     },
     {
         rolle: roller.nestleder,
-        navn: "Silje Marie Flaaten",
-        image: "SiljeMarieFlaaten.png",
+        navn: "Anna Sofie Hoff",
+        image: null,
     },
     {
         rolle: roller.bedrift,
-        navn: "Lise Wåsjø",
-        image: "LiseWåsjø.png"
+        navn: "Victoria Kleiv Müller",
+        image: null
     },
     {
         rolle: roller.okonomi,
@@ -75,28 +75,28 @@ const peepsInfo = [
     },
     {
         rolle: roller.faglig,
-        navn: "Henrik Høybakk Olsvik",
-        image: "HenrikHøybakkOlsvik.png"
+        navn: null,
+        image: null
     },
     {
         rolle: roller.funk,
-        navn: "Burhan Sarfraz",
-        image: "BurhanSarfraz.png"
+        navn: "Eivind Guren",
+        image: null
     },
     {
         rolle: roller.underholdning,
-        navn: "Thea Aksdal Nordgulen",
-        image: "TheaAksdalNordgulen.png"
+        navn: "Jessica Gierlach",
+        image: null
     },
     {
         rolle: roller.sosialt,
-        navn: "Nora Vestavik Klingvall",
-        image: "NoraVestavikKlingvall.png"
+        navn: "Karin Ospina",
+        image: null
     },
     {
         rolle: roller.teknisk,
-        navn: "Kari Stamnes",
-        image: "KariStamnes.png"
+        navn: "Silje Marie Flaaten",
+        image: "SiljeMarieFlaaten.png"
     }
 ]
 
