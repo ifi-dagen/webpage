@@ -12,11 +12,10 @@ const Front = () => {
     <Div>
       <Container>
         <h1>Velkommen til digital ettermiddagen@ifi.</h1>
-        <h3>Ettermiddagen er vårsemesterets litt mindre karrieredag.</h3>
+        <h3>Vi gleder oss til å arrangere vårsemesterets digitale karrieredag for dere! For øyeblikket er nettsiden under litt oppussing, men følg oss på sosiale medier og ikke nøl med å ta kontakt med styret om det er noe du lurer på.</h3>
         <DateParagraph />
+        <h3 >Vil du være med i dagen@ifi som intern? <a href="https://forms.gle/JLYYu7rds4MNifKq9">Søk her!</a></h3>
       </Container>
-     
-      <Nav />
 
       <GridContainerWrapper>
         <ErGrid>
@@ -25,7 +24,7 @@ const Front = () => {
         </ErGrid>
     
         <Img src={bilde} style={{ width: "100%" }} alt="Bilde av mennesker utenfor ifi" />
-        <h1>Styret 2021</h1>
+        <h1>Si hei til det nye styret 2021-2022!</h1>
         <PeepsGrid >
           {peepsInfo.map((peep, index) => (
             <Visitkort2 peep={peep} key={peep.navn} />
@@ -39,6 +38,7 @@ const Front = () => {
 const DateParagraph = () => {
   const Paragraph = styled.h2`
     padding: 1rem;
+    color: deepskyblue;
   `
 
   return (
