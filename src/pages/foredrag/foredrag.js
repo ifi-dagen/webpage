@@ -6,6 +6,8 @@ import { useState } from 'react'
 
 const Foredrag = (props) => {
     const history = useHistory()
+    const [useTime, setTime] = useState(props.time)
+
     const foredrag1 = foredrag_info[0]
     return (
         /*
@@ -29,23 +31,25 @@ const Foredrag = (props) => {
             />
             <About>
                 <h3>Om foredraget</h3> {foredrag1.about}
+                <RerouteToLink
+                    location={foredrag1.link}
+                    text={'Se foredraget her!'}
+                />
             </About>
-            <RerouteToLink location={foredrag1.link} />
         </Wrapper>
     )
-
-    {
-        /* //     <Time>{foredrag1.time}</Time>;<Company>{foredrag1.company}</Company>;
-    //     <Title>{foredrag1.title}</Title>;<About>{foredrag1.about}</About>;
-    //     <Place>{foredrag1.place}</Place>;<Speaker>{foredrag1.speaker}</Speaker>; */
-    }
 }
 
 const SpeakerInfo = ({ companyName, speakerName }) => {
-    companyName = 'Netcompany'
     return (
         <CompanyContainer>
-            <CompanyName>{companyName}</CompanyName>
+            <CompanyName>
+                {' '}
+                <RerouteToLink
+                    location={`https://${companyName}.no`}
+                    text={companyName}
+                />
+            </CompanyName>
             <CompanyLogo>
                 {' '}
                 <img
@@ -65,11 +69,11 @@ const SpeakerInfo = ({ companyName, speakerName }) => {
     )
 }
 
-const RerouteToLink = ({ location }) => {
+const RerouteToLink = ({ location, text }) => {
     return (
         <Place>
             <a target="_blank" href={location}>
-                Se foredraget her!
+                {text}
             </a>
         </Place>
     )
@@ -86,8 +90,10 @@ const CompanyContainer = styled.div`
     display: grid;
     grid-template-areas: 'companyName companylogo speakerinfo xxx 
     ';
+    max-height: 6vw;
 `
 const CompanyLogo = styled.div`
+    padding-top: 1em;
     max-width: 20vw;
 `
 const Speaker = styled.div`
@@ -136,7 +142,7 @@ const Place = styled.div`
     a:hover {
         color: deepskyblue;
     }
-    padding: 1em;
+    padding-top: 1em;
 `
 
 const Wrapper = styled.div`

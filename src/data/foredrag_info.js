@@ -1,4 +1,3 @@
-const aapningslink = 'https://www.instagram.com/dagenatifi/'
 const foredrag_info = [
     {
         id: 0,
@@ -7,11 +6,11 @@ const foredrag_info = [
         endTime: '12:30',
         // startTime: new Date(2021, 4, 30, 12, 0, 0, 0),
         // endTime: new Date(2020, 4, 30, 12, 30, 0, 0),
-        companyName: 'Kripos',
+        companyName: 'Netcompany',
         about:
             'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
         link:
-            'https://uio.zoom.us/webinar/register/com?fbclid=IwAR32ym3xFAOX0QVCTt6j4H2ZpzfAkeOIDW0uwEE7H9Gc9c7Bjbll9j1Afno',
+            'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO',
         speaker: 'Silje :)',
         alt_tekst: '',
     },
@@ -24,7 +23,7 @@ const foredrag_info = [
         about:
             'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
         link:
-            'https://uio.zoom.us/webinar/register/com?fbclid=IwAR32ym3xFAOX0QVCTt6j4H2ZpzfAkeOIDW0uwEE7H9Gc9c7Bjbll9j1Afno',
+            'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO',
         speaker: 'NAME',
         alt_tekst: '',
     },
@@ -37,7 +36,7 @@ const foredrag_info = [
         about:
             'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
         link:
-            'https://uio.zoom.us/webinar/register/com?fbclid=IwAR32ym3xFAOX0QVCTt6j4H2ZpzfAkeOIDW0uwEE7H9Gc9c7Bjbll9j1Afno',
+            'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO',
         speaker: 'NAME',
         alt_tekst: '',
     },
