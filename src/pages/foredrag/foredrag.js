@@ -19,22 +19,18 @@ const Foredrag = (props) => {
             <Title>
                 <h1>{foredrag1.title}</h1>
             </Title>
-
+            {/* exaple link back to program for the selected time */}
             <Time onClick={() => history.push('/program#3')}>
                 {foredrag1.startTime} - {foredrag1.endTime}
             </Time>
             <SpeakerInfo
                 companyName={foredrag1.companyName}
-                speakerName={'Silje :)'}
+                speakerName={foredrag1.speaker}
             />
             <About>
                 <h3>Om foredraget</h3> {foredrag1.about}
             </About>
-            <RerouteToLink
-                location={
-                    'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO'
-                }
-            />
+            <RerouteToLink location={foredrag1.link} />
         </Wrapper>
     )
 

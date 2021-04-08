@@ -12,7 +12,7 @@ const foredrag_info = [
             'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
         link:
             'https://uio.zoom.us/webinar/register/com?fbclid=IwAR32ym3xFAOX0QVCTt6j4H2ZpzfAkeOIDW0uwEE7H9Gc9c7Bjbll9j1Afno',
-        speaker: 'NAME',
+        speaker: 'Silje :)',
         alt_tekst: '',
     },
     {
