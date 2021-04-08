@@ -1,56 +1,34 @@
 import React from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
-import '../kontakt/kontakt.css'
+import foredrag_info from '../../data/foredrag_info'
+import { useState } from 'react'
 
 const Foredrag = (props) => {
     const history = useHistory()
-
+    const foredrag1 = foredrag_info[0]
     return (
         /*
         TODO:
-        * Make skelton for design 
-        * Create company group grid
-        * Feed info through props
+        * Feed info through foredrag1
         * Link time to time view for program
-        * 
+        * Need time/date/ID state from program to determine which  lecture to load
         */
 
         <Wrapper>
             <Title>
-                <h1>
-                    Artificial Intelligence using Big Data Machine Learning
-                    Blockchain Technology{' '}
-                </h1>
+                <h1>{foredrag1.title}</h1>
             </Title>
 
             <Time onClick={() => history.push('/program#3')}>
-                {props.startTime} - {props.endTime}
+                {foredrag1.startTime} - {foredrag1.endTime}
             </Time>
-            <SpeakerInfo companyName={props.companyName} />
+            <SpeakerInfo
+                companyName={foredrag1.companyName}
+                speakerName={'Silje :)'}
+            />
             <About>
-                <h3>Om foredraget</h3> Artificial Intelligence using Big Data
-                Machine Learning Blockchain Technology Artificial Intelligence
-                using Big Data Machine Learning Blockchain Technology Artificial
-                Intelligence using Big Data Machine Learning Blockchain
-                Technology Artificial Intelligence using Big Data Machine
-                Learning Blockchain Technology Artificial Intelligence using Big
-                Data Machine Learning Blockchain Technology Artificial
-                Intelligence using Big Data Machine Learning Blockchain
-                Technology Artificial Intelligence using Big Data Machine
-                Learning Blockchain Technology Artificial Intelligence using Big
-                Data Machine Learning Blockchain Technology Artificial
-                Intelligence using Big Data Machine Learning Blockchain
-                Technology Artificial Intelligence using Big Data Machine
-                Learning Blockchain Technology Artificial Intelligence using Big
-                Data Machine Learning Blockchain Technology Artificial
-                Intelligence using Big Data Machine Learning Blockchain
-                Technology Artificial Intelligence using Big Data Machine
-                Learning Blockchain Technology Artificial Intelligence using Big
-                Data Machine Learning Blockchain Technology Artificial
-                Intelligence using Big Data Machine Learning Blockchain
-                Technology Artificial Intelligence using Big Data Machine
-                Learning Blockchain Technology{' '}
+                <h3>Om foredraget</h3> {foredrag1.about}
             </About>
             <RerouteToLink
                 location={
@@ -61,9 +39,9 @@ const Foredrag = (props) => {
     )
 
     {
-        /* //     <Time>{props.time}</Time>;<Company>{props.company}</Company>;
-    //     <Title>{props.title}</Title>;<About>{props.about}</About>;
-    //     <Place>{props.place}</Place>;<Speaker>{props.speaker}</Speaker>; */
+        /* //     <Time>{foredrag1.time}</Time>;<Company>{foredrag1.company}</Company>;
+    //     <Title>{foredrag1.title}</Title>;<About>{foredrag1.about}</About>;
+    //     <Place>{foredrag1.place}</Place>;<Speaker>{foredrag1.speaker}</Speaker>; */
     }
 }
 

@@ -2,10 +2,11 @@ const aapningslink = 'https://www.instagram.com/dagenatifi/'
 const foredrag_info = [
     {
         id: 0,
-        tittel: 'bedrift1',
-        type: 'Annet',
-        startTime: new Date(2021, 4, 30, 9, 0, 0, 0),
-        endTime: new Date(2020, 4, 30, 12, 30, 0, 0),
+        title: 'Artificial Intelligence using Big Data Machine Learning',
+        startTime: '12:00',
+        endTime: '12:30',
+        // startTime: new Date(2021, 4, 30, 12, 0, 0, 0),
+        // endTime: new Date(2020, 4, 30, 12, 30, 0, 0),
         companyName: 'Kripos',
         about:
             'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
@@ -16,8 +17,8 @@ const foredrag_info = [
     },
     {
         id: 1,
-        title: 'bedrift1',
-        startTime: new Date(2020, 4, 30, 9, 0, 0, 0),
+        title: 'bedrift2',
+        startTime: new Date(2020, 4, 30, 13, 0, 0, 0),
         endTime: new Date(2020, 4, 30, 13, 30, 0, 0),
         companyName: 'Kripos',
         about:
@@ -29,9 +30,8 @@ const foredrag_info = [
     },
     {
         id: 2,
-        tittel: 'bedrift1',
-        type: 'Annet',
-        startTime: new Date(2020, 4, 30, 9, 0, 0, 0),
+        title: 'bedrift3',
+        startTime: new Date(2020, 4, 30, 14, 0, 0, 0),
         endTime: new Date(2020, 4, 30, 14, 30, 0, 0),
         companyName: 'Kripos',
         about:
@@ -42,3 +42,5 @@ const foredrag_info = [
         alt_tekst: '',
     },
 ]
+
+export default foredrag_info
