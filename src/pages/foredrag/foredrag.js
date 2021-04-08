@@ -6,33 +6,42 @@ import { useState } from 'react'
 
 const Foredrag = (props) => {
     const history = useHistory()
-    const [useTime, setTime] = useState(props.time)
+    const [time, setTime] = useState('12:00')
+    let [foredrag, setForedrag] = useState(null)
 
-    const foredrag1 = foredrag_info[0]
+    if (time === '12:00') {
+        foredrag = foredrag_info[0]
+    } else if (time === '13:00') {
+        foredrag = foredrag_info[1]
+    } else if (time === '14:00') {
+        foredrag = foredrag_info[2]
+    }
+
+    console.log(foredrag.startTime)
     return (
         /*
         TODO:
-        * Feed info through foredrag1
+        * Feed info through props
         * Link time to time view for program
         * Need time/date/ID state from program to determine which  lecture to load
         */
 
         <Wrapper>
             <Title>
-                <h1>{foredrag1.title}</h1>
+                <h1>{foredrag.title}</h1>
             </Title>
             {/* exaple link back to program for the selected time */}
             <Time onClick={() => history.push('/program#3')}>
-                {foredrag1.startTime} - {foredrag1.endTime}
+                {foredrag.startTime} - {foredrag.endTime}
             </Time>
             <SpeakerInfo
-                companyName={foredrag1.companyName}
-                speakerName={foredrag1.speaker}
+                companyName={foredrag.companyName}
+                speakerName={foredrag.speaker}
             />
             <About>
-                <h3>Om foredraget</h3> {foredrag1.about}
+                <h3>Om foredraget</h3> {foredrag.about}
                 <RerouteToLink
-                    location={foredrag1.link}
+                    location={foredrag.link}
                     text={'Se foredraget her!'}
                 />
             </About>
