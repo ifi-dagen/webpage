@@ -3,7 +3,6 @@ import { Switch, Route } from "react-router-dom";
 import Kontakt from "./pages/kontakt/Kontakt";
 import Program from "./pages/program/Program";
 import Bedrift from "./pages/bedrift/Bedrift";
-import Frivillig from "./pages/frivillig/Frivillig";
 import Front from './pages/front/Front';
 import Error from './pages/error/Error';
 import Stander from './pages/standomraade/Stander';
@@ -38,11 +37,6 @@ class Routes extends Component {
           exact
           path="/studenter"
           render={prop => <Studenter />} />
-        <Route
-          exact
-          path="/frivillig"
-          render={prop => <Frivillig {...prop} store={this.props.store} />}
-        />
         <Route
           exact
           path="/stander"
