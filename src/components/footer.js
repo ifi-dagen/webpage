@@ -1,19 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../img/white_logo.png"
 
 
 const Footer = () => {
     return (
-
-        <Wrapper>
-            <Logo src={logo} />
-            <Links />
-        </Wrapper >
+        <Wrapper />
+      
     )
 }
 
-
+/*
 const Links = () => {
     return (
         <Navlinks>
@@ -41,17 +37,20 @@ const Link = styled.a`
         color: deepskyblue;
     }
 `
-
-const Logo = styled.img`
-    width: 9rem;
-    text-align:center;
-    padding: 1em;
-`
+*/
 
 const Wrapper = styled.section`
     background: linear-gradient(to right, #001446, #002446);
-    padding: 2em;
+    padding: 5em;
     align-content: center;
+    position: fixed;
+    height: 50px;
+    background-color: red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+
 `;
 
 export default Footer;

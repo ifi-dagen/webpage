@@ -7,6 +7,7 @@ import Error from './pages/error/Error';
 import Stander from './pages/standomraade/Stander';
 import BedriftStand from './pages/bedriftstand/BedriftStand';
 import Studenter from "./pages/studenter/studenter";
+import Styret from "./components/styret";
 
 
 class Routes extends Component {
@@ -31,7 +32,13 @@ class Routes extends Component {
         <Route
           exact
           path="/studenter"
-          render={prop => <Studenter />} />
+          render={prop => <Studenter />} 
+        />
+        <Route 
+        exact
+        path="/styret"
+        render={prop=> <Styret />}
+        />
         <Route
           exact
           path="/stander"
