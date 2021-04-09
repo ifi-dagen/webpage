@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 import Kontakt from "./pages/kontakt/Kontakt";
-import Program from "./pages/program/Program";
+import Program from "./pages/program/ettermiddagen_program";
 import Bedrift from "./pages/bedrift/Bedrift";
 import Frivillig from "./pages/frivillig/Frivillig";
 import Front from "./pages/front/Front";
@@ -10,6 +10,7 @@ import Stander from "./pages/standomraade/Stander";
 import BedriftStand from "./pages/bedriftstand/BedriftStand";
 import Studenter from "./pages/studenter/studenter";
 import Foredrag from "./pages/foredrag/foredrag";
+
 
 class Routes extends Component {
     render() {
