@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import './bedrift.css';
-import Visitkort from '../../components/Visitkort';
 import Prisinfo from '../../components/Prisinfo';
 
 
@@ -24,12 +23,7 @@ const Bedrift = () => {
                 <p>Lurer dere på noe angående bedriftsiden? Kontakt Kari.</p>
                 <p>Spørsmål om foredrag går til Henrik.</p>
                 <p>Ved generelle spørsmål kontakter dere Lise.</p>
-                <div className="styret container-fluid">
-                    <Visitkort rolle="FUNKSJONÆR ANSVARLIG" epost="funkansvarlig" navn="Burhan Sarfraz" />
-                    <Visitkort rolle="TEKNISK ANSVARLIG" epost="teknisk" navn="Kari Stamnes" />
-                    <Visitkort rolle="FAGLIG ANSVARLIG" epost="faglig" navn="Henrik Høybakk Olsvik" />
-                    <Visitkort rolle="BEDRIFTSANSVARLIG" epost="bedrift" navn="Lise Wåsjø" />
-                </div>
+                
             </div>
 
             <div className="mailingliste hidden">
