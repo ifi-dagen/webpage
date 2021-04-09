@@ -1,6 +1,7 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import styled from "styled-components";
+import bedriftInfo from "./bedrift_info.json";
 
 export const BedriftKomponent = () => {
   return (
@@ -14,66 +15,61 @@ export const BedriftKomponent = () => {
         textAlign: "left",
       }}
     >
-      <p>Standen er åpen mellom 12:00-13:00</p>
-
       <Container>
+        <h3 style={{ gridArea: "info", justifySelf: "center", padding: "1em" }}>
+          Standen er åpen mellom 12:00-13:00
+        </h3>
         <img
-          src={require("../../img/dnb_sjogronn.png")}
+          src={require("../../img/logoer/knowit.png")}
           alt={"Logo"}
-          style={{ gridArea: "Logo", width: "150px", height: "100px" }}
+          style={{ gridArea: "Logo" }}
         ></img>
-        <h1 style={{ gridArea: "Name" }}>DNB</h1>
-        <p style={{ gridArea: "Description" }}>
-          BeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseB
-          eskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBe
-          skrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBes
-          krivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBesk
-          rivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskr
-          ivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskri
-          krivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBesk
-          rivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskr
-          ivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskrivelseBeskri
-        </p>
+        {/* <h1 style={{ gridArea: "Name" }}>DNB</h1> */}
         <Link
-          href={"https://www.dagenatifi.no"}
-          style={{ gridArea: "Zoom", padding: "1em" }}
+          href={bedriftInfo.zoom}
+          style={{ gridArea: "Zoom", justifySelf: "center" }}
         >
           <Icon className="fas fa-video"></Icon> Møt oss på zoom!
         </Link>
+        <h3 style={{ gridArea: "Title" }}>Hvem er vi?</h3>
+        <p style={{ gridArea: "Description" }}>{bedriftInfo.description}</p>
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=hY7m5jjJ9mM"
-          width="426px"
-          height="240px"
+          url={bedriftInfo.video}
+          // width="426px"
+          // height="240px"
           style={{
             gridArea: "Video",
             justifySelf: "center",
             paddingBottom: "2em",
           }}
         />
-        {/* <img
-          src={require("../../img/ettermidagen_at_ifi-0480.jpg")}
-          alt={"Stemningsrapport"}
-        ></img> */}
-        <p style={{ gridArea: "Talk" }}>
-          Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss
-          Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss
-          Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss
-          Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss
-        </p>
-
+        <h3 style={{ gridArea: "TitleTalk" }}>Vi vil snakke med deg!</h3>
+        <p style={{ gridArea: "Talk" }}>{bedriftInfo.talk}</p>
         <div style={{ gridArea: "SoMe" }}>
-          <Webpage />
-          <Facebook />
-          <Linkedin />
-          <Instagram />
+          <Facebook link={bedriftInfo.facebook} />
+          <Instagram link={bedriftInfo.instagram} />
+          <Linkedin link={bedriftInfo.facebook} />
+          <Webpage link={bedriftInfo.website} />
         </div>
 
-        <h2 style={{ gridArea: "Work" }}>Våre spennende stillingsannonser</h2>
+        <h3 style={{ gridArea: "CompetitionTitle" }}>Konkurranse</h3>
+        <p style={{ gridArea: "Competition" }}>
+          {bedriftInfo.competition.text}
+          <Link href={bedriftInfo.competition.link}></Link>
+        </p>
 
-        <Link
-          style={{ gridArea: "Annonse" }}
-          href={"https://www.finn.no/job/management/ad.html?finnkode=214293198"}
-        >
+        <h3 style={{ gridArea: "Questions" }}>5 raske</h3>
+        <div style={{ gridArea: "Answers" }}>
+          <p>{bedriftInfo.answer1}</p>
+          <p>{bedriftInfo.answer2}</p>
+          <p>{bedriftInfo.answer3} </p>
+          <p>{bedriftInfo.answer4}</p>
+          <p>{bedriftInfo.answer5}</p>
+        </div>
+
+        <h3 style={{ gridArea: "Work" }}>Våre spennende stillingsannonser</h3>
+
+        <Link style={{ gridArea: "Annonse" }} href={bedriftInfo.stilling}>
           Kul ny jobb
         </Link>
       </Container>
@@ -81,33 +77,33 @@ export const BedriftKomponent = () => {
   );
 };
 
-const Webpage = () => {
+const Webpage = (props) => {
   return (
-    <Link href={"https://www.dagenatifi.no"} style={{ gridArea: "Webpage" }}>
+    <Link href={props.link} style={{ gridArea: "Webpage" }}>
       <Icon className="fas fa-desktop"></Icon>
     </Link>
   );
 };
 
-const Facebook = () => {
+const Facebook = (props) => {
   return (
-    <Link href="https://www.facebook.com/dagenatifi">
+    <Link href={props.link}>
       <Icon className="fab fa-facebook"></Icon>
     </Link>
   );
 };
 
-const Linkedin = () => {
+const Linkedin = (props) => {
   return (
-    <Link href="https://www.linkedin.com/company/dagen-ifi/">
+    <Link href={props.link}>
       <Icon className="fab fa-linkedin"></Icon>
     </Link>
   );
 };
 
-const Instagram = () => {
+const Instagram = (props) => {
   return (
-    <Link href="https://www.instagram.com/dagenatifi/">
+    <Link href={props.link}>
       <Icon className="fab fa-instagram"></Icon>
     </Link>
   );
@@ -115,17 +111,20 @@ const Instagram = () => {
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: 25% 45% 30%;
+  grid-template-columns: 30% 5% 35% 30%;
   grid-template-rows: auto;
   grid-template-areas:
-    "Logo Name SoMe"
-    "Logo . ."
-    "Zoom Description Description"
-    ". Description Description"
-    ". Video Video"
-    ". Talk Talk"
-    ". Work Work"
-    ". Annonse Annonse";
+    "info info info info"
+    "Logo Logo Logo SoMe"
+    ". Zoom Zoom Zoom"
+    "Questions . Title ."
+    "Answers . Description Description"
+    ". . Description Description"
+    ". . Video Video"
+    ". . TitleTalk TitleTalk"
+    ". . Talk Talk"
+    ". . Work Work"
+    ". . Annonse Annonse";
 `;
 
 const Link = styled.a`
