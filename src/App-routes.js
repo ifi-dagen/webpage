@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import Kontakt from "./pages/kontakt/Kontakt";
 import Program from "./pages/program/Program";
 import Bedrift from "./pages/bedrift/Bedrift";
 import Front from './pages/front/Front';
@@ -18,10 +17,6 @@ class Routes extends Component {
           exact
           path="/"
           render={prop => <Front />}
-        />
-        <Route
-          path="/kontakt"
-          render={prop => <Kontakt {...prop} store={this.props.store} />}
         />
         <Route
           exact
