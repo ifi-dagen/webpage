@@ -8,6 +8,7 @@ import Stander from './pages/standomraade/Stander';
 import BedriftStand from './pages/bedriftstand/BedriftStand';
 import Studenter from "./pages/studenter/studenter";
 import Styret from "./components/styret";
+import Foredrag from "./pages/foredrag/foredrag";
 
 
 class Routes extends Component {
@@ -34,6 +35,13 @@ class Routes extends Component {
           path="/studenter"
           render={prop => <Studenter />} 
         />
+      <Route
+                    exact
+                    path="/foredrag"
+                    render={(prop) => (
+                        <Foredrag {...prop} store={this.props.store} />
+                    )}
+                />
         <Route 
         exact
         path="/styret"
