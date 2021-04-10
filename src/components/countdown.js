@@ -8,7 +8,6 @@ const Countdown = () => {
     const dager = start.diff('2021-04-30', 'day')
     const diff = now.diff('2021-04-30', 'day')
     const prosent = (1-Math.abs(diff)/Math.abs(dager))*100
-
     return(
         <div className="countdown">
             <h2> Dager til ettermiddagen: {Math.abs(diff)} </h2>
