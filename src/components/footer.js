@@ -44,13 +44,11 @@ const Wrapper = styled.section`
     padding: 5em;
     align-content: center;
     position: relative;
-    margin-bottom: 20vwpx
-    height: ;
+    height: 200px;
     background-color: red;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    margin-bottom: 0px;
 `;
 
 export default Footer;
