@@ -6,8 +6,7 @@ import { BedriftKomponent } from "./pages/bedrift/BedriftKomponent";
 const App = () => (
   <>
     <Header />
-    <BedriftKomponent />
-    {/* <Routes /> */}
+    <Routes />
   </>
 );
 

@@ -31,7 +31,7 @@ export const BedriftKomponent = () => {
         >
           <Icon className="fas fa-video"></Icon> Møt oss på zoom!
         </Link>
-        <h3 style={{ gridArea: "Title" }}>Hvem er vi?</h3>
+        <h2 style={{ gridArea: "Title" }}>Hvem er vi?</h2>
         <p style={{ gridArea: "Description" }}>{bedriftInfo.description}</p>
         <ReactPlayer
           url={bedriftInfo.video}
@@ -43,7 +43,7 @@ export const BedriftKomponent = () => {
             paddingBottom: "2em",
           }}
         />
-        <h3 style={{ gridArea: "TitleTalk" }}>Vi vil snakke med deg!</h3>
+        <h2 style={{ gridArea: "TitleTalk" }}>Vi vil snakke med deg!</h2>
         <p style={{ gridArea: "Talk" }}>{bedriftInfo.talk}</p>
         <div style={{ gridArea: "SoMe" }}>
           <Facebook link={bedriftInfo.facebook} />
@@ -51,24 +51,18 @@ export const BedriftKomponent = () => {
           <Linkedin link={bedriftInfo.facebook} />
           <Webpage link={bedriftInfo.website} />
         </div>
-
-        <h3 style={{ gridArea: "CompetitionTitle" }}>Konkurranse</h3>
+        {/* <h3 style={{ gridArea: "CompetitionTitle" }}>Konkurranse</h3>
         <p style={{ gridArea: "Competition" }}>
           {bedriftInfo.competition.text}
           <Link href={bedriftInfo.competition.link}></Link>
-        </p>
-
+        </p> */}
         <h3 style={{ gridArea: "Questions" }}>5 raske</h3>
         <div style={{ gridArea: "Answers" }}>
-          <p>{bedriftInfo.answer1}</p>
-          <p>{bedriftInfo.answer2}</p>
-          <p>{bedriftInfo.answer3} </p>
-          <p>{bedriftInfo.answer4}</p>
-          <p>{bedriftInfo.answer5}</p>
+          {bedriftInfo.answer.map((answer) => {
+            return <p>{answer}</p>;
+          })}
         </div>
-
         <h3 style={{ gridArea: "Work" }}>Våre spennende stillingsannonser</h3>
-
         <Link style={{ gridArea: "Annonse" }} href={bedriftInfo.stilling}>
           Kul ny jobb
         </Link>

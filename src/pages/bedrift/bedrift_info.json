@@ -8,11 +8,13 @@
   "instagram": "https://www.instagram.com/dagenatifi/",
   "facebook": "https://www.facebook.com/dagenatifi",
   "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
-  "answer1": "Mest brukte språk? Javascript",
-  "answer2": "Beste ved å jobbe der? spise is",
-  "answer3": "Hvem søker dere? Alle kule folk som liker å programmere",
-  "answer4": "Hvor finner vi dere? Midt i Oslo sentrum",
-  "answer5": "Liten fun fact: Vi spiser is hver dag :D ",
+  "answer": [
+    "Mest brukte språk? Javascript",
+    "Beste ved å jobbe der? spise is",
+    "Hvem søker dere? Alle kule folk som liker å programmere",
+    "Hvor finner vi dere? Midt i Oslo sentrum",
+    "Liten fun fact: Vi spiser is hver dag :D "
+  ],
   "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
 
   "stillinger": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/",
