@@ -4,8 +4,9 @@ import styled from "styled-components";
 
 const Footer = () => {
     return (
-        <Wrapper />
-      
+        <div> 
+            
+        </div>
     )
 }
 
@@ -40,16 +41,6 @@ const Link = styled.a`
 */
 
 const Wrapper = styled.section`
-    background: linear-gradient(to right, #001446, #002446);
-    padding: 5em;
-    align-content: center;
-    position: fixed;
-    height: 50px;
-    background-color: red;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
 
 `;
 
