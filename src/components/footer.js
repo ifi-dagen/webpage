@@ -1,12 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-
+import React from 'react'
 
 const Footer = () => {
-    return (
-        <Wrapper />
-      
-    )
+    return <div></div>
 }
 
 /*
@@ -49,6 +44,6 @@ const Wrapper = styled.section`
     bottom: 0px;
     left: 0px;
     right: 0px;
-`;
+`
 
-export default Footer;
+export default Footer

@@ -5,9 +5,10 @@ import foredrag_info from '../../data/foredrag_info'
 import { useState } from 'react'
 
 const Foredrag = (props) => {
+    
     const history = useHistory()
-    const [time, setTime] = useState('12:00')
-    let [foredrag, setForedrag] = useState(null)
+    const [time] = useState('12:00')
+    let [foredrag] = useState(null)
 
     if (time === '12:00') {
         foredrag = foredrag_info[0]
@@ -81,7 +82,7 @@ const SpeakerInfo = ({ companyName, speakerName }) => {
 const RerouteToLink = ({ location, text }) => {
     return (
         <Place>
-            <a target="_blank" href={location}>
+            <a href={location}>
                 {text}
             </a>
         </Place>
@@ -97,8 +98,7 @@ const Title = styled.div`
 
 const CompanyContainer = styled.div`
     display: grid;
-    grid-template-areas: 'companyName companylogo speakerinfo xxx 
-    ';
+    grid-template-areas: 'companyName companylogo speakerinfo xxx';
     max-height: 6vw;
 `
 const CompanyLogo = styled.div`
@@ -155,13 +155,10 @@ const Place = styled.div`
 `
 
 const Wrapper = styled.div`
-    display: grid;
-    grid-template columns: 1fr 2em 2em auto;
-    padding: 1em;
     margin: auto;
     width: 70%;
 `
-
+/*
 const Border = styled.div`
     border: 2px;
     border-style: solid;
@@ -169,5 +166,6 @@ const Border = styled.div`
     padding: 1em;
     border-radius: 8px;
 `
+*/
 
 export default Foredrag

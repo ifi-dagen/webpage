@@ -10,68 +10,47 @@ const Header = () => {
             <Wrapper>
                 <img
                     onClick={() => herstory.push('/')}
-                    src={require('../img/dagen_logo.svg')}
-                    alt="dagen@ifi logo"
+                    src={require('../img/ettermiddagen.svg')}
+                    alt="ettermiddagen@ifi logo"
                 />
                 <span />
-                <Facebook />
-                <Instagram />
-                <Linkedin />
+                <Box>
+                    <a href="/for-bedrift"> Til bedrifter</a>
+                    <br/>
+                    <a href="/for-bedrift"> Om Oss</a>
+                    <br/>
+                    <a href="/for-bedrift"> FAQ</a>
+                </Box>
             </Wrapper>
         </div>
     )
 }
 
-const Facebook = () => {
-    return (
-        <Link href="https://www.facebook.com/dagenatifi">
-            <Icon className="fab fa-facebook"></Icon>
-        </Link>
-    )
-}
-
-const Linkedin = () => {
-    return (
-        <Link href="https://www.linkedin.com/company/dagen-ifi/">
-            <Icon className="fab fa-linkedin"></Icon>
-        </Link>
-    )
-}
-
-const Instagram = () => {
-    return (
-        <Link href="https://www.instagram.com/dagenatifi/">
-            <Icon className="fab fa-instagram"></Icon>
-        </Link>
-    )
-}
+const Box = styled.div`
+    justify-self: right;
+    line-height: 2;
+`
 
 const Wrapper = styled.div`
     display: grid;
-    grid-template-columns: auto 1fr 2em 2em auto;
+    grid-template-columns: auto auto auto;
     grid-gap: 1rem;
-
     padding: 1em;
-    background: none;
+    align-items: center;
 
     img {
         max-height: 5rem;
         cursor: pointer;
     }
-`
 
-const Link = styled.a`
-    align-items: center;
-    padding: 1em;
-`
+    a {
+        color: black;
+        transition: color 0.25s;
 
-const Icon = styled.i`
-    font-size: 2rem;
-    color: black;
-    transition: color 0.25s;
-
-    ${Link}:hover & {
+        :hover {
         color: deepskyblue;
+    }
+
     }
 `
 
