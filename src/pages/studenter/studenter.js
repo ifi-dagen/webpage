@@ -14,12 +14,6 @@ const Studenter = () => {
                 så hvis du har en oppdatert profil vil det alene kanskje sørge for at du får jobb muligheter uten at du aktivt sender ut søknader.
                 Vi anbefaler uansett at du oppdaterer profilen din og legger til de siste jobb-relaterte erfaringene du har.
                 <br />
-                <p>Sjekk ut DnB's LinkedIn kurs!</p>
-                <div id='videoContainer'>
-                    <iframe title="video" width="640" height="360" src={"https://player.vimeo.com/video/460977519"} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                    <a id="videolink" href={"https://player.vimeo.com/video/460977519"} >Se video her</a>
-                </div>
-
                 <Point> Last opp sideprosjekter på GitHub </Point>
 Har du kodet noe kult i et fag, eller laget noe på fritiden - last opp prosjektet på GitHub!
 Det er en plattform ‘alle’ i bransjen kjenner,
@@ -52,16 +46,16 @@ const Wrapper = styled.div`
     margin: auto;
     max-width: 700px;
     line-height: 1.5;
-
+    
     h1 {
         color: black;
         line-height:1;
     }
+    
     h2 {
         font-weight: normal;
         font-size: 20px;
     }
-    
 `
 
 const Point = styled.p`
