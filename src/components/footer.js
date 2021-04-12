@@ -1,11 +1,10 @@
 import React from "react";
-import styled from "styled-components";
 
 
 const Footer = () => {
     return (
         <div> 
-            
+
         </div>
     )
 }
@@ -40,8 +39,5 @@ const Link = styled.a`
 `
 */
 
-const Wrapper = styled.section`
-
-`;
 
 export default Footer;
