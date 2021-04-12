@@ -5,6 +5,7 @@ import foredrag_info from '../../data/foredrag_info'
 import { useState } from 'react'
 
 const Foredrag = (props) => {
+    
     const history = useHistory()
     const [time] = useState('12:00')
     let [foredrag] = useState(null)
@@ -154,9 +155,6 @@ const Place = styled.div`
 `
 
 const Wrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 2em 2em auto;
-    padding: 1em;
     margin: auto;
     width: 70%;
 `
