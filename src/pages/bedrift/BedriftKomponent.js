@@ -79,9 +79,11 @@ export const BedriftKomponent = () => {
         <div style={{ gridArea: "Annonse" }}>
           {bedrift.positions.map((position) => {
             return (
-              <a key={position} href={position.link}>
-                {position.name}
-              </a>
+              <p>
+                <a key={position} href={position.link}>
+                  {position.name}
+                </a>
+              </p>
             );
           })}
         </div>

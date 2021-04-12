@@ -8,6 +8,7 @@ export const Zoom = (props) => {
     </Link>
   );
 };
+
 export const Facebook = (props) => {
   return (
     <Link href={props.link}>
