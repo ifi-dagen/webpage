@@ -40,63 +40,92 @@ const Program = () => {
                 <h2>Bedriter</h2>
                 <InnerContainerComp>
                     <Time>
-                        12:00-13:00<img src={require('./curlyboi.png')}></img>
+                        12:00-13:00
+                        <img src={require('./curlyboi.png')} alt=""></img>
                     </Time>
                     <Comp1>
-                        <img src={require('../../img/logoer/Bekk.png')}></img>
+                        <img
+                            src={require('../../img/logoer/Bekk.png')}
+                            alt=""
+                        ></img>
                     </Comp1>
                     <Comp2>
-                        <img src={require('../../img/logoer/ABB.png')}></img>
+                        <img
+                            src={require('../../img/logoer/ABB.png')}
+                            alt=""
+                        ></img>
                     </Comp2>
                     <Comp3>
                         <img
                             src={require('../../img/logoer/Accenture.png')}
+                            alt=""
                         ></img>
                     </Comp3>
                     <Comp4>
-                        <img src={require('../../img/logoer/Bouvet.png')}></img>
+                        <img
+                            src={require('../../img/logoer/Bouvet.png')}
+                            alt=""
+                        ></img>
                     </Comp4>
                 </InnerContainerComp>
                 <InnerContainerComp>
                     <Time>
-                        13:00-14:00<img src={require('./curlyboi.png')}></img>
+                        13:00-14:00
+                        <img src={require('./curlyboi.png')} alt=""></img>
                     </Time>
                     <Comp1>
                         <img
                             src={require('../../img/logoer/Bredvid.png')}
+                            alt=""
                         ></img>
                     </Comp1>
                     <Comp2>
                         <img
                             src={require('../../img/logoer/capgemini.png')}
+                            alt=""
                         ></img>
                     </Comp2>
                     <Comp3>
-                        <img src={require('../../img/logoer/cgi.png')}></img>
+                        <img
+                            src={require('../../img/logoer/cgi.png')}
+                            alt=""
+                        ></img>
                     </Comp3>
                     <Comp4>
                         <img
                             src={require('../../img/logoer/ciber_experis.png')}
+                            alt=""
                         ></img>
                     </Comp4>
                 </InnerContainerComp>
                 <InnerContainerComp>
                     <Time>
-                        14:00-15:00<img src={require('./curlyboi.png')}></img>
+                        14:00-15:00
+                        <img src={require('./curlyboi.png')} alt=""></img>
                     </Time>
                     <Comp1>
-                        <img src={require('../../img/logoer/Bekk.png')}></img>
+                        <img
+                            src={require('../../img/logoer/Bekk.png')}
+                            alt=""
+                        ></img>
                     </Comp1>
                     <Comp2>
-                        <img src={require('../../img/logoer/ABB.png')}></img>
+                        <img
+                            src={require('../../img/logoer/ABB.png')}
+                            alt=""
+                        ></img>
                     </Comp2>
                     <Comp3>
                         <img
                             src={require('../../img/logoer/Accenture.png')}
+                            alt=""
                         ></img>
                     </Comp3>
                     <Comp4>
-                        <img src={require('../../img/logoer/Itera.jpg')}></img>
+                        <img
+                            src={require('../../img/logoer/Itera.jpg')}
+                            alt=""
+                        ></img>
                     </Comp4>
                 </InnerContainerComp>
             </Comp>
@@ -107,7 +136,10 @@ const Program = () => {
                         <h3>Superforedrag 1</h3>
                     </Talk>
                     <TalkComp>
-                        <img src={require('../../img/logoer/Itera.jpg')}></img>
+                        <img
+                            src={require('../../img/logoer/Itera.jpg')}
+                            alt=""
+                        ></img>
                     </TalkComp>
                 </InnerContainerEdu>
                 <InnerContainerEdu>
@@ -115,7 +147,10 @@ const Program = () => {
                         <h3>Superforedrag 2</h3>
                     </Talk>
                     <TalkComp>
-                        <img src={require('../../img/logoer/Itera.jpg')}></img>
+                        <img
+                            src={require('../../img/logoer/Itera.jpg')}
+                            alt=""
+                        ></img>
                     </TalkComp>
                 </InnerContainerEdu>
                 <InnerContainerEdu>
@@ -123,7 +158,10 @@ const Program = () => {
                         <h3>Superforedrag 3</h3>
                     </Talk>
                     <TalkComp>
-                        <img src={require('../../img/logoer/Itera.jpg')}></img>
+                        <img
+                            src={require('../../img/logoer/Itera.jpg')}
+                            alt=""
+                        ></img>
                     </TalkComp>
                 </InnerContainerEdu>
                 <InnerContainerEdu>
@@ -131,7 +169,10 @@ const Program = () => {
                         <h3>Superforedrag 4</h3>
                     </Talk>
                     <TalkComp>
-                        <img src={require('../../img/logoer/Itera.jpg')}></img>
+                        <img
+                            src={require('../../img/logoer/Itera.jpg')}
+                            alt=""
+                        ></img>
                     </TalkComp>
                 </InnerContainerEdu>{' '}
                 <InnerContainerEdu>
@@ -139,7 +180,10 @@ const Program = () => {
                         <h3>Superforedrag 5</h3>
                     </Talk>
                     <TalkComp>
-                        <img src={require('../../img/logoer/Itera.jpg')}></img>
+                        <img
+                            src={require('../../img/logoer/Itera.jpg')}
+                            alt=""
+                        ></img>
                     </TalkComp>
                 </InnerContainerEdu>
                 <InnerContainerEdu>
@@ -147,7 +191,10 @@ const Program = () => {
                         <h3>Superforedrag 6</h3>
                     </Talk>
                     <TalkComp>
-                        <img src={require('../../img/logoer/Itera.jpg')}></img>
+                        <img
+                            src={require('../../img/logoer/Itera.jpg')}
+                            alt=""
+                        ></img>
                     </TalkComp>
                 </InnerContainerEdu>
             </Edu>
@@ -186,7 +233,6 @@ const Edu = styled.div`
 
 const InnerContainerComp = styled.div`
     display: grid;
-
     grid-template-areas:
         'time c1 c2'
         'time c3 c4';
@@ -195,16 +241,16 @@ const InnerContainerComp = styled.div`
     width: 35vw;
 `
 
-const Icon = styled.div`
-    img {
-        display: block;
-        max-width: 150px;
-        max-height: 70px;
-        width: auto;
-        height: auto;
-        overflow: hidden;
-    }
-`
+// const Icon = styled.div`
+//     img {
+//         display: block;
+//         max-width: 150px;
+//         max-height: 70px;
+//         width: auto;
+//         height: auto;
+//         overflow: hidden;
+//     }
+// `
 
 const Comp1 = styled.div`
     grid-area: c1;
@@ -304,10 +350,10 @@ const TalkComp = styled.div`
     }
 `
 
-const Split = styled.div`
-    grid-area: split;
-    height: 3vw;
-    font-size: 14px;
-`
+// const Split = styled.div`
+//     grid-area: split;
+//     height: 3vw;
+//     font-size: 14px;
+// `
 
 export default Program
