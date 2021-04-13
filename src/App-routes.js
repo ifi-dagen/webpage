@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Program from './pages/program/Program'
+import Program from './pages/program/EttermiddagenProgram'
 import Bedrift from './pages/bedrift/Bedrift'
 import Front from './pages/front/Front'
 import Error from './pages/error/Error'

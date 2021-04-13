@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 const Footer = () => {
     return <div></div>
@@ -34,7 +35,7 @@ const Link = styled.a`
 `
 */
 
-const Wrapper = styled.section`
+const Wrapper = styled.div`
     background: linear-gradient(to right, #001446, #002446);
     padding: 5em;
     align-content: center;
