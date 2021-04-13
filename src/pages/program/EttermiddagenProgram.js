@@ -195,6 +195,17 @@ const InnerContainerComp = styled.div`
     width: 35vw;
 `
 
+const Icon = styled.div`
+    img {
+        display: block;
+        max-width: 150px;
+        max-height: 70px;
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+`
+
 const Comp1 = styled.div`
     grid-area: c1;
     place-items: center;
@@ -260,7 +271,7 @@ const Time = styled.div`
         height: 110%;
         width: 70%;
     }
-    color: black;
+    color: darkorchid;
     font-size: 15px;
 `
 
