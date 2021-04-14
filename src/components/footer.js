@@ -1,13 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-
+import React from 'react'
+import styled from 'styled-components'
 
 const Footer = () => {
-    return (
-        <div> 
-            
-        </div>
-    )
+    return <div></div>
 }
 
 /*
@@ -40,7 +35,7 @@ const Link = styled.a`
 `
 */
 
-const Wrapper = styled.section`
+const Wrapper = styled.div`
     background: linear-gradient(to right, #001446, #002446);
     padding: 5em;
     align-content: center;
@@ -50,6 +45,6 @@ const Wrapper = styled.section`
     bottom: 0px;
     left: 0px;
     right: 0px;
-`;
+`
 
-export default Footer;
+export default Footer
