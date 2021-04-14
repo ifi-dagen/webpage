@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
 const Footer = () => {
     return <div></div>
@@ -35,16 +35,16 @@ const Link = styled.a`
 `
 */
 
-const Wrapper = styled.div`
-    background: linear-gradient(to right, #001446, #002446);
-    padding: 5em;
-    align-content: center;
-    position: relative;
-    height: 200px;
-    background-color: red;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-`
+// const Wrapper = styled.div`
+//     background: linear-gradient(to right, #001446, #002446);
+//     padding: 5em;
+//     align-content: center;
+//     position: relative;
+//     height: 200px;
+//     background-color: red;
+//     bottom: 0px;
+//     left: 0px;
+//     right: 0px;
+// `
 
 export default Footer
