@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import BedriftKohort from "../bedrift/BedriftKohort"
 
 const Program = () => {
     return (
@@ -38,96 +39,10 @@ const Program = () => {
             </Intro>
             <Comp>
                 <h2>Bedriter</h2>
-                <InnerContainerComp>
-                    <Time>
-                        12:00-13:00
-                        <img src={require('./curlyboi.png')} alt=""></img>
-                    </Time>
-                    <Comp1>
-                        <img
-                            src={require('../../img/logoer/Bekk.png')}
-                            alt=""
-                        ></img>
-                    </Comp1>
-                    <Comp2>
-                        <img
-                            src={require('../../img/logoer/ABB.png')}
-                            alt=""
-                        ></img>
-                    </Comp2>
-                    <Comp3>
-                        <img
-                            src={require('../../img/logoer/Accenture.png')}
-                            alt=""
-                        ></img>
-                    </Comp3>
-                    <Comp4>
-                        <img
-                            src={require('../../img/logoer/Bouvet.png')}
-                            alt=""
-                        ></img>
-                    </Comp4>
-                </InnerContainerComp>
-                <InnerContainerComp>
-                    <Time>
-                        13:00-14:00
-                        <img src={require('./curlyboi.png')} alt=""></img>
-                    </Time>
-                    <Comp1>
-                        <img
-                            src={require('../../img/logoer/Bredvid.png')}
-                            alt=""
-                        ></img>
-                    </Comp1>
-                    <Comp2>
-                        <img
-                            src={require('../../img/logoer/capgemini.png')}
-                            alt=""
-                        ></img>
-                    </Comp2>
-                    <Comp3>
-                        <img
-                            src={require('../../img/logoer/cgi.png')}
-                            alt=""
-                        ></img>
-                    </Comp3>
-                    <Comp4>
-                        <img
-                            src={require('../../img/logoer/ciber_experis.png')}
-                            alt=""
-                        ></img>
-                    </Comp4>
-                </InnerContainerComp>
-                <InnerContainerComp>
-                    <Time>
-                        14:00-15:00
-                        <img src={require('./curlyboi.png')} alt=""></img>
-                    </Time>
-                    <Comp1>
-                        <img
-                            src={require('../../img/logoer/Bekk.png')}
-                            alt=""
-                        ></img>
-                    </Comp1>
-                    <Comp2>
-                        <img
-                            src={require('../../img/logoer/ABB.png')}
-                            alt=""
-                        ></img>
-                    </Comp2>
-                    <Comp3>
-                        <img
-                            src={require('../../img/logoer/Accenture.png')}
-                            alt=""
-                        ></img>
-                    </Comp3>
-                    <Comp4>
-                        <img
-                            src={require('../../img/logoer/Itera.jpg')}
-                            alt=""
-                        ></img>
-                    </Comp4>
-                </InnerContainerComp>
+                <BedriftKohort comp1="DNB" comp2="Itera" comp3="ABB" comp4="Bekk"/>
+                <BedriftKohort comp1="DNB" comp2="Itera" comp3="ABB" comp4="Bekk"/>
+                <BedriftKohort comp1="DNB" comp2="Itera" comp3="ABB" comp4="Bekk"/>
+       
             </Comp>
             <Edu>
                 <h2>Faglig</h2>

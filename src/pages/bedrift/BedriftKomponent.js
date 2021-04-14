@@ -9,10 +9,11 @@ import {
   Zoom,
   Linkedin,
 } from "../../components/symbols";
+import { useState } from "react";
 
-export const BedriftKomponent = () => {
+export const BedriftKomponent = ({bedrift}) => {
   //Får fra bedrift kohort
-  const bedrift = Bedrift.DNB;
+  console.log(bedrift);
   return (
     <div
       style={{
