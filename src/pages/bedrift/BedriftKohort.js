@@ -1,80 +1,77 @@
 import React from 'react'
 import styled from 'styled-components'
-import Bedrift from "./bedrift_info.json";
+import Bedrift from './bedrift_info.json'
 import { useHistory } from 'react-router-dom'
-import {BedriftKomponent} from "./BedriftKomponent"
-import { useState } from "react";
-
-
+import { BedriftKomponent } from './BedriftKomponent'
+import { useState, useEffect } from 'react'
 
 /* 
 
 */
 
-
 const importAll = (r) => {
-    let logos = {};
-    r.keys().map((item, index) => { logos[item.replace('./', '')] = r(item); });
-    return logos;
+    let logos = {}
+    r.keys().map((item) => {
+        logos[item.replace('./', '')] = r(item)
+    })
+    return logos
 }
 
-  
-const logos = importAll(require.context('../../img/logoer', false, /\.(png|jpe?g|svg)$/));
+const logos = importAll(
+    require.context('../../img/logoer', false, /\.(png|jpe?g|svg)$/)
+)
 
 const CompToLogo = (comp) => {
     return logos[comp.logo]
 }
 
 const CompToObject = (comp) => {
-    return Bedrift.find(x => (x.name === comp))
+    return Bedrift.find((x) => x.name === comp)
 }
 
-const redirect = (comp, history, setCompany, company) => {
-    history.push("/bedrift")
-    if (comp) {
-        setCompany(comp)
-        console.log(company);
-    }
-       
-    return <BedriftKomponent bedrift={company}/>
-}
-
-const BedriftKohort = ({comp1, comp2, comp3, comp4}) => {
+const BedriftKohort = ({ comp1, comp2, comp3, comp4 }) => {
     const history = useHistory()
-    const [company, setCompany] = useState(0)
+    const [company, setCompany] = useState(null)
     const c1 = CompToObject(comp1)
     const c2 = CompToObject(comp2)
     const c3 = CompToObject(comp3)
     const c4 = CompToObject(comp4)
-    return (  
-        <InnerContainerComp>
-            <Time>
-                {c1.standtime[0]} -{c1.standtime[1]} 
-            </Time>
-            <Comp1>
-                <img src={CompToLogo(c1)}
-                     onClick={() => redirect(c1, history, setCompany, company)}
-                     alt=""
-                ></img>
-            </Comp1>
-            <Comp2>
-                <img src={CompToLogo(c2)}
-                     alt=""
-                ></img>
-            </Comp2>
-            <Comp3>
-                <img src={CompToLogo(c3)}
-                     alt=""
-                ></img>
-            </Comp3>
-            <Comp4>
-                <img src={CompToLogo(c4)}
-                     alt=""
-                ></img>
-            </Comp4>
-            
-        </InnerContainerComp>
-  )
+    console.log(company)
+    const redirect = () => {
+        console.log('REDIRECT: ', company)
+        // history.push('/bedrift', { state: company }, { update: true })
+        return <BedriftKomponent bedrift={company} />
+    }
+    if (company !== null) {
+        return redirect()
+        // history.push('/bedrift', [company], { update: true })
+    } else {
+        return (
+            <InnerContainerComp>
+                <Time>
+                    {c1.standtime[0]} -{c1.standtime[1]}
+                </Time>
+                <Comp1>
+                    <img
+                        src={CompToLogo(c1)}
+                        onClick={() => {
+                            setCompany(c1)
+                        }}
+                        alt=""
+                    ></img>
+                </Comp1>
+                <Comp2>
+                    <img src={CompToLogo(c2)} alt=""></img>
+                </Comp2>
+                <Comp3>
+                    <img src={CompToLogo(c3)} alt=""></img>
+                </Comp3>
+                <Comp4>
+                    <img src={CompToLogo(c4)} alt=""></img>
+                </Comp4>
+            </InnerContainerComp>
+        )
+    }
 }
 
 export default BedriftKohort

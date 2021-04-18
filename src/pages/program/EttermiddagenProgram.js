@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import BedriftKohort from "../bedrift/BedriftKohort"
+import BedriftKohort from '../bedrift/BedriftKohort'
 
 const Program = () => {
     return (
@@ -39,12 +39,26 @@ const Program = () => {
             </Intro>
             <Comp>
                 <h2>Bedriter</h2>
-                <BedriftKohort comp1="DNB" comp2="Itera" comp3="ABB" comp4="Bekk"/>
-                <BedriftKohort comp1="DNB" comp2="Itera" comp3="ABB" comp4="Bekk"/>
-                <BedriftKohort comp1="DNB" comp2="Itera" comp3="ABB" comp4="Bekk"/>
-       
+                <BedriftKohort
+                    comp1="DNB"
+                    comp2="Itera"
+                    comp3="ABB"
+                    comp4="Bekk"
+                />
+                <BedriftKohort
+                    comp1="DNB"
+                    comp2="Itera"
+                    comp3="ABB"
+                    comp4="Bekk"
+                />
+                <BedriftKohort
+                    comp1="DNB"
+                    comp2="Itera"
+                    comp3="ABB"
+                    comp4="Bekk"
+                />
             </Comp>
-            <Edu>
+            {/* <Edu>
                 <h2>Faglig</h2>
                 <InnerContainerEdu>
                     <Talk>
@@ -112,7 +126,7 @@ const Program = () => {
                         ></img>
                     </TalkComp>
                 </InnerContainerEdu>
-            </Edu>
+            </Edu> */}
         </Container>
     )
 }
