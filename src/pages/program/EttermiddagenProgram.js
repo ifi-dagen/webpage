@@ -3,10 +3,11 @@ import styled from 'styled-components'
 import BedriftKohort from '../bedrift/BedriftKohort'
 import { BedriftKomponent } from '../bedrift/BedriftKomponent'
 import Faglig from '../foredrag/Faglig'
+import Foredrag from '../foredrag/foredrag'
 
 const Program = () => {
     const [company, setCompany] = useState(null)
-
+    const [talk, setTalk] = useState(null)
     const [selected, setSelected] = useState(null)
     if (selected === null) {
         return (
@@ -75,12 +76,15 @@ const Program = () => {
                         setCompany={setCompany}
                     />
                 </Comp>
-                <Faglig />
+                <Faglig setSelected={setSelected} setTalk={setTalk} />
             </Container>
         )
-    } else {
+    } else if (selected === 'bedrift') {
         console.log(selected)
         return <BedriftKomponent bedrift={company} />
+    } else if (selected === 'faglig') {
+        console.log(selected)
+        return <Foredrag id={talk} />
     }
 }
 

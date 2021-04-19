@@ -4,21 +4,9 @@ import { useHistory } from 'react-router-dom'
 import foredrag_info from '../../data/foredrag_info'
 import { useState } from 'react'
 
-const Foredrag = (props) => {
-    
+const Foredrag = ({ id }) => {
     const history = useHistory()
-    const [time] = useState('12:00')
-    let [foredrag] = useState(null)
-
-    if (time === '12:00') {
-        foredrag = foredrag_info[0]
-    } else if (time === '13:00') {
-        foredrag = foredrag_info[1]
-    } else if (time === '14:00') {
-        foredrag = foredrag_info[2]
-    }
-
-    console.log(foredrag.startTime)
+    const foredrag = foredrag_info[id]
     return (
         /*
         TODO:
@@ -82,9 +70,7 @@ const SpeakerInfo = ({ companyName, speakerName }) => {
 const RerouteToLink = ({ location, text }) => {
     return (
         <Place>
-            <a href={location}>
-                {text}
-            </a>
+            <a href={location}>{text}</a>
         </Place>
     )
 }
@@ -98,7 +84,7 @@ const Title = styled.div`
 
 const CompanyContainer = styled.div`
     display: grid;
-    grid-template-areas: 'companyName companylogo speakerinfo xxx';
+    grid-template-areas: 'companyName companylogo speakerinfo .';
     max-height: 6vw;
 `
 const CompanyLogo = styled.div`

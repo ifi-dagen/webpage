@@ -1,73 +1,84 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Faglig = () => {
+const Faglig = ({ setSelected, setTalk }) => {
+    const updateState = (id) => {
+        setSelected('faglig')
+        setTalk(id)
+    }
+
     return (
         <Edu>
             <h2>Faglig</h2>
             <InnerContainerEdu>
                 <Talk>
-                    <h3>Superforedrag 1</h3>
+                    <h3 onClick={() => updateState(0)}>Superforedrag 1</h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Itera.jpg')}
                         alt=""
+                        onClick={() => updateState(0)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3>Superforedrag 2</h3>
+                    <h3 onClick={() => updateState(1)}>Superforedrag 2</h3>
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Itera.jpg')}
                         alt=""
+                        onClick={() => updateState(1)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3>Superforedrag 3</h3>
+                    <h3 onClick={() => updateState(2)}>Superforedrag 3</h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Itera.jpg')}
                         alt=""
+                        onClick={() => updateState(2)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3>Superforedrag 4</h3>
+                    <h3 onClick={() => updateState(3)}>Superforedrag 4</h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Itera.jpg')}
                         alt=""
+                        onClick={() => updateState(3)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>{' '}
             <InnerContainerEdu>
                 <Talk>
-                    <h3>Superforedrag 5</h3>
+                    <h3 onClick={() => updateState(4)}>Superforedrag 5</h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Itera.jpg')}
                         alt=""
+                        onClick={() => updateState(4)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3>Superforedrag 6</h3>
+                    <h3 onClick={() => updateState(5)}>Superforedrag 6</h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Itera.jpg')}
                         alt=""
+                        onClick={() => updateState(5)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
