@@ -113,10 +113,6 @@ const Comp = styled.div`
     }
 `
 
-const Edu = styled.div`
-    grid-area: edu;
-`
-
 // const Icon = styled.div`
 //     img {
 //         display: block;
@@ -127,35 +123,6 @@ const Edu = styled.div`
 //         overflow: hidden;
 //     }
 // `
-
-const InnerContainerEdu = styled.div`
-    grid-area: edu;
-    border: 2px;
-    display: grid;
-    grid-template-columns: 14 vw 6vw;
-    grid-template-areas: 'title title title company';
-    height: 17%;
-`
-const Talk = styled.div`
-    grid-area: title;
-    height: 3vw;
-    font-size: 14px;
-    padding-top: 5vw;
-    padding-bot: 3vw;
-`
-
-const TalkComp = styled.div`
-    grid-area: company;
-    padding-top: 5vw;
-    padding-bot: 3vw;
-    img {
-        display: block;
-        max-width: 6vw;
-        max-height: 3vw;
-        width: auto;
-        height: auto;
-    }
-`
 
 // const Split = styled.div`
 //     grid-area: split;

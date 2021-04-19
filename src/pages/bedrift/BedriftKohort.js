@@ -116,6 +116,9 @@ const Comp1 = styled.div`
         height: auto;
         overflow: hidden;
     }
+    :hover {
+        cursor: pointer;
+    }
 `
 
 const Comp2 = styled.div`
@@ -130,6 +133,9 @@ const Comp2 = styled.div`
         height: auto;
         overflow: hidden;
     }
+    :hover {
+        cursor: pointer;
+    }
 `
 const Comp3 = styled.div`
     grid-area: c3;
@@ -142,6 +148,9 @@ const Comp3 = styled.div`
         width: auto;
         height: auto;
         overflow: hidden;
+    }
+    :hover {
+        cursor: pointer;
     }
 `
 const Comp4 = styled.div`
@@ -156,6 +165,9 @@ const Comp4 = styled.div`
         width: auto;
         height: auto;
         overflow: hidden;
+    }
+    :hover {
+        cursor: pointer;
     }
 `
 

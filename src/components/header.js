@@ -16,9 +16,9 @@ const Header = () => {
                 <span />
                 <Box>
                     <a href="/for-bedrift"> Til bedrifter</a>
-                    <br/>
+                    <br />
                     <a href="/for-bedrift"> Om Oss</a>
-                    <br/>
+                    <br />
                     <a href="/for-bedrift"> FAQ</a>
                 </Box>
             </Wrapper>
@@ -37,20 +37,26 @@ const Wrapper = styled.div`
     grid-gap: 1rem;
     padding: 1em;
     align-items: center;
+    background-color: orange;
 
     img {
         max-height: 5rem;
         cursor: pointer;
+        color: black;
+        transition: color 0.25s;
+        :hover {
+            fill: #b45eff;
+        }
     }
 
     a {
         color: black;
         transition: color 0.25s;
-
         :hover {
-        color: deepskyblue;
-    }
-
+            color: #b45eff;
+        }
+        text-decoration: none;
+        font-family: Courier New;
     }
 `
 

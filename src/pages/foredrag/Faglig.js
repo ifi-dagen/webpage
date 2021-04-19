@@ -115,6 +115,9 @@ const Talk = styled.div`
     font-size: 14px;
     padding-top: 5vw;
     padding-bot: 3vw;
+    :hover {
+        cursor: pointer;
+    }
 `
 
 const TalkComp = styled.div`
@@ -127,6 +130,9 @@ const TalkComp = styled.div`
         max-height: 3vw;
         width: auto;
         height: auto;
+    }
+    :hover {
+        cursor: pointer;
     }
 `
 export default Faglig
