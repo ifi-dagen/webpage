@@ -8,8 +8,8 @@ import Foredrag from '../foredrag/foredrag'
 const Program = () => {
     const [company, setCompany] = useState(null)
     const [talk, setTalk] = useState(null)
-    const [selected, setSelected] = useState(null)
-    if (selected === null) {
+    const [selected, setSelected] = useState('program')
+    if (selected === 'program') {
         return (
             <Container>
                 <Intro>
