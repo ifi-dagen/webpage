@@ -38,7 +38,7 @@ const foredrag_info = [
             'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
         link:
             'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO',
-        speaker: 'Silje :)',
+        speaker: 'Silje :/',
         alt_tekst: '',
     },
     {
@@ -59,7 +59,7 @@ const foredrag_info = [
             'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
         link:
             'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO',
-        speaker: 'Silje :)',
+        speaker: 'Silje :O',
         alt_tekst: '',
     },
 ]
