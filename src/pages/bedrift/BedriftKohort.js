@@ -29,49 +29,66 @@ const CompToObject = (comp) => {
     return Bedrift.find((x) => x.name === comp)
 }
 
-const BedriftKohort = ({ comp1, comp2, comp3, comp4 }) => {
-    const history = useHistory()
-    const [company, setCompany] = useState(null)
+const BedriftKohort = ({
+    comp1,
+    comp2,
+    comp3,
+    comp4,
+    setSelected,
+    company,
+    setCompany,
+}) => {
     const c1 = CompToObject(comp1)
     const c2 = CompToObject(comp2)
     const c3 = CompToObject(comp3)
     const c4 = CompToObject(comp4)
-    console.log(company)
-    const redirect = () => {
-        console.log('REDIRECT: ', company)
-        // history.push('/bedrift', { state: company }, { update: true })
-        return <BedriftKomponent bedrift={company} />
-    }
-    if (company !== null) {
-        return redirect()
-        // history.push('/bedrift', [company], { update: true })
-    } else {
-        return (
-            <InnerContainerComp>
-                <Time>
-                    {c1.standtime[0]} -{c1.standtime[1]}
-                </Time>
-                <Comp1>
-                    <img
-                        src={CompToLogo(c1)}
-                        onClick={() => {
-                            setCompany(c1)
-                        }}
-                        alt=""
-                    ></img>
-                </Comp1>
-                <Comp2>
-                    <img src={CompToLogo(c2)} alt=""></img>
-                </Comp2>
-                <Comp3>
-                    <img src={CompToLogo(c3)} alt=""></img>
-                </Comp3>
-                <Comp4>
-                    <img src={CompToLogo(c4)} alt=""></img>
-                </Comp4>
-            </InnerContainerComp>
-        )
-    }
+    return (
+        <InnerContainerComp>
+            <Time>
+                {c1.standtime[0]} -{c1.standtime[1]}
+            </Time>
+            <Comp1>
+                <img
+                    src={CompToLogo(c1)}
+                    onClick={() => {
+                        setCompany(c1)
+                        setSelected('bedrift')
+                    }}
+                    alt=""
+                ></img>
+            </Comp1>
+            <Comp2>
+                <img
+                    src={CompToLogo(c2)}
+                    onClick={() => {
+                        setCompany(c2)
+                        setSelected('bedrift')
+                    }}
+                    alt=""
+                ></img>{' '}
+            </Comp2>
+            <Comp3>
+                <img
+                    src={CompToLogo(c3)}
+                    onClick={() => {
+                        setCompany(c3)
+                        setSelected('bedrift')
+                    }}
+                    alt=""
+                ></img>{' '}
+            </Comp3>
+            <Comp4>
+                <img
+                    src={CompToLogo(c4)}
+                    onClick={() => {
+                        setCompany(c4)
+                        setSelected('bedrift')
+                    }}
+                    alt=""
+                ></img>{' '}
+            </Comp4>
+        </InnerContainerComp>
+    )
 }
 
 export default BedriftKohort

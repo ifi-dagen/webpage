@@ -1,134 +1,87 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import BedriftKohort from '../bedrift/BedriftKohort'
+import { BedriftKomponent } from '../bedrift/BedriftKomponent'
+import Faglig from '../foredrag/Faglig'
 
 const Program = () => {
-    return (
-        <Container>
-            <Intro>
-                <h1>ettermiddagen@IFI 2021</h1>
-                <p>
-                    Cupidatat adipisicing cupidatat excepteur eiusmod Lorem
-                    aliquip amet eu nisi Lorem dolor. Eiusmod adipisicing mollit
-                    nisi sit non. Sunt Lorem reprehenderit do aute pariatur
-                    culpa ipsum esse occaecat anim veniam aliqua. Sint qui
-                    excepteur laboris exercitation incididunt ea anim occaecat
-                    ut. Enim veniam aute ex sit velit incididunt exercitation
-                    culpa voluptate adipisicing elit. Nostrud laboris irure in
-                    nisi non enim. Officia voluptate tempor incididunt ea
-                    adipisicing nulla magna eu do non nisi dolore exercitation
-                    aute. Sint culpa mollit nostrud nulla in consequat mollit
-                    cillum fugiat minim consectetur minim. Deserunt sunt quis
-                    dolor aliqua duis fugiat excepteur do in fugiat sunt
-                    consequat ullamco voluptate. Non officia quis occaecat non
-                    adipisicing ad dolore adipisicing consequat. Amet
-                    consectetur magna adipisicing quis. In irure eu anim laboris
-                    laboris cillum culpa occaecat aute est adipisicing consequat
-                    irure ipsum. Amet veniam fugiat quis reprehenderit velit do
-                    ipsum sint qui ut. Sunt officia nulla irure cillum est elit
-                    quis ex. Qui sit ut Lorem in enim esse est fugiat non.
-                    Voluptate amet ea Lorem qui elit quis exercitation non qui
-                    aliquip eu ullamco. Enim consectetur irure deserunt non ut
-                    quis anim irure velit sit tempor velit non. Consectetur
-                    consequat exercitation exercitation ad in labore aliqua
-                    commodo excepteur ut labore labore ipsum. Nisi ad ea esse
-                    incididunt elit enim consequat pariatur labore nostrud.
-                    Minim ea qui est veniam laborum ipsum. Ullamco officia do
-                    officia aliquip ad labore..
-                </p>
-            </Intro>
-            <Comp>
-                <h2>Bedriter</h2>
-                <BedriftKohort
-                    comp1="DNB"
-                    comp2="Itera"
-                    comp3="ABB"
-                    comp4="Bekk"
-                />
-                <BedriftKohort
-                    comp1="DNB"
-                    comp2="Itera"
-                    comp3="ABB"
-                    comp4="Bekk"
-                />
-                <BedriftKohort
-                    comp1="DNB"
-                    comp2="Itera"
-                    comp3="ABB"
-                    comp4="Bekk"
-                />
-            </Comp>
-            {/* <Edu>
-                <h2>Faglig</h2>
-                <InnerContainerEdu>
-                    <Talk>
-                        <h3>Superforedrag 1</h3>
-                    </Talk>
-                    <TalkComp>
-                        <img
-                            src={require('../../img/logoer/Itera.jpg')}
-                            alt=""
-                        ></img>
-                    </TalkComp>
-                </InnerContainerEdu>
-                <InnerContainerEdu>
-                    <Talk>
-                        <h3>Superforedrag 2</h3>
-                    </Talk>
-                    <TalkComp>
-                        <img
-                            src={require('../../img/logoer/Itera.jpg')}
-                            alt=""
-                        ></img>
-                    </TalkComp>
-                </InnerContainerEdu>
-                <InnerContainerEdu>
-                    <Talk>
-                        <h3>Superforedrag 3</h3>
-                    </Talk>
-                    <TalkComp>
-                        <img
-                            src={require('../../img/logoer/Itera.jpg')}
-                            alt=""
-                        ></img>
-                    </TalkComp>
-                </InnerContainerEdu>
-                <InnerContainerEdu>
-                    <Talk>
-                        <h3>Superforedrag 4</h3>
-                    </Talk>
-                    <TalkComp>
-                        <img
-                            src={require('../../img/logoer/Itera.jpg')}
-                            alt=""
-                        ></img>
-                    </TalkComp>
-                </InnerContainerEdu>{' '}
-                <InnerContainerEdu>
-                    <Talk>
-                        <h3>Superforedrag 5</h3>
-                    </Talk>
-                    <TalkComp>
-                        <img
-                            src={require('../../img/logoer/Itera.jpg')}
-                            alt=""
-                        ></img>
-                    </TalkComp>
-                </InnerContainerEdu>
-                <InnerContainerEdu>
-                    <Talk>
-                        <h3>Superforedrag 6</h3>
-                    </Talk>
-                    <TalkComp>
-                        <img
-                            src={require('../../img/logoer/Itera.jpg')}
-                            alt=""
-                        ></img>
-                    </TalkComp>
-                </InnerContainerEdu>
-            </Edu> */}
-        </Container>
-    )
+    const [company, setCompany] = useState(null)
+
+    const [selected, setSelected] = useState(null)
+    if (selected === null) {
+        return (
+            <Container>
+                <Intro>
+                    <h1>ettermiddagen@IFI 2021</h1>
+                    <p>
+                        Cupidatat adipisicing cupidatat excepteur eiusmod Lorem
+                        aliquip amet eu nisi Lorem dolor. Eiusmod adipisicing
+                        mollit nisi sit non. Sunt Lorem reprehenderit do aute
+                        pariatur culpa ipsum esse occaecat anim veniam aliqua.
+                        Sint qui excepteur laboris exercitation incididunt ea
+                        anim occaecat ut. Enim veniam aute ex sit velit
+                        incididunt exercitation culpa voluptate adipisicing
+                        elit. Nostrud laboris irure in nisi non enim. Officia
+                        voluptate tempor incididunt ea adipisicing nulla magna
+                        eu do non nisi dolore exercitation aute. Sint culpa
+                        mollit nostrud nulla in consequat mollit cillum fugiat
+                        minim consectetur minim. Deserunt sunt quis dolor aliqua
+                        duis fugiat excepteur do in fugiat sunt consequat
+                        ullamco voluptate. Non officia quis occaecat non
+                        adipisicing ad dolore adipisicing consequat. Amet
+                        consectetur magna adipisicing quis. In irure eu anim
+                        laboris laboris cillum culpa occaecat aute est
+                        adipisicing consequat irure ipsum. Amet veniam fugiat
+                        quis reprehenderit velit do ipsum sint qui ut. Sunt
+                        officia nulla irure cillum est elit quis ex. Qui sit ut
+                        Lorem in enim esse est fugiat non. Voluptate amet ea
+                        Lorem qui elit quis exercitation non qui aliquip eu
+                        ullamco. Enim consectetur irure deserunt non ut quis
+                        anim irure velit sit tempor velit non. Consectetur
+                        consequat exercitation exercitation ad in labore aliqua
+                        commodo excepteur ut labore labore ipsum. Nisi ad ea
+                        esse incididunt elit enim consequat pariatur labore
+                        nostrud. Minim ea qui est veniam laborum ipsum. Ullamco
+                        officia do officia aliquip ad labore..
+                    </p>
+                </Intro>
+                <Comp>
+                    <h2>Bedriter</h2>
+                    <BedriftKohort
+                        comp1="DNB"
+                        comp2="Itera"
+                        comp3="ABB"
+                        comp4="Bekk"
+                        setSelected={setSelected}
+                        company={company}
+                        setCompany={setCompany}
+                    />
+                    <BedriftKohort
+                        comp1="DNB"
+                        comp2="Itera"
+                        comp3="ABB"
+                        comp4="Bekk"
+                        setSelected={setSelected}
+                        company={company}
+                        setCompany={setCompany}
+                    />
+                    <BedriftKohort
+                        comp1="DNB"
+                        comp2="Itera"
+                        comp3="ABB"
+                        comp4="Bekk"
+                        setSelected={setSelected}
+                        company={company}
+                        setCompany={setCompany}
+                    />
+                </Comp>
+                <Faglig />
+            </Container>
+        )
+    } else {
+        console.log(selected)
+        return <BedriftKomponent bedrift={company} />
+    }
 }
 
 const Container = styled.div`
@@ -160,16 +113,6 @@ const Edu = styled.div`
     grid-area: edu;
 `
 
-const InnerContainerComp = styled.div`
-    display: grid;
-    grid-template-areas:
-        'time c1 c2'
-        'time c3 c4';
-    padding: 2em;
-    height: 20vw;
-    width: 35vw;
-`
-
 // const Icon = styled.div`
 //     img {
 //         display: block;
@@ -180,75 +123,6 @@ const InnerContainerComp = styled.div`
 //         overflow: hidden;
 //     }
 // `
-
-const Comp1 = styled.div`
-    grid-area: c1;
-    place-items: center;
-    display: flex;
-    img {
-        display: block;
-        max-width: 150px;
-        max-height: 70px;
-        width: auto;
-        height: auto;
-        overflow: hidden;
-    }
-`
-
-const Comp2 = styled.div`
-    grid-area: c2;
-    display: flex;
-    place-items: center;
-    img {
-        display: block;
-        max-width: 150px;
-        max-height: 70px;
-        width: auto;
-        height: auto;
-        overflow: hidden;
-    }
-`
-const Comp3 = styled.div`
-    grid-area: c3;
-    place-items: center;
-    display: flex;
-    img {
-        display: block;
-        max-width: 150px;
-        max-height: 70px;
-        width: auto;
-        height: auto;
-        overflow: hidden;
-    }
-`
-const Comp4 = styled.div`
-    grid-area: c4;
-    display: flex;
-
-    place-items: center;
-    img {
-        display: block;
-        max-width: 150px;
-        max-height: 70px;
-        width: auto;
-        height: auto;
-        overflow: hidden;
-    }
-`
-
-const Time = styled.div`
-    grid-area: time;
-    display: flex;
-    place-items: center;
-    padding-right: 2em;
-    justify-items: center;
-    img {
-        height: 110%;
-        width: 70%;
-    }
-    color: darkorchid;
-    font-size: 15px;
-`
 
 const InnerContainerEdu = styled.div`
     grid-area: edu;
