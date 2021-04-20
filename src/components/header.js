@@ -37,7 +37,6 @@ const Wrapper = styled.div`
     grid-gap: 1rem;
     padding: 1em;
     align-items: center;
-    background-color: orange;
 
     img {
         max-height: 5rem;
