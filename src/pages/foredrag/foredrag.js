@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
 import foredrag_info from '../../data/foredrag_info'
-import { useState } from 'react'
 
 const Foredrag = ({ id }) => {
     const history = useHistory()

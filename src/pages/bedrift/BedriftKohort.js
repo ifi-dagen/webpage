@@ -1,9 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Bedrift from './bedrift_info.json'
-import { useHistory } from 'react-router-dom'
-import { BedriftKomponent } from './BedriftKomponent'
-import { useState, useEffect } from 'react'
 
 /* 
 

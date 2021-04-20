@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import styled from 'styled-components'
-import Bedrift from './bedrift_info.json'
 import {
     Instagram,
     Webpage,
@@ -9,7 +8,6 @@ import {
     Zoom,
     Linkedin,
 } from '../../components/symbols'
-import { useState } from 'react'
 
 export const BedriftKomponent = ({ bedrift }) => {
     //Får fra bedrift kohort
