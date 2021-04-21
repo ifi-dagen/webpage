@@ -115,6 +115,9 @@ const Comp1 = styled.div`
     }
     :hover {
         cursor: pointer;
+        opacity: 1;
+        transition: 0.5s ease;
+        background-color: #99c24d;
     }
 `
 
@@ -132,6 +135,9 @@ const Comp2 = styled.div`
     }
     :hover {
         cursor: pointer;
+        opacity: 1;
+        transition: 0.5s ease;
+        background-color: #f18f01;
     }
 `
 const Comp3 = styled.div`
@@ -148,6 +154,9 @@ const Comp3 = styled.div`
     }
     :hover {
         cursor: pointer;
+        opacity: 1;
+        transition: 0.5s ease;
+        background-color: #23b5d3;
     }
 `
 const Comp4 = styled.div`
@@ -165,6 +174,9 @@ const Comp4 = styled.div`
     }
     :hover {
         cursor: pointer;
+        opacity: 1;
+        transition: 0.5s ease;
+        background-color: #ea526f;
     }
 `
 
