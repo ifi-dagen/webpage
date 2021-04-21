@@ -8,6 +8,7 @@ import Stander from './pages/standomraade/Stander'
 import BedriftStand from './pages/bedriftstand/BedriftStand'
 import Studenter from './pages/studenter/studenter'
 import Styret from './components/styret'
+import Forening from './pages/forening/Forening'
 import Foredrag from './pages/foredrag/foredrag'
 import { BedriftKomponent } from './pages/bedrift/BedriftKomponent'
 
@@ -32,6 +33,13 @@ class Routes extends Component {
                     path="/for-bedrift"
                     render={(prop) => (
                         <Bedrift {...prop} store={this.props.store} />
+                    )}
+                />
+                <Route
+                    exact
+                    path="/om-oss"
+                    render={(prop) => (
+                        <Forening {...prop} store={this.props.store} />
                     )}
                 />
                 <Route

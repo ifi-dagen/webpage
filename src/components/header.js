@@ -17,7 +17,7 @@ const Header = () => {
                 <Box>
                     <a href="/for-bedrift"> Til bedrifter</a>
                     <br />
-                    <a href="/for-bedrift"> Om Oss</a>
+                    <a href="/om-oss"> Om Oss</a>
                     <br />
                     <a href="/for-bedrift"> FAQ</a>
                 </Box>
