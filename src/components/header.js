@@ -18,51 +18,27 @@ const Header = () => {
         }
     }
     console.log(logo)
-    if (logo === ettermiddagen) {
-        return (
-            <div>
-                <Wrapper>
-                    <img
-                        onClick={() => herstory.push('/')}
-                        src={ettermiddagen}
-                        alt="ettermiddagen@ifi logo"
-                        onMouseEnter={() => toggleLogo()}
-                        onMouseOut={() => toggleLogo()}
-                    />
-                    <span />
-                    <Box>
-                        <a href="/for-bedrift"> Til bedrifter</a>
-                        <br />
-                        <a href="/om-oss"> Om Oss</a>
-                        <br />
-                        <a href="/for-bedrift"> FAQ</a>
-                    </Box>
-                </Wrapper>
-            </div>
-        )
-    } else {
-        return (
-            <div>
-                <Wrapper>
-                    <img
-                        onClick={() => herstory.push('/')}
-                        src={ettermiddagenannenfarge}
-                        alt="ettermiddagen@ifi logo"
-                        onMouseEnter={() => toggleLogo}
-                        onMouseOut={() => toggleLogo()}
-                    />
-                    <span />
-                    <Box>
-                        <a href="/for-bedrift"> Til bedrifter</a>
-                        <br />
-                        <a href="/om-oss"> Om Oss</a>
-                        <br />
-                        <a href="/for-bedrift"> FAQ</a>
-                    </Box>
-                </Wrapper>
-            </div>
-        )
-    }
+    return (
+        <div>
+            <Wrapper>
+                <img
+                    onClick={() => herstory.push('/')}
+                    src={logo}
+                    alt="ettermiddagen@ifi logo"
+                    onMouseEnter={() => toggleLogo()}
+                    onMouseOut={() => toggleLogo()}
+                />
+                <span />
+                <Box>
+                    <a href="/for-bedrift"> Til bedrifter</a>
+                    <br />
+                    <a href="/om-oss"> Om Oss</a>
+                    <br />
+                    <a href="/for-bedrift"> FAQ</a>
+                </Box>
+            </Wrapper>
+        </div>
+    )
 }
 
 const Box = styled.div`
