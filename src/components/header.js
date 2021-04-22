@@ -49,7 +49,7 @@ const Wrapper = styled.div`
     padding: 1em;
     align-items: center;
     background-color: aquamarine;
-    div {
+    img {
         max-height: 5rem;
         cursor: pointer;
         color: black;
