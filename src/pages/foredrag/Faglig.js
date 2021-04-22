@@ -12,11 +12,11 @@ const Faglig = ({ setSelected, setTalk }) => {
             <h2>Faglig</h2>
             <InnerContainerEdu>
                 <Talk>
-                    <h3 onClick={() => updateState(0)}>Superforedrag 1</h3>{' '}
+                    <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
                 </Talk>
                 <TalkComp>
                     <img
-                        src={require('../../img/logoer/Itera.jpg')}
+                        src={require('../../img/logoer/Netcompany.png')}
                         alt=""
                         onClick={() => updateState(0)}
                     ></img>
@@ -24,7 +24,7 @@ const Faglig = ({ setSelected, setTalk }) => {
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3 onClick={() => updateState(1)}>Superforedrag 2</h3>
+                    <h3 onClick={() => updateState(1)}>Superforedrag 2</h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
@@ -36,11 +36,13 @@ const Faglig = ({ setSelected, setTalk }) => {
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3 onClick={() => updateState(2)}>Superforedrag 3</h3>{' '}
+                    <h3 onClick={() => updateState(2)}>
+                        Superforedrag av Bekk
+                    </h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
-                        src={require('../../img/logoer/Itera.jpg')}
+                        src={require('../../img/logoer/Bekk.png')}
                         alt=""
                         onClick={() => updateState(2)}
                     ></img>
@@ -60,11 +62,13 @@ const Faglig = ({ setSelected, setTalk }) => {
             </InnerContainerEdu>{' '}
             <InnerContainerEdu>
                 <Talk>
-                    <h3 onClick={() => updateState(4)}>Superforedrag 5</h3>{' '}
+                    <h3 onClick={() => updateState(4)}>
+                        Superforedrag av Accenture
+                    </h3>{' '}
                 </Talk>
                 <TalkComp>
                     <img
-                        src={require('../../img/logoer/Itera.jpg')}
+                        src={require('../../img/logoer/Accenture.png')}
                         alt=""
                         onClick={() => updateState(4)}
                     ></img>
