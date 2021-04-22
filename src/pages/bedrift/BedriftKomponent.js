@@ -53,7 +53,9 @@ export const BedriftKomponent = ({ bedrift }) => {
 
                     <h2 style={{ gridArea: 'Title' }}>Hvem er vi?</h2>
                     <p style={{ gridArea: 'Description' }}>
-                        {bedrift.description}
+                        {bedrift.description.map((sentence) => {
+                            return <p key={sentence}>{sentence}</p>
+                        })}
                     </p>
                     <ReactPlayer
                         url={bedrift.video}
@@ -76,7 +78,11 @@ export const BedriftKomponent = ({ bedrift }) => {
                     <h2 style={{ gridArea: 'TitleTalk' }}>
                         Vi vil snakke med deg!
                     </h2>
-                    <p style={{ gridArea: 'Talk' }}>{bedrift.talk}</p>
+                    <p style={{ gridArea: 'Talk' }}>
+                        {bedrift.talk.map((sentence) => {
+                            return <p key={sentence}>{sentence}</p>
+                        })}
+                    </p>
 
                     <p style={{ gridArea: 'Competition' }}>
                         <h3>Konkurranse</h3>
@@ -123,7 +129,7 @@ const Container = styled.div`
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
         'Competition . Title .'
-        '. . Description Description'
+        'Competition . Description Description'
         'Questions . Description Description'
         '. . Description Description'
         '. . Video Video'
