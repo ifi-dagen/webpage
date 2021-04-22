@@ -76,6 +76,11 @@ const InnerContainerEdu = styled.div`
     grid-template-columns: 14 vw 6vw;
     grid-template-areas: 'title title title company';
     height: 17%;
+    :hover {
+        opacity: 1;
+        transition: 0.5s ease;
+        background-color: #ea526f;
+    }
 `
 const Talk = styled.div`
     grid-area: title;
