@@ -24,7 +24,7 @@ const Faglig = ({ setSelected, setTalk }) => {
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3 onClick={() => updateState(2)}>
+                    <h3 onClick={() => updateState(1)}>
                         Superforedrag av Bekk
                     </h3>{' '}
                 </Talk>
@@ -32,13 +32,13 @@ const Faglig = ({ setSelected, setTalk }) => {
                     <img
                         src={require('../../img/logoer/Bekk.png')}
                         alt=""
-                        onClick={() => updateState(2)}
+                        onClick={() => updateState(1)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
             <InnerContainerEdu>
                 <Talk>
-                    <h3 onClick={() => updateState(4)}>
+                    <h3 onClick={() => updateState(2)}>
                         Superforedrag av Accenture
                     </h3>{' '}
                 </Talk>
@@ -46,7 +46,7 @@ const Faglig = ({ setSelected, setTalk }) => {
                     <img
                         src={require('../../img/logoer/Accenture.png')}
                         alt=""
-                        onClick={() => updateState(4)}
+                        onClick={() => updateState(2)}
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
