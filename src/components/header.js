@@ -7,7 +7,7 @@ import ettermiddagenannenfarge from '../img/ettermiddagenannenfarge.svg'
 const Header = () => {
     const herstory = useHerstory()
     const [logo, setLogo] = useState(ettermiddagen)
-    const updateState = () => {
+    const toggleLogo = () => {
         if (logo === ettermiddagen) {
             console.log('heeeeeelå')
             setLogo(ettermiddagenannenfarge)
@@ -26,8 +26,8 @@ const Header = () => {
                         onClick={() => herstory.push('/')}
                         src={ettermiddagen}
                         alt="ettermiddagen@ifi logo"
-                        onMouseEnter={() => updateState()}
-                        onMouseOut={() => updateState()}
+                        onMouseEnter={() => toggleLogo()}
+                        onMouseOut={() => toggleLogo()}
                     />
                     <span />
                     <Box>
@@ -48,8 +48,8 @@ const Header = () => {
                         onClick={() => herstory.push('/')}
                         src={ettermiddagenannenfarge}
                         alt="ettermiddagen@ifi logo"
-                        onMouseEnter={() => updateState}
-                        onMouseOut={() => updateState()}
+                        onMouseEnter={() => toggleLogo}
+                        onMouseOut={() => toggleLogo()}
                     />
                     <span />
                     <Box>
