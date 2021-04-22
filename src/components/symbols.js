@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+
 export const Zoom = (props) => {
   return (
     <Link href={props.link}>

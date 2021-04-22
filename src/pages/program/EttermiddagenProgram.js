@@ -5,82 +5,62 @@ import { BedriftKomponent } from '../bedrift/BedriftKomponent'
 import Faglig from '../foredrag/Faglig'
 import Foredrag from '../foredrag/foredrag'
 import "./program.css"
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+
 
 
 
 const Program = () => {
     const [company, setCompany] = useState(null)
     const [talk, setTalk] = useState(null)
-    const [selected, setSelected] = useState('timeline')
+    const [selected, setSelected] = useState('program')
     if (selected === 'program') {
         return (
             <Container>
-                <Intro>
-                    <h1>ettermiddagen@IFI 2021</h1>
-                    <p>
-                        Cupidatat adipisicing cupidatat excepteur eiusmod Lorem
-                        aliquip amet eu nisi Lorem dolor. Eiusmod adipisicing
-                        mollit nisi sit non. Sunt Lorem reprehenderit do aute
-                        pariatur culpa ipsum esse occaecat anim veniam aliqua.
-                        Sint qui excepteur laboris exercitation incididunt ea
-                        anim occaecat ut. Enim veniam aute ex sit velit
-                        incididunt exercitation culpa voluptate adipisicing
-                        elit. Nostrud laboris irure in nisi non enim. Officia
-                        voluptate tempor incididunt ea adipisicing nulla magna
-                        eu do non nisi dolore exercitation aute. Sint culpa
-                        mollit nostrud nulla in consequat mollit cillum fugiat
-                        minim consectetur minim. Deserunt sunt quis dolor aliqua
-                        duis fugiat excepteur do in fugiat sunt consequat
-                        ullamco voluptate. Non officia quis occaecat non
-                        adipisicing ad dolore adipisicing consequat. Amet
-                        consectetur magna adipisicing quis. In irure eu anim
-                        laboris laboris cillum culpa occaecat aute est
-                        adipisicing consequat irure ipsum. Amet veniam fugiat
-                        quis reprehenderit velit do ipsum sint qui ut. Sunt
-                        officia nulla irure cillum est elit quis ex. Qui sit ut
-                        Lorem in enim esse est fugiat non. Voluptate amet ea
-                        Lorem qui elit quis exercitation non qui aliquip eu
-                        ullamco. Enim consectetur irure deserunt non ut quis
-                        anim irure velit sit tempor velit non. Consectetur
-                        consequat exercitation exercitation ad in labore aliqua
-                        commodo excepteur ut labore labore ipsum. Nisi ad ea
-                        esse incididunt elit enim consequat pariatur labore
-                        nostrud. Minim ea qui est veniam laborum ipsum. Ullamco
-                        officia do officia aliquip ad labore..
-                    </p>
-                </Intro>
                 <Comp>
-                    <h2>Bedriter</h2>
+                    <h2>Bedritne saker</h2>
+                    
+                    </Comp>
+                   <Split style={{gridArea: "split1"}}/>
+                   <Time style={{gridArea: "time1"}}><div style={{paddingTop: "2.3em"}}>13:00</div></Time>
+
                     <BedriftKohort
                         comp1="Accenture"
                         comp2="Nav"
                         comp3="Fink"
-                        comp4="Fink"
                         setSelected={setSelected}
                         company={company}
                         setCompany={setCompany}
+                        kohort={1}
                     />
-                    <BedriftKohort
+                   <Split style={{gridArea: "split2"}}/>
+                    <Time style={{gridArea: "time2"}}><div style={{paddingTop: "2.3em"}}>14:00</div></Time>
+
+                    <BedriftKohort style={{gridArea: "kohort2"}}
                         comp1="Kolonial"
                         comp2="Netcompany"
                         comp3="NoA Ignite"
-                        comp4="NoA Ignite"
                         setSelected={setSelected}
                         company={company}
                         setCompany={setCompany}
+                        kohort={2}
+
                     />
-                    <BedriftKohort
+                   <Split style={{gridArea: "split3"}}/>
+                   <Time style={{gridArea: "time3"}}><div style={{paddingTop: "2.3em"}}>15:00</div></Time>
+                    <BedriftKohort style={{gridArea: "kohort3"}}
                         comp1="Bekk"
                         comp2="Cognite"
-                        comp3="Cognite"
-                        comp4="Cognite"
                         setSelected={setSelected}
                         company={company}
                         setCompany={setCompany}
+                        kohort={3}
                     />
-                </Comp>
+
+                    {/* <h1 style= {{gridArea: "comp"}}>COMP</h1>
+                    <h1 style={{gridArea: "kohort1"}}>kohort1</h1>
+                    <h1 style={{gridArea: "kohort2"}}>kohort2</h1>
+                    <h1 style={{gridArea: "kohort3"}}>kohort3</h1> */}
+
                 <Faglig setSelected={setSelected} setTalk={setTalk} />
             </Container>
         )
@@ -91,122 +71,32 @@ const Program = () => {
         console.log(selected)
         return <Foredrag id={talk} />
     }
-    else if (selected === 'timeline') {
-        return (
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="adjustRight"
-            style={ {color: "black"}}
-            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            date="12:00"
-            visible={true}
-            position="right"
-            iconStyle={{ background: 'rgb(33, 150, 243)'}}
-          >
-            <h3 className="vertical-timeline-element-title">Åningssermoni</h3>
-            <h4 className="vertical-timeline-element-subtitle"></h4>
-            <p>
-            Velkommen til ettermiddagen@ifi
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="adjustRight"
-            date="13:00"
-            visible={true}
-            position="left"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          >
-            <BedriftKohort comp1="Accenture" comp2="Nav" comp3="Fink" setCompany={setCompany} setSelected={setSelected}/>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="talk adjustTalk"
-            date="13:30"
-            visible={true}
-            iconStyle={{ background: 'purple', color: '#fff' }}
-            contentStyle={{ background: 'purple', color:"black"}}
 
-            contentArrowStyle={{ borderRight: '7px solid  purple' }}
-            position="right"
-          >
-            <h3 className="vertical-timeline-element-title">Foredrag 1</h3>
-            <Faglig setSelected={setSelected} setTalk={setTalk}/>
-            
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="adjustRight"
-            date="14:00"
-            visible={true}
-            position="left"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          >
-            <BedriftKohort comp1="Kolonial" comp2="Netcompany" comp3="NoA Ignite" setCompany={setCompany} setSelected={setSelected}/>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="talk adjustTalk"
-            date="14:30"
-            visible={true}
-            iconStyle={{ background: 'purple', color: '#fff' }}
-            contentStyle={{ background: 'purple', color:"black"}}
-
-            contentArrowStyle={{ borderRight: '7px solid  purple' }}
-            position="right"
-          >
-            <h3 className="vertical-timeline-element-title">Foredrag 2</h3>
-            <Faglig setSelected={setSelected} setTalk={setTalk}/>
-            
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="adjustRight"
-            date="15:00"
-            visible={true}
-            position="left"
-            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
-            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-          >
-            <BedriftKohort comp1="Bekk" comp2="Cognite" comp3="Cognite" setCompany={setCompany} setSelected={setSelected}/>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="talk adjustTalk"
-            date="15:30"
-            visible={true}
-            iconStyle={{ background: 'purple', color: '#fff' }}
-            contentStyle={{ background: 'purple', color:"black"}}
-
-            contentArrowStyle={{ borderRight: '7px solid  purple' }}
-            position="right"
-          >
-            <h3 className="vertical-timeline-element-title">Foredrag 3</h3>
-            <Faglig setSelected={setSelected} setTalk={setTalk}/>
-            
-          </VerticalTimelineElement>
-          
-        
-        </VerticalTimeline>)
-    }
 }
+
+
 
 const Container = styled.div`
     display: grid;
-    grid-template-columns: 15vw 35vw 10vw 25vw 15vw;
+    max-width: 850px;
+    min-width: 640px;
+    margin: auto;
+    padding: 0 5rem;
+    height: auto;
+    grid-template-columns: 25vw 2vw 25vw;
+    grid-template-rows: 10vh 9vh 42vh 9vh 42vh 9vh 42vh;
     grid-template-areas:
-        '. intro intro intro .'
-        '. comp split edu .';
+        ' comp . edu '
+        ' . time1 . '
+        ' kohort1 split1 foredrag1 '
+        ' . time2 . '
+        ' kohort2 split2 foredrag2 '
+        ' . time3 .  '
+        ' kohort3 split3 foredrag3 ';
+        justify-items: center;
 `
 
-const Intro = styled.div`
-    p {
-        padding: 1em;
-    }
-    grid-area: intro;
-    display: grid;
-    place-items: center;
-`
+
 
 const Comp = styled.div`
     grid-area: comp;
@@ -227,10 +117,24 @@ const Comp = styled.div`
 //     }
 // `
 
-// const Split = styled.div`
-//     grid-area: split;
-//     height: 3vw;
-//     font-size: 14px;
-// `
+const Split = styled.div`
+    grid-area: split;
+    border: 6px peachpuff;
+    border-left: solid;
+    border-right: solid;
+`
+
+const Time = styled.div`
+
+    background-color: #ff8966;
+    height: 90px;
+  text-align: center;
+  vertical-align: middle;
+    width: 90px;
+    border-radius: 50%;   
+    text-align: bottom;
+
+  
+`
 
 export default Program

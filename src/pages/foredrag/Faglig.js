@@ -8,8 +8,12 @@ const Faglig = ({ setSelected, setTalk }) => {
     }
 
     return (
+        <>
         <Edu>
-            <InnerContainerEdu>
+            <h2>Foredrag</h2>
+        </Edu>
+
+            <InnerContainerEdu style={{gridArea: "foredrag1"}}>
                 <Talk>
                     <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
                 </Talk>
@@ -21,11 +25,11 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
-            {/* <InnerContainerEdu>
+            <InnerContainerEdu style={{gridArea: "foredrag2"}}>
                 <Talk>
                     <h3 onClick={() => updateState(1)}>
                         Superforedrag av Bekk
-                    </h3>{' '}
+                    </h3>   
                 </Talk>
                 <TalkComp>
                     <img
@@ -35,11 +39,11 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
-            <InnerContainerEdu>
+            <InnerContainerEdu style={{gridArea: "foredrag3"}}>
                 <Talk>
                     <h3 onClick={() => updateState(2)}>
                         Superforedrag av Accenture
-                    </h3>{' '}
+                    </h3>
                 </Talk>
                 <TalkComp>
                     <img
@@ -49,48 +53,13 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
-            <InnerContainerEdu>
-                <Talk>
-                    <h3 onClick={() => updateState(3)}>Superforedrag 4</h3>{' '}
-                </Talk>
-                <TalkComp>
-                    <img
-                        src={require('../../img/logoer/Itera.jpg')}
-                        alt=""
-                        onClick={() => updateState(3)}
-                    ></img>
-                </TalkComp>
-            </InnerContainerEdu>{' '}
-            <InnerContainerEdu>
-                <Talk>
-                    <h3 onClick={() => updateState(4)}>Superforedrag 5</h3>{' '}
-                </Talk>
-                <TalkComp>
-                    <img
-                        src={require('../../img/logoer/Itera.jpg')}
-                        alt=""
-                        onClick={() => updateState(4)}
-                    ></img>
-                </TalkComp>
-            </InnerContainerEdu>
-            <InnerContainerEdu>
-                <Talk>
-                    <h3 onClick={() => updateState(5)}>Superforedrag 6</h3>{' '}
-                </Talk>
-                <TalkComp>
-                    <img
-                        src={require('../../img/logoer/Itera.jpg')}
-                        alt=""
-                        onClick={() => updateState(5)}
-                    ></img>
-                </TalkComp>
-            </InnerContainerEdu> */}
-        </Edu>
+            </>
     )
 }
 
 const Edu = styled.div`
     grid-area: edu;
+
 `
 
 // const Icon = styled.div`
@@ -105,23 +74,24 @@ const Edu = styled.div`
 // `
 
 const InnerContainerEdu = styled.div`
-    grid-area: edu;
-    border: 2px;
     display: grid;
-    grid-template-columns: 14 vw 6vw;
-    grid-template-areas: 'title title title company';
-    height: 17%;
+    height: 21vh;
+
+    grid-template-areas: 
+    'title'
+    'company';
     :hover {
         opacity: 1;
         transition: 0.5s ease;
         background-color: #ea526f;
     }
+    
+    border-radius: 1rem;
+    justify-items: center;
 `
 const Talk = styled.div`
     grid-area: title;
-    height: 3vw;
-    font-size: 14px;
-
+    font-size: 30px;
     :hover {
         cursor: pointer;
     }
@@ -131,11 +101,8 @@ const TalkComp = styled.div`
     grid-area: company;
 
     img {
-        display: block;
-        max-width: 6vw;
-        max-height: 3vw;
-        width: auto;
-        height: auto;
+        max-width: 10vw;
+        max-height: 5vw;
     }
     :hover {
         cursor: pointer;
