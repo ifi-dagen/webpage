@@ -23,6 +23,7 @@ const CompToLogo = (comp) => {
 }
 
 const CompToObject = (comp) => {
+    console.log(comp)
     return Bedrift.find((x) => x.name === comp)
 }
 
