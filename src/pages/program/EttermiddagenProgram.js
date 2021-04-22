@@ -49,28 +49,28 @@ const Program = () => {
                 <Comp>
                     <h2>Bedriter</h2>
                     <BedriftKohort
-                        comp1="DNB"
-                        comp2="Itera"
-                        comp3="ABB"
-                        comp4="Bekk"
+                        comp1="Accenture"
+                        comp2="Nav"
+                        comp3="Fink"
+                        comp4="Fink"
                         setSelected={setSelected}
                         company={company}
                         setCompany={setCompany}
                     />
                     <BedriftKohort
-                        comp1="DNB"
-                        comp2="Itera"
-                        comp3="ABB"
-                        comp4="Bekk"
+                        comp1="Kolonial"
+                        comp2="Netcompany"
+                        comp3="NoA Ignite"
+                        comp4="NoA Ignite"
                         setSelected={setSelected}
                         company={company}
                         setCompany={setCompany}
                     />
                     <BedriftKohort
-                        comp1="DNB"
-                        comp2="Itera"
-                        comp3="ABB"
-                        comp4="Bekk"
+                        comp1="Bekk"
+                        comp2="Cognite"
+                        comp3="Cognite"
+                        comp4="Cognite"
                         setSelected={setSelected}
                         company={company}
                         setCompany={setCompany}

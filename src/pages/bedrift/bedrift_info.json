@@ -1,132 +1,387 @@
 [
-  {
-    "name": "DNB",
-    "standtime": ["12:00", "13:00"],
-    "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
-    "logo": "dnb_sjogronn.png",
-    "website": "https://www.dagenatifi.no",
-    "video": "https://player.vimeo.com/video/461044850",
-    "zoom": "https://uio.zoom.us/j/61219354345",
-    "instagram": "https://www.instagram.com/dagenatifi/",
-    "facebook": "https://www.facebook.com/dagenatifi",
-    "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
-    "answer": [
-      "Mest brukte språk? Javascript",
-      "Beste ved å jobbe der? spise is",
-      "Hvem søker dere? Alle kule folk som liker å programmere",
-      "Hvor finner vi dere? Midt i Oslo sentrum",
-      "Liten fun fact: Vi spiser is hver dag :D "
-    ],
-    "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+    {
+        "name": "Accenture",
+        "standtime": ["12:00", "13:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "Accenture.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
 
-    "positions": [
-      {
-        "name": "kul ny stilling",
-        "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
-      },
-      { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
-    ],
-    "competition": {
-      "text": "Bli med på kahoot kl 15!",
-      "link": "https://www.vg.no"
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Nav",
+        "standtime": ["12:00", "13:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "NAV.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Fink",
+        "standtime": ["12:00", "13:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "ABB.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Fink",
+        "standtime": ["12:00", "13:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "ABB.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+
+    {
+        "name": "Kolonial",
+        "standtime": ["14:00", "15:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "Kolonial.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Netcompany",
+        "standtime": ["14:00", "15:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "Netcompany.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "NoA Ignite",
+        "standtime": ["14:00", "15:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "NoA_Ignite.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "NoA Ignite",
+        "standtime": ["14:00", "15:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "NoA_Ignite.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Bekk",
+        "standtime": ["15:00", "16:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "Bekk.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Cognite",
+        "standtime": ["15:00", "16:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "cognite.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Cognite",
+        "standtime": ["15:00", "16:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "cognite.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
+    },
+    {
+        "name": "Cognite",
+        "standtime": ["15:00", "16:00"],
+        "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
+        "logo": "cognite.png",
+        "website": "https://www.dagenatifi.no",
+        "video": "https://player.vimeo.com/video/461044850",
+        "zoom": "https://uio.zoom.us/j/61219354345",
+        "instagram": "https://www.instagram.com/dagenatifi/",
+        "facebook": "https://www.facebook.com/dagenatifi",
+        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "answer": [
+            "Mest brukte språk? Javascript",
+            "Beste ved å jobbe der? spise is",
+            "Hvem søker dere? Alle kule folk som liker å programmere",
+            "Hvor finner vi dere? Midt i Oslo sentrum",
+            "Liten fun fact: Vi spiser is hver dag :D "
+        ],
+        "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
+
+        "positions": [
+            {
+                "name": "kul ny stilling",
+                "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
+            },
+            { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
+        ],
+        "competition": {
+            "text": "Bli med på kahoot kl 15!",
+            "link": "https://www.vg.no"
+        }
     }
-  },
-{
-    "name": "Itera",
-    "standtime": ["12:00", "13:00"],
-    "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
-    "logo": "Itera.jpg",
-    "website": "https://www.dagenatifi.no",
-    "video": "https://player.vimeo.com/video/461044850",
-    "zoom": "https://uio.zoom.us/j/61219354345",
-    "instagram": "https://www.instagram.com/dagenatifi/",
-    "facebook": "https://www.facebook.com/dagenatifi",
-    "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
-    "answer": [
-      "Mest brukte språk? Javascript",
-      "Beste ved å jobbe der? spise is",
-      "Hvem søker dere? Alle kule folk som liker å programmere",
-      "Hvor finner vi dere? Midt i Oslo sentrum",
-      "Liten fun fact: Vi spiser is hver dag :D "
-    ],
-    "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
-
-    "positions": [
-      {
-        "name": "kul ny stilling",
-        "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
-      },
-      { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
-    ],
-    "competition": {
-      "text": "Bli med på kahoot kl 15!",
-      "link": "https://www.vg.no"
-    }
-  },
-{
-    "name": "ABB",
-    "standtime": ["12:00", "13:00"],
-    "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
-    "logo": "ABB.png",
-    "website": "https://www.dagenatifi.no",
-    "video": "https://player.vimeo.com/video/461044850",
-    "zoom": "https://uio.zoom.us/j/61219354345",
-    "instagram": "https://www.instagram.com/dagenatifi/",
-    "facebook": "https://www.facebook.com/dagenatifi",
-    "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
-    "answer": [
-      "Mest brukte språk? Javascript",
-      "Beste ved å jobbe der? spise is",
-      "Hvem søker dere? Alle kule folk som liker å programmere",
-      "Hvor finner vi dere? Midt i Oslo sentrum",
-      "Liten fun fact: Vi spiser is hver dag :D "
-    ],
-    "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
-
-    "positions": [
-      {
-        "name": "kul ny stilling",
-        "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
-      },
-      { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
-    ],
-    "competition": {
-      "text": "Bli med på kahoot kl 15!",
-      "link": "https://www.vg.no"
-    }
-  },
-{
-    "name": "Bekk",
-    "standtime": ["12:00", "13:00"],
-    "description": "Vi er norske, og vi er internasjonale. Vi er tradisjon og innovasjon. Vi er en partner i singelliv, familieliv, dagligliv, næringsliv og samfunnsliv. Vi er her for de små detaljene og de store spørsmålene. Hver dag knytter vi mennesker og ideer sammen med kunnskap og kapital.\n  \nVi jobber for at du skal få en enklere hverdag. Som Norges største bank og et av Nordens største finanskonsern, tilbyr vi et komplett tilbud av finansielle tjenester gjennom mobil, nettbank, bankkontorer og internasjonale kontorer.\nLikevel, hva er DNB. DNB er en bank av folk for folk. Og alle er her i bunn og grunn for kundene. Det er kundene som gjør at vi er Norges største bank. Derfor er det viktig for oss at de som søker til oss har forståelse for komplekse kundeforhold og tekniske utfordringer.DNB representerer mer enn 190 års finanshistorie, fra etableringen av Christiania Sparebank i 1822 frem til i dag.\n  \nSamfunnsrollen\nSom Norges største bank bidrar vi sterkt til å fylle den norske finansnæringens samfunnsrolle. De fleste av oss vil ikke kunne finansiere egen bolig uten banken som støttespiller. Uten skadeforsikring vil vi ikke kunne takle de økonomiske konsekvensene av ulykker.\nFor bedriftene gjelder det samme. Nyetablerte trenger finansiering, hjelp og støtte i starten og etablerte bedrifter trenger finanstjenester for at butikken skal drives og vokse.\n \nIngen annen næring har så mange kontaktpunkter ut mot den norske befolkningen som finansnæringen. Med en så sentral rolle i samfunnet har vi et betydelig ansvar. Det ansvaret tar vi alvorlig.",
-    "logo": "knowit.png",
-    "website": "https://www.dagenatifi.no",
-    "video": "https://player.vimeo.com/video/461044850",
-    "zoom": "https://uio.zoom.us/j/61219354345",
-    "instagram": "https://www.instagram.com/dagenatifi/",
-    "facebook": "https://www.facebook.com/dagenatifi",
-    "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
-    "answer": [
-      "Mest brukte språk? Javascript",
-      "Beste ved å jobbe der? spise is",
-      "Hvem søker dere? Alle kule folk som liker å programmere",
-      "Hvor finner vi dere? Midt i Oslo sentrum",
-      "Liten fun fact: Vi spiser is hver dag :D "
-    ],
-    "talk": "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
-
-    "positions": [
-      {
-        "name": "kul ny stilling",
-        "link": "https://jobb.dnb.no/job/Oslo-DNB-Corporate-Graduate-2021-Group-Treasury-0191/614439701/"
-      },
-      { "name": "Vi trenger deg", "link": "https://ifi.uio.no" }
-    ],
-    "competition": {
-      "text": "Bli med på kahoot kl 15!",
-      "link": "https://www.vg.no"
-    }
-  }
-
-
 ]
