@@ -1,26 +1,24 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { useHistory as useHerstory } from 'react-router-dom'
-import ettermiddagen from "../img/ettermiddagen.svg"
-import ettermiddagenannenfarge from "../img/ettermiddagenannenfarge.svg"
-
-
+import ettermiddagen from '../img/ettermiddagen.svg'
+import ettermiddagenannenfarge from '../img/ettermiddagenannenfarge.svg'
 
 const Header = () => {
     const herstory = useHerstory()
-    const [logo, setLogo] = useState(ettermiddagen);
+    const [logo, setLogo] = useState(ettermiddagen)
     const updateState = () => {
         if (logo === ettermiddagen) {
-            console.log("heeeeeelå");
+            console.log('heeeeeelå')
             setLogo(ettermiddagenannenfarge)
-            console.log(logo);
-        }
-        else if (logo === ettermiddagenannenfarge) {
-            console.log(logo);
-            setLogo("../img/ettermiddagen.svg")
+            console.log(logo)
+        } else if (logo === ettermiddagenannenfarge) {
+            console.log(logo)
+            setLogo(ettermiddagen)
         }
     }
-    if (logo === ettermiddagen){
+    console.log(logo)
+    if (logo === ettermiddagen) {
         return (
             <div>
                 <Wrapper>
@@ -29,7 +27,29 @@ const Header = () => {
                         src={ettermiddagen}
                         alt="ettermiddagen@ifi logo"
                         onMouseEnter={() => updateState()}
-                        onMouseLeave={() => updateState()}
+                        onMouseOut={() => updateState()}
+                    />
+                    <span />
+                    <Box>
+                        <a href="/for-bedrift"> Til bedrifter</a>
+                        <br />
+                        <a href="/om-oss"> Om Oss</a>
+                        <br />
+                        <a href="/for-bedrift"> FAQ</a>
+                    </Box>
+                </Wrapper>
+            </div>
+        )
+    } else {
+        return (
+            <div>
+                <Wrapper>
+                    <img
+                        onClick={() => herstory.push('/')}
+                        src={ettermiddagenannenfarge}
+                        alt="ettermiddagen@ifi logo"
+                        onMouseEnter={() => updateState}
+                        onMouseOut={() => updateState()}
                     />
                     <span />
                     <Box>
@@ -43,29 +63,6 @@ const Header = () => {
             </div>
         )
     }
-    else {
-        return (
-            <div>
-                <Wrapper>
-                    <img
-                        onClick={() => herstory.push('/')}
-                        src={ettermiddagenannenfarge}
-                        alt="ettermiddagen@ifi logo"
-                        onMouseEnter={() => updateState}
-                        onMouseLeave={() => updateState}
-                    />
-                    <span />
-                    <Box>
-                        <a href="/for-bedrift"> Til bedrifter</a>
-                        <br />
-                        <a href="/om-oss"> Om Oss</a>
-                        <br />
-                        <a href="/for-bedrift"> FAQ</a>
-                    </Box>
-                </Wrapper>
-            </div>)
-    }
-   
 }
 
 const Box = styled.div`
