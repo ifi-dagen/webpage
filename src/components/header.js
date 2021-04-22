@@ -9,15 +9,11 @@ const Header = () => {
     const [logo, setLogo] = useState(ettermiddagen)
     const toggleLogo = () => {
         if (logo === ettermiddagen) {
-            console.log('heeeeeelå')
             setLogo(ettermiddagenannenfarge)
-            console.log(logo)
         } else if (logo === ettermiddagenannenfarge) {
-            console.log(logo)
             setLogo(ettermiddagen)
         }
     }
-    console.log(logo)
     return (
         <div>
             <Wrapper>
