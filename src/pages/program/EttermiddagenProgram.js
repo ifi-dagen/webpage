@@ -4,11 +4,16 @@ import BedriftKohort from '../bedrift/BedriftKohort'
 import { BedriftKomponent } from '../bedrift/BedriftKomponent'
 import Faglig from '../foredrag/Faglig'
 import Foredrag from '../foredrag/foredrag'
+import "./program.css"
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
+
 
 const Program = () => {
     const [company, setCompany] = useState(null)
     const [talk, setTalk] = useState(null)
-    const [selected, setSelected] = useState('program')
+    const [selected, setSelected] = useState('timeline')
     if (selected === 'program') {
         return (
             <Container>
@@ -85,6 +90,104 @@ const Program = () => {
     } else if (selected === 'faglig') {
         console.log(selected)
         return <Foredrag id={talk} />
+    }
+    else if (selected === 'timeline') {
+        return (
+        <VerticalTimeline>
+          <VerticalTimelineElement
+            className="adjustRight"
+            style={ {color: "black"}}
+            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            date="12:00"
+            visible={true}
+            position="right"
+            iconStyle={{ background: 'rgb(33, 150, 243)'}}
+          >
+            <h3 className="vertical-timeline-element-title">Åningssermoni</h3>
+            <h4 className="vertical-timeline-element-subtitle"></h4>
+            <p>
+            Velkommen til ettermiddagen@ifi
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="adjustRight"
+            date="13:00"
+            visible={true}
+            position="left"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          >
+            <BedriftKohort comp1="Accenture" comp2="Nav" comp3="Fink" setCompany={setCompany} setSelected={setSelected}/>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="talk adjustTalk"
+            date="13:30"
+            visible={true}
+            iconStyle={{ background: 'purple', color: '#fff' }}
+            contentStyle={{ background: 'purple', color:"black"}}
+
+            contentArrowStyle={{ borderRight: '7px solid  purple' }}
+            position="right"
+          >
+            <h3 className="vertical-timeline-element-title">Foredrag 1</h3>
+            <Faglig setSelected={setSelected} setTalk={setTalk}/>
+            
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="adjustRight"
+            date="14:00"
+            visible={true}
+            position="left"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          >
+            <BedriftKohort comp1="Kolonial" comp2="Netcompany" comp3="NoA Ignite" setCompany={setCompany} setSelected={setSelected}/>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="talk adjustTalk"
+            date="14:30"
+            visible={true}
+            iconStyle={{ background: 'purple', color: '#fff' }}
+            contentStyle={{ background: 'purple', color:"black"}}
+
+            contentArrowStyle={{ borderRight: '7px solid  purple' }}
+            position="right"
+          >
+            <h3 className="vertical-timeline-element-title">Foredrag 2</h3>
+            <Faglig setSelected={setSelected} setTalk={setTalk}/>
+            
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="adjustRight"
+            date="15:00"
+            visible={true}
+            position="left"
+            contentStyle={{ background: 'rgb(33, 150, 243)', color:"black"}}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
+            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          >
+            <BedriftKohort comp1="Bekk" comp2="Cognite" comp3="Cognite" setCompany={setCompany} setSelected={setSelected}/>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="talk adjustTalk"
+            date="15:30"
+            visible={true}
+            iconStyle={{ background: 'purple', color: '#fff' }}
+            contentStyle={{ background: 'purple', color:"black"}}
+
+            contentArrowStyle={{ borderRight: '7px solid  purple' }}
+            position="right"
+          >
+            <h3 className="vertical-timeline-element-title">Foredrag 3</h3>
+            <Faglig setSelected={setSelected} setTalk={setTalk}/>
+            
+          </VerticalTimelineElement>
+          
+        
+        </VerticalTimeline>)
     }
 }
 

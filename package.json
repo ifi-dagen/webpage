@@ -15,8 +15,10 @@
         "react-player": "^2.6.0",
         "react-router-dom": "^5.1.2",
         "react-scripts": "3.4.0",
+        "react-vertical-timeline-component": "^3.3.3",
         "require": "^2.4.20",
         "styled-components": "^5.2.3",
+        "vertical-timeline-component-for-react": "^1.0.7",
         "yarn": "^1.22.4"
     },
     "scripts": {

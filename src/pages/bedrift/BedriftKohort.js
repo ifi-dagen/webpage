@@ -39,12 +39,12 @@ const BedriftKohort = ({
     const c1 = CompToObject(comp1)
     const c2 = CompToObject(comp2)
     const c3 = CompToObject(comp3)
-    const c4 = CompToObject(comp4)
+    // const c4 = CompToObject(comp4)
     return (
         <InnerContainerComp>
-            <Time>
+            {/* <Time>
                 {c1.standtime[0]} -{c1.standtime[1]}
-            </Time>
+            </Time> */}
             <Comp1>
                 <img
                     src={CompToLogo(c1)}
@@ -75,7 +75,7 @@ const BedriftKohort = ({
                     alt=""
                 ></img>{' '}
             </Comp3>
-            <Comp4>
+            {/* <Comp4>
                 <img
                     src={CompToLogo(c4)}
                     onClick={() => {
@@ -84,7 +84,7 @@ const BedriftKohort = ({
                     }}
                     alt=""
                 ></img>{' '}
-            </Comp4>
+            </Comp4> */}
         </InnerContainerComp>
     )
 }
@@ -95,8 +95,9 @@ const InnerContainerComp = styled.div`
     display: grid;
 
     grid-template-areas:
-        'time c1 c2'
-        'time c3 c4';
+        'c1'
+        'c2'
+        'c3';
     padding: 2em;
     height: 20vw;
     width: 35vw;
@@ -160,37 +161,34 @@ const Comp3 = styled.div`
         background-color: #23b5d3;
     }
 `
-const Comp4 = styled.div`
-    grid-area: c4;
-    display: flex;
+// const Comp4 = styled.div`
+//     grid-area: c4;
+//     display: flex;
 
-    place-items: center;
-    img {
-        display: block;
-        max-width: 150px;
-        max-height: 70px;
-        width: auto;
-        height: auto;
-        overflow: hidden;
-    }
-    :hover {
-        cursor: pointer;
-        opacity: 1;
-        transition: 0.5s ease;
-        background-color: #ea526f;
-    }
-`
+//     place-items: center;
+//     img {
+//         display: block;
+//         max-width: 150px;
+//         max-height: 70px;
+//         width: auto;
+//         height: auto;
+//         overflow: hidden;
+//     }
+//     :hover {
+//         cursor: pointer;
+//     }
+// `
 
-const Time = styled.div`
-    grid-area: time;
-    display: flex;
-    place-items: center;
-    padding-right: 2em;
-    justify-items: center;
-    img {
-        height: 110%;
-        width: 70%;
-    }
-    color: black;
-    font-size: 15px;
-`
+// const Time = styled.div`
+//     grid-area: time;
+//     display: flex;
+//     place-items: center;
+//     padding-right: 2em;
+//     justify-items: center;
+//     img {
+//         height: 110%;
+//         width: 70%;
+//     }
+//     color: black;
+//     font-size: 15px;
+// `

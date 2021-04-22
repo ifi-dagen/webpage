@@ -9,7 +9,6 @@ const Faglig = ({ setSelected, setTalk }) => {
 
     return (
         <Edu>
-            <h2>Faglig</h2>
             <InnerContainerEdu>
                 <Talk>
                     <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
@@ -22,7 +21,7 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
-            <InnerContainerEdu>
+            {/* <InnerContainerEdu>
                 <Talk>
                     <h3 onClick={() => updateState(1)}>
                         Superforedrag av Bekk
@@ -50,6 +49,42 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
+            <InnerContainerEdu>
+                <Talk>
+                    <h3 onClick={() => updateState(3)}>Superforedrag 4</h3>{' '}
+                </Talk>
+                <TalkComp>
+                    <img
+                        src={require('../../img/logoer/Itera.jpg')}
+                        alt=""
+                        onClick={() => updateState(3)}
+                    ></img>
+                </TalkComp>
+            </InnerContainerEdu>{' '}
+            <InnerContainerEdu>
+                <Talk>
+                    <h3 onClick={() => updateState(4)}>Superforedrag 5</h3>{' '}
+                </Talk>
+                <TalkComp>
+                    <img
+                        src={require('../../img/logoer/Itera.jpg')}
+                        alt=""
+                        onClick={() => updateState(4)}
+                    ></img>
+                </TalkComp>
+            </InnerContainerEdu>
+            <InnerContainerEdu>
+                <Talk>
+                    <h3 onClick={() => updateState(5)}>Superforedrag 6</h3>{' '}
+                </Talk>
+                <TalkComp>
+                    <img
+                        src={require('../../img/logoer/Itera.jpg')}
+                        alt=""
+                        onClick={() => updateState(5)}
+                    ></img>
+                </TalkComp>
+            </InnerContainerEdu> */}
         </Edu>
     )
 }
@@ -86,8 +121,7 @@ const Talk = styled.div`
     grid-area: title;
     height: 3vw;
     font-size: 14px;
-    padding-top: 5vw;
-    padding-bot: 3vw;
+
     :hover {
         cursor: pointer;
     }
@@ -95,8 +129,7 @@ const Talk = styled.div`
 
 const TalkComp = styled.div`
     grid-area: company;
-    padding-top: 5vw;
-    padding-bot: 3vw;
+
     img {
         display: block;
         max-width: 6vw;
