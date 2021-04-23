@@ -1,48 +1,80 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
+import { Instagram, Webpage, Facebook, Linkedin } from './symbols'
+import ettermiddagen from '../img/ettermiddagen.svg'
+import ettermiddagenannenfarge from '../img/ettermiddagenannenfarge.svg'
+import { useHistory as useHerstory } from 'react-router-dom'
 
 const Footer = () => {
-    return <div></div>
-}
-
-const Links = () => {
+    const herstory = useHerstory()
+    const [logo, setLogo] = useState(ettermiddagen)
+    const toggleLogo = () => {
+        if (logo === ettermiddagen) {
+            setLogo(ettermiddagenannenfarge)
+        } else if (logo === ettermiddagenannenfarge) {
+            setLogo(ettermiddagen)
+        }
+    }
     return (
-        <Navlinks>
-            <span />
-            <Link href="/for-bedrift"> For bedrifter </Link>
-            <Link href="/frivillig"> Bli frivillig</Link>
-            <Link href="/kontakt"> Om arrangøren </Link>
-            <span />
-        </Navlinks>
+        <div>
+            <Wrapper>
+                <img
+                    onClick={() => herstory.push('/')}
+                    src={logo}
+                    alt="ettermiddagen@ifi logo"
+                    onMouseEnter={() => toggleLogo()}
+                    onMouseOut={() => toggleLogo()}
+                />
+                <span />
+                <Box>
+                    <a href={'https://www.instagram.com/dagenatifi'}>
+                        Instagram
+                    </a>
+                    <br />
+
+                    <a href={'https://www.facebook.com/dagenatifi'}>Facebook</a>
+                    <br />
+
+                    <a href={'https://www.linkedin.com/dagenatifi'}>Linkedin</a>
+                    <br />
+                </Box>
+            </Wrapper>
+        </div>
     )
 }
 
-const Navlinks = styled.div`
-    display: grid;
-    grid-template-columns: 1fr auto auto auto 1fr;
-    grid-gap: 2rem;
-`
-
-const Link = styled.a`
-    color: whitesmoke;
-    text-decoration: none;
-    transition: color 0.25s;
-
-    :hover {
-        color: deepskyblue;
-    }
+const Box = styled.div`
+    justify-self: right;
+    line-height: 2;
 `
 
 const Wrapper = styled.div`
-    background: linear-gradient(to right, #001446, #002446);
-    padding: 5em;
-    align-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+    padding: 1em;
+    align-items: center;
+    background-color: #b23a48;
+
+    img {
+        max-height: 5rem;
+        cursor: pointer;
+        color: black;
+        transition: color 0.25s;
+    }
+
+    a {
+        color: white;
+        transition: color 0.25s;
+        :hover {
+            color: #b45eff;
+        }
+        text-decoration: none;
+        font-family: Courier New;
+    }
+    clear: both;
     position: relative;
-    height: 200px;
-    background-color: red;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+    height: 12vh;
 `
 
 export default Footer

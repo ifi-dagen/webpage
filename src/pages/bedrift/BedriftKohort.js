@@ -177,6 +177,7 @@ const InnerContainerComp2 = styled.div`
     justify-items: center;
     align-items: center;
     border: solid;
+
     background-color: seashell;
 `
 
@@ -184,6 +185,7 @@ const InnerContainerComp3 = styled.div`
     display: grid;
     grid-area: kohort3;
     grid-template-columns: 20vw;
+
     grid-template-areas:
         'c1'
         'c2'
@@ -191,7 +193,9 @@ const InnerContainerComp3 = styled.div`
     padding: 2em;
     justify-items: center;
     align-items: center;
-    border-right: solid;
+    border: solid;
+
+    background-color: seashell;
 `
 const Comp1 = styled.div`
     grid-area: c1;

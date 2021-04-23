@@ -82,7 +82,7 @@ const Container = styled.div`
     display: grid;
     max-width: 850px;
     min-width: 640px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 5rem;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;

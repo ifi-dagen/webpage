@@ -48,7 +48,7 @@ const Wrapper = styled.div`
     grid-gap: 1rem;
     padding: 1em;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #b23a48;
     img {
         max-height: 5rem;
         cursor: pointer;
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
     }
 
     a {
-        color: black;
+        color: white;
         transition: color 0.25s;
         :hover {
             color: #b45eff;
