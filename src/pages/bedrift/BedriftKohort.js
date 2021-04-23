@@ -41,36 +41,30 @@ const BedriftKohort = ({
     if (kohort === 1) {
         return (
             <InnerContainerComp>
-                <Comp1>
-                    <img
-                        src={CompToLogo(c1)}
-                        onClick={() => {
-                            setCompany(c1)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>
+                <Comp1
+                    onClick={() => {
+                        setCompany(c1)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c1)} alt=""></img>
                 </Comp1>
 
-                <Comp2>
-                    <img
-                        src={CompToLogo(c2)}
-                        onClick={() => {
-                            setCompany(c2)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp2
+                    onClick={() => {
+                        setCompany(c2)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c2)} alt=""></img>{' '}
                 </Comp2>
-                <Comp3>
-                    <img
-                        src={CompToLogo(c3)}
-                        onClick={() => {
-                            setCompany(c3)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp3
+                    onClick={() => {
+                        setCompany(c3)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c3)} alt=""></img>{' '}
                 </Comp3>
             </InnerContainerComp>
         )
@@ -80,35 +74,29 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
-                <Comp1>
-                    <img
-                        src={CompToLogo(c1)}
-                        onClick={() => {
-                            setCompany(c1)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>
+                <Comp1
+                    onClick={() => {
+                        setCompany(c1)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c1)} alt=""></img>
                 </Comp1>
-                <Comp2>
-                    <img
-                        src={CompToLogo(c2)}
-                        onClick={() => {
-                            setCompany(c2)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp2
+                    onClick={() => {
+                        setCompany(c2)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c2)} alt=""></img>{' '}
                 </Comp2>
-                <Comp3>
-                    <img
-                        src={CompToLogo(c3)}
-                        onClick={() => {
-                            setCompany(c3)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp3
+                    onClick={() => {
+                        setCompany(c3)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c3)} alt=""></img>{' '}
                 </Comp3>
             </InnerContainerComp2>
         )
@@ -118,25 +106,21 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
-                <Comp1>
-                    <img
-                        src={CompToLogo(c1)}
-                        onClick={() => {
-                            setCompany(c1)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>
+                <Comp1
+                    onClick={() => {
+                        setCompany(c1)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c1)} alt=""></img>
                 </Comp1>
-                <Comp2>
-                    <img
-                        src={CompToLogo(c2)}
-                        onClick={() => {
-                            setCompany(c2)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp2
+                    onClick={() => {
+                        setCompany(c2)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c2)} alt=""></img>{' '}
                 </Comp2>
             </InnerContainerComp3>
         )
