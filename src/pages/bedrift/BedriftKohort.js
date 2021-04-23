@@ -32,9 +32,8 @@ const BedriftKohort = ({
     comp2,
     comp3,
     setSelected,
-    company,
     setCompany,
-    kohort
+    kohort,
 }) => {
     const c1 = CompToObject(comp1)
     const c2 = CompToObject(comp2)
@@ -42,9 +41,6 @@ const BedriftKohort = ({
     if (kohort === 1) {
         return (
             <InnerContainerComp>
-                {/* <Time>
-                    {c1.standtime[0]} -{c1.standtime[1]}
-                </Time> */}
                 <Comp1>
                     <img
                         src={CompToLogo(c1)}
@@ -75,10 +71,9 @@ const BedriftKohort = ({
                         alt=""
                     ></img>{' '}
                 </Comp3>
-            </InnerContainerComp>)
-
-    }
-    else if (kohort === 2) {
+            </InnerContainerComp>
+        )
+    } else if (kohort === 2) {
         return (
             <InnerContainerComp2>
                 {/* <Time>
@@ -114,10 +109,9 @@ const BedriftKohort = ({
                         alt=""
                     ></img>{' '}
                 </Comp3>
-    
             </InnerContainerComp2>
-        )    }
-    else if (kohort === 3) {
+        )
+    } else if (kohort === 3) {
         return (
             <InnerContainerComp3>
                 {/* <Time>
@@ -143,17 +137,11 @@ const BedriftKohort = ({
                         alt=""
                     ></img>{' '}
                 </Comp2>
-           
-             
             </InnerContainerComp3>
         )
-    }
-    
-    else {
+    } else {
         return <>PROMP</>
     }
-
-    
 }
 
 export default BedriftKohort
@@ -169,13 +157,11 @@ const InnerContainerComp = styled.div`
         'c3';
     padding: 2em;
     justify-items: center;
-    align-items: center; 
+    align-items: center;
     border: solid;
- 
+
     background-color: seashell;
 `
-
-
 
 const InnerContainerComp2 = styled.div`
     display: grid;
@@ -191,9 +177,7 @@ const InnerContainerComp2 = styled.div`
     align-items: center;
     border: solid;
     background-color: seashell;
-
 `
-
 
 const InnerContainerComp3 = styled.div`
     display: grid;
@@ -225,7 +209,6 @@ const Comp1 = styled.div`
         transition: 0.5s ease;
         background-color: #99c24d;
         box-shadow: 1px 5px 5px;
-        
     }
 `
 
@@ -265,7 +248,6 @@ const Comp3 = styled.div`
         transition: 0.5s ease;
         background-color: #23b5d3;
         box-shadow: 1px 5px 5px;
-
     }
 `
 

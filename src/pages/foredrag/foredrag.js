@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useHistory } from 'react-router-dom'
 import foredrag_info from '../../data/foredrag_info'
-
-const Foredrag = ({ id }) => {
-    const history = useHistory()
+import EttermiddagenProgram from '../program/EttermiddagenProgram'
+const Foredrag = ({ id, setSelected }) => {
     const foredrag = foredrag_info[id]
     return (
         /*
@@ -19,7 +17,12 @@ const Foredrag = ({ id }) => {
                 <h1>{foredrag.title}</h1>
             </Title>
             {/* exaple link back to program for the selected time */}
-            <Time onClick={() => history.push('/program#3')}>
+            <Time
+                onClick={() => {
+                    setSelected('program')
+                    return <EttermiddagenProgram />
+                }}
+            >
                 {foredrag.startTime} - {foredrag.endTime}
             </Time>
             <SpeakerInfo
@@ -113,7 +116,7 @@ const Time = styled.div`
     width: 14%;
     font-weight: bold;
     &:hover {
-        color: deepskyblue;
+        cursor: pointer;
     }
     padding-left: 1em;
 `
