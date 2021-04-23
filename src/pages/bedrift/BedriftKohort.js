@@ -51,6 +51,7 @@ const BedriftKohort = ({
                         alt=""
                     ></img>
                 </Comp1>
+
                 <Comp2>
                     <img
                         src={CompToLogo(c2)}

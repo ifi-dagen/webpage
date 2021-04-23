@@ -29,6 +29,7 @@ const Program = () => {
                     company={company}
                     setCompany={setCompany}
                     kohort={1}
+                    setSelected={setSelected}
                 />
                 <Split style={{ gridArea: 'split2' }} />
                 <Time style={{ gridArea: 'time2' }}>
@@ -57,6 +58,7 @@ const Program = () => {
                     company={company}
                     setCompany={setCompany}
                     kohort={3}
+                    setSelected={setSelected}
                 />
 
                 {/* <h1 style= {{gridArea: "comp"}}>COMP</h1>
@@ -69,7 +71,7 @@ const Program = () => {
         )
     } else if (selected === 'bedrift') {
         console.log(selected)
-        return <BedriftKomponent bedrift={company} />
+        return <BedriftKomponent bedrift={company} setSelected={setSelected} />
     } else if (selected === 'faglig') {
         console.log(selected)
         return <Foredrag id={talk} setSelected={setSelected} />

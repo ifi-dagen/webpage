@@ -8,8 +8,9 @@ import {
     Zoom,
     Linkedin,
 } from '../../components/symbols'
+import EttermiddagenProgram from '../program/EttermiddagenProgram'
 
-export const BedriftKomponent = ({ bedrift }) => {
+export const BedriftKomponent = ({ bedrift, setSelected }) => {
     //Får fra bedrift kohort
 
     console.log('BEDRIFT: ', bedrift)
@@ -78,6 +79,15 @@ export const BedriftKomponent = ({ bedrift }) => {
                     <h2 style={{ gridArea: 'TitleTalk' }}>
                         Vi vil snakke med deg!
                     </h2>
+
+                    <h3
+                        onClick={() => {
+                            setSelected('program')
+                            return <EttermiddagenProgram />
+                        }}
+                    >
+                        Tilbake til programmet...
+                    </h3>
                     <p style={{ gridArea: 'Talk' }}>
                         {bedrift.talk.map((sentence) => {
                             return <p key={sentence}>{sentence}</p>
