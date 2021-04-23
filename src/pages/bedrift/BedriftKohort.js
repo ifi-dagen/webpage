@@ -157,10 +157,7 @@ const InnerContainerComp = styled.div`
         'c2'
         'c3';
     padding: 2em;
-    justify-items: center;
-    align-items: center;
     border: solid;
-
     background-color: seashell;
 `
 
@@ -174,10 +171,7 @@ const InnerContainerComp2 = styled.div`
         'c2'
         'c3';
     padding: 2em;
-    justify-items: center;
-    align-items: center;
     border: solid;
-
     background-color: seashell;
 `
 
@@ -191,22 +185,22 @@ const InnerContainerComp3 = styled.div`
         'c2'
         'c3';
     padding: 2em;
-    justify-items: center;
-    align-items: center;
     border: solid;
-
     background-color: seashell;
 `
 const Comp1 = styled.div`
     grid-area: c1;
-    place-items: center;
+    align-self: center;
     img {
         display: block;
-        max-width: 150px;
-        max-height: 70px;
+        max-width: 200px;
+        max-height: 90px;
         width: auto;
         height: auto;
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
     }
     :hover {
         cursor: pointer;
@@ -219,14 +213,17 @@ const Comp1 = styled.div`
 
 const Comp2 = styled.div`
     grid-area: c2;
-    place-items: center;
+    align-self: center;
     img {
         display: block;
-        max-width: 150px;
-        max-height: 70px;
+        max-width: 200px;
+        max-height: 90px;
         width: auto;
         height: auto;
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
     }
     :hover {
         cursor: pointer;
@@ -238,14 +235,17 @@ const Comp2 = styled.div`
 `
 const Comp3 = styled.div`
     grid-area: c3;
-    place-items: center;
+    align-self: center;
     img {
         display: block;
-        max-width: 150px;
-        max-height: 70px;
+        max-width: 200px;
+        max-height: 90px;
         width: auto;
         height: auto;
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
     }
     :hover {
         cursor: pointer;
