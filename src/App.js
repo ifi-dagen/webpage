@@ -17,7 +17,8 @@ const App = () => (
 
 const Container = styled.div`
     display: grid;
-    grid-template-rows: auto auto auto;
+    min-height: 100vh;
+    grid-template-rows: auto auto 12vh;
     grid-template-areas:
         'header'
         'main'

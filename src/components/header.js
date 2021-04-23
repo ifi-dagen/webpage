@@ -4,7 +4,7 @@ import { useHistory as useHerstory } from 'react-router-dom'
 import ettermiddagen from '../img/ettermiddagen.svg'
 import ettermiddagenannenfarge from '../img/ettermiddagenannenfarge.svg'
 
-const Header = () => {
+export const Info = () => {
     const herstory = useHerstory()
     const [logo, setLogo] = useState(ettermiddagen)
     const toggleLogo = () => {
@@ -67,4 +67,4 @@ const Wrapper = styled.div`
     }
 `
 
-export default Header
+export default Info
