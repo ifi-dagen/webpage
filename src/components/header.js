@@ -4,7 +4,7 @@ import { useHistory as useHerstory } from 'react-router-dom'
 import ettermiddagen from '../img/ettermiddagen.svg'
 import ettermiddagenannenfarge from '../img/ettermiddagenannenfarge.svg'
 
-export const Info = () => {
+export const Info = ({ link1, text1, link2, text2, link3, text3 }) => {
     const herstory = useHerstory()
     const [logo, setLogo] = useState(ettermiddagen)
     const toggleLogo = () => {
@@ -26,11 +26,11 @@ export const Info = () => {
                 />
                 <span />
                 <Box>
-                    <a href="/for-bedrift"> Til bedrifter</a>
+                    <a href={`${link1}`}> {text1}</a>
                     <br />
-                    <a href="/om-oss"> Om Oss</a>
+                    <a href={`${link2}`}> {text2}</a>
                     <br />
-                    <a href="/for-bedrift"> FAQ</a>
+                    <a href={`${link3}`}> {text3}</a>
                 </Box>
             </Wrapper>
         </div>
