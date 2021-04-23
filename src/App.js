@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Routes from './App-routes'
 import Header from './components/header'
-import Footer from './components/footer'
+import Footer from './components/header'
 
 const App = () => (
     <>
@@ -18,7 +18,15 @@ const App = () => (
                 link3="/for-bedrift"
             />
             <Routes style={{ gridArea: 'main' }} />
-            <Footer style={{ gridArea: 'footer' }} />
+            <Footer
+                style={{ gridArea: 'footer' }}
+                link1="https://www.instagram.com/dagenatifi"
+                text1="Instagram"
+                text2="Facebook"
+                link2="https://www.facebook.com/dagenatifi"
+                text3="Linkedin"
+                link3="https://www.linkedin.com/dagenatifi"
+            />
         </Container>
     </>
 )
