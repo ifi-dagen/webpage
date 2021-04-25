@@ -25,7 +25,10 @@ const OpenProgram = () => {
                 standområde og foredrag. Ta med en kaffekopp og hør hva som har
                 skjedd på ifi den siste uken.
             </p>
-            <img src={require('../../img/ettermidagen_at_ifi-0480.jpg')}></img>
+            <img
+                src={require('../../img/ettermidagen_at_ifi-0480.jpg')}
+                alt=""
+            ></img>
         </div>
     )
 }

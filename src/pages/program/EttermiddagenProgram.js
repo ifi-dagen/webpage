@@ -40,7 +40,6 @@ const Program = () => {
                     company={company}
                     setCompany={setCompany}
                     kohort={1}
-                    setSelected={setSelected}
                 />
                 <Split style={{ gridArea: 'split2' }} />
                 <Time style={{ gridArea: 'time2' }}>
@@ -69,7 +68,6 @@ const Program = () => {
                     company={company}
                     setCompany={setCompany}
                     kohort={3}
-                    setSelected={setSelected}
                 />
                 <Faglig setSelected={setSelected} setTalk={setTalk} />
                 <Split style={{ gridArea: 'split4' }} />
@@ -120,25 +118,6 @@ const Container = styled.div`
         ' . . .';
     justify-items: center;
 `
-
-const Comp = styled.div`
-    grid-area: comp;
-    h2  {
-        display: grid;
-        place-items: center;
-    }
-`
-
-// const Icon = styled.div`
-//     img {
-//         display: block;
-//         max-width: 150px;
-//         max-height: 70px;
-//         width: auto;
-//         height: auto;
-//         overflow: hidden;
-//     }
-// `
 
 const Split = styled.div`
     grid-area: split;
