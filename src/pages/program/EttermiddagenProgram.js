@@ -72,11 +72,10 @@ const Program = () => {
                     setSelected={setSelected}
                 />
                 <Faglig setSelected={setSelected} setTalk={setTalk} />
-
+                <Split style={{ gridArea: 'split4' }} />
                 <Time style={{ gridArea: 'time4' }}>
                     <div style={{ paddingTop: '2.3em' }}>16:00</div>
                 </Time>
-                <Split style={{ gridArea: 'split4' }} />
                 <Open style={{ gridArea: 'end' }}>
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
                 </Open>
