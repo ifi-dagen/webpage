@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Bedrift from './bedrift_info.json'
+import Bedrift from '../../data/bedrift_info.json'
 
 /* 
 

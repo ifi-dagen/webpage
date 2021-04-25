@@ -77,7 +77,7 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                     </div>
 
                     <h2 style={{ gridArea: 'TitleTalk' }}>
-                        Vi vil snakke med deg!
+                        {bedrift.talkTitle}
                     </h2>
 
                     <h3
