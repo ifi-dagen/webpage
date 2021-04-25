@@ -9,11 +9,11 @@ const Faglig = ({ setSelected, setTalk }) => {
 
     return (
         <>
-        <Edu>
+            {/* <Edu>
             <h2>Foredrag</h2>
-        </Edu>
+        </Edu> */}
 
-            <InnerContainerEdu style={{gridArea: "foredrag1"}}>
+            <InnerContainerEdu style={{ gridArea: 'foredrag1' }}>
                 <Talk>
                     <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
                 </Talk>
@@ -25,11 +25,11 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
-            <InnerContainerEdu style={{gridArea: "foredrag2"}}>
+            <InnerContainerEdu style={{ gridArea: 'foredrag2' }}>
                 <Talk>
                     <h3 onClick={() => updateState(1)}>
                         Superforedrag av Bekk
-                    </h3>   
+                    </h3>
                 </Talk>
                 <TalkComp>
                     <img
@@ -39,7 +39,7 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
-            <InnerContainerEdu style={{gridArea: "foredrag3"}}>
+            <InnerContainerEdu style={{ gridArea: 'foredrag3' }}>
                 <Talk>
                     <h3 onClick={() => updateState(2)}>
                         Superforedrag av Accenture
@@ -53,13 +53,12 @@ const Faglig = ({ setSelected, setTalk }) => {
                     ></img>
                 </TalkComp>
             </InnerContainerEdu>
-            </>
+        </>
     )
 }
 
 const Edu = styled.div`
     grid-area: edu;
-
 `
 
 // const Icon = styled.div`
@@ -77,15 +76,15 @@ const InnerContainerEdu = styled.div`
     display: grid;
     height: 21vh;
 
-    grid-template-areas: 
-    'title'
-    'company';
+    grid-template-areas:
+        'title'
+        'company';
     :hover {
         opacity: 1;
         transition: 0.5s ease;
         background-color: #ea526f;
     }
-    
+
     border-radius: 1rem;
     justify-items: center;
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Bedrift from './bedrift_info.json'
+import Bedrift from '../../data/bedrift_info.json'
 
 /* 
 
@@ -41,36 +41,30 @@ const BedriftKohort = ({
     if (kohort === 1) {
         return (
             <InnerContainerComp>
-                <Comp1>
-                    <img
-                        src={CompToLogo(c1)}
-                        onClick={() => {
-                            setCompany(c1)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>
+                <Comp1
+                    onClick={() => {
+                        setCompany(c1)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c1)} alt=""></img>
                 </Comp1>
 
-                <Comp2>
-                    <img
-                        src={CompToLogo(c2)}
-                        onClick={() => {
-                            setCompany(c2)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp2
+                    onClick={() => {
+                        setCompany(c2)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c2)} alt=""></img>{' '}
                 </Comp2>
-                <Comp3>
-                    <img
-                        src={CompToLogo(c3)}
-                        onClick={() => {
-                            setCompany(c3)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp3
+                    onClick={() => {
+                        setCompany(c3)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c3)} alt=""></img>{' '}
                 </Comp3>
             </InnerContainerComp>
         )
@@ -80,35 +74,29 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
-                <Comp1>
-                    <img
-                        src={CompToLogo(c1)}
-                        onClick={() => {
-                            setCompany(c1)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>
+                <Comp1
+                    onClick={() => {
+                        setCompany(c1)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c1)} alt=""></img>
                 </Comp1>
-                <Comp2>
-                    <img
-                        src={CompToLogo(c2)}
-                        onClick={() => {
-                            setCompany(c2)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp2
+                    onClick={() => {
+                        setCompany(c2)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c2)} alt=""></img>{' '}
                 </Comp2>
-                <Comp3>
-                    <img
-                        src={CompToLogo(c3)}
-                        onClick={() => {
-                            setCompany(c3)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp3
+                    onClick={() => {
+                        setCompany(c3)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c3)} alt=""></img>{' '}
                 </Comp3>
             </InnerContainerComp2>
         )
@@ -118,25 +106,21 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
-                <Comp1>
-                    <img
-                        src={CompToLogo(c1)}
-                        onClick={() => {
-                            setCompany(c1)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>
+                <Comp1
+                    onClick={() => {
+                        setCompany(c1)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c1)} alt=""></img>
                 </Comp1>
-                <Comp2>
-                    <img
-                        src={CompToLogo(c2)}
-                        onClick={() => {
-                            setCompany(c2)
-                            setSelected('bedrift')
-                        }}
-                        alt=""
-                    ></img>{' '}
+                <Comp2
+                    onClick={() => {
+                        setCompany(c2)
+                        setSelected('bedrift')
+                    }}
+                >
+                    <img src={CompToLogo(c2)} alt=""></img>{' '}
                 </Comp2>
             </InnerContainerComp3>
         )
@@ -157,10 +141,7 @@ const InnerContainerComp = styled.div`
         'c2'
         'c3';
     padding: 2em;
-    justify-items: center;
-    align-items: center;
     border: solid;
-
     background-color: seashell;
 `
 
@@ -174,10 +155,7 @@ const InnerContainerComp2 = styled.div`
         'c2'
         'c3';
     padding: 2em;
-    justify-items: center;
-    align-items: center;
     border: solid;
-
     background-color: seashell;
 `
 
@@ -191,22 +169,22 @@ const InnerContainerComp3 = styled.div`
         'c2'
         'c3';
     padding: 2em;
-    justify-items: center;
-    align-items: center;
     border: solid;
-
     background-color: seashell;
 `
 const Comp1 = styled.div`
     grid-area: c1;
-    place-items: center;
+    align-self: center;
     img {
         display: block;
-        max-width: 150px;
-        max-height: 70px;
+        max-width: 200px;
+        max-height: 90px;
         width: auto;
         height: auto;
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
     }
     :hover {
         cursor: pointer;
@@ -219,14 +197,17 @@ const Comp1 = styled.div`
 
 const Comp2 = styled.div`
     grid-area: c2;
-    place-items: center;
+    align-self: center;
     img {
         display: block;
-        max-width: 150px;
-        max-height: 70px;
+        max-width: 200px;
+        max-height: 90px;
         width: auto;
         height: auto;
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
     }
     :hover {
         cursor: pointer;
@@ -238,14 +219,17 @@ const Comp2 = styled.div`
 `
 const Comp3 = styled.div`
     grid-area: c3;
-    place-items: center;
+    align-self: center;
     img {
         display: block;
-        max-width: 150px;
-        max-height: 70px;
+        max-width: 200px;
+        max-height: 90px;
         width: auto;
         height: auto;
         overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
     }
     :hover {
         cursor: pointer;

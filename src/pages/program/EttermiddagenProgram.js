@@ -4,6 +4,8 @@ import BedriftKohort from '../bedrift/BedriftKohort'
 import { BedriftKomponent } from '../bedrift/BedriftKomponent'
 import Faglig from '../foredrag/Faglig'
 import Foredrag from '../foredrag/foredrag'
+import OpenProgram from './OpenProgram'
+import End from './End'
 import './program.css'
 
 const Program = () => {
@@ -13,9 +15,18 @@ const Program = () => {
     if (selected === 'program') {
         return (
             <Container>
-                <Comp>
+                <Split style={{ gridArea: 'split' }} />
+                <Time style={{ gridArea: 'time' }}>
+                    <div style={{ paddingTop: '2.3em' }}>12:00</div>
+                </Time>
+                <Open style={{ gridArea: 'open' }}>
+                    <h1 onClick={() => setSelected('åpningssermoni')}>
+                        Åpningssermoni med Gyda, Eivind og Maja
+                    </h1>
+                </Open>
+                {/* <Comp>
                     <h2>Bedritne saker</h2>
-                </Comp>
+                </Comp> */}
                 <Split style={{ gridArea: 'split1' }} />
                 <Time style={{ gridArea: 'time1' }}>
                     <div style={{ paddingTop: '2.3em' }}>13:00</div>
@@ -60,13 +71,15 @@ const Program = () => {
                     kohort={3}
                     setSelected={setSelected}
                 />
-
-                {/* <h1 style= {{gridArea: "comp"}}>COMP</h1>
-                    <h1 style={{gridArea: "kohort1"}}>kohort1</h1>
-                    <h1 style={{gridArea: "kohort2"}}>kohort2</h1>
-                    <h1 style={{gridArea: "kohort3"}}>kohort3</h1> */}
-
                 <Faglig setSelected={setSelected} setTalk={setTalk} />
+
+                <Time style={{ gridArea: 'time4' }}>
+                    <div style={{ paddingTop: '2.3em' }}>16:00</div>
+                </Time>
+                <Split style={{ gridArea: 'split4' }} />
+                <Open style={{ gridArea: 'end' }}>
+                    <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
+                </Open>
             </Container>
         )
     } else if (selected === 'bedrift') {
@@ -75,6 +88,12 @@ const Program = () => {
     } else if (selected === 'faglig') {
         console.log(selected)
         return <Foredrag id={talk} setSelected={setSelected} />
+    } else if (selected === 'åpningssermoni') {
+        console.log(selected)
+        return <OpenProgram setSelected={setSelected} />
+    } else if (selected === 'avslutning') {
+        console.log(selected)
+        return <End setSelected={setSelected} />
     }
 }
 
@@ -86,15 +105,20 @@ const Container = styled.div`
     padding: 0 5rem;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
-    grid-template-rows: 10vh 9vh 42vh 9vh 42vh 9vh 42vh;
+    grid-template-rows: 5vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 5vh;
     grid-template-areas:
-        ' comp . edu '
+        ' . . .'
+        '. time .'
+        '. split open'
         ' . time1 . '
         ' kohort1 split1 foredrag1 '
         ' . time2 . '
         ' kohort2 split2 foredrag2 '
         ' . time3 .  '
-        ' kohort3 split3 foredrag3 ';
+        ' kohort3 split3 foredrag3 '
+        ' . time4 .'
+        ' . split4 end '
+        ' . . .';
     justify-items: center;
 `
 
@@ -132,6 +156,17 @@ const Time = styled.div`
     width: 90px;
     border-radius: 50%;
     text-align: bottom;
+`
+
+const Open = styled.div`
+    :hover {
+        opacity: 1;
+        transition: 0.5s ease;
+        background-color: #ea526f;
+    }
+    border-radius: 1rem;
+    justify-self: center;
+    align-self: start;
 `
 
 export default Program
