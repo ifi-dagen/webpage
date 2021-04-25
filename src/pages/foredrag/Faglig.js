@@ -65,7 +65,7 @@ const InnerContainerEdu = styled.div`
         transition: 0.5s ease;
         background-color: #ea526f;
     }
-
+    padding: 1em;
     border-radius: 1rem;
     justify-items: center;
 `

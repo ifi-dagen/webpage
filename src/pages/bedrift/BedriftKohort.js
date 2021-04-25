@@ -133,7 +133,7 @@ const InnerContainerComp = styled.div`
         'c1'
         'c2'
         'c3';
-    padding: 2em;
+    padding: 1em;
     border: solid;
     background-color: seashell;
 `
@@ -147,7 +147,7 @@ const InnerContainerComp2 = styled.div`
         'c1'
         'c2'
         'c3';
-    padding: 2em;
+    padding: 1em;
     border: solid;
     background-color: seashell;
 `
@@ -161,7 +161,7 @@ const InnerContainerComp3 = styled.div`
         'c1'
         'c2'
         'c3';
-    padding: 2em;
+    padding: 1em;
     border: solid;
     background-color: seashell;
 `
@@ -186,6 +186,7 @@ const Comp1 = styled.div`
         background-color: #99c24d;
         box-shadow: 1px 5px 5px;
     }
+    border-radius: 1rem;
 `
 
 const Comp2 = styled.div`
@@ -209,6 +210,7 @@ const Comp2 = styled.div`
         background-color: #f18f01;
         box-shadow: 1px 5px 5px;
     }
+    border-radius: 1rem;
 `
 const Comp3 = styled.div`
     grid-area: c3;
@@ -231,4 +233,5 @@ const Comp3 = styled.div`
         background-color: #23b5d3;
         box-shadow: 1px 5px 5px;
     }
+    border-radius: 1rem;
 `
