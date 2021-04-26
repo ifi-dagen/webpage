@@ -8,33 +8,15 @@ const Bedrift = () => {
     return (
         <div className="bedriftbase ">
             <h1>
-                Årets karrieredag blir for første gang arrangert digitalt,
-                og vi synes det er veldig kult at så mange bedrifter er påmeldt.
+               ettermiddagen@ifi våren 2021
             </h1>
-            <p>Kl 11-13 vises standområdet på forsiden. Iløpet av dette tidsrommet vil studenter kunne besøke dere på zoom-standen deres.</p>
-            <p> På bedriftsiden kan studentene bli bedre kjent med dere.
-            Her kan dere legge ut informasjon om hvem dere er og hvilke stillinger dere utlyser.
-            Dere kan også legge inn informasjon om eventuelle konkurranser dere holder eller linke til hjemmesiden deres.
-            </p>
+            <p>I år blir ettermiddagen@ifi arrangert 30. april, digitalt. Dette er vår litt mindre karrieredag som blir avholdt på vårsemesteret. </p>
+            <p>Har du noen spørsmål vedrørende ettermiddagen eller arrangementet, vennligst ta kontakt med vår bedriftsansvarlige: Victoria Kleiv Müller via <a href = "mailto: bedrift@dagenatifi.no"> bedrift@dagenatifi.no</a>.</p>
             <br />
-            <div className="kontaktinfo">
-                <h2>Trenger dere hjelp under arrangementet?</h2>
-                <p>Problemer med zoom-stand? Kontakt Burhan.</p>
-                <p>Lurer dere på noe angående bedriftsiden? Kontakt Kari.</p>
-                <p>Spørsmål om foredrag går til Henrik.</p>
-                <p>Ved generelle spørsmål kontakter dere Lise.</p>
-                
-            </div>
-
-            <div className="mailingliste hidden">
-                <h1>MAILINGLISTE - null backend atm, men knappen dukker opp her når den er klar!</h1>
-                <div className="form-group">
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Skriv e-postadresse her..." />
-                    <a className="btn btn-lg btn-header btn_bedrift" href="#?">Meld din interesse</a>
-                </div>
-            </div>
-
-            <Prisinfo className="hidden" />
+            <h1>dagen@ifi høsten 2021</h1>
+            <p>Vi har bestemt at dagen@ifi i år blir avholdt 23. september 2021. Vi forventer at dette arrangementet til en viss grad skal kunne være fysisk igjen, selv om vi såklart etterfølger gjeldende smittevernregler. Vi er optimistiske og skal uansett gjøre vårt beste ut fra situasjonen.</p>
+            <p>Dagen@ifi er høstens store karrieredag og er det største arrangement denne foreningen arrangerer iløpet av semesteret. Her fylles gangene på ifi med rundt 60 bedrifter som kan profilere seg ut mot ifi studenter, og på kvelden er det underholdning og etterfest.   </p>
+            <Prisinfo />
         </div >
     );
 }
