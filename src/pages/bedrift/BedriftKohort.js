@@ -2,13 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Bedrift from '../../data/bedrift_info.json'
 
-/* 
-
-*/
-
 const importAll = (r) => {
     let logos = {}
-    r.keys().map((item) => {
+    r.keys().forEach((item) => {
         logos[item.replace('./', '')] = r(item)
     })
     return logos
@@ -103,9 +99,6 @@ const BedriftKohort = ({
     } else if (kohort === 3) {
         return (
             <InnerContainerComp3>
-                {/* <Time>
-                    {c1.standtime[0]} -{c1.standtime[1]}
-                </Time> */}
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -125,7 +118,7 @@ const BedriftKohort = ({
             </InnerContainerComp3>
         )
     } else {
-        return <>PROMP</>
+        return <>Her skjedde det noe galt:/</>
     }
 }
 
@@ -140,7 +133,7 @@ const InnerContainerComp = styled.div`
         'c1'
         'c2'
         'c3';
-    padding: 2em;
+    padding: 1em;
     border: solid;
     background-color: seashell;
 `
@@ -154,7 +147,7 @@ const InnerContainerComp2 = styled.div`
         'c1'
         'c2'
         'c3';
-    padding: 2em;
+    padding: 1em;
     border: solid;
     background-color: seashell;
 `
@@ -168,7 +161,7 @@ const InnerContainerComp3 = styled.div`
         'c1'
         'c2'
         'c3';
-    padding: 2em;
+    padding: 1em;
     border: solid;
     background-color: seashell;
 `
@@ -193,6 +186,7 @@ const Comp1 = styled.div`
         background-color: #99c24d;
         box-shadow: 1px 5px 5px;
     }
+    border-radius: 1rem;
 `
 
 const Comp2 = styled.div`
@@ -216,6 +210,7 @@ const Comp2 = styled.div`
         background-color: #f18f01;
         box-shadow: 1px 5px 5px;
     }
+    border-radius: 1rem;
 `
 const Comp3 = styled.div`
     grid-area: c3;
@@ -238,36 +233,5 @@ const Comp3 = styled.div`
         background-color: #23b5d3;
         box-shadow: 1px 5px 5px;
     }
+    border-radius: 1rem;
 `
-
-// const Comp4 = styled.div`
-//     grid-area: c4;
-//     display: flex;
-
-//     place-items: center;
-//     img {
-//         display: block;
-//         max-width: 150px;
-//         max-height: 70px;
-//         width: auto;
-//         height: auto;
-//         overflow: hidden;
-//     }
-//     :hover {
-//         cursor: pointer;
-//     }
-// `
-
-// const Time = styled.div`
-//     grid-area: time;
-//     display: flex;
-//     place-items: center;
-//     padding-right: 2em;
-//     justify-items: center;
-//     img {
-//         height: 110%;
-//         width: 70%;
-//     }
-//     color: black;
-//     font-size: 15px;
-// `

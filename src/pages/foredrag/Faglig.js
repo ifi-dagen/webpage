@@ -9,10 +9,6 @@ const Faglig = ({ setSelected, setTalk }) => {
 
     return (
         <>
-            {/* <Edu>
-            <h2>Foredrag</h2>
-        </Edu> */}
-
             <InnerContainerEdu style={{ gridArea: 'foredrag1' }}>
                 <Talk>
                     <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
@@ -57,21 +53,6 @@ const Faglig = ({ setSelected, setTalk }) => {
     )
 }
 
-const Edu = styled.div`
-    grid-area: edu;
-`
-
-// const Icon = styled.div`
-//     img {
-//         display: block;
-//         max-width: 150px;
-//         max-height: 70px;
-//         width: auto;
-//         height: auto;
-//         overflow: hidden;
-//     }
-// `
-
 const InnerContainerEdu = styled.div`
     display: grid;
     height: 21vh;
@@ -84,7 +65,7 @@ const InnerContainerEdu = styled.div`
         transition: 0.5s ease;
         background-color: #ea526f;
     }
-
+    padding: 1em;
     border-radius: 1rem;
     justify-items: center;
 `

@@ -40,7 +40,6 @@ const Program = () => {
                     company={company}
                     setCompany={setCompany}
                     kohort={1}
-                    setSelected={setSelected}
                 />
                 <Split style={{ gridArea: 'split2' }} />
                 <Time style={{ gridArea: 'time2' }}>
@@ -69,17 +68,18 @@ const Program = () => {
                     company={company}
                     setCompany={setCompany}
                     kohort={3}
-                    setSelected={setSelected}
                 />
                 <Faglig setSelected={setSelected} setTalk={setTalk} />
-
+                <Split style={{ gridArea: 'split4' }} />
                 <Time style={{ gridArea: 'time4' }}>
                     <div style={{ paddingTop: '2.3em' }}>16:00</div>
                 </Time>
-                <Split style={{ gridArea: 'split4' }} />
                 <Open style={{ gridArea: 'end' }}>
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
                 </Open>
+                <Time style={{ gridArea: 'time5' }}>
+                    <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
+                </Time>
             </Container>
         )
     } else if (selected === 'bedrift') {
@@ -105,7 +105,7 @@ const Container = styled.div`
     padding: 0 5rem;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
-    grid-template-rows: 5vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 5vh;
+    grid-template-rows: 5vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 5vh;
     grid-template-areas:
         ' . . .'
         '. time .'
@@ -118,28 +118,10 @@ const Container = styled.div`
         ' kohort3 split3 foredrag3 '
         ' . time4 .'
         ' . split4 end '
+        ' . time5 .'
         ' . . .';
     justify-items: center;
 `
-
-const Comp = styled.div`
-    grid-area: comp;
-    h2  {
-        display: grid;
-        place-items: center;
-    }
-`
-
-// const Icon = styled.div`
-//     img {
-//         display: block;
-//         max-width: 150px;
-//         max-height: 70px;
-//         width: auto;
-//         height: auto;
-//         overflow: hidden;
-//     }
-// `
 
 const Split = styled.div`
     grid-area: split;

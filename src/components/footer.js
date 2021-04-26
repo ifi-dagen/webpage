@@ -1,9 +1,5 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React from 'react'
 import { Info } from './header'
-import ettermiddagen from '../img/ettermiddagen.svg'
-import ettermiddagenannenfarge from '../img/ettermiddagenannenfarge.svg'
-import { useHistory as useHerstory } from 'react-router-dom'
 
 const Footer = () => {
     return (

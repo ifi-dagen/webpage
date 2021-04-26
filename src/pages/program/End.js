@@ -26,7 +26,7 @@ const End = () => {
                 høsten på dagen@ifi!
             </p>
             <h3 style={{ fontSize: '30px' }}>Takk for i dag!!</h3>
-            <img src={require('../../img/DANS.jpg')}></img>
+            <img src={require('../../img/DANS.jpg')} alt=""></img>
         </div>
     )
 }
