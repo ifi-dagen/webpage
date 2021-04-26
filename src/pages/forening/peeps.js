@@ -55,7 +55,7 @@ const peepsInfo = [
     {
         rolle: roller.bedrift,
         navn: 'Victoria Kleiv Müller',
-        image: null,
+        image: 'VictoriaMuller.png',
     },
     {
         rolle: roller.okonomi,
@@ -74,13 +74,13 @@ const peepsInfo = [
     },
     {
         rolle: roller.faglig,
-        navn: null,
-        image: null,
+        navn: 'Naranja Isabelle',
+        image: 'NaranjaIsabelle.png',
     },
     {
         rolle: roller.funk,
         navn: 'Eivind Guren',
-        image: null,
+        image: 'eivindGuren.png',
     },
     {
         rolle: roller.underholdning,
@@ -90,7 +90,7 @@ const peepsInfo = [
     {
         rolle: roller.sosialt,
         navn: 'Karin Ospina',
-        image: null,
+        image: 'KarinOspina.png',
     },
     {
         rolle: roller.teknisk,
