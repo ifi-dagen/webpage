@@ -34,7 +34,8 @@ const App = () => (
 const Container = styled.div`
     display: grid;
     min-height: 100vh;
-    grid-template-rows: auto auto 12vh;
+    align-items: start;
+    grid-template-rows: 12vh auto 12vh;
     grid-template-areas:
         'header'
         'main'
