@@ -22,7 +22,7 @@ const foredrag_info = [
     },
     {
         id: 1,
-        title: 'Foredrag av Bekk',
+        title: 'Impostor Syndrome',
         // startTime: '12:00',
         // endTime: '12:30',
         startTime: new Date(2021, 4, 30, 14, 0, 0, 0)
@@ -35,10 +35,10 @@ const foredrag_info = [
             .substring(0, 6),
         companyName: 'Bekk',
         about:
-            'Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology Artificial Intelligence using Big Data Machine Learning Blockchain Technology',
+            'Har du noen gang følt at oppgaven, ansvaret eller stillingen du har fått egentlig ikke burde blitt gitt deg? At du er redd for at "noen" skal oppdage at du egentlig ikke er "flink nok"? I denne talken skal du få en liten introduksjon til konseptet "Impostor Syndrome". En følelse som mange av oss (statistikk tilsier 70% i utviklerjobber), selv godt inn i arbeidslivet kjenner på. Vi skal snakke litt om symptomer, mekanismer og hvordan jobbe for å unngå det.',
         link:
             'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09',
-        speaker: 'Silje :O',
+        speaker: 'Jørund',
         alt_tekst: '',
     },
     {

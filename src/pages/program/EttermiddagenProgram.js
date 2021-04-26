@@ -24,9 +24,6 @@ const Program = () => {
                         Åpningssermoni med Gyda, Eivind og Maja
                     </h1>
                 </Open>
-                {/* <Comp>
-                    <h2>Bedritne saker</h2>
-                </Comp> */}
                 <Split style={{ gridArea: 'split1' }} />
                 <Time style={{ gridArea: 'time1' }}>
                     <div style={{ paddingTop: '2.3em' }}>13:00</div>
@@ -131,9 +128,10 @@ const Split = styled.div`
 `
 
 const Time = styled.div`
-    background-color: #ff8966;
+    background-color: #818d92;
     height: 90px;
     text-align: center;
+    color: white;
     vertical-align: middle;
     width: 90px;
     border-radius: 50%;
