@@ -23,9 +23,7 @@ const Faglig = ({ setSelected, setTalk }) => {
             </InnerContainerEdu>
             <InnerContainerEdu style={{ gridArea: 'foredrag2' }}>
                 <Talk>
-                    <h3 onClick={() => updateState(1)}>
-                        Superforedrag av Bekk
-                    </h3>
+                    <h3 onClick={() => updateState(1)}>Impostor Syndrome</h3>
                 </Talk>
                 <TalkComp>
                     <img
