@@ -11,17 +11,25 @@ export default class Prisinfo extends Component {
         return (
             <div className="priser ">
                 <h1>PRISER OG PAKKER</h1>
-                <p>info om pakker, i år kan vi droppe v-boksene-v</p>
                 <div className="row ">
-                    <h2> Stand-pakker for <text color="#08A6E4">dagen@ifi</text> </h2>
-                </div>
-
+             </div>
                 <div className="row ">
 
+                <div className="col-lg-3 stand_pakke stand_pakke_1">
+                        <div className="stand_pakke_inner">
+                            <h2 className="svart_overskrift">DIGITAL STANDPLASS</h2>
+                            <h3 className="blue">pris: 10 000,-</h3>
+
+                            <br /><b>Pakken inkluderer:</b>
+                            <br />- Noe profilering på nettsiden og i våre sosiale medier
+                            <br />- Zoom rom
+                        </div>
+                    </div>
+                    
                     <div className="col-lg-3 stand_pakke stand_pakke_1">
                         <div className="stand_pakke_inner">
-                            <h2 className="svart_overskrift">STANDPLASS</h2>
-                            <h5 className="blue">pris: 35 000,-</h5>
+                            <h2 className="svart_overskrift">FYSISK STANDPLASS</h2>
+                            <h3 className="blue">pris: 30 000,-</h3>
 
                             <br /><b>Pakken inkluderer:</b>
                             <br />- Standplass på ca 4m2
@@ -31,17 +39,20 @@ export default class Prisinfo extends Component {
                             <br />- Logo i informasjonsbrosjyren for dagen@ifi
                             <br />- Tilgang til bedriftslounge med mat og drikke på dagtid
                             <br />- Mulighet for å holde foredrag/lyntale
+                            <br />- Profilering på nettsiden 
                         </div>
                     </div>
+
+                
 
                     <div className="col-lg-3 stand_pakke stand_pakke_2">
                         <div className="stand_pakke_inner">
 
-                            <h2 className="svart_overskrift">SPONSOR</h2>
-                            <h5 className="blue">pris: 55 000,-</h5>
+                            <h2 className="svart_overskrift">SPONSORPLASS</h2>
+                            <h3 className="blue">pris: 45 000,-</h3>
 
                             <br /><b>Pakken inkluderer:</b>
-                            <br />- Alt som er inkludert i standakken
+                            <br />- Alt som er inkludert i standardpakken
                             <br />- Navn og logo fremhevet på vår nettside og trykksaker
                             <br />- Intervjurom
                             <br />- 1. Prioritet på valg av standplass
@@ -54,7 +65,7 @@ export default class Prisinfo extends Component {
                         <div className="stand_pakke_inner">
 
                             <h2 className="svart_overskrift">HOVEDSPONSOR</h2>
-                            <h5 className="blue">pris: 100 000,-</h5>
+                            <h3 className="blue">pris: 55 000,-</h3>
 
                             <br /><b>Pakken inkluderer:</b>
                             <br />- Standplass på ca 4m2
