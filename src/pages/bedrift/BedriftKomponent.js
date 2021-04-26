@@ -147,4 +147,25 @@ const Container = styled.div`
         '. . Talk Talk'
         '. . Work Work'
         '. . Annonse Annonse';
+
+    @media screen and (max-width: 815px) {
+        grid-template-columns: 35vw 100vw;
+        grid-template-rows: auto auto auto auto 100vh;
+        overflow-x: visible;
+        grid-template-areas:
+            'info info'
+            'Logo SoMe'
+            '. Zoom '
+            'Competition Title '
+            'Competition Description'
+            'Questions Description'
+            '. Description'
+            '. Video'
+            '. TitleTalk'
+            '. Talk'
+            '. Work'
+            '.  Annonse';
+        p {
+        }
+    }
 `
