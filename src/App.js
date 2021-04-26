@@ -15,7 +15,7 @@ const App = () => (
                 text2="Om oss"
                 link2="\om-oss"
                 text3="FAQ"
-                link3="/for-bedrift"
+                link3="/studenter"
             />
             <Routes style={{ gridArea: 'main' }} />
             <Footer

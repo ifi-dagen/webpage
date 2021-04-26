@@ -6,7 +6,7 @@ const Studenter = () => {
         <Wrapper>
             <h1>Hjelp, hvordan forbereder jeg meg til en digital karrieredag? </h1>
             <div>
-                <h2>Nå er det ikke lenge før ifi’s første digitale karrieredag braker løs - og her kommer det et par tips til hvordan du kan forberede deg!</h2>
+                <h2>Her kommer det et par tips til hvordan du kan forberede deg!</h2>
                 <br />
                 <Point> Oppdater LinkedIn-CVen din</Point>
                 Headhuntere og rekrutteringsbyråer bruker LinkedIn aktivt.
