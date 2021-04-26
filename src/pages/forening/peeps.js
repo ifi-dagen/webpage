@@ -90,7 +90,7 @@ const peepsInfo = [
     {
         rolle: roller.sosialt,
         navn: 'Karin Ospina',
-        image: null,
+        image: 'KarinOspina.png',
     },
     {
         rolle: roller.teknisk,
