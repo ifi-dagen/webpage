@@ -52,13 +52,15 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                         <Zoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
                     </div>
 
-                    <h2 style={{ gridArea: 'Title' }}>Hvem er vi?</h2>
+                    <h2 style={{ gridArea: 'Title' }}>
+                        {bedrift.descriptionTitle}
+                    </h2>
                     <p style={{ gridArea: 'Description' }}>
                         {bedrift.description.map((sentence) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </p>
-                    <ReactPlayer
+                    {/* <ReactPlayer
                         url={bedrift.video}
                         // width="426px"
                         // height="240px"
@@ -67,7 +69,7 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                             justifySelf: 'center',
                             paddingBottom: '2em',
                         }}
-                    />
+                    /> */}
 
                     <div style={{ gridArea: 'SoMe' }}>
                         <Facebook link={bedrift.facebook} />
@@ -93,23 +95,23 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </p>
-
+                    {/* 
                     <p style={{ gridArea: 'Competition' }}>
                         <h3>Konkurranse</h3>
                         <a href={bedrift.competition.link}>
                             {bedrift.competition.text}
                         </a>
-                    </p>
+                    </p> */}
 
-                    <div style={{ gridArea: 'Questions' }}>
+                    {/* <div style={{ gridArea: 'Questions' }}>
                         <h3>5 raske</h3>
                         {bedrift.answer.map((answer) => {
                             return <p key={answer}>{answer}</p>
                         })}
-                    </div>
+                    </div> */}
 
                     <h3 style={{ gridArea: 'Work' }}>
-                        Våre spennende stillingsannonser
+                        {bedrift.positionTitle}
                     </h3>
                     <div style={{ gridArea: 'Annonse' }}>
                         {bedrift.positions.map((position) => {
@@ -138,11 +140,8 @@ const Container = styled.div`
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
-        'Competition . Title .'
-        'Competition . Description Description'
-        'Questions . Description Description'
+        '. . Title Title'
         '. . Description Description'
-        '. . Video Video'
         '. . TitleTalk TitleTalk'
         '. . Talk Talk'
         '. . Work Work'
