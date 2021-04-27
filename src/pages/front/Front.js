@@ -1,18 +1,18 @@
 
 import React from 'react';
 import styled from 'styled-components'
-import Countdown from '../../components/countdown';
+import Program from '../program/EttermiddagenProgram'
 
 const Front = () => {
   return (
     <Div>
       <Container>
-        <h1>Velkommen til digital ettermiddagen@ifi.</h1>
-        <h3 >Vil du være med i dagen@ifi som intern? <a href="https://forms.gle/JLYYu7rds4MNifKq9">Søk her!</a></h3>
         <br />
-        <Countdown />
+        <h1>Velkommen til digital ettermiddagen@ifi</h1>
+        <br />
       </Container>
-     
+
+      <Program/>
       
       
     </Div >
