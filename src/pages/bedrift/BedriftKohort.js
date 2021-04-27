@@ -135,7 +135,7 @@ const InnerContainerComp = styled.div`
         'c3';
     padding: 1em;
     border: solid;
-    background-color: seashell;
+    background-color: #f4f3ee;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
         padding: 0;
@@ -153,7 +153,7 @@ const InnerContainerComp2 = styled.div`
         'c3';
     padding: 1em;
     border: solid;
-    background-color: seashell;
+    background-color: #f4f3ee;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
         padding: 0;
@@ -170,7 +170,7 @@ const InnerContainerComp3 = styled.div`
         'c2';
     padding: 1em;
     border: solid;
-    background-color: seashell;
+    background-color: #f4f3ee;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
         padding: 0;
@@ -181,7 +181,7 @@ const Comp1 = styled.div`
     align-self: center;
     img {
         display: block;
-        max-width: 200px;
+        max-width: 250px;
         max-height: 90px;
         width: auto;
         height: auto;
@@ -205,7 +205,7 @@ const Comp2 = styled.div`
     align-self: center;
     img {
         display: block;
-        max-width: 200px;
+        max-width: 250px;
         max-height: 90px;
         width: auto;
         height: auto;
@@ -228,7 +228,7 @@ const Comp3 = styled.div`
     align-self: center;
     img {
         display: block;
-        max-width: 200px;
+        max-width: 250px;
         max-height: 90px;
         width: auto;
         height: auto;

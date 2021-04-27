@@ -20,12 +20,6 @@ const Program = () => {
                     <div style={{ paddingTop: '2.3em' }}>12:00</div>
                 </Time>
 
-                <h2
-                    // onClick={() => setSelected('focus')}
-                    style={{ gridArea: 'k1' }}
-                >
-                    Snakk med oss
-                </h2>
                 <Open style={{ gridArea: 'open' }}>
                     <h1 onClick={() => setSelected('åpningssermoni')}>
                         Åpningssermoni med Gyda, Eivind og Maja
@@ -78,7 +72,13 @@ const Program = () => {
                 <Time style={{ gridArea: 'time4' }}>
                     <div style={{ paddingTop: '2.3em' }}>16:00</div>
                 </Time>
-                <Open style={{ gridArea: 'end' }}>
+                <Open
+                    style={{
+                        gridArea: 'end',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                    }}
+                >
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
                 </Open>
                 <Split style={{ gridArea: 'split4' }} />
@@ -119,12 +119,10 @@ const Container = styled.div`
     max-width: 850px;
     min-width: 640px;
     margin: 0 auto;
-    padding: 0 5rem;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
-    grid-template-rows: 5vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 5vh;
+    grid-template-rows: 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh;
     grid-template-areas:
-        ' . . .'
         '. time .'
         '. split open'
         ' . time1 . '
@@ -135,8 +133,7 @@ const Container = styled.div`
         ' kohort3 split3 foredrag3 '
         ' . time4 .'
         ' . split4 end '
-        ' . time5 .'
-        ' . . .';
+        ' . time5 .';
     justify-items: center;
 
     @media screen and (max-width: 815px) {
@@ -144,7 +141,6 @@ const Container = styled.div`
         grid-template-columns: 35vw 35vw;
         grid-template-rows: 5vh 9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh 5vh;
         grid-template-areas:
-            ' . . '
             ' time . '
             ' split open'
             ' time1 . '
@@ -158,25 +154,25 @@ const Container = styled.div`
             'split3 kohort3'
             'time4 .'
             'split4 end'
-            'time5 .'
-            '. . ';
+            'time5 .';
         h1,
         h2,
         h3 {
             font-size: 1rem;
         }
         padding: 0;
-    }
-    img {
-        display: block;
-        max-width: 200px;
-        max-height: 45px;
-        width: auto;
-        height: auto;
-        overflow: hidden;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1em;
+
+        img {
+            display: block;
+            max-width: 200px;
+            max-height: 45px;
+            width: auto;
+            height: auto;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em;
+        }
     }
 `
 

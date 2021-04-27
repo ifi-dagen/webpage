@@ -46,9 +46,9 @@ const Wrapper = styled.div`
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 1rem;
-    padding: 1em;
+    padding: 0.5em;
     align-items: center;
-    background-color: #b23a48;
+    background-color: #2a6f97;
     img {
         max-height: 5rem;
         cursor: pointer;
@@ -60,7 +60,7 @@ const Wrapper = styled.div`
         color: white;
         transition: color 0.25s;
         :hover {
-            color: #b45eff;
+            color: #ff6b6b;
         }
         text-decoration: none;
         font-family: Courier New;
