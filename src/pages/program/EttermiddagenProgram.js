@@ -81,7 +81,7 @@ const Program = () => {
                 >
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
                 </Open>
-                <Split style={{ gridArea: 'split4' }} />
+                <Split style={{ gridArea: 'split5' }} />
                 <Time style={{ gridArea: 'time5' }}>
                     <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
                 </Time>
@@ -121,7 +121,7 @@ const Container = styled.div`
     margin: 0 auto;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
-    grid-template-rows: 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh;
+    grid-template-rows: 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 5vh;
     grid-template-areas:
         '. time .'
         '. split open'
@@ -133,7 +133,8 @@ const Container = styled.div`
         ' kohort3 split3 foredrag3 '
         ' . time4 .'
         ' . split4 end '
-        ' . time5 .';
+        ' . time5 .'
+        '. . .';
     justify-items: center;
 
     @media screen and (max-width: 815px) {
@@ -184,10 +185,11 @@ const Split = styled.div`
 `
 
 const Time = styled.div`
-    background-color: #818d92;
+    background-color: #ff6b6b;
     height: 90px;
     text-align: center;
     color: white;
+    font: 1em;
     vertical-align: middle;
     width: 90px;
     border-radius: 50%;
