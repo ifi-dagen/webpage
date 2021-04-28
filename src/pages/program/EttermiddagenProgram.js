@@ -7,6 +7,8 @@ import Foredrag from '../foredrag/foredrag'
 import OpenProgram from './OpenProgram'
 import End from './End'
 import './program.css'
+import Countdown from '../../components/countdown'
+
 
 import Confetti from 'react-confetti'
 
@@ -56,7 +58,11 @@ const Program = () => {
                          recycle={false}
                          run={true}
                      />
-                <h1 style={{gridArea:"overskrift", justifySelf: "center", color:"black", fontSize: "50px"}}>Velkommen til digital ettermiddagen@ifi</h1>
+                     <Countdown style={{gridArea: "countdown", justifySelf: "center"}} />
+                <h1 style={{gridArea:"h1", justifySelf: "center", textAlign: "center", color:"black", fontSize: "50px"}}>Velkommen til digital ettermiddagen@ifi</h1>
+                <h2 style={{gridArea: "h2", justifySelf: "center", textAlign: "center"}}>Vi håper du tar turen innom og prater litt med de ulike  bedriftene i standområdet, de gleder seg til å møte deg! Parallellt med det digitale standområdet kjøres det ulike foredrag, og vi håper du finner noe som er interessant og relevant for deg. Vi har flere konkurranser gående iløpet av dagen, og flere av bedriftene har egne konkurranser iløpet av standtiden sin, så utnytt sjansen til å mingle med litt bedrifter over en lav sko i dag. </h2>
+                <h2 style={{gridArea: "h3", justifySelf: "center"}}>Vi i dagen-styret ønsker deg en flott ettermiddag!</h2>
+<br/>
 
                 {confetti}
                 <Split style={{ gridArea: 'split' }} />
@@ -157,9 +163,12 @@ const Container = styled.div`
     margin: 0 auto;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
-    grid-template-rows: 20vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh;
+    grid-template-rows: 10vh 20vh 22vh 10vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh;
     grid-template-areas:
-        'overskrift overskrift overskrift'
+        'countdown countdown countdown'
+        'h1 h1 h1'
+        'h2 h2 h2'
+        'h3 h3 h3'
         '. time .'
         '. split open'
         ' . time1 . '
