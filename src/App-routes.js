@@ -16,7 +16,7 @@ class Routes extends Component {
     render() {
         return (
             <Switch>
-                <Route exact path="/" render={(prop) => <Front />} />
+                <Route exact path="/" render={(prop) => <Program />} />
                 <Route
                     exact
                     path="/program"

@@ -128,13 +128,15 @@ const InnerContainerComp = styled.div`
     display: grid;
     grid-area: kohort1;
     grid-template-columns: 20vw;
-
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
     grid-template-areas:
         'c1'
         'c2'
         'c3';
     padding: 1em;
-    border: solid;
+    /* border: solid; */
     background-color: #f4f3ee;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
@@ -146,13 +148,15 @@ const InnerContainerComp2 = styled.div`
     display: grid;
     grid-area: kohort2;
     grid-template-columns: 20vw;
-
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
     grid-template-areas:
         'c1'
         'c2'
         'c3';
     padding: 1em;
-    border: solid;
+    /* border: solid; */
     background-color: #f4f3ee;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
@@ -164,12 +168,14 @@ const InnerContainerComp3 = styled.div`
     display: grid;
     grid-area: kohort3;
     grid-template-columns: 20vw;
-
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
     grid-template-areas:
         'c1'
         'c2';
     padding: 1em;
-    border: solid;
+    /* border: solid; */
     background-color: #f4f3ee;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;

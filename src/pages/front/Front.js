@@ -6,11 +6,7 @@ import Program from '../program/EttermiddagenProgram'
 const Front = () => {
   return (
     <Div>
-      <Container>
-        <br />
-        <h1>Velkommen til digital ettermiddagen@ifi</h1>
-        <br />
-      </Container>
+
 
       <Program/>
       

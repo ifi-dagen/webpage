@@ -39,7 +39,7 @@ const Faglig = ({ setSelected, setTalk }) => {
                 <Talk>
                 <Tag>Foredrag 15:00-15:30</Tag>
                     <h3 onClick={() => updateState(2)}>
-                        Superforedrag av Accenture
+                        Superforedrag av accenture
                     </h3>
                 </Talk>
                 <TalkComp>
@@ -57,7 +57,7 @@ const Faglig = ({ setSelected, setTalk }) => {
 const InnerContainerEdu = styled.div`
     display: grid;
     height: 21vh;
-    
+    width: 20vw;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
