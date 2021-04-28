@@ -2,123 +2,75 @@ import React from 'react'
 import styled from 'styled-components'
 import foredrag_info from '../../data/foredrag_info'
 import EttermiddagenProgram from '../program/EttermiddagenProgram'
+
 const Foredrag = ({ id, setSelected }) => {
     const foredrag = foredrag_info[id]
     return (
-        /*
-        TODO:
-        * Feed info through props
-        * Link time to time view for program
-        * Need time/date/ID state from program to determine which  lecture to load
-        */
-
-        <Wrapper>
-            <Title>
-                <h1>{foredrag.title}</h1>
-            </Title>
-            {/* exaple link back to program for the selected time */}
-            <Time
-                onClick={() => {
-                    setSelected('program')
-                    return <EttermiddagenProgram />
-                }}
-            >
-                {foredrag.startTime} - {foredrag.endTime}
-            </Time>
-            <SpeakerInfo
-                companyName={foredrag.companyName}
-                speakerName={foredrag.speaker}
-            />
-            <About>
-                <h3>Om foredraget</h3> {foredrag.about}
-                <RerouteToLink
-                    location={foredrag.link}
-                    text={'Se foredraget her!'}
-                />
-            </About>
-        </Wrapper>
-    )
-}
-
-const SpeakerInfo = ({ companyName, speakerName }) => {
-    return (
-        <CompanyContainer>
-            <CompanyName>
-                {' '}
-                <RerouteToLink
-                    location={`https://${companyName}.no`}
-                    text={companyName}
-                />
-            </CompanyName>
-            <CompanyLogo>
-                {' '}
+        <div
+            style={{
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                textAlign: 'left',
+            }}
+        >
+            <CompanyContainer>
+                <Tag
+                    style={{
+                        gridArea: 'Time',
+                        alignItems: 'center',
+                        height: '1.2em',
+                    }}
+                    onClick={() => {
+                        setSelected('program')
+                        return <EttermiddagenProgram />
+                    }}
+                >
+                    Foredrag {foredrag.startTime} - {foredrag.endTime}
+                </Tag>
                 <img
-                    src={require(`./logo/${companyName}_logo.png`)}
-                    alt={`Bilde av ${companyName} sin logo`}
+                    style={{
+                        gridArea: 'Logo',
+                        padding: '1em',
+                        alignSelf: 'center',
+                        maxWidth: '200px',
+                        maxHeight: '150px',
+                    }}
+                    src={require(`./logo/${foredrag.companyName}_logo.png`)}
+                    alt={`Bilde av ${foredrag.companyName} sin logo`}
                 ></img>
-            </CompanyLogo>
-            <Speaker>
-                <img
-                    src={require(`./speaker/${companyName}_speaker.png`)}
-                    alt={`Bilde av ${speakerName}`}
-                ></img>
-                <br></br>
-                {speakerName}
-            </Speaker>
-        </CompanyContainer>
+
+                <a
+                    style={{ gridArea: 'Zoom', justifySelf: 'center' }}
+                    href={foredrag.link}
+                >
+                    {'Se foredraget her!'}
+                </a>
+
+                <About style={{ gridArea: 'Description' }}>
+                    <h1
+                        style={{
+                            alignSelf: 'center',
+                            fontSize: '4em',
+                            fontStyle: 'italic',
+                        }}
+                    >
+                        {foredrag.title}
+                    </h1>{' '}
+                    {foredrag.about}
+                </About>
+            </CompanyContainer>
+        </div>
     )
 }
-
-const RerouteToLink = ({ location, text }) => {
-    return (
-        <Place>
-            <a href={location}>{text}</a>
-        </Place>
-    )
-}
-
-const Title = styled.div`
-    h1 {
-        color: black;
-        line-height: 1;
-    }
-`
 
 const CompanyContainer = styled.div`
+    padding: 2em;
     display: grid;
-    grid-template-areas: 'companyName companylogo speakerinfo .';
-    max-height: 6vw;
-`
-const CompanyLogo = styled.div`
-    padding-top: 1em;
-    max-width: 20vw;
-`
-const Speaker = styled.div`
-    color: deepskyblue;
-    grid-area: speakerinfo;
-    img {
-        max-width: 8vw;
-        max-height: 8vw;
-    }
-    justify-items: center;
-    text-align: center;
-`
-const CompanyName = styled.div`
-    font-size: 1.17em;
-    padding-left: 1em;
-    width: 50%;
-    font-weight: bold;
-    color: black;
-    grid-area: companyName;
-`
-const Time = styled.div`
-    font-size: 1.17em;
-    width: 14%;
-    font-weight: bold;
-    &:hover {
-        cursor: pointer;
-    }
-    padding-left: 1em;
+    grid-template-columns: 15vw 10vw 10vw 15vw;
+    grid-template-areas:
+        'Time . . Logo'
+        '. Zoom Zoom  .'
+        'Description Description Description Description';
 `
 
 const About = styled.div`
@@ -129,31 +81,16 @@ const About = styled.div`
     }
 `
 
-const Place = styled.div`
-    a {
-        color: black;
-        font-size: 20px;
-        line-height: 1;
-        text-decoration: none;
-    }
-    a:hover {
-        color: deepskyblue;
-    }
-    padding-top: 1em;
+const Tag = styled.div`
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #ff6b6b;
+    width: 15vw;
+    text-align: center;
+    color: snow;
 `
-
-const Wrapper = styled.div`
-    margin: auto;
-    width: 70%;
-`
-/*
-const Border = styled.div`
-    border: 2px;
-    border-style: solid;
-    border-color: deepskyblue;
-    padding: 1em;
-    border-radius: 8px;
-`
-*/
 
 export default Foredrag
