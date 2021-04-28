@@ -8,12 +8,12 @@ const Newfooter = () => {
         <div>
             <Line>
                     <span />
-                    <Wrapper>
+                    <div>
                         <Instagram link="http://www.instagram.com/dagenatifi"/>
                         <Facebook link="http://www.facebook.com/dagenatifi"/>
                         <Linkedin link="http://www.linkedin.com/dagenatifi"/>
                         <p> Følg @dagenatifi på sosiale medier</p>
-                    </Wrapper>
+                    </div>
                     <span />
                     <span />
                     <Dagen src={require('../img/dagen_logo.svg')} alt="dagen@ifi logo" />
@@ -42,9 +42,6 @@ const Line = styled.div`
     }    
 `
 
-const Wrapper = styled.div`
-
-`
 
 const Dagen = styled.img`
     width: 200px;
