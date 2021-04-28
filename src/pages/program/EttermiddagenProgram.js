@@ -19,6 +19,13 @@ const Program = () => {
     if (selected === 'program') {
         return (
             <Container>
+                     <Confetti
+                         width={'2000'}
+                         height={'2000'}
+                         numberOfPieces={'100'}
+                         recycle={false}
+                         run={true}
+                     />
                 <Split style={{ gridArea: 'split' }} />
                 <Time style={{ gridArea: 'time' }}>
                     <div style={{ paddingTop: '2.3em' }}>12:00</div>
