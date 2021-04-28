@@ -11,7 +11,6 @@ const End = () => {
                 textAlign: 'left',
                 maxWidth: '850px',
                 minWidth: '640px',
-                padding: '0 5rem',
             }}
         >
             <Tag style={{ gridArea: 'Tag' }}>Kahoot 16:00</Tag>

@@ -11,7 +11,6 @@ const OpenProgram = () => {
                 textAlign: 'left',
                 maxWidth: '850px',
                 minWidth: '640px',
-                padding: '0 5rem',
             }}
         >
             <Tag style={{ gridArea: 'Tag' }}>Åpningsshow 12:00-13:00</Tag>
