@@ -29,7 +29,7 @@ export default class Prisinfo extends Component {
                 <div className="col-lg-3 stand_pakke stand_pakke_1">
                         <div className="stand_pakke_inner">
                             <h2 className="svart_overskrift">DIGITAL SPONSOR STANDPLASS</h2>
-                            <h3 className="blue">pris: 10 000,-</h3>
+                            <h3 className="blue">pris: 15 000,-</h3>
 
                             <br /><b>Pakken inkluderer:</b>
                             <br />- Profilering på nettsiden og i våre sosiale medier
