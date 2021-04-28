@@ -71,6 +71,21 @@ const CompanyContainer = styled.div`
         'Time . . Logo'
         '. Zoom Zoom  .'
         'Description Description Description Description';
+        
+        @media screen and (max-width: 815px) {
+            grid-template-columns: 50vw;
+      
+            grid-template-areas:
+            'Time'
+            'Logo'
+            'Zoom'
+            'Description';
+
+            p{
+                font-size: 0.5rem,
+            }
+            justify-items:center;
+           
 `
 
 const About = styled.div`
