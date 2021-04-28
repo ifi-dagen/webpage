@@ -7,22 +7,38 @@ const OpenProgram = () => {
         <Container
             style={{
                 margin: 'auto',
-                textAlign: 'center',
+                padding: '1em',
+                textAlign: 'left',
                 maxWidth: '850px',
                 minWidth: '640px',
                 padding: '0 5rem',
             }}
         >
-            <h3 style={{ fontSize: '30px', gridArea: 'Title' }}>
-                Åpningssermoni
-            </h3>
-            <Zoom
-                style={{ gridArea: 'Zoom' }}
-                link={
-                    'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
-                }
-                text={'Se åpningssermonien her!'}
-            />
+            <Tag style={{ gridArea: 'Tag' }}>Åpningsshow 12:00-13:00</Tag>
+            <div
+                style={{
+                    gridArea: 'Zoom',
+                    padding: '1em',
+                    justifyItems: 'center',
+                    alignItems: 'center',
+                }}
+            >
+                <Zoom
+                    link={
+                        'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
+                    }
+                    text={'Se åpningsshowet her!'}
+                />
+            </div>
+            <h1
+                style={{
+                    fontSize: '3em',
+                    gridArea: 'Title',
+                    fontStyle: 'italic',
+                }}
+            >
+                Åpningsshow
+            </h1>
             <p
                 style={{
                     fontSize: '1.5rem',
@@ -41,7 +57,9 @@ const OpenProgram = () => {
                 har skjedd på ifi den siste uken.
             </p>
             <br />
-            <Konkurranse style={{ gridArea: 'Competition' }}>
+            <Konkurranse
+                style={{ gridArea: 'Competition', textAlign: 'center' }}
+            >
                 <h1>Konkurranse!</h1>
                 <p>
                     Send bilde av at du deltar på åpningsshowet til oss på insta
@@ -57,7 +75,11 @@ const OpenProgram = () => {
             <br />
 
             <img
-                style={{ gridArea: 'Picture' }}
+                style={{
+                    gridArea: 'Picture',
+                    width: '400px',
+                    height: '400px',
+                }}
                 src={require('../../img/fredagsprat.png')}
                 alt=""
             ></img>
@@ -66,15 +88,33 @@ const OpenProgram = () => {
 }
 
 const Container = styled.div`
+    padding: 3em;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 15vw 15vw 15vw;
     grid-template-areas:
-        'Title'
-        'Zoom'
-        'Description'
-        'Competition'
-        'Picture';
-    justify-items: center;
+        'Tag . .'
+        '. Zoom .'
+        'Title Title . '
+        'Description Description Description'
+        '. Competition  .'
+        '. . Picture';
+
+        @media screen and (max-width: 815px) {
+            grid-template-columns: auto;
+            grid-template-areas:
+            'Tag'
+            'Zoom'
+            'Title'
+            'Description'
+            'Competition'
+            'Picture';
+
+            p{
+                font-size: 1rem,
+                font-weight: 200,
+            }
+            justify-items:center;
+           
 `
 
 const Konkurranse = styled.div`
@@ -86,12 +126,12 @@ const Konkurranse = styled.div`
         font-style: italic;
         color: #cdb4db;
     }
-
     p {
         font-size: 1.5rem;
         font-weight: 400;
         text-align: center;
     }
+    justify-content: center;
 `
 
 const Link = styled.a`
@@ -107,5 +147,18 @@ const Icon = styled.i`
     ${Link}:hover & {
         color: deepskyblue;
     }
+`
+
+const Tag = styled.div`
+    height: 1.2em;
+    margin: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #ff6b6b;
+    width: 15vw;
+    text-align: center;
+    color: snow;
 `
 export default OpenProgram
