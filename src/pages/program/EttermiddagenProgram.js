@@ -21,6 +21,7 @@ const Program = () => {
                 </Time>
 
                 <Open style={{ gridArea: 'open' }}>
+                    <Tag>Konkurranse 12:00-13:00</Tag>
                     <h1 onClick={() => setSelected('åpningssermoni')}>
                         Åpningssermoni med Gyda, Eivind og Maja
                     </h1>
@@ -79,6 +80,7 @@ const Program = () => {
                         marginRight: 'auto',
                     }}
                 >
+                    <Tag>Konkurranse 16:00-16:30</Tag>
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
                 </Open>
                 <Split style={{ gridArea: 'split5' }} />
@@ -197,15 +199,33 @@ const Time = styled.div`
 `
 
 const Open = styled.div`
+    background-color: #edf6f9;
+    height: 22vh;
+    width: 22vw;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+
+    
     :hover {
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #ea526f;
+        background-color: #b7e4c7;
         cursor: pointer;
     }
-    border-radius: 1rem;
-    justify-self: center;
-    align-self: start;
+    
+   
+`
+
+const Tag = styled.div`
+    margin: 1em;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #cdb4db;
+    width: 15vw;
+    text-align: center;
+    color: snow;
 `
 
 export default Program
