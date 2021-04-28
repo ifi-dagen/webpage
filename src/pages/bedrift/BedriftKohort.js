@@ -37,6 +37,7 @@ const BedriftKohort = ({
     if (kohort === 1) {
         return (
             <InnerContainerComp>
+                <Tag>Bedriftstander fra 15:00-15:30</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -70,6 +71,7 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
+                <Tag>Bedriftstander fra 15:00-15:30</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -99,6 +101,8 @@ const BedriftKohort = ({
     } else if (kohort === 3) {
         return (
             <InnerContainerComp3>
+                <Tag>Bedriftstander fra 15:00-15:30</Tag>
+
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -124,6 +128,18 @@ const BedriftKohort = ({
 
 export default BedriftKohort
 
+const Tag = styled.div`
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #ff6b6b;
+    width: 15vw;
+    height: 1.5em;
+    justify-self: center;
+    text-align:center;
+    color: snow;
+    grid-area: "tag";
+`
+
 const InnerContainerComp = styled.div`
     display: grid;
     grid-area: kohort1;
@@ -134,12 +150,13 @@ const InnerContainerComp = styled.div`
     border-right: solid;
     border-top: solid;
     grid-template-areas:
+        'tag'
         'c1'
         'c2'
         'c3';
     padding: 1em;
     /* border: solid; */
-    background-color: #f4f3ee;
+    background-color: #edf6f9;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
         padding: 0;
@@ -154,12 +171,13 @@ const InnerContainerComp2 = styled.div`
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
     grid-template-areas:
+        'tag'
         'c1'
         'c2'
         'c3';
     padding: 1em;
     /* border: solid; */
-    background-color: #f4f3ee;
+    background-color: #edf6f9;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
         padding: 0;
@@ -174,11 +192,12 @@ const InnerContainerComp3 = styled.div`
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
     grid-template-areas:
+        'tag'
         'c1'
         'c2';
     padding: 1em;
     /* border: solid; */
-    background-color: #f4f3ee;
+    background-color: #edf6f9;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
         padding: 0;
@@ -244,6 +263,7 @@ const Comp3 = styled.div`
         margin-left: auto;
         margin-right: auto;
         padding: 1em;
+
     }
     :hover {
         cursor: pointer;
