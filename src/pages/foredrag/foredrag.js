@@ -1,9 +1,15 @@
 import React from 'react'
+import {useHistory} from "react-router-dom"
+
 import styled from 'styled-components'
-import foredrag_info from '../../data/foredrag_info'
+import foredrag_info from '../../data/foredrag_info.json'
 import EttermiddagenProgram from '../program/EttermiddagenProgram'
-const Foredrag = ({ id, setSelected }) => {
-    const foredrag = foredrag_info[id]
+const Foredrag = ({ id, setSelected, match }) => {
+    let foredrag = match.url.split("foredrag/")[1]
+    console.log("aøsldkjfknasøldfn", foredrag);
+    foredrag = foredrag_info.find((f) => f.id === foredrag)
+    const history = useHistory()
+
     return (
         /*
         TODO:
@@ -17,14 +23,13 @@ const Foredrag = ({ id, setSelected }) => {
                 <h1>{foredrag.title}</h1>
             </Title>
             {/* exaple link back to program for the selected time */}
-            <Time
+            <h3
                 onClick={() => {
-                    setSelected('program')
-                    return <EttermiddagenProgram />
+                    history.goBack()
                 }}
             >
-                {foredrag.startTime} - {foredrag.endTime}
-            </Time>
+                Tilbake til programmet
+            </h3>
             <SpeakerInfo
                 companyName={foredrag.companyName}
                 speakerName={foredrag.speaker}

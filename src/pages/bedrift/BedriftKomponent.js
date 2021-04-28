@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import styled from 'styled-components'
+import Bedrifter from '../../data/bedrift_info.json'
+import {useHistory} from "react-router-dom"
 import {
     Instagram,
     Webpage,
@@ -10,10 +12,12 @@ import {
 } from '../../components/symbols'
 import EttermiddagenProgram from '../program/EttermiddagenProgram'
 
-export const BedriftKomponent = ({ bedrift, setSelected }) => {
+export const BedriftKomponent = ({ setSelected, match }) => {
     //Får fra bedrift kohort
-
-    console.log('BEDRIFT: ', bedrift)
+    const history = useHistory()
+    let bedrift = match.url.split("bedrift/")[1]
+    console.log("asldkfjnasdlkfjnasdlkfjn", bedrift);
+    bedrift = Bedrifter.find((b) => b.name === bedrift)
     if (bedrift) {
         return (
             <div
@@ -81,15 +85,17 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                     <h2 style={{ gridArea: 'TitleTalk' }}>
                         {bedrift.talkTitle}
                     </h2>
+                    <GoBack>
+                        <h3
+                            onClick={() => {
+                                history.goBack()
+                            }}
+                        >
 
-                    <h3
-                        onClick={() => {
-                            setSelected('program')
-                            return <EttermiddagenProgram />
-                        }}
-                    >
                         Tilbake til programmet...
                     </h3>
+                    </GoBack>
+
                      <p style={{ gridArea: 'Talk' }}>
                         {bedrift.talk.map((sentence) => {
                             return <p key={sentence}>{sentence}</p>
@@ -131,6 +137,15 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
         return <>promp</>
     }
 }
+
+const GoBack = styled.div`
+border: solid;
+ h3 {
+     :hover {
+         cursor: pointer;
+     }
+ }
+`
 
 const Container = styled.div`
     display: grid;
