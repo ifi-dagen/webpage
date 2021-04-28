@@ -1,6 +1,8 @@
 /*--- Felles til alle sider --------------------------------------------------*/
-html, body {
+body {
   overflow-x: hidden;
+  overflow-y: scroll;
+  
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   color: #505962;

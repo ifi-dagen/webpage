@@ -28,9 +28,9 @@ export const Footer = () => {
                 />
                 <span />
                 <Box>
-                    <Instagram/>
-                    <Facebook/>
-                    <Linkedin/>
+                    <Instagram link="http://www.instagram.com/dagenatifi"/>
+                    <Facebook link="http://www.facebook.com/dagenatifi"/>
+                    <Linkedin link="http://www.linkedin.com/dagenatifi"/>
                 </Box>
             </Wrapper>
         </div>

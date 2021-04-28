@@ -14,8 +14,36 @@ const Program = () => {
     const [company, setCompany] = useState(null)
     const [talk, setTalk] = useState(null)
     const [selected, setSelected] = useState('program')
-    const [confetti, setConfetti] = useState(false)
-
+    const [confetti, setConfetti] = useState(null)
+    
+    const toggleConfetti = () => {
+        if (confetti === null) {
+            console.log(":)");
+            setConfetti(     
+            <Confetti
+                width={'2000'}
+                height={'3300'}
+                numberOfPieces={'100'}
+                recycle={false}
+                run={true}
+            />)
+            } else {
+            console.log(":(");
+            setConfetti(null)
+        }
+    }
+       
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            toggleConfetti()
+          }, 20000);
+          return () => clearInterval(interval);
+    }, [toggleConfetti]);
+ 
+        
+    
+    
     if (selected === 'program') {
         return (
             <Container>
@@ -28,6 +56,9 @@ const Program = () => {
                          recycle={false}
                          run={true}
                      />
+                <h1 style={{gridArea:"overskrift", justifySelf: "center", color:"black", fontSize: "50px"}}>Velkommen til digital ettermiddagen@ifi</h1>
+
+                {confetti}
                 <Split style={{ gridArea: 'split' }} />
                 <Time style={{ gridArea: 'time' }}>
                     <div style={{ paddingTop: '2.3em' }}>12:00</div>
@@ -98,8 +129,7 @@ const Program = () => {
                     <Tag>Konkurranse 16:00-16:30</Tag>
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
                 </Open>
-                <Split style={{ gridArea: 'split5' }} />
-                <Time style={{ gridArea: 'time5' }}>
+                <Time style={{ gridArea: 'time5', marginBot: "1em"}}>
                     <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
                 </Time>
             </Container>
@@ -116,30 +146,20 @@ const Program = () => {
     } else if (selected === 'avslutning') {
         console.log(selected)
         return <End setSelected={setSelected} />
-    } else if (selected === 'focus') {
-        return (
-            <BedriftKohort
-                comp1="Accenture"
-                comp2="Nav"
-                comp3="Fink"
-                setSelected={setSelected}
-                company={company}
-                setCompany={setCompany}
-                kohort={1}
-            />
-        )
-    }
+    } 
 }
 
 const Container = styled.div`
     display: grid;
+    overflow-y: visible;
     max-width: 850px;
     min-width: 640px;
     margin: 0 auto;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
-    grid-template-rows: 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 5vh;
+    grid-template-rows: 20vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh;
     grid-template-areas:
+        'overskrift overskrift overskrift'
         '. time .'
         '. split open'
         ' . time1 . '
@@ -150,15 +170,15 @@ const Container = styled.div`
         ' kohort3 split3 foredrag3 '
         ' . time4 .'
         ' . split4 end '
-        ' . time5 .'
-        '. . .';
+        ' . time5 .';
     justify-items: center;
 
     @media screen and (max-width: 815px) {
         grid-template-columns: 100vw;
         grid-template-columns: 35vw 35vw;
-        grid-template-rows:  9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh ;
+        grid-template-rows: 20vh 9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh ;
         grid-template-areas:
+            'overskrift overskrift'
             ' time . '
             ' split open'
             ' time1 . '

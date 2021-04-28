@@ -90,12 +90,12 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                     >
                         Tilbake til programmet...
                     </h3>
-                    <p style={{ gridArea: 'Talk' }}>
+                    {/* <p style={{ gridArea: 'Talk' }}>
                         {bedrift.talk.map((sentence) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </p>
-                    {/* 
+                    
                     <p style={{ gridArea: 'Competition' }}>
                         <h3>Konkurranse</h3>
                         <a href={bedrift.competition.link}>
@@ -103,12 +103,12 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                         </a>
                     </p> */}
 
-                    {/* <div style={{ gridArea: 'Questions' }}>
+                    <div style={{ gridArea: 'Questions' }}>
                         <h3>5 raske</h3>
                         {bedrift.answer.map((answer) => {
                             return <p key={answer}>{answer}</p>
                         })}
-                    </div> */}
+                    </div>
 
                     <h3 style={{ gridArea: 'Work' }}>
                         {bedrift.positionTitle}
