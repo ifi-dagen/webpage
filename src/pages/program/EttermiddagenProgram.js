@@ -120,6 +120,7 @@ const Program = () => {
 
 const Container = styled.div`
     display: grid;
+    overflow-y: visible;
     max-width: 850px;
     min-width: 640px;
     margin: 0 auto;

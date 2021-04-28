@@ -26,6 +26,7 @@ const App = () => (
 
 const Container = styled.div`
     display: grid;
+
     min-height: 100vh;
     align-items: start;
     grid-template-rows: 12vh auto 12vh;
