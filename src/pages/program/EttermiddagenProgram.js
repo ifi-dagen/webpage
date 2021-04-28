@@ -18,88 +18,80 @@ const Program = () => {
 
     if (selected === 'program') {
         return (
-            <div>
-                <Container>
-                    <Confetti
-                        width={'2000'}
-                        height={'2000'}
-                        numberOfPieces={'100'}
-                        recycle={false}
-                        run={true}
-                    />
-                    <Split style={{ gridArea: 'split' }} />
-                    <Time style={{ gridArea: 'time' }}>
-                        <div style={{ paddingTop: '2.3em' }}>12:00</div>
-                    </Time>
-                    <Open style={{ gridArea: 'open' }}>
-                        <h1 onClick={() => setSelected('åpningssermoni')}>
-                            Åpningssermoni med Gyda, Eivind og Maja
-                        </h1>
-                    </Open>
-                    <Split style={{ gridArea: 'split1' }} />
-                    <Time style={{ gridArea: 'time1' }}>
-                        <div style={{ paddingTop: '2.3em' }}>13:00</div>
-                    </Time>
-                    <BedriftKohort
-                        comp1="Accenture"
-                        comp2="Nav"
-                        comp3="Fink"
-                        setSelected={setSelected}
-                        company={company}
-                        setCompany={setCompany}
-                        kohort={1}
-                    />
-                    <Split style={{ gridArea: 'split2' }} />
-                    <Time style={{ gridArea: 'time2' }}>
-                        <div style={{ paddingTop: '2.3em' }}>14:00</div>
-                    </Time>
-                    <BedriftKohort
-                        style={{ gridArea: 'kohort2' }}
-                        comp1="Kolonial"
-                        comp2="Netcompany"
-                        comp3="NoA Ignite"
-                        setSelected={setSelected}
-                        company={company}
-                        setCompany={setCompany}
-                        kohort={2}
-                    />
-                    <Split style={{ gridArea: 'split3' }} />
-                    <Time style={{ gridArea: 'time3' }}>
-                        <div style={{ paddingTop: '2.3em' }}>15:00</div>
-                    </Time>
-                    <BedriftKohort
-                        style={{ gridArea: 'kohort3' }}
-                        comp1="Bekk"
-                        comp2="Cognite"
-                        setSelected={setSelected}
-                        company={company}
-                        setCompany={setCompany}
-                        kohort={3}
-                    />
-                    <Faglig setSelected={setSelected} setTalk={setTalk} />
-                    <Split style={{ gridArea: 'split4' }} />
-                    <Time style={{ gridArea: 'time4' }}>
-                        <div style={{ paddingTop: '2.3em' }}>16:00</div>
-                    </Time>
-                    <Open
-                        style={{
-                            gridArea: 'end',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                        }}
-                    >
-                        <h1 onClick={() => setSelected('avslutning')}>
-                            Kahoot!
-                        </h1>
-                    </Open>
-                    <Split style={{ gridArea: 'split5' }} />
-                    <Time style={{ gridArea: 'time5' }}>
-                        <div style={{ paddingTop: '2.3em' }}>
-                            Takk for i dag
-                        </div>
-                    </Time>
-                </Container>
-            </div>
+            <Container>
+                <Split style={{ gridArea: 'split' }} />
+                <Time style={{ gridArea: 'time' }}>
+                    <div style={{ paddingTop: '2.3em' }}>12:00</div>
+                </Time>
+
+                <Open style={{ gridArea: 'open' }}>
+                    <Tag>Konkurranse 12:00-13:00</Tag>
+                    <h1 onClick={() => setSelected('åpningssermoni')}>
+                        Åpningssermoni med Gyda, Eivind og Maja
+                    </h1>
+                </Open>
+                <Split style={{ gridArea: 'split1' }} />
+                <Time style={{ gridArea: 'time1' }}>
+                    <div style={{ paddingTop: '2.3em' }}>13:00</div>
+                </Time>
+
+                <BedriftKohort
+                    comp1="Accenture"
+                    comp2="Nav"
+                    comp3="Fink"
+                    setSelected={setSelected}
+                    company={company}
+                    setCompany={setCompany}
+                    kohort={1}
+                />
+                <Split style={{ gridArea: 'split2' }} />
+                <Time style={{ gridArea: 'time2' }}>
+                    <div style={{ paddingTop: '2.3em' }}>14:00</div>
+                </Time>
+
+                <BedriftKohort
+                    style={{ gridArea: 'kohort2' }}
+                    comp1="Kolonial"
+                    comp2="Netcompany"
+                    comp3="NoA Ignite"
+                    setSelected={setSelected}
+                    company={company}
+                    setCompany={setCompany}
+                    kohort={2}
+                />
+                <Split style={{ gridArea: 'split3' }} />
+                <Time style={{ gridArea: 'time3' }}>
+                    <div style={{ paddingTop: '2.3em' }}>15:00</div>
+                </Time>
+                <BedriftKohort
+                    style={{ gridArea: 'kohort3' }}
+                    comp1="Bekk"
+                    comp2="Cognite"
+                    setSelected={setSelected}
+                    company={company}
+                    setCompany={setCompany}
+                    kohort={3}
+                />
+                <Faglig setSelected={setSelected} setTalk={setTalk} />
+                <Split style={{ gridArea: 'split4' }} />
+                <Time style={{ gridArea: 'time4' }}>
+                    <div style={{ paddingTop: '2.3em' }}>16:00</div>
+                </Time>
+                <Open
+                    style={{
+                        gridArea: 'end',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                    }}
+                >
+                    <Tag>Konkurranse 16:00-16:30</Tag>
+                    <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
+                </Open>
+                <Split style={{ gridArea: 'split5' }} />
+                <Time style={{ gridArea: 'time5' }}>
+                    <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
+                </Time>
+            </Container>
         )
     } else if (selected === 'bedrift') {
         console.log(selected)
@@ -211,15 +203,33 @@ const Time = styled.div`
 `
 
 const Open = styled.div`
+    background-color: #edf6f9;
+    height: 22vh;
+    width: 22vw;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+
+    
     :hover {
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #ea526f;
+        background-color: #b7e4c7;
         cursor: pointer;
     }
-    border-radius: 1rem;
-    justify-self: center;
-    align-self: start;
+    
+   
+`
+
+const Tag = styled.div`
+    margin: 1em;
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #cdb4db;
+    width: 15vw;
+    text-align: center;
+    color: snow;
 `
 
 export default Program
