@@ -15,21 +15,40 @@ const Program = () => {
     const [talk, setTalk] = useState(null)
     const [selected, setSelected] = useState('program')
     const [confetti, setConfetti] = useState(null)
+    const toggleConfetti = () => {
+        if (confetti === null) {
+            console.log(":)");
+            setConfetti(     
+            <Confetti
+                width={'2000'}
+                height={'2000'}
+                numberOfPieces={'100'}
+                recycle={false}
+                run={true}
+            />)
+            } else {
+            console.log(":(");
+            setConfetti(null)
+        }
+    }
+       
+        useEffect(() => {
+            toggleConfetti()
+          return () => clearInterval(interval);
+        }, []);
+        const interval = setInterval(() => {
+            toggleConfetti()
+          }, 10000);
+        
     
-
+    
     if (selected === 'program') {
         return (
 
             <Container>
-                <h1 style={{gridArea:"overskrift", justifySelf: "center", color:"black", fontSize: "50px"}}>Velkommen til digital ettermiddagen@ifi</h1>
+                <h1 onClick={toggleConfetti}style={{gridArea:"overskrift", justifySelf: "center", color:"black", fontSize: "50px"}}>Velkommen til digital ettermiddagen@ifi</h1>
 
-                <Confetti
-                    width={'2000'}
-                    height={'2000'}
-                    numberOfPieces={'100'}
-                    recycle={false}
-                    run={true}
-                />
+                {confetti}
                 <Split style={{ gridArea: 'split' }} />
                 <Time style={{ gridArea: 'time' }}>
                     <div style={{ paddingTop: '2.3em' }}>12:00</div>
