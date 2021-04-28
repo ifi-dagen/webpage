@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import BedriftKohort from '../bedrift/BedriftKohort'
 import { BedriftKomponent } from '../bedrift/BedriftKomponent'
@@ -8,10 +8,14 @@ import OpenProgram from './OpenProgram'
 import End from './End'
 import './program.css'
 
+import Confetti from 'react-confetti'
+
 const Program = () => {
     const [company, setCompany] = useState(null)
     const [talk, setTalk] = useState(null)
     const [selected, setSelected] = useState('program')
+    const [confetti, setConfetti] = useState(false)
+
     if (selected === 'program') {
         return (
             <Container>
