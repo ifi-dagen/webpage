@@ -153,7 +153,7 @@ const Container = styled.div`
     @media screen and (max-width: 815px) {
         grid-template-columns: 100vw;
         grid-template-columns: 35vw 35vw;
-        grid-template-rows: 5vh 9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh 5vh;
+        grid-template-rows: 9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh;
         grid-template-areas:
             ' time . '
             ' split open'
