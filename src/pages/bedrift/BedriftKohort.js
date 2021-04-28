@@ -131,6 +131,8 @@ const InnerContainerComp = styled.div`
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
+    border-right: solid;
+    border-top: solid;
     grid-template-areas:
         'c1'
         'c2'
