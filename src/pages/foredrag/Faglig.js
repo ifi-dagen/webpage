@@ -12,7 +12,10 @@ const Faglig = ({ setSelected, setTalk }) => {
             <InnerContainerEdu style={{ gridArea: 'foredrag1' }}>
             <Link to={{
                         pathname: "/foredrag/Netcompany",}}
+                    style={{textDecoration: "none", color: "black", fontStyle: "italic"}}
+
                     >
+
                     
                       
                         
@@ -29,10 +32,10 @@ const Faglig = ({ setSelected, setTalk }) => {
                 </Link>
 
             </InnerContainerEdu>
-            <InnerContainerEdu style={{ gridArea: 'foredrag2' }}>
+            <InnerContainerEdu style={{ gridArea: 'foredrag2'}}>
             <Link to={{
                         pathname: "/foredrag/Bekk",}}
-                    >
+                    style={{textDecoration: "none", color: "black", fontStyle: "italic"}}>
                 <Talk>
                      <Tag>Foredrag 14:00-14:30</Tag>
                     <h3 >Impostor Syndrome</h3>
@@ -48,7 +51,8 @@ const Faglig = ({ setSelected, setTalk }) => {
             <InnerContainerEdu style={{ gridArea: 'foredrag3' }}>
             <Link to={{
                         pathname: "/foredrag/Accenture",}}
-                    >
+                        style={{textDecoration: "none", color: "black", fontStyle: "italic"}}>
+                    
                 <Talk>
                 <Tag>Foredrag 15:00-15:30</Tag>
                     <h3>
