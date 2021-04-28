@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import Routes from './App-routes'
 // import Program from "./pages/program/EttermiddagenProgram"
 import Header from './components/header'
-import Footer from './components/footer'
+import Newfooter from './components/newfooter'
 
 const App = () => (
     <>
@@ -19,7 +19,7 @@ const App = () => (
                 link3="/studenter"
             />
             <Routes style={{gridArea: 'main' }} />
-            <Footer/>
+            <Newfooter/>
         </Container>
     </>
 )
