@@ -9,7 +9,6 @@ import End from './End'
 import './program.css'
 import Countdown from '../../components/countdown'
 
-
 import Confetti from 'react-confetti'
 
 const Program = () => {
@@ -17,52 +16,76 @@ const Program = () => {
     const [talk, setTalk] = useState(null)
     const [selected, setSelected] = useState('program')
     const [confetti, setConfetti] = useState(null)
-    
+
     const toggleConfetti = () => {
         if (confetti === null) {
-            console.log(":)");
-            setConfetti(     
-            <Confetti
-                width={'2000'}
-                height={'3300'}
-                numberOfPieces={'100'}
-                recycle={false}
-                run={true}
-            />)
-            } else {
-            console.log(":(");
+            console.log(':)')
+            setConfetti(
+                <Confetti
+                    width={'2000'}
+                    height={'3300'}
+                    numberOfPieces={'100'}
+                    recycle={false}
+                    run={true}
+                />
+            )
+        } else {
+            console.log(':(')
             setConfetti(null)
         }
     }
-       
-    
+
     useEffect(() => {
         const interval = setInterval(() => {
             toggleConfetti()
-          }, 20000);
-          return () => clearInterval(interval);
-    }, [toggleConfetti]);
- 
-        
-    
-    
+        }, 20000)
+        return () => clearInterval(interval)
+    }, [toggleConfetti])
+
     if (selected === 'program') {
         return (
             <Container>
-               
-               
-                     <Confetti
-                         width={'2000'}
-                         height={'2000'}
-                         numberOfPieces={'100'}
-                         recycle={false}
-                         run={true}
-                     />
-                     <Countdown style={{gridArea: "countdown", justifySelf: "center"}} />
-                <h1 style={{gridArea:"h1", justifySelf: "center", textAlign: "center", color:"black", fontSize: "50px"}}>Velkommen til digital ettermiddagen@ifi</h1>
-                <h2 style={{gridArea: "h2", justifySelf: "center", textAlign: "center"}}>Vi håper du tar turen innom og prater litt med de ulike  bedriftene i standområdet, de gleder seg til å møte deg! Parallellt med det digitale standområdet kjøres det ulike foredrag, og vi håper du finner noe som er interessant og relevant for deg. Vi har flere konkurranser gående iløpet av dagen, og flere av bedriftene har egne konkurranser iløpet av standtiden sin, så utnytt sjansen til å mingle med litt bedrifter over en lav sko i dag. </h2>
-                <h2 style={{gridArea: "h3", justifySelf: "center"}}>Vi i dagen-styret ønsker deg en flott ettermiddag!</h2>
-<br/>
+                <Confetti
+                    width={'2000'}
+                    height={'2000'}
+                    numberOfPieces={'100'}
+                    recycle={false}
+                    run={true}
+                />
+                <Countdown
+                    style={{ gridArea: 'countdown', justifySelf: 'center' }}
+                />
+                <h1
+                    style={{
+                        gridArea: 'h1',
+                        justifySelf: 'center',
+                        textAlign: 'center',
+                        color: 'black',
+                        fontSize: '50px',
+                    }}
+                >
+                    Velkommen til digital ettermiddagen@ifi
+                </h1>
+                <h2
+                    style={{
+                        gridArea: 'h2',
+                        justifySelf: 'center',
+                        textAlign: 'center',
+                    }}
+                >
+                    Vi håper du tar turen innom og prater litt med de ulike
+                    bedriftene i standområdet, de gleder seg til å møte deg!
+                    Parallellt med det digitale standområdet kjøres det ulike
+                    foredrag, og vi håper du finner noe som er interessant og
+                    relevant for deg. Vi har flere konkurranser gående iløpet av
+                    dagen, og flere av bedriftene har egne konkurranser iløpet
+                    av standtiden sin, så utnytt sjansen til å mingle med litt
+                    bedrifter over en lav sko i dag.{' '}
+                </h2>
+                <h2 style={{ gridArea: 'h3', justifySelf: 'center' }}>
+                    Vi i dagen-styret ønsker deg en flott ettermiddag!
+                </h2>
+                <br />
 
                 {confetti}
                 <Split style={{ gridArea: 'split' }} />
@@ -73,16 +96,15 @@ const Program = () => {
                 <Open style={{ gridArea: 'open' }}>
                     <Tag>Konkurranse 12:00-13:00</Tag>
                     <h1 onClick={() => setSelected('åpningssermoni')}>
-                        Åpningssermoni med Gyda, Eivind og Maja
+                        Åpningsshow med Gyda, Eivind og Maja
                     </h1>
                 </Open>
                 <Split style={{ gridArea: 'split1' }} />
                 <Time style={{ gridArea: 'time1' }}>
                     <div style={{ paddingTop: '2.3em' }}>13:00</div>
                 </Time>
-              
+
                 <BedriftKohort
-                    
                     comp1="Accenture"
                     comp2="Nav"
                     comp3="Fink"
@@ -91,7 +113,7 @@ const Program = () => {
                     setCompany={setCompany}
                     kohort={1}
                 />
-                
+
                 <Split style={{ gridArea: 'split2' }} />
                 <Time style={{ gridArea: 'time2' }}>
                     <div style={{ paddingTop: '2.3em' }}>14:00</div>
@@ -135,7 +157,7 @@ const Program = () => {
                     <Tag>Konkurranse 16:00-16:30</Tag>
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
                 </Open>
-                <Time style={{ gridArea: 'time5', marginBot: "1em"}}>
+                <Time style={{ gridArea: 'time5', marginBot: '1em' }}>
                     <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
                 </Time>
             </Container>
@@ -152,7 +174,7 @@ const Program = () => {
     } else if (selected === 'avslutning') {
         console.log(selected)
         return <End setSelected={setSelected} />
-    } 
+    }
 }
 
 const Container = styled.div`
@@ -185,7 +207,7 @@ const Container = styled.div`
     @media screen and (max-width: 815px) {
         grid-template-columns: 100vw;
         grid-template-columns: 35vw 35vw;
-        grid-template-rows: 20vh 9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh ;
+        grid-template-rows: 20vh 9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh;
         grid-template-areas:
             'overskrift overskrift'
             ' time . '
@@ -252,15 +274,12 @@ const Open = styled.div`
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
 
-    
     :hover {
         opacity: 1;
         transition: 0.5s ease;
         background-color: #b7e4c7;
         cursor: pointer;
     }
-    
-   
 `
 
 const Tag = styled.div`

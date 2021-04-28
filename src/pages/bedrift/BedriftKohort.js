@@ -45,13 +45,14 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-       <Link to={{
-                        pathname: `/bedrift/${c1.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c1.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c1)} alt=""></img>
-                        
-                    </Link>                </Comp1>
+                    </Link>{' '}
+                </Comp1>
 
                 <Comp2
                     onClick={() => {
@@ -59,26 +60,28 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-       <Link to={{
-                        pathname: `/bedrift/${c2.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c2.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c2)} alt=""></img>
-                        
-                    </Link>                </Comp2>
+                    </Link>{' '}
+                </Comp2>
                 <Comp3
                     onClick={() => {
                         setCompany(c3)
                         setSelected('bedrift')
                     }}
                 >
-       <Link to={{
-                        pathname: `/bedrift/${c3.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c3.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c3)} alt=""></img>
-                        
-                    </Link>                </Comp3>
+                    </Link>{' '}
+                </Comp3>
             </InnerContainerComp>
         )
     } else if (kohort === 2) {
@@ -93,14 +96,13 @@ const BedriftKohort = ({
                         setCompany(c1)
                         // setSelected('bedrift')
                     }}
-
                 >
-                    <Link to={{
-                        pathname: `/bedrift/${c1.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c1.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c1)} alt=""></img>
-                        
                     </Link>
                 </Comp1>
                 <Comp2
@@ -109,27 +111,28 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    
-                    <Link to={{
-                        pathname: `/bedrift/${c2.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c2.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c2)} alt=""></img>
-                        
-                    </Link>                </Comp2>
+                    </Link>{' '}
+                </Comp2>
                 <Comp3
                     onClick={() => {
                         setCompany(c3)
                         setSelected('bedrift')
                     }}
                 >
-         <Link to={{
-                        pathname: `/bedrift/${c3.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c3.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c3)} alt=""></img>
-                        
-                    </Link>                </Comp3>
+                    </Link>{' '}
+                </Comp3>
             </InnerContainerComp2>
         )
     } else if (kohort === 3) {
@@ -143,26 +146,28 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-       <Link to={{
-                        pathname: `/bedrift/${c1.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c1.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c1)} alt=""></img>
-                        
-                    </Link>                </Comp1>
+                    </Link>{' '}
+                </Comp1>
                 <Comp2
                     onClick={() => {
                         setCompany(c2)
                         setSelected('bedrift')
                     }}
                 >
-       <Link to={{
-                        pathname: `/bedrift/${c2.name}`}}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c2.name}`,
+                        }}
                     >
-                      
                         <img src={CompToLogo(c2)} alt=""></img>
-                        
-                    </Link>                </Comp2>
+                    </Link>{' '}
+                </Comp2>
             </InnerContainerComp3>
         )
     } else {
@@ -179,9 +184,9 @@ const Tag = styled.div`
     width: 15vw;
     height: 1.5em;
     justify-self: center;
-    text-align:center;
+    text-align: center;
     color: snow;
-    grid-area: "tag";
+    grid-area: 'tag';
 `
 
 const InnerContainerComp = styled.div`
@@ -191,15 +196,12 @@ const InnerContainerComp = styled.div`
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
-    border-right: solid;
-    border-top: solid;
     grid-template-areas:
         'tag'
         'c1'
         'c2'
         'c3';
     padding: 1em;
-    /* border: solid; */
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
@@ -307,7 +309,6 @@ const Comp3 = styled.div`
         margin-left: auto;
         margin-right: auto;
         padding: 1em;
-
     }
     :hover {
         cursor: pointer;
