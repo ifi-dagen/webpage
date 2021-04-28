@@ -47,6 +47,15 @@ const Program = () => {
     if (selected === 'program') {
         return (
             <Container>
+               
+               
+                     <Confetti
+                         width={'2000'}
+                         height={'2000'}
+                         numberOfPieces={'100'}
+                         recycle={false}
+                         run={true}
+                     />
                 <h1 style={{gridArea:"overskrift", justifySelf: "center", color:"black", fontSize: "50px"}}>Velkommen til digital ettermiddagen@ifi</h1>
 
                 {confetti}
@@ -65,8 +74,9 @@ const Program = () => {
                 <Time style={{ gridArea: 'time1' }}>
                     <div style={{ paddingTop: '2.3em' }}>13:00</div>
                 </Time>
-
+              
                 <BedriftKohort
+                    
                     comp1="Accenture"
                     comp2="Nav"
                     comp3="Fink"
@@ -75,6 +85,7 @@ const Program = () => {
                     setCompany={setCompany}
                     kohort={1}
                 />
+                
                 <Split style={{ gridArea: 'split2' }} />
                 <Time style={{ gridArea: 'time2' }}>
                     <div style={{ paddingTop: '2.3em' }}>14:00</div>
