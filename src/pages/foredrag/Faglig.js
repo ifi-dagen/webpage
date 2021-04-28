@@ -11,6 +11,7 @@ const Faglig = ({ setSelected, setTalk }) => {
         <>
             <InnerContainerEdu style={{ gridArea: 'foredrag1' }}>
                 <Talk>
+                    <Tag>Foredrag 13:00-13:30</Tag>
                     <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
                 </Talk>
                 <TalkComp>
@@ -23,6 +24,7 @@ const Faglig = ({ setSelected, setTalk }) => {
             </InnerContainerEdu>
             <InnerContainerEdu style={{ gridArea: 'foredrag2' }}>
                 <Talk>
+                     <Tag>Foredrag 14:00-14:30</Tag>
                     <h3 onClick={() => updateState(1)}>Impostor Syndrome</h3>
                 </Talk>
                 <TalkComp>
@@ -35,6 +37,7 @@ const Faglig = ({ setSelected, setTalk }) => {
             </InnerContainerEdu>
             <InnerContainerEdu style={{ gridArea: 'foredrag3' }}>
                 <Talk>
+                <Tag>Foredrag 15:00-15:30</Tag>
                     <h3 onClick={() => updateState(2)}>
                         Superforedrag av Accenture
                     </h3>
@@ -54,6 +57,11 @@ const Faglig = ({ setSelected, setTalk }) => {
 const InnerContainerEdu = styled.div`
     display: grid;
     height: 21vh;
+    
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #edf6f9;
 
     grid-template-areas:
         'title'
@@ -61,12 +69,21 @@ const InnerContainerEdu = styled.div`
     :hover {
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #ea526f;
+        background-color: #a2d2ff;
     }
     padding: 1em;
-    border-radius: 1rem;
     justify-items: center;
 `
+
+const Tag = styled.div`
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #ff6b6b;
+    width: 15vw;
+    text-align: center;
+    color: snow;
+`
+
 const Talk = styled.div`
     grid-area: title;
     font-size: 30px;
