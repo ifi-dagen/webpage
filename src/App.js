@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import Routes from './App-routes'
+// import Program from "./pages/program/EttermiddagenProgram"
 import Header from './components/header'
 import Footer from './components/footer'
 
@@ -17,7 +18,7 @@ const App = () => (
                 text3="FAQ"
                 link3="/studenter"
             />
-            <Routes style={{ gridArea: 'main' }} />
+            <Routes style={{gridArea: 'main' }} />
             <Footer/>
         </Container>
     </>
