@@ -63,7 +63,6 @@ const Faglig = ({ setSelected, setTalk }) => {
                     <img
                         src={require('../../img/logoer/Accenture.png')}
                         alt=""
-                        onClick={() => updateState(2)}
                     ></img>
                 </TalkComp>
                 </Link>
@@ -88,6 +87,7 @@ const InnerContainerEdu = styled.div`
         opacity: 1;
         transition: 0.5s ease;
         background-color: #a2d2ff;
+        cursor: pointer;
     }
     padding: 1em;
     justify-items: center;

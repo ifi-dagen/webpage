@@ -7,6 +7,8 @@ import Foredrag from '../foredrag/foredrag'
 import OpenProgram from './OpenProgram'
 import End from './End'
 import './program.css'
+import {Link} from "react-router-dom"
+
 import Countdown from '../../components/countdown'
 
 
@@ -71,10 +73,14 @@ const Program = () => {
                 </Time>
 
                 <Open style={{ gridArea: 'open' }}>
+                    <Link to={{pathname: "/åpningsshow"}}
+                    style={{textDecoration: "none", color: "black", fontStyle: "italic"}}
+                    >
                     <Tag>Konkurranse 12:00-13:00</Tag>
                     <h1 onClick={() => setSelected('åpningssermoni')}>
                         Åpningssermoni med Gyda, Eivind og Maja
                     </h1>
+                    </Link>
                 </Open>
                 <Split style={{ gridArea: 'split1' }} />
                 <Time style={{ gridArea: 'time1' }}>
@@ -132,8 +138,12 @@ const Program = () => {
                         marginRight: 'auto',
                     }}
                 >
+                     <Link to={{pathname: "/quiz"}}
+                    style={{textDecoration: "none", color: "black", fontStyle: "italic"}}
+                    >
                     <Tag>Konkurranse 16:00-16:30</Tag>
                     <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
+                    </Link>
                 </Open>
                 <Time style={{ gridArea: 'time5', marginBot: "1em"}}>
                     <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
