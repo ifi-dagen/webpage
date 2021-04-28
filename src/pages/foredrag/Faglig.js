@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import {Link} from "react-router-dom"
 const Faglig = ({ setSelected, setTalk }) => {
     const updateState = (id) => {
         setSelected('faglig')
@@ -10,35 +10,52 @@ const Faglig = ({ setSelected, setTalk }) => {
     return (
         <>
             <InnerContainerEdu style={{ gridArea: 'foredrag1' }}>
+            <Link to={{
+                        pathname: "/foredrag/Netcompany",}}
+                    style={{textDecoration: "none", color: "black", fontStyle: "italic"}}
+
+                    >
+
+                    
+                      
+                        
                 <Talk>
                     <Tag>Foredrag 13:00-13:30</Tag>
-                    <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
+                    <h3 >Death By Powerpoint</h3>
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Netcompany.png')}
                         alt=""
-                        onClick={() => updateState(0)}
                     ></img>
                 </TalkComp>
+                </Link>
+
             </InnerContainerEdu>
-            <InnerContainerEdu style={{ gridArea: 'foredrag2' }}>
+            <InnerContainerEdu style={{ gridArea: 'foredrag2'}}>
+            <Link to={{
+                        pathname: "/foredrag/Bekk",}}
+                    style={{textDecoration: "none", color: "black", fontStyle: "italic"}}>
                 <Talk>
                      <Tag>Foredrag 14:00-14:30</Tag>
-                    <h3 onClick={() => updateState(1)}>Impostor Syndrome</h3>
+                    <h3 >Impostor Syndrome</h3>
                 </Talk>
                 <TalkComp>
                     <img
                         src={require('../../img/logoer/Bekk.png')}
                         alt=""
-                        onClick={() => updateState(1)}
                     ></img>
                 </TalkComp>
+                </Link>
             </InnerContainerEdu>
             <InnerContainerEdu style={{ gridArea: 'foredrag3' }}>
+            <Link to={{
+                        pathname: "/foredrag/Accenture",}}
+                        style={{textDecoration: "none", color: "black", fontStyle: "italic"}}>
+                    
                 <Talk>
                 <Tag>Foredrag 15:00-15:30</Tag>
-                    <h3 onClick={() => updateState(2)}>
+                    <h3>
                         Superforedrag av accenture
                     </h3>
                 </Talk>
@@ -49,6 +66,7 @@ const Faglig = ({ setSelected, setTalk }) => {
                         onClick={() => updateState(2)}
                     ></img>
                 </TalkComp>
+                </Link>
             </InnerContainerEdu>
         </>
     )

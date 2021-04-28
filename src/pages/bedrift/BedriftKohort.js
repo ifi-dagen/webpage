@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Bedrift from '../../data/bedrift_info.json'
+import { Link } from 'react-router-dom'
 
 const importAll = (r) => {
     let logos = {}
@@ -44,8 +45,13 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c1)} alt=""></img>
-                </Comp1>
+       <Link to={{
+                        pathname: `/bedrift/${c1.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c1)} alt=""></img>
+                        
+                    </Link>                </Comp1>
 
                 <Comp2
                     onClick={() => {
@@ -53,16 +59,26 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c2)} alt=""></img>{' '}
-                </Comp2>
+       <Link to={{
+                        pathname: `/bedrift/${c2.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c2)} alt=""></img>
+                        
+                    </Link>                </Comp2>
                 <Comp3
                     onClick={() => {
                         setCompany(c3)
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c3)} alt=""></img>{' '}
-                </Comp3>
+       <Link to={{
+                        pathname: `/bedrift/${c3.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c3)} alt=""></img>
+                        
+                    </Link>                </Comp3>
             </InnerContainerComp>
         )
     } else if (kohort === 2) {
@@ -75,10 +91,17 @@ const BedriftKohort = ({
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
-                        setSelected('bedrift')
+                        // setSelected('bedrift')
                     }}
+
                 >
-                    <img src={CompToLogo(c1)} alt=""></img>
+                    <Link to={{
+                        pathname: `/bedrift/${c1.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c1)} alt=""></img>
+                        
+                    </Link>
                 </Comp1>
                 <Comp2
                     onClick={() => {
@@ -86,16 +109,27 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c2)} alt=""></img>{' '}
-                </Comp2>
+                    
+                    <Link to={{
+                        pathname: `/bedrift/${c2.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c2)} alt=""></img>
+                        
+                    </Link>                </Comp2>
                 <Comp3
                     onClick={() => {
                         setCompany(c3)
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c3)} alt=""></img>{' '}
-                </Comp3>
+         <Link to={{
+                        pathname: `/bedrift/${c3.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c3)} alt=""></img>
+                        
+                    </Link>                </Comp3>
             </InnerContainerComp2>
         )
     } else if (kohort === 3) {
@@ -109,16 +143,26 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c1)} alt=""></img>
-                </Comp1>
+       <Link to={{
+                        pathname: `/bedrift/${c1.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c1)} alt=""></img>
+                        
+                    </Link>                </Comp1>
                 <Comp2
                     onClick={() => {
                         setCompany(c2)
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c2)} alt=""></img>{' '}
-                </Comp2>
+       <Link to={{
+                        pathname: `/bedrift/${c2.name}`}}
+                    >
+                      
+                        <img src={CompToLogo(c2)} alt=""></img>
+                        
+                    </Link>                </Comp2>
             </InnerContainerComp3>
         )
     } else {

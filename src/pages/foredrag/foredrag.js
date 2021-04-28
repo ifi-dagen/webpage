@@ -1,11 +1,16 @@
 import React from 'react'
+import {useHistory} from "react-router-dom"
+
 import styled from 'styled-components'
-import foredrag_info from '../../data/foredrag_info'
+import foredrag_info from '../../data/foredrag_info.json'
 import EttermiddagenProgram from '../program/EttermiddagenProgram'
 
-const Foredrag = ({ id, setSelected }) => {
-    const foredrag = foredrag_info[id]
-    return (
+const Foredrag = ({ match }) => {
+    let foredrag = match.url.split("foredrag/")[1]
+    console.log("aøsldkjfknasøldfn", foredrag);
+    foredrag = foredrag_info.find((f) => f.id === foredrag)
+    const history = useHistory()
+        return (
         <div
             style={{
                 marginLeft: 'auto',
@@ -21,8 +26,7 @@ const Foredrag = ({ id, setSelected }) => {
                         height: '1.2em',
                     }}
                     onClick={() => {
-                        setSelected('program')
-                        return <EttermiddagenProgram />
+                        history.goBack()
                     }}
                 >
                     Foredrag {foredrag.startTime} - {foredrag.endTime}
