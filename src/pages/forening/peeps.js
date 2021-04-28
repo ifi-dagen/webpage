@@ -60,7 +60,7 @@ const peepsInfo = [
     {
         rolle: roller.okonomi,
         navn: 'Jonas Roppestad Olsen',
-        image: null,
+        image: 'JonasRoppestad.png',
     },
     {
         rolle: roller.promotering,
