@@ -6,8 +6,8 @@ import {
     Instagram,
     Webpage,
     Facebook,
-    Zoom,
     Linkedin,
+    Greenpurplezoom,
 } from '../../components/symbols'
 import dayjs from 'dayjs'
 
@@ -16,10 +16,10 @@ import dayjs from 'dayjs'
 export const BedriftKomponent = ({ setSelected, match }) => {
 
     const [zoom, setZoom] = useState(null)
-    let now = `${dayjs().hour()}:${dayjs().minute()}`
+    let now = `${dayjs().hour(15)}:${dayjs().minute()}`
     console.log(typeof(dayjs().hour()));
     console.log(dayjs().minute());
-    console.log(now);
+    console.log("HALLLOOOOO", now);
 
     //Får fra bedrift kohort
     const history = useHistory()
@@ -31,7 +31,7 @@ export const BedriftKomponent = ({ setSelected, match }) => {
     if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
 
         console.log("DENNE SKAL HA ZOOM");
-        setZoom(<Zoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
+        setZoom(<Greenpurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
     }
         return () => {
         }

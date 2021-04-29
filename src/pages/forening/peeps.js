@@ -50,7 +50,7 @@ const peepsInfo = [
     {
         rolle: roller.nestleder,
         navn: 'Anna Sofie Hoff',
-        image: null,
+        image: 'AnnaSofieHoff.png',
     },
     {
         rolle: roller.bedrift,
