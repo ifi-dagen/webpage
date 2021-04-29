@@ -11,7 +11,6 @@ import { Link } from 'react-router-dom'
 import Countdown from '../../components/countdown'
 
 import Confetti from 'react-confetti'
-import dayjs from 'dayjs'
 
 const Program = () => {
     const [company, setCompany] = useState(null)
