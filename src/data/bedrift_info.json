@@ -62,7 +62,8 @@
         "positions": [
             {}
         ],
-        "competition": {}
+        "competition": {},
+        "video": ""
     },
     {
         "name": "Fink",
@@ -126,7 +127,8 @@
         "positions": [
             {}
         ],
-        "competition": {}
+        "competition": {},
+        "video": ""
     },
     {
         "name": "Netcompany",

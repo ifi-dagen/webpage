@@ -14,7 +14,7 @@ import dayjs from 'dayjs'
 
 export const BedriftKomponent = ({ match }) => {
     const [zoom, setZoom] = useState(null)
-    let now = `${dayjs().hour(15)}:${dayjs().minute()}`
+    let now = `${dayjs().hour()}:${dayjs().minute()}`
     const [video, setVideo] = useState(null)
 
     //Får fra bedrift kohort
@@ -24,12 +24,12 @@ export const BedriftKomponent = ({ match }) => {
     window.scrollTo(0, 0)
 
     useEffect(() => {
-
-    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
-
-        console.log("DENNE SKAL HA ZOOM");
-        setZoom(<Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
-    }
+        if (bedrift.standtime[0].split(':')[0] === now.split(':')[0]) {
+            console.log('DENNE SKAL HA ZOOM')
+            setZoom(
+                <Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
+            )
+        }
 
         return () => {}
     }, [bedrift, now])
@@ -119,7 +119,7 @@ export const BedriftKomponent = ({ match }) => {
                     >
                         {bedrift.rekruttekst}
                     </a>
-                    
+
                     <a
                         style={{
                             gridArea: 'codeMenti',
@@ -127,7 +127,8 @@ export const BedriftKomponent = ({ match }) => {
                         }}
                         href={'https://www.menti.com/'}
                     >
-                        Still oss spørsmål på Mentimeter! Bruk koden {bedrift.mentiKode}
+                        Still oss spørsmål på Mentimeter! Bruk koden{' '}
+                        {bedrift.mentiKode}
                     </a>
 
                     <h2 style={{ gridArea: 'Title' }}>
@@ -203,11 +204,9 @@ const Container = styled.div`
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
-        'liveMenti . . .'
-        'codeMenti . . .'
-        'rekrutterer . . . '
-        '. . Title Title'
-        '. . Description Description'
+        'liveMenti . Title Title'
+        'codeMenti . Description Description'
+        'rekrutterer . Description Description '
         '. Video Video Video'
         '. . TitleTalk TitleTalk'
         '. . Talk Talk'

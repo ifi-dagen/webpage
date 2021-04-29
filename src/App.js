@@ -18,8 +18,8 @@ const App = () => (
                 text3="FAQ"
                 link3="/studenter"
             />
-            <Routes style={{gridArea: 'main' }} />
-            <Newfooter/>
+            <Routes style={{ gridArea: 'main' }} />
+            <Newfooter />
         </Container>
     </div>
 )
@@ -29,8 +29,6 @@ const Container = styled.div`
 
     min-height: 100vh;
     align-items: start;
-    margin-left: auto;
-    margin-right: auto;
     grid-template-rows: auto auto auto;
     grid-template-areas:
         'header'

@@ -101,16 +101,13 @@ const InnerContainerEdu = styled.div`
     justify-items: center;
 
     @media screen and (max-width: 815px) {
-        grid-template-columns: 90vw;
+        grid-template-columns: 100vw;
         grid-template-rows: 80vh;
         margin-top: 1rem;
-        width: 50vw;
+        padding: 0;
+        width: 90vw;
         margin: 1em;
         height: auto;
-
-        p {
-            font-size: 1rem;
-        }
 
         justify-items: start;
     }
@@ -125,6 +122,7 @@ const Tag = styled.div`
     color: snow;
     @media screen and (max-width: 815px) {
         width: 52vw;
+        margin: 1em;
     }
 `
 

@@ -24,14 +24,7 @@ const CompToObject = (comp) => {
     return Bedrift.find((x) => x.name === comp)
 }
 
-const BedriftKohort = ({
-    comp1,
-    comp2,
-    comp3,
-    setSelected,
-    setCompany,
-    kohort,
-}) => {
+const BedriftKohort = ({ comp1, comp2, comp3, setCompany, kohort }) => {
     const c1 = CompToObject(comp1)
     const c2 = CompToObject(comp2)
     const c3 = CompToObject(comp3)
@@ -42,7 +35,6 @@ const BedriftKohort = ({
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
-                        setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -57,7 +49,6 @@ const BedriftKohort = ({
                 <Comp2
                     onClick={() => {
                         setCompany(c2)
-                        setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -71,7 +62,6 @@ const BedriftKohort = ({
                 <Comp3
                     onClick={() => {
                         setCompany(c3)
-                        setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -87,14 +77,10 @@ const BedriftKohort = ({
     } else if (kohort === 2) {
         return (
             <InnerContainerComp2>
-                {/* <Time>
-                    {c1.standtime[0]} -{c1.standtime[1]}
-                </Time> */}
                 <Tag>Stander 14:00-15:00</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
-                        // setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -108,7 +94,6 @@ const BedriftKohort = ({
                 <Comp2
                     onClick={() => {
                         setCompany(c2)
-                        setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -122,7 +107,6 @@ const BedriftKohort = ({
                 <Comp3
                     onClick={() => {
                         setCompany(c3)
-                        setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -143,7 +127,6 @@ const BedriftKohort = ({
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
-                        setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -157,7 +140,6 @@ const BedriftKohort = ({
                 <Comp2
                     onClick={() => {
                         setCompany(c2)
-                        setSelected('bedrift')
                     }}
                 >
                     <Link
@@ -207,7 +189,7 @@ const InnerContainerComp = styled.div`
     padding: 1em;
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
-        grid-template-columns: 60vw;
+        grid-template-columns: 90vw;
         padding: 0;
     }
     padding: 1em;
@@ -229,7 +211,7 @@ const InnerContainerComp2 = styled.div`
     padding: 1em;
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
-        grid-template-columns: 60vw;
+        grid-template-columns: 90vw;
         padding: 0;
     }
 `
@@ -250,7 +232,7 @@ const InnerContainerComp3 = styled.div`
     /* border: solid; */
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
-        grid-template-columns: 60vw;
+        grid-template-columns: 90vw;
         padding: 0;
     }
 `
