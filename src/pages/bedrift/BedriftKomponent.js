@@ -29,9 +29,6 @@ export const BedriftKomponent = ({ match }) => {
         console.log("DENNE SKAL HA ZOOM");
         setZoom(<Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
     }
-        return () => {
-        }
-
         return () => {}
     }, [bedrift, now])
 
