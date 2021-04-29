@@ -7,8 +7,11 @@ import {
     Instagram,
     Webpage,
     Facebook,
+    Zoom,
     Linkedin,
     Greenpurplezoom,
+    Bluegreenzoom,
+    Bluepurplezoom,
 } from '../../components/symbols'
 import dayjs from 'dayjs'
 
@@ -24,13 +27,12 @@ export const BedriftKomponent = ({ match }) => {
     window.scrollTo(0, 0)
 
     useEffect(() => {
-        if (bedrift.standtime[0].split(':')[0] === now.split(':')[0]) {
-            setZoom(
-                <Greenpurplezoom
-                    link={bedrift.zoom}
-                    text={'Møt oss på Zoom!'}
-                />
-            )
+    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
+
+        console.log("DENNE SKAL HA ZOOM");
+        setZoom(<Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
+    }
+        return () => {
         }
 
         return () => {}

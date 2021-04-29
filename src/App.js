@@ -7,7 +7,7 @@ import Header from './components/header'
 import Newfooter from './components/newfooter'
 
 const App = () => (
-    <>
+    <div>
         <Container>
             <Header
                 style={{ gridArea: 'header' }}
@@ -21,7 +21,7 @@ const App = () => (
             <Routes style={{gridArea: 'main' }} />
             <Newfooter/>
         </Container>
-    </>
+    </div>
 )
 
 const Container = styled.div`
@@ -29,7 +29,7 @@ const Container = styled.div`
 
     min-height: 100vh;
     align-items: start;
-    grid-template-rows: 12vh auto 12vh;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         'header'
         'main'
