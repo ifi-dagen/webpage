@@ -62,6 +62,26 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                     >
                         <Zoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
                     </div>
+                    <a
+                        style={{
+                            gridArea: 'liveMenti',
+                            justifySelf: 'center',
+                            padding: '1em',
+                        }}
+                        href={bedrift.mentiLive}
+                    >
+                        Se innsendte spørsmål her!
+                    </a>
+                    <a
+                        style={{
+                            gridArea: 'codeMenti',
+                            justifySelf: 'center',
+                            padding: '1em',
+                        }}
+                        href={'https://www.menti.com/'}
+                    >
+                        Noe du lurer på? Bruk koden {bedrift.mentiKode}
+                    </a>
 
                     <h2 style={{ gridArea: 'Title' }}>
                         {bedrift.descriptionTitle}
@@ -151,6 +171,8 @@ const Container = styled.div`
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
+        '. liveMenti liveMenti liveMenti'
+        '. codeMenti codeMenti codeMenti'
         '. . Title Title'
         '. . Description Description'
         '. . TitleTalk TitleTalk'
