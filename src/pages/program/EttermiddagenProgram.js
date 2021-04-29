@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import BedriftKohort from '../bedrift/BedriftKohort'
-import { BedriftKomponent } from '../bedrift/BedriftKomponent'
 import Faglig from '../foredrag/Faglig'
-import Foredrag from '../foredrag/foredrag'
-import OpenProgram from './OpenProgram'
-import End from './End'
 import './program.css'
 import { Link } from 'react-router-dom'
 import Countdown from '../../components/countdown'
@@ -14,8 +10,6 @@ import Confetti from 'react-confetti'
 
 const Program = () => {
     const [company, setCompany] = useState(null)
-    const [talk, setTalk] = useState(null)
-    const [selected, setSelected] = useState('program')
     const [confetti, setConfetti] = useState(null)
 
     useEffect(() => {
@@ -101,9 +95,7 @@ const Program = () => {
                     }}
                 >
                     <Tag>Konkurranse 12:00-13:00</Tag>
-                    <h1 onClick={() => setSelected('åpningssermoni')}>
-                        Åpningsshow med Gyda, Eivind og Maja
-                    </h1>
+                    <h1>Åpningsshow med Gyda, Eivind og Maja</h1>
                 </Link>
             </Open>
             <Split style={{ gridArea: 'split1' }} />
@@ -115,7 +107,6 @@ const Program = () => {
                 comp1="Accenture"
                 comp2="Nav"
                 comp3="Fink"
-                setSelected={setSelected}
                 company={company}
                 setCompany={setCompany}
                 kohort={1}
@@ -131,7 +122,6 @@ const Program = () => {
                 comp1="Oda"
                 comp2="Netcompany"
                 comp3="NoA Ignite"
-                setSelected={setSelected}
                 company={company}
                 setCompany={setCompany}
                 kohort={2}
@@ -144,12 +134,11 @@ const Program = () => {
                 style={{ gridArea: 'kohort3' }}
                 comp1="Bekk"
                 comp2="Cognite"
-                setSelected={setSelected}
                 company={company}
                 setCompany={setCompany}
                 kohort={3}
             />
-            <Faglig setSelected={setSelected} setTalk={setTalk} />
+            <Faglig />
             <Split style={{ gridArea: 'split4' }} />
             <Time style={{ gridArea: 'time4' }}>
                 <div style={{ paddingTop: '2.3em' }}>16:00</div>
@@ -168,7 +157,7 @@ const Program = () => {
                     }}
                 >
                     <Tag>Konkurranse 16:00-16:30</Tag>
-                    <h1 onClick={() => setSelected('avslutning')}>Kahoot!</h1>
+                    <h1>Kahoot!</h1>
                 </Link>
             </Open>
             <Time style={{ gridArea: 'time5', marginBot: '1em' }}>
