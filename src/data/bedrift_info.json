@@ -1,7 +1,10 @@
 [
     {
         "name": "Accenture",
-        "standtime": ["12:00", "13:00"],
+        "standtime": [
+            "13:00",
+            "14:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Accenture er et ledende globalt konsulentselskap som leverer tjenester innen strategi, rådgivning, digitalisering, teknologi og outsourcing. Med over 1100 ansatte i Norge skal vi sammen med kundene våre få samfunnet til fungere bedre, slik at mennesker som lever der får det bedre. Vi kommer fra varierte bakgrunner, men jobber sammen. Med allsidigheten dette fører til, skal vi løse de største utfordringene selskaper, organisasjoner og etater står overfor. Dette gjør vi med entusiasme, kunnskap, innsikt og de aller siste og beste teknologiske løsningene.",
@@ -22,7 +25,7 @@
         "mentiKode": "5591 104",
         "positions": [
             {
-                "name": "Interessert i å jobbe for Accenture? Vis interesse på Poption så ser vi gjennom til høsten når vi utlyser nye stillinger.",
+                "name": "Interessert i å jobbe for Accenture? Vis interesse på Poption så ser vi gjennom til høsten når vi lyser ut nye stillinger.",
                 "link": "https://poption.events/5028"
             }
         ],
@@ -30,7 +33,10 @@
     },
     {
         "name": "Nav",
-        "standtime": ["12:00", "13:00"],
+        "standtime": [
+            "13:00",
+            "14:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Vi leverer løsninger til 2.8 millioner mennesker, og utvikler kjernesystemene i et av verdens beste velferdssamfunn med moderne teknologi. Vi er midt i en omfattende digital transformasjon som krever nye veier til mål, og i dette arbeidet er IT-avdelingen i NAV kjent for å gå foran og bane vei innenfor vårt fagområde.",
@@ -53,13 +59,18 @@
         ],
         "mentiLive": "https://www.mentimeter.com/s/6a9a03cfb367b6ad3e59c4096adfc743/e03d71279d5e",
         "mentiKode": "4607 1287",
-        "positions": [{}],
+        "positions": [
+            {}
+        ],
         "competition": {},
         "video": ""
     },
     {
         "name": "Fink",
-        "standtime": ["12:00", "13:00"],
+        "standtime": [
+            "13:00",
+            "14:00"
+        ],
         "description": [],
         "logo": "fink.svg",
         "website": "https://www.fink.no",
@@ -79,8 +90,8 @@
         "positionTitle": "Fink tar hele tiden i mot søknader med åpne armer.",
         "positions": [
             {
-                "name": "",
-                "link": ""
+                "name": "Klar for et nytt rede? Bli en fink!",
+                "link": "https://www.fink.no/jobb"
             }
         ],
         "mentiLive": "https://www.mentimeter.com/s/ea62a564fe18b79c1e2a1306357423a7/96c1f369dc55",
@@ -92,7 +103,10 @@
     },
     {
         "name": "Oda",
-        "standtime": ["14:00", "15:00"],
+        "standtime": [
+            "14:00",
+            "15:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Oda is a company on the move. We built Norway’s leading online grocery store and now we want to share what we’ve created with the world! Delivering a huge range of high-quality, affordable groceries and fresh produce to millions of doorsteps is a complex process, but we believe we’ve cracked the code. Using data-driven methodology, with a focus on sustainability all the way along the chain, we are building the most efficient retail system in the world. With solid backing from some of the biggest international investors in the world, we’re proud to be one of the fastest growing companies in Europe."
@@ -110,13 +124,18 @@
         "talk": [],
         "mentiLive": "https://www.mentimeter.com/s/8b9637e7fe9f9a3cc2174616c8c16b86/2e7969ce25d0",
         "mentiKode": "6732 6514",
-        "positions": [{}],
+        "positions": [
+            {}
+        ],
         "competition": {},
         "video": ""
     },
     {
         "name": "Netcompany",
-        "standtime": ["14:00", "15:00"],
+        "standtime": [
+            "14:00",
+            "15:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Netcompany er et av Nord Europas raskest voksende IT-konsulentselskaper, og kan vise til en bred og variert prosjektportefølje. Netcompany har blant annet utviklet den nye Smittestopp-appen, og er i gang med flere store og spennende prosjekter i Norge der de tar totalansvaret for prosjektet. For eksempel jobber Netcompany nå med utvikling av ny digital plattform for Legemiddelverket og for barnevernet i Norge, og er med det med på å sikre at Norges innbyggere har tilgang på og mottar trygge legemidler, og at barn og familier i sårbare situasjoner får den hjelpen de trenger.",
@@ -148,12 +167,20 @@
         ],
         "mentiLive": "https://www.mentimeter.com/s/4bfba8830b31eae5e91a957bbc94d80d/b8d1e8f8778e",
         "mentiKode": "6732 6514",
-        "positions": [{}],
+        "positions": [
+            {
+                "name": "Hvorfor velge Netcompany?",
+                "link": "https://www.netcompany.com/no/Karriere/Hvorfor-velge-Netcompany"
+            }
+        ],
         "competition": {}
     },
     {
         "name": "NoA Ignite",
-        "standtime": ["14:00", "15:00"],
+        "standtime": [
+            "14:00",
+            "15:00"
+        ],
         "description": [],
         "logo": "NoA_Ignite.png",
         "website": "https://www.noaignite.no",
@@ -182,7 +209,10 @@
     },
     {
         "name": "Bekk",
-        "standtime": ["15:00", "16:00"],
+        "standtime": [
+            "15:00",
+            "16:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Bekk er et norsk selskap med snart 500 spesialister innen strategi, design og teknologi. Vi jobber med virksomheter som har ambisiøse mål og gir oss krevende utfordringer. Vi tror på smart bruk av teknologi, tverrfaglige team og evnen til å tenke annerledes. Det gjør oss i stand til å lage løsninger som utfordrer etablerte sannheter, og skape nye muligheter for våre kunder."
@@ -204,12 +234,17 @@
         ],
         "mentiLive": "https://www.mentimeter.com/s/2abbd877e909e3f4a6c05d4d87d639ef/929bc2aeeb61",
         "mentiKode": "1112 4558",
-        "positions": [{}],
+        "positions": [
+            {}
+        ],
         "competition": {}
     },
     {
         "name": "Cognite",
-        "standtime": ["15:00", "16:00"],
+        "standtime": [
+            "15:00",
+            "16:00"
+        ],
         "description": [],
         "logo": "cognite.png",
         "website": "https://www.cognite.com",
