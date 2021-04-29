@@ -1,5 +1,5 @@
 import React from 'react'
-import { Zoom } from '../../components/symbols'
+import { YellowZoom } from '../../components/symbols'
 import styled from 'styled-components'
 
 const End = () => {
@@ -14,7 +14,12 @@ const End = () => {
             }}
         >
             <h3 style={{ fontSize: '30px' }}>Kahoot</h3>
-            <Zoom
+            <img src={require('../../img/DANS.jpg')} alt=""></img>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <YellowZoom
                 link={
                     'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
                 }
@@ -45,7 +50,7 @@ const End = () => {
             </Konkurranse>
             <br/>
             <h3 style={{ fontSize: '30px' }}>Takk for i dag!!</h3>
-            <img src={require('../../img/DANS.jpg')} alt=""></img>
+            
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Zoom } from '../../components/symbols'
+import { YellowZoom } from '../../components/symbols'
 import styled from 'styled-components'
 
 const OpenProgram = () => {
@@ -16,12 +16,17 @@ const OpenProgram = () => {
             <h3 style={{ fontSize: '30px', gridArea: 'Title' }}>
                 Åpningssermoni
             </h3>
-            <Zoom
+            <img
+                style={{ gridArea: 'Picture' }}
+                src={require('../../img/fredagsprat.png')}
+                alt=""
+            ></img>
+            <YellowZoom
                 style={{ gridArea: 'Zoom' }}
                 link={
                     'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
                 }
-                text={'Se åpningssermonien her!'}
+                text={'Se åpningsseremonien her'}
             />
             <p
                 style={{
@@ -56,11 +61,7 @@ const OpenProgram = () => {
             </Konkurranse>
             <br />
 
-            <img
-                style={{ gridArea: 'Picture' }}
-                src={require('../../img/fredagsprat.png')}
-                alt=""
-            ></img>
+            
         </Container>
     )
 }
@@ -70,10 +71,11 @@ const Container = styled.div`
     grid-template-columns: auto;
     grid-template-areas:
         'Title'
+        'Picture'
         'Zoom'
         'Description'
         'Competition'
-        'Picture';
+        ;
     justify-items: center;
 `
 
