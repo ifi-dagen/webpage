@@ -6,20 +6,22 @@
         "logo": "Accenture.png",
         "website": "https://www.accenture.com/no-en",
         "video": "",
-        "zoom": "https://uio.zoom.us/j/61219354345",
-        "instagram": "https://www.instagram.com/dagenatifi/",
-        "facebook": "https://www.facebook.com/dagenatifi",
-        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "zoom": "https://uio.zoom.us/j/66166803034",
+        "instagram": "https://www.instagram.com/accenturenorge/",
+        "facebook": "https://www.facebook.com/accenture",
+        "linkedin": "https://www.linkedin.com/company/accenture/",
         "answer": [],
-        "talkTitle": "Vi vil snakke med deg!",
-        "talk": [
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss ",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor ",
-            "snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss"
-        ],
+        "talkTitle": "Møt Christoffer, Jens, Sindre og Mathilde på stand!",
+        "talk": [],
+        "mentiLive": "https://www.mentimeter.com/s/92ba5ac6cef43e8369dc3fc38d8b4b1d/4fc7d5f87e5a",
+        "mentiKode": "55 91 10 4",
 
-        "positions": [{}],
+        "positions": [
+            {
+                "name": "Interssert i Accenture? Vis interesse her så ser vi gjennom til høsten når nye åpninger kommer opp",
+                "link": "poption.events/5028"
+            }
+        ],
         "competition": {}
     },
     {
@@ -31,13 +33,13 @@
             "Vi utfordrer, eksperimenterer og leverer alltid med høy kvalitet. Med høye ambisjoner og lave skuldre er det aldri tvil om hvorfor vi går på jobb hver dag."
         ],
         "logo": "NAV.png",
-        "website": "https://www.dagenatifi.no",
-        "zoom": "https://uio.zoom.us/j/61219354345",
-        "instagram": "https://www.instagram.com/dagenatifi/",
-        "facebook": "https://www.facebook.com/dagenatifi",
-        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
+        "website": "",
+        "zoom": "https://uio.zoom.us/j/65403025712",
+        "instagram": "",
+        "facebook": "",
+        "linkedin": "",
         "answer": [],
-        "talkTitle": "Kom innom vår stand for å møte Jorge, Atle, Malaz og Ingrid.",
+        "talkTitle": "Kom innom vår stand for å møte Jorge, Atle, Malaz og Ingrid!",
         "talk": [
             "13:00-13:10 Hvordan er det å starte i NAV IT som nyutdannet?",
             "13:10-13:20 Hvordan jobbe med universell utforming som frontend-utvikler?",
@@ -45,6 +47,8 @@
             "13:40-13:50 Utviklerhverdagen til Atle som jobber med dagpengeløsningen",
             "13:50-14:00 Kaffeprat med alle sammen"
         ],
+        "mentiLive": "https://www.mentimeter.com/s/6a9a03cfb367b6ad3e59c4096adfc743/e03d71279d5e",
+        "mentiKode": "4607 1287",
 
         "positions": [{}],
         "competition": {}
@@ -56,7 +60,7 @@
         "logo": "fink.svg",
         "website": "https://www.fink.no",
         "video": "",
-        "zoom": "https://uio.zoom.us/j/61219354345",
+        "zoom": "https://uio.zoom.us/j/65739208624",
         "instagram": "https://www.instagram.com/finkoslo/",
         "facebook": "https://www.facebook.com/finkoslo",
         "linkedin": "https://www.linkedin.com/company/fink-as/",
@@ -75,6 +79,8 @@
                 "link": ""
             }
         ],
+        "mentiLive": "https://www.mentimeter.com/s/ea62a564fe18b79c1e2a1306357423a7/96c1f369dc55",
+        "mentiKode": "3904 3335",
         "competition": {
             "text": "",
             "link": ""
@@ -82,23 +88,23 @@
     },
 
     {
-        "name": "Kolonial",
+        "name": "Oda",
         "standtime": ["14:00", "15:00"],
-        "description": [],
-        "logo": "Kolonial.png",
-        "website": "https://www.dagenatifi.no",
-        "zoom": "https://uio.zoom.us/j/61219354345",
-        "instagram": "https://www.instagram.com/dagenatifi/",
-        "facebook": "https://www.facebook.com/dagenatifi",
-        "linkedin": "https://www.linkedin.com/company/dagen-ifi/",
-        "answer": [],
-        "talkTitle": "Vi vil snakke med deg!",
-        "talk": [
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss ",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor ",
-            "snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss"
+        "descriptionTitle": "Hvem er vi?",
+        "description": [
+            "Oda is a company on the move. We built Norway’s leading online grocery store and now we want to share what we’ve created with the world! Delivering a huge range of high-quality, affordable groceries and fresh produce to millions of doorsteps is a complex process, but we believe we’ve cracked the code. Using data-driven methodology, with a focus on sustainability all the way along the chain, we are building the most efficient retail system in the world. With solid backing from some of the biggest international investors in the world, we’re proud to be one of the fastest growing companies in Europe."
         ],
+        "logo": "oda.png",
+        "website": "https://www.oda.com/no",
+        "zoom": "https://uio.zoom.us/j/68491446221",
+        "instagram": "https://www.instagram.com/kolonial.no/",
+        "facebook": "https://www.facebook.com/oda.norge",
+        "linkedin": "https://www.linkedin.com/company/careersoda/",
+        "answer": [],
+        "talkTitle": "Møt Henja, Martin og Marie på stand!!",
+        "talk": [],
+        "mentiLive": "https://www.mentimeter.com/s/8b9637e7fe9f9a3cc2174616c8c16b86/2e7969ce25d0",
+        "mentiKode": "6732 6514",
 
         "positions": [{}],
         "competition": {}
@@ -106,23 +112,38 @@
     {
         "name": "Netcompany",
         "standtime": ["14:00", "15:00"],
-        "description": [],
+        "descriptionTitle": "Hvem er vi?",
+        "description": [
+            "Netcompany er et av Nord Europas raskest voksende IT-konsulentselskaper, og kan vise til en bred og variert prosjektportefølje. Netcompany har blant annet utviklet den nye Smittestopp-appen, og er i gang med flere store og spennende prosjekter i Norge der de tar totalansvaret for prosjektet. For eksempel jobber Netcompany nå med utvikling av ny digital plattform for Legemiddelverket og for barnevernet i Norge, og er med det med på å sikre at Norges innbyggere har tilgang på og mottar trygge legemidler, og at barn og familier i sårbare situasjoner får den hjelpen de trenger.",
+
+            "Netcompany ønsker å satse på nyutdannede IT-talenter og har et godt miljø for faglig og personlig utvikling. Først og fremst fordi man jobber i team sammen med dyktige kolleger man kan lære av, men også gjennom Netcompany Academy, som er deres eget karriereutviklingsprogram som følger deg gjennom hele din karriere, og sørger for at du får kurs og oppfølging knyttet til de ulike retningene du kan gå.",
+
+            "Ønsker du å bli fulgt opp for tips om karrieremuligheter i Netcompany? Legg til Julie Bjørgen Sandvik på LinkedIn med meldingen «ettermiddage@ifi».",
+
+            "Hans Krisitan Rykkelid holder foredraget Death By Powerpoint kl. 13:00"
+        ],
         "logo": "Netcompany.png",
         "website": "https://www.netcompany.com",
         "video": "",
-        "zoom": "https://uio.zoom.us/j/61219354345",
+        "zoom": "https://uio.zoom.us/j/64625930171",
         "instagram": "https://www.instagram.com/netcompanynorge/",
         "facebook": "https://www.facebook.com/netcompanynorge",
         "linkedin": "https://www.linkedin.com/company/netcompany-a-s/",
         "answer": [],
         "talkTitle": "Vi vil snakke med deg!",
         "talk": [
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss ",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor ",
-            "snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss"
+            "I Stand rommet vil vi fortsette diskusjonen om viktigheten av formidling, dårlige erfaringer,  og tips og triks  som kan være verdifullt som student og videre i arbeidslivet.",
+            "Blant annet:",
+            " - Hva er det verste man kan gjøre i presentasjoner",
+            " - Kommunikasjon og presentasjoner som utvikler, og som konsulent.",
+            " - Erfaringer fra jobben, hvordan måten løsningen presenteres nesten er viktigere enn hvordan den funker.",
+            " - Fuckups feil man har gjort",
+            " - Forskjellen med digitale presentasjoner, hva bør man gjøre annerledes nå?",
+            " - Hvordan nå ut til vanskelige folk og kunder?",
+            " - Virkemidler for kommunikasjon, med og uten powerpoint"
         ],
-
+        "mentiLive": "https://www.mentimeter.com/s/4bfba8830b31eae5e91a957bbc94d80d/b8d1e8f8778e",
+        "mentiKode": "6732 6514",
         "positions": [{}],
         "competition": {}
     },
@@ -132,8 +153,8 @@
         "description": [],
         "logo": "NoA_Ignite.png",
         "website": "https://www.noaignite.no",
-        "video": "https://player.vimeo.com/video/461044850",
-        "zoom": "https://uio.zoom.us/j/61219354345",
+        "video": "",
+        "zoom": "https://uio.zoom.us/j/66187368198",
         "instagram": "https://www.instagram.com/noaignitenorway/",
         "facebook": "https://www.facebook.com/noaignitenorway",
         "linkedin": "https://www.linkedin.com/company/noa-ignite-norway/",
@@ -144,6 +165,8 @@
             "14:15-14:50 Vi deler oss! Snakk med designere, front-end utviklere, back-end utviklere eller rekrutterer",
             "14:50-15:00 Konkurranse!"
         ],
+        "mentiLive": "https://www.mentimeter.com/s/35cb49794148eaca19982e0dd34c06c0/ccddfdc98c39",
+        "mentiKode": "8448 1377",
         "positionTitle": "Nyutdannet teknolog 2021? Ta en titt!",
         "positions": [
             {
@@ -156,11 +179,14 @@
     {
         "name": "Bekk",
         "standtime": ["15:00", "16:00"],
-        "description": [],
+        "descriptionTitle": "Hvem er vi?",
+        "description": [
+            "Bekk er et norsk selskap med snart 500 spesialister innen strategi, design og teknologi. Vi jobber med virksomheter som har ambisiøse mål og gir oss krevende utfordringer. Vi tror på smart bruk av teknologi, tverrfaglige team og evnen til å tenke annerledes. Det gjør oss i stand til å lage løsninger som utfordrer etablerte sannheter, og skape nye muligheter for våre kunder."
+        ],
         "logo": "Bekk.png",
         "website": "https://www.bekk.no",
         "video": "",
-        "zoom": "https://uio.zoom.us/j/61219354345",
+        "zoom": "https://uio.zoom.us/j/63302531824",
         "instagram": "https://www.instagram.com/bekk/",
         "facebook": "https://www.facebook.com/livetibekk",
         "linkedin": "https://www.linkedin.com/company/bekk/",
@@ -172,6 +198,8 @@
             "I studio sitter Sigurd og Thea som skal sørge for at stemningen står i taket og at nettopp ditt spørsmål blir stilt. Skriv inn og stem på andres spørsmål her.",
             "Husk også at Jørund fra Bekk holder foredrag om imposter syndrome klokka 14!"
         ],
+        "mentiLive": "https://www.mentimeter.com/s/2abbd877e909e3f4a6c05d4d87d639ef/929bc2aeeb61",
+        "mentiKode": "1112 4558",
 
         "positions": [{}],
         "competition": {}
@@ -189,12 +217,9 @@
         "linkedin": "https://www.linkedin.com/company/cognitedata/",
         "answer": [],
         "talkTitle": "Vi vil snakke med deg!",
-        "talk": [
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss ",
-            "Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor ",
-            "snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss Hvorfor snakke med oss"
-        ],
+        "talk": [],
+        "mentiLive": "https://www.mentimeter.com/s/268275514c64e4e678d48f411c6e2436/961c3f5a8ab4",
+        "mentiKode": "87 59 05 1",
 
         "positions": [{}],
         "competition": {}

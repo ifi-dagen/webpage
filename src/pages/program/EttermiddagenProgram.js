@@ -130,7 +130,7 @@ const Program = () => {
 
                 <BedriftKohort
                     style={{ gridArea: 'kohort2' }}
-                    comp1="Kolonial"
+                    comp1="Oda"
                     comp2="Netcompany"
                     comp3="NoA Ignite"
                     setSelected={setSelected}

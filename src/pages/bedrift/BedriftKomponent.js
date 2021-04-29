@@ -158,6 +158,12 @@ const Container = styled.div`
         '. . Work Work'
         '. . Annonse Annonse';
 
+    img {
+        max-width: 400px;
+        max-height: 300px;
+        padding: 1em;
+    }
+
     @media screen and (max-width: 815px) {
         grid-template-columns: 90vw;
         grid-template-rows: auto;

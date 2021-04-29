@@ -16,7 +16,7 @@ const alleBedrifter = [
     'Accenture',
     'Nav',
     'Fink',
-    'Kolonial',
+    'Oda',
     'Netcompany',
     'NoA Ignite',
     'Bekk',
