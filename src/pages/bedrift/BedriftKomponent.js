@@ -14,7 +14,7 @@ import dayjs from 'dayjs'
 
 export const BedriftKomponent = ({ match }) => {
     const [zoom, setZoom] = useState(null)
-    let now = `${dayjs().hour(15)}:${dayjs().minute()}`
+    let now = `${dayjs().hour()}:${dayjs().minute()}`
     const [video, setVideo] = useState(null)
 
     //Får fra bedrift kohort
@@ -30,7 +30,6 @@ export const BedriftKomponent = ({ match }) => {
                 <Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
             )
         }
-        return () => {}
 
         return () => {}
     }, [bedrift, now])
@@ -113,12 +112,23 @@ export const BedriftKomponent = ({ match }) => {
                     </a>
                     <a
                         style={{
+                            gridArea: 'rekrutterer',
+                            padding: '1em',
+                        }}
+                        href={bedrift.rekruttlink}
+                    >
+                        {bedrift.rekruttekst}
+                    </a>
+
+                    <a
+                        style={{
                             gridArea: 'codeMenti',
                             padding: '1em',
                         }}
                         href={'https://www.menti.com/'}
                     >
-                        Noe du lurer på? Bruk koden {bedrift.mentiKode}
+                        Still oss spørsmål på Mentimeter! Bruk koden{' '}
+                        {bedrift.mentiKode}
                     </a>
 
                     <h2 style={{ gridArea: 'Title' }}>
@@ -134,7 +144,7 @@ export const BedriftKomponent = ({ match }) => {
                     <div style={{ gridArea: 'SoMe' }}>
                         <Facebook link={bedrift.facebook} />
                         <Instagram link={bedrift.instagram} />
-                        <Linkedin link={bedrift.facebook} />
+                        <Linkedin link={bedrift.linkedin} />
                         <Webpage link={bedrift.website} />
                     </div>
 
@@ -194,10 +204,9 @@ const Container = styled.div`
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
-        'liveMenti . . .'
-        'codeMenti . . .'
-        '. . Title Title'
-        '. . Description Description'
+        'liveMenti . Title Title'
+        'codeMenti . Description Description'
+        'rekrutterer . Description Description '
         '. Video Video Video'
         '. . TitleTalk TitleTalk'
         '. . Talk Talk'
