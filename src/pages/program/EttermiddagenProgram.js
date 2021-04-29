@@ -145,7 +145,7 @@ const Program = () => {
                 <BedriftKohort
                     style={{ gridArea: 'kohort3' }}
                     comp1="Bekk"
-                    comp2="#60935d"
+                    comp2="Cognite"
                     setSelected={setSelected}
                     company={company}
                     setCompany={setCompany}
@@ -201,7 +201,7 @@ const Container = styled.div`
     display: grid;
     overflow-y: visible;
     max-width: 850px;
-    min-height: 640px;
+    min-width: 640px;
     margin: 0 auto;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
