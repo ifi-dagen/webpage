@@ -63,8 +63,7 @@ const Program = () => {
                 <Title
                     style={{
                         gridArea: 'Title',
-                        justifySelf: 'center',
-                        textAlign: 'center',
+
                         color: 'black',
                     }}
                 >
@@ -73,8 +72,7 @@ const Program = () => {
                 <h2
                     style={{
                         gridArea: 'h2',
-                        justifySelf: 'center',
-                        textAlign: 'center',
+                        
                     }}
                 >
                     Vi håper du tar turen innom og prater litt med de ulike
@@ -227,9 +225,10 @@ const Container = styled.div`
     justify-items: center;
 
     @media screen and (max-width: 815px) {
-        grid-template-columns: 100vw;
-        grid-template-columns: 35vw 35vw;
-        grid-template-rows: 10vh 20vh 33vh 10vh 9vh 30vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 35vh 9vh;
+        grid-template-columns: 30vw 60vw;
+        min-width: 320px;
+        min-height: 810px;
+        grid-template-rows: 10vh 12vh 25vh 10vh 9vh 30vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 35vh 9vh;
         grid-template-areas:
             'countdown countdown'
             'Title Title'
@@ -252,11 +251,12 @@ const Container = styled.div`
         h1,
         h2,
         h3 {
+            display: grid;
             font-size: 1rem;
-            text-align: center;
+            text-align: left;
             justify-self: center;
+
         }
-        margin: 2.2em;
 
         img {
             display: block;
@@ -269,6 +269,9 @@ const Container = styled.div`
             margin-right: auto;
             padding: 1em;
         }
+        margin: 0;
+        margin-left: 2em;
+        padding: 0;
         justify-items: center;
     }
 `
