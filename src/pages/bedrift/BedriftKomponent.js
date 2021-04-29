@@ -24,12 +24,13 @@ export const BedriftKomponent = ({ match }) => {
     window.scrollTo(0, 0)
 
     useEffect(() => {
-
-    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
-
-        console.log("DENNE SKAL HA ZOOM");
-        setZoom(<Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
-    }
+        if (bedrift.standtime[0].split(':')[0] === now.split(':')[0]) {
+            console.log('DENNE SKAL HA ZOOM')
+            setZoom(
+                <Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
+            )
+        }
+        return () => {}
 
         return () => {}
     }, [bedrift, now])
@@ -112,22 +113,12 @@ export const BedriftKomponent = ({ match }) => {
                     </a>
                     <a
                         style={{
-                            gridArea: 'rekrutterer',
-                            padding: '1em',
-                        }}
-                        href={bedrift.rekruttlink}
-                    >
-                        {bedrift.rekruttekst}
-                    </a>
-                    
-                    <a
-                        style={{
                             gridArea: 'codeMenti',
                             padding: '1em',
                         }}
                         href={'https://www.menti.com/'}
                     >
-                        Still oss spørsmål på Mentimeter! Bruk koden {bedrift.mentiKode}
+                        Noe du lurer på? Bruk koden {bedrift.mentiKode}
                     </a>
 
                     <h2 style={{ gridArea: 'Title' }}>
@@ -143,7 +134,7 @@ export const BedriftKomponent = ({ match }) => {
                     <div style={{ gridArea: 'SoMe' }}>
                         <Facebook link={bedrift.facebook} />
                         <Instagram link={bedrift.instagram} />
-                        <Linkedin link={bedrift.linkedin} />
+                        <Linkedin link={bedrift.facebook} />
                         <Webpage link={bedrift.website} />
                     </div>
 
@@ -205,7 +196,6 @@ const Container = styled.div`
         '. Zoom Zoom Zoom'
         'liveMenti . . .'
         'codeMenti . . .'
-        'rekrutterer . . . '
         '. . Title Title'
         '. . Description Description'
         '. Video Video Video'

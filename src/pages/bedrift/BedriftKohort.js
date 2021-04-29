@@ -207,7 +207,7 @@ const InnerContainerComp = styled.div`
     padding: 1em;
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
-        grid-template-columns: 60vw;
+        grid-template-columns: 90vw;
         padding: 0;
     }
     padding: 1em;
@@ -229,7 +229,7 @@ const InnerContainerComp2 = styled.div`
     padding: 1em;
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
-        grid-template-columns: 60vw;
+        grid-template-columns: 90vw;
         padding: 0;
     }
 `
@@ -250,7 +250,7 @@ const InnerContainerComp3 = styled.div`
     /* border: solid; */
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
-        grid-template-columns: 60vw;
+        grid-template-columns: 90vw;
         padding: 0;
     }
 `
