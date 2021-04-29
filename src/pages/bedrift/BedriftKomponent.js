@@ -113,12 +113,22 @@ export const BedriftKomponent = ({ match }) => {
                     </a>
                     <a
                         style={{
+                            gridArea: 'rekrutterer',
+                            padding: '1em',
+                        }}
+                        href={bedrift.rekruttlink}
+                    >
+                        {bedrift.rekruttekst}
+                    </a>
+                    
+                    <a
+                        style={{
                             gridArea: 'codeMenti',
                             padding: '1em',
                         }}
                         href={'https://www.menti.com/'}
                     >
-                        Noe du lurer på? Bruk koden {bedrift.mentiKode}
+                        Still oss spørsmål på Mentimeter! Bruk koden {bedrift.mentiKode}
                     </a>
 
                     <h2 style={{ gridArea: 'Title' }}>
@@ -134,7 +144,7 @@ export const BedriftKomponent = ({ match }) => {
                     <div style={{ gridArea: 'SoMe' }}>
                         <Facebook link={bedrift.facebook} />
                         <Instagram link={bedrift.instagram} />
-                        <Linkedin link={bedrift.facebook} />
+                        <Linkedin link={bedrift.linkedin} />
                         <Webpage link={bedrift.website} />
                     </div>
 
@@ -210,6 +220,7 @@ const Container = styled.div`
         '. Zoom Zoom Zoom'
         'liveMenti . . .'
         'codeMenti . . .'
+        'rekrutterer . . . '
         '. . Title Title'
         '. . Description Description'
         '. Video Video Video'
