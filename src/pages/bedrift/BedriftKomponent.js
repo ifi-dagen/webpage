@@ -1,8 +1,7 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import Bedrifter from '../../data/bedrift_info.json'
-import {useHistory} from "react-router-dom"
+import { useHistory } from 'react-router-dom'
 import {
     Instagram,
     Webpage,
@@ -10,13 +9,12 @@ import {
     Zoom,
     Linkedin,
 } from '../../components/symbols'
-import EttermiddagenProgram from '../program/EttermiddagenProgram'
 
 export const BedriftKomponent = ({ setSelected, match }) => {
     //Får fra bedrift kohort
     const history = useHistory()
-    let bedrift = match.url.split("bedrift/")[1]
-    console.log("asldkfjnasdlkfjnasdlkfjn", bedrift);
+    let bedrift = match.url.split('bedrift/')[1]
+    console.log('asldkfjnasdlkfjnasdlkfjn', bedrift)
     bedrift = Bedrifter.find((b) => b.name === bedrift)
     if (bedrift) {
         return (
@@ -91,17 +89,16 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                                 history.goBack()
                             }}
                         >
-
-                        Tilbake til programmet...
-                    </h3>
+                            Tilbake til programmet...
+                        </h3>
                     </GoBack>
 
-                     <p style={{ gridArea: 'Talk' }}>
+                    <p style={{ gridArea: 'Talk' }}>
                         {bedrift.talk.map((sentence) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </p>
-                    
+
                     {/* <p style={{ gridArea: 'Competition' }}>
                         <h3>Konkurranse</h3>
                         <a href={bedrift.competition.link}>
@@ -139,12 +136,12 @@ export const BedriftKomponent = ({ setSelected, match }) => {
 }
 
 const GoBack = styled.div`
-border: solid;
- h3 {
-     :hover {
-         cursor: pointer;
-     }
- }
+    border: solid;
+    h3 {
+        :hover {
+            cursor: pointer;
+        }
+    }
 `
 
 const Container = styled.div`
@@ -163,23 +160,31 @@ const Container = styled.div`
         '. . Annonse Annonse';
 
     @media screen and (max-width: 815px) {
-        grid-template-columns: 35vw 100vw;
-        grid-template-rows: auto auto auto auto 100vh;
+        grid-template-columns: 50vh;
+        grid-template-rows: auto;
+        padding: 1em
         overflow-x: visible;
         grid-template-areas:
-            'info info'
-            'Logo SoMe'
-            '. Zoom '
-            'Competition Title '
-            'Competition Description'
-            'Questions Description'
-            '. Description'
-            '. Video'
-            '. TitleTalk'
-            '. Talk'
-            '. Work'
-            '.  Annonse';
+            'info'
+            'Logo '
+            'SoMe'
+            'Zoom '
+            'Title'
+            'Description'
+            'TitleTalk'
+            'Talk'
+            'Work'
+            'Annonse';
+
         p {
+            font-size: 0.5rem;
         }
+
+        img {
+            max-width: 250px;
+            max-height: 90px;
+            padding: 1em;
+        }
+        justify-items: center;
     }
 `
