@@ -41,7 +41,6 @@ const Program = () => {
         return () => clearInterval(interval)
     }, [confetti])
 
-    if (selected === 'program') {
         return (
             <Container>
                 {/* <Confetti
@@ -181,19 +180,7 @@ const Program = () => {
                 </Time>
             </Container>
         )
-    } else if (selected === 'bedrift') {
-        console.log(selected)
-        return <BedriftKomponent bedrift={company} setSelected={setSelected} />
-    } else if (selected === 'faglig') {
-        console.log(selected)
-        return <Foredrag id={talk} setSelected={setSelected} />
-    } else if (selected === 'åpningssermoni') {
-        console.log(selected)
-        return <OpenProgram setSelected={setSelected} />
-    } else if (selected === 'avslutning') {
-        console.log(selected)
-        return <End setSelected={setSelected} />
-    }
+
 }
 
 const Container = styled.div`
@@ -201,7 +188,7 @@ const Container = styled.div`
     overflow-y: visible;
     max-width: 850px;
     min-width: 640px;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
     grid-template-rows: 10vh 20vh 27vh 10vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh;
@@ -221,10 +208,12 @@ const Container = styled.div`
         ' . time4 .'
         ' . split4 end '
         ' . time5 .';
+
     justify-items: center;
 
     @media screen and (max-width: 815px) {
-        grid-template-columns: 30vw 60vw;
+        widht: auto;
+        grid-template-columns: 20vw 60vw;
         min-width: 320px;
         min-height: 810px;
         grid-template-rows: 10vh 12vh 25vh 10vh 9vh 30vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 35vh 9vh;
