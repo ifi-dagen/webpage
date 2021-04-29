@@ -15,6 +15,8 @@ export const BedriftKomponent = ({ setSelected, match }) => {
     const history = useHistory()
     let bedrift = match.url.split('bedrift/')[1]
     bedrift = Bedrifter.find((b) => b.name === bedrift)
+    window.scrollTo(0, 0);
+
     if (bedrift) {
         return (
             <div
