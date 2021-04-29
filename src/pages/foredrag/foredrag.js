@@ -1,16 +1,15 @@
 import React from 'react'
-import {useHistory} from "react-router-dom"
+import { useHistory } from 'react-router-dom'
 
 import styled from 'styled-components'
 import foredrag_info from '../../data/foredrag_info.json'
-import EttermiddagenProgram from '../program/EttermiddagenProgram'
 
 const Foredrag = ({ match }) => {
-    let foredrag = match.url.split("foredrag/")[1]
-    console.log("aøsldkjfknasøldfn", foredrag);
+    let foredrag = match.url.split('foredrag/')[1]
+
     foredrag = foredrag_info.find((f) => f.id === foredrag)
     const history = useHistory()
-        return (
+    return (
         <div
             style={{
                 marginLeft: 'auto',
