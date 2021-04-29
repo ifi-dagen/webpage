@@ -39,7 +39,7 @@ const Program = () => {
 
         const interval = setInterval(() => {
             toggleConfetti()
-        }, 20000)
+        }, 1800000)
         return () => clearInterval(interval)
     }, [confetti])
 
