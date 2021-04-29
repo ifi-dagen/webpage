@@ -45,13 +45,13 @@ const Program = () => {
     if (selected === 'program') {
         return (
             <Container>
-                <Confetti
+                {/* <Confetti
                     width={window.innerWidth }
                     height={window.innerHeigth }
                     numberOfPieces={'100'}
                     recycle={false}
                     run={true}
-                />
+                /> */}
                 <Countdown
                     style={{
                         display: 'flex',
