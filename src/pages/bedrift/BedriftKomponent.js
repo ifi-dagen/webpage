@@ -29,6 +29,15 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                 }}
             >
                 <Container>
+                    <GoBack style={{ gridArea: 'button' }}>
+                        <h3
+                            onClick={() => {
+                                history.goBack()
+                            }}
+                        >
+                            Tilbake til programmet...
+                        </h3>
+                    </GoBack>
                     <h3
                         style={{
                             gridArea: 'info',
@@ -83,15 +92,6 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                     <h2 style={{ gridArea: 'TitleTalk' }}>
                         {bedrift.talkTitle}
                     </h2>
-                    <GoBack>
-                        <h3
-                            onClick={() => {
-                                history.goBack()
-                            }}
-                        >
-                            Tilbake til programmet...
-                        </h3>
-                    </GoBack>
 
                     <p style={{ gridArea: 'Talk' }}>
                         {bedrift.talk.map((sentence) => {
@@ -149,6 +149,7 @@ const Container = styled.div`
     grid-template-columns: 30% 5% 35% 30%;
     grid-template-rows: auto;
     grid-template-areas:
+        'button . . .'
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
@@ -160,11 +161,13 @@ const Container = styled.div`
         '. . Annonse Annonse';
 
     @media screen and (max-width: 815px) {
-        grid-template-columns: 50vh;
+        grid-template-columns: 90vw;
         grid-template-rows: auto;
-        padding: 1em
+        padding: 1em;
+        margin-top: 1em;
         overflow-x: visible;
         grid-template-areas:
+            'button'
             'info'
             'Logo '
             'SoMe'
@@ -177,11 +180,11 @@ const Container = styled.div`
             'Annonse';
 
         p {
-            font-size: 0.5rem;
+            font-size: 1rem;
         }
 
         img {
-            max-width: 250px;
+            max-width: 200px;
             max-height: 90px;
             padding: 1em;
         }
