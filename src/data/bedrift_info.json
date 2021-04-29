@@ -189,6 +189,8 @@
         "instagram": "https://www.instagram.com/noaignitenorway/",
         "facebook": "https://www.facebook.com/noaignitenorway",
         "linkedin": "https://www.linkedin.com/company/noa-ignite-norway/",
+        "rekruttlink": "https://www.linkedin.com/in/linewestergaard/ ",
+        "rekruttekst": "Legg gjerne til NoA Ignite's rekrutterer Line Westergaard på Linkedin. ",
         "answer": [],
         "talkTitle": "Møt Oskar, Jakob, Øyvind, Malene, Debora og Line på stand!",
         "talk": [
@@ -245,7 +247,10 @@
             "15:00",
             "16:00"
         ],
-        "description": [],
+        "descriptionTitle": "About Cognite",
+        "description": [
+            "Cognite’s platform is built to aggregates and structures tremendous amounts of data ranging drawing from as many sources as we can access: from hundreds of thousands of real-time sensors, to 3D models, maintenance logs and process diagrams. The Cognite industrial internet of things platform supports unified, scalable, and secure access to data for internal and external data scientist and industry experts who can create advanced analytics models, algorithms and applications to visualize and solve real-world critical problems."
+        ],
         "logo": "cognite.png",
         "website": "https://www.cognite.com",
         "video": "",
@@ -253,11 +258,17 @@
         "instagram": "https://www.instagram.com/cognitedata/",
         "facebook": "https://www.facebook.com/CogniteData",
         "linkedin": "https://www.linkedin.com/company/cognitedata/",
-        "rekruttlink": "https://www.linkedin.com/in/linewestergaard/ ",
-        "rekruttekst": "Legg gjerne til Cognite's rekrutterer Line Westergaard på Linkedin. ",
+        "rekruttlink": "https://gather.town/app/8wOB4P6xZbs5hm4D/Cognite_office ",
+        "rekruttekst": "Møt Cognite i Gatherworld for å spille, snakke og stille spørsmål ",
         "answer": [],
-        "talkTitle": "Vi vil snakke med deg!",
-        "talk": [],
+        "talkTitle": "Møt representantene fra Cognite:",
+        "talk": [
+            "Mark McDaid - Head Of Talent Acquisition ",
+            "Eleonora Reppucci - Talent Sourcer",
+            "Patrycja Zamojska - Talent Sourcer",
+            "Annette Kollenborg - Senior Recruitment Advisor",
+            "Cognite inviterer i dag til Gatherworld hvor dere kan spille, snakke eller stille spørsmål med representanter fra bedriften."
+        ],
         "mentiLive": "https://www.mentimeter.com/s/268275514c64e4e678d48f411c6e2436/961c3f5a8ab4",
         "mentiKode": "8759 051",
         "positions": [
