@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Bedrifter from '../../data/bedrift_info.json'
 import { useHistory } from 'react-router-dom'
+import ReactPlayer from 'react-player'
 import {
     Instagram,
     Webpage,
@@ -11,30 +12,45 @@ import {
 } from '../../components/symbols'
 import dayjs from 'dayjs'
 
-
-
-export const BedriftKomponent = ({ setSelected, match }) => {
-
+export const BedriftKomponent = ({ match }) => {
     const [zoom, setZoom] = useState(null)
-    let now = `${dayjs().hour() - 1}:${dayjs().minute()}`
-
+    let now = `${dayjs().hour()}:${dayjs().minute()}`
+    const [video, setVideo] = useState(null)
 
     //Får fra bedrift kohort
     const history = useHistory()
     let bedrift = match.url.split('bedrift/')[1]
     bedrift = Bedrifter.find((b) => b.name === bedrift)
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
 
     useEffect(() => {
-    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
-
-        console.log("DENNE SKAL HA ZOOM");
-        setZoom(<Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
-    }
-        return () => {
+        if (bedrift.standtime[0].split(':')[0] === now.split(':')[0]) {
+            console.log('DENNE SKAL HA ZOOM')
+            setZoom(
+                <Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
+            )
         }
+
+        return () => {}
     }, [bedrift, now])
 
+    useEffect(() => {
+        if (bedrift.video !== '') {
+            setVideo(
+                <ReactPlayer
+                    playing
+                    url={require('../../img/video/' + bedrift.video)}
+                    style={{
+                        gridArea: 'Video',
+                        justifySelf: 'center',
+                        paddingBottom: '2em',
+                    }}
+                />
+            )
+        }
+
+        return () => {}
+    }, [bedrift])
 
     if (bedrift) {
         return (
@@ -49,16 +65,17 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                 }}
             >
                 <Container>
-                    <GoBack >
+                    <GoBack>
                         <i
                             className="fas fa-arrow-left"
                             onClick={() => {
                                 history.goBack()
                             }}
                         >
-                            <p><br></br>Program</p>
+                            <p>
+                                <br></br>Program
+                            </p>
                         </i>
-                        
                     </GoBack>
                     <h3
                         style={{
@@ -95,12 +112,23 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                     </a>
                     <a
                         style={{
+                            gridArea: 'rekrutterer',
+                            padding: '1em',
+                        }}
+                        href={bedrift.rekruttlink}
+                    >
+                        {bedrift.rekruttekst}
+                    </a>
+
+                    <a
+                        style={{
                             gridArea: 'codeMenti',
                             padding: '1em',
                         }}
                         href={'https://www.menti.com/'}
                     >
-                        Noe du lurer på? Bruk koden {bedrift.mentiKode}
+                        Still oss spørsmål på Mentimeter! Bruk koden{' '}
+                        {bedrift.mentiKode}
                     </a>
 
                     <h2 style={{ gridArea: 'Title' }}>
@@ -111,21 +139,12 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </p>
-                    {/* <ReactPlayer
-                        url={bedrift.video}
-                        // width="426px"
-                        // height="240px"
-                        style={{
-                            gridArea: 'Video',
-                            justifySelf: 'center',
-                            paddingBottom: '2em',
-                        }}
-                    /> */}
+                    {video}
 
                     <div style={{ gridArea: 'SoMe' }}>
                         <Facebook link={bedrift.facebook} />
                         <Instagram link={bedrift.instagram} />
-                        <Linkedin link={bedrift.facebook} />
+                        <Linkedin link={bedrift.linkedin} />
                         <Webpage link={bedrift.website} />
                     </div>
 
@@ -138,20 +157,6 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </div>
-
-                    {/* <p style={{ gridArea: 'Competition' }}>
-                        <h3>Konkurranse</h3>
-                        <a href={bedrift.competition.link}>
-                            {bedrift.competition.text}
-                        </a>
-                    </p>  */}
-
-                    {/* <div style={{ gridArea: 'Questions' }}>
-                        <h3>5 raske</h3>
-                        {bedrift.answer.map((answer) => {
-                            return <p key={answer}>{answer}</p>
-                        })}
-                    </div> */}
 
                     <h3 style={{ gridArea: 'Work' }}>
                         {bedrift.positionTitle}
@@ -174,8 +179,8 @@ export const BedriftKomponent = ({ setSelected, match }) => {
 }
 
 const GoBack = styled.div`
-    grid-area: "button";
- 
+    grid-area: 'button';
+
     i {
         margin: 0;
         font-size: 30px;
@@ -199,10 +204,10 @@ const Container = styled.div`
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
-        'liveMenti . . .'
-        'codeMenti . . .'
-        '. . Title Title'
-        '. . Description Description'
+        'liveMenti . Title Title'
+        'codeMenti . Description Description'
+        'rekrutterer . Description Description '
+        '. Video Video Video'
         '. . TitleTalk TitleTalk'
         '. . Talk Talk'
         '. . Work Work'

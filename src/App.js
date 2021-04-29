@@ -18,8 +18,8 @@ const App = () => (
                 text3="FAQ"
                 link3="/studenter"
             />
-            <Routes style={{gridArea: 'main' }} />
-            <Newfooter/>
+            <Routes style={{ gridArea: 'main' }} />
+            <Newfooter />
         </Container>
     </div>
 )

@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import BedriftKohort from '../bedrift/BedriftKohort'
-import { BedriftKomponent } from '../bedrift/BedriftKomponent'
 import Faglig from '../foredrag/Faglig'
-import Foredrag from '../foredrag/foredrag'
-import OpenProgram from './OpenProgram'
-import End from './End'
 import './program.css'
 import { Link } from 'react-router-dom'
 import Countdown from '../../components/countdown'
@@ -14,17 +10,14 @@ import Confetti from 'react-confetti'
 
 const Program = () => {
     const [company, setCompany] = useState(null)
-    const [talk, setTalk] = useState(null)
-    const [selected, setSelected] = useState('program')
     const [confetti, setConfetti] = useState(null)
-    
-    
+
     useEffect(() => {
         const toggleConfetti = () => {
             if (confetti === null) {
                 setConfetti(
                     <Confetti
-                        width={window.innerWidth }
+                        width={window.innerWidth}
                         height={window.innerHeight}
                         numberOfPieces={'100'}
                         recycle={false}
@@ -42,170 +35,142 @@ const Program = () => {
         return () => clearInterval(interval)
     }, [confetti])
 
-    if (selected === 'program') {
-        return (
-            <Container>
-                {/* <Confetti
+    return (
+        <Container>
+            {/* <Confetti
                     width={window.innerWidth }
                     height={window.innerHeigth }
                     numberOfPieces={'100'}
                     recycle={false}
                     run={true}
                 /> */}
-                <Countdown
+            <Countdown
+                style={{
+                    display: 'flex',
+                    gridArea: 'countdown',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}
+            />
+            <Title
+                style={{
+                    gridArea: 'Title',
+                    color: 'black',
+                }}
+            >
+                Velkommen til digital ettermiddagen@ifi
+            </Title>
+            <h2
+                style={{
+                    gridArea: 'h2',
+                }}
+            >
+                Vi håper du tar turen innom og prater litt med de ulike
+                bedriftene i standområdet, de gleder seg til å møte deg!
+                Parallellt med det digitale standområdet kjøres det ulike
+                foredrag, og vi håper du finner noe som er interessant og
+                relevant for deg. Vi har flere konkurranser gående iløpet av
+                dagen, og flere av bedriftene har egne konkurranser iløpet av
+                standtiden sin, så utnytt sjansen til å mingle med litt
+                bedrifter over en lav sko i dag.{' '}
+            </h2>
+            <h2 style={{ gridArea: 'h3', justifySelf: 'center' }}>
+                Vi i dagen-styret ønsker deg en flott ettermiddag!
+            </h2>
+            <br />
+
+            {confetti}
+            <Split style={{ gridArea: 'split' }} />
+            <Time style={{ gridArea: 'time' }}>
+                <div style={{ paddingTop: '2.3em' }}>12:00</div>
+            </Time>
+
+            <Open style={{ gridArea: 'open' }}>
+                <Link
+                    to={{ pathname: '/åpningsshow' }}
                     style={{
-                        display: 'flex',
-                        gridArea: 'countdown',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                    }}
-                />
-                <Title
-                    style={{
-                        gridArea: 'Title',
-                        justifySelf: 'center',
-                        textAlign: 'center',
+                        textDecoration: 'none',
                         color: 'black',
+                        fontStyle: 'italic',
                     }}
                 >
-                    Velkommen til digital ettermiddagen@ifi
-                </Title>
-                <h2
+                    <Tag>Konkurranse 12:00-13:00</Tag>
+                    <h1>Åpningsshow med Gyda, Eivind og Maja</h1>
+                </Link>
+            </Open>
+            <Split style={{ gridArea: 'split1' }} />
+            <Time style={{ gridArea: 'time1' }}>
+                <div style={{ paddingTop: '2.3em' }}>13:00</div>
+            </Time>
+
+            <BedriftKohort
+                comp1="Accenture"
+                comp2="Nav"
+                comp3="Fink"
+                company={company}
+                setCompany={setCompany}
+                kohort={1}
+            />
+
+            <Split style={{ gridArea: 'split2' }} />
+            <Time style={{ gridArea: 'time2' }}>
+                <div style={{ paddingTop: '2.3em' }}>14:00</div>
+            </Time>
+
+            <BedriftKohort
+                style={{ gridArea: 'kohort2' }}
+                comp1="Oda"
+                comp2="Netcompany"
+                comp3="NoA Ignite"
+                company={company}
+                setCompany={setCompany}
+                kohort={2}
+            />
+            <Split style={{ gridArea: 'split3' }} />
+            <Time style={{ gridArea: 'time3' }}>
+                <div style={{ paddingTop: '2.3em' }}>15:00</div>
+            </Time>
+            <BedriftKohort
+                style={{ gridArea: 'kohort3' }}
+                comp1="Bekk"
+                comp2="Cognite"
+                company={company}
+                setCompany={setCompany}
+                kohort={3}
+            />
+            <Faglig />
+            <Split style={{ gridArea: 'split4' }} />
+            <Time style={{ gridArea: 'time4' }}>
+                <div style={{ paddingTop: '2.3em' }}>16:00</div>
+            </Time>
+            <Open
+                style={{
+                    gridArea: 'end',
+                }}
+            >
+                <Link
+                    to={{ pathname: '/quiz' }}
                     style={{
-                        gridArea: 'h2',
-                        justifySelf: 'center',
-                        textAlign: 'center',
+                        textDecoration: 'none',
+                        color: 'black',
+                        fontStyle: 'italic',
                     }}
                 >
-                    Vi håper du tar turen innom og prater litt med de ulike
-                    bedriftene i standområdet, de gleder seg til å møte deg!
-                    Parallellt med det digitale standområdet kjøres det ulike
-                    foredrag, og vi håper du finner noe som er interessant og
-                    relevant for deg. Vi har flere konkurranser gående iløpet av
-                    dagen, og flere av bedriftene har egne konkurranser iløpet
-                    av standtiden sin, så utnytt sjansen til å mingle med litt
-                    bedrifter over en lav sko i dag.{' '}
-                </h2>
-                <h2 style={{ gridArea: 'h3', justifySelf: 'center' }}>
-                    Vi i dagen-styret ønsker deg en flott ettermiddag!
-                </h2>
-                <br />
-
-                {confetti}
-                <Split style={{ gridArea: 'split' }} />
-                <Time style={{ gridArea: 'time' }}>
-                    <div style={{ paddingTop: '2.3em' }}>12:00</div>
-                </Time>
-
-                <Open style={{ gridArea: 'open' }}>
-                    <Link
-                        to={{ pathname: '/åpningsshow' }}
-                        style={{
-                            textDecoration: 'none',
-                            color: 'black',
-                            fontStyle: 'italic',
-                        }}
-                    >
-                        <Tag>Konkurranse 12:00-13:00</Tag>
-                        <h1 onClick={() => setSelected('åpningssermoni')}>
-                            Åpningsshow med Gyda, Eivind og Maja
-                        </h1>
-                    </Link>
-                </Open>
-                <Split style={{ gridArea: 'split1' }} />
-                <Time style={{ gridArea: 'time1' }}>
-                    <div style={{ paddingTop: '2.3em' }}>13:00</div>
-                </Time>
-
-                <BedriftKohort
-                    comp1="Accenture"
-                    comp2="Nav"
-                    comp3="Fink"
-                    setSelected={setSelected}
-                    company={company}
-                    setCompany={setCompany}
-                    kohort={1}
-                />
-
-                <Split style={{ gridArea: 'split2' }} />
-                <Time style={{ gridArea: 'time2' }}>
-                    <div style={{ paddingTop: '2.3em' }}>14:00</div>
-                </Time>
-
-                <BedriftKohort
-                    style={{ gridArea: 'kohort2' }}
-                    comp1="Oda"
-                    comp2="Netcompany"
-                    comp3="NoA Ignite"
-                    setSelected={setSelected}
-                    company={company}
-                    setCompany={setCompany}
-                    kohort={2}
-                />
-                <Split style={{ gridArea: 'split3' }} />
-                <Time style={{ gridArea: 'time3' }}>
-                    <div style={{ paddingTop: '2.3em' }}>15:00</div>
-                </Time>
-                <BedriftKohort
-                    style={{ gridArea: 'kohort3' }}
-                    comp1="Bekk"
-                    comp2="Cognite"
-                    setSelected={setSelected}
-                    company={company}
-                    setCompany={setCompany}
-                    kohort={3}
-                />
-                <Faglig setSelected={setSelected} setTalk={setTalk} />
-                <Split style={{ gridArea: 'split4' }} />
-                <Time style={{ gridArea: 'time4' }}>
-                    <div style={{ paddingTop: '2.3em' }}>16:00</div>
-                </Time>
-                <Open
-                    style={{
-                        gridArea: 'end',
-                    }}
-                >
-                    <Link
-                        to={{ pathname: '/quiz' }}
-                        style={{
-                            textDecoration: 'none',
-                            color: 'black',
-                            fontStyle: 'italic',
-                        }}
-                    >
-                        <Tag>Konkurranse 16:00-16:30</Tag>
-                        <h1 onClick={() => setSelected('avslutning')}>
-                            Kahoot!
-                        </h1>
-                    </Link>
-                </Open>
-                <Time style={{ gridArea: 'time5', marginBot: '1em' }}>
-                    <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
-                </Time>
-            </Container>
-        )
-    } else if (selected === 'bedrift') {
-        console.log(selected)
-        return <BedriftKomponent bedrift={company} setSelected={setSelected} />
-    } else if (selected === 'faglig') {
-        console.log(selected)
-        return <Foredrag id={talk} setSelected={setSelected} />
-    } else if (selected === 'åpningssermoni') {
-        console.log(selected)
-        return <OpenProgram setSelected={setSelected} />
-    } else if (selected === 'avslutning') {
-        console.log(selected)
-        return <End setSelected={setSelected} />
-    }
+                    <Tag>Konkurranse 16:00-16:30</Tag>
+                    <h1>Kahoot!</h1>
+                </Link>
+            </Open>
+            <Time style={{ gridArea: 'time5', marginBot: '1em' }}>
+                <div style={{ paddingTop: '2.3em' }}>Takk for i dag</div>
+            </Time>
+        </Container>
+    )
 }
 
 const Container = styled.div`
     display: grid;
-    overflow-y: visible;
-    max-width: 850px;
-    min-width: 640px;
-    margin: 0 auto;
-    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: 25vw 2vw 25vw;
     grid-template-rows: 10vh 20vh 27vh 10vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh;
     grid-template-areas:
@@ -224,12 +189,15 @@ const Container = styled.div`
         ' . time4 .'
         ' . split4 end '
         ' . time5 .';
+
     justify-items: center;
 
     @media screen and (max-width: 815px) {
-        grid-template-columns: 100vw;
-        grid-template-columns: 35vw 35vw;
-        grid-template-rows: 10vh 20vh 33vh 10vh 9vh 30vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 35vh 9vh;
+        grid-template-columns: 20vw 100vw;
+        min-width: 320px;
+        min-height: 810px;
+        text-align: left;
+        grid-template-rows: 10vh 15vh 30vh 10vh 9vh 30vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 35vh 9vh;
         grid-template-areas:
             'countdown countdown'
             'Title Title'
@@ -252,11 +220,11 @@ const Container = styled.div`
         h1,
         h2,
         h3 {
+            display: grid;
             font-size: 1rem;
-            text-align: center;
+            text-align: left;
             justify-self: center;
         }
-        margin: 2.2em;
 
         img {
             display: block;
@@ -269,7 +237,6 @@ const Container = styled.div`
             margin-right: auto;
             padding: 1em;
         }
-        justify-items: center;
     }
 `
 
@@ -303,6 +270,7 @@ const Time = styled.div`
 
 const Open = styled.div`
     background-color: #edf6f9;
+
     height: auto;
     width: 20vw;
     margin: 0.5em;
@@ -314,16 +282,17 @@ const Open = styled.div`
     :hover {
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #b7e4c7;
+        background-color: #a2d2ff;
         cursor: pointer;
     }
     padding: 1em;
 
     @media screen and (max-width: 815px) {
-        grid-template-columns: 90vw;
+        grid-template-columns: 100vw;
         grid-template-rows: 80vh;
+        padding: 0;
         margin-top: 1rem;
-        width: 50vw;
+        width: 90vw;
         margin: 1em;
         height: auto;
 
