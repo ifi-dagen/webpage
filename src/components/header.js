@@ -1,82 +1,71 @@
-import React from "react";
-import styled from "styled-components";
-import { useHistory as useHerstory } from "react-router-dom"
+import React, { useState } from 'react'
+import styled from 'styled-components'
+import { useHistory as useHerstory } from 'react-router-dom'
+import {Link} from "react-router-dom"
+import ettermiddagen from '../img/ettermiddagen.svg'
+import ettermiddagenannenfarge from '../img/ettermiddagenannenfarge.svg'
 
-
-const Header = () => {
-  const herstory = useHerstory()
-
-  return (
-    <div>
-      <Wrapper>
-        <img
-          onClick={() => herstory.push("/")}
-          src={require('../img/dagen_logo.svg')} alt="dagen@ifi logo" />
-        <span />
-        <Facebook />
-        <Instagram />
-        <Linkedin />
-      </Wrapper>
-    </div>
-
-  )
-};
-
-
-
-const Facebook = () => {
-  return (
-    <Link href="https://www.facebook.com/dagenatifi">
-      <Icon className="fab fa-facebook"></Icon>
-    </Link>
-  )
+export const Info = ({ link1, text1, link2, text2, link3, text3 }) => {
+    const herstory = useHerstory()
+    const [logo, setLogo] = useState(ettermiddagen)
+    const toggleLogo = () => {
+        if (logo === ettermiddagen) {
+            setLogo(ettermiddagenannenfarge)
+        } else if (logo === ettermiddagenannenfarge) {
+            setLogo(ettermiddagen)
+        }
+    }
+    return (
+        <div>
+            <Wrapper>
+                <img
+                    onClick={() => herstory.push('/')}
+                    src={logo}
+                    alt="ettermiddagen@ifi logo"
+                    onMouseEnter={() => toggleLogo()}
+                    onMouseOut={() => toggleLogo()}
+                />
+                <span />
+                <Box>
+                    <Link to={`${link1}`}> {text1}</Link>
+                    <br />
+                    <Link to={`${link2}`}> {text2}</Link>
+                    <br />
+                    <Link to={`${link3}`}> {text3}</Link>
+                </Box>
+            </Wrapper>
+        </div>
+    )
 }
 
-const Linkedin = () => {
-  return (
-    <Link href="https://www.linkedin.com/company/dagen-ifi/">
-      <Icon className="fab fa-linkedin"></Icon>
-    </Link>
-  )
-}
-
-const Instagram = () => {
-  return (
-    <Link href="https://www.instagram.com/dagenatifi/">
-      <Icon className="fab fa-instagram"></Icon>
-    </Link>
-  )
-}
-
+const Box = styled.div`
+    justify-self: right;
+    line-height: 2;
+`
 
 const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr  2em 2em auto;
-  grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+    padding: 0.5em;
+    align-items: center;
+    background-color: #2a6f97;
+    img {
+        max-height: 5rem;
+        cursor: pointer;
+        color: black;
+        transition: color 0.25s;
+    }
 
-  padding: 1em;
-  background: none;
+    a {
+        color: white;
+        transition: color 0.25s;
+        :hover {
+            color: #ff6b6b;
+        }
+        text-decoration: none;
+        font-family: Courier New;
+    }
+`
 
-  img {
-    max-height: 5rem;
-    cursor: pointer;
-  }
-`;
-
-const Link = styled.a`
-align-items: center;
-padding: 1em;
-`;
-
-const Icon = styled.i`
-font-size: 2rem;
-color: black;
-transition: color 0.25s;
-
-${Link}:hover & {
-  color: deepskyblue;
-}
-`;
-
-
-export default Header;
+export default Info
