@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import foredrag_info from '../../data/foredrag_info.json'
+import { Greenpurplezoom } from '../../components/symbols'
 
 const Foredrag = ({ match }) => {
     let foredrag = match.url.split('foredrag/')[1]
@@ -62,13 +63,19 @@ const Foredrag = ({ match }) => {
                     alt={`Bilde av ${foredrag.companyName} sin logo`}
                 ></img>
 
-                <a
-                    style={{ gridArea: 'Zoom', justifySelf: 'center' }}
-                    href={foredrag.link}
+                <div
+                    style={{
+                        gridArea: 'Zoom',
+                        padding: '1em',
+                        justifyItems: 'center',
+                        alignItems: 'center',
+                    }}
                 >
-                    {'Se foredraget her!'}
-                </a>
-
+                    <Greenpurplezoom
+                        href={foredrag.link}
+                        text={'Se foredraget her!'}
+                    ></Greenpurplezoom>
+                </div>
                 <About style={{ gridArea: 'Description' }}>
                     <h1
                         style={{
@@ -91,16 +98,17 @@ const Foredrag = ({ match }) => {
 const CompanyContainer = styled.div`
     padding: 2em;
     display: grid;
-    grid-template-columns: 15vw 10vw 10vw 15vw;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
+    grid-template-rows: auto;
     grid-template-areas:
         'Time . . Logo'
-        '. Zoom Zoom  .'
+        '. Zoom Zoom .'
         'Description Description Description Description'
         'Video Video Video Video';
         
         @media screen and (max-width: 815px) {
             grid-template-columns: 50vw;
-      
+            grid-template-rows:auto
             grid-template-areas:
             'Time'
             'Logo'
