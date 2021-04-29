@@ -17,14 +17,13 @@ const Program = () => {
     const [talk, setTalk] = useState(null)
     const [selected, setSelected] = useState('program')
     const [confetti, setConfetti] = useState(null)
-    
-    
+
     useEffect(() => {
         const toggleConfetti = () => {
             if (confetti === null) {
                 setConfetti(
                     <Confetti
-                        width={window.innerWidth }
+                        width={window.innerWidth}
                         height={window.innerHeight}
                         numberOfPieces={'100'}
                         recycle={false}
@@ -306,6 +305,7 @@ const Time = styled.div`
 
 const Open = styled.div`
     background-color: #edf6f9;
+
     height: auto;
     width: 20vw;
     margin: 0.5em;
@@ -317,7 +317,7 @@ const Open = styled.div`
     :hover {
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #b7e4c7;
+        background-color: #a2d2ff;
         cursor: pointer;
     }
     padding: 1em;
