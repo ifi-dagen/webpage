@@ -6,7 +6,7 @@ import foredrag_info from '../../data/foredrag_info.json'
 
 const Foredrag = ({ match }) => {
     let foredrag = match.url.split('foredrag/')[1]
-
+    window.scrollTo(0, 0);
     foredrag = foredrag_info.find((f) => f.id === foredrag)
     const history = useHistory()
     return (

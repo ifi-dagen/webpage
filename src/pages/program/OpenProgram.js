@@ -3,6 +3,8 @@ import { Zoom } from '../../components/symbols'
 import styled from 'styled-components'
 
 const OpenProgram = () => {
+    window.scrollTo(0, 0);
+
     return (
         <Container
             style={{

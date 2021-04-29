@@ -16,6 +16,8 @@ export const BedriftKomponent = ({ setSelected, match }) => {
     let bedrift = match.url.split('bedrift/')[1]
     console.log('asldkfjnasdlkfjnasdlkfjn', bedrift)
     bedrift = Bedrifter.find((b) => b.name === bedrift)
+    window.scrollTo(0, 0);
+
     if (bedrift) {
         return (
             <div
