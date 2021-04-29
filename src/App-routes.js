@@ -92,6 +92,7 @@ class Routes extends Component {
                 {alleBedrifter.map((x) => {
                     return (
                         <Route
+                            key=""
                             exact
                             path={`/bedrift/${x}`}
                             component={(prop) => (
@@ -107,6 +108,7 @@ class Routes extends Component {
                 {alleForedrag.map((x) => {
                     return (
                         <Route
+                            key=""
                             exact
                             path={`/foredrag/${x}`}
                             component={(prop) => (

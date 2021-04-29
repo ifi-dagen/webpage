@@ -93,11 +93,11 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                         {bedrift.talkTitle}
                     </h2>
 
-                    <p style={{ gridArea: 'Talk' }}>
+                    <div style={{ gridArea: 'Talk' }}>
                         {bedrift.talk.map((sentence) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
-                    </p>
+                    </div>
 
                     {/* <p style={{ gridArea: 'Competition' }}>
                         <h3>Konkurranse</h3>
@@ -119,11 +119,9 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                     <div style={{ gridArea: 'Annonse' }}>
                         {bedrift.positions.map((position) => {
                             return (
-                                <p>
-                                    <a key={position} href={position.link}>
-                                        {position.name}
-                                    </a>
-                                </p>
+                                <a key={position} href={position.link}>
+                                    {position.name}
+                                </a>
                             )
                         })}
                     </div>
