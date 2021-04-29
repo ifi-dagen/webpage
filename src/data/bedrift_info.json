@@ -2,8 +2,8 @@
     {
         "name": "Accenture",
         "standtime": [
-            "12:00",
-            "13:00"
+            "13:00",
+            "14:00"
         ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
@@ -25,7 +25,7 @@
         "mentiKode": "5591 104",
         "positions": [
             {
-                "name": "Interessert i å jobbe for Accenture? Vis interesse på Poption så ser vi gjennom til høsten når vi utlyser nye stillinger.",
+                "name": "Interessert i å jobbe for Accenture? Vis interesse på Poption så ser vi gjennom til høsten når vi lyser ut nye stillinger.",
                 "link": "https://poption.events/5028"
             }
         ],
@@ -34,8 +34,8 @@
     {
         "name": "Nav",
         "standtime": [
-            "12:00",
-            "13:00"
+            "13:00",
+            "14:00"
         ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
@@ -67,8 +67,8 @@
     {
         "name": "Fink",
         "standtime": [
-            "12:00",
-            "13:00"
+            "13:00",
+            "14:00"
         ],
         "description": [],
         "logo": "fink.svg",
@@ -89,8 +89,8 @@
         "positionTitle": "Fink tar hele tiden i mot søknader med åpne armer.",
         "positions": [
             {
-                "name": "",
-                "link": ""
+                "name": "Klar for et nytt rede? Bli en fink!",
+                "link": "https://www.fink.no/jobb"
             }
         ],
         "mentiLive": "https://www.mentimeter.com/s/ea62a564fe18b79c1e2a1306357423a7/96c1f369dc55",
@@ -166,7 +166,10 @@
         "mentiLive": "https://www.mentimeter.com/s/4bfba8830b31eae5e91a957bbc94d80d/b8d1e8f8778e",
         "mentiKode": "6732 6514",
         "positions": [
-            {}
+            {
+                "name": "Hvorfor velge Netcompany?",
+                "link": "https://www.netcompany.com/no/Karriere/Hvorfor-velge-Netcompany"
+            }
         ],
         "competition": {}
     },
