@@ -38,7 +38,7 @@ const BedriftKohort = ({
     if (kohort === 1) {
         return (
             <InnerContainerComp>
-                <Tag>Bedriftstander fra 15:00-15:30</Tag>
+                <Tag>Bedriftstander fra 13:00-14:00</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -90,7 +90,7 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
-                <Tag>Bedriftstander fra 15:00-15:30</Tag>
+                <Tag>Bedriftstander fra 14:00-15:00</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -138,7 +138,7 @@ const BedriftKohort = ({
     } else if (kohort === 3) {
         return (
             <InnerContainerComp3>
-                <Tag>Bedriftstander fra 15:00-15:30</Tag>
+                <Tag>Bedriftstander fra 15:00-16:00</Tag>
 
                 <Comp1
                     onClick={() => {
@@ -181,17 +181,17 @@ const Tag = styled.div`
     font-size: 1.2rem;
     border-radius: 25px;
     background-color: #ff6b6b;
-    width: 15vw;
-    height: 1.5em;
-    justify-self: center;
+    width: 20vw;
     text-align: center;
     color: snow;
     grid-area: 'tag';
+    height: 1.4rem;
 `
 
 const InnerContainerComp = styled.div`
     display: grid;
     grid-area: kohort1;
+    margin: 0.5em;
     grid-template-columns: 20vw;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -212,6 +212,7 @@ const InnerContainerComp = styled.div`
 const InnerContainerComp2 = styled.div`
     display: grid;
     grid-area: kohort2;
+    margin: 0.5em;
     grid-template-columns: 20vw;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -233,6 +234,7 @@ const InnerContainerComp2 = styled.div`
 const InnerContainerComp3 = styled.div`
     display: grid;
     grid-area: kohort3;
+    margin: 0.5em;
     grid-template-columns: 20vw;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;

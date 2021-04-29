@@ -14,7 +14,6 @@ export const BedriftKomponent = ({ setSelected, match }) => {
     //Får fra bedrift kohort
     const history = useHistory()
     let bedrift = match.url.split('bedrift/')[1]
-    console.log('asldkfjnasdlkfjnasdlkfjn', bedrift)
     bedrift = Bedrifter.find((b) => b.name === bedrift)
     if (bedrift) {
         return (

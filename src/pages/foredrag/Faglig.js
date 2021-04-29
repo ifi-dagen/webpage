@@ -80,8 +80,8 @@ const Faglig = () => {
 
 const InnerContainerEdu = styled.div`
     display: grid;
-    height: 21vh;
     width: 20vw;
+    margin: 0.5em;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;

@@ -205,7 +205,7 @@ const Container = styled.div`
     margin: 0 auto;
     height: auto;
     grid-template-columns: 25vw 2vw 25vw;
-    grid-template-rows: 10vh 20vh 22vh 10vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh 42vh 9vh;
+    grid-template-rows: 10vh 20vh 27vh 10vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh;
     grid-template-areas:
         'countdown countdown countdown'
         'h1 h1 h1'
@@ -287,8 +287,9 @@ const Time = styled.div`
 
 const Open = styled.div`
     background-color: #edf6f9;
-    height: 22vh;
+    height: auto;
     width: 22vw;
+    margin: 0.5em;
 
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -303,7 +304,6 @@ const Open = styled.div`
 `
 
 const Tag = styled.div`
-    margin: 1em;
     font-size: 1.2rem;
     border-radius: 25px;
     background-color: #cdb4db;
