@@ -28,7 +28,8 @@ const Countdown = () => {
 
     
     return(
-        <div className="countdown">
+        <div className="countdown" style={{display: "flex", gridArea: 'countdown', alignItems: "center",
+        justifyContent: "center"}}>
 
             <div>
                 <Number>{date}</Number>

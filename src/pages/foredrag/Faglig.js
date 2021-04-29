@@ -1,54 +1,78 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
-const Faglig = ({ setSelected, setTalk }) => {
-    const updateState = (id) => {
-        setSelected('faglig')
-        setTalk(id)
-    }
-
+const Faglig = () => {
     return (
         <>
             <InnerContainerEdu style={{ gridArea: 'foredrag1' }}>
-                <Talk>
-                    <Tag>Foredrag 13:00-13:30</Tag>
-                    <h3 onClick={() => updateState(0)}>Death By Powerpoint</h3>
-                </Talk>
-                <TalkComp>
-                    <img
-                        src={require('../../img/logoer/Netcompany.png')}
-                        alt=""
-                        onClick={() => updateState(0)}
-                    ></img>
-                </TalkComp>
+                <Link
+                    to={{
+                        pathname: '/foredrag/Netcompany',
+                    }}
+                    style={{
+                        textDecoration: 'none',
+                        color: 'black',
+                        fontStyle: 'italic',
+                    }}
+                >
+                    <Talk>
+                        <Tag>Foredrag 13:00-13:30</Tag>
+                        <h3>Death By Powerpoint</h3>
+                    </Talk>
+                    <TalkComp>
+                        <img
+                            src={require('../../img/logoer/Netcompany.png')}
+                            alt=""
+                        ></img>
+                    </TalkComp>
+                </Link>
             </InnerContainerEdu>
             <InnerContainerEdu style={{ gridArea: 'foredrag2' }}>
-                <Talk>
-                     <Tag>Foredrag 14:00-14:30</Tag>
-                    <h3 onClick={() => updateState(1)}>Impostor Syndrome</h3>
-                </Talk>
-                <TalkComp>
-                    <img
-                        src={require('../../img/logoer/Bekk.png')}
-                        alt=""
-                        onClick={() => updateState(1)}
-                    ></img>
-                </TalkComp>
+                <Link
+                    to={{
+                        pathname: '/foredrag/Bekk',
+                    }}
+                    style={{
+                        textDecoration: 'none',
+                        color: 'black',
+                        fontStyle: 'italic',
+                    }}
+                >
+                    <Talk>
+                        <Tag>Foredrag 14:00-14:30</Tag>
+                        <h3>Impostor Syndrome</h3>
+                    </Talk>
+                    <TalkComp>
+                        <img
+                            src={require('../../img/logoer/Bekk.png')}
+                            alt=""
+                        ></img>
+                    </TalkComp>
+                </Link>
             </InnerContainerEdu>
             <InnerContainerEdu style={{ gridArea: 'foredrag3' }}>
-                <Talk>
-                <Tag>Foredrag 15:00-15:30</Tag>
-                    <h3 onClick={() => updateState(2)}>
-                        Superforedrag av accenture
-                    </h3>
-                </Talk>
-                <TalkComp>
-                    <img
-                        src={require('../../img/logoer/Accenture.png')}
-                        alt=""
-                        onClick={() => updateState(2)}
-                    ></img>
-                </TalkComp>
+                <Link
+                    to={{
+                        pathname: '/foredrag/Accenture',
+                    }}
+                    style={{
+                        textDecoration: 'none',
+                        color: 'black',
+                        fontStyle: 'italic',
+                    }}
+                >
+                    <Talk>
+                        <Tag>Foredrag 15:00-15:30</Tag>
+                        <h3>Accenture Tech Vision</h3>
+                    </Talk>
+                    <TalkComp>
+                        <img
+                            src={require('../../img/logoer/Accenture.png')}
+                            alt=""
+                        ></img>
+                    </TalkComp>
+                </Link>
             </InnerContainerEdu>
         </>
     )
@@ -56,8 +80,8 @@ const Faglig = ({ setSelected, setTalk }) => {
 
 const InnerContainerEdu = styled.div`
     display: grid;
-    height: 21vh;
     width: 20vw;
+    margin: 0.5em;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
@@ -70,6 +94,7 @@ const InnerContainerEdu = styled.div`
         opacity: 1;
         transition: 0.5s ease;
         background-color: #a2d2ff;
+        cursor: pointer;
     }
     padding: 1em;
     justify-items: center;

@@ -1,10 +1,14 @@
 import React from 'react'
-import styled from 'styled-components'
-import foredrag_info from '../../data/foredrag_info'
-import EttermiddagenProgram from '../program/EttermiddagenProgram'
+import { useHistory } from 'react-router-dom'
 
-const Foredrag = ({ id, setSelected }) => {
-    const foredrag = foredrag_info[id]
+import styled from 'styled-components'
+import foredrag_info from '../../data/foredrag_info.json'
+
+const Foredrag = ({ match }) => {
+    let foredrag = match.url.split('foredrag/')[1]
+    window.scrollTo(0, 0);
+    foredrag = foredrag_info.find((f) => f.id === foredrag)
+    const history = useHistory()
     return (
         <div
             style={{
@@ -21,8 +25,7 @@ const Foredrag = ({ id, setSelected }) => {
                         height: '1.2em',
                     }}
                     onClick={() => {
-                        setSelected('program')
-                        return <EttermiddagenProgram />
+                        history.goBack()
                     }}
                 >
                     Foredrag {foredrag.startTime} - {foredrag.endTime}
@@ -71,6 +74,21 @@ const CompanyContainer = styled.div`
         'Time . . Logo'
         '. Zoom Zoom  .'
         'Description Description Description Description';
+        
+        @media screen and (max-width: 815px) {
+            grid-template-columns: 50vw;
+      
+            grid-template-areas:
+            'Time'
+            'Logo'
+            'Zoom'
+            'Description';
+
+            p{
+                font-size: 0.5rem,
+            }
+            justify-items:center;
+           
 `
 
 const About = styled.div`

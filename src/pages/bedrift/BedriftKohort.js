@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import Bedrift from '../../data/bedrift_info.json'
+import { Link } from 'react-router-dom'
+import dayjs from 'dayjs'
 
 const importAll = (r) => {
     let logos = {}
@@ -9,6 +11,7 @@ const importAll = (r) => {
     })
     return logos
 }
+
 
 const logos = importAll(
     require.context('../../img/logoer', false, /\.(png|jpe?g|svg)$/)
@@ -31,20 +34,27 @@ const BedriftKohort = ({
     setCompany,
     kohort,
 }) => {
+
     const c1 = CompToObject(comp1)
     const c2 = CompToObject(comp2)
     const c3 = CompToObject(comp3)
     if (kohort === 1) {
         return (
             <InnerContainerComp>
-                <Tag>Bedriftstander fra 15:00-15:30</Tag>
+                <Tag>Bedriftstander fra 13:00-14:00</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c1)} alt=""></img>
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c1.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c1)} alt=""></img>
+                    </Link>{' '}
                 </Comp1>
 
                 <Comp2
@@ -53,7 +63,13 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c2)} alt=""></img>{' '}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c2.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c2)} alt=""></img>
+                    </Link>{' '}
                 </Comp2>
                 <Comp3
                     onClick={() => {
@@ -61,7 +77,13 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c3)} alt=""></img>{' '}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c3.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c3)} alt=""></img>
+                    </Link>{' '}
                 </Comp3>
             </InnerContainerComp>
         )
@@ -71,14 +93,20 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
-                <Tag>Bedriftstander fra 15:00-15:30</Tag>
+                <Tag>Bedriftstander fra 14:00-15:00</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
-                        setSelected('bedrift')
+                        // setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c1)} alt=""></img>
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c1.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c1)} alt=""></img>
+                    </Link>
                 </Comp1>
                 <Comp2
                     onClick={() => {
@@ -86,7 +114,13 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c2)} alt=""></img>{' '}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c2.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c2)} alt=""></img>
+                    </Link>{' '}
                 </Comp2>
                 <Comp3
                     onClick={() => {
@@ -94,14 +128,20 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c3)} alt=""></img>{' '}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c3.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c3)} alt=""></img>
+                    </Link>{' '}
                 </Comp3>
             </InnerContainerComp2>
         )
     } else if (kohort === 3) {
         return (
             <InnerContainerComp3>
-                <Tag>Bedriftstander fra 15:00-15:30</Tag>
+                <Tag>Bedriftstander fra 15:00-16:00</Tag>
 
                 <Comp1
                     onClick={() => {
@@ -109,7 +149,13 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c1)} alt=""></img>
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c1.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c1)} alt=""></img>
+                    </Link>{' '}
                 </Comp1>
                 <Comp2
                     onClick={() => {
@@ -117,7 +163,13 @@ const BedriftKohort = ({
                         setSelected('bedrift')
                     }}
                 >
-                    <img src={CompToLogo(c2)} alt=""></img>{' '}
+                    <Link
+                        to={{
+                            pathname: `/bedrift/${c2.name}`,
+                        }}
+                    >
+                        <img src={CompToLogo(c2)} alt=""></img>
+                    </Link>{' '}
                 </Comp2>
             </InnerContainerComp3>
         )
@@ -132,30 +184,27 @@ const Tag = styled.div`
     font-size: 1.2rem;
     border-radius: 25px;
     background-color: #ff6b6b;
-    width: 15vw;
-    height: 1.5em;
-    justify-self: center;
-    text-align:center;
+    width: 20vw;
+    text-align: center;
     color: snow;
-    grid-area: "tag";
+    grid-area: 'tag';
+    height: 1.4rem;
 `
 
 const InnerContainerComp = styled.div`
     display: grid;
     grid-area: kohort1;
+    margin: 0.5em;
     grid-template-columns: 20vw;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-left-radius: 25px;
-    border-right: solid;
-    border-top: solid;
     grid-template-areas:
         'tag'
         'c1'
         'c2'
         'c3';
     padding: 1em;
-    /* border: solid; */
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
@@ -166,6 +215,7 @@ const InnerContainerComp = styled.div`
 const InnerContainerComp2 = styled.div`
     display: grid;
     grid-area: kohort2;
+    margin: 0.5em;
     grid-template-columns: 20vw;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -187,6 +237,7 @@ const InnerContainerComp2 = styled.div`
 const InnerContainerComp3 = styled.div`
     display: grid;
     grid-area: kohort3;
+    margin: 0.5em;
     grid-template-columns: 20vw;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -263,7 +314,6 @@ const Comp3 = styled.div`
         margin-left: auto;
         margin-right: auto;
         padding: 1em;
-
     }
     :hover {
         cursor: pointer;

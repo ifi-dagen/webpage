@@ -1,6 +1,7 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+import Bedrifter from '../../data/bedrift_info.json'
+import { useHistory } from 'react-router-dom'
 import {
     Instagram,
     Webpage,
@@ -8,12 +9,35 @@ import {
     Zoom,
     Linkedin,
 } from '../../components/symbols'
-import EttermiddagenProgram from '../program/EttermiddagenProgram'
+import dayjs from 'dayjs'
 
-export const BedriftKomponent = ({ bedrift, setSelected }) => {
+
+
+export const BedriftKomponent = ({ setSelected, match }) => {
+
+    const [zoom, setZoom] = useState(null)
+    let now = `${dayjs().hour()}:${dayjs().minute()}`
+    console.log(typeof(dayjs().hour()));
+    console.log(dayjs().minute());
+    console.log(now);
+
     //Får fra bedrift kohort
+    const history = useHistory()
+    let bedrift = match.url.split('bedrift/')[1]
+    bedrift = Bedrifter.find((b) => b.name === bedrift)
+    window.scrollTo(0, 0);
 
-    console.log('BEDRIFT: ', bedrift)
+    useEffect(() => {
+    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
+
+        console.log("DENNE SKAL HA ZOOM");
+        setZoom(<Zoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
+    }
+        return () => {
+        }
+    }, [bedrift, now])
+
+
     if (bedrift) {
         return (
             <div
@@ -27,6 +51,17 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                 }}
             >
                 <Container>
+                    <GoBack >
+                        <i
+                            className="fas fa-arrow-left"
+                            onClick={() => {
+                                history.goBack()
+                            }}
+                        >
+                            <p><br></br>Program</p>
+                        </i>
+                        
+                    </GoBack>
                     <h3
                         style={{
                             gridArea: 'info',
@@ -49,8 +84,26 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                             padding: '1em',
                         }}
                     >
-                        <Zoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
+                        {zoom}
                     </div>
+                    <a
+                        style={{
+                            gridArea: 'liveMenti',
+                            padding: '1em',
+                        }}
+                        href={bedrift.mentiLive}
+                    >
+                        Se innsendte spørsmål her!
+                    </a>
+                    <a
+                        style={{
+                            gridArea: 'codeMenti',
+                            padding: '1em',
+                        }}
+                        href={'https://www.menti.com/'}
+                    >
+                        Noe du lurer på? Bruk koden {bedrift.mentiKode}
+                    </a>
 
                     <h2 style={{ gridArea: 'Title' }}>
                         {bedrift.descriptionTitle}
@@ -82,20 +135,12 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                         {bedrift.talkTitle}
                     </h2>
 
-                    <h3
-                        onClick={() => {
-                            setSelected('program')
-                            return <EttermiddagenProgram />
-                        }}
-                    >
-                        Tilbake til programmet...
-                    </h3>
-                     <p style={{ gridArea: 'Talk' }}>
+                    <div style={{ gridArea: 'Talk' }}>
                         {bedrift.talk.map((sentence) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
-                    </p>
-                    
+                    </div>
+
                     {/* <p style={{ gridArea: 'Competition' }}>
                         <h3>Konkurranse</h3>
                         <a href={bedrift.competition.link}>
@@ -116,11 +161,9 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
                     <div style={{ gridArea: 'Annonse' }}>
                         {bedrift.positions.map((position) => {
                             return (
-                                <p>
-                                    <a key={position} href={position.link}>
-                                        {position.name}
-                                    </a>
-                                </p>
+                                <a key={position} href={position.link}>
+                                    {position.name}
+                                </a>
                             )
                         })}
                     </div>
@@ -132,14 +175,34 @@ export const BedriftKomponent = ({ bedrift, setSelected }) => {
     }
 }
 
+const GoBack = styled.div`
+    grid-area: "button";
+ 
+    i {
+        margin: 0;
+        font-size: 30px;
+        :hover {
+            cursor: pointer;
+        }
+        p {
+            margin-block-start: 0;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+`
+
 const Container = styled.div`
     display: grid;
     grid-template-columns: 30% 5% 35% 30%;
     grid-template-rows: auto;
     grid-template-areas:
+        'button . . .'
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
+        'liveMenti . . .'
+        'codeMenti . . .'
         '. . Title Title'
         '. . Description Description'
         '. . TitleTalk TitleTalk'
@@ -147,24 +210,42 @@ const Container = styled.div`
         '. . Work Work'
         '. . Annonse Annonse';
 
+    img {
+        max-width: 400px;
+        max-height: 300px;
+        padding: 1em;
+    }
+
     @media screen and (max-width: 815px) {
-        grid-template-columns: 35vw 100vw;
-        grid-template-rows: auto auto auto auto 100vh;
+        grid-template-columns: 90vw;
+        grid-template-rows: auto;
+        padding: 1em;
+        margin-top: 1em;
         overflow-x: visible;
         grid-template-areas:
-            'info info'
-            'Logo SoMe'
-            '. Zoom '
-            'Competition Title '
-            'Competition Description'
-            'Questions Description'
-            '. Description'
-            '. Video'
-            '. TitleTalk'
-            '. Talk'
-            '. Work'
-            '.  Annonse';
+            'button'
+            'info'
+            'Logo '
+            'SoMe'
+            'Zoom '
+            'liveMenti'
+            'codeMenti'
+            'Title'
+            'Description'
+            'TitleTalk'
+            'Talk'
+            'Work'
+            'Annonse';
+
         p {
+            font-size: 1rem;
         }
+
+        img {
+            max-width: 200px;
+            max-height: 90px;
+            padding: 1em;
+        }
+        justify-items: center;
     }
 `
