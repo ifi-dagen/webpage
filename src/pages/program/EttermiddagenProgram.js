@@ -53,8 +53,13 @@ const Program = () => {
                     run={true}
                 />
                 <Countdown
-                    style={{ display: "flex", gridArea: 'countdown', alignItems: "center",
-                    justifyContent: "center"}}/>
+                    style={{
+                        display: 'flex',
+                        gridArea: 'countdown',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                    }}
+                />
                 <h1
                     style={{
                         gridArea: 'h1',
@@ -307,9 +312,10 @@ const Tag = styled.div`
     font-size: 1.2rem;
     border-radius: 25px;
     background-color: #cdb4db;
-    width: 15vw;
     text-align: center;
     color: snow;
+    width: 17vw;
+    margin: 0.5em;
 `
 
 export default Program
