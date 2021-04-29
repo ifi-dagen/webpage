@@ -6,10 +6,7 @@ import {
     Instagram,
     Webpage,
     Facebook,
-    Zoom,
     Linkedin,
-    Greenpurplezoom,
-    Bluegreenzoom,
     Bluepurplezoom,
 } from '../../components/symbols'
 import dayjs from 'dayjs'
@@ -20,9 +17,7 @@ export const BedriftKomponent = ({ setSelected, match }) => {
 
     const [zoom, setZoom] = useState(null)
     let now = `${dayjs().hour() - 1}:${dayjs().minute()}`
-    console.log(typeof(dayjs().hour()));
-    console.log(dayjs().minute());
-    console.log("HALLO",now);
+
 
     //Får fra bedrift kohort
     const history = useHistory()
