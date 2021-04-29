@@ -1,15 +1,12 @@
 [
-
     {
         "id": "Netcompany",
         "title": "Death By Powerpoint",
         "startTime": "13:00",
         "endTime": "13:30",
         "companyName": "Netcompany",
-        "about":
-            "Det er en epidemi ute og går - i tillegg til den som alle snakker om for tiden. Denne startet for 30 år siden. Med over 500 millioner brukere spres dødskjedelige presentasjoner som dreper kreativitet og engasjement. Hva er motgiften? Hvor er vaksinen?! I denne presentasjonen ser vi på 4 grunnleggende tiltak for motgiften til dødskjedelige presentasjoner, med praktiske eksempler du kan bruke neste gang du skal formidle noe.",
-        "link":
-            "https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09",
+        "about": "Det er en epidemi ute og går - i tillegg til den som alle snakker om for tiden. Denne startet for 30 år siden. Med over 500 millioner brukere spres dødskjedelige presentasjoner som dreper kreativitet og engasjement. Hva er motgiften? Hvor er vaksinen?! I denne presentasjonen ser vi på 4 grunnleggende tiltak for motgiften til dødskjedelige presentasjoner, med praktiske eksempler du kan bruke neste gang du skal formidle noe.",
+        "link": "https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09",
         "speaker": "Manager, Hans Kristian Rykkelid",
         "alt_tekst": ""
     },
@@ -19,26 +16,21 @@
         "startTime": "14:00",
         "endTime": "14:30",
         "companyName": "Bekk",
-        "about":
-            "Har du noen gang følt at oppgaven, ansvaret eller stillingen du har fått egentlig ikke burde blitt gitt deg? At du er redd for at 'noen' skal oppdage at du egentlig ikke er 'flink nok'? I denne talken skal du få en liten introduksjon til konseptet 'Impostor Syndrome'. En følelse som mange av oss (statistikk tilsier 70% i utviklerjobber), selv godt inn i arbeidslivet kjenner på. Vi skal snakke litt om symptomer, mekanismer og hvordan jobbe for å unngå det.",
-        "link":
-            "https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09",
+        "about": "Har du noen gang følt at oppgaven, ansvaret eller stillingen du har fått egentlig ikke burde blitt gitt deg? At du er redd for at 'noen' skal oppdage at du egentlig ikke er 'flink nok'? I denne talken skal du få en liten introduksjon til konseptet 'Impostor Syndrome'. En følelse som mange av oss (statistikk tilsier 70% i utviklerjobber), selv godt inn i arbeidslivet kjenner på. Vi skal snakke litt om symptomer, mekanismer og hvordan jobbe for å unngå det.",
+        "link": "https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09",
         "speaker": "",
         "alt_tekst": ""
     },
     {
         "id": "Accenture",
-        "title": "Foredrag av Accenture",
-  
+        "title": "Accenture Tech Vision",
+
         "startTime": "15:00",
         "endTime": "15:30",
         "companyName": "Accenture",
-        "about":
-            "Blockchain Technology",
-        "link":
-           "https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09",
-        "speaker": "Silje :)",
+        "about": "Lurer du på hvilke teknologitrender som blir viktig fremover? Accenture har identifisert teknologitrender som vil påvrike oss i årene fremover.",
+        "link": "https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09",
+        "speaker": "Therese Nilsson",
         "alt_tekst": ""
     }
 ]
-
