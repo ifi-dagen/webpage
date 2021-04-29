@@ -96,7 +96,7 @@ const Icon = styled.i`
 
 
 const Yellowbutton = styled.a`
-font-size: 2rem;
+font-size: 1.5rem;
 text-transform: uppercase;
 font-weight: 900;
 border-radius: 3.5rem / 100%;
@@ -114,7 +114,7 @@ padding: 1.25rem 2rem;
 `
 
 const Bluepurplebutton = styled.a`
-font-size: 2rem;
+font-size: 1.5rem;
 text-transform: uppercase;
 font-weight: 900;
 border-radius: 3.5rem / 100%;
@@ -133,7 +133,7 @@ padding: 1.25rem 2rem;
 
 
 const Bluegreenbutton = styled.a`
-font-size: 2rem;
+font-size: 1.5rem;
 text-transform: uppercase;
 font-weight: 900;
 border-radius: 3.5rem / 100%;
@@ -151,7 +151,7 @@ padding: 1.25rem 2rem;
 `
 
 const Greenpurplebutton = styled.a`
-font-size: 2rem;
+font-size: 1.5rem;
 text-transform: uppercase;
 font-weight: 900;
 border-radius: 3.5rem / 100%;
