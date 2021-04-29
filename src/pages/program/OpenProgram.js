@@ -15,16 +15,7 @@ const OpenProgram = () => {
                 minWidth: '640px',
             }}
         >
-             <h1
-                style={{
-                    fontSize: '3em',
-                    gridArea: 'Title',
-                    fontStyle: 'italic',
-                }}
-            >
-                Åpningsshow
-            </h1>
-      <Tag style={{ gridArea: 'Tag' }}>Åpningsshow 12:00-13:00</Tag>
+            <Tag style={{ gridArea: 'Tag' }}>Åpningsshow 12:00-13:00</Tag>
             <div
                 style={{
                     gridArea: 'Zoom',
@@ -33,28 +24,22 @@ const OpenProgram = () => {
                     alignItems: 'center',
                 }}
             >
-            <img
-                style={{
-                    gridArea: 'Picture',
-                    width: '400px',
-                    height: '400px',
-                }}
-                src={require('../../img/fredagsprat.png')}
-                alt=""
-            ></img>
-            <YellowZoom
-                style={{ gridArea: 'Zoom' }}
-                link={
-                    'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
-                }
-                text={'Se åpningsseremonien her'}
-            />
-
-            
-                
+                <YellowZoom
+                    link={
+                        'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
+                    }
+                    text={'Se åpningsshowet her!'}
+                />
             </div>
-          
-
+            <h1
+                style={{
+                    fontSize: '3em',
+                    gridArea: 'Title',
+                    fontStyle: 'italic',
+                }}
+            >
+                Åpningsshow
+            </h1>
             <p
                 style={{
                     fontSize: '1.5rem',
@@ -90,6 +75,15 @@ const OpenProgram = () => {
             </Konkurranse>
             <br />
 
+            <img
+                style={{
+                    gridArea: 'Picture',
+                    width: '400px',
+                    height: '400px',
+                }}
+                src={require('../../img/fredagsprat.png')}
+                alt=""
+            ></img>
         </Container>
     )
 }
@@ -100,13 +94,11 @@ const Container = styled.div`
     grid-template-columns: 15vw 15vw 15vw;
     grid-template-areas:
         'Tag . .'
-        '. . Picture'
-        '. Zoom .'
+        'Zoom Zoom Zoom'
         'Title Title . '
         'Description Description Description'
-        '. Competition  .';
-        
-
+        '. Competition  .'
+        '. . Picture';
         @media screen and (max-width: 815px) {
             grid-template-columns: auto;
             grid-template-areas:
@@ -116,12 +108,12 @@ const Container = styled.div`
             'Description'
             'Competition'
             'Picture';
-
             p{
-                font-size: 1rem,
-                font-weight: 200,
+                font-size: 1rem;
+                font-weight: 200;
             }
             justify-items:center;
+        }
            
 `
 
@@ -151,7 +143,6 @@ const Icon = styled.i`
     font-size: 3rem;
     color: black;
     transition: color 0.25s;
-
     ${Link}:hover & {
         color: deepskyblue;
     }
