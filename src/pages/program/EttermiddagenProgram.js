@@ -8,10 +8,10 @@ import OpenProgram from './OpenProgram'
 import End from './End'
 import './program.css'
 import { Link } from 'react-router-dom'
-
 import Countdown from '../../components/countdown'
 
 import Confetti from 'react-confetti'
+import dayjs from 'dayjs'
 
 const Program = () => {
     const [company, setCompany] = useState(null)
@@ -19,6 +19,7 @@ const Program = () => {
     const [selected, setSelected] = useState('program')
     const [confetti, setConfetti] = useState(null)
 
+    
     useEffect(() => {
         const toggleConfetti = () => {
             if (confetti === null) {

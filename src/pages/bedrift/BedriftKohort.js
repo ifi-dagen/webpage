@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import Bedrift from '../../data/bedrift_info.json'
 import { Link } from 'react-router-dom'
+import dayjs from 'dayjs'
 
 const importAll = (r) => {
     let logos = {}
@@ -10,6 +11,7 @@ const importAll = (r) => {
     })
     return logos
 }
+
 
 const logos = importAll(
     require.context('../../img/logoer', false, /\.(png|jpe?g|svg)$/)
@@ -32,6 +34,7 @@ const BedriftKohort = ({
     setCompany,
     kohort,
 }) => {
+
     const c1 = CompToObject(comp1)
     const c2 = CompToObject(comp2)
     const c3 = CompToObject(comp3)
