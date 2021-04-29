@@ -85,7 +85,7 @@ const peepsInfo = [
     {
         rolle: roller.underholdning,
         navn: 'Jessica Gierlach',
-        image: null,
+        image: 'JessicaGierlach.png',
     },
     {
         rolle: roller.sosialt,
