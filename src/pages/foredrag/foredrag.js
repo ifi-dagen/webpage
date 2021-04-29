@@ -108,12 +108,12 @@ const CompanyContainer = styled.div`
         
         @media screen and (max-width: 815px) {
             grid-template-columns: 50vw;
-            grid-template-rows:auto
+            grid-template-rows:auto;
             grid-template-areas:
-            'Time'
-            'Logo'
-            'Zoom'
-            'Description';
+                'Time'
+                'Logo'
+                'Zoom'
+                'Description';
 
             p{
                 font-size: 0.5rem,
