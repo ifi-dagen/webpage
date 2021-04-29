@@ -11,10 +11,10 @@ const App = () => (
         <Container>
             <Header
                 style={{ gridArea: 'header' }}
-                link1="\for-bedrift"
+                link1="/for-bedrift"
                 text1="Bedrifter"
                 text2="Om oss"
-                link2="\om-oss"
+                link2="/om-oss"
                 text3="FAQ"
                 link3="/studenter"
             />
