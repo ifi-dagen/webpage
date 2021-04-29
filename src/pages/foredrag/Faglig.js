@@ -64,7 +64,7 @@ const Faglig = () => {
                 >
                     <Talk>
                         <Tag>Foredrag 15:00-15:30</Tag>
-                        <h3>Superforedrag av accenture</h3>
+                        <h3>Accenture Tech Vision</h3>
                     </Talk>
                     <TalkComp>
                         <img
