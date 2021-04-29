@@ -11,7 +11,8 @@ import Styret from './components/styret'
 import Forening from './pages/forening/Forening'
 import Foredrag from './pages/foredrag/foredrag'
 import { BedriftKomponent } from './pages/bedrift/BedriftKomponent'
-
+import OpenProgram from "./pages/program/OpenProgram"
+import End from './pages/program/End'
 const alleBedrifter = ["Accenture", "Nav", "Fink", "Kolonial", "Netcompany", "NoA Ignite", "Bekk", "Cognite"]
 const alleForedrag = ["Netcompany", "Bekk", "Accenture"]
 
@@ -115,6 +116,28 @@ class Routes extends Component {
                     />
                     )
                 })}
+                <Route
+                        exact
+                        path={`/åpningsshow`}
+                        component={(prop) => (
+                            <OpenProgram
+                                {...prop}
+                                store={this.props.store}
+                                testmode={false}
+                            />
+                        )}
+                    />
+                    <Route
+                        exact
+                        path={`/quiz`}
+                        component={(prop) => (
+                            <End
+                                {...prop}
+                                store={this.props.store}
+                                testmode={false}
+                            />
+                        )}
+                    />
                 <Route
                     render={(prop) => (
                         <Error {...prop} store={this.props.store} />
