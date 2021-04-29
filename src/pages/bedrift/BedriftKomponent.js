@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Bedrifter from '../../data/bedrift_info.json'
 import { useHistory } from 'react-router-dom'
@@ -9,13 +9,34 @@ import {
     Zoom,
     Linkedin,
 } from '../../components/symbols'
+import dayjs from 'dayjs'
+
+
 
 export const BedriftKomponent = ({ setSelected, match }) => {
+
+    const [zoom, setZoom] = useState(null)
+    let now = `${dayjs().hour()}:${dayjs().minute()}`
+    console.log(typeof(dayjs().hour()));
+    console.log(dayjs().minute());
+    console.log(now);
+
     //Får fra bedrift kohort
     const history = useHistory()
     let bedrift = match.url.split('bedrift/')[1]
     bedrift = Bedrifter.find((b) => b.name === bedrift)
     window.scrollTo(0, 0);
+
+    useEffect(() => {
+    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
+
+        console.log("DENNE SKAL HA ZOOM");
+        setZoom(<Zoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
+    }
+        return () => {
+        }
+    }, [bedrift, now])
+
 
     if (bedrift) {
         return (
@@ -30,14 +51,16 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                 }}
             >
                 <Container>
-                    <GoBack style={{ gridArea: 'button' }}>
-                        <h3
+                    <GoBack >
+                        <i
+                            className="fas fa-arrow-left"
                             onClick={() => {
                                 history.goBack()
                             }}
                         >
-                            Tilbake til programmet...
-                        </h3>
+                            <p><br></br>Program</p>
+                        </i>
+                        
                     </GoBack>
                     <h3
                         style={{
@@ -61,7 +84,7 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                             padding: '1em',
                         }}
                     >
-                        <Zoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
+                        {zoom}
                     </div>
                     <a
                         style={{
@@ -153,10 +176,18 @@ export const BedriftKomponent = ({ setSelected, match }) => {
 }
 
 const GoBack = styled.div`
-    border: solid;
-    h3 {
+    grid-area: "button";
+ 
+    i {
+        margin: 0;
+        font-size: 30px;
         :hover {
             cursor: pointer;
+        }
+        p {
+            margin-block-start: 0;
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
         }
     }
 `
