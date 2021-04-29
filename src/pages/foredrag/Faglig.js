@@ -93,10 +93,10 @@ const InnerContainerEdu = styled.div`
     :hover {
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #a2d2ff;
+        background-color: #d2b7e5;
         cursor: pointer;
     }
-    
+
     padding: 1em;
     justify-items: center;
 

@@ -227,7 +227,6 @@ const InnerContainerComp2 = styled.div`
         'c2'
         'c3';
     padding: 1em;
-    /* border: solid; */
     background-color: #edf6f9;
     @media screen and (max-width: 815px) {
         grid-template-columns: 60vw;
@@ -273,8 +272,7 @@ const Comp1 = styled.div`
         cursor: pointer;
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #99c24d;
-        box-shadow: 1px 5px 5px;
+        background-color: #ffcb69;
     }
     border-radius: 1rem;
 `
@@ -297,8 +295,7 @@ const Comp2 = styled.div`
         cursor: pointer;
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #f18f01;
-        box-shadow: 1px 5px 5px;
+        background-color: #b7e4c7;
     }
     border-radius: 1rem;
 `
@@ -320,8 +317,7 @@ const Comp3 = styled.div`
         cursor: pointer;
         opacity: 1;
         transition: 0.5s ease;
-        background-color: #23b5d3;
-        box-shadow: 1px 5px 5px;
+        background-color: #f8ad9d;
     }
     border-radius: 1rem;
 `
