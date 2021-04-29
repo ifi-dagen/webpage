@@ -96,8 +96,24 @@ const InnerContainerEdu = styled.div`
         background-color: #a2d2ff;
         cursor: pointer;
     }
+    
     padding: 1em;
     justify-items: center;
+
+    @media screen and (max-width: 815px) {
+        grid-template-columns: 90vw;
+        grid-template-rows: 80vh;
+        margin-top: 1rem;
+        width: 50vw;
+        margin: 1em;
+        height: auto;
+
+        p {
+            font-size: 1rem;
+        }
+
+        justify-items: start;
+    }
 `
 
 const Tag = styled.div`
@@ -107,6 +123,9 @@ const Tag = styled.div`
     width: 15vw;
     text-align: center;
     color: snow;
+    @media screen and (max-width: 815px) {
+        width: 52vw;
+    }
 `
 
 const Talk = styled.div`

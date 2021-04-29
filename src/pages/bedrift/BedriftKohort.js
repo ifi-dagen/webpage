@@ -38,7 +38,7 @@ const BedriftKohort = ({
     if (kohort === 1) {
         return (
             <InnerContainerComp>
-                <Tag>Bedriftstander fra 13:00-14:00</Tag>
+                <Tag>Stander 13:00-14:00</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -90,7 +90,7 @@ const BedriftKohort = ({
                 {/* <Time>
                     {c1.standtime[0]} -{c1.standtime[1]}
                 </Time> */}
-                <Tag>Bedriftstander fra 14:00-15:00</Tag>
+                <Tag>Stander 14:00-15:00</Tag>
                 <Comp1
                     onClick={() => {
                         setCompany(c1)
@@ -138,7 +138,7 @@ const BedriftKohort = ({
     } else if (kohort === 3) {
         return (
             <InnerContainerComp3>
-                <Tag>Bedriftstander fra 15:00-16:00</Tag>
+                <Tag>Stander 15:00-16:00</Tag>
 
                 <Comp1
                     onClick={() => {
@@ -181,11 +181,14 @@ const Tag = styled.div`
     font-size: 1.2rem;
     border-radius: 25px;
     background-color: #ff6b6b;
-    width: 20vw;
+    width: 15vw;
+    height: 1.5rem;
     text-align: center;
     color: snow;
-    grid-area: 'tag';
-    height: 1.4rem;
+    @media screen and (max-width: 815px) {
+        width: 52vw;
+        margin: 1em;
+    }
 `
 
 const InnerContainerComp = styled.div`
@@ -207,6 +210,7 @@ const InnerContainerComp = styled.div`
         grid-template-columns: 60vw;
         padding: 0;
     }
+    padding: 1em;
 `
 
 const InnerContainerComp2 = styled.div`
