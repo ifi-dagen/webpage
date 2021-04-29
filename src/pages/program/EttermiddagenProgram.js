@@ -53,8 +53,8 @@ const Program = () => {
                     run={true}
                 />
                 <Countdown
-                    style={{ gridArea: 'countdown', justifySelf: 'center' }}
-                />
+                    style={{ display: "flex", gridArea: 'countdown', alignItems: "center",
+                    justifyContent: "center"}}/>
                 <h1
                     style={{
                         gridArea: 'h1',
