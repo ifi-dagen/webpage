@@ -24,13 +24,13 @@ export const BedriftKomponent = ({ match }) => {
     window.scrollTo(0, 0)
 
     useEffect(() => {
-    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
-
-        console.log("DENNE SKAL HA ZOOM");
-        setZoom(<Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
-    }
-        return () => {
+        if (bedrift.standtime[0].split(':')[0] === now.split(':')[0]) {
+            console.log('DENNE SKAL HA ZOOM')
+            setZoom(
+                <Bluepurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />
+            )
         }
+        return () => {}
 
         return () => {}
     }, [bedrift, now])
@@ -147,20 +147,6 @@ export const BedriftKomponent = ({ match }) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </div>
-
-                    {/* <p style={{ gridArea: 'Competition' }}>
-                        <h3>Konkurranse</h3>
-                        <a href={bedrift.competition.link}>
-                            {bedrift.competition.text}
-                        </a>
-                    </p>  */}
-
-                    {/* <div style={{ gridArea: 'Questions' }}>
-                        <h3>5 raske</h3>
-                        {bedrift.answer.map((answer) => {
-                            return <p key={answer}>{answer}</p>
-                        })}
-                    </div> */}
 
                     <h3 style={{ gridArea: 'Work' }}>
                         {bedrift.positionTitle}
