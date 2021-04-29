@@ -1,14 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-
+import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import foredrag_info from '../../data/foredrag_info.json'
 
 const Foredrag = ({ match }) => {
     let foredrag = match.url.split('foredrag/')[1]
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
     foredrag = foredrag_info.find((f) => f.id === foredrag)
     const history = useHistory()
+    const [video, setVideo] = useState(null)
+
+    useEffect(() => {
+        if (foredrag.video !== '') {
+            setVideo(
+                <ReactPlayer
+                    playing
+                    url={require('../../img/video/' + foredrag.video)}
+                    style={{
+                        gridArea: 'Video',
+                        justifySelf: 'center',
+                        paddingBottom: '2em',
+                    }}
+                />
+            )
+        }
+
+        return () => {}
+    }, [foredrag])
+
     return (
         <div
             style={{
@@ -61,6 +81,8 @@ const Foredrag = ({ match }) => {
                     </h1>{' '}
                     {foredrag.about}
                 </About>
+
+                {video}
             </CompanyContainer>
         </div>
     )
@@ -73,7 +95,8 @@ const CompanyContainer = styled.div`
     grid-template-areas:
         'Time . . Logo'
         '. Zoom Zoom  .'
-        'Description Description Description Description';
+        'Description Description Description Description'
+        'Video Video Video Video';
         
         @media screen and (max-width: 815px) {
             grid-template-columns: 50vw;

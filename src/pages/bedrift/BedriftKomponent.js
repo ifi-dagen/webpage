@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Bedrifter from '../../data/bedrift_info.json'
 import { useHistory } from 'react-router-dom'
+import ReactPlayer from 'react-player'
 import {
     Instagram,
     Webpage,
@@ -11,32 +12,47 @@ import {
 } from '../../components/symbols'
 import dayjs from 'dayjs'
 
-
-
-export const BedriftKomponent = ({ setSelected, match }) => {
-
+export const BedriftKomponent = ({ match }) => {
     const [zoom, setZoom] = useState(null)
     let now = `${dayjs().hour(15)}:${dayjs().minute()}`
-    console.log(typeof(dayjs().hour()));
-    console.log(dayjs().minute());
-    console.log("HALLLOOOOO", now);
+    const [video, setVideo] = useState(null)
 
     //Får fra bedrift kohort
     const history = useHistory()
     let bedrift = match.url.split('bedrift/')[1]
     bedrift = Bedrifter.find((b) => b.name === bedrift)
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0)
 
     useEffect(() => {
-    if (bedrift.standtime[0].split(":")[0] === now.split(":")[0]) {
-
-        console.log("DENNE SKAL HA ZOOM");
-        setZoom(<Greenpurplezoom link={bedrift.zoom} text={'Møt oss på Zoom!'} />)   
-    }
-        return () => {
+        if (bedrift.standtime[0].split(':')[0] === now.split(':')[0]) {
+            setZoom(
+                <Greenpurplezoom
+                    link={bedrift.zoom}
+                    text={'Møt oss på Zoom!'}
+                />
+            )
         }
+
+        return () => {}
     }, [bedrift, now])
 
+    useEffect(() => {
+        if (bedrift.video !== '') {
+            setVideo(
+                <ReactPlayer
+                    playing
+                    url={require('../../img/video/' + bedrift.video)}
+                    style={{
+                        gridArea: 'Video',
+                        justifySelf: 'center',
+                        paddingBottom: '2em',
+                    }}
+                />
+            )
+        }
+
+        return () => {}
+    }, [bedrift])
 
     if (bedrift) {
         return (
@@ -51,16 +67,17 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                 }}
             >
                 <Container>
-                    <GoBack >
+                    <GoBack>
                         <i
                             className="fas fa-arrow-left"
                             onClick={() => {
                                 history.goBack()
                             }}
                         >
-                            <p><br></br>Program</p>
+                            <p>
+                                <br></br>Program
+                            </p>
                         </i>
-                        
                     </GoBack>
                     <h3
                         style={{
@@ -113,16 +130,7 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                             return <p key={sentence}>{sentence}</p>
                         })}
                     </p>
-                    {/* <ReactPlayer
-                        url={bedrift.video}
-                        // width="426px"
-                        // height="240px"
-                        style={{
-                            gridArea: 'Video',
-                            justifySelf: 'center',
-                            paddingBottom: '2em',
-                        }}
-                    /> */}
+                    {video}
 
                     <div style={{ gridArea: 'SoMe' }}>
                         <Facebook link={bedrift.facebook} />
@@ -176,8 +184,8 @@ export const BedriftKomponent = ({ setSelected, match }) => {
 }
 
 const GoBack = styled.div`
-    grid-area: "button";
- 
+    grid-area: 'button';
+
     i {
         margin: 0;
         font-size: 30px;
@@ -205,6 +213,7 @@ const Container = styled.div`
         'codeMenti . . .'
         '. . Title Title'
         '. . Description Description'
+        '. Video Video Video'
         '. . TitleTalk TitleTalk'
         '. . Talk Talk'
         '. . Work Work'
