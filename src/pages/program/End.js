@@ -1,5 +1,5 @@
 import React from 'react'
-import { Zoom } from '../../components/symbols'
+import { YellowZoom } from '../../components/symbols'
 import styled from 'styled-components'
 
 const End = () => {
@@ -20,18 +20,11 @@ const End = () => {
                 style={{
                     gridArea: 'Zoom',
                     padding: '1em',
-                    justifySelf: 'center',
+                    justifySelf: 'left',
                 }}
             >
-                <Zoom
-                    link={
-                        'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
-                    }
-                    text={'Bli med på kahoot her!'}
-                />
-            </div>
-
-            <h1
+               
+               <h1
                 style={{
                     fontSize: '3em',
                     gridArea: 'Title',
@@ -40,6 +33,16 @@ const End = () => {
             >
                 Kahoot
             </h1>
+
+                <YellowZoom
+                    link={
+                        'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
+                    }
+                    text={'Bli med på kahoot her!'}
+                />
+            </div>
+
+           
 
             <p
                 style={{
@@ -89,7 +92,7 @@ const End = () => {
 const Container = styled.div`
     padding: 3em;
     display: grid;
-    grid-template-columns: 15vw 15vw 15vw;
+    grid-template-columns: 15vw 15vw 15vw 15vw;
     grid-template-areas:
         'Tag . .'
         'Zoom Zoom Zoom'
@@ -99,6 +102,7 @@ const Container = styled.div`
         'Thanks Thanks Thanks';
 
         @media screen and (max-width: 815px) {
+            justify-items:center;
             grid-template-columns: auto;
             grid-template-areas:
             'Tag'
@@ -109,10 +113,10 @@ const Container = styled.div`
             'Thanks';
 
             p{
-                font-size: 1rem,
-                font-weight: 200,
+                font-size: 1rem;
+                font-weight: 200;
             }
-            justify-items:center;
+        }
            
 `
 
@@ -120,15 +124,12 @@ const Konkurranse = styled.div`
     border-radius: 50%;
     background-color: snow;
     justify-self: center;
-
     width: 400px;
     height: 400px;
-
     h1 {
         font-style: italic;
         color: #cdb4db;
     }
-
     p {
         font-size: 1.5rem;
         font-weight: 400;

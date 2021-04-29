@@ -1,5 +1,5 @@
 import React from 'react'
-import { Zoom } from '../../components/symbols'
+import { YellowZoom } from '../../components/symbols'
 import styled from 'styled-components'
 
 const OpenProgram = () => {
@@ -24,7 +24,7 @@ const OpenProgram = () => {
                     alignItems: 'center',
                 }}
             >
-                <Zoom
+                <YellowZoom
                     link={
                         'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
                     }
@@ -94,12 +94,11 @@ const Container = styled.div`
     grid-template-columns: 15vw 15vw 15vw;
     grid-template-areas:
         'Tag . .'
-        '. Zoom .'
+        'Zoom Zoom Zoom'
         'Title Title . '
         'Description Description Description'
         '. Competition  .'
         '. . Picture';
-
         @media screen and (max-width: 815px) {
             grid-template-columns: auto;
             grid-template-areas:
@@ -109,12 +108,12 @@ const Container = styled.div`
             'Description'
             'Competition'
             'Picture';
-
             p{
-                font-size: 1rem,
-                font-weight: 200,
+                font-size: 1rem;
+                font-weight: 200;
             }
             justify-items:center;
+        }
            
 `
 
@@ -144,7 +143,6 @@ const Icon = styled.i`
     font-size: 3rem;
     color: black;
     transition: color 0.25s;
-
     ${Link}:hover & {
         color: deepskyblue;
     }

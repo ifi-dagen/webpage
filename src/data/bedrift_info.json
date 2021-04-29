@@ -2,7 +2,14 @@
     {
         "name": "Accenture",
         "standtime": ["12:00", "13:00"],
-        "description": [],
+        "descriptionTitle": "Hvem er vi?",
+        "description": [
+            "Accenture er et ledende globalt konsulentselskap som leverer tjenester innen strategi, rådgivning, digitalisering, teknologi og outsourcing. Med over 1100 ansatte i Norge skal vi sammen med kundene våre få samfunnet til fungere bedre, slik at mennesker som lever der får det bedre. Vi kommer fra varierte bakgrunner, men jobber sammen. Med allsidigheten dette fører til, skal vi løse de største utfordringene selskaper, organisasjoner og etater står overfor. Dette gjør vi med entusiasme, kunnskap, innsikt og de aller siste og beste teknologiske løsningene.",
+
+            "Vi har et bredt spekter av innovative verktøy, en læringskurve som aldri stanser og et globalt nettverk som gir oss verden av erfaringer å høste av. Vi holder oss alltid i forkant; vi skaper endringer over alt.",
+
+            "Accenture verdsetter mangfold og oppfordrer folk med ulik bakgrunn, kjønn, alder, etnisitet, kultur, nasjonalitet, religion og livssyn, funksjonshemming, seksuell orientering og kjønnsidentitet om å søke. Vi jobber kontinuerlig for å skape et inkluderende arbeidsmiljø som aktivt omfavner og utnytter mangfoldet i organisasjonen. Vi vil gjerne invitere deg til å bli en del av dette mangfoldet!"
+        ],
         "logo": "Accenture.png",
         "website": "https://www.accenture.com/no-en",
         "video": "",
@@ -11,7 +18,7 @@
         "facebook": "https://www.facebook.com/accenture",
         "linkedin": "https://www.linkedin.com/company/accenture/",
         "answer": [],
-        "talkTitle": "Møt Christoffer, Jens, Sindre og Mathilde på stand!",
+        "talkTitle": "Møt utviklerne Christoffer, Jens og Sindre og UX-desgineren Mathilde på stand hos Accenture!",
         "talk": [],
         "mentiLive": "https://www.mentimeter.com/s/92ba5ac6cef43e8369dc3fc38d8b4b1d/4fc7d5f87e5a",
         "mentiKode": "55 91 10 4",
