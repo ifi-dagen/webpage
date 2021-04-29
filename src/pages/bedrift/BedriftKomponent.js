@@ -65,7 +65,6 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                     <a
                         style={{
                             gridArea: 'liveMenti',
-                            justifySelf: 'center',
                             padding: '1em',
                         }}
                         href={bedrift.mentiLive}
@@ -75,7 +74,6 @@ export const BedriftKomponent = ({ setSelected, match }) => {
                     <a
                         style={{
                             gridArea: 'codeMenti',
-                            justifySelf: 'center',
                             padding: '1em',
                         }}
                         href={'https://www.menti.com/'}
@@ -171,8 +169,8 @@ const Container = styled.div`
         'info info info info'
         'Logo Logo Logo SoMe'
         '. Zoom Zoom Zoom'
-        '. liveMenti liveMenti liveMenti'
-        '. codeMenti codeMenti codeMenti'
+        'liveMenti . . .'
+        'codeMenti . . .'
         '. . Title Title'
         '. . Description Description'
         '. . TitleTalk TitleTalk'
@@ -198,6 +196,8 @@ const Container = styled.div`
             'Logo '
             'SoMe'
             'Zoom '
+            'liveMenti'
+            'codeMenti'
             'Title'
             'Description'
             'TitleTalk'
