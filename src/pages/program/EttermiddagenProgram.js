@@ -60,17 +60,16 @@ const Program = () => {
                         justifyContent: 'center',
                     }}
                 />
-                <h1
+                <Title
                     style={{
-                        gridArea: 'h1',
+                        gridArea: 'Title',
                         justifySelf: 'center',
                         textAlign: 'center',
                         color: 'black',
-                        fontSize: '50px',
                     }}
                 >
                     Velkommen til digital ettermiddagen@ifi
-                </h1>
+                </Title>
                 <h2
                     style={{
                         gridArea: 'h2',
@@ -164,8 +163,6 @@ const Program = () => {
                 <Open
                     style={{
                         gridArea: 'end',
-                        marginLeft: 'auto',
-                        marginRight: 'auto',
                     }}
                 >
                     <Link
@@ -213,7 +210,7 @@ const Container = styled.div`
     grid-template-rows: 10vh 20vh 27vh 10vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh 47vh 9vh;
     grid-template-areas:
         'countdown countdown countdown'
-        'h1 h1 h1'
+        'Title Title Title'
         'h2 h2 h2'
         'h3 h3 h3'
         '. time .'
@@ -232,9 +229,12 @@ const Container = styled.div`
     @media screen and (max-width: 815px) {
         grid-template-columns: 100vw;
         grid-template-columns: 35vw 35vw;
-        grid-template-rows: 20vh 9vh 30vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 20vh 60vh 9vh 30vh 9vh;
+        grid-template-rows: 10vh 20vh 33vh 10vh 9vh 30vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 30vh 60vh 9vh 35vh 9vh;
         grid-template-areas:
-            'overskrift overskrift'
+            'countdown countdown'
+            'Title Title'
+            'h2 h2'
+            'h3 h3'
             ' time . '
             ' split open'
             ' time1 . '
@@ -253,12 +253,14 @@ const Container = styled.div`
         h2,
         h3 {
             font-size: 1rem;
+            text-align: center;
+            justify-self: center;
         }
-        padding: 0;
+        margin: 2.2em;
 
         img {
             display: block;
-            max-width: 200px;
+            max-width: 150px;
             max-height: 45px;
             width: auto;
             height: auto;
@@ -267,6 +269,15 @@ const Container = styled.div`
             margin-right: auto;
             padding: 1em;
         }
+        justify-items: center;
+    }
+`
+
+const Title = styled.div`
+    font-size: 3em;
+    font-weight: bold;
+    @media screen and (max-width: 815px) {
+        font-size: 2em;
     }
 `
 
@@ -293,7 +304,7 @@ const Time = styled.div`
 const Open = styled.div`
     background-color: #edf6f9;
     height: auto;
-    width: 22vw;
+    width: 20vw;
     margin: 0.5em;
 
     border-bottom-left-radius: 25px;
@@ -306,6 +317,22 @@ const Open = styled.div`
         background-color: #b7e4c7;
         cursor: pointer;
     }
+    padding: 1em;
+
+    @media screen and (max-width: 815px) {
+        grid-template-columns: 90vw;
+        grid-template-rows: 80vh;
+        margin-top: 1rem;
+        width: 50vw;
+        margin: 1em;
+        height: auto;
+
+        p {
+            font-size: 1rem;
+        }
+
+        justify-items: start;
+    }
 `
 
 const Tag = styled.div`
@@ -314,8 +341,13 @@ const Tag = styled.div`
     background-color: #cdb4db;
     text-align: center;
     color: snow;
-    width: 17vw;
+    width: 15vw;
     margin: 0.5em;
+    @media screen and (max-width: 815px) {
+        width: 55vw;
+        font-size: 1.1rem;
+        justify-self: center;
+    }
 `
 
 export default Program
