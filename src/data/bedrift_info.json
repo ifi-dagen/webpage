@@ -1,13 +1,14 @@
 [
     {
         "name": "Accenture",
-        "standtime": ["12:00", "13:00"],
+        "standtime": [
+            "12:00",
+            "13:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Accenture er et ledende globalt konsulentselskap som leverer tjenester innen strategi, rådgivning, digitalisering, teknologi og outsourcing. Med over 1100 ansatte i Norge skal vi sammen med kundene våre få samfunnet til fungere bedre, slik at mennesker som lever der får det bedre. Vi kommer fra varierte bakgrunner, men jobber sammen. Med allsidigheten dette fører til, skal vi løse de største utfordringene selskaper, organisasjoner og etater står overfor. Dette gjør vi med entusiasme, kunnskap, innsikt og de aller siste og beste teknologiske løsningene.",
-
             "Vi har et bredt spekter av innovative verktøy, en læringskurve som aldri stanser og et globalt nettverk som gir oss verden av erfaringer å høste av. Vi holder oss alltid i forkant; vi skaper endringer over alt.",
-
             "Accenture verdsetter mangfold og oppfordrer folk med ulik bakgrunn, kjønn, alder, etnisitet, kultur, nasjonalitet, religion og livssyn, funksjonshemming, seksuell orientering og kjønnsidentitet om å søke. Vi jobber kontinuerlig for å skape et inkluderende arbeidsmiljø som aktivt omfavner og utnytter mangfoldet i organisasjonen. Vi vil gjerne invitere deg til å bli en del av dette mangfoldet!"
         ],
         "logo": "Accenture.png",
@@ -21,19 +22,21 @@
         "talkTitle": "Møt utviklerne Christoffer, Jens og Sindre og UX-desgineren Mathilde på stand hos Accenture!",
         "talk": [],
         "mentiLive": "https://www.mentimeter.com/s/92ba5ac6cef43e8369dc3fc38d8b4b1d/4fc7d5f87e5a",
-        "mentiKode": "55 91 10 4",
-
+        "mentiKode": "5591 104",
         "positions": [
             {
-                "name": "Interssert i Accenture? Vis interesse her så ser vi gjennom til høsten når nye åpninger kommer opp",
-                "link": "poption.events/5028"
+                "name": "Interessert i å jobbe for Accenture? Vis interesse på Poption så ser vi gjennom til høsten når vi utlyser nye stillinger.",
+                "link": "https://poption.events/5028"
             }
         ],
         "competition": {}
     },
     {
         "name": "Nav",
-        "standtime": ["12:00", "13:00"],
+        "standtime": [
+            "12:00",
+            "13:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Vi leverer løsninger til 2.8 millioner mennesker, og utvikler kjernesystemene i et av verdens beste velferdssamfunn med moderne teknologi. Vi er midt i en omfattende digital transformasjon som krever nye veier til mål, og i dette arbeidet er IT-avdelingen i NAV kjent for å gå foran og bane vei innenfor vårt fagområde.",
@@ -56,13 +59,17 @@
         ],
         "mentiLive": "https://www.mentimeter.com/s/6a9a03cfb367b6ad3e59c4096adfc743/e03d71279d5e",
         "mentiKode": "4607 1287",
-
-        "positions": [{}],
+        "positions": [
+            {}
+        ],
         "competition": {}
     },
     {
         "name": "Fink",
-        "standtime": ["12:00", "13:00"],
+        "standtime": [
+            "12:00",
+            "13:00"
+        ],
         "description": [],
         "logo": "fink.svg",
         "website": "https://www.fink.no",
@@ -93,10 +100,12 @@
             "link": ""
         }
     },
-
     {
         "name": "Oda",
-        "standtime": ["14:00", "15:00"],
+        "standtime": [
+            "14:00",
+            "15:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Oda is a company on the move. We built Norway’s leading online grocery store and now we want to share what we’ve created with the world! Delivering a huge range of high-quality, affordable groceries and fresh produce to millions of doorsteps is a complex process, but we believe we’ve cracked the code. Using data-driven methodology, with a focus on sustainability all the way along the chain, we are building the most efficient retail system in the world. With solid backing from some of the biggest international investors in the world, we’re proud to be one of the fastest growing companies in Europe."
@@ -107,26 +116,29 @@
         "instagram": "https://www.instagram.com/kolonial.no/",
         "facebook": "https://www.facebook.com/oda.norge",
         "linkedin": "https://www.linkedin.com/company/careersoda/",
+        "rekruttlink": "https://www.linkedin.com/in/henjahubertlakhmari/",
+        "rekruttekst": "Legg gjerne til Oda's rekrutterer Henja Hübert Lakhmari til på Linkedin. ",
         "answer": [],
         "talkTitle": "Møt Henja, Martin og Marie på stand!!",
         "talk": [],
         "mentiLive": "https://www.mentimeter.com/s/8b9637e7fe9f9a3cc2174616c8c16b86/2e7969ce25d0",
         "mentiKode": "6732 6514",
-
-        "positions": [{}],
+        "positions": [
+            {}
+        ],
         "competition": {}
     },
     {
         "name": "Netcompany",
-        "standtime": ["14:00", "15:00"],
+        "standtime": [
+            "14:00",
+            "15:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Netcompany er et av Nord Europas raskest voksende IT-konsulentselskaper, og kan vise til en bred og variert prosjektportefølje. Netcompany har blant annet utviklet den nye Smittestopp-appen, og er i gang med flere store og spennende prosjekter i Norge der de tar totalansvaret for prosjektet. For eksempel jobber Netcompany nå med utvikling av ny digital plattform for Legemiddelverket og for barnevernet i Norge, og er med det med på å sikre at Norges innbyggere har tilgang på og mottar trygge legemidler, og at barn og familier i sårbare situasjoner får den hjelpen de trenger.",
-
             "Netcompany ønsker å satse på nyutdannede IT-talenter og har et godt miljø for faglig og personlig utvikling. Først og fremst fordi man jobber i team sammen med dyktige kolleger man kan lære av, men også gjennom Netcompany Academy, som er deres eget karriereutviklingsprogram som følger deg gjennom hele din karriere, og sørger for at du får kurs og oppfølging knyttet til de ulike retningene du kan gå.",
-
             "Ønsker du å bli fulgt opp for tips om karrieremuligheter i Netcompany? Legg til Julie Bjørgen Sandvik på LinkedIn med meldingen «ettermiddage@ifi».",
-
             "Hans Krisitan Rykkelid holder foredraget Death By Powerpoint kl. 13:00"
         ],
         "logo": "Netcompany.png",
@@ -136,6 +148,8 @@
         "instagram": "https://www.instagram.com/netcompanynorge/",
         "facebook": "https://www.facebook.com/netcompanynorge",
         "linkedin": "https://www.linkedin.com/company/netcompany-a-s/",
+        "rekruttlink": "https://www.linkedin.com/in/julie-bjørgen-sandvik-9386aab2/ ",
+        "rekruttekst": "Legg gjerne til Netcompany's rekrutterer Julie Bjørgen Sandvik til på Linkedin. ",
         "answer": [],
         "talkTitle": "Vi vil snakke med deg!",
         "talk": [
@@ -151,12 +165,17 @@
         ],
         "mentiLive": "https://www.mentimeter.com/s/4bfba8830b31eae5e91a957bbc94d80d/b8d1e8f8778e",
         "mentiKode": "6732 6514",
-        "positions": [{}],
+        "positions": [
+            {}
+        ],
         "competition": {}
     },
     {
         "name": "NoA Ignite",
-        "standtime": ["14:00", "15:00"],
+        "standtime": [
+            "14:00",
+            "15:00"
+        ],
         "description": [],
         "logo": "NoA_Ignite.png",
         "website": "https://www.noaignite.no",
@@ -185,7 +204,10 @@
     },
     {
         "name": "Bekk",
-        "standtime": ["15:00", "16:00"],
+        "standtime": [
+            "15:00",
+            "16:00"
+        ],
         "descriptionTitle": "Hvem er vi?",
         "description": [
             "Bekk er et norsk selskap med snart 500 spesialister innen strategi, design og teknologi. Vi jobber med virksomheter som har ambisiøse mål og gir oss krevende utfordringer. Vi tror på smart bruk av teknologi, tverrfaglige team og evnen til å tenke annerledes. Det gjør oss i stand til å lage løsninger som utfordrer etablerte sannheter, og skape nye muligheter for våre kunder."
@@ -207,13 +229,17 @@
         ],
         "mentiLive": "https://www.mentimeter.com/s/2abbd877e909e3f4a6c05d4d87d639ef/929bc2aeeb61",
         "mentiKode": "1112 4558",
-
-        "positions": [{}],
+        "positions": [
+            {}
+        ],
         "competition": {}
     },
     {
         "name": "Cognite",
-        "standtime": ["15:00", "16:00"],
+        "standtime": [
+            "15:00",
+            "16:00"
+        ],
         "description": [],
         "logo": "cognite.png",
         "website": "https://www.cognite.com",
@@ -222,13 +248,19 @@
         "instagram": "https://www.instagram.com/cognitedata/",
         "facebook": "https://www.facebook.com/CogniteData",
         "linkedin": "https://www.linkedin.com/company/cognitedata/",
+        "rekruttlink": "https://www.linkedin.com/in/linewestergaard/ ",
+        "rekruttekst": "Legg gjerne til Cognite's rekrutterer Line Westergaard på Linkedin. ",
         "answer": [],
         "talkTitle": "Vi vil snakke med deg!",
         "talk": [],
         "mentiLive": "https://www.mentimeter.com/s/268275514c64e4e678d48f411c6e2436/961c3f5a8ab4",
-        "mentiKode": "87 59 05 1",
-
-        "positions": [{}],
+        "mentiKode": "8759 051",
+        "positions": [
+            {
+                "name": "Cognite + Statnett Summer Internship 2021",
+                "link": "https://apply.workable.com/cognite/j/602ED04260/"
+            }
+        ],
         "competition": {}
     }
 ]
