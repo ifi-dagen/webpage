@@ -17,15 +17,15 @@ const Program = () => {
     const [talk, setTalk] = useState(null)
     const [selected, setSelected] = useState('program')
     const [confetti, setConfetti] = useState(null)
-
+    
     
     useEffect(() => {
         const toggleConfetti = () => {
             if (confetti === null) {
                 setConfetti(
                     <Confetti
-                        width={'2000'}
-                        height={'3300'}
+                        width={window.innerWidth }
+                        height={window.innerHeight}
                         numberOfPieces={'100'}
                         recycle={false}
                         run={true}
@@ -46,8 +46,8 @@ const Program = () => {
         return (
             <Container>
                 <Confetti
-                    width={'2000'}
-                    height={'2000'}
+                    width={window.innerWidth }
+                    height={window.innerHeigth }
                     numberOfPieces={'100'}
                     recycle={false}
                     run={true}
