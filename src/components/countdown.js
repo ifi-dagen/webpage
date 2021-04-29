@@ -9,17 +9,17 @@ const Countdown = () => {
     useEffect(() => {
             const interval = setInterval(() => {
             const now = dayjs()
-            const ettermiddagen = dayjs('2021-04-30T12:00:00.000Z')
+            const ettermiddagen = dayjs('2021-04-30T15:00:00.000Z')
 
             const total =  ettermiddagen - now
             const seconds = Math.floor((total/1000) %60)
             const minutes = Math.floor((total/1000/60) %60)
             const hours = Math.floor((total/(1000*60*60)) %24)
-            const days = Math.floor(total/(1000*60*60*24))
+            
 
             
             setDate(prev => {
-                return `${days} dager ${hours} timer ${minutes} minutter ${seconds} sekunder`
+                return ` ${hours}t ${minutes}m ${seconds}s`
             })
         },1000)
 
@@ -32,7 +32,9 @@ const Countdown = () => {
         justifyContent: "center"}}>
 
             <div>
-                <Number>{date}</Number>
+                
+                <Number>Ettermiddagen skjer nå! {date}</Number>
+                
             </div>
         </div>
     )
@@ -41,8 +43,10 @@ const Countdown = () => {
 }
 
 const Number = styled.p`
-    font-size: 1.5rem;
-    color: rgba(253, 120, 140, 1);
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #99d98c;
     margin: 0;    
 `
 

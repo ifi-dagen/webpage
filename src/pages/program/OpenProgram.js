@@ -16,6 +16,15 @@ const OpenProgram = () => {
             }}
         >
             <Tag style={{ gridArea: 'Tag' }}>Åpningsshow 12:00-13:00</Tag>
+            <img
+                style={{
+                    gridArea: 'Picture',
+                    width: '400px',
+                    height: '400px',
+                }}
+                src={require('../../img/fredagsprat.png')}
+                alt=""
+            ></img>
             <div
                 style={{
                     gridArea: 'Zoom',
@@ -75,15 +84,7 @@ const OpenProgram = () => {
             </Konkurranse>
             <br />
 
-            <img
-                style={{
-                    gridArea: 'Picture',
-                    width: '400px',
-                    height: '400px',
-                }}
-                src={require('../../img/fredagsprat.png')}
-                alt=""
-            ></img>
+            
         </Container>
     )
 }
@@ -94,20 +95,22 @@ const Container = styled.div`
     grid-template-columns: 15vw 15vw 15vw;
     grid-template-areas:
         'Tag . .'
+        '. Picture .'
         'Zoom Zoom Zoom'
         'Title Title . '
         'Description Description Description'
         '. Competition  .'
-        '. . Picture';
+        ;
         @media screen and (max-width: 815px) {
             grid-template-columns: auto;
             grid-template-areas:
             'Tag'
+            'Picture'
             'Zoom'
             'Title'
             'Description'
             'Competition'
-            'Picture';
+            ;
             p{
                 font-size: 1rem;
                 font-weight: 200;
