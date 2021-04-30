@@ -75,7 +75,7 @@ const Program = () => {
                 bedrifter over en lav sko i dag.{' '}
             </h2>
             <h2 style={{ gridArea: 'h3', justifySelf: 'center' }}>
-                Vi i dagen-styret ønsker deg en flott ettermiddag!
+             <a href={"https://docs.google.com/forms/d/e/1FAIpQLSd88cP_BYJvGYY8xfOIO8QnaLmTkYMfaPYDbtNZiEy6wbVEEQ/viewform"}>Besøkt stand eller foredrag? Del opplevelsen din og vinn universal-gavekort!</a>  
             </h2>
             <br />
 
