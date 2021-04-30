@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom'
 import ReactPlayer from 'react-player'
 import styled from 'styled-components'
 import foredrag_info from '../../data/foredrag_info.json'
-import { Greenpurplezoom } from '../../components/symbols'
+import { YellowZoom } from '../../components/symbols'
 
 const Foredrag = ({ match }) => {
     let foredrag = match.url.split('foredrag/')[1]
@@ -71,10 +71,12 @@ const Foredrag = ({ match }) => {
                         alignItems: 'center',
                     }}
                 >
-                    <Greenpurplezoom
-                        href={foredrag.link}
+                    <YellowZoom
+                        link={
+                            'https://uio.zoom.us/j/64027618671?pwd=OFJtUXZvSWo5TFlVZS9SWmpKMkw3Zz09'
+                        }
                         text={'Se foredraget her!'}
-                    ></Greenpurplezoom>
+                    />
                 </div>
                 <About style={{ gridArea: 'Description' }}>
                     <h1
