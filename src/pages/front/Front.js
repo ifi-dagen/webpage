@@ -13,7 +13,7 @@ const Front = () => {
         <h1>Velkommen til digital ettermiddagen@ifi</h1>
         <h2>Vi håper du tar turen innom og prater litt med de ulike  bedriftene i standområdet, de gleder seg til å møte deg! Parallellt med det digitale standområdet kjøres det ulike foredrag, og vi håper du finner noe som er interessant og relevant for deg. Vi har flere konkurranser gående iløpet av dagen, og flere av bedriftene har egne konkurranser iløpet av standtiden deres, så utnytt sjansen deres til å mingle med litt bedrifter over en lav sko i dag. 
 
-<h3>Vi i dagen-styret ønsker deg en flott ettermiddag!</h3>
+<h3 > <a href={"https://docs.google.com/forms/d/e/1FAIpQLSd88cP_BYJvGYY8xfOIO8QnaLmTkYMfaPYDbtNZiEy6wbVEEQ/viewform"}>Besøkt stand eller foredrag? Del opplevelsen din og vinn universal-gavekort!</a> </h3>
 </h2>
         <br />
       </Container>
