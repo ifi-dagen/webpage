@@ -1,0 +1,14 @@
+/* ./styles/variables.css */
+
+:root {
+    /* Brand colors */
+    --brand-primary: #2a6f97;
+    --brand-primary--inverted: #ffffff;
+    --brand-secondary: #2a8297;
+    --brand-secondary--inverted: #000000; /*#557d82*/
+
+    --text-color: var(--brand-secondary--inverted);
+    /* Main Navigation */
+    --main-navigation-color: var(--brand-secondary);
+    --main-navigation-color--inverted: var(--brand-primary--inverted);
+}
