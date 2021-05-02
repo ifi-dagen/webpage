@@ -1,5 +1,5 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { MdPeople } from 'react-icons/md'
+import { MdPeople, MdAccessTime } from 'react-icons/md'
 import { BsBuilding } from 'react-icons/bs'
 
 export default () =>
@@ -16,4 +16,13 @@ export default () =>
                 .icon(MdPeople)
                 .schemaType('stand')
                 .child(S.documentTypeList('stand').title('Stand')),
+            S.listItem()
+                .title('Schedule')
+                .icon(MdAccessTime)
+                .child(
+                    S.editor()
+                        .title('Schedule')
+                        .schemaType('schedule')
+                        .documentId('schedule')
+                ),
         ])
