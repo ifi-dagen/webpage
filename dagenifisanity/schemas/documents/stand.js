@@ -14,6 +14,13 @@ export default {
             type: 'reference',
             to: [{ type: 'company' }],
         },
+        {
+            title: 'Stand Information',
+            name: 'standinformation',
+            type: 'array',
+            description: 'Informative rich text / images about the stand',
+            of: [{ type: 'block' }, { type: 'image' }],
+        },
     ],
     preview: {
         select: {

@@ -1,5 +1,5 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { MdPeople, MdAccessTime } from 'react-icons/md'
+import { MdDateRange, MdAccessTime, MdPeople } from 'react-icons/md'
 import { BsBuilding } from 'react-icons/bs'
 
 export default () =>
@@ -12,17 +12,26 @@ export default () =>
                 .schemaType('company')
                 .child(S.documentTypeList('company').title('Company')),
             S.listItem()
-                .title('Stands')
-                .icon(MdPeople)
-                .schemaType('stand')
-                .child(S.documentTypeList('stand').title('Stand')),
+                .title('Events')
+                .icon(MdDateRange)
+                .child(
+                    S.list()
+                        .title('Events')
+                        .items([
+                            S.listItem()
+                                .title('Stand')
+                                .icon(MdPeople)
+                                .schemaType('stand')
+                                .child(
+                                    S.documentTypeList('stand').title('Stand')
+                                ),
+                            /* events: talk, competition, information */
+                        ])
+                ),
+
             S.listItem()
                 .title('Schedule')
                 .icon(MdAccessTime)
-                .child(
-                    S.editor()
-                        .title('Schedule')
-                        .schemaType('schedule')
-                        .documentId('schedule')
-                ),
+                .schemaType('schedule')
+                .child(S.documentTypeList('schedule').title('Schedule')),
         ])

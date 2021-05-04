@@ -11,7 +11,7 @@ export default {
             name: 'eventTimeStart',
             type: 'datetime',
             options: {
-                dateFormat: 'DD-MM-YYYY',
+                dateFormat: '',
                 timeFormat: 'HH:mm',
                 timeStep: 15,
                 calendarTodayLabel: 'Today',
@@ -22,7 +22,7 @@ export default {
             name: 'eventTimeFinish',
             type: 'datetime',
             options: {
-                dateFormat: 'DD-MM-YYYY',
+                dateFormat: '',
                 timeFormat: 'HH:mm',
                 timeStep: 15,
                 calendarTodayLabel: 'Today',
