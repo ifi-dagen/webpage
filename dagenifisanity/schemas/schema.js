@@ -8,9 +8,13 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import company from './documents/company'
 import stand from './documents/stand'
 import schedule from './documents/schedule'
+import header from './documents/header'
+import footer from './documents/footer'
+import roles from './documents/roles'
 
 // Object Types
 import event from './objects/event'
+import navItem from './objects/navitem'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -18,5 +22,14 @@ export default createSchema({
     name: 'dagenSchema',
     // Then proceed to concatenate our document type
     // to the ones provided by any plugins that are installed
-    types: schemaTypes.concat([company, stand, schedule, event]),
+    types: schemaTypes.concat([
+        company,
+        stand,
+        schedule,
+        event,
+        header,
+        navItem,
+        footer,
+        roles,
+    ]),
 })
