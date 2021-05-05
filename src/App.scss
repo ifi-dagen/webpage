@@ -1,0 +1,38 @@
+$mobile-screen: 640px;
+
+@mixin mobile {
+    @media (min-width: #{$mobile-screen}) {
+        @content;
+    }
+}
+
+.grid-container {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 1fr 150px;
+    gap: 0px 0px;
+    grid-template-areas:
+        'header'
+        'body'
+        'footer';
+}
+
+@include mobile {
+    .grid-container {
+        grid-template-rows: 80px 1fr 150px;
+    }
+}
+.header {
+    grid-area: header;
+}
+
+.body {
+    grid-area: body;
+    overflow: auto;
+}
+
+.footer {
+    grid-area: footer;
+}

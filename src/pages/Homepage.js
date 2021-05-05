@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Homepage() {
-    return <div>Homepage yeet</div>
+    return <div>Body</div>
 }
 
 export default Homepage
