@@ -1,0 +1,47 @@
+.header-container {
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 'logo-section navlink-section';
+
+    background-color: #022545;
+
+    text-align: left;
+    .logo-section {
+        grid-area: logo-section;
+        height: auto;
+        width: auto;
+        padding-left: 100px;
+
+        img {
+            width: auto;
+            height: 75px;
+            object-fit: contain;
+            filter: brightness(0) invert(1);
+        }
+    }
+
+    .navlink-section {
+        grid-area: navlink-section;
+
+        height: auto;
+        width: auto;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        padding-right: 100px;
+
+        .navlink-item {
+            grid-area: navlink-item;
+            color: white;
+            text-decoration: none;
+            font-size: larger;
+        }
+    }
+}

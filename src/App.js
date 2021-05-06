@@ -4,6 +4,7 @@ import { Route, Switch } from 'react-router-dom'
 import './App.scss'
 import Homepage from './pages/Homepage'
 import Header from './components/header'
+import Footer from './components/footer'
 
 const App = () => (
     <div className="grid-container">
@@ -15,7 +16,9 @@ const App = () => (
                 <Route exact path="/" component={Homepage} />
             </Switch>
         </div>
-        <div className="footer">Footer</div>
+        <div className="footer">
+            <Footer />
+        </div>
     </div>
 )
 

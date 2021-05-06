@@ -4,6 +4,7 @@
     "private": true,
     "dependencies": {
         "@sanity/client": "^2.8.0",
+        "@sanity/image-url": "^0.140.22",
         "@testing-library/jest-dom": "^4.2.4",
         "@testing-library/react": "^9.3.2",
         "@testing-library/user-event": "^7.1.2",
@@ -11,6 +12,7 @@
         "react": "^16.13.0",
         "react-dom": "^16.13.0",
         "react-hook-form": "^6.3.0",
+        "react-icons": "^4.2.0",
         "react-player": "^2.6.0",
         "react-router-dom": "^5.1.2",
         "react-scripts": "^4.0.3",

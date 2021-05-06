@@ -1,34 +1,46 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import sanityClient from '../client'
+import './header.scss'
 
 function Header() {
     const [headerData, setHeaderData] = useState(null)
 
     useEffect(() => {
-        const query = '*[_type == "header"]{logo, navigationitems}'
+        const query =
+            '*[_type == "header"]{"imageUrl": logo.asset->url, navigationitems}'
         sanityClient
             .fetch(query)
             .then((data) => setHeaderData(data))
             .catch(console.error)
     }, [])
 
-    useEffect(() => {
-        console.log(headerData)
-    }, [headerData])
-
     return (
         <div className="header-container">
-            {headerData &&
-                headerData.map((header) => {
-                    return header.navigationitems.map((element) => {
-                        console.log(element)
-                        return (
-                            <div className="navlink" key={element._key}>
-                                {element.title}
-                            </div>
-                        )
-                    })
-                })}
+            <div className="logo-section">
+                <Link to="/">
+                    {headerData && (
+                        <img src={headerData[0].imageUrl} alt="Logo" />
+                    )}
+                </Link>
+            </div>
+            <div className="navlink-section">
+                {headerData &&
+                    headerData.map((header) => {
+                        return header.navigationitems.map((element) => {
+                            console.log(element)
+                            return (
+                                <Link
+                                    to={element.slug.current}
+                                    className="navlink-item"
+                                    key={element._key}
+                                >
+                                    {element.title}
+                                </Link>
+                            )
+                        })
+                    })}
+            </div>
         </div>
     )
 }
