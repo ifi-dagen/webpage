@@ -13,6 +13,9 @@ export default {
             name: 'portrait',
             type: 'image',
             title: 'Portrait',
+            options: {
+                hotspot: true, // <-- Defaults to false
+            },
         },
         {
             title: 'Role',
