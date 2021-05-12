@@ -28,7 +28,6 @@ function Header() {
                 {headerData &&
                     headerData.map((header) => {
                         return header.navigationitems.map((element) => {
-                            console.log(element)
                             return (
                                 <Link
                                     to={element.slug.current}

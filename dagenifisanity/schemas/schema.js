@@ -11,10 +11,12 @@ import schedule from './documents/schedule'
 import header from './documents/header'
 import footer from './documents/footer'
 import roles from './documents/roles'
+import pages from './documents/pages'
 
 // Object Types
 import event from './objects/event'
 import navItem from './objects/navitem'
+import sponsors from './objects/sponsors'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -31,5 +33,7 @@ export default createSchema({
         navItem,
         footer,
         roles,
+        pages,
+        sponsors,
     ]),
 })

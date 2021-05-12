@@ -6,6 +6,7 @@ import {
     MdArrowUpward,
     MdArrowDownward,
     MdPerson,
+    MdFindInPage,
 } from 'react-icons/md'
 import { BsBuilding } from 'react-icons/bs'
 import { IoSettingsOutline } from 'react-icons/io5'
@@ -65,7 +66,6 @@ export default () =>
                             /* events: talk, competition, information */
                         ])
                 ),
-
             S.listItem()
                 .title('Schedule')
                 .icon(MdAccessTime)
@@ -76,4 +76,9 @@ export default () =>
                 .icon(MdPerson)
                 .schemaType('roles')
                 .child(S.documentTypeList('roles').title('Person Information')),
+            S.listItem()
+                .title('Pages')
+                .icon(MdFindInPage)
+                .schemaType('pages')
+                .child(S.documentTypeList('pages').title('Page')),
         ])

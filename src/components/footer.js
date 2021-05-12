@@ -19,7 +19,7 @@ function Footer() {
 
     return (
         <div className="footer-container">
-            <div class="divider"></div>
+            <div className="divider"></div>
             <div className="social-media-links">
                 {footerData && (
                     <div className="social-media-icons">
