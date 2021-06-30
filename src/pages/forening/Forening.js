@@ -12,7 +12,7 @@ const Forening = () => {
             <i >
             <Link 
                 style={{fontSize: '50px'}}
-                class="fas fa-long-arrow-alt-left"
+                className="fas fa-long-arrow-alt-left"
                 to={"/"}
                 >
             </Link>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Program from './pages/program/EttermiddagenProgram'
 import Bedrift from './pages/bedrift/Bedrift'
 import Error from './pages/error/Error'
 import Stander from './pages/standomraade/Stander'
