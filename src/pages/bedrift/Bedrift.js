@@ -6,7 +6,7 @@ import Prisinfo from '../../components/Prisinfo';
 
 const Bedrift = () => {
     return (
-        <div className="bedriftbase ">
+        <div className="til-bedrift">
             <h1>
                ettermiddagen@ifi våren 2021
             </h1>
@@ -21,6 +21,7 @@ const Bedrift = () => {
             <h1>Andre måter å nå ut til studenter på?</h1>
             <p>Interessert i å ha bedriftpresentasjon på ifi? Ta kontakt med <a href = "mailto: styret@ifinavet.no"> styret@ifinavet.no</a>.</p>
             <p>Interessert i å nå ut til studenter fra andre institutter? Ta kontakt med <a href = "mailto: karriereuka@sio.no"> karriereuka@sio.no</a>.</p>
+            
         </div >
     );
 }

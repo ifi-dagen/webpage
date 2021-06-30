@@ -23,10 +23,6 @@ const roller = {
         tittel: 'Promoteringsansvarlig',
         epost: 'promotering',
     },
-    faglig: {
-        tittel: 'Faglig ansvarlig',
-        epost: 'faglig',
-    },
     funk: {
         tittel: 'Funksjonæransvarlig',
         epost: 'funkansvarlig',
@@ -34,6 +30,10 @@ const roller = {
     underholdning: {
         tittel: 'Underholdningsansvarlig',
         epost: 'underholdning',
+    },
+    faglig: {
+        tittel: 'Faglig ansvarlig',
+        epost: 'faglig',
     },
     sosialt: {
         tittel: 'Sosialansvarlig',
@@ -72,15 +72,16 @@ const peepsInfo = [
         navn: 'Camilla Christensen',
         image: 'CamillaChristensen.png',
     },
-    {
-        rolle: roller.faglig,
-        navn: 'Naranja Isabelle',
-        image: 'NaranjaIsabelle.png',
-    },
+   
     {
         rolle: roller.funk,
         navn: 'Eivind Guren',
         image: 'eivindGuren.png',
+    },
+    {
+        rolle: roller.sosialt,
+        navn: 'Karin Ospina',
+        image: 'KarinOspina.png',
     },
     {
         rolle: roller.underholdning,
@@ -88,10 +89,11 @@ const peepsInfo = [
         image: 'JessicaGierlach.png',
     },
     {
-        rolle: roller.sosialt,
-        navn: 'Karin Ospina',
-        image: 'KarinOspina.png',
+        rolle: roller.faglig,
+        navn: 'Naranja Isabelle',
+        image: 'NaranjaIsabelle.png',
     },
+    
     {
         rolle: roller.teknisk,
         navn: 'Silje Marie Flaaten',

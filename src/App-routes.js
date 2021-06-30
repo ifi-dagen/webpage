@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Program from './pages/program/EttermiddagenProgram'
 import Bedrift from './pages/bedrift/Bedrift'
 import Error from './pages/error/Error'
 import Stander from './pages/standomraade/Stander'
@@ -12,6 +11,7 @@ import Foredrag from './pages/foredrag/foredrag'
 import { BedriftKomponent } from './pages/bedrift/BedriftKomponent'
 import OpenProgram from './pages/program/OpenProgram'
 import End from './pages/program/End'
+import Front from './pages/front/Front'
 const alleBedrifter = [
     'Accenture',
     'Nav',
@@ -28,7 +28,7 @@ class Routes extends Component {
     render() {
         return (
             <Switch>
-                <Route exact path="/" component={Program} />
+                <Route exact path="/" component={Front} />
                 <Route
                     exact
                     path="/for-bedrift"
