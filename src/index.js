@@ -5,7 +5,6 @@ import App from './App';
 import { HashRouter } from 'react-router-dom'
 import '@fortawesome/fontawesome-free/css/all.css'
 
-
 ReactDOM.render(
   <HashRouter>
     <App />

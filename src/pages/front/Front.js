@@ -1,59 +1,57 @@
 
 import React from 'react';
 import styled from 'styled-components'
-import Countdown from '../../components/countdown'
-import Program from '../program/EttermiddagenProgram'
 
-const Front = () => {
+ const Front = () => {
   return (
-    <Div>
-      <Container>
-        <br />
-        <Countdown />
-        <h1>Velkommen til digital ettermiddagen@ifi</h1>
-        <h2>Vi håper du tar turen innom og prater litt med de ulike  bedriftene i standområdet, de gleder seg til å møte deg! Parallellt med det digitale standområdet kjøres det ulike foredrag, og vi håper du finner noe som er interessant og relevant for deg. Vi har flere konkurranser gående iløpet av dagen, og flere av bedriftene har egne konkurranser iløpet av standtiden deres, så utnytt sjansen deres til å mingle med litt bedrifter over en lav sko i dag. 
-
-<h3 > <a href={"https://docs.google.com/forms/d/e/1FAIpQLSd88cP_BYJvGYY8xfOIO8QnaLmTkYMfaPYDbtNZiEy6wbVEEQ/viewform"}>Besøkt stand eller foredrag? Del opplevelsen din og vinn universal-gavekort!</a> </h3>
-</h2>
-        <br />
-      </Container>
-
-
-      <Program/>
-      
-      
-    </Div >
+    <div className="content">
+      <br/>
+      <br />
+      <h1>Informasjon til bedrifter om påmelding til dagen@ifi høst 2021</h1>
+      <h3>Sist oppdatert: 30.06.2021</h3>
+       
+      <h4>
+        Høstens karrieredag dagen@ifi er satt til 23. september 2021. 
+        <b><a
+          style={{fontSize: '25px'}}
+          href="https://docs.google.com/forms/d/1cjCZ5jqCm8uMrb9qxPkFts1rF7YCFmlzjuiUs50rwXE/edit">
+          Meld på din bedrift via dette skjemaet.
+          </a>
+        </b>
+          Vi stenger påmeldingen 16. juli 2021, også vil det komme en bekreftelse eller avslag på deltakelse uken etter (uke 29).
+        <br/>
+        <br/>
+          Årets karrieredag blir digital dette semesteret også. Det siste året har vi gjort vårt beste for å arrangere digitale versjoner av dagen- og ettermiddagen@ifi gjennom denne nettsiden og zoom, men for dagen@ifi 2021 har vi bestemt oss for å teste ut en ny plattform som heter  Graduateland. Vi mener denne plattformen vil fungere bedre for å koble bedrifter og studenter, og totalt sett løfte den helhetlige opplevelsen av en digital karrieredag for begge parter. Bruk av denne plattformen medfører at vi er nødt til å øke prisene våre. Karrieredagens varighet blir 4 timer, og vi åpner for at 25 bedrifter kan delta. Vi mener dette antallet bedrifter er et godt kompromiss for å sikre godt oppmøte for hver bedrift, og for at det ikke blir overveldende for studenten å navigere seg mellom for mange bedrifter.
+      </h4>
+      <Wrapper>
+        <div className="stand-box"> 
+          <h4>Digital standplass</h4>
+          <b><p>Pris: 20 000,-</p></b>
+          <p>Profilering på dagenatifi.no</p>
+          <p>Profilering på våre sosiale medier</p>
+          <p>Graduateland rom</p>
+        </div>
+       
+        <div className="stand-box"> 
+          <h4>Digital sponsor standplass</h4>
+          <b><p>Pris: 25 000,-</p></b>
+          <p>Profilering på dagenatifi.no</p>
+          <p>Profilering på våre sosiale medier</p>
+          <p>Graduateland rom</p>
+          <p>Mulighet for å dele ut merch</p>
+          <p>Høyere eksponering i vår promotering</p>
+          <p>Foredrag</p>
+        </div>
+      </Wrapper> 
+    </div >
   );
 }
 
-const Div = styled.div`
-    max-width: 1000px;
-    margin: auto;
-`;
-
-const Container = styled.div`
-    max-width: 850px;
-    margin: auto;
-    padding: 1rem;
-
-    * {
-        text-align: center;
-    }
-
-    h1 {
-        font-size: 4rem;
-        color: black;
-        margin: 0;
-    }
-
-    h2{
-      font-weight: 400;
-    }
-    @media screen and (max-width: 800px) {
-        h1 {
-            font-size: 2rem;
-        }
-    }
-`;
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+  grid-gap: 1rem;
+  justify-content: center;
+`
 
 export default Front;
