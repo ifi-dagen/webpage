@@ -4,6 +4,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: #F1FFFF;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: auto;
 }
 
 h1 {
