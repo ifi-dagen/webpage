@@ -11,14 +11,8 @@ import styled from 'styled-components'
       <h3>Sist oppdatert: 30.06.2021</h3>
        
       <h4>
-        Høstens karrieredag dagen@ifi er satt til 23. september 2021. 
-        <b><a
-          style={{fontSize: '25px'}}
-          href="https://docs.google.com/forms/d/1cjCZ5jqCm8uMrb9qxPkFts1rF7YCFmlzjuiUs50rwXE/edit">
-          Meld på din bedrift via dette skjemaet.
-          </a>
-        </b>
-          Vi stenger påmeldingen 16. juli 2021, også vil det komme en bekreftelse eller avslag på deltakelse uken etter (uke 29).
+        Høstens karrieredag dagen@ifi er satt til 23. september 2021.
+          <b> Påmeldingen er nå stengt. </b> Vi er dessverre litt forsinket i opptaket av bedrifter, men vil sende en bekreftelse eller et avslag på deltakelse innen 1. august (uke 30).
         <br/>
         <br/>
           Årets karrieredag blir digital dette semesteret også. Det siste året har vi gjort vårt beste for å arrangere digitale versjoner av dagen- og ettermiddagen@ifi gjennom denne nettsiden og zoom, men for dagen@ifi 2021 har vi bestemt oss for å teste ut en ny plattform som heter  Graduateland. Vi mener denne plattformen vil fungere bedre for å koble bedrifter og studenter, og totalt sett løfte den helhetlige opplevelsen av en digital karrieredag for begge parter. Bruk av denne plattformen medfører at vi er nødt til å øke prisene våre. Karrieredagens varighet blir 4 timer, og vi åpner for at 25 bedrifter kan delta. Vi mener dette antallet bedrifter er et godt kompromiss for å sikre godt oppmøte for hver bedrift, og for at det ikke blir overveldende for studenten å navigere seg mellom for mange bedrifter.
