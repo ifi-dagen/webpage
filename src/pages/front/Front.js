@@ -8,7 +8,7 @@ import styled from 'styled-components'
       <br/>
       <br />
       <h1>Informasjon til bedrifter om påmelding til dagen@ifi høst 2021</h1>
-      <h3>Sist oppdatert: 30.06.2021</h3>
+      <h3>Først publisert 30.06.2021. Sist oppdatert: 27.07.2021</h3>
        
       <h4>
         Høstens karrieredag dagen@ifi er satt til 23. september 2021.
