@@ -6,8 +6,8 @@ upubliserte oppdateringer ligger på 'master' branchen, og kan sees 'in action' 
 [prosjekttavle for utvikling.](https://github.com/orgs/ifi-dagen/projects/1)
 
 ### Første bygg lokalt
-1. [clone repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) `git clone git@github.com:ifi-dagen/webpage.git`
-2. [install yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+1. [git clone repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+2. [Installer yarn](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
 3. skriv `yarn start` i terminalen og åpne [http://localhost:3000](http://localhost:3000)
 
 Hovedparten av koden ligger i mappen 'src' delt i .js-filer, med tilhørende .css-filer
