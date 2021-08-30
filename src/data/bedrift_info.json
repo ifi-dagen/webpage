@@ -82,13 +82,13 @@
             "name": "Cisco",
             "url": "https://www.cisco.com",
             "sponsor": false,
-            "logo": "Cisco.png"
+            "logo": "cisco.png"
         },
         {
             "name": "Sopra Steria",
             "url": "https://www.soprasteria.no",
             "sponsor": true,
-            "logo": "sopraSteria.png"
+            "logo": "soprasteria.png"
         },
         {
             "name": "NRK",
@@ -111,7 +111,8 @@
         {
             "name": "NAV IT",
             "url": "https://www.detsombetyrnoe.no",
-            "sponsor": false
+            "sponsor": false,
+            "logo": "NAV.png"
         },
         {
             "name": "Cognizant",
