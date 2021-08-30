@@ -1,16 +1,16 @@
 import React from 'react'
 import Routes from './App-routes'
-import NewFooter from './components/newfooter'
-import NewHeader from './components/newheader'
+import Footer from './components/footer'
+import Header from './components/header'
 
 
 
 const App = () => (
     <div>
-        <NewHeader className="header"/>
+        <Header className="header"/>
          <Routes />
          <footer className="footer">
-            <NewFooter/>
+            <Footer/>
         </footer>
     </div>
 )
