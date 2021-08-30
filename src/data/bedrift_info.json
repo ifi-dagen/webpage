@@ -1,11 +1,171 @@
 {
-    "bedrift": [
+    "bedrifter": [
         {
             "name": "Gjensidige",
-            "url": "https://www.gjensidige.no/#"
+            "url": "https://www.gjensidige.no/#",
+            "sponsor": false,
+            "logo": "gjensidige.png"
         },
         {
-            "name":""
+            "name": "NoA Ignite",
+            "url": "https://noaignite.no",
+            "sponsor": false,
+            "logo": "NoA_Ignite.png"
+        },
+        {
+            "name": "Clave Consulting",
+            "url": "https://clave.no",
+            "sponsor": false,
+            "logo": "clave.png"
+        },
+        {
+            "name": "Iterate",
+            "url": "https://www.iterate.no",
+            "sponsor": false,
+            "logo": "iterate.png"
+        },
+        {
+            "name": "Itera",
+            "url": "https://itera.com",
+            "sponsor": true,
+            "logo": "itera.jpg"
+        },
+        {
+            "name": "Netcompany",
+            "url": "https://www.netcompany.com",
+            "sponsor": false,
+            "logo": "netcompany.png"
+        },
+        {
+            "name": "Visma Consulting",
+            "url": "https://www.visma.no/consulting/konsulenttjenester/?gclid=Cj0KCQjwg7KJBhDyARIsAHrAXaGKPCO-608zrBJ-xtXLnafDcU1Iwyu_Nkt-G78EmDg2nOD156FLZ1QaAo_DEALw_wcB",
+            "sponsor": false,
+            "logo": "visma.png"
+        },
+        {
+            "name": "FINN.no",
+            "url": "https://www.finn.no/jobbeifinn",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "NEP",
+            "url": "https://www.nepnorway.com",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "Intility",
+            "url": "https://intility.no/en/",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "Bouvet",
+            "url": "https://www.bouvet.no",
+            "sponsor": false,
+            "logo": "bouvet.png"
+        },
+        {
+            "name": "Politiets IKT-tjeneste",
+            "url": "https://www.politiet.no/om/organisasjonen/andre/pit/om-pit/organisasjonen/",
+            "sponsor": true,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "DNV",
+            "url": "https://www.dnv.no",
+            "sponsor": false,
+            "logo": "DNV_GL.png"
+        },
+        {
+            "name": "Cisco",
+            "url": "https://www.cisco.com",
+            "sponsor": false,
+            "logo": "Cisco.png"
+        },
+        {
+            "name": "Sopra Steria",
+            "url": "https://www.soprasteria.no",
+            "sponsor": true,
+            "logo": "sopraSteria.png"
+        },
+        {
+            "name": "NRK",
+            "url": "https://www.nrk.no",
+            "sponsor": false,
+            "logo": "nrk.jpg"
+        },
+        {
+            "name": "TietoEVRY",
+            "url": "https://www.tietoevry.com",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "Tripletex",
+            "url": "https://www.tripletex.no/om-systemet/?gclid=Cj0KCQjwg7KJBhDyARIsAHrAXaHnQiDaY5sfd8UYitIOlTVuokOvRIVvtVs9Spn2dabouQok1YvmX8caAgJDEALw_wcB",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "NAV IT",
+            "url": "https://www.detsombetyrnoe.no",
+            "sponsor": false
+        },
+        {
+            "name": "Cognizant",
+            "url": "https://www.cognizant.com/nb-no/",
+            "sponsor": false,
+            "logo": "cognizant.jpg"
+        },
+        {
+            "name": "Lime Technologies",
+            "url": "https://www.lime-technologies.com",
+            "sponsor": false,
+            "logo": "Lime.png"
+        },
+        {
+            "name": "Fremtind Forsikring",
+            "url": "https://www.fremtind.no",
+            "sponsor": true,
+            "logo": "fremtind.png"
+        },
+        {
+            "name": "Statens vegvesen",
+            "url": "https://www.vegvesen.no",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "Simula",
+            "url": "https://www.simula.no",
+            "sponsor": false,
+            "logo": "simula.png"
+        },
+        {
+            "name": "Orkla IT",
+            "url": "https://www.orkla.com",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "Forte Digital",
+            "url": "https://fortedigital.no/en",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "Computas",
+            "url": "https://computas.com/?gclid=Cj0KCQjwg7KJBhDyARIsAHrAXaE0CgBsw4on9gcwj5D3VjxPesrcK1VFOHwDHJ3S-6YhnTKWU3nfnNsaAqwAEALw_wcB",
+            "sponsor": false,
+            "logo": "icon_1.png"
+        },
+        {
+            "name": "Bekk",
+            "url": "https://bekk.no",
+            "sponsor": true,
+            "logo": "Bekk.png"
         }
     ]
 }
